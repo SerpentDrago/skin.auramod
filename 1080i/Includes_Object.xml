@@ -143,7 +143,7 @@
           <param name="tvdb" value="true" />
           <param name="metacritic" value="true" />
           <param name="oscars" value="true" />
-          <param name="top250" value="false" />
+          <param name="top250" value="true" />
           <param name="plot" value="false" />
           <param name="studio" value="true" />
         </include>
@@ -166,7 +166,7 @@
           <param name="tvdb" value="true" />
           <param name="metacritic" value="true" />
           <param name="oscars" value="true" />
-          <param name="top250" value="false" />
+          <param name="top250" value="true" />
           <param name="plot" value="false" />
           <param name="studio" value="true" />
         </include>
@@ -346,72 +346,31 @@
         <animation effect="slide" end="0,100" time="0" condition="!Skin.HasSetting(DisableAuraHomeLayout) + Skin.HasSetting(DisableMenuHor)">Conditional</animation>
         <animation effect="slide" end="-40,50" time="10" condition="Skin.HasSetting(DisableMenuHor)">Conditional</animation>
         <animation effect="slide" end="-20,10" time="10" condition=" !Skin.HasSetting(DisableAuraHomeLayout) + !Skin.HasSetting(DisableMenuVertIcon)">Conditional</animation>
-        <control type="image" id="59445">
-          <top>40</top>
-          <left>150</left>
-          <height min="60" max="218">auto</height>
-          <width>510</width>
-          <aligny>top</aligny>
-          <align>left</align>
-          <aspectratio align="left" aligny="center">keep</aspectratio>
-          <texture background="true">$VAR[Widget_ClearLogo_1506]</texture>
-        </control>
-        <control type="textbox">
-          <visible>String.IsEmpty(Container(1506).ListItem.Art(clearlogo))</visible>
-          <top>130</top>
-          <left>140</left>
-          <label>[B]$VAR[video_heading_1506][/B]</label>
-          <textcolor>grey</textcolor>
-          <shadowcolor>black</shadowcolor>
-          <font>font_heading</font>
-          <width min="200" max="500">auto</width>
-          <height min="30" max="115">auto</height>
-          <align>center</align>
-          <wrapmultiline>true</wrapmultiline>
-          <scroll>true</scroll>
-        </control>
-        <!-- Episode Label  -->
+
         <control type="group">
-          <top>260</top>
-          <control type="label">
-            <left>160</left>
-            <height min="55" max="90">auto</height>
-            <visible>String.IsEqual(Container(1506).ListItem.DBType,episode)</visible>
-            <label fallback="19055">$VAR[home_simple_episode_1506]</label>
-            <width>750</width>
-            <textcolor>white</textcolor>
-            <shadowcolor>black</shadowcolor>
-            <wrapmultiline>true</wrapmultiline>
-            <font>font_medium_bold</font>
-          </control>
-          <!-- Aired -->
-          <control type="label">
-            <top>100</top>
-            <left>160</left>
-            <visible>String.IsEqual(Container(1506).ListItem.DBType,episode)</visible>
-            <label fallback="19055">[I]Aired $INFO[Container(1506).ListItem.Premiered(DDD MMM yyyy)] on $INFO[Container(1506).ListItem.Studio][/I]</label>
-            <height>30</height>
-            <width>750</width>
-            <textcolor>main_fg_100</textcolor>
-            <shadowcolor>black</shadowcolor>
-            <font>font_small</font>
-          </control>
+          <left>100</left>
+          <top>370</top>
+          <animation effect="fade" start="0" end="100" time="1500" delay="50">Visible</animation>
+          <visible>!Container(1506).OnNext + !Container(1506).OnScrollNext</visible>
+          <visible>Control.IsVisible(1506)</visible>
+          <include content="new_addon_view_infospotlight">
+            <param name="id" value="1506" />
+            <param name="width" value="900" />
+          </include>
         </control>
-        <control type="textbox">
-          <left>150</left>
-          <top>260</top>
-          <height min="50" max="95">auto</height>
-          <label>$INFO[Container(1506).ListItem.Plot]</label>
-          <align>left</align>
-          <width>500</width>
-          <textcolor>dimgrey</textcolor>
-          <shadowcolor>black</shadowcolor>
-          <font>widget_trakt_title</font>
-          <autoscroll>0</autoscroll>
-          <visible>!String.IsEqual(Container(1506).ListItem.DBType,episode)</visible>
-        </control>
+
         <control type="label">
           <height>5</height>
+        </control>
+        <control type="group">
+          <control type="image">
+            <top>270</top>
+            <right>20</right>
+              <height>400</height>
+              <width max="500">auto</width>
+              <aspectratio align="right" aligny="bottom">keep</aspectratio>
+              <texture background="true">$VAR[Widget_ClearArt_1506]</texture>
+          </control>
         </control>
       </control>
     </control>
@@ -937,7 +896,7 @@
             </control>
           </control>
         </focusedlayout>
-        <content target="videos" sortby="$VAR[spotlight_sortby]" sortorder="descending" limit="5">$PARAM[content]</content>
+        <content target="videos" sortby="$VAR[spotlight_sortby]" sortorder="descending" limit="50">$PARAM[content]</content>
       </control>
       <control type="group">
         <visible>Control.HasFocus(30222) | Control.HasFocus($PARAM[id]) | Control.HasFocus(300) | Control.HasFocus(400) | Control.HasFocus(401)</visible>
@@ -955,7 +914,6 @@
         <animation effect="fade" start="100" end="0" time="300" condition="!Control.HasFocus(300)">Hidden</animation>
         <animation effect="fade" start="0" end="100" delay="200" time="600" condition="!Control.HasFocus(300)">Visible</animation>
         <onfocus>SetProperty(TMDbHelper.WidgetContainer,$PARAM[id],Home)</onfocus>
-        <onfocus>SetProperty(SkinHelper.WidgetContainer,$PARAM[id],Home)</onfocus>
         <autoscroll time="20000">String.IsEmpty(Window(Home).Property(trailer_trailerwillplaying) + [Control.HasFocus(300) | Control.HasFocus(400) | Control.HasFocus(401) | Control.HasFocus(30222) | ControlGroup(505).HasFocus]</autoscroll>
         <visible>[String.IsEqual(Container(330).CurrentItem,1) | Control.HasFocus(400) | Control.HasFocus(300) | Control.HasFocus(3022) | Control.HasFocus(30221) | Control.HasFocus(30222) | Control.HasFocus(1505) | ControlGroup(505).HasFocus] + String.IsEqual(Container(300).ListItem.Property(widgetspotlight),true) + String.IsEqual(Container(300).ListItem.Property(widgetSpotlighttype),TVShows)</visible>
         <visible>!String.IsEqual(Container(300).ListItem.Property(widget),Weather) + !String.IsEqual(Container(300).ListItem.Property(widget),Settings) + !String.IsEqual(Container(300).ListItem.Property(widgetType),Settings Widget) + !String.IsEqual(Container(300).ListItem.Property(widgetType),Weather Widget)</visible>
@@ -976,7 +934,7 @@
         <onfocus>SetFocus(505)</onfocus>
         <itemlayout width="1980" height="1080"></itemlayout>
         <focusedlayout width="1980" height="1080"></focusedlayout>
-        <content target="videos" sortby="$VAR[spotlight_sortby]" sortorder="descending" limit="5">$VAR[tvshowfullspotlightpath]</content>
+        <content target="videos" sortby="$VAR[spotlight_sortby]" sortorder="descending" limit="50">$VAR[tvshowfullspotlightpath]</content>
       </control>
     </control>
   </include>
@@ -1069,8 +1027,7 @@
         <animation effect="fade" start="100" end="0" time="300" condition="!Control.HasFocus(300)">Hidden</animation>
         <animation effect="fade" start="0" end="100" delay="200" time="600" condition="!Control.HasFocus(300)">Visible</animation>
         <onfocus>SetProperty(TMDbHelper.WidgetContainer,$PARAM[id],Home)</onfocus>
-        <onfocus>SetProperty(SkinHelper.WidgetContainer,$PARAM[id],Home)</onfocus>
-        <autoscroll time="7000">Control.HasFocus(300) | Control.HasFocus(400) | Control.HasFocus(401) | Control.HasFocus(30222) | ControlGroup(505).HasFocus</autoscroll>
+        <autoscroll time="21000">Control.HasFocus(300) | Control.HasFocus(400) | Control.HasFocus(401) | Control.HasFocus(30222) | ControlGroup(505).HasFocus</autoscroll>
         <visible>[Control.HasFocus(401) | Control.HasFocus(300) | Control.HasFocus(3022) | Control.HasFocus(30221) | Control.HasFocus(30222) | Control.HasFocus(1506) | ControlGroup(506).HasFocus] + String.IsEqual(Container(300).ListItem.Property(widgetspotlight),true) + String.IsEqual(Container(300).ListItem.Property(widgetSpotlighttype),Movies)</visible>
         <visible>!String.IsEqual(Container(300).ListItem.Property(widget),Weather) + !String.IsEqual(Container(300).ListItem.Property(widget),Settings) + !String.IsEqual(Container(300).ListItem.Property(widgetType),Settings Widget) + !String.IsEqual(Container(300).ListItem.Property(widgetType),Weather Widget)</visible>
         <defaultcontrol>4000</defaultcontrol>
@@ -1090,7 +1047,7 @@
         <onfocus>SetFocus(506)</onfocus>
         <itemlayout width="1980" height="1080"></itemlayout>
         <focusedlayout width="1980" height="1080"></focusedlayout>
-        <content target="videos" sortby="$VAR[spotlight_sortby]" sortorder="descending" limit="5">$VAR[moviefullspotlightpath]</content>
+        <content target="videos" sortby="$VAR[spotlight_sortby]" sortorder="descending" limit="50">$VAR[moviefullspotlightpath]</content>
       </control>
     </control>
   </include>
@@ -1255,7 +1212,6 @@
         <animation effect="slide" end="40,0" time="200" condition="!Skin.HasSetting(DisableMenuHor) + !Skin.HasSetting(DisableMenuVertLabelOnly) + !Skin.HasSetting(DisableMenuVertLabel) + [Control.HasFocus(300) | !Skin.HasSetting(DisableNetflixHomeSidemenuHide)]">Conditional</animation>
         <animation effect="slide" start="0,0" end="0,100" time="0" tween="quadratic" condition="Skin.HasSetting(DisableMenuHor)">Conditional</animation>
         <animation effect="fade" start="0" end="100" time="300" condition="!Control.HasFocus(300)">Visible</animation>
-        <onfocus>SetProperty(SkinHelper.WidgetContainer,$PARAM[id],Home)</onfocus>
         <onfocus>SetProperty(TMDbHelper.WidgetContainer,$PARAM[id],Home)</onfocus>
         <scrolltime tween="sine" easing="out">0</scrolltime>
         <autoscroll time="15000">Control.IsVisible($PARAM[id]) + Control.HasFocus(300) | Control.HasFocus(401) | Control.HasFocus(400) | Control.HasFocus(30222) | ControlGroup(505).HasFocus</autoscroll>
@@ -1304,7 +1260,7 @@
             </control>
          </control>
         </focusedlayout>
-        <content target="videos" sortby="$VAR[spotlight_sortby]" limit="5">$PARAM[content]</content>
+        <content target="videos" sortby="$VAR[spotlight_sortby]" limit="50">$PARAM[content]</content>
       </control>
       <control type="group">
         <top>-20</top>
@@ -1350,11 +1306,13 @@
       <ondown condition="!Skin.HasSetting(DisableNetflixCatWidget)">30222</ondown>
       <ondown condition="Skin.HasSetting(DisableNetflixCatWidget)">330</ondown>
       <onright>Control.Move(1506,1)</onright>
-      <onleft>300</onleft>
+      <onleft>Control.Move(1506,-1)</onleft>
+      <!-- <onleft>300</onleft> -->
       <width>600</width>
       <height>80</height>
       <itemgap>0</itemgap>
       <visible>[Control.HasFocus(3022) | Control.HasFocus(30221) | Control.HasFocus(300) | Control.HasFocus(30222) | Control.HasFocus(1506) | ControlGroup(506).HasFocus] + String.IsEqual(Container(300).ListItem.Property(widgetspotlight),true) + String.IsEqual(Container(300).ListItem.Property(widgetSpotlighttype),Movies) + Integer.IsGreater(Container(1506).NumItems,0)</visible>
+      <visible>!Control.HasFocus(300)</visible>
       <visible>!String.IsEqual(Container(300).ListItem.Property(widget),Weather) + !String.IsEqual(Container(300).ListItem.Property(widget),Settings) + !String.IsEqual(Container(300).ListItem.Property(widgetType),Settings Widget) + !String.IsEqual(Container(300).ListItem.Property(widgetType),Weather Widget)</visible>
       <animation effect="slide" end="-40,50" time="10" condition="Skin.HasSetting(DisableMenuHor)">Conditional</animation>
       <control type="radiobutton" id="5061">
@@ -1363,7 +1321,7 @@
         <description>Play</description>
         <width>240</width>
         <height>80</height>
-        <label>[CAPITALIZE][B]Play[/B][/CAPITALIZE]</label>
+        <label>PLAY</label>
         <align>center</align>
         <textcolor>grey</textcolor>
         <focusedcolor>black</focusedcolor>
@@ -1373,10 +1331,10 @@
         <textureradioofffocus colordiffuse="black">netflix/play.png</textureradioofffocus>
         <textureradioonnofocus colordiffuse="white">netflix/play.png</textureradioonnofocus>
         <textureradiooffnofocus colordiffuse="white">netflix/play.png</textureradiooffnofocus>
-        <radioposx>45</radioposx>
-        <radiowidth>25</radiowidth>
-        <radioheight>35</radioheight>
-        <font>Reg28</font>
+        <radioposx>65</radioposx>
+        <radiowidth>20</radiowidth>
+        <radioheight>20</radioheight>
+        <font>font_button</font>
         <!--                    <onclick condition="!String.IsEmpty(ListItem.DBID)">PlayMedia($ESCINFO[Container(1506).ListItem.FileNameAndPath])</onclick> -->
         <onclick>SetProperty(SpotlightPlay,1,Home)</onclick>
         <onclick>SetFocus(1506)</onclick>
@@ -1388,12 +1346,12 @@
         <width>280</width>
         <height>80</height>
         <align>center</align>
-        <label>[B]More Info[/B]</label>
+        <label>More Info</label>
         <textcolor>white</textcolor>
         <focusedcolor>black</focusedcolor>
         <texturefocus colordiffuse="d9ffffff" border="5">common/rounded-shadow8.png</texturefocus>
         <texturenofocus colordiffuse="darkgrey" border="5">common/rounded-shadow8.png</texturenofocus>
-        <font>Reg28</font>
+        <font>font_button</font>
         <onclick condition="System.HasAlarm(trailer_delay)">CancelAlarm(trailer_delay,true)</onclick>
         <onclick>SetProperty(ShowSpotlightInfo,1,Home)</onclick>
         <onclick>SetFocus(1506)</onclick>
@@ -1762,7 +1720,7 @@
           <param name="tvdb" value="true" />
           <param name="metacritic" value="true" />
           <param name="oscars" value="true" />
-          <param name="top250" value="false" />
+          <param name="top250" value="true" />
           <param name="plot" value="false" />
           <param name="studio" value="true" />
         </include>
@@ -1818,6 +1776,19 @@
           <orientation>vertical</orientation>
           <top>10</top>
           <!-- Add Clearlogo / Label -->
+
+          <control type="image" id="55447">
+            <left>0</left>
+            <right>$PARAM[titleright]</right>
+            <height>300</height>
+            <aligny>top</aligny>
+            <aspectratio align="left" aligny="bottom">keep</aspectratio>
+            <texture background="true">$VAR[NetflixHome_Clearart]</texture>
+            <animation effect="fade" start="0" end="100" time="500">Visible</animation>
+            <visible>[Window.IsVisible(Home) + [!Control.HasFocus(660) + !Control.HasFocus(300) + !Control.HasFocus(302) + !Control.HasFocus(30222) + !Control.HasFocus(3001)]] | !Window.IsVisible(Home)</visible>
+            <visible>!String.IsEmpty(Control.GetLabel(55447))</visible>
+          </control>
+
           <control type="image" id="55446">
             <left>0</left>
             <right>$PARAM[titleright]</right>
@@ -1828,6 +1799,7 @@
             <animation effect="fade" start="0" end="100" time="500">Visible</animation>
             <visible>[Window.IsVisible(Home) + [!Control.HasFocus(660) + !Control.HasFocus(300) + !Control.HasFocus(302) + !Control.HasFocus(30222) + !Control.HasFocus(3001)]] | !Window.IsVisible(Home)</visible>
             <visible>!String.IsEmpty(Control.GetLabel(55446))</visible>
+            <visible>String.IsEmpty(Control.GetLabel(55447))</visible>
           </control>
 <!--
           <control type="label">
@@ -1924,7 +1896,7 @@
           <control type="textbox">
             <visible>[Window.IsVisible(Home) + [!Control.HasFocus(660) + !Control.HasFocus(300) + !Control.HasFocus(302) + !Control.HasFocus(30222) + !Control.HasFocus(3001)]] | !Window.IsVisible(Home)</visible>
             <visible>$EXP[DBTvideos] + !Skin.HasSetting(DisableNetflixView) + ![String.IsEqual(ListItem.DBType,episode) + !Skin.HasSetting(EnableFullEpInfo)]</visible>
-            <height min="20" max="180">auto</height>
+            <height min="20" max="130">auto</height>
             <label fallback="19055">$VAR[Label_OverlayPlot]</label>
             <width>640</width>
             <aligny>top</aligny>
@@ -2121,7 +2093,7 @@
                 <control type="group">
                   <width>100</width>
                   <height>30</height>
-                  <visible>!String.IsEqual(Container($PARAM[id]).ListItem.DBType,tvshow) + !String.IsEmpty(Window(Home).Property(SkinHelper.ListItem.Duration))</visible>
+                  <visible>!String.IsEqual(Container($PARAM[id]).ListItem.DBType,tvshow) + !String.IsEmpty(Window(Home).Property(TMDbHelper.ListItem.Duration))</visible>
               <control type="image">
                 <bottom>-18</bottom>
                 <animation effect="fade" time="0" end="75" condition="true">Conditional</animation>
@@ -2250,6 +2222,197 @@
       </control>
     </definition>
   </include>
+
+  <include name="new_addon_view_infospotlight">
+    <param name="id" default="" />
+    <definition>
+      <control type="group">
+
+        <control type="grouplist">
+          <width>$PARAM[width]</width>
+          <left>10</left>
+          <top>-40</top>
+          <orientation>vertical</orientation>
+          <usecontrolcoords>true</usecontrolcoords>
+          <itemgap>0</itemgap>
+
+          <control type="label">
+            <label>[B]$VAR[video_heading_1506][/B]</label>
+            <textcolor>ffdedede</textcolor>
+            <shadowcolor>black</shadowcolor>
+            <font>font_showcase_title</font>
+            <align>left</align>
+            <height>90</height>
+            <scroll>true</scroll>
+            <scrollout>false</scrollout>
+            <autoscroll delay="7000" time="5000" repeat="5000">true</autoscroll>
+            <nested />
+          </control>
+
+          <control type="grouplist">
+            <top>-20</top>
+            <height>60</height>
+            <orientation>horizontal</orientation>
+            <usecontrolcoords>true</usecontrolcoords>
+            <itemgap>5</itemgap>
+            <left>0</left>
+            <right>$PARAM[titleright]</right>
+            <control type="group">
+              <width>200</width>
+              <left>-5</left>
+              <top>-20</top>
+              <visible>!String.IsEmpty(Container($PARAM[id]).ListItem.Rating)</visible>
+              <visible>!Skin.HasSetting(DisableStarRating)</visible>
+              <include content="Object_StarRating">
+                <param name="height" value="50" />
+                <param name="width" value="50" />
+                <param name="rating_prop" value="Container($PARAM[id]).ListItem.Rating" />
+              </include>
+            </control>
+            <control type="label" id="4$PARAM[id]">
+            	<left>-10</left>
+            	<width>140</width>
+            	<label>$VAR[liked_percent]</label>
+            	<textcolor>green</textcolor>
+            	<align>center</align>
+            	<font>font_tiny_bold</font>
+            	<visible>Skin.HasSetting(DisableLiked) + !String.IsEmpty(Control.GetLabel(4$PARAM[id]))</visible>
+            </control>
+            <control type="group">
+              <width>$PARAM[width]</width>
+              <visible>Skin.HasSetting(DisableLiked) + !String.IsEmpty(Control.GetLabel(4$PARAM[id]))</visible>
+              <control type="grouplist">
+                <orientation>horizontal</orientation>
+                <itemgap>10</itemgap>
+
+                <!-- Year -->
+                <control type="label">
+                  <width>auto</width>
+                  <label>| $INFO[Container($PARAM[id]).ListItem.Year]</label>
+                  <textcolor>white</textcolor>
+                  <align>center</align>
+                  <font>font_tiny</font>
+                  <visible>!String.IsEqual(Container($PARAM[id]).ListItem.DBType,episode)</visible>
+                </control>
+                <!-- MPAA -->
+                <control type="label" id="6$PARAM[id]">
+                  <width>auto</width>
+                  <align>center</align>
+                  <font>font_tiny</font>
+                  <textcolor>white</textcolor>
+                  <label fallback=" N/A">| $VAR[MPAA]</label>
+                </control>
+
+                <!-- Duration -->
+                <control type="label">
+                  <width>auto</width>
+                  <align>center</align>
+                  <visible>!String.IsEqual(Container($PARAM[id]).ListItem.DBType,tvshow)</visible>
+                  <font>font_tiny</font>
+                  <textcolor>white</textcolor>
+                  <label>| $VAR[infoview_duration]</label>
+                </control>
+                <!-- Season Count -->
+                <control type="label">
+                  <width>auto</width>
+                  <visible>!String.IsEmpty(Container($PARAM[id]).ListItem.Property(TotalSeasons))</visible>
+                  <textcolor>white</textcolor>
+                  <align>center</align>
+                  <font>font_tiny</font>
+                  <textcolor>white</textcolor>
+                  <label>| $VAR[total_seasons_view506]</label>
+                </control>
+
+		            <!-- Aired -->
+                <control type="label">
+                  <width>auto</width>
+                  <align>center</align>
+                  <label>| Aired: $INFO[Container($PARAM[id]).ListItem.Premiered(dd MMM yyyy)]</label>
+                  <textcolor>$VAR[ColorHighlight2]</textcolor>
+                  <font>font_tiny</font>
+                  <visible>String.IsEqual(Container($PARAM[id]).ListItem.DBType,episode)</visible>
+                </control>
+
+                <control type="label">
+                    <align>left</align>
+                    <aligny>center</aligny>
+                    <width min="50" max="350">auto</width>
+                    <label>| $VAR[Label_Genre]</label>
+                    <textcolor>white</textcolor>
+                    <font>font_tiny</font>
+                </control>
+
+                <control type="label">
+                    <align>left</align>
+                    <aligny>center</aligny>
+                    <width min="50" max="300">auto</width>
+                    <label>| $INFO[Container($PARAM[id]).ListItem.Country]</label>
+                    <textcolor>white</textcolor>
+                    <font>font_tiny</font>
+                </control>
+              </control>
+            </control>
+          </control>
+	  <control type="label">
+	    <height>10</height>
+	  </control>
+          <control type="label">
+            <top>-20</top>
+            <width>$PARAM[width]</width>
+            <height>35</height>
+            <font>font_small</font>
+            <textcolor>grey</textcolor>
+            <label>$INFO[Container($PARAM[id]).ListItem.Season,S,: ]$INFO[Container($PARAM[id]).ListItem.Episode,E, ] - $INFO[Container($PARAM[id]).ListItem.Title]</label>
+            <visible>String.IsEqual(Container($PARAM[id]).ListItem.DBType,episode)</visible>
+          </control>
+          <control type="textbox">
+            <top>-20</top>
+            <label>$INFO[Container($PARAM[id]).ListItem.Plot]</label>
+            <height min="20" max="130">auto</height>
+            <aligny>top</aligny>
+            <align>left</align>
+            <width>$PARAM[width]</width>
+            <textcolor>b3dedede</textcolor>
+            <font>font_plotbox</font>
+            <scroll>true</scroll>
+            <scrollout>false</scrollout>
+            <autoscroll delay="9000" time="3000" repeat="10000">true</autoscroll>
+            <visible>![Control.IsVisible(1505) | Control.IsVisible(1506)] + !String.Contains(ListItem.Path,plugin.video.youtube)</visible>
+          </control>
+          <control type="textbox">
+            <top>-20</top>
+            <label>$INFO[Container($PARAM[id]).ListItem.Plot]</label>
+            <height min="20" max="130">auto</height>
+            <aligny>top</aligny>
+            <align>left</align>
+            <width>$PARAM[width]</width>
+            <textcolor>b3dedede</textcolor>
+            <font>font_plotbox</font>
+            <scroll>true</scroll>
+            <scrollout>false</scrollout>
+            <autoscroll delay="9000" time="3000" repeat="10000">true</autoscroll>
+            <visible>[Control.IsVisible(1505) | Control.IsVisible(1506)] + !String.Contains(ListItem.Path,plugin.video.youtube)</visible>
+          </control>
+          <control type="textbox">
+            <top>-20</top>
+            <label>[B]Channel:[/B] $INFO[Container($PARAM[id]).ListItem.Plot]</label>
+            <height min="20" max="130">auto</height>
+            <aligny>top</aligny>
+            <align>left</align>
+            <width>$PARAM[width]</width>
+            <textcolor>b3dedede</textcolor>
+            <font>font_plotbox</font>
+            <scroll>true</scroll>
+            <scrollout>false</scrollout>
+            <autoscroll delay="9000" time="3000" repeat="10000">true</autoscroll>
+            <visible>String.Contains(ListItem.Path,plugin.video.youtube)</visible>
+          </control>
+
+        </control>
+      </control>
+    </definition>
+  </include>
+
   <include name="Object_Info_Netflix">
     <param name="hdsd_flag" default="false" />
     <param name="rottentomatoes" default="true" />
@@ -2266,11 +2429,11 @@
       <control type="group">
           <!-- trailer window -->
           <include content="Netflix_Trailer">
-            <param name="top" value="-115" />	
-            <param name="right" value="-40" />	
-            <param name="height" value="720" />	
-            <param name="width" value="1400" />	
-            <param name="visible" value="Player.HasVideo" />	
+            <param name="top" value="-115" />
+            <param name="right" value="-40" />
+            <param name="height" value="720" />
+            <param name="width" value="1400" />
+            <param name="visible" value="Player.HasVideo" />
           </include>
       </control>
       <control type="group">
@@ -2336,7 +2499,7 @@
           </include>
         <!-- Fallback Label-->
         <control type="textbox">
-          <visible>$EXP[DBTvideos] + String.IsEmpty(Window(Home).Property(SkinHelper.ListItem.Art.ClearLogo)) + String.IsEmpty(ListItem.Art(clearlogo)) + String.IsEmpty(ListItem.Art(tvshow.clearlogo))</visible>
+          <visible>$EXP[DBTvideos] + String.IsEmpty(Window(Home).Property(TMDbHelper.ListItem.Art(clearlogo)) + String.IsEmpty(ListItem.Art(clearlogo)) + String.IsEmpty(ListItem.Art(tvshow.clearlogo))</visible>
           <top>-200</top>
           <label>$VAR[video_heading]</label>
           <textcolor>grey</textcolor>
@@ -2522,7 +2685,7 @@
       <ondown>330</ondown>
       <onleft>300</onleft>
       <onback>300</onback>
-      <visible allowhiddenfocus="true">Control.HasFocus(30222) + Skin.HasSetting(DisableAuraHomeLayout)</visible>
+      <visible allowhiddenfocus="true">[Control.HasFocus(5062) | Control.HasFocus(5061) | Control.HasFocus(30222)] + Skin.HasSetting(DisableAuraHomeLayout)</visible>
       <!--      <visible>Window.IsVisible(Home)</visible> -->
       <include>Home_Widget_SubMenu_Items</include>
       <include>Home_Widget_SubMenu_Layout_icon_fixed</include>
@@ -2931,7 +3094,7 @@
       </control>
     </definition>
   </include>
-	
+
 
   <!-- cr to Titan Bingie mode-->
   <include name="Object_CircleWidget">
@@ -3222,7 +3385,7 @@
     <value condition="!Skin.HasSetting(DisableNetflixView) + !Skin.HasSetting(MonochromeFlags)">red</value>
   </variable>
   <include name="Object_PVR_Info">
-    <param name="artwork" default="Window(Home).Property(SkinHelper.ListItem.Art.Fanart)" />
+    <param name="artwork" default="Window(Home).Property(TMDbHelper.ListItem.Art(fanart))" />
     <param name="fallback" default="ListItem.Icon" />
     <definition>
       <control type="image">
@@ -3375,14 +3538,15 @@
         <param name="align" value="left" />
         <param name="width" value="1200" />
         <param name="rottentomatoes" value="true" />
-        <param name="imdbvotes" value="false" />
+        <param name="imdbvotes" value="true" />
         <param name="usermeter" value="false" />
         <param name="imdb" value="true" />
         <param name="tmdb" value="true" />
         <param name="tvdb" value="true" />
         <param name="metacritic" value="true" />
         <param name="oscars" value="$PARAM[oscars]" />
-        <param name="top250" value="$PARAM[top250]" />
+		<param name="top250" value="true" />
+       <!--- <param name="top250" value="$PARAM[top250]" /> -->
         <param name="plot" value="false" />
       </include>
     </control>
@@ -3776,7 +3940,7 @@
               <param name="tvdb" value="true" />
               <param name="metacritic" value="true" />
               <param name="oscars" value="true" />
-              <param name="top250" value="false" />
+              <param name="top250" value="true" />
               <param name="plot" value="false" />
               <param name="studio" value="true" />
             </include>
@@ -3794,11 +3958,11 @@
     <param name="usermeter" default="true" />
     <param name="imdb" default="true" />
     <param name="tmdb" default="true" />
-    <param name="tvdb" default="false" />
+    <param name="tvdb" default="true" />
     <param name="metacritic" default="true" />
     <param name="oscars" default="true" />
-    <param name="top250" default="false" />
-    <param name="studio" default="false" />
+    <param name="top250" default="true" />
+    <param name="studio" default="true" />
     <definition>
       <include content="Object_Ratings_Content" condition="!Skin.HasSetting(MonochromeFlags)">
         <param name="directory" value="$PARAM[directory]" />
@@ -3849,7 +4013,7 @@
     <param name="oscars" default="true" />
     <param name="top250" default="true" />
     <param name="plot" default="false" />
-    <param name="studio" default="false" />
+    <param name="studio" default="true" />
     <param name="trakt" default="true" />
     <param name="star" default="true" />
     <param name="studiodirectory" default="coloured" />
@@ -3867,7 +4031,7 @@
           <width>32</width>
           <height>32</height>
           <texture colordiffuse="$PARAM[colordiffuse]">flags/$PARAM[directory]/ratings/oscar.png</texture>
-          <visible>[$EXP[tmdbu] + String.Contains(Window(Home).Property(TMDbHelper.ListItem.Awards),Oscar) + String.Contains(Window(Home).Property(TMDbHelper.ListItem.Awards),Won)] | [String.Contains(Window(Home).Property(SkinHelper.ListItem.Awards),Oscar) + String.Contains(Window(Home).Property(SkinHelper.ListItem.Awards),Won)]</visible>
+          <visible>[$EXP[tmdbu] + String.Contains(Window(Home).Property(TMDbHelper.ListItem.Awards),Oscar) + String.Contains(Window(Home).Property(TMDbHelper.ListItem.Awards),Won)]</visible>
           <visible>$PARAM[oscars]</visible>
           <visible>!Skin.HasSetting(Ratings.Oscars)</visible>
         </control>
@@ -3879,7 +4043,7 @@
           <align>right</align>
           <font>font_tiny</font>
           <label>$VAR[Label_Oscars,, ]</label>
-          <visible>[$EXP[tmdbu] + String.Contains(Window(Home).Property(TMDbHelper.ListItem.Awards),Oscar) + String.Contains(Window(Home).Property(TMDbHelper.ListItem.Awards),Won)] | [String.Contains(Window(Home).Property(SkinHelper.ListItem.Awards),Oscar) + String.Contains(Window(Home).Property(SkinHelper.ListItem.Awards),Won)]</visible>
+          <visible>[$EXP[tmdbu] + String.Contains(Window(Home).Property(TMDbHelper.ListItem.Awards),Oscar) + String.Contains(Window(Home).Property(TMDbHelper.ListItem.Awards),Won)]</visible>
           <visible>$PARAM[oscars]</visible>
           <visible>!Skin.HasSetting(Ratings.Oscars)</visible>
         </control>
@@ -3888,7 +4052,7 @@
           <width>32</width>
           <height>32</height>
           <texture colordiffuse="$PARAM[colordiffuse]">flags/$PARAM[directory]/ratings/metacritic.png</texture>
-          <visible>!String.IsEmpty(ListItem.Property(Metacritic_Rating)) | [$EXP[tmdbu] + !String.IsEmpty(Window(Home).Property(TMDBHelper.ListItem.MetaCritic.Rating))] |  !String.IsEmpty(Window(Home).Property(SkinHelper.ListItem.MetaCritic.Rating))</visible>
+          <visible>!String.IsEmpty(ListItem.Property(Metacritic_Rating)) | [$EXP[tmdbu] + !String.IsEmpty(Window(Home).Property(TMDBHelper.ListItem.MetaCritic_Rating))]</visible>
           <visible>$PARAM[metacritic]</visible>
           <visible>!Skin.HasSetting(Ratings.Metacritic)</visible>
         </control>
@@ -3900,7 +4064,7 @@
           <align>right</align>
           <font>font_tiny</font>
           <label>$VAR[metacritic_rating]</label>
-          <visible>!String.IsEmpty(ListItem.Property(Metacritic_Rating)) | [$EXP[tmdbu] + !String.IsEmpty(Window(Home).Property(TMDBHelper.ListItem.MetaCritic.Rating))] |  !String.IsEmpty(Window(Home).Property(SkinHelper.ListItem.MetaCritic.Rating))</visible>
+          <visible>!String.IsEmpty(ListItem.Property(Metacritic_Rating)) | [$EXP[tmdbu] + !String.IsEmpty(Window(Home).Property(TMDBHelper.ListItem.MetaCritic_Rating))]</visible>
           <visible>$PARAM[metacritic]</visible>
           <visible>!Skin.HasSetting(Ratings.Metacritic)</visible>
         </control>
@@ -3909,7 +4073,7 @@
           <width>32</width>
           <height>32</height>
           <texture colordiffuse="$PARAM[colordiffuse]">flags/$PARAM[directory]/ratings/popcorn.png</texture>
-          <visible>[Integer.IsGreater(ListItem.Property(rottentomatoes_usermeter),59) | [$EXP[tmdbu] + Integer.IsGreater(Window(home).Property(TMDBHelper.ListItem.RottenTomatoes_UserMeter),59)] | Integer.IsGreater(Window(home).Property(SkinHelper.ListItem.RottenTomatoes.UserMeter),59)] + [!String.IsEmpty(ListItem.Property(rottentomatoes_usermeter)) | !String.IsEmpty(Window(Home).Property(TMDbHelper.ListItem.RottenTomatoes_UserMeter)) | !String.IsEmpty(Window(Home).Property(SkinHelper.ListItem.RottenTomatoes.UserMeter))]</visible>
+          <visible>[Integer.IsGreater(ListItem.Property(rottentomatoes_usermeter),59) | [$EXP[tmdbu] + Integer.IsGreater(Window(home).Property(TMDBHelper.ListItem.RottenTomatoes_UserMeter),59)] + [!String.IsEmpty(ListItem.Property(rottentomatoes_usermeter)) | !String.IsEmpty(Window(Home).Property(TMDbHelper.ListItem.RottenTomatoes_UserMeter))</visible>
           <visible>$PARAM[usermeter]</visible>
           <visible>!Skin.HasSetting(Ratings.RottenTomatoes)</visible>
         </control>
@@ -3918,7 +4082,7 @@
           <width>32</width>
           <height>32</height>
           <texture colordiffuse="$PARAM[colordiffuse]">flags/$PARAM[directory]/ratings/spilt.png</texture>
-          <visible>[!String.IsEmpty(ListItem.Property(rottentomatoes_usermeter)) + !Integer.IsGreater(ListItem.Property(rottentomatoes_usermeter),59)] | [$EXP[tmdbu] + !String.IsEmpty(Window(Home).Property(TMDbHelper.ListItem.RottenTomatoes_UserMeter)) + !Integer.IsGreater(Window(home).Property(TMDBHelper.ListItem.RottenTomatoes_UserMeter),59)] | [!String.IsEmpty(Window(Home).Property(SkinHelper.ListItem.RottenTomatoes.UserMeter)) + !Integer.IsGreater(Window(home).Property(SkinHelper.ListItem.RottenTomatoes.UserMeter),59)]</visible>
+          <visible>[!String.IsEmpty(ListItem.Property(rottentomatoes_usermeter)) + !Integer.IsGreater(ListItem.Property(rottentomatoes_usermeter),59)] | [$EXP[tmdbu] + !String.IsEmpty(Window(Home).Property(TMDbHelper.ListItem.RottenTomatoes_UserMeter)) + !Integer.IsGreater(Window(home).Property(TMDBHelper.ListItem.RottenTomatoes_UserMeter),59)]</visible>
           <visible>$PARAM[usermeter]</visible>
           <visible>!Skin.HasSetting(Ratings.RottenTomatoes)</visible>
         </control>
@@ -3930,7 +4094,7 @@
           <align>right</align>
           <font>font_tiny</font>
           <label>$VAR[rating_usermeter]</label>
-          <visible>!String.IsEmpty(ListItem.Property(rottentomatoes_usermeter)) | [$EXP[tmdbu] + !String.IsEmpty(Window(Home).Property(TMDbHelper.ListItem.RottenTomatoes_UserMeter))] | !String.IsEmpty(Window(Home).Property(SkinHelper.ListItem.RottenTomatoes.UserMeter))</visible>
+          <visible>!String.IsEmpty(ListItem.Property(rottentomatoes_usermeter)) | [$EXP[tmdbu] + !String.IsEmpty(Window(Home).Property(TMDbHelper.ListItem.RottenTomatoes_UserMeter))]</visible>
           <visible>$PARAM[usermeter]</visible>
           <visible>!Skin.HasSetting(Ratings.RottenTomatoes)</visible>
         </control>
@@ -3939,8 +4103,8 @@
           <width>32</width>
           <height>32</height>
           <texture colordiffuse="$PARAM[colordiffuse]">flags/$PARAM[directory]/ratings/rtrotten.png</texture>
-          <visible>[Integer.IsGreater(ListItem.Property(rottentomatoes_rating),0) + !Integer.IsGreater(ListItem.Property(rottentomatoes_rating),59) ] | [$EXP[tmdbu] + Integer.IsGreater(Window(home).Property(TMDBHelper.ListItem.RottenTomatoes_Rating),0) + !Integer.IsGreater(Window(home).Property(TMDBHelper.ListItem.RottenTomatoes_Rating),59) ] | [Integer.IsGreater(Window(home).Property(SkinHelper.ListItem.RottenTomatoes.Rating),0) + !Integer.IsGreater(Window(home).Property(SkinHelper.ListItem.RottenTomatoes.Rating),59)]</visible>
-          <visible>!String.IsEmpty(ListItem.Property(rottentomatoes_rating)) | !String.IsEmpty(Window(Home).Property(TMDbHelper.ListItem.RottenTomatoes_Rating)) | !String.IsEmpty(Window(Home).Property(SkinHelper.ListItem.RottenTomatoes.Rating))</visible>
+          <visible>[Integer.IsGreater(ListItem.Property(rottentomatoes_rating),0) + !Integer.IsGreater(ListItem.Property(rottentomatoes_rating),59) ] | [$EXP[tmdbu] + Integer.IsGreater(Window(home).Property(TMDBHelper.ListItem.RottenTomatoes_Rating),0) + !Integer.IsGreater(Window(home).Property(TMDBHelper.ListItem.RottenTomatoes_Rating),59) ] </visible>
+          <visible>!String.IsEmpty(ListItem.Property(rottentomatoes_rating)) | !String.IsEmpty(Window(Home).Property(TMDbHelper.ListItem.RottenTomatoes_Rating)) </visible>
           <visible>$PARAM[rottentomatoes]</visible>
           <visible>!Skin.HasSetting(Ratings.RottenTomatoes)</visible>
         </control>
@@ -3949,8 +4113,8 @@
           <width>32</width>
           <height>32</height>
           <texture colordiffuse="$PARAM[colordiffuse]">flags/$PARAM[directory]/ratings/rtfresh.png</texture>
-          <visible>[Integer.IsGreater(ListItem.Property(rottentomatoes_rating),59) + !Integer.IsGreater(ListItem.Property(rottentomatoes_rating),74)] | [$EXP[tmdbu] + Integer.IsGreater(Window(home).Property(TMDBHelper.ListItem.RottenTomatoes_Rating),59) + !Integer.IsGreater(Window(home).Property(TMDBHelper.ListItem.RottenTomatoes_Rating),74)] | [Integer.IsGreater(Window(home).Property(SkinHelper.ListItem.RottenTomatoes.Rating),59) + !Integer.IsGreater(Window(home).Property(SkinHelper.ListItem.RottenTomatoes.Rating),74)]</visible>
-          <visible>!String.IsEmpty(ListItem.Property(rottentomatoes_rating)) | !String.IsEmpty(Window(Home).Property(TMDbHelper.ListItem.RottenTomatoes_Rating)) | !String.IsEmpty(Window(Home).Property(SkinHelper.ListItem.RottenTomatoes.Rating))</visible>
+          <visible>[Integer.IsGreater(ListItem.Property(rottentomatoes_rating),59) + !Integer.IsGreater(ListItem.Property(rottentomatoes_rating),74)] | [$EXP[tmdbu] + Integer.IsGreater(Window(home).Property(TMDBHelper.ListItem.RottenTomatoes_Rating),59) + !Integer.IsGreater(Window(home).Property(TMDBHelper.ListItem.RottenTomatoes_Rating),74)] </visible>
+          <visible>!String.IsEmpty(ListItem.Property(rottentomatoes_rating)) | !String.IsEmpty(Window(Home).Property(TMDbHelper.ListItem.RottenTomatoes_Rating))</visible>
           <visible>$PARAM[rottentomatoes]</visible>
           <visible>!Skin.HasSetting(Ratings.RottenTomatoes)</visible>
         </control>
@@ -3960,8 +4124,8 @@
           <height>32</height>
           <texture colordiffuse="$PARAM[colordiffuse]">flags/$PARAM[directory]/ratings/rtfresh.png</texture>
           <texture colordiffuse="$PARAM[colordiffuse]">flags/$PARAM[directory]/ratings/certified.png</texture>
-          <visible>!String.IsEmpty(ListItem.Property(rottentomatoes_rating)) | [$EXP[tmdbu] + !String.IsEmpty(Window(Home).Property(TMDbHelper.ListItem.RottenTomatoes_Rating))] | !String.IsEmpty(Window(Home).Property(SkinHelper.ListItem.RottenTomatoes.Rating))</visible>
-          <visible>Integer.IsGreater(ListItem.Property(rottentomatoes_rating),74) | Integer.IsGreater(Window(home).Property(TMDBHelper.ListItem.RottenTomatoes_Rating),74) | Integer.IsGreater(Window(home).Property(SkinHelper.ListItem.RottenTomatoes.Rating),74)</visible>
+          <visible>!String.IsEmpty(ListItem.Property(rottentomatoes_rating)) | [$EXP[tmdbu] + !String.IsEmpty(Window(Home).Property(TMDbHelper.ListItem.RottenTomatoes_Rating))] </visible>
+          <visible>Integer.IsGreater(ListItem.Property(rottentomatoes_rating),74) | Integer.IsGreater(Window(home).Property(TMDBHelper.ListItem.RottenTomatoes_Rating),74) </visible>
           <visible>$PARAM[rottentomatoes]</visible>
           <visible>!Skin.HasSetting(Ratings.RottenTomatoes)</visible>
         </control>
@@ -3973,7 +4137,7 @@
           <align>right</align>
           <font>font_tiny</font>
           <label>$VAR[rating_rtmeter]</label>
-          <visible>!String.IsEmpty(ListItem.Property(rottentomatoes_rating)) | [$EXP[tmdbu] + !String.IsEmpty(Window(Home).Property(TMDbHelper.ListItem.RottenTomatoes_Rating))] | !String.IsEmpty(Window(Home).Property(SkinHelper.ListItem.RottenTomatoes.Rating))</visible>
+          <visible>!String.IsEmpty(ListItem.Property(rottentomatoes_rating)) | [$EXP[tmdbu] + !String.IsEmpty(Window(Home).Property(TMDbHelper.ListItem.RottenTomatoes_Rating))] </visible>
           <visible>$PARAM[rottentomatoes]</visible>
           <visible>!Skin.HasSetting(Ratings.RottenTomatoes)</visible>
         </control>
@@ -3982,7 +4146,7 @@
           <width>32</width>
           <height>32</height>
           <texture colordiffuse="$PARAM[colordiffuse]">flags/$PARAM[directory]/ratings/tmdb.png</texture>
-          <visible>!String.IsEmpty(ListItem.Property(tmdb_rating)) | [$EXP[tmdbu] + !String.IsEmpty(Window(Home).Property(TMDBHelper.ListItem.TMDb_Rating))] | !String.IsEmpty(Window(Home).Property(SkinHelper.ListItem.Rating.TMDB))</visible>
+          <visible>!String.IsEmpty(ListItem.Property(tmdb_rating)) | [$EXP[tmdbu] + !String.IsEmpty(Window(Home).Property(TMDBHelper.ListItem.TMDb_Rating))] </visible>
           <visible>$PARAM[tmdb]</visible>
           <visible>!Skin.HasSetting(Ratings.TheMovieDB)</visible>
         </control>
@@ -3994,7 +4158,7 @@
           <align>right</align>
           <font>font_tiny</font>
           <label>$VAR[rating_tmdb]</label>
-          <visible>!String.IsEmpty(ListItem.Property(tmdb_rating)) | [$EXP[tmdbu] + !String.IsEmpty(Window(Home).Property(TMDBHelper.ListItem.TMDb_Rating))] | !String.IsEmpty(Window(Home).Property(SkinHelper.ListItem.Rating.TMDB))</visible>
+          <visible>!String.IsEmpty(ListItem.Property(tmdb_rating)) | [$EXP[tmdbu] + !String.IsEmpty(Window(Home).Property(TMDBHelper.ListItem.TMDb_Rating))] </visible>
           <visible>$PARAM[tmdb]</visible>
           <visible>!Skin.HasSetting(Ratings.TheMovieDB)</visible>
         </control>
@@ -4109,7 +4273,7 @@
           <width>40</width>
           <height>32</height>
           <texture colordiffuse="$PARAM[colordiffuse]">flags/$PARAM[directory]/ratings/imdbicon.png</texture>
-	  <visible>!String.IsEmpty(Window(home).Property(SkinHelper.ListItem.Votes.IMDB)) | !String.IsEmpty(Window(home).Property(SkinHelper.ListItem.Rating.IMDB)) | [$EXP[tmdbu] + [!String.IsEmpty(Window(Home).Property(TMDbHelper.ListItem.IMDb_Rating)) | !String.IsEmpty(Window(Home).Property(TMDbHelper.ListItem.IMDb_Votes))]]</visible>
+	  <visible>[$EXP[tmdbu] + [!String.IsEmpty(Window(Home).Property(TMDbHelper.ListItem.IMDb_Rating)) | !String.IsEmpty(Window(Home).Property(TMDbHelper.ListItem.IMDb_Votes))]]</visible>
           <visible>$PARAM[imdb]</visible>
           <visible>!Skin.HasSetting(Ratings.IMDB)</visible>
         </control>
@@ -4121,7 +4285,7 @@
           <align>right</align>
           <font>font_tiny</font>
           <label>$VAR[imdb_ratings] $VAR[imdb_votes]</label>
-	  <visible>!String.IsEmpty(Window(home).Property(SkinHelper.ListItem.Votes.IMDB)) | !String.IsEmpty(Window(home).Property(SkinHelper.ListItem.Rating.IMDB)) | [$EXP[tmdbu] + [!String.IsEmpty(Window(Home).Property(TMDbHelper.ListItem.IMDb_Rating)) | !String.IsEmpty(Window(Home).Property(TMDbHelper.ListItem.IMDb_Votes))]]</visible>
+	  <visible>[$EXP[tmdbu] + [!String.IsEmpty(Window(Home).Property(TMDbHelper.ListItem.IMDb_Rating)) | !String.IsEmpty(Window(Home).Property(TMDbHelper.ListItem.IMDb_Votes))]]</visible>
           <visible>!Skin.HasSetting(Ratings.IMDB) + Skin.HasSetting(Ratings.IMDBVotes)</visible>
         </control>
         <control type="label">
@@ -4132,7 +4296,7 @@
           <align>right</align>
           <font>font_tiny</font>
           <label>$VAR[imdb_ratings]</label>
-	  <visible>!String.IsEmpty(Window(home).Property(SkinHelper.ListItem.Rating.IMDB)) | [$EXP[tmdbu] + !String.IsEmpty(Window(Home).Property(TMDbHelper.ListItem.IMDb_Rating))]</visible>
+	  <visible>[$EXP[tmdbu] + !String.IsEmpty(Window(Home).Property(TMDbHelper.ListItem.IMDb_Rating))]</visible>
           <visible>!Skin.HasSetting(Ratings.IMDB) + !Skin.HasSetting(Ratings.IMDBVotes)</visible>
         </control>
         <control type="image">
@@ -4140,18 +4304,18 @@
           <width>72</width>
           <height>32</height>
           <texture colordiffuse="$PARAM[colordiffuse]">imdbtop250.png</texture>
-          <visible>!String.IsEmpty(Window(Home).Property(SkinHelper.ListItem.IMDB.Top250))</visible>
+          <visible>!String.IsEmpty(Window(Home).Property(TMDbHelper.ListItem.Top250))</visible>
           <visible>$PARAM[imdb]</visible>
-          <visible>!Skin.HasSetting(Ratings.IMDB250) + Skin.HasSetting(MonochromeFlags)</visible>
+          <visible>!Skin.HasSetting(Ratings.top250) + Skin.HasSetting(MonochromeFlags)</visible>
         </control>
         <control type="image">
           <top>11</top>
           <width>72</width>
           <height>32</height>
           <texture colordiffuse="$PARAM[colordiffuse]">imdb250_colored.png</texture>
-          <visible>!String.IsEmpty(Window(Home).Property(SkinHelper.ListItem.IMDB.Top250))</visible>
+          <visible>!String.IsEmpty(Window(Home).Property(TMDbHelper.ListItem.Top250))</visible>
           <visible>$PARAM[imdb]</visible>
-          <visible>!Skin.HasSetting(Ratings.IMDB250) + !Skin.HasSetting(MonochromeFlags)</visible>
+          <visible>!Skin.HasSetting(Ratings.top250250) + !Skin.HasSetting(MonochromeFlags)</visible>
         </control>
         <control type="label">
           <textcolor>main_fg_70</textcolor>
@@ -4160,11 +4324,11 @@
           <height>28</height>
           <align>right</align>
           <font>font_tiny</font>
-          <label>$INFO[Window(Home).Property(SkinHelper.ListItem.IMDB.Top250),#,]</label>
-          <visible>Integer.IsGreater(Window(home).Property(SkinHelper.ListItem.IMDB.Top250),0)</visible>
+          <label>$INFO[Window(Home).Property(TMDbHelper.ListItem.IMDB.Top250),#,]</label>
+          <visible>Integer.IsGreater(Window(home).Property(TMDbHelper.ListItem.Top250),0)</visible>
           <visible>$PARAM[imdb]</visible>
-          <visible>!String.IsEmpty(Window(Home).Property(SkinHelper.ListItem.IMDB.Top250))</visible>
-          <visible>!Skin.HasSetting(Ratings.IMDB250)</visible>
+          <visible>!String.IsEmpty(Window(Home).Property(TMDbHelper.ListItem.Top250))</visible>
+          <visible>!Skin.HasSetting(Ratings.top250)</visible>
         </control>
         <control type="label">
           <left>5</left>
@@ -4187,7 +4351,6 @@
           <width>64</width>
           <visible>$PARAM[studio]</visible>
           <visible>Skin.HasSetting(DisableWidgetStudio)</visible>
-	  <visible>!String.IsEqual(ListItem.DBType,movie) + !String.IsEqual(Container(5055).ListItem.DBType,movie)</visible>
           <visible>!String.IsEmpty(ListItem.Studio) + !String.Contains(ListItem.Studio,/)</visible>
           <visible>![Control.HasFocus(300) | Control.HasFocus(30222) | Control.IsVisible(1506)] + !Window.IsVisible(DialogVideoInfo.xml)</visible>
         </control>
@@ -4201,7 +4364,6 @@
           <width>64</width>
           <visible>$PARAM[studio]</visible>
           <visible>Skin.HasSetting(DisableWidgetStudio)</visible>
-	  <visible>!String.IsEqual(ListItem.DBType,movie) + !String.IsEqual(Container(5055).ListItem.DBType,movie)</visible>
           <visible>!Control.IsVisible(1506) +  [String.IsEmpty(ListItem.Studio) | String.Contains(ListItem.Studio,/)] + !String.IsEmpty(Window(Home).Property(TMDbHelper.ListItem.Studio.1.Name))</visible>
           <visible>!Window.IsVisible(DialogVideoInfo.xml)</visible>
         </control>
@@ -4216,6 +4378,75 @@
           <visible>$PARAM[studio]</visible>
           <visible>Skin.HasSetting(DisableWidgetStudio)</visible>
           <visible>Control.IsVisible(1505) + String.IsEmpty(ListItem.Studio) + String.IsEmpty(Window(Home).Property(TMDbHelper.ListItem.Studio.1.Name)) + !String.IsEmpty(Container(1505).ListItem.Studio) + !String.Contains(Container(1505).ListItem.Studio,/)</visible>
+          <visible>!Window.IsVisible(DialogVideoInfo.xml)</visible>
+        </control>
+        <control type="image">
+          <animation effect="slide" end="0,-10" time="0" condition="Control.IsVisible(1505) + !String.IsEmpty(Container(1505).ListItem.Studio)">Conditional</animation>
+          <top>13</top>
+          <aligny>bottom</aligny>
+          <texture colordiffuse="main_fg_100">$INFO[Container(1506).ListItem.Studio,resource://resource.images.studios.$PARAM[studiodirectory]/,.png]</texture>
+          <aspectratio>stretch</aspectratio>
+          <height>44</height>
+          <width>64</width>
+          <visible>$PARAM[studio]</visible>
+          <visible>Skin.HasSetting(DisableWidgetStudio)</visible>
+          <visible>Control.IsVisible(1506) + String.IsEmpty(ListItem.Studio) + String.IsEmpty(Window(Home).Property(TMDbHelper.ListItem.Studio.1.Name)) + !String.IsEmpty(Container(1505).ListItem.Studio) + !String.Contains(Container(1505).ListItem.Studio,/)</visible>
+          <visible>!Window.IsVisible(DialogVideoInfo.xml)</visible>
+        </control>
+        <control type="label">
+          <textcolor>main_fg_70</textcolor>
+          <top>12</top>
+          <width>auto</width>
+          <height>28</height>
+          <align>right</align>
+          <font>font_tiny</font>
+          <label>$INFO[Window(Home).Property(TMDbHelper.ListItem.Studio.1.Name)]</label>
+          <scroll>true</scroll>
+          <visible>$PARAM[studio]</visible>
+          <visible>Skin.HasSetting(DisableWidgetStudio)</visible>
+          <visible>!Control.IsVisible(1506) +  [String.IsEmpty(ListItem.Studio) | String.Contains(ListItem.Studio,/)] + !String.IsEmpty(Window(Home).Property(TMDbHelper.ListItem.Studio.1.Name))</visible>
+          <visible>!Window.IsVisible(DialogVideoInfo.xml)</visible>
+        </control>
+        <control type="label">
+          <textcolor>main_fg_70</textcolor>
+          <top>12</top>
+          <width max="300">auto</width>
+          <height>28</height>
+          <align>left</align>
+          <font>font_tiny</font>
+          <label>$INFO[ListItem.Studio]</label>
+          <visible>$PARAM[studio]</visible>
+          <visible>Skin.HasSetting(DisableWidgetStudio)</visible>
+          <visible>!String.IsEmpty(ListItem.Studio)</visible>
+          <visible>String.IsEmpty(Window(Home).Property(TMDbHelper.ListItem.Studio.1.Name))</visible>
+          <visible>![Control.HasFocus(300) | Control.HasFocus(30222) | Control.IsVisible(1506)] + !Window.IsVisible(DialogVideoInfo.xml)</visible>
+        </control>
+        <control type="label">
+          <textcolor>main_fg_70</textcolor>
+          <top>12</top>
+          <width>auto</width>
+          <height>28</height>
+          <align>right</align>
+          <font>font_tiny</font>
+          <label>$INFO[Container(1505).ListItem.Studio]</label>
+          <scroll>true</scroll>
+          <visible>$PARAM[studio]</visible>
+          <visible>Skin.HasSetting(DisableWidgetStudio)</visible>
+          <visible>Control.IsVisible(1505) + String.IsEmpty(ListItem.Studio) + String.IsEmpty(Window(Home).Property(TMDbHelper.ListItem.Studio.1.Name)) + !String.IsEmpty(Container(1505).ListItem.Studio)</visible>
+          <visible>!Window.IsVisible(DialogVideoInfo.xml)</visible>
+        </control>
+        <control type="label">
+          <textcolor>main_fg_70</textcolor>
+          <top>12</top>
+          <width>auto</width>
+          <height>28</height>
+          <align>right</align>
+          <font>font_tiny</font>
+          <label>$INFO[Container(1506).ListItem.Studio]</label>
+          <scroll>true</scroll>
+          <visible>$PARAM[studio]</visible>
+          <visible>Skin.HasSetting(DisableWidgetStudio)</visible>
+          <visible>Control.IsVisible(1506) + String.IsEmpty(ListItem.Studio) + String.IsEmpty(Window(Home).Property(TMDbHelper.ListItem.Studio.1.Name)) + !String.IsEmpty(Container(1505).ListItem.Studio)</visible>
           <visible>!Window.IsVisible(DialogVideoInfo.xml)</visible>
         </control>
       </control>
@@ -4248,7 +4479,7 @@
           <width>32</width>
           <height>32</height>
           <texture colordiffuse="$PARAM[colordiffuse]">flags/$PARAM[directory]/ratings/oscar.png</texture>
-          <visible>String.Contains(Window(Home).Property(SkinHelper.Player.Awards),Oscar) + String.Contains(Window(Home).Property(SkinHelper.Player.Awards),Won)</visible>
+          <visible>String.Contains(Window(Home).Property(TMDbHelper.ListItem.Awards),Oscar) + String.Contains(Window(Home).Property(TMDbHelper.ListItem.Awards),Won)]</visible>
           <visible>$PARAM[oscars]</visible>
           <visible>!Skin.HasSetting(Ratings.Oscars)</visible>
         </control>
@@ -4260,7 +4491,7 @@
           <align>right</align>
           <font>font_tiny</font>
           <label>$VAR[Label_OSD_Oscars,, ]</label>
-          <visible>String.Contains(Window(Home).Property(SkinHelper.Player.Awards),Oscar) + String.Contains(Window(Home).Property(SkinHelper.Player.Awards),Won)</visible>
+          <visible>String.Contains(Window(Home).Property(TMDbHelper.ListItem.Awards),Oscar) + String.Contains(Window(Home).Property(TMDbHelper.ListItem.Awards),Won)]</visible>
           <visible>$PARAM[oscars]</visible>
           <visible>!Skin.HasSetting(Ratings.Oscars)</visible>
         </control>
@@ -4269,7 +4500,7 @@
           <width>32</width>
           <height>32</height>
           <texture colordiffuse="$PARAM[colordiffuse]">flags/$PARAM[directory]/ratings/metacritic.png</texture>
-          <visible>!String.IsEmpty(Window(Home).Property(SkinHelper.Player.MetaCritic.Rating))</visible>
+          <visible>!String.IsEmpty(Window(Home).Property(TMDbHelper.Player.MetaCritic_Rating))</visible>
           <visible>$PARAM[metacritic]</visible>
           <visible>!Skin.HasSetting(Ratings.Metacritic)</visible>
         </control>
@@ -4280,8 +4511,8 @@
           <height>28</height>
           <align>right</align>
           <font>font_tiny</font>
-          <label>$INFO[Window(Home).Property(SkinHelper.Player.MetaCritic.Rating), ,% ]</label>
-          <visible>!String.IsEmpty(Window(Home).Property(SkinHelper.Player.MetaCritic.Rating))</visible>
+          <label>$INFO[Window(Home).Property(TMDbHelper.Player.MetaCritic_Rating), ,% ]</label>
+          <visible>!String.IsEmpty(Window(Home).Property(TMDbHelper.Player.MetaCritic_Rating))</visible>
           <visible>$PARAM[metacritic]</visible>
           <visible>!Skin.HasSetting(Ratings.Metacritic)</visible>
         </control>
@@ -4290,7 +4521,7 @@
           <width>32</width>
           <height>32</height>
           <texture colordiffuse="$PARAM[colordiffuse]">flags/$PARAM[directory]/ratings/tmdb.png</texture>
-          <visible>!String.IsEmpty(Window(Home).Property(SkinHelper.Player.Rating.TMDB))</visible>
+          <visible>!String.IsEmpty(Window(Home).Property(TMDbHelper.Player.TMDb_Rating))</visible>
           <visible>$PARAM[tmdb]</visible>
           <visible>!Skin.HasSetting(Ratings.TheMovieDB)</visible>
         </control>
@@ -4301,8 +4532,8 @@
           <height>28</height>
           <align>right</align>
           <font>font_tiny</font>
-          <label>$INFO[Window(Home).Property(SkinHelper.Player.Rating.TMDB), , ]</label>
-          <visible>!String.IsEmpty(Window(Home).Property(SkinHelper.Player.Rating.TMDB))</visible>
+          <label>$INFO[Window(Home).Property(TMDbHelper.Player.TMDb_Rating), , ]</label>
+          <visible>!String.IsEmpty(Window(Home).Property(TMDbHelper.Player.TMDb_Rating))</visible>
           <visible>$PARAM[tmdb]</visible>
           <visible>!Skin.HasSetting(Ratings.TheMovieDB)</visible>
         </control>
@@ -4332,8 +4563,8 @@
           <width>32</width>
           <height>32</height>
           <texture colordiffuse="$PARAM[colordiffuse]">flags/$PARAM[directory]/ratings/popcorn.png</texture>
-          <visible>!String.IsEmpty(Window(Home).Property(SkinHelper.Player.RottenTomatoes.UserMeter))</visible>
-          <visible>Integer.IsGreater(Window(home).Property(SkinHelper.Player.RottenTomatoes.Us&#226;&#8364;&#8249;erMeter),59)</visible>
+          <visible>!String.IsEmpty(Window(Home).Property(TMDbHelper.Player.RottenTomatoes_UserMeter))</visible>
+          <visible>Integer.IsGreater(Window(home).Property(TMDbHelper.Player.RottenTomatoes_UserMeter),59)</visible>
           <visible>$PARAM[usermeter]</visible>
           <visible>!Skin.HasSetting(Ratings.RottenTomatoes)</visible>
         </control>
@@ -4342,8 +4573,8 @@
           <width>32</width>
           <height>32</height>
           <texture colordiffuse="$PARAM[colordiffuse]">flags/$PARAM[directory]/ratings/spilt.png</texture>
-          <visible>!String.IsEmpty(Window(Home).Property(SkinHelper.Player.RottenTomatoes.UserMeter))</visible>
-          <visible>!Integer.IsGreater(Window(home).Property(SkinHelper.Player.RottenTomatoes.Us&#226;&#8364;&#8249;erMeter),59)</visible>
+          <visible>!String.IsEmpty(Window(Home).Property(TMDbHelper.Player.RottenTomatoes_UserMeter))</visible>
+          <visible>!Integer.IsGreater(Window(home).Property(TMDbHelper.Player.RottenTomatoes_UserMeter),59)</visible>
           <visible>$PARAM[usermeter]</visible>
           <visible>!Skin.HasSetting(Ratings.RottenTomatoes)</visible>
         </control>
@@ -4354,8 +4585,8 @@
           <height>28</height>
           <align>right</align>
           <font>font_tiny</font>
-          <label>$INFO[Window(Home).Property(SkinHelper.Player.RottenTomatoes.UserMeter), ,% ]</label>
-          <visible>!String.IsEmpty(Window(Home).Property(SkinHelper.Player.RottenTomatoes.UserMeter))</visible>
+          <label>$INFO[Window(Home).Property(TMDbHelper.Player.RottenTomatoes_UserMeter), ,% ]</label>
+          <visible>!String.IsEmpty(Window(Home).Property(TMDbHelper.Player.RottenTomatoes_UserMeter))</visible>
           <visible>$PARAM[usermeter]</visible>
           <visible>!Skin.HasSetting(Ratings.RottenTomatoes)</visible>
         </control>
@@ -4363,8 +4594,8 @@
           <width>32</width>
           <height>32</height>
           <texture colordiffuse="$PARAM[colordiffuse]">flags/$PARAM[directory]/ratings/rtrotten.png</texture>
-          <visible>!String.IsEmpty(Window(Home).Property(SkinHelper.Player.RottenTomatoes.Rating))</visible>
-          <visible>Integer.IsGreater(Window(home).Property(SkinHelper.Player.RottenTomatoes.Rating),0) + !Integer.IsGreater(Window(home).Property(SkinHelper.Player.RottenTomatoes.Rating),59)</visible>
+          <visible>!String.IsEmpty(Window(Home).Property(TMDbHelper.Player.RottenTomatoes_Rating))</visible>
+          <visible>Integer.IsGreater(Window(home).Property(TMDbHelper.Player.RottenTomatoes_Rating),0) + !Integer.IsGreater(Window(home).Property(TMDbHelper.Player.RottenTomatoes_Rating),59)</visible>
           <visible>$PARAM[rottentomatoes]</visible>
           <visible>!Skin.HasSetting(Ratings.RottenTomatoes)</visible>
         </control>
@@ -4372,8 +4603,8 @@
           <width>32</width>
           <height>32</height>
           <texture colordiffuse="$PARAM[colordiffuse]">flags/$PARAM[directory]/ratings/rtfresh.png</texture>
-          <visible>!String.IsEmpty(Window(Home).Property(SkinHelper.Player.RottenTomatoes.Rating))</visible>
-          <visible>Integer.IsGreater(Window(home).Property(SkinHelper.Player.RottenTomatoes.Rating),59) + !Integer.IsGreater(Window(home).Property(SkinHelper.Player.RottenTomatoes.Rating),74)</visible>
+          <visible>!String.IsEmpty(Window(Home).Property(TMDbHelper.Player.RottenTomatoes_Rating))</visible>
+          <visible>Integer.IsGreater(Window(home).Property(TMDbHelper.Player.RottenTomatoes_Rating),59) + !Integer.IsGreater(Window(home).Property(TMDbHelper.Player.RottenTomatoes_Rating),74)</visible>
           <visible>$PARAM[rottentomatoes]</visible>
           <visible>!Skin.HasSetting(Ratings.RottenTomatoes)</visible>
         </control>
@@ -4382,8 +4613,8 @@
           <height>32</height>
           <texture colordiffuse="$PARAM[colordiffuse]">flags/$PARAM[directory]/ratings/rtfresh.png</texture>
           <texture colordiffuse="$PARAM[colordiffuse]">flags/$PARAM[directory]/ratings/certified.png</texture>
-          <visible>!String.IsEmpty(Window(Home).Property(SkinHelper.Player.RottenTomatoes.Rating))</visible>
-          <visible>Integer.IsGreater(Window(home).Property(SkinHelper.Player.RottenTomatoes.Rating),74)</visible>
+          <visible>!String.IsEmpty(Window(Home).Property(TMDbHelper.Player.RottenTomatoes_Rating))</visible>
+          <visible>Integer.IsGreater(Window(home).Property(TMDbHelper.Player.RottenTomatoes_Rating),74)</visible>
           <visible>$PARAM[rottentomatoes]</visible>
           <visible>!Skin.HasSetting(Ratings.RottenTomatoes)</visible>
         </control>
@@ -4394,8 +4625,8 @@
           <height>28</height>
           <align>right</align>
           <font>font_tiny</font>
-          <label>$INFO[Window(Home).Property(SkinHelper.Player.RottenTomatoes.Rating), ,% ]</label>
-          <visible>!String.IsEmpty(Window(Home).Property(SkinHelper.Player.RottenTomatoes.Rating))</visible>
+          <label>$INFO[Window(Home).Property(TMDbHelper.Player.RottenTomatoes_Rating), ,% ]</label>
+          <visible>!String.IsEmpty(Window(Home).Property(TMDbHelper.Player.RottenTomatoes_Rating))</visible>
           <visible>$PARAM[rottentomatoes]</visible>
           <visible>!Skin.HasSetting(Ratings.RottenTomatoes)</visible>
         </control>
@@ -4404,7 +4635,7 @@
           <width>40</width>
           <height>32</height>
           <texture colordiffuse="$PARAM[colordiffuse]">flags/$PARAM[directory]/ratings/imdbicon.png</texture>
-          <visible>!String.IsEmpty(Player.RatingAndVotes) | !String.IsEmpty(Window(home).Property(SkinHelper.Player.Rating.IMDB)) | [Window.IsVisible(DialogVideoInfo.xml) + !String.IsEmpty(Player.Rating)]</visible>
+          <visible>!String.IsEmpty(Player.RatingAndVotes) | !String.IsEmpty(Window(home).Property(TMDbHelper.Player.IMDb_Rating)) | [Window.IsVisible(DialogVideoInfo.xml) + !String.IsEmpty(Player.Rating)]</visible>
           <visible>$PARAM[imdb]</visible>
           <visible>!Skin.HasSetting(Ratings.IMDB)</visible>
         </control>
@@ -4415,9 +4646,9 @@
           <height>28</height>
           <align>right</align>
           <font>font_tiny</font>
-          <label>$INFO[Window(home).Property(SkinHelper.Player.Rating.IMDB), ,]$INFO[Window(home).Property(SkinHelper.Player.Votes.IMDB), (, $LOCALIZE[205])]</label>
+          <label>$INFO[Window(home).Property(TMDbHelper.Player.IMDb_Rating), ,]$INFO[Window(home).Property(TMDbHelper.Player.IMDb_Votes), (, $LOCALIZE[205])]</label>
           <visible>!Window.IsVisible(DialogVideoInfo.xml)</visible>
-          <visible>!String.IsEmpty(Window(home).Property(SkinHelper.Player.Rating.IMDB))</visible>
+          <visible>!String.IsEmpty(Window(home).Property(TMDbHelper.Player.IMDb_Rating))</visible>
           <visible>$PARAM[imdb]</visible>
           <visible>!Skin.HasSetting(Ratings.IMDB)</visible>
           <visible>$PARAM[imdbvotes]</visible>
@@ -4431,7 +4662,7 @@
           <font>font_tiny</font>
           <label>$INFO[Player.RatingAndVotes, ,]</label>
           <visible>!Window.IsVisible(DialogVideoInfo.xml)</visible>
-          <visible>String.IsEmpty(Window(home).Property(SkinHelper.Player.Rating.IMDB)) + !String.IsEmpty(Player.RatingAndVotes)</visible>
+          <visible>String.IsEmpty(Window(home).Property(TMDbHelper.Player.IMDb_Rating)) + !String.IsEmpty(Player.RatingAndVotes)</visible>
           <visible>$PARAM[imdbvotes]</visible>
           <visible>$PARAM[imdb]</visible>
           <visible>!Skin.HasSetting(Ratings.IMDB)</visible>
@@ -4443,9 +4674,9 @@
           <height>28</height>
           <align>right</align>
           <font>font_tiny</font>
-          <label>$INFO[Window(home).Property(SkinHelper.Player.Rating.IMDB), ,]</label>
+          <label>$INFO[Window(home).Property(TMDbHelper.Player.IMDb_Rating), ,]</label>
           <visible>!Window.IsVisible(DialogVideoInfo.xml)</visible>
-          <visible>!String.IsEmpty(Window(home).Property(SkinHelper.Player.Rating.IMDB))</visible>
+          <visible>!String.IsEmpty(Window(home).Property(TMDbHelper.Player.IMDb_Rating))</visible>
           <visible>$PARAM[imdb]</visible>
           <visible>!Skin.HasSetting(Ratings.IMDB)</visible>
           <visible>!$PARAM[imdbvotes]</visible>
@@ -4459,7 +4690,7 @@
           <font>font_tiny</font>
           <label>$INFO[Player.Rating, ,]</label>
           <visible>!Window.IsVisible(DialogVideoInfo.xml)</visible>
-          <visible>String.IsEmpty(Window(home).Property(SkinHelper.Player.Rating.IMDB)) + !String.IsEmpty(Player.Rating)</visible>
+          <visible>String.IsEmpty(Window(home).Property(TMDbHelper.Player.IMDb_Rating)) + !String.IsEmpty(Player.Rating)</visible>
           <visible>$PARAM[imdb]</visible>
           <visible>!Skin.HasSetting(Ratings.IMDB)</visible>
           <visible>!$PARAM[imdbvotes]</visible>
@@ -4471,9 +4702,9 @@
           <height>28</height>
           <align>right</align>
           <font>font_tiny</font>
-          <label>$INFO[Window(home).Property(SkinHelper.Player.Rating.IMDB), ,]</label>
+          <label>$INFO[Window(home).Property(TMDbHelper.Player.IMDb_Rating), ,]</label>
           <visible>Window.IsVisible(DialogVideoInfo.xml)</visible>
-          <visible>!String.IsEmpty(Window(home).Property(SkinHelper.Player.Rating.IMDB))</visible>
+          <visible>!String.IsEmpty(Window(home).Property(TMDbHelper.Player.IMDb_Rating))</visible>
           <visible>$PARAM[imdb]</visible>
           <visible>!Skin.HasSetting(Ratings.IMDB)</visible>
         </control>
@@ -4486,7 +4717,7 @@
           <font>font_tiny</font>
           <label>$INFO[Player.Rating, ,]</label>
           <visible>Window.IsVisible(DialogVideoInfo.xml)</visible>
-          <visible>String.IsEmpty(Window(home).Property(SkinHelper.Player.Rating.IMDB)) + !String.IsEmpty(Player.Rating)</visible>
+          <visible>String.IsEmpty(Window(home).Property(TMDbHelper.Player.IMDb_Rating)) + !String.IsEmpty(Player.Rating)</visible>
           <visible>$PARAM[imdb]</visible>
           <visible>!Skin.HasSetting(Ratings.IMDB)</visible>
         </control>
@@ -4497,10 +4728,8 @@
           <height>28</height>
           <align>right</align>
           <font>font_tiny</font>
-          <label>$INFO[Window(Home).Property(SkinHelper.Player.IMDB.Top250),#,]</label>
-          <visible>!Window.IsVisible(script-script.extendedinfo-DialogInfo.xml)</visible>
-          <visible>!Window.IsVisible(script-script.extendedinfo-DialogVideoInfo.xml)</visible>
-          <visible>Integer.IsGreater(Window(home).Property(SkinHelper.Player.IMDB.Top250),0)</visible>
+          <label>$INFO[Window(Home).Property(TMDbHelper.Player.Top250), #,]</label>
+          <visible>Integer.IsGreater(Window(home).Property(TMDbHelper.Player.Top250),0)</visible>	  
           <visible>$PARAM[imdb]</visible>
           <visible>!Skin.HasSetting(Ratings.IMDB)</visible>
           <visible>$PARAM[top250]</visible>
@@ -5208,41 +5437,43 @@
         </animation>
         <control type="group">
         <control type="label">
-          <top>10</top>
-          <right>70</right>
+          <top>-5</top>
+          <right>230</right>
           <width>80</width>
           <height>60</height>
-          <font>font_tiny_bold</font>
+          <font>font_small</font>
           <align>left</align>
           <textcolor>white</textcolor>
-          <label>[B]$INFO[Weather.Temperature][/B]</label>
+          <label>$INFO[Weather.Temperature]</label>
           <visible>Weather.IsFetched</visible>
         </control>
           <control type="image">
-	    <top>5</top>
-            <right>155</right>
-            <width>70</width>
-            <height>70</height>
+	    <top>0</top>
+            <right>320</right>
+            <width>50</width>
+            <height>50</height>
+            <aligny>center</aligny>
             <aspectratio>keep</aspectratio>
             <texture colordiffuse="main_fg_100">$INFO[Weather.FanartCode,resource://resource.images.weathericons.white/,.png]</texture>
             <visible>Weather.IsFetched + !Container($PARAM[id]).IsUpdating</visible>
           </control>
           <control type="image">
-	    <top>5</top>
-            <right>155</right>
-            <width>70</width>
-            <height>70</height>
+	    <top>0</top>
+            <right>320</right>
+            <width>50</width>
+            <height>50</height>
+            <aligny>center</aligny>
             <aspectratio>keep</aspectratio>
             <texture colordiffuse="main_fg_100">special://skin/extras/icons/updatelibrary.png</texture>
             <visible>Container($PARAM[id]).IsUpdating</visible>
           </control>
         </control>
         <control type="button">
-          <right>155</right>
-          <width>70</width>
-          <height>70</height>
+          <right>320</right>
+          <width>50</width>
+          <height>50</height>
           <label></label>
-          <height>60</height>
+          <aligny>center</aligny>
           <onclick>Dialog.Close(contextmenu)</onclick>
           <onclick>Dialog.Close(all,true)</onclick>
           <onclick>ActivateWindow(PlayerControls)</onclick>
@@ -5251,25 +5482,35 @@
           <visible>!Weather.IsFetched + !Container($PARAM[id]).IsUpdating</visible>
         </control>
         <control type="label">
-          <top>-5</top>
-          <right>235</right>
-          <width>1000</width>
-          <height>60</height>
-          <font>font_heading_date</font>
-          <align>right</align>
-          <textcolor>white</textcolor>
-          <label>[B]$INFO[System.Time][/B]</label>
+            <top>-5</top>
+            <right>150</right>
+            <width>100</width>
+            <height>60</height>
+            <font>font_small</font>
+            <textcolor>$VAR[ColorHighlight]</textcolor>
+            <label>  |  </label>
+            <visible>[!String.IsEmpty(Weather.Temperature) + Weather.IsFetched]</visible>
         </control>
         <control type="label">
-          <right>235</right>
-          <top>20</top>
+          <top>-5</top>
+          <right>100</right>
           <width>1000</width>
           <height>60</height>
-          <font>font_heading_date</font>
+          <font>font_small</font>
+          <align>right</align>
+          <textcolor>white</textcolor>
+          <label>$INFO[System.Time]</label>
+        </control>
+        <control type="label">
+          <right>100</right>
+          <top>30</top>
+          <width>1000</width>
+          <height>60</height>
+          <font>font_tiny</font>
           <align>right</align>
           <alignx>right</alignx>
           <textcolor>white</textcolor>
-          <label>[B]$INFO[System.Date][/B]</label>
+          <label>$INFO[System.Date]</label>
 	  <visible>![String.IsEmpty(Window(10025).Property(PlayingBackgroundMedia)) + Player.HasMedia]</visible>
         </control>
       <control type="grouplist">
@@ -5539,7 +5780,7 @@
             <control type="group">
               <width>95</width>
               <height>30</height>
-              <visible>[!String.IsEmpty(Window(Home).Property(SkinHelper.ListItem.Duration)) + !String.IsEqual(ListItem.DBType,tvshow) + !String.IsEqual(ListItem.DBType,season)] | String.Contains(ListItem.FolderPath,plugin.video.youtube)</visible>
+              <visible>[!String.IsEmpty(Window(Home).Property(TMDbHelper.ListItem.Duration)) + !String.IsEqual(ListItem.DBType,tvshow) + !String.IsEqual(ListItem.DBType,season)] | String.Contains(ListItem.FolderPath,plugin.video.youtube)</visible>
               <control type="image">
                 <bottom>-18</bottom>
                 <animation effect="fade" time="0" end="75" condition="true">Conditional</animation>
@@ -6145,11 +6386,11 @@
         </control>
         <control type="label">
           <textcolor>main_fg_70</textcolor>
-          <label>$INFO[Container($PARAM[id]).ListItem.Top250,#,]</label>
+          <label>$INFO[Container($PARAM[id]).ListItem.top250, #,]</label>
           <include>Statusbar_Menubar_Items</include>
           <visible>Control.HasFocus($PARAM[id])</visible>
-          <visible>!String.IsEmpty(Container($PARAM[id]).ListItem.Top250)</visible>
-          <visible>String.Contains($PARAM[content],Top250)</visible>
+          <visible>!String.IsEmpty(Container($PARAM[id]).ListItem.top250)</visible>
+          <visible>String.Contains($PARAM[content],top250)</visible>
         </control>
         <control type="label">
           <textcolor>main_fg_70</textcolor>
@@ -6192,7 +6433,7 @@
             <param name="tmdb" value="true" />
             <param name="metacritic" value="true" />
             <param name="oscars" value="true" />
-            <param name="top250" value="false" />
+            <param name="top250" value="true" />
             <param name="plot" value="true" />
             <param name="studio" value="false" />
           </include>
@@ -6763,7 +7004,6 @@
       </control>
       <control type="$PARAM[controltype]" id="$PARAM[id]">
         <animation effect="fade" start="100" end="0" condition="Window.IsVisible(1138) + Container($PARAM[id]).IsUpdating">Conditional</animation>
-        <onfocus>SetProperty(SkinHelper.WidgetContainer,$PARAM[id],Home)</onfocus>
         <onfocus>SetProperty(TMDbHelper.WidgetContainer,$PARAM[id],Home)</onfocus>
 	<onfocus>SetProperty(widgetid,$PARAM[id],home)</onfocus>
         <onback condition="ControlGroup(5600).HasFocus">9000</onback>
@@ -7247,8 +7487,8 @@
    <font>font_heading_small</font>
    <textcolor>white</textcolor>
    <label>[B]AuraHub[/B]</label>
-   </control> 
-   </control> 
+   </control>
+   </control>
 
       <control type="grouplist" id="505">
         <include>Animation_Right</include>
@@ -7871,7 +8111,7 @@
         <focusedlayout />
   </control>
   </include>
-  
+
   <include name="episode_list">
     <param name="id" default="" />
     <param name="visible" default="" />

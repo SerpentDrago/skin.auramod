@@ -3906,7 +3906,7 @@
           <width>32</width>
           <height>32</height>
           <texture colordiffuse="$PARAM[colordiffuse]">flags/$PARAM[directory]/ratings/popcorn.png</texture>
-          <visible>[Integer.IsGreater(ListItem.Property(rottentomatoes_usermeter),59) | [$EXP[tmdbu] + Integer.IsGreater(Window(home).Property(TMDBHelper.ListItem.RottenTomatoes_UserMeter),59)] + [!String.IsEmpty(ListItem.Property(rottentomatoes_usermeter)) | !String.IsEmpty(Window(Home).Property(TMDbHelper.ListItem.RottenTomatoes_UserMeter)) </visible>
+          <visible>Integer.IsGreater(ListItem.Property(rottentomatoes_usermeter),59) | [$EXP[tmdbu] + Integer.IsGreater(Window(home).Property(TMDBHelper.ListItem.RottenTomatoes_UserMeter),59)] + [!String.IsEmpty(ListItem.Property(rottentomatoes_usermeter)) | !String.IsEmpty(Window(Home).Property(TMDbHelper.ListItem.RottenTomatoes_UserMeter))] </visible>
           <visible>$PARAM[usermeter]</visible>
           <visible>!Skin.HasSetting(Ratings.RottenTomatoes)</visible>
         </control>

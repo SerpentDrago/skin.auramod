@@ -45,7 +45,6 @@
                 <top>view_pad</top>
                 <bottom>view_pad</bottom>
               <control type="panel" id="512">
-        <onfocus>SetProperty(SkinHelper.WidgetContainer,512,Home)</onfocus>
         <onfocus>SetProperty(TMDbHelper.WidgetContainer,512,Home)</onfocus>
 		<height>1000</height>
 		<width>1100</width>
@@ -272,7 +271,6 @@
         <include condition="Skin.HasSetting(DisableNetflixView)">View_Pad</include>
         <include condition="!Skin.HasSetting(DisableNetflixView)">View_Pad_Netflix</include>
         <control type="fixedlist" id="55">
-        <onfocus>SetProperty(SkinHelper.WidgetContainer,55,Home)</onfocus>
         <onfocus>SetProperty(TMDbHelper.WidgetContainer,55,Home)</onfocus>
           <animation effect="slide" end="0,40" condition="!Skin.HasSetting(DisableNetflixView)">Conditonal</animation>
           <animation effect="slide" end="0,-20" condition="Skin.HasSetting(DisableNetflixView)">Conditonal</animation>
@@ -331,7 +329,6 @@
         <include condition="Skin.HasSetting(DisableNetflixView)">View_Pad</include>
         <include condition="!Skin.HasSetting(DisableNetflixView)">View_Pad_Netflix</include>
         <control type="panel" id="509">
-        <onfocus>SetProperty(SkinHelper.WidgetContainer,509,Home)</onfocus>
         <onfocus>SetProperty(TMDbHelper.WidgetContainer,509,Home)</onfocus>
           <animation effect="slide" end="0,20" condition="!Skin.HasSetting(DisableNetflixView)">Conditonal</animation>
           <bottom>-25</bottom>
@@ -384,7 +381,6 @@
         <control type="fixedlist" id="56">
           <animation effect="slide" end="0,20" condition="!Skin.HasSetting(DisableNetflixView)">Conditonal</animation>
           <animation effect="slide" end="0,-20" condition="Skin.HasSetting(DisableNetflixView)">Conditonal</animation>
-        <onfocus>SetProperty(SkinHelper.WidgetContainer,56,Home)</onfocus>
         <onfocus>SetProperty(TMDbHelper.WidgetContainer,56,Home)</onfocus>
           <bottom>-55</bottom>
           <right>-70</right>
@@ -432,7 +428,6 @@
       <control type="group">
         <include>View_Pad</include>
         <control type="fixedlist" id="57">
-        <onfocus>SetProperty(SkinHelper.WidgetContainer,57,Home)</onfocus>
         <onfocus>SetProperty(TMDbHelper.WidgetContainer,57,Home)</onfocus>
           <bottom>-10</bottom>
           <right>-70</right>
@@ -496,7 +491,6 @@
       <control type="group">
         <include>View_Pad</include>
         <control type="wraplist" id="58">
-        <onfocus>SetProperty(SkinHelper.WidgetContainer,58,Home)</onfocus>
         <onfocus>SetProperty(TMDbHelper.WidgetContainer,58,Home)</onfocus>
           <top>-10</top>
           <height>920</height>
@@ -582,7 +576,6 @@
           <include content="View_Forced">
             <param name="string" value="$LOCALIZE[31231]" />
           </include>
-        <onfocus>SetProperty(SkinHelper.WidgetContainer,59,Home)</onfocus>
         <onfocus>SetProperty(TMDbHelper.WidgetContainer,59,Home)</onfocus>
           <orientation>horizontal</orientation>
           <focusposition>0</focusposition>
@@ -682,7 +675,6 @@
       <visible>Control.IsVisible(511)</visible>
       <control type="group">
         <control type="fixedlist" id="511">
-        <onfocus>SetProperty(SkinHelper.WidgetContainer,511,Home)</onfocus>
         <onfocus>SetProperty(TMDbHelper.WidgetContainer,511,Home)</onfocus>
           <visible>[Container.Content(addons) | String.IsEmpty(Container.Content)]</visible>
 	  <focusposition>0</focusposition>
@@ -763,7 +755,6 @@
       <visible>Control.IsVisible(510)</visible>
       <control type="group">
         <control type="fixedlist" id="510">
-        <onfocus>SetProperty(SkinHelper.WidgetContainer,510,Home)</onfocus>
         <onfocus>SetProperty(TMDbHelper.WidgetContainer,510,Home)</onfocus>
           <visible>[Container.Content(addons) | String.IsEmpty(Container.Content)]</visible>
 	  <focusposition>0</focusposition>
@@ -885,7 +876,7 @@
 
 
         <control type="fixedlist" id="506">
-	  <onfocus>ClearProperty(SkinHelper.WidgetContainer,Home)</onfocus>
+	  <onfocus>ClearProperty(TMDbHelper.WidgetContainer,Home)</onfocus>
           <visible>[Container.Content(files) | Container.Content(addons) | String.IsEmpty(Container.Content)]</visible>
           <animation effect="slide" end="-500,0" time="500" condition="Control.HasFocus(5056)">Conditional</animation>
           <onright condition="!Container(5056).IsUpdating">5056</onright>
@@ -1059,7 +1050,7 @@
 
 
         <control type="fixedlist" id="505">
-	  <onfocus>ClearProperty(SkinHelper.WidgetContainer,Home)</onfocus>
+	  <onfocus>ClearProperty(TMDbHelper.WidgetContainer,Home)</onfocus>
           <visible>[Container.Content(playlists) | Container.Content(addons) | String.IsEmpty(Container.Content)]</visible>
           <animation effect="slide" end="-500,0" time="500" condition="Control.HasFocus(5055)">Conditional</animation>
           <onright condition="!Container(5055).IsUpdating">5055</onright>

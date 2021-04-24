@@ -35,54 +35,45 @@
     <variable name="metacritic_rating">
         <value condition="!String.IsEmpty(ListItem.Property(Metacritic_Rating))">$INFO[ListItem.Property(Metacritic_Rating), ,% ]</value>
 	<value condition="!String.IsEmpty(Window(Home).Property(TMDBHelper.ListItem.Metacritic_Rating))">$INFO[Window(Home).Property(TMDBHelper.ListItem.Metacritic_Rating), ,% ]</value>
-	<value condition="!String.IsEmpty(Window(Home).Property(SkinHelper.ListItem.MetaCritic.Rating))">$INFO[Window(Home).Property(SkinHelper.ListItem.MetaCritic.Rating), ,% ]</value>
     </variable>
 
     <variable name="rating_rtmeter">
 	 <value condition="!String.IsEmpty(ListItem.Property(rottentomatoes_rating))">$INFO[ListItem.Property(rottentomatoes_rating), ,% ]</value>
 	 <value condition="!String.IsEmpty(Window(Home).Property(TMDbHelper.ListItem.RottenTomatoes_Rating))">$INFO[Window(Home).Property(TMDbHelper.ListItem.RottenTomatoes_Rating), ,% ]</value>
-	 <value condition="!String.IsEmpty(Window(Home).Property(SkinHelper.ListItem.RottenTomatoesMeter))">$INFO[Window(Home).Property(SkinHelper.ListItem.RottenTomatoesMeter), ,% ]</value>
     </variable>
     <variable name="rating_tmdb">
          <value condition="!String.IsEmpty(ListItem.Property(tmdb_rating))">$INFO[ListItem.Property(tmdb_rating), , ]</value>
          <value condition="!String.IsEmpty(Window(Home).Property(TMDbHelper.ListItem.TMDb_Rating))">$INFO[Window(Home).Property(TMDbHelper.ListItem.TMDb_Rating), , ]</value>
-         <value condition="!String.IsEmpty(Window(Home).Property(SkinHelper.ListItem.Rating.TMDB))">$INFO[Window(Home).Property(SkinHelper.ListItem.Rating.TMDB), , ]</value>
     </variable>
 
     <variable name="videoinfo_rtmeter">
 	 <value condition="!String.IsEmpty(ListItem.Property(rottentomatoes_rating))">$INFO[ListItem.Property(rottentomatoes_rating)]</value>
 	 <value condition="!String.IsEmpty(Window(Home).Property(TMDbHelper.ListItem.RottenTomatoes_Rating))">$INFO[Window(Home).Property(TMDbHelper.ListItem.RottenTomatoes_Rating)]</value>
-	 <value condition="!String.IsEmpty(Window(Home).Property(SkinHelper.ListItem.RottenTomatoesMeter))">$INFO[Window(Home).Property(SkinHelper.ListItem.RottenTomatoesMeter)]</value>
     </variable>
 
     <variable name="rating_usermeter">
          <value condition="!String.IsEmpty(ListItem.Property(rottentomatoes_usermeter))">$INFO[ListItem.Property(rottentomatoes_usermeter), ,% ]</value>
          <value condition="!String.IsEmpty(Window(Home).Property(TMDbHelper.ListItem.RottenTomatoes_UserMeter))">$INFO[Window(Home).Property(TMDbHelper.ListItem.RottenTomatoes_UserMeter), ,% ]</value>
-         <value>$INFO[Window(Home).Property(SkinHelper.ListItem.RottenTomatoesAudienceMeter), ,% ]</value>
     </variable>
 
     <variable name="videoinfo_usermeter">
          <value condition="!String.IsEmpty(ListItem.Property(rottentomatoes_usermeter))">$INFO[ListItem.Property(rottentomatoes_usermeter)]</value>
          <value condition="!String.IsEmpty(Window(Home).Property(TMDbHelper.ListItem.RottenTomatoes_UserMeter))">$INFO[Window(Home).Property(TMDbHelper.ListItem.RottenTomatoes_UserMeter)]</value>
-         <value>$INFO[Window(Home).Property(SkinHelper.ListItem.RottenTomatoesAudienceMeter)]</value>
     </variable>
 
     <variable name="videoinfo_budget">
          <value condition="!String.IsEmpty(ListItem.Property(budget))">$INFO[ListItem.Property(budget)]</value>
          <value condition="!String.IsEmpty(Window(Home).Property(TMDbHelper.ListItem.Budget))">$INFO[Window(Home).Property(TMDbHelper.ListItem.Budget)]</value>
-         <value>$INFO[Window(Home).Property(SkinHelper.ListItem.Budget.formatted)]</value>
     </variable>
 
     <variable name="videoinfo_awards">
          <value condition="!String.IsEmpty(ListItem.Property(awards))">$INFO[ListItem.Property(awards)]</value>
          <value condition="!String.IsEmpty(Window(Home).Property(TMDbHelper.ListItem.Awards))">$INFO[Window(Home).Property(TMDbHelper.ListItem.Awards)]</value>
-         <value>$INFO[Window(Home).Property(SkinHelper.ListItem.Awards)]</value>
     </variable>
 
     <variable name="videoinfo_boxoffice">
          <value condition="!String.IsEmpty(ListItem.Property(revenue))">$INFO[ListItem.Property(revenue)]</value>
          <value condition="!String.IsEmpty(Window(Home).Property(TMDbHelper.ListItem.Revenue))">$INFO[Window(Home).Property(TMDbHelper.ListItem.Revenue)]</value>
-         <value>$INFO[Window(Home).Property(SkinHelper.ListItem.BoxOffice)]</value>
     </variable>
 
     <variable name="videoinfo_consensus">
@@ -161,17 +152,17 @@
     </variable>
 
      <variable name="liked_percent">
-        <value condition="!String.IsEmpty(Window(Home).Property(SkinHelper.ListItem.RottenTomatoes.Rating.Percent))">[B]$INFO[Window(Home).Property(SkinHelper.ListItem.RottenTomatoes.Rating.Percent)]$VAR[liked_percent_symbol] Liked[/B]</value>
-        <value condition="!String.IsEmpty(Window(Home).Property(SkinHelper.ListItem.Rating.percent.IMDB))">[B]$INFO[Window(Home).Property(SkinHelper.ListItem.Rating.percent.IMDB)]$VAR[liked_percent_symbol] Liked[/B]</value>
+        <value condition="!String.IsEmpty(Window(Home).Property(TMDbHelper.ListItem(RottenTomatoes_Rating)))">[B]$INFO[Window(Home).Property(TMDbHelper.ListItem(RottenTomatoes_Rating))]$VAR[liked_percent_symbol] Liked[/B]</value>
+        <value condition="!String.IsEmpty(Window(Home).Property(TMDbHelper.ListItem(IMDb_Rating))">[B]$INFO[Window(Home).Property(TMDbHelper.ListItem.(IMDb_Rating))]$VAR[liked_percent_symbol] Liked[/B]</value>
 	<value condition="!String.IsEmpty(ListItem.Rating)">[B]$VAR[RatingDecimalToPercentageListItemRating]$VAR[liked_percent_symbol] Liked[/B]</value>
 	<value condition="!String.IsEmpty(Container(1505).ListItem.Rating)">[B]$VAR[RatingDecimalToPercentageListItemRating1505]$VAR[liked_percent_symbol] Liked[/B]</value>
 	<value condition="!String.IsEmpty(Container(1506).ListItem.Rating)">[B]$VAR[RatingDecimalToPercentageListItemRating1506]$VAR[liked_percent_symbol] Liked[/B]</value>
      </variable>
 
      <variable name="liked_percent_symbol">
-        <value condition="!String.IsEmpty(Window(Home).Property(SkinHelper.ListItem.RottenTomatoes.Rating.Percent)) + !String.Contains(Window(Home).Property(SkinHelper.ListItem.RottenTomatoes.Rating.Percent),%)">%</value>
-        <value condition="!String.IsEmpty(Window(Home).Property(SkinHelper.ListItem.RottenTomatoes.Rating.Percent)) + String.Contains(Window(Home).Property(SkinHelper.ListItem.RottenTomatoes.Rating.Percent),%)"></value>
-        <value condition="!String.IsEmpty(Window(Home).Property(SkinHelper.ListItem.Rating.percent.IMDB))">%</value>
+        <value condition="!String.IsEmpty(Window(Home).Property(TMDbHelper.ListItem(RottenTomatoes_Rating))) + !String.Contains(Window(Home).Property(TMDbHelper.ListItem(RottenTomatoes_Rating)),%)">%</value>
+        <value condition="!String.IsEmpty(Window(Home).Property(TMDbHelper.ListItem(RottenTomatoes_Rating))) + String.Contains(Window(Home).Property(TMDbHelper.ListItem(RottenTomatoes_Rating)),%)"></value>
+        <value condition="!String.IsEmpty(Window(Home).Property(TMDbHelper.ListItem(IMDb_Rating)))">%</value>
         <value condition="!String.IsEmpty(ListItem.Rating)">%</value>
         <value condition="!String.IsEmpty(Container(1505).ListItem.Rating)">%</value>
         <value condition="!String.IsEmpty(Container(1506).ListItem.Rating)">%</value>
@@ -698,9 +689,9 @@
     <!-- Spotlight Info @cartmandos -->
     <variable name="DetailsSpinImage">
         <value condition="!String.IsEmpty(Window(Home).Property(TMDBHelper.ListItem.Awards)) + Integer.IsLessOrEqual(System.Time(ss),15) + !String.IsEmpty(Window(Home).Property(TMDBHelper.ListItem.Awards))">awards</value>
-        <value condition="Integer.IsLessOrEqual(System.Time(ss),15) + !String.IsEmpty(Window(Home).Property(SkinHelper.ListItem.Awards))">awards</value>
-        <value condition="Integer.IsLessOrEqual(System.Time(ss),30) + !String.IsEmpty(Window(Home).Property(SkinHelper.ListItem.CastListing))">star</value>
-        <value condition="Integer.IsGreater(System.Time(ss),15) + Integer.IsLessOrEqual(System.Time(ss),30) + Integer.IsGreater(Window(Home).Property(SkinHelper.ListItem.IMDB.Top250),0)">awards</value>
+        <value condition="Integer.IsLessOrEqual(System.Time(ss),15) + !String.IsEmpty(Window(Home).Property(TMDbHelper.ListItem.Awards))">awards</value>
+        <value condition="Integer.IsLessOrEqual(System.Time(ss),30) + !String.IsEmpty(Window(Home).Property(TMDbHelper.ListItem.Cast))">star</value>
+        <value condition="Integer.IsGreater(System.Time(ss),15) + Integer.IsLessOrEqual(System.Time(ss),30) + Integer.IsGreater(Window(Home).Property(TMDbHelper.ListItem.Top250),0)">awards</value>
         <value condition="Integer.IsGreater(System.Time(ss),15) + Integer.IsLessOrEqual(System.Time(ss),30) + !String.IsEmpty(ListItem.Director)">director</value>
         <value condition="Integer.IsGreater(System.Time(ss),15) + Integer.IsLessOrEqual(System.Time(ss),30) + Control.IsVisible(505) + !String.IsEmpty(Container(5055).ListItem.Director) + !String.IsEmpty(Container(5055).ListItem.Director)">director</value>
         <value condition="Integer.IsGreater(System.Time(ss),15) + Integer.IsLessOrEqual(System.Time(ss),30) + Control.IsVisible(506) + !String.IsEmpty(Container(5056).ListItem.Director) + !String.IsEmpty(Container(5056).ListItem.Director)">director</value>
@@ -716,15 +707,15 @@
         <value condition="Control.IsVisible(505) + !String.IsEmpty(Container(5055).ListItem.Cast)">star</value>
         <value condition="Control.IsVisible(506) + !String.IsEmpty(Container(5056).ListItem.Cast)">star</value>
         <value condition="String.IsEmpty(Window(Home).Property(TMDbHelper.IsUpdating)) + !String.IsEmpty(Window(Home).Property(TMDBHelper.ListItem.Genre))">genre</value>
-        <value condition="!String.IsEmpty(Window(Home).Property(SkinHelper.ListItem.Genre))">genre</value>
+        <value condition="!String.IsEmpty(Window(Home).Property(TMDbHelper.ListItem.Genre))">genre</value>
     </variable>
 
    <!-- Spotlight buttons @cartmandos -->
     <variable name="NetflixDetailsSpin">
         <value condition="!String.IsEmpty(Window(Home).Property(TMDBHelper.ListItem.Awards)) + Integer.IsLessOrEqual(System.Time(ss),15) + !String.IsEmpty(Window(Home).Property(TMDBHelper.ListItem.Awards))">[I]$INFO[Window(Home).Property(TMDBHelper.ListItem.Awards)][/I]</value>
-        <value condition="Integer.IsLessOrEqual(System.Time(ss),15) + !String.IsEmpty(Window(Home).Property(SkinHelper.ListItem.Awards))">[I]$INFO[Window(Home).Property(SkinHelper.ListItem.Awards)][/I]</value>
-        <value condition="Integer.IsLessOrEqual(System.Time(ss),30) + !String.IsEmpty(Window(Home).Property(SkinHelper.ListItem.CastListing))">[I]Staring $INFO[Window(Home).Property(SkinHelper.ListItem.CastListing)][/I]</value>
-        <value condition="Integer.IsGreater(System.Time(ss),15) + Integer.IsLessOrEqual(System.Time(ss),30) + Integer.IsGreater(Window(Home).Property(SkinHelper.ListItem.IMDB.Top250),0)">[I]Ranked $INFO[Window(Home).Property(SkinHelper.ListItem.IMDB.Top250)] in IMDB Top 250[/I]</value>
+        <value condition="Integer.IsLessOrEqual(System.Time(ss),15) + !String.IsEmpty(Window(Home).Property(TMDbHelper.ListItem.Awards))">[I]$INFO[Window(Home).Property(TMDbHelper.ListItem.Awards)][/I]</value>
+        <value condition="Integer.IsLessOrEqual(System.Time(ss),30) + !String.IsEmpty(Window(Home).Property(TMDbHelper.ListItem.Cast))">[I]Staring $INFO[Window(Home).Property(TMDbHelper.ListItem.Cast)][/I]</value>
+        <value condition="Integer.IsGreater(System.Time(ss),15) + Integer.IsLessOrEqual(System.Time(ss),30) + Integer.IsGreater(Window(Home).Property(TMDbHelper.ListItem.Top250),0)">[I]Ranked $INFO[Window(Home).Property(TMDbHelper.ListItem.Top250)] in IMDB Top 250[/I]</value>
         <value condition="Integer.IsGreater(System.Time(ss),15) + Integer.IsLessOrEqual(System.Time(ss),30) + !String.IsEmpty(ListItem.Director)">[I]Directed by $INFO[ListItem.Director][/I]</value>
         <value condition="Integer.IsGreater(System.Time(ss),15) + Integer.IsLessOrEqual(System.Time(ss),30) + Control.IsVisible(1505) + !String.IsEmpty(Container(1505).ListItem.Director)">[I]Directed by $INFO[Container(1505).ListItem.Director][/I]</value>
         <value condition="Integer.IsGreater(System.Time(ss),15) + Integer.IsLessOrEqual(System.Time(ss),30) + Control.IsVisible(1506) + !String.IsEmpty(Container(1506).ListItem.Director)">[I]Directed by $INFO[Container(1506).ListItem.Director][/I]</value>
@@ -740,7 +731,7 @@
         <value condition="Control.IsVisible(505) + !String.IsEmpty(Container(5055).ListItem.Cast)">[I]$INFO[Container(5055).ListItem.Cast][/I]</value>
         <value condition="Control.IsVisible(506) + !String.IsEmpty(Container(5056).ListItem.Cast)">[I]$INFO[Container(5056).ListItem.Cast][/I]</value>
         <value condition="String.IsEmpty(Window(Home).Property(TMDbHelper.IsUpdating))	 + !String.IsEmpty(Window(Home).Property(TMDBHelper.ListItem.Genre))">[I]$INFO[Window(Home).Property(TMDBHelper.ListItem.Genre)][/I]</value>
-        <value condition="!String.IsEmpty(Window(Home).Property(SkinHelper.ListItem.Genre))">[I]$INFO[Window(Home).Property(SkinHelper.ListItem.Genre)][/I]</value>
+        <value condition="!String.IsEmpty(Window(Home).Property(TMDbHelper.ListItem.Genre))">[I]$INFO[Window(Home).Property(TMDbHelper.ListItem.Genre)][/I]</value>
     </variable>
 
 
@@ -776,7 +767,7 @@
     <value condition="Skin.HasSetting(DisableNetflixHomeMixed)">$LOCALIZE[31440]</value>
     </variable>
     <variable name="cast_list">
-        <value condition="!String.IsEmpty(Window(Home).Property(SkinHelper.ListItem.CastListing))">$INFO[Window(Home).Property(SkinHelper.ListItem.CastListing)]</value>
+        <value condition="!String.IsEmpty(Window(Home).Property(TMDbHelper.ListItem.Cast))">$INFO[Window(Home).Property(TMDbHelper.ListItem.Cast)]</value>
         <value condition="!String.IsEmpty(ListItem.Cast)">$INFO[ListItem.Cast]</value>
     </variable>
     <variable name="video_heading">
@@ -795,12 +786,10 @@
     </variable>
     <variable name="imdb_votes">
        <value condition="String.IsEmpty(Window(Home).Property(TMDbHelper.IsUpdating)) + !String.IsEmpty(Window(Home).Property(TMDbHelper.ListItem.IMDb_Votes))">$INFO[Window(Home).Property(TMDbHelper.ListItem.IMDb_Votes), (, $LOCALIZE[205])]</value>
-       <value condition="!String.IsEmpty(Window(home).Property(SkinHelper.ListItem.Votes.IMDB))">$INFO[Window(home).Property(SkinHelper.ListItem.Votes.IMDB), (, $LOCALIZE[205])]</value>
     </variable>
 
     <variable name="imdb_ratings">
        <value condition="String.IsEmpty(Window(Home).Property(TMDbHelper.IsUpdating)) + !String.IsEmpty(Window(Home).Property(TMDbHelper.ListItem.IMDb_Rating))">$INFO[Window(Home).Property(TMDbHelper.ListItem.IMDb_Rating), ,]</value>
-       <value condition="!String.IsEmpty(Window(home).Property(SkinHelper.ListItem.Rating.IMDB))">$INFO[Window(home).Property(SkinHelper.ListItem.Rating.IMDB), ,]</value>
     </variable>
 
     <variable name="star_ratings">
@@ -858,22 +847,22 @@
     </variable>
 
     <variable name="Label_Metacritic">
-        <value condition="!String.IsEmpty(Window(Home).Property(SkinHelper.ListItem.MetaCritic.Rating))">$INFO[Window(Home).Property(SkinHelper.ListItem.MetaCritic.Rating),,%]</value>
+        <value condition="!String.IsEmpty(Window(Home).Property(TMDbHelper.ListItem.MetaCritic_Rating))">$INFO[Window(Home).Property(TMDbHelper.ListItem.MetaCritic_Rating),,%]</value>
         <value condition="Integer.IsGreater(ListItem.Ratings(metacritic),0)">$INFO[ListItem.Ratings(metacritic)]</value>
     </variable>
 
     <variable name="Label_TMDB">
-        <value condition="!String.IsEmpty(Window(Home).Property(SkinHelper.ListItem.Rating.TMDB))">$INFO[Window(Home).Property(SkinHelper.ListItem.Rating.TMDB)]</value>
+        <value condition="!String.IsEmpty(Window(Home).Property(TMDbHelper.ListItem.TMDb_Rating))">$INFO[Window(Home).Property(TMDbHelper.ListItem.TMDb_Rating)]</value>
         <value condition="Integer.IsGreater(ListItem.Ratings(themoviedb),0)">$INFO[ListItem.Ratings(themoviedb)]</value>
     </variable>
 
     <variable name="Label_RottenTomatoesCritics">
-        <value condition="!String.IsEmpty(Window(Home).Property(SkinHelper.ListItem.RottenTomatoes.Rating))">$INFO[Window(Home).Property(SkinHelper.ListItem.RottenTomatoes.Rating),,%]</value>
+        <value condition="!String.IsEmpty(Window(Home).Property(TMDbHelper.ListItem.RottenTomatoes_Rating))">$INFO[Window(Home).Property(TMDbHelper.ListItem.RottenTomatoes_Rating),,%]</value>
         <value condition="Integer.IsGreater(ListItem.Ratings(tomatometerallcritics),0)">$INFO[ListItem.Ratings(tomatometerallcritics)]</value>
     </variable>
 
     <variable name="Label_RottenTomatoesUserMeter">
-        <value condition="!String.IsEmpty(Window(Home).Property(SkinHelper.ListItem.RottenTomatoes.UserMeter))">$INFO[Window(Home).Property(SkinHelper.ListItem.RottenTomatoes.UserMeter),,%]</value>
+        <value condition="!String.IsEmpty(Window(Home).Property(TMDbHelper.ListItem.RottenTomatoes_UserMeter))">$INFO[Window(Home).Property(TMDbHelper.ListItem.RottenTomatoes_UserMeter),,%]</value>
         <value condition="Integer.IsGreater(ListItem.Ratings(tomatometerallaudience),0)">$INFO[ListItem.Ratings(tomatometerallaudience)]</value>
     </variable>
     
@@ -890,17 +879,17 @@
     </variable>
 
     <variable name="Label_Info_NextAired_Status">
-        <value condition="!String.IsEmpty(Window(Home).Property(SkinHelper.ListItem.Status))">$INFO[Window(Home).Property(SkinHelper.ListItem.Status)]</value>
+        <value condition="!String.IsEmpty(Window(Home).Property(TMDbHelper.ListItem.Status))">$INFO[Window(Home).Property(TMDbHelper.ListItem.Status)]</value>
     </variable>
 
     <variable name="Label_Info_NextAired_Details">
-        <value condition="!String.IsEmpty(Window(Home).Property(SkinHelper.ListItem.NextEpisode.Label))">$INFO[Window(Home).Property(SkinHelper.ListItem.NextEpisode.Airdate),,   -   ]$INFO[Window(Home).Property(SkinHelper.ListItem.NextEpisode.Label),,  ]$INFO[Window(Home).Property(SkinHelper.ListItem.NextEpisode.Airtime),,  ]$INFO[Window(Home).Property(SkinHelper.ListItem.NextEpisode.Airday)]</value>
-        <value condition="!String.IsEmpty(Window(Home).Property(SkinHelper.ListItem.LastEpisode.Label))">$INFO[Window(Home).Property(SkinHelper.ListItem.LastEpisode.Airdate),,   -   ]$INFO[Window(Home).Property(SkinHelper.ListItem.LastEpisode.Label),,  ]$INFO[Window(Home).Property(SkinHelper.ListItem.LastEpisode.Airtime),,  ]$INFO[Window(Home).Property(SkinHelper.ListItem.LastEpisode.Airday)]</value>
+        <value condition="!String.IsEmpty(Window(Home).Property(TMDbHelper.ListItem.Next_Aired.Name))">$INFO[Window(Home).Property(TMDbHelper.ListItem.Next_Aired),,   -   ]$INFO[Window(Home).Property(TMDbHelper.ListItem.Next_Aired.Name),,  ]$INFO[Window(Home).Property(TMDbHelper.ListItem.Next_Aired.Date),,  ]$INFO[Window(Home).Property(TMDbHelper.ListItem.Next_Aired.Day)]</value>
+        <value condition="!String.IsEmpty(Window(Home).Property(TMDbHelper.ListItem.LastEpisode.Label))">$INFO[Window(Home).Property(TMDbHelper.ListItem.Last_Aired),,   -   ]$INFO[Window(Home).Property(TMDbHelper.ListItem.Last_Aired.Name),,  ]$INFO[Window(Home).Property(TMDbHelper.ListItem.Last_Aired.Date),,  ]$INFO[Window(Home).Property(TMDbHelper.ListItem.Last_Aired.Day)]</value>
     </variable>
 
     <variable name="Label_Info_NextAired_Date">
-        <value condition="!String.IsEmpty(Window(Home).Property(SkinHelper.ListItem.NextEpisode.Airdate))">$INFO[Window(Home).Property(SkinHelper.ListItem.NextEpisode.Airdate)]</value>
-        <value condition="!String.IsEmpty(Window(Home).Property(SkinHelper.ListItem.LastEpisode.Airdate))">$INFO[Window(Home).Property(SkinHelper.ListItem.LastEpisode.Airdate)]</value>
+        <value condition="!String.IsEmpty(Window(Home).Property(TMDbHelper.ListItem.Next_Aired)">$INFO[Window(Home).Property(TMDbHelper.ListItem.Next_Aired)]</value>
+        <value condition="!String.IsEmpty(Window(Home).Property(TMDbHelper.ListItem.Last_Aired))">$INFO[Window(Home).Property(TMDbHelper.ListItem.Last_Aired)]</value>
     </variable>
 
     <variable name="Label_ExtraFanart">
@@ -929,49 +918,30 @@
         <value condition="String.Contains(Window(Home).Property(TMDbHelper.ListItem.Awards),3 Oscar)">x3</value>
         <value condition="String.Contains(Window(Home).Property(TMDbHelper.ListItem.Awards),2 Oscar)">x2</value>
         <value condition="String.Contains(Window(Home).Property(TMDbHelper.ListItem.Awards),1 Oscar)">x1</value>
-        <value condition="String.Contains(Window(Home).Property(SkinHelper.ListItem.Awards),20 Oscar)">x20</value>
-        <value condition="String.Contains(Window(Home).Property(SkinHelper.ListItem.Awards),19 Oscar)">x19</value>
-        <value condition="String.Contains(Window(Home).Property(SkinHelper.ListItem.Awards),18 Oscar)">x18</value>
-        <value condition="String.Contains(Window(Home).Property(SkinHelper.ListItem.Awards),17 Oscar)">x17</value>
-        <value condition="String.Contains(Window(Home).Property(SkinHelper.ListItem.Awards),16 Oscar)">x16</value>
-        <value condition="String.Contains(Window(Home).Property(SkinHelper.ListItem.Awards),15 Oscar)">x15</value>
-        <value condition="String.Contains(Window(Home).Property(SkinHelper.ListItem.Awards),14 Oscar)">x14</value>
-        <value condition="String.Contains(Window(Home).Property(SkinHelper.ListItem.Awards),13 Oscar)">x13</value>
-        <value condition="String.Contains(Window(Home).Property(SkinHelper.ListItem.Awards),12 Oscar)">x12</value>
-        <value condition="String.Contains(Window(Home).Property(SkinHelper.ListItem.Awards),11 Oscar)">x11</value>
-        <value condition="String.Contains(Window(Home).Property(SkinHelper.ListItem.Awards),10 Oscar)">x10</value>
-        <value condition="String.Contains(Window(Home).Property(SkinHelper.ListItem.Awards),9 Oscar)">x9</value>
-        <value condition="String.Contains(Window(Home).Property(SkinHelper.ListItem.Awards),8 Oscar)">x8</value>
-        <value condition="String.Contains(Window(Home).Property(SkinHelper.ListItem.Awards),7 Oscar)">x7</value>
-        <value condition="String.Contains(Window(Home).Property(SkinHelper.ListItem.Awards),6 Oscar)">x6</value>
-        <value condition="String.Contains(Window(Home).Property(SkinHelper.ListItem.Awards),5 Oscar)">x5</value>
-        <value condition="String.Contains(Window(Home).Property(SkinHelper.ListItem.Awards),4 Oscar)">x4</value>
-        <value condition="String.Contains(Window(Home).Property(SkinHelper.ListItem.Awards),3 Oscar)">x3</value>
-        <value condition="String.Contains(Window(Home).Property(SkinHelper.ListItem.Awards),2 Oscar)">x2</value>
-        <value condition="String.Contains(Window(Home).Property(SkinHelper.ListItem.Awards),1 Oscar)">x1</value>
+
     </variable>
 
     <variable name="Label_OSD_Oscars">
-        <value condition="String.Contains(Window(Home).Property(SkinHelper.Player.Awards),20 Oscar)">x20</value>
-        <value condition="String.Contains(Window(Home).Property(SkinHelper.Player.Awards),19 Oscar)">x19</value>
-        <value condition="String.Contains(Window(Home).Property(SkinHelper.Player.Awards),18 Oscar)">x18</value>
-        <value condition="String.Contains(Window(Home).Property(SkinHelper.Player.Awards),17 Oscar)">x17</value>
-        <value condition="String.Contains(Window(Home).Property(SkinHelper.Player.Awards),16 Oscar)">x16</value>
-        <value condition="String.Contains(Window(Home).Property(SkinHelper.Player.Awards),15 Oscar)">x15</value>
-        <value condition="String.Contains(Window(Home).Property(SkinHelper.Player.Awards),14 Oscar)">x14</value>
-        <value condition="String.Contains(Window(Home).Property(SkinHelper.Player.Awards),13 Oscar)">x13</value>
-        <value condition="String.Contains(Window(Home).Property(SkinHelper.Player.Awards),12 Oscar)">x12</value>
-        <value condition="String.Contains(Window(Home).Property(SkinHelper.Player.Awards),11 Oscar)">x11</value>
-        <value condition="String.Contains(Window(Home).Property(SkinHelper.Player.Awards),10 Oscar)">x10</value>
-        <value condition="String.Contains(Window(Home).Property(SkinHelper.Player.Awards),9 Oscar)">x9</value>
-        <value condition="String.Contains(Window(Home).Property(SkinHelper.Player.Awards),8 Oscar)">x8</value>
-        <value condition="String.Contains(Window(Home).Property(SkinHelper.Player.Awards),7 Oscar)">x7</value>
-        <value condition="String.Contains(Window(Home).Property(SkinHelper.Player.Awards),6 Oscar)">x6</value>
-        <value condition="String.Contains(Window(Home).Property(SkinHelper.Player.Awards),5 Oscar)">x5</value>
-        <value condition="String.Contains(Window(Home).Property(SkinHelper.Player.Awards),4 Oscar)">x4</value>
-        <value condition="String.Contains(Window(Home).Property(SkinHelper.Player.Awards),3 Oscar)">x3</value>
-        <value condition="String.Contains(Window(Home).Property(SkinHelper.Player.Awards),2 Oscar)">x2</value>
-        <value condition="String.Contains(Window(Home).Property(SkinHelper.Player.Awards),1 Oscar)">x1</value>
+        <value condition="String.Contains(Window(Home).Property(TMDbHelper.Player.Awards),20 Oscar)">x20</value>
+        <value condition="String.Contains(Window(Home).Property(TMDbHelper.Player.Awards),19 Oscar)">x19</value>
+        <value condition="String.Contains(Window(Home).Property(TMDbHelper.Player.Awards),18 Oscar)">x18</value>
+        <value condition="String.Contains(Window(Home).Property(TMDbHelper.Player.Awards),17 Oscar)">x17</value>
+        <value condition="String.Contains(Window(Home).Property(TMDbHelper.Player.Awards),16 Oscar)">x16</value>
+        <value condition="String.Contains(Window(Home).Property(TMDbHelper.Player.Awards),15 Oscar)">x15</value>
+        <value condition="String.Contains(Window(Home).Property(TMDbHelper.Player.Awards),14 Oscar)">x14</value>
+        <value condition="String.Contains(Window(Home).Property(TMDbHelper.Player.Awards),13 Oscar)">x13</value>
+        <value condition="String.Contains(Window(Home).Property(TMDbHelper.Player.Awards),12 Oscar)">x12</value>
+        <value condition="String.Contains(Window(Home).Property(TMDbHelper.Player.Awards),11 Oscar)">x11</value>
+        <value condition="String.Contains(Window(Home).Property(TMDbHelper.Player.Awards),10 Oscar)">x10</value>
+        <value condition="String.Contains(Window(Home).Property(TMDbHelper.Player.Awards),9 Oscar)">x9</value>
+        <value condition="String.Contains(Window(Home).Property(TMDbHelper.Player.Awards),8 Oscar)">x8</value>
+        <value condition="String.Contains(Window(Home).Property(TMDbHelper.Player.Awards),7 Oscar)">x7</value>
+        <value condition="String.Contains(Window(Home).Property(TMDbHelper.Player.Awards),6 Oscar)">x6</value>
+        <value condition="String.Contains(Window(Home).Property(TMDbHelper.Player.Awards),5 Oscar)">x5</value>
+        <value condition="String.Contains(Window(Home).Property(TMDbHelper.Player.Awards),4 Oscar)">x4</value>
+        <value condition="String.Contains(Window(Home).Property(TMDbHelper.Player.Awards),3 Oscar)">x3</value>
+        <value condition="String.Contains(Window(Home).Property(TMDbHelper.Player.Awards),2 Oscar)">x2</value>
+        <value condition="String.Contains(Window(Home).Property(TMDbHelper.Player.Awards),1 Oscar)">x1</value>
     </variable>
 
 
@@ -1114,7 +1084,7 @@
    <variable name="infoline_duration">
 	<value condition="String.Contains(ListItem.FolderPath,plugin://plugin.video.youtube) + String.IsEmpty(ListItem.Duration)">$INFO[ListItem.Duration]</value>
 	<value condition="!String.IsEmpty(ListItem.Duration)">$INFO[ListItem.Duration(h),,h] $INFO[ListItem.Duration(mm),,m]</value>
-	<value condition="!String.IsEmpty(Window(Home).Property(SkinHelper.ListItem.Duration))">$INFO[Window(Home).Property(SkinHelper.ListItem.Duration.Hours),,h] $INFO[Window(Home).Property(SkinHelper.ListItem.Duration.Minutes),,m]</value>
+	<value condition="!String.IsEmpty(Window(Home).Property(TMDbHelper.ListItem.Duration))">$INFO[Window(Home).Property(TMDbHelper.ListItem.Duration.Hours),,h] $INFO[Window(Home).Property(TMDbHelper.ListItem.Duration.Minutes),,m]</value>
    </variable>
 
     <variable name="infoview_duration">
@@ -1122,7 +1092,7 @@
         <value condition="Control.IsVisible(1506) + !String.IsEmpty(Container(1506).ListItem.Duration)">$INFO[Container(1506).ListItem.Duration(h),,h] $INFO[Container(1506).ListItem.Duration(mm),,m]</value>
         <value condition="!String.IsEmpty(Container(5055).ListItem.Duration)">$INFO[Container(5055).ListItem.Duration(h),,h] $INFO[Container(5055).ListItem.Duration(mm),,m]</value>
         <value condition="!String.IsEmpty(Container(5056).ListItem.Duration)">$INFO[Container(5056).ListItem.Duration(h),,h] $INFO[Container(5056).ListItem.Duration(mm),,m]</value>
-        <value condition="!String.IsEmpty(Window(Home).Property(SkinHelper.ListItem.Duration))">$INFO[Window(Home).Property(SkinHelper.ListItem.Duration.Hours),,h] $INFO[Window(Home).Property(SkinHelper.ListItem.Duration.Minutes),,m]</value>
+        <value condition="!String.IsEmpty(Window(Home).Property(TMDbHelper.ListItem.Duration))">$INFO[Window(Home).Property(TMDbHelper.ListItem.Duration.Hours),,h] $INFO[Window(Home).Property(TMDbHelper.ListItem.Duration.Minutes),,m]</value>
     </variable>
 
 
@@ -1131,7 +1101,7 @@
         <value condition="Control.IsVisible(1506) + !String.IsEmpty(Container(1506).ListItem.MPAA)">$INFO[Container(1506).ListItem.MPAA]</value>
         <value condition="Control.IsVisible(5055) + !String.IsEmpty(Container(5055).ListItem.MPAA)">$INFO[Container(5055).ListItem.MPAA]</value>
         <value condition="String.IsEmpty(Window(Home).Property(TMDbHelper.IsUpdating))	 + String.IsEmpty(ListItem.MPAA) + String.IsEmpty(Container(5055).ListItem.MPAA) + !String.IsEmpty(Window(Home).Property(TMDBHelper.ListItem.MPAA))">$INFO[Window(Home).Property(TMDBHelper.ListItem.MPAA)]</value>
-        <value condition="String.IsEmpty(ListItem.MPAA) + String.IsEmpty(Container(5055).ListItem.MPAA) + !String.IsEmpty(Window(Home).Property(SkinHelper.ListItem.MPAA))">$INFO[Window(Home).Property(SkinHelper.ListItem.MPAA)]</value>
+        <value condition="String.IsEmpty(ListItem.MPAA) + String.IsEmpty(Container(5055).ListItem.MPAA) + !String.IsEmpty(Window(Home).Property(TMDbHelper.ListItem.MPAA))">$INFO[Window(Home).Property(TMDbHelper.ListItem.MPAA)]</value>
         <value condition="!String.IsEmpty(ListItem.MPAA)">$INFO[ListItem.MPAA]</value>
     </variable>
 
@@ -1201,7 +1171,7 @@
 
     <variable name="Label_ShowCase_InfoLine">
         <value condition="Window.IsVisible(script-script.extendedinfo-VideoList.xml)">$INFO[ListItem.MPAA,[COLOR=main_fg_100],[/COLOR]  |  ]$VAR[Label_Premiered,[COLOR=main_fg_100],[/COLOR]]</value>
-        <value condition="ListItem.IsCollection">$INFO[Window(Home).Property(SkinHelper.ListItem.Year),[COLOR=main_fg_100],[/COLOR]  |  ]$VAR[Label_Duration,[COLOR=main_fg_100],[/COLOR]  |  ]$VAR[Label_Sets_Count,[COLOR=main_fg_100],[/COLOR]]</value>
+        <value condition="ListItem.IsCollection">$INFO[Window(Home).Property(TMDbHelper.ListItem.Year),[COLOR=main_fg_100],[/COLOR]  |  ]$VAR[Label_Duration,[COLOR=main_fg_100],[/COLOR]  |  ]$VAR[Label_Sets_Count,[COLOR=main_fg_100],[/COLOR]]</value>
         <value condition="[Container.Content(seasons) | Container.Content(tvshows)] + [!String.IsEmpty(ListItem.MPAA) | !String.IsEmpty(ListItem.Duration) | !String.IsEmpty(ListItem.Premiered)] + !String.IsEmpty(ListItem.Property(TotalEpisodes))">$INFO[ListItem.MPAA,[COLOR=main_fg_100],[/COLOR]  |  ]$VAR[Label_Premiered,[COLOR=main_fg_100],[/COLOR]  |  ]$VAR[Label_Duration,[COLOR=main_fg_100],[/COLOR]  |  ]$INFO[ListItem.Property(WatchedEpisodes),[COLOR=main_fg_100]$LOCALIZE[16102] , $LOCALIZE[20163] [/COLOR]]$INFO[ListItem.Property(TotalEpisodes),[COLOR=main_fg_100],[/COLOR]]</value>
         <value condition="Container.Content(seasons) + Control.IsVisible(502) + [!String.IsEmpty(ListItem.MPAA) | !String.IsEmpty(ListItem.Duration) | !String.IsEmpty(ListItem.Premiered)]">$INFO[ListItem.MPAA,[COLOR=main_fg_100],[/COLOR]  |  ]$VAR[Label_Premiered,[COLOR=main_fg_100],[/COLOR]]</value>
         <value condition="!String.IsEmpty(ListItem.MPAA) | !String.IsEmpty(ListItem.Duration) | !String.IsEmpty(ListItem.Premiered)">$INFO[ListItem.MPAA,[COLOR=main_fg_100],[/COLOR]  |  ]$VAR[Label_Premiered,[COLOR=main_fg_100],[/COLOR]  |  ]$VAR[Label_Duration,[COLOR=main_fg_100],[/COLOR]  |  ]$VAR[Label_EndTime,[COLOR=main_fg_100]$LOCALIZE[31106] ,[/COLOR]]</value>
@@ -1307,11 +1277,11 @@
     </variable>
 
     <variable name="Label_Genre">
-        <value condition="ListItem.IsCollection">$INFO[Window(Home).Property(SkinHelper.ListItem.Genre)]</value>
+        <value condition="ListItem.IsCollection">$INFO[Window(Home).Property(TMDbHelper.ListItem.Genre)]</value>
         <value condition="!String.IsEmpty(Container(1505).ListItem.Genre)">$INFO[Container(1505).ListItem.Genre]</value>
         <value condition="!String.IsEmpty(Container(1506).ListItem.Genre)">$INFO[Container(1506).ListItem.Genre]</value>
         <value condition="!String.IsEmpty(ListItem.Genre)">$INFO[ListItem.Genre]</value>
-        <value condition="!String.IsEmpty(Window(Home).Property(SkinHelper.ListItem.Genre))">$INFO[Window(Home).Property(SkinHelper.ListItem.Genre)]</value>
+        <value condition="!String.IsEmpty(Window(Home).Property(TMDbHelper.ListItem.Genre))">$INFO[Window(Home).Property(TMDbHelper.ListItem.Genre)]</value>
         <value>Other</value>
     </variable>
 
@@ -1320,22 +1290,22 @@
         <value condition="String.Contains(ListItem.FolderPath,pvr:)">$INFO[ListItem.Label]</value>
         <value condition="String.IsEqual(ListItem.DBType,episode) + !String.IsEmpty(ListItem.Title)">S$INFO[ListItem.Season]: E$INFO[ListItem.Episode] - $INFO[ListItem.Title]</value>
         <value condition="!String.IsEmpty(ListItem.Genre)">$INFO[ListItem.Genre]</value>
-        <value condition="!String.IsEmpty(Window(Home).Property(SkinHelper.ListItem.Genre))">$INFO[Window(Home).Property(SkinHelper.ListItem.Genre)]</value>
+        <value condition="!String.IsEmpty(Window(Home).Property(TMDbHelper.ListItem.Genre))">$INFO[Window(Home).Property(TMDbHelper.ListItem.Genre)]</value>
         <value>Other</value>
     </variable>
 
 
     <variable name="Label_Director">
         <value condition="!String.IsEmpty(ListItem.Director)">$INFO[ListItem.Director]</value>
-        <value condition="!String.IsEmpty(Window(Home).Property(SkinHelper.ListItem.Director))">$INFO[Window(Home).Property(SkinHelper.ListItem.Director)]</value>
+        <value condition="!String.IsEmpty(Window(Home).Property(TMDbHelper.ListItem.Director))">$INFO[Window(Home).Property(TMDbHelper.ListItem.Director)]</value>
     </variable>
 
     <variable name="Label_OverlayTitle">
         <value condition="Window.IsVisible(script-script.extendedinfo-DialogVideoInfo.xml) | Window.IsVisible(script-script.extendedinfo-DialogInfo.xml)">$INFO[Window.Property(label)]</value>
         <value condition="!String.IsEmpty(ListItem.Title)">$INFO[ListItem.Title]</value>
         <value condition="!String.IsEmpty(ListItem.Label)">$INFO[ListItem.Label]</value>
-        <value condition="!String.IsEmpty(Window(Home).Property(SkinHelper.ListItem.Title))">$INFO[Window(Home).Property(SkinHelper.ListItem.Title)]</value>
-        <value condition="!String.IsEmpty(Window(Home).Property(SkinHelper.ListItem.Label))">$INFO[Window(Home).Property(SkinHelper.ListItem.Label)]</value>
+        <value condition="!String.IsEmpty(Window(Home).Property(TMDbHelper.ListItem.Title))">$INFO[Window(Home).Property(TMDbHelper.ListItem.Title)]</value>
+        <value condition="!String.IsEmpty(Window(Home).Property(TMDbHelper.ListItem.Label))">$INFO[Window(Home).Property(TMDbHelper.ListItem.Label)]</value>
         <value>$LOCALIZE[31380]</value>
     </variable>
 
@@ -1343,7 +1313,7 @@
         <value condition="Window.IsVisible(script-script.extendedinfo-DialogVideoInfo.xml)">$INFO[Window.Property(plot)]</value>
         <value condition="Window.IsVisible(script-script.extendedinfo-DialogInfo.xml)">$INFO[Window.Property(biography)]</value>
         <value condition="!String.IsEmpty(ListItem.AddonDescription) | !String.IsEmpty(ListItem.AddonDisclaimer) | !String.IsEmpty(ListItem.AddonNews)">$INFO[ListItem.AddonDisclaimer,[B]$LOCALIZE[24052][/B][CR],[CR][CR]]$INFO[ListItem.AddonDescription,[B]$LOCALIZE[21821][/B][CR],[CR][CR]]$INFO[ListItem.AddonNews,[B]$LOCALIZE[31303][/B][CR],[CR][CR]]</value>
-        <value condition="Window.IsVisible(Home) + [!String.IsEmpty(Window(Home).Property(SkinHelper.ListItem.AddonDescription)) | !String.IsEmpty(Window(Home).Property(SkinHelper.ListItem.AddonDisclaimer)) | !String.IsEmpty(Window(Home).Property(SkinHelper.ListItem.AddonNews))]">$INFO[Window(Home).Property(SkinHelper.ListItem.AddonDisclaimer),[B]$LOCALIZE[24052][/B][CR],[CR][CR]]$INFO[Window(Home).Property(SkinHelper.ListItem.AddonDescription),[B]$LOCALIZE[21821][/B][CR],[CR][CR]]$INFO[Window(Home).Property(SkinHelper.ListItem.AddonNews),[B]$LOCALIZE[31303][/B][CR],[CR][CR]]</value>
+        <value condition="Window.IsVisible(Home) + [!String.IsEmpty(Window(Home).Property(TMDbHelper.ListItem.AddonDescription)) | !String.IsEmpty(Window(Home).Property(TMDbHelper.ListItem.AddonDisclaimer)) | !String.IsEmpty(Window(Home).Property(TMDbHelper.ListItem.AddonNews))]">$INFO[Window(Home).Property(TMDbHelper.ListItem.AddonDisclaimer),[B]$LOCALIZE[24052][/B][CR],[CR][CR]]$INFO[Window(Home).Property(TMDbHelper.ListItem.AddonDescription),[B]$LOCALIZE[21821][/B][CR],[CR][CR]]$INFO[Window(Home).Property(TMDbHelper.ListItem.AddonNews),[B]$LOCALIZE[31303][/B][CR],[CR][CR]]</value>
         <value>[COLOR=white]$VAR[Label_Netflix_Tagline][CR][/COLOR]$INFO[ListItem.Artist,[B],[/B][CR]]$VAR[Label_Plot]</value>
     </variable>
     
@@ -1353,26 +1323,26 @@
         <value condition="!String.IsEmpty(ListItem.AddonDescription)">$INFO[ListItem.AddonDescription]</value>
         <value condition="!String.IsEmpty(ListItem.PlotOutline) + Skin.HasSetting(PlotOutline)">$INFO[ListItem.PlotOutline]</value>
         <value condition="!String.IsEmpty(ListItem.Plot)">$INFO[ListItem.Plot]</value>
-        <value condition="!String.IsEmpty(Window(Home).Property(SkinHelper.ListItem.Plot))">$INFO[Window(Home).Property(SkinHelper.ListItem.Plot)]</value>
+        <value condition="!String.IsEmpty(Window(Home).Property(TMDbHelper.ListItem.Plot))">$INFO[Window(Home).Property(TMDbHelper.ListItem.Plot)]</value>
     </variable>
 
     <variable name="AiredOnDay">
-	<value condition="!String.IsEmpty(Window(Home).Property(SkinHelper.ListItem.Airday.short)) + !String.IsEmpty(ListItem.Premiered)">Aired $INFO[Window(Home).Property(SkinHelper.ListItem.Airday.short)] $INFO[ListItem.Premiered(DDD MMM yyyy),, on]</value>
+	<value condition="!String.IsEmpty(Window(Home).Property(TMDbHelper.ListItem.Premiered)) + !String.IsEmpty(ListItem.Premiered)">Aired $INFO[Window(Home).Property(TMDbHelper.ListItem.Premiered)] $INFO[ListItem.Premiered(DDD MMM yyyy),, on]</value>
 	<value>Aired $INFO[ListItem.Premiered(DDD MMM yyyy), on , ]</value>
     </variable>
     <variable name="Label_Tagline">
         <value condition="!String.IsEmpty(ListItem.Tagline)">$INFO[ListItem.Tagline]</value>
-        <value condition="ListItem.IsCollection">$INFO[Window(Home).Property(SkinHelper.ListItem.Plots)]</value>
+        <value condition="ListItem.IsCollection">$INFO[Window(Home).Property(TMDbHelper.ListItem.Plots)]</value>
         <value condition="!String.IsEmpty(ListItem.Property(Artist_Description))">$INFO[ListItem.Property(Artist_Description)]</value>
         <value condition="!String.IsEmpty(ListItem.Property(Album_Description))">$INFO[ListItem.Property(Album_Description)]</value>
         <value condition="!String.IsEmpty(ListItem.AddonDescription)">$INFO[ListItem.AddonDescription]</value>
         <value condition="!String.IsEmpty(ListItem.Plot)">$INFO[ListItem.Plot]</value>
-        <value condition="!String.IsEmpty(Window(Home).Property(SkinHelper.ListItem.Plot))">$INFO[Window(Home).Property(SkinHelper.ListItem.Plot)]</value>
+        <value condition="!String.IsEmpty(Window(Home).Property(TMDbHelper.ListItem.Plot))">$INFO[Window(Home).Property(TMDbHelper.ListItem.Plot)]</value>
     </variable>
     <variable name="Label_Netflix_Tagline">
         <value condition="String.IsEqual(ListItem.DBType,season)">$INFO[ListItem.Label]</value>
         <value condition="!String.IsEmpty(ListItem.Tagline)">[I]$INFO[ListItem.Tagline][/I]</value>
-        <value condition="!String.IsEmpty(Window(Home).Property(SkinHelper.ListItem.Tagline))">[I]$INFO[Window(Home).Property(SkinHelper.ListItem.Tagline)][/I]</value>
+        <value condition="!String.IsEmpty(Window(Home).Property(TMDbHelper.ListItem.Tagline))">[I]$INFO[Window(Home).Property(TMDbHelper.ListItem.Tagline)][/I]</value>
         <value condition="!String.IsEmpty(ListItem.Property(Artist_Description))">$INFO[ListItem.Property(Artist_Description)]</value>
         <value condition="!String.IsEmpty(ListItem.Property(Album_Description))">$INFO[ListItem.Property(Album_Description)]</value>
         <value condition="!String.IsEmpty(ListItem.AddonDescription)">$INFO[ListItem.AddonDescription]</value>
@@ -1386,7 +1356,7 @@
 
         <value condition="String.IsEqual(ListItem.DBType,tvshow) + !String.IsEmpty(ListItem.Studio)">[I]$INFO[ListItem.Year,Premiered  , ] $VAR[studios_var][/I]</value>
 
-        <value condition="String.IsEqual(ListItem.DBType,tvshow)">[I]$INFO[ListItem.Year,Premiered  , ] $INFO[Window(Home).Property(SkinHelper.ListItem.Studio),on , ][/I]</value>
+        <value condition="String.IsEqual(ListItem.DBType,tvshow)">[I]$INFO[ListItem.Year,Premiered  , ] $INFO[Window(Home).Property(TMDbHelper.ListItem.Studio),on , ][/I]</value>
 
     </variable>
 
@@ -1398,7 +1368,7 @@
     <variable name="Label_Netflix_Tagline_1505">
         <value condition="String.IsEqual(Container(1505).ListItem.DBType,season)">$INFO[Container(1505).ListItem.Label]</value>
         <value condition="!String.IsEmpty(Container(1505).ListItem.Tagline)">[I]$INFO[Container(1505).ListItem.Tagline][/I]</value>
-        <value condition="!String.IsEmpty(Window(Home).Property(SkinHelper.ListItem.Tagline))">[I]$INFO[Window(Home).Property(SkinHelper.ListItem.Tagline)][/I]</value>
+        <value condition="!String.IsEmpty(Window(Home).Property(TMDbHelper.ListItem.Tagline))">[I]$INFO[Window(Home).Property(TMDbHelper.ListItem.Tagline)][/I]</value>
         <value condition="!String.IsEmpty(Container(1505).ListItem.Property(Artist_Description))">$INFO[Container(1505).ListItem.Property(Artist_Description)]</value>
         <value condition="!String.IsEmpty(Container(1505).ListItem.Property(Album_Description))">$INFO[Container(1505).ListItem.Property(Album_Description)]</value>
         <value condition="!String.IsEmpty(Container(1505).ListItem.AddonDescription)">$INFO[Container(1505).ListItem.AddonDescription]</value>
@@ -1413,13 +1383,13 @@
 
         <value condition="String.IsEqual(Container(1505).ListItem.DBType,tvshow) + !String.IsEmpty(Container(1505).ListItem.Studio)">[I]$INFO[Container(1505).ListItem.Year,Premiered  , ] $INFO[Container(1505).ListItem.Studio,on , ][/I]</value>
 
-        <value condition="String.IsEqual(Container(1505).ListItem.DBType,tvshow)">[I]$INFO[Container(1505).ListItem.Year,Premiered  , ] $INFO[Window(Home).Property(SkinHelper.ListItem.Studio),on , ][/I]</value>
+        <value condition="String.IsEqual(Container(1505).ListItem.DBType,tvshow)">[I]$INFO[Container(1505).ListItem.Year,Premiered  , ] $INFO[Window(Home).Property(TMDbHelper.ListItem.Studio),on , ][/I]</value>
     </variable>
 
     <variable name="Label_Netflix_Tagline_1506">
         <value condition="String.IsEqual(Container(1506).ListItem.DBType,season)">$INFO[Container(1506).ListItem.Label]</value>
         <value condition="!String.IsEmpty(Container(1506).ListItem.Tagline)">[I]$INFO[Container(1506).ListItem.Tagline][/I]</value>
-        <value condition="!String.IsEmpty(Window(Home).Property(SkinHelper.ListItem.Tagline))">[I]$INFO[Window(Home).Property(SkinHelper.ListItem.Tagline)][/I]</value>
+        <value condition="!String.IsEmpty(Window(Home).Property(TMDbHelper.ListItem.Tagline))">[I]$INFO[Window(Home).Property(TMDbHelper.ListItem.Tagline)][/I]</value>
         <value condition="!String.IsEmpty(Container(1506).ListItem.Property(Artist_Description))">$INFO[Container(1506).ListItem.Property(Artist_Description)]</value>
         <value condition="!String.IsEmpty(Container(1506).ListItem.Property(Album_Description))">$INFO[Container(1506).ListItem.Property(Album_Description)]</value>
         <value condition="!String.IsEmpty(Container(1506).ListItem.AddonDescription)">$INFO[Container(1506).ListItem.AddonDescription]</value>
@@ -1434,14 +1404,14 @@
 
         <value condition="String.IsEqual(Container(1506).ListItem.DBType,tvshow) + !String.IsEmpty(Container(1506).ListItem.Studio)">[I]$INFO[Container(1506).ListItem.Year,Premiered  , ] $INFO[Container(1506).ListItem.Studio,on , ][/I]</value>
 
-        <value condition="String.IsEqual(Container(1506).ListItem.DBType,tvshow)">[I]$INFO[Container(1506).ListItem.Year,Premiered  , ] $INFO[Window(Home).Property(SkinHelper.ListItem.Studio),on , ][/I]</value>
+        <value condition="String.IsEqual(Container(1506).ListItem.DBType,tvshow)">[I]$INFO[Container(1506).ListItem.Year,Premiered  , ] $INFO[Window(Home).Property(TMDbHelper.ListItem.Studio),on , ][/I]</value>
     </variable>
 
 
     <variable name="Label_Rating">
         <value condition="!String.IsEmpty(ListItem.UserRating)">$INFO[ListItem.UserRating,,.0]</value>
         <value condition="!String.IsEmpty(ListItem.Rating)">$INFO[ListItem.Rating]</value>
-        <value condition="!String.IsEmpty(ListItem.Rating)">$INFO[Window(Home).Property(SkinHelper.ListItem.Rating])</value>
+        <value condition="!String.IsEmpty(ListItem.Rating)">$INFO[Window(Home).Property(TMDbHelper.ListItem.Rating])</value>
         <value>0.0</value>
     </variable>
 

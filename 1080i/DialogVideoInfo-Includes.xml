@@ -1832,7 +1832,7 @@
 				<height>50</height>
 				<aspectratio align="left">keep</aspectratio>
 				<visible>Integer.IsGreater(Window(Home).Property(SkinHelper.ListItem.RottenTomatoesMeter), 75)</visible>
-				<texture>http://d3biamo577v4eu.cloudfront.net/static/images/icons/cf-lg.png</texture>
+				<texture>flags/color/ratings/certified.png</texture>
 			</control>
 			
 			<control type="image">

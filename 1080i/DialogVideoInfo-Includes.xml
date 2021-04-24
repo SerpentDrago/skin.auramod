@@ -621,7 +621,7 @@
               </include>
               <include content="Object_VideoInfo_InfoSection">
                 <param name="label" value="$LOCALIZE[31289]" />
-                <param name="label2" value="Window(Home).Property(SkinHelper.ListItem.Awards)" />
+                <param name="label2" value="Window(Home).Property(TMDBHelper.ListItem(Awards))" />
               </include>
             </control>
           </control>
@@ -1101,7 +1101,7 @@
           <texture background="true">$VAR[NetflixHome_ClearLogo]</texture>
         </control>
         <control type="label">
-          <visible>[String.IsEqual(ListItem.DBType,episode) | String.IsEqual(ListItem.DBType,movie) | String.IsEqual(ListItem.DBType,tvshow) | String.IsEqual(ListItem.DBType,season) | !String.IsEmpty(ListItem.ChannelName)] + String.IsEmpty(ListItem.Art(tvshow.clearlogo)) + String.IsEmpty(ListItem.Art(clearlogo)) + String.IsEmpty(Window(Home).Property(SkinHelper.ListItem.Art.ClearLogo))</visible>
+          <visible>[String.IsEqual(ListItem.DBType,episode) | String.IsEqual(ListItem.DBType,movie) | String.IsEqual(ListItem.DBType,tvshow) | String.IsEqual(ListItem.DBType,season) | !String.IsEmpty(ListItem.ChannelName)] + String.IsEmpty(ListItem.Art(tvshow.clearlogo)) + String.IsEmpty(ListItem.Art(clearlogo)) + String.IsEmpty(Window(Home).Property(TMDBHelper.Art(ClearLogo)))</visible>
           <top>-190</top>
           <label>$VAR[video_heading]</label>
           <textcolor>grey</textcolor>
@@ -1285,7 +1285,7 @@
             <control type="group">
               <width>1200</width>
               <height>30</height>
-              <visible>!String.IsEmpty(Window(Home).Property(SkinHelper.ListItem.Awards))</visible>
+              <visible>!String.IsEmpty(Window(Home).Property(TMDBHelper.ListItem(Awards)))</visible>
               <control type="image">
                 <width>30</width>
                 <height>30</height>
@@ -1297,7 +1297,7 @@
                 <width>700</width>
                 <font>Netflix_Info_main</font>
                 <align>left</align>
-                <label>$INFO[Window(Home).Property(SkinHelper.ListItem.Awards)]</label>
+                <label>$INFO[Window(Home).Property(TMDBHelper.ListItem(Awards))]</label>
                 <textcolor>dimgrey</textcolor>
                 <scroll>false</scroll>
               </control>
@@ -1469,11 +1469,11 @@
             <radiowidth>45</radiowidth>
             <radioheight>48</radioheight>
             <radioposx>2</radioposx>
-            <visible>!Skin.HasSetting(VideoInfoButton.Trailer) + !Player.HasVideo + [String.IsEqual(ListItem.DBType,tvshow) | String.IsEqual(ListItem.DBType,movie)] + [!String.IsEmpty(ListItem.Trailer) | !String.IsEmpty(Window(Home).Property(SkinHelper.ListItem.Trailer))]</visible>
+            <visible>!Skin.HasSetting(VideoInfoButton.Trailer) + !Player.HasVideo + [String.IsEqual(ListItem.DBType,tvshow) | String.IsEqual(ListItem.DBType,movie)] + [!String.IsEmpty(ListItem.Trailer) | !String.IsEmpty(Window(Home).Property(TMDBHelper.ListItem.Trailer))]</visible>
             <label>Trailer</label>
             <onclick condition="!Player.HasVideo + !String.IsEmpty(ListItem.Trailer) + [String.IsEqual(ListItem.DBTYPE,movie) | String.IsEqual(ListItem.DBTYPE,tvshow)]">PlayMedia($INFO[ListItem.Trailer],1)</onclick>
-            <onclick condition="!Player.HasVideo + String.IsEmpty(ListItem.Trailer)">Playmedia($INFO[Window(Home).Property(SkinHelper.ListItem.Trailer)],1)</onclick>
-            <onclick condition="!Player.HasVideo + [!String.IsEmpty(ListItem.Trailer) | !String.IsEmpty(Window(Home).Property(SkinHelper.ListItem.Trailer))]">SetProperty(TrailerPlaying,fullscreen,home)</onclick>
+            <onclick condition="!Player.HasVideo + String.IsEmpty(ListItem.Trailer)">Playmedia($INFO[Window(Home).Property(TMDbHelper.ListItem.Trailer)],1)</onclick>
+            <onclick condition="!Player.HasVideo + [!String.IsEmpty(ListItem.Trailer) | !String.IsEmpty(Window(Home).Property(TMDBHelper.ListItem.Trailer))]">SetProperty(TrailerPlaying,fullscreen,home)</onclick>
           </control>
           <!-- Fullscreen -->
           <control type="radiobutton" id="35">
@@ -1813,7 +1813,7 @@
 				<top>207</top>
 				<height>50</height>
 				<aspectratio align="left">keep</aspectratio>
-				<visible>!Integer.IsGreater(Window(Home).Property(SkinHelper.ListItem.RottenTomatoesMeter), 59) | !Integer.IsGreater(Window(Home).Property(TMDBHelper.ListItem.RottenTomatoes_UserMeter), 59)</visible>
+				<visible>!Integer.IsGreater(Window(Home).Property(TMDBHelper.ListItem.RottenTomatoes_UserMeter), 59)</visible>
 				<texture>flags/color/ratings/rtrotten.png</texture>
 			</control>
 			<control type="image">
@@ -1822,7 +1822,7 @@
 				<top>207</top>
 				<height>50</height>
 				<aspectratio align="left">keep</aspectratio>
-				<visible>[Integer.IsGreater(Window(Home).Property(SkinHelper.ListItem.RottenTomatoesMeter), 59) + !Integer.IsGreater(Window(Home).Property(SkinHelper.ListItem.RottenTomatoesRating), 75)] | [Integer.IsGreater(Window(Home).Property(TMDBHelper.ListItem.RottenTomatoes_UserMeter), 59) + !Integer.IsGreater(Window(Home).Property(TMDBHelper.ListItem.RottenTomatoes_UserMeter), 75)]</visible>
+				<visible>[Integer.IsGreater(Window(Home).Property(TMDBHelper.ListItem.RottenTomatoes_UserMeter), 59) + !Integer.IsGreater(Window(Home).Property(TMDBHelper.ListItem.RottenTomatoes_UserMeter), 75)]</visible>
 				<texture>flags/color/ratings/rtfresh.png</texture>
 			</control>
 			<control type="image">

@@ -3958,7 +3958,7 @@
           <top>10</top>
           <width>32</width>
           <height>32</height>
-          <texture colordiffuse="$PARAM[colordiffuse]">flags/$PARAM[directory]/ratings/rtfresh.png</texture>
+          <!-- <texture colordiffuse="$PARAM[colordiffuse]">flags/$PARAM[directory]/ratings/rtfresh.png</texture> -->
           <texture colordiffuse="$PARAM[colordiffuse]">flags/$PARAM[directory]/ratings/certified.png</texture>
           <visible>!String.IsEmpty(ListItem.Property(rottentomatoes_rating)) | [$EXP[tmdbu] + !String.IsEmpty(Window(Home).Property(TMDbHelper.ListItem.RottenTomatoes_Rating))] | !String.IsEmpty(Window(Home).Property(SkinHelper.ListItem.RottenTomatoes.Rating))</visible>
           <visible>Integer.IsGreater(ListItem.Property(rottentomatoes_rating),74) | Integer.IsGreater(Window(home).Property(TMDBHelper.ListItem.RottenTomatoes_Rating),74) | Integer.IsGreater(Window(home).Property(SkinHelper.ListItem.RottenTomatoes.Rating),74)</visible>

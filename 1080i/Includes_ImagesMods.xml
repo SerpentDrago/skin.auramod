@@ -23,10 +23,10 @@
     </variable>
 
      <variable name="PVRInfoThumb">
-        <value condition="!IsEmpty(Window(home).Property(SkinHelper.ListItem.Art.ClearLogo))">$INFO[Window(home).Property(SkinHelper.ListItem.Art.ClearLogo)]</value>
-        <value condition="!IsEmpty(Window(home).Property(SkinHelper.ListItem.Art.ClearArt))">$INFO[Window(home).Property(SkinHelper.ListItem.Art.ClearArt)]</value>
-        <value condition="!IsEmpty(Window(home).Property(SkinHelper.ListItem.Art.Landscape))">$INFO[Window(home).Property(SkinHelper.ListItem.Art.Landscape)]</value>
-        <value condition="!IsEmpty(Window(home).Property(SkinHelper.ListItem.Art.Fanart))">$INFO[Window(home).Property(SkinHelper.ListItem.Art.Fanart)]</value>
+        <value condition="!IsEmpty(Window(home).Property(TMDbHelper.ListItem.Art.ClearLogo))">$INFO[Window(home).Property(TMDbHelper.ListItem.Art.ClearLogo)]</value>
+        <value condition="!IsEmpty(Window(home).Property(TMDbHelper.ListItem.Art.ClearArt))">$INFO[Window(home).Property(TMDbHelper.ListItem.Art.ClearArt)]</value>
+        <value condition="!IsEmpty(Window(home).Property(TMDbHelper.ListItem.Art.Landscape))">$INFO[Window(home).Property(TMDbHelper.ListItem.Art.Landscape)]</value>
+        <value condition="!IsEmpty(Window(home).Property(TMDbHelper.ListItem.Art.Fanart))">$INFO[Window(home).Property(TMDbHelper.ListItem.Art.Fanart)]</value>
         <value condition="!IsEmpty(Window(home).Property(SkinHelper.ListItem.ChannelLogo))">$INFO[Window(home).Property(SkinHelper.ListItem.ChannelLogo)]</value>
     </variable>
     <variable name="Image_OSD_Artwork">

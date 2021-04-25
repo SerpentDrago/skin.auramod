@@ -717,7 +717,7 @@
 		<height>$PARAM[height]</height>
 		<preloaditems>2</preloaditems>
 		<onfocus>SetProperty(WidgetFocus,1,Home)</onfocus>
-		<onfocus>SetProperty(SkinHelper.WidgetContainer,$PARAM[id],Home)</onfocus>
+		<onfocus>SetProperty(TMDbHelper.WidgetContainer,$PARAM[id],Home)</onfocus>
 		<include content="Widget_Movement" condition="!Skin.HasSetting(SubmenuLabel)">
 		    <param name="id" value="$PARAM[id]" />
 		    <param name="aspect" value="$PARAM[aspect]" />

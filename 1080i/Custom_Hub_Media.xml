@@ -3,7 +3,7 @@
 
     <defaultcontrol always="true">4000</defaultcontrol>
     <onload>AlarmClock(focusWidgets,SetFocus(323231),00:00,silent)</onload>
-    <onunload>ClearProperty(SkinHelper.WidgetContainer,Home)</onunload>
+    <onunload>ClearProperty(TMDbHelper.WidgetContainer,Home)</onunload>
     <controls>
         <include>Object_Home_Media_Hub</include>
 	</controls>

@@ -538,8 +538,6 @@
         </control>
       </control>
       <control type="list" id="$PARAM[id]">
-       <onfocus condition="Control.IsVisible(1505)">SetProperty(SkinHelper.WidgetContainer,1505,Home)</onfocus>
-       <onfocus condition="Control.IsVisible(1506)">SetProperty(SkinHelper.WidgetContainer,1506,Home)</onfocus>
        <onfocus condition="Control.IsVisible(1505)">SetProperty(TMDbHelper.WidgetContainer,1505,Home)</onfocus>
        <onfocus condition="Control.IsVisible(1506)">SetProperty(TMDbHelper.WidgetContainer,1506,Home)</onfocus>
         <onunfocus>ClearProperty(SpotFocus)</onunfocus>
@@ -833,7 +831,6 @@
     <height>$PARAM[height]</height>
     <preloaditems>2</preloaditems>
     <onfocus>SetProperty(WidgetFocus,1,Home)</onfocus>
-    <onfocus>SetProperty(SkinHelper.WidgetContainer,$PARAM[id],Home)</onfocus>
     <onfocus>SetProperty(TMDbHelper.WidgetContainer,$PARAM[id],Home)</onfocus>
     <include content="Widget_Movement" condition="!Skin.HasSetting(SubmenuLabel) + !Window.IsVisible(3910)">
       <param name="id" value="$PARAM[id]" />

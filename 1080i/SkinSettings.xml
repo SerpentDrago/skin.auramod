@@ -1127,7 +1127,7 @@
                         <control type="radiobutton" id="96181" description="Enable TMDB helper artwork lookups">
                             <visible>Integer.IsEqual(Window.Property(CurrentFocus),9006)</visible>
                             <include>Defs_Settings_Button</include>
-                            <label>Enable TMDBHelper service monitor</label>
+                            <label>Enable TMDbHelper service monitor</label>
                             <onclick>Skin.ToggleSetting(TMDbHelper.Service)</onclick>
                             <selected>Skin.HasSetting(TMDbHelper.Service)</selected>
                         </control>
@@ -1722,10 +1722,10 @@
                             <label>Configure Metadatautils APIs</label>
                             <onclick>Addon.OpenSettings(script.module.metadatautils)</onclick>
                         </control>
-                        <control type="button" id="900812" description="Configure TMDBHelper APIs">
+                        <control type="button" id="900812" description="Configure TMDbHelper APIs">
                             <visible>Integer.IsEqual(Window.Property(CurrentFocus),90081)</visible>
                             <include>Defs_Settings_Button</include>
-                            <label>Configure TMDBHelper APIs</label>
+                            <label>Configure TMDbHelper APIs</label>
                             <onclick>Addon.OpenSettings(plugin.video.themoviedb.helper)</onclick>
                         </control>
 

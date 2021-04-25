@@ -5510,7 +5510,7 @@
           <visible>!$EXP[MainSubMenuHasFocus]</visible>
         </control>
         <control type="group">
-          <width>570</width> <!--500-->
+          <width>630</width> <!--500-->
           <control type="grouplist">
             <orientation>horizontal</orientation>
             <itemgap>10</itemgap>

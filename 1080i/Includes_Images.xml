@@ -55,7 +55,7 @@
      </variable>
      <variable name="Image_Clearart_Hub">
 	<value condition="!String.IsEmpty(ListItem.Art(clearart))">$INFO[ListItem.Art(clearart)]</value>
-	<value condition="!String.IsEmpty(Window(Home).Property(TMDbHelper.ListItem.Art.ClearArt.))">$INFO[Window(Home).Property(TMDbHelper.ListItem.Art.ClearArt.)]</value>
+	<value condition="!String.IsEmpty(Window(Home).Property(TMDbHelper.ListItem.Art.ClearArt))">$INFO[Window(Home).Property(TMDbHelper.ListItem.Art.ClearArt.)]</value>
         <value condition="String.IsEmpty(ListItem.Art(Clearart))">$INFO[ListItem.Art(clearlogo)]</value>
         <value condition="!String.IsEmpty(Window(Home).Property(TMDbHelper.ListItem.Art.ClearLogo))">$INFO[Window(Home).Property(TMDbHelper.ListItem.Art.ClearLogo)]</value>
      </variable>
@@ -304,7 +304,7 @@
     <variable name="Widget_ClearLogo_1506">
         <value condition="!String.IsEmpty(Container(1506).ListItem.Art(tvshow.clearart))">$INFO[Container(1506).ListItem.Art(tvshow.clearart)]</value>
         <value condition="!String.IsEmpty(Container(1506).ListItem.Art(clearart))">$INFO[Container(1506).ListItem.Art(clearart)]</value>
-		<value condition="!String.IsEmpty(Container(1506).ListItem.Art(tvshow.clearlogo))">$INFO[Container(1506).ListItem.Art(tvshow.clearlogo)]</value>
+	<value condition="!String.IsEmpty(Container(1506).ListItem.Art(tvshow.clearlogo))">$INFO[Container(1506).ListItem.Art(tvshow.clearlogo)]</value>
         <value condition="!String.IsEmpty(Container(1506).ListItem.Art(clearlogo))">$INFO[Container(1506).ListItem.Art(clearlogo)]</value>
     </variable>
 
@@ -320,7 +320,7 @@
         <value condition="String.IsEmpty(ListItem.Art(clearlogo)) + !String.IsEmpty(Window(Home).Property(TMDbHelper.ListItem.Art.ClearLogo))">$INFO[Window(Home).Property(TMDbHelper.ListItem.Art.ClearLogo)]</value>
     </variable>
 	
-	<variable name="NetflixHome_Clearart">
+    <variable name="NetflixHome_Clearart">
         <value condition="!String.IsEmpty(ListItem.Art(tvshow.clearart))">$INFO[ListItem.Art(tvshow.clearart)]</value>
         <value condition="!String.IsEmpty(ListItem.Art(clearart))">$INFO[ListItem.Art(clearart)]</value>
         <value condition="String.IsEmpty(ListItem.Art(clearart)) + !String.IsEmpty(Window(Home).Property(TMDbHelper.ListItem.Art.Clearart))">$INFO[Window(Home).Property(TMDbHelper.ListItem.Art.Clearart)]</value>
@@ -423,7 +423,7 @@
         <value condition="Container.Content(seasons) + !String.IsEmpty(ListItem.Icon)">$INFO[ListItem.Icon]</value>
         <value condition="!String.IsEmpty(ListItem.Art(tvshow.poster))">$INFO[ListItem.Art(tvshow.poster)]</value>
         <value condition="!String.IsEmpty(ListItem.Art(poster))">$INFO[ListItem.Art(poster)]</value>
-        <value condition="!String.IsEmpty(Window(Home).Property(TMDbHelper.ListItem.Art.Poster.))">$INFO[Window(Home).Property(TMDbHelper.ListItem.Art.Poster)]</value>
+        <value condition="!String.IsEmpty(Window(Home).Property(TMDbHelper.ListItem.Art.Poster))">$INFO[Window(Home).Property(TMDbHelper.ListItem.Art.Poster)]</value>
         <value condition="!String.IsEmpty(Window(Home).Property(SkinHelper.ListItem.Art.AlbumThumb))">$INFO[Window(Home).Property(SkinHelper.ListItem.Art.AlbumThumb)]</value>
         <value condition="!String.IsEmpty(Window(Home).Property(SkinHelper.ListItem.Art.ArtistThumb))">$INFO[Window(Home).Property(SkinHelper.ListItem.Art.ArtistThumb)]</value>
         <value condition="!String.IsEmpty(ListItem.Icon)">$INFO[ListItem.Icon]</value>

@@ -1429,6 +1429,7 @@
             <onclick condition="String.IsEmpty(ListItem.DBID) + String.IsEqual(Skin.String(AddonContainer),false)">ActivateWindow(10025,$ESCINFO[ListItem.FileNameAndPath],return)</onclick>
 <!--            <onclick condition="String.Contains(ListItem.FolderPath,plugin.video.themoviedb.helper)">SetFocus(8999,1)</onclick> -->
             <onclick condition="!String.IsEmpty(ListItem.DBID) + String.Contains(ListItem.FolderPath,plugin.video.themoviedb.helper)">ActivateWindow(Videos,videodb://tvshows/titles/$INFO[ListItem.DBID]/,return)</onclick>
+            <onclick condition="!String.IsEmpty(ListItem.DBID) + !String.Contains(ListItem.FolderPath,plugin.video.themoviedb.helper)">ActivateWindow(Videos,videodb://tvshows/titles/$INFO[ListItem.DBID]/,return)</onclick>
           </control>
           <!--More episodes-->
           <control type="radiobutton" id="339">

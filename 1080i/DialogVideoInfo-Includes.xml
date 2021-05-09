@@ -356,7 +356,7 @@
                 <param name="id" value="9550" />
                 <param name="ondown" value="9501" />
                 <param name="label" value="$LOCALIZE[206]" />
-               	<param name="content" value="plugin://plugin.video.themoviedb.helper/?info=cast&amp;$VAR[Info_Param_Type]&amp;$VAR[Info_Param_IMDB_or_QUERY]" />
+                <param name="content" value="plugin://plugin.video.themoviedb.helper/?info=cast&amp;$VAR[Info_Param_Type]&amp;$VAR[Info_Param_IMDB_or_QUERY]" />
                 <param name="infolabel" value="true" />
                 <param name="pad" value="0" />
                 <param name="top" value="0" />
@@ -367,7 +367,7 @@
                 <param name="id" value="9550" />
                 <param name="ondown" value="9501" />
                 <param name="label" value="$LOCALIZE[206]" />
-               	<param name="content" value="plugin://plugin.video.themoviedb.helper/?info=cast&amp;$VAR[Info_Param_Type]&amp;$VAR[Info_Param_IMDB_or_QUERY]" />
+                <param name="content" value="plugin://plugin.video.themoviedb.helper/?info=cast&amp;$VAR[Info_Param_Type]&amp;$VAR[Info_Param_IMDB_or_QUERY]" />
                 <param name="infolabel" value="true" />
                 <param name="pad" value="0" />
                 <param name="top" value="0" />
@@ -1903,7 +1903,7 @@
           <param name="onclick" value="SetProperty(BaseWindow,InfoDialog,Home)" />
           <param name="onclick2" value="RunScript(plugin.video.themoviedb.helper,add_query=$INFO[Container(53001).ListItem.Label],type=person,call_id=1137,prevent_del,delay=0.35)" />
           <param name="content" value="plugin://plugin.video.themoviedb.helper/?info=cast&amp;$VAR[Info_Param_Type]&amp;$VAR[Info_Param_IMDB_or_QUERY]" />
-		      <param name="widgetContent" value="plugin://plugin.video.themoviedb.helper/?info=cast&amp;$VAR[Info_Param_Type]&amp;$VAR[Info_Param_IMDB_or_QUERY]" />
+          <param name="widgetContent" value="plugin://plugin.video.themoviedb.helper/?info=cast&amp;$VAR[Info_Param_Type]&amp;$VAR[Info_Param_IMDB_or_QUERY]" />
           <param name="postercondition" value="true" />
           <param name="controltype" value="panel" />
           <param name="orientation" value="vertical" />

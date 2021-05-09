@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="utf-8"?>
 <window type="window" id="2112">
   <onload condition="!String.IsEqual(Window(Home).Property(BaseWindow),InfoDialog)">SetFocus(505)</onload>
-  <onunload>ClearProperty(TMDbHelper.WidgetContainer,Home)</onunload>
+  <onunload>ClearProperty(TMDBHelper.WidgetContainer,Home)</onunload>
   <controls>
 
 

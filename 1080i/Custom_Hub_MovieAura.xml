@@ -2,7 +2,7 @@
 <window type="window" id="3920">
   <defaultcontrol>5050</defaultcontrol>
   <onload condition="Control.IsVisible(300)">SetFocus(5055)</onload>
-  <onunload>ClearProperty(TMDbHelper.WidgetContainer,Home)</onunload>
+  <onunload>ClearProperty(TMDBHelper.WidgetContainer,Home)</onunload>
   <onunload>ClearProperty(spothubscroll,home)</onunload>
   <controls>
     <include>Global_Background</include>

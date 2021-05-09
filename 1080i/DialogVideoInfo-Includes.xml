@@ -334,9 +334,7 @@
                 <param name="id" value="9550" />
                 <param name="ondown" value="9501" />
                 <param name="label" value="$LOCALIZE[206]" />
-                <!-- <param name="content" value="plugin://plugin.video.themoviedb.helper/?info=cast&amp;$VAR[Info_Param_Type]&amp;$VAR[Info_Param_IMDB_or_QUERY]" /> -->
-				<param name="content" value="plugin://plugin.video.themoviedb.helper/?info=cast&amp;$VAR[Info_Param_Type]&amp;$VAR[Info_Param_IMDB_or_QUERY]" />
-						
+                <param name="content" value="plugin://plugin.video.themoviedb.helper/?info=cast&amp;$VAR[Info_Param_Type]&amp;$VAR[Info_Param_IMDB_or_QUERY]" />
                 <param name="infolabel" value="true" />
                 <param name="pad" value="0" />
                 <param name="top" value="0" />
@@ -347,9 +345,7 @@
                 <param name="id" value="9550" />
                 <param name="ondown" value="9501" />
                 <param name="label" value="$LOCALIZE[206]" />
-                <!-- <param name="content" value="plugin://plugin.video.themoviedb.helper/?info=cast&amp;$VAR[Info_Param_Type]&amp;$VAR[Info_Param_IMDB_or_QUERY]" /> -->
-				<param name="content" value="plugin://plugin.video.themoviedb.helper/?info=cast&amp;$VAR[Info_Param_Type]&amp;$VAR[Info_Param_IMDB_or_QUERY]" />
-				
+                <param name="content" value="plugin://plugin.video.themoviedb.helper/?info=cast&amp;$VAR[Info_Param_Type]&amp;$VAR[Info_Param_IMDB_or_QUERY]" />
                 <param name="infolabel" value="true" />
                 <param name="pad" value="0" />
                 <param name="top" value="0" />
@@ -360,9 +356,7 @@
                 <param name="id" value="9550" />
                 <param name="ondown" value="9501" />
                 <param name="label" value="$LOCALIZE[206]" />
-               	<!-- <param name="content" value="plugin://plugin.video.themoviedb.helper/?info=cast&amp;$VAR[Info_Param_Type]&amp;$VAR[Info_Param_IMDB_or_QUERY]" /> -->
-				<param name="content" value="plugin://plugin.video.themoviedb.helper/?info=cast&amp;$VAR[Info_Param_Type]&amp;$VAR[Info_Param_IMDB_or_QUERY]" />
-				
+               	<param name="content" value="plugin://plugin.video.themoviedb.helper/?info=cast&amp;$VAR[Info_Param_Type]&amp;$VAR[Info_Param_IMDB_or_QUERY]" />
                 <param name="infolabel" value="true" />
                 <param name="pad" value="0" />
                 <param name="top" value="0" />
@@ -373,9 +367,7 @@
                 <param name="id" value="9550" />
                 <param name="ondown" value="9501" />
                 <param name="label" value="$LOCALIZE[206]" />
-               	<!-- <param name="content" value="plugin://plugin.video.themoviedb.helper/?info=cast&amp;$VAR[Info_Param_Type]&amp;$VAR[Info_Param_IMDB_or_QUERY]" /> -->
-				<param name="content" value="plugin://plugin.video.themoviedb.helper/?info=cast&amp;$VAR[Info_Param_Type]&amp;$VAR[Info_Param_IMDB_or_QUERY]" />
-				
+               	<param name="content" value="plugin://plugin.video.themoviedb.helper/?info=cast&amp;$VAR[Info_Param_Type]&amp;$VAR[Info_Param_IMDB_or_QUERY]" />
                 <param name="infolabel" value="true" />
                 <param name="pad" value="0" />
                 <param name="top" value="0" />
@@ -629,7 +621,7 @@
               </include>
               <include content="Object_VideoInfo_InfoSection">
                 <param name="label" value="$LOCALIZE[31289]" />
-                <param name="label2" value="Window(Home).Property(TMDbHelper.ListItem.Awards)" />
+                <param name="label2" value="Window(Home).Property(TMDBHelper.ListItem.Awards)" />
               </include>
             </control>
           </control>
@@ -1109,7 +1101,7 @@
           <texture background="true">$VAR[NetflixHome_ClearLogo]</texture>
         </control>
         <control type="label">
-          <visible>[String.IsEqual(ListItem.DBType,episode) | String.IsEqual(ListItem.DBType,movie) | String.IsEqual(ListItem.DBType,tvshow) | String.IsEqual(ListItem.DBType,season) | !String.IsEmpty(ListItem.ChannelName)] + String.IsEmpty(ListItem.Art(tvshow.clearlogo)) + String.IsEmpty(ListItem.Art(clearlogo)) + String.IsEmpty(Window(Home).Property(TMDbHelper.ListItem.Art.ClearLogo))</visible>
+          <visible>[String.IsEqual(ListItem.DBType,episode) | String.IsEqual(ListItem.DBType,movie) | String.IsEqual(ListItem.DBType,tvshow) | String.IsEqual(ListItem.DBType,season) | !String.IsEmpty(ListItem.ChannelName)] + String.IsEmpty(ListItem.Art(tvshow.clearlogo)) + String.IsEmpty(ListItem.Art(clearlogo)) + String.IsEmpty(Window(Home).Property(TMDBHelper.ListItem.Art.ClearLogo))</visible>
           <top>-190</top>
           <label>$VAR[video_heading]</label>
           <textcolor>grey</textcolor>
@@ -1293,7 +1285,7 @@
             <control type="group">
               <width>1200</width>
               <height>30</height>
-              <visible>!String.IsEmpty(Window(Home).Property(TMDbHelper.ListItem.Awards))</visible>
+              <visible>!String.IsEmpty(Window(Home).Property(TMDBHelper.ListItem.Awards))</visible>
               <control type="image">
                 <width>30</width>
                 <height>30</height>
@@ -1305,7 +1297,7 @@
                 <width>700</width>
                 <font>Netflix_Info_main</font>
                 <align>left</align>
-                <label>$INFO[Window(Home).Property(TMDbHelper.ListItem.Awards)]</label>
+                <label>$INFO[Window(Home).Property(TMDBHelper.ListItem.Awards)]</label>
                 <textcolor>dimgrey</textcolor>
                 <scroll>false</scroll>
               </control>
@@ -1481,8 +1473,8 @@
             <visible>!Skin.HasSetting(VideoInfoButton.Trailer) + !Player.HasVideo + [String.IsEqual(ListItem.DBType,tvshow) | String.IsEqual(ListItem.DBType,movie)] + [!String.IsEmpty(ListItem.Trailer) | !String.IsEmpty(Window(Home).Property(TMDBHelper.ListItem.Trailer))]</visible>
             <label>Trailer</label>
             <onclick condition="!Player.HasVideo + !String.IsEmpty(ListItem.Trailer) + [String.IsEqual(ListItem.DBTYPE,movie) | String.IsEqual(ListItem.DBTYPE,tvshow)]">PlayMedia($INFO[ListItem.Trailer],1)</onclick>
-            <onclick condition="!Player.HasVideo + String.IsEmpty(ListItem.Trailer)">Playmedia($INFO[Window(Home).Property(TMDbHelper.ListItem.Trailer)],1)</onclick>
-            <onclick condition="!Player.HasVideo + [!String.IsEmpty(ListItem.Trailer) | !String.IsEmpty(Window(Home).Property(TMDbHelper.ListItem.Trailer))]">SetProperty(TrailerPlaying,fullscreen,home)</onclick>
+            <onclick condition="!Player.HasVideo + String.IsEmpty(ListItem.Trailer)">Playmedia($INFO[Window(Home).Property(TMDBHelper.ListItem.Trailer)],1)</onclick>
+            <onclick condition="!Player.HasVideo + [!String.IsEmpty(ListItem.Trailer) | !String.IsEmpty(Window(Home).Property(TMDBHelper.ListItem.Trailer))]">SetProperty(TrailerPlaying,fullscreen,home)</onclick>
           </control>
           <!-- Fullscreen -->
           <control type="radiobutton" id="35">
@@ -1642,11 +1634,11 @@
           </item>
           <item id="6">
             <label>By Director</label>
-            <visible>[!String.IsEmpty(ListItem.Director) | !String.IsEmpty(Window(Home).Property(TMDbHelper.ListItem.Director))]  + [Integer.IsGreater(Container(53004).NumItems,0) | Container(53004).IsUpdating]</visible>
+            <visible>[!String.IsEmpty(ListItem.Director) | !String.IsEmpty(Window(Home).Property(TMDBHelper.ListItem.Director))]  + [Integer.IsGreater(Container(53004).NumItems,0) | Container(53004).IsUpdating]</visible>
           </item>
           <item id="7">
             <label>By Studio</label>
-            <visible>[!String.IsEmpty(ListItem.Studio) | !String.IsEmpty(Window(Home).Property(TMDbHelper.ListItem.Studio.1.Name))]  + [Integer.IsGreater(Container(53006).NumItems,0) | Container(53006).IsUpdating]</visible>
+            <visible>[!String.IsEmpty(ListItem.Studio) | !String.IsEmpty(Window(Home).Property(TMDBHelper.ListItem.Studio.1.Name))]  + [Integer.IsGreater(Container(53006).NumItems,0) | Container(53006).IsUpdating]</visible>
           </item>
           <item id="8">
             <label>By Year</label>
@@ -1654,7 +1646,7 @@
           </item>
           <item id="9">
             <label>By Genre</label>
-            <visible>[!String.IsEmpty(ListItem.Genre) | !String.IsEmpty(Window(Home).Property(TMDbHelper.ListItem.Genre))] + [Integer.IsGreater(Container(53008).NumItems,0) | Container(53008).IsUpdating]</visible>
+            <visible>[!String.IsEmpty(ListItem.Genre) | !String.IsEmpty(Window(Home).Property(TMDBHelper.ListItem.Genre))] + [Integer.IsGreater(Container(53008).NumItems,0) | Container(53008).IsUpdating]</visible>
           </item>
           <item id="14">
             <label>Youtube</label>
@@ -1822,7 +1814,7 @@
 				<top>207</top>
 				<height>50</height>
 				<aspectratio align="left">keep</aspectratio>
-				<visible>!Integer.IsGreater(Window(Home).Property(TMDbHelper.ListItem.RottenTomatoes_UserMeter), 59)</visible>
+				<visible>!Integer.IsGreater(Window(Home).Property(TMDBHelper.ListItem.RottenTomatoes_UserMeter), 59)</visible>
 				<texture>flags/color/ratings/rtrotten.png</texture>
 			</control>
 			<control type="image">
@@ -1831,7 +1823,7 @@
 				<top>207</top>
 				<height>50</height>
 				<aspectratio align="left">keep</aspectratio>
-				<visible>[Integer.IsGreater(Window(Home).Property(TMDbHelper.ListItem.RottenTomatoes_UserMeter), 59) + !Integer.IsGreater(Window(Home).Property(TMDbHelper.ListItem.RottenTomatoes_UserMeter), 75)]</visible>
+				<visible>[Integer.IsGreater(Window(Home).Property(TMDBHelper.ListItem.RottenTomatoes_UserMeter), 59) + !Integer.IsGreater(Window(Home).Property(TMDBHelper.ListItem.RottenTomatoes_UserMeter), 75)]</visible>
 				<texture>flags/color/ratings/rtfresh.png</texture>
 			</control>
 			<control type="image">
@@ -1840,7 +1832,7 @@
 				<top>207</top>
 				<height>50</height>
 				<aspectratio align="left">keep</aspectratio>
-				<visible>Integer.IsGreater(Window(Home).Property(TMDbHelper.ListItem.RottenTomatoes_UserMeter), 75)</visible>
+				<visible>Integer.IsGreater(Window(Home).Property(TMDBHelper.ListItem.RottenTomatoes_UserMeter), 75)</visible>
 				<texture>flags/color/ratings/certified.png</texture>
 			</control>
 			
@@ -1850,7 +1842,7 @@
 				<top>290</top>
 				<height>50</height>
 				<aspectratio align="left">keep</aspectratio>
-				<visible>Integer.IsGreater(Window(Home).Property(TMDbHelper.ListItem.RottenTomatoes_UserMeter), 59)</visible>
+				<visible>Integer.IsGreater(Window(Home).Property(TMDBHelper.ListItem.RottenTomatoes_UserMeter), 59)</visible>
 				<texture>flags/color/ratings/popcorn.png</texture>
 			</control>
 			<control type="image">
@@ -1860,7 +1852,7 @@
 				<height>50</height>
 				<width max="55">auto</width>
 				<aspectratio align="left">keep</aspectratio>
-				<visible>!Integer.IsGreater(Window(Home).Property(TMDbHelper.ListItem.RottenTomatoes_UserMeter), 59)</visible>
+				<visible>!Integer.IsGreater(Window(Home).Property(TMDBHelper.ListItem.RottenTomatoes_UserMeter), 59)</visible>
 				<texture>flags/color/ratings/spilt.png</texture>
 			</control>
 			
@@ -1911,9 +1903,7 @@
           <param name="onclick" value="SetProperty(BaseWindow,InfoDialog,Home)" />
           <param name="onclick2" value="RunScript(plugin.video.themoviedb.helper,add_query=$INFO[Container(53001).ListItem.Label],type=person,call_id=1137,prevent_del,delay=0.35)" />
           <param name="content" value="plugin://plugin.video.themoviedb.helper/?info=cast&amp;$VAR[Info_Param_Type]&amp;$VAR[Info_Param_IMDB_or_QUERY]" />
-		  <param name="widgetContent" value="plugin://plugin.video.themoviedb.helper/?info=cast&amp;$VAR[Info_Param_Type]&amp;$VAR[Info_Param_IMDB_or_QUERY]" />
-		  
-		  
+		      <param name="widgetContent" value="plugin://plugin.video.themoviedb.helper/?info=cast&amp;$VAR[Info_Param_Type]&amp;$VAR[Info_Param_IMDB_or_QUERY]" />
           <param name="postercondition" value="true" />
           <param name="controltype" value="panel" />
           <param name="orientation" value="vertical" />
@@ -1971,7 +1961,7 @@
           <param name="height" value="880" />
           <param name="width" value="1800" />
           <param name="label" value="$INFO[ListItem.Director,Directed By ,]" />
-          <param name="visible" value="String.IsEqual(Container(8999).ListItem.Label,By Director) + [!String.IsEmpty(ListItem.Director) | !String.IsEmpty(Window(Home).Property(TMDbHelper.ListItem.Director))]" />
+          <param name="visible" value="String.IsEqual(Container(8999).ListItem.Label,By Director) + [!String.IsEmpty(ListItem.Director) | !String.IsEmpty(Window(Home).Property(TMDBHelper.ListItem.Director))]" />
         </include>
         <include condition="!Skin.HasSetting(VideoInfo.Disable) + !Skin.HasSetting(VideoInfo.Year)" content="Widget_TMDB">
           <param name="id" value="53005" />

@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="utf-8"?>
 <window type="window" id="2115">
   <defaultcontrol>505</defaultcontrol>
-  <onunload>ClearProperty(TMDbHelper.WidgetContainer,Home)</onunload>
+  <onunload>ClearProperty(TMDBHelper.WidgetContainer,Home)</onunload>
   <controls>
   <include condition="!Skin.HasSetting(EnableAuraMy1)" content="menuhub_window">
     <param name="skinshortcut" value="x1105" />

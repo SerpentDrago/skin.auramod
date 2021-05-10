@@ -3219,7 +3219,7 @@
     <value condition="!Skin.HasSetting(DisableNetflixView) + !Skin.HasSetting(MonochromeFlags)">red</value>
   </variable>
   <include name="Object_PVR_Info">
-    <param name="artwork" default="Window(Home).Property(TMDBHelper.ListItem.Art.Fanart)" />
+    <param name="artwork" default="Window(Home).Property(TMDBHelper.ListItem.Fanart)" />
     <param name="fallback" default="ListItem.Icon" />
     <definition>
       <control type="image">

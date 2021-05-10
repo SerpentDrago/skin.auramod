@@ -320,7 +320,7 @@
 
     <variable name="Image_DiscArt">
         <value condition="!String.IsEmpty(ListItem.Art(discart))">$INFO[ListItem.Art(discart)]</value>
-        <value condition="!String.IsEmpty(Window(Home).Property(TMDBHelper.ListItem.Art.DiscArt))">$INFO[Window(Home).Property(TMDBHelper.ListItem.Art.DiscArt)]</value>
+        <value condition="!String.IsEmpty(Window(Home).Property(TMDBHelper.ListItem.DiscArt))">$INFO[Window(Home).Property(TMDBHelper.ListItem.DiscArt)]</value>
     </variable>
 
     <variable name="Image_Watched">
@@ -415,7 +415,7 @@
         <value condition="Container.Content(seasons) + !String.IsEmpty(ListItem.Icon)">$INFO[ListItem.Icon]</value>
         <value condition="!String.IsEmpty(ListItem.Art(tvshow.poster))">$INFO[ListItem.Art(tvshow.poster)]</value>
         <value condition="!String.IsEmpty(ListItem.Art(poster))">$INFO[ListItem.Art(poster)]</value>
-        <value condition="!String.IsEmpty(Window(Home).Property(TMDBHelper.ListItem.Art.Poster))">$INFO[Window(Home).Property(TMDBHelper.ListItem.Art.Poster)]</value>
+        <value condition="!String.IsEmpty(Window(Home).Property(TMDBHelper.ListItem.Poster))">$INFO[Window(Home).Property(TMDBHelper.ListItem.Poster)]</value>
         <value condition="!String.IsEmpty(Window(Home).Property(SkinHelper.ListItem.Art.AlbumThumb))">$INFO[Window(Home).Property(SkinHelper.ListItem.Art.AlbumThumb)]</value>
         <value condition="!String.IsEmpty(Window(Home).Property(SkinHelper.ListItem.Art.ArtistThumb))">$INFO[Window(Home).Property(SkinHelper.ListItem.Art.ArtistThumb)]</value>
         <value condition="!String.IsEmpty(ListItem.Icon)">$INFO[ListItem.Icon]</value>

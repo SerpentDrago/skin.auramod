@@ -25,8 +25,8 @@
      <variable name="PVRInfoThumb">
         <value condition="!IsEmpty(Window(home).Property(TMDBHelper.ListItem.ClearLogo))">$INFO[Window(home).Property(TMDBHelper.ListItem.ClearLogo)]</value>
         <value condition="!IsEmpty(Window(home).Property(TMDBHelper.ListItem.ClearArt))">$INFO[Window(home).Property(TMDBHelper.ListItem.ClearArt)]</value>
-        <value condition="!IsEmpty(Window(home).Property(TMDBHelper.ListItem.Art.Landscape))">$INFO[Window(home).Property(TMDBHelper.ListItem.Art.Landscape)]</value>
-        <value condition="!IsEmpty(Window(home).Property(TMDBHelper.ListItem.Art.Fanart))">$INFO[Window(home).Property(TMDBHelper.ListItem.Art.Fanart)]</value>
+        <value condition="!IsEmpty(Window(home).Property(TMDBHelper.ListItem.Landscape))">$INFO[Window(home).Property(TMDBHelper.ListItem.Landscape)]</value>
+        <value condition="!IsEmpty(Window(home).Property(TMDBHelper.ListItem.Fanart))">$INFO[Window(home).Property(TMDBHelper.ListItem.Fanart)]</value>
         <value condition="!IsEmpty(Window(home).Property(SkinHelper.ListItem.ChannelLogo))">$INFO[Window(home).Property(SkinHelper.ListItem.ChannelLogo)]</value>
     </variable>
     <variable name="Image_OSD_Artwork">

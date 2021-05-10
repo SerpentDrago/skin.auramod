@@ -1753,7 +1753,7 @@
           <param name="width" value="1400" />
           <param name="rottentomatoes" value="true" />
           <param name="imdbvotes" value="true" />
-          <param name="usermeter" value="false" />
+          <param name="usermeter" value="true" />
           <param name="imdb" value="true" />
           <param name="tmdb" value="true" />
           <param name="tvdb" value="true" />

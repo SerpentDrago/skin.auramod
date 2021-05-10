@@ -2333,7 +2333,7 @@
           </include>
         <!-- Fallback Label-->
         <control type="textbox">
-          <visible>$EXP[DBTvideos] + String.IsEmpty(Window(Home).Property(TMDBHelper.listitem.clearlogo)) + String.IsEmpty(ListItem.Art(clearlogo)) + String.IsEmpty(ListItem.Art(tvshow.clearlogo))</visible>
+          <visible>$EXP[DBTvideos] + String.IsEmpty(Window(Home).Property(TMDBHelper.ListItem.ClearLogo)) + String.IsEmpty(ListItem.Art(clearlogo)) + String.IsEmpty(ListItem.Art(tvshow.clearlogo))</visible>
           <top>-200</top>
           <label>$VAR[video_heading]</label>
           <textcolor>grey</textcolor>

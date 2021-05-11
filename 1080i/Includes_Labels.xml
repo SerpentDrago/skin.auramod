@@ -1210,8 +1210,8 @@
 
 
     <variable name="MPAA">
-        <value condition="Control.IsVisible(1505) + !String.IsEmpty(Container(1505).ListItem.MPAA)">$INFO[Container(1505).ListItem.MPAA]</value>
-        <value condition="Control.IsVisible(1506) + !String.IsEmpty(Container(1506).ListItem.MPAA)">$INFO[Container(1506).ListItem.MPAA]</value>
+        <value condition="Control.IsVisible(1505) + [Control.HasFocus(30222) | Control.HasFocus(400) | Control.HasFocus(401) | Control.HasFocus(300) | ControlGroup(505).Hasfocus] + !String.IsEmpty(Container(1505).ListItem.MPAA)">$INFO[Container(1505).ListItem.MPAA]</value>
+        <value condition="Control.IsVisible(1506) + [Control.HasFocus(30222) | Control.HasFocus(400) | Control.HasFocus(401) | Control.HasFocus(300) | ControlGroup(506).Hasfocus] + !String.IsEmpty(Container(1506).ListItem.MPAA)">$INFO[Container(1506).ListItem.MPAA]</value>
         <value condition="Control.IsVisible(5055) + !String.IsEmpty(Container(5055).ListItem.MPAA)">$INFO[Container(5055).ListItem.MPAA]</value>
         <value condition="String.IsEmpty(Window(Home).Property(TMDbHelper.IsUpdating))	 + String.IsEmpty(ListItem.MPAA) + String.IsEmpty(Container(5055).ListItem.MPAA) + !String.IsEmpty(Window(Home).Property(TMDBHelper.ListItem.MPAA))">$INFO[Window(Home).Property(TMDBHelper.ListItem.MPAA)]</value>
         <value condition="String.IsEmpty(ListItem.MPAA) + String.IsEmpty(Container(5055).ListItem.MPAA) + !String.IsEmpty(Window(Home).Property(TMDBHelper.ListItem.MPAA))">$INFO[Window(Home).Property(TMDBHelper.ListItem.MPAA)]</value>

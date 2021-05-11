@@ -2002,12 +2002,12 @@ msgstr ""
 #: /1080i/SkinSettings.xml
 msgctxt "#31419"
 msgid "Enable Widget Banners"
-msgstr 
+msgstr ""
 
 #: /1080i/SkinSettings.xml
 msgctxt "#31420"
 msgid "Enable Categories Widget labels"
-msgstr
+msgstr ""
 
 msgctxt "#31421"
 msgid ""
@@ -2016,7 +2016,7 @@ msgstr ""
 #: /1080i/SkinSettings.xml
 msgctxt "#31422"
 msgid "Enable Categories widget Label + icons"
-msgstr
+msgstr ""
 
 msgctxt "#31423"
 msgid "Widgets"
@@ -2025,27 +2025,27 @@ msgstr ""
 #: /1080i/SkinSettings.xml
 msgctxt "#31424"
 msgid "Enable Widget FixedFocus"
-msgstr
+msgstr ""
 
 #: /1080i/SkinSettings.xml
 msgctxt "#31425"
 msgid "Enable skin helper artwork lookups for addons"
-msgstr
+msgstr ""
 
 #: /1080i/SkinSettings.xml
 msgctxt "#31426"
 msgid "Enable Ratings on Widget Bar"
-msgstr
+msgstr ""
 
 #: /1080i/SkinSettings.xml
 msgctxt "#31427"
 msgid "Enable Title  on Widget Bar"
-msgstr
+msgstr ""
 
 #: /1080i/SkinSettings.xml
 msgctxt "#31428"
 msgid "Enable Netflix style Showcase Views"
-msgstr
+msgstr ""
 
 msgctxt "#31429"
 msgid "Default action for trailers"
@@ -2059,22 +2059,22 @@ msgstr ""
 #: /1080i/SkinSettings.xml
 msgctxt "#31431"
 msgid "Enable Netflix Home"
-msgstr
+msgstr ""
 
 #: /1080i/SkinSettings.xml
 msgctxt "#31432"
 msgid "Enable Netflix Video Info"
-msgstr
+msgstr ""
 
 #: /1080i/SkinSettings.xml
 msgctxt "#31433"
 msgid "Choose Menu Layout"
-msgstr
+msgstr ""
 
 #: /1080i/SkinSettings.xml
 msgctxt "#31434"
 msgid "Enable Icon Only SideMenu"
-msgstr
+msgstr ""
 
 msgctxt "#31435"
 msgid "AuraMod"
@@ -2087,32 +2087,32 @@ msgstr ""
 #: /1080i/SkinSettings.xml
 msgctxt "#31437"
 msgid "Enable Sidemenu auto-hide"
-msgstr
+msgstr ""
 
 #: /1080i/SkinSettings.xml
 msgctxt "#31438"
 msgid "Netflix Simple Home Layout"
-msgstr
+msgstr ""
 
 #: /1080i/SkinSettings.xml
 msgctxt "#31439"
 msgid "Enable Menu Background Image"
-msgstr
+msgstr ""
 
 #: /1080i/SkinSettings.xml
 msgctxt "#31440"
 msgid "Netflix Mixed Home Layout"
-msgstr
+msgstr ""
 
 #: /1080i/SkinSettings.xml
 msgctxt "#31441"
 msgid "Netflix Home Layout"
-msgstr
+msgstr ""
 
 #: /1080i/SkinSettings.xml
 msgctxt "#31442"
 msgid "Choose Home Layout Style"
-msgstr
+msgstr ""
 
 #: /1080i/Includes_View.xml
 msgctxt "#31443"
@@ -2126,97 +2126,97 @@ msgid "Lock Hub Widgets"
 #: /1080i/SkinSettings.xml
 msgctxt "#31445"
 msgid "Enable Small widget style"
-msgstrsgstr
+msgstr ""
 
 #: /1080i/SkinSettings.xml
 msgctxt "#31446"
 msgid "Widget Status bar"
-msgstrsgstr
+msgstr ""
 
 #: /1080i/SkinSettings.xml
 msgctxt "#31447"
 msgid "Aura Home Layout"
-msgstrsgstr
+msgstr ""
 
 #: /1080i/SkinSettings.xml
 msgctxt "#31448"
 msgid "Choose Menu Layout"
-msgstrsgstr
+msgstr ""
 
 #: /1080i/SkinSettings.xml
 msgctxt "#31449"
 msgid "Vertical Icon Only"
-msgstrsgstr
+msgstr ""
 
 #: /1080i/SkinSettings.xml
 msgctxt "#31450"
 msgid "Vertical Full"
-msgstrsgstr
+msgstr ""
 
 #: /1080i/SkinSettings.xml
 msgctxt "#31451"
 msgid "Horizontal Top"
-msgstrsgstr
+msgstr ""
 
 #: /1080i/SkinSettings.xml
 msgctxt "#31452"
 msgid "Choose Netflix Widget Style"
-msgstr
+msgstr ""
 
 #: /1080i/SkinSettings.xml
 msgctxt "#31453"
 msgid "Large Widgets"
-msgstrsgstr
+msgstr ""
 
 #: /1080i/SkinSettings.xml
 msgctxt "#31454"
 msgid "Small Widgets"
-msgstrsgstr
+msgstr ""
 
 #: /1080i/SkinSettings.xml
 msgctxt "#31455"
 msgid "Widget Overlays"
-msgstrsgstr
+msgstr ""
 
 #: /1080i/SkinSettings.xml
 msgctxt "#31456"
 msgid "Widget General"
-msgstrsgstr
+msgstr ""
 
 #: /1080i/SkinSettings.xml
 msgctxt "#31457"
 msgid "Enable multi-row Categories Widget"
-msgstrsgstr
+msgstr ""
 
 #: /1080i/SkinSettings.xml
 msgctxt "#31458"
 msgid "Enable Clearlogos on Widgets"
-msgstrsgstr
+msgstr ""
 
 #: /1080i/SkinSettings.xml
 msgctxt "#31459"
 msgid "Enable Low Spotlight Info"
-msgstrsgstr
+msgstr ""
 
 #: /1080i/SkinSettings.xml
 msgctxt "#31461"
 msgid "Enable Video Info Trailer auto-play"
-msgstrsgstr
+msgstr ""
 
 #: /1080i/SkinSettings.xml
 msgctxt "#31462"
 msgid "Disable Main Menu Label"
-msgstrsgstr
+msgstr ""
 
 #: /1080i/SkinSettings.xml
 msgctxt "#31463"
 msgid "Menu Hubs"
-msgstrsgstr
+msgstr ""
 
 #: /1080i/SkinSettings.xml
 msgctxt "#31464"
 msgid "Media Hubs"
-msgstrsgstr
+msgstr ""
 
 #: /1080i/Includes_View_List.xml
 msgctxt "#31465"

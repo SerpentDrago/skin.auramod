@@ -2193,7 +2193,7 @@ msgstr "Abilita widget categorie su più righe"
 #: /1080i/SkinSettings.xml
 msgctxt "#31458"
 msgid "Enable Clearlogos on Widgets"
-msgstr "Abilita Clearlogos sui widget"
+msgstr "Abilita Clearlogo sui widget"
 
 #: /1080i/SkinSettings.xml
 msgctxt "#31459"
@@ -2305,3 +2305,52 @@ msgctxt "#31481"
 msgid "Netflix Landscape Showcase"
 msgstr "Vetrina orizzontale di Netflix"
 
+#: /1080i/SkinSettings.xml
+msgctxt "#31482"
+msgid "Disable onleft Menu Focus"
+msgstr "Disabilita lo stato attivo del menu a sinistra"
+
+#: /1080i/SkinSettings.xml
+msgctxt "#31483"
+msgid "Default Select Action - Show Information"
+msgstr "Azione di selezione predefinita - Mostra informazioni"
+
+#: /1080i/SkinSettings.xml
+msgctxt "#31484"
+msgid "Media Type"
+msgstr "Tipo di supporto"
+
+#: /1080i/SkinSettings.xml
+msgctxt "#31485"
+msgid "Enable Time & Weather header on Home"
+msgstr "Abilita Tempo & meteo su Home"
+
+#: /1080i/SkinSettings.xml
+msgctxt "#31486"
+msgid "Use Monochrome for Ratings"
+msgstr "Usa monocromatico per le valutazioni"
+
+#: /1080i/SkinSettings.xml
+msgctxt "#31487"
+msgid "Widget Info bar"
+msgstr "Informazioni Barra del Widget"
+
+#: /1080i/SkinSettings.xml
+msgctxt "#31488"
+msgid "Select WidgetBar Items"
+msgstr "Seleziona elementi Barra del Widget"
+
+#: /1080i/SkinSettings.xml
+msgctxt "#31489"
+msgid "Enable Large Label Font"
+msgstr "Abilita carattere etichetta grande"
+
+#: /1080i/SkinSettings.xml
+msgctxt "#31490"
+msgid "Enable Cube Icon"
+msgstr "Attiva le icone cubo"
+
+#: /1080i/SkinSettings.xml
+msgctxt "#31491"
+msgid "Submenu / Categories Widget"
+msgstr "Widget Sottomenu / Categorie"

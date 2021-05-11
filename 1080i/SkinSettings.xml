@@ -324,14 +324,14 @@
                         <control type="radiobutton" id="9102" description="Disable onleft Menu Focus">
                             <visible>Integer.IsEqual(Window.Property(CurrentFocus),9001)</visible>
                             <include>Defs_Settings_Button</include>
-                            <label> - Disable onleft Menu Focus</label>
+                            <label> - $LOCALIZE[31482]</label>
                             <selected>Skin.HasSetting(DisableMenuOnLeft)</selected>
                             <onclick>Skin.ToggleSetting(DisableMenuOnleft)</onclick>
                         </control>
                         <control type="radiobutton" id="9670" description="Default Select Action Show Information">
                             <visible>Integer.IsEqual(Window.Property(CurrentFocus),9001)</visible>
                             <include>Defs_Settings_Button</include>
-                            <label>Default Select Action - Show Information</label>
+                            <label> - $LOCALIZE[31483]</label>
                             <onclick>Skin.ToggleSetting(EnableShowInfo)</onclick>
                             <selected>!Skin.HasSetting(EnableShowInfo)</selected>
                         </control>
@@ -339,21 +339,21 @@
                             <visible>Integer.IsEqual(Window.Property(CurrentFocus),9001)</visible>
 			    <enable>!Skin.HasSetting(EnableShowInfo)</enable>
                             <include>Defs_Settings_Button</include>
-                            <label> - Media Types</label>
+                            <label> - $LOCALIZE[31484]</label>
 			    <onclick>ActivateWindow(1130)</onclick>
                         </control>
 
                        <control type="radiobutton" id="9692" description="Enable Time & Weather header on Home">
                             <visible>Integer.IsEqual(Window.Property(CurrentFocus),9001)</visible>
                             <include>Defs_Settings_Button</include>
-                            <label>Enable Time & Weather header on Home</label>
+							<label> - $LOCALIZE[31485]</label>
                             <onclick>Skin.ToggleSetting(EnableHomeHeader)</onclick>
                             <selected>Skin.HasSetting(EnableHomeHeader)</selected>
                         </control>
                         <control type="radiobutton" id="9512" description="Monochrome Flags">
                             <visible>Integer.IsEqual(Window.Property(CurrentFocus),9001)</visible>
                             <include>Defs_Settings_Button</include>
-                            <label>Use Monochrome for Ratings</label>
+                            <label> - $LOCALIZE[31486]</label>
                             <onclick>Skin.ToggleSetting(MonochromeFlags)</onclick>
                             <selected>Skin.HasSetting(MonochromeFlags)</selected>
                         </control>
@@ -1272,7 +1272,7 @@
                         <!-- Widget Mods---->
                         <!-- =============-->
                         <control type="button" id="9656" description="Widget Info bar ">
-		            <textcolor>main_fg_100</textcolor>
+					<textcolor>main_fg_100</textcolor>
 			    <disabledcolor>main_fg_12</disabledcolor>
 			    <height>80</height>
 			    <textoffsetx>view_pad</textoffsetx>
@@ -1285,25 +1285,25 @@
 			    <texturefocus colordiffuse="$VAR[Defs_Settings_ColorHighlight]">common/gradient-diffuse-horizontal.png</texturefocus>
 			    <alttexturefocus colordiffuse="$VAR[Defs_Settings_ColorHighlight]">common/gradient-diffuse-horizontal.png</alttexturefocus>
                             <visible>Integer.IsEqual(Window.Property(CurrentFocus),9011)</visible>
-                            <label>[B]Widget Info bar[/B]</label>
+                            <label>[B]$LOCALIZE[31487][/B]</label>
                         </control>
                         <control type="button" id="9636" description="Choose Netflix Widget Style">
                             <visible>Integer.IsEqual(Window.Property(CurrentFocus),9011)</visible>
                             <include>Defs_Settings_Button</include>
-                            <label>Select WidgetBar Items</label>
+                            <label>$LOCALIZE[31488]</label>
                             <onclick>ActivateWindow(1133)</onclick>
                         </control>
                         <control type="radiobutton" id="9627" description="Enable Large Label Font ">
                             <visible>Integer.IsEqual(Window.Property(CurrentFocus),9011)</visible>
                             <include>Defs_Settings_Button</include>
-                            <label> - Enable Large Label Font</label>
+                            <label> - $LOCALIZE[31489]</label>
                             <selected>!Skin.HasSetting(LargeWidgetLabel)</selected>
                             <onclick>Skin.ToggleSetting(LargeWidgetLabel)</onclick>
                         </control>
 			<control type="radiobutton" id="96232" description="Enable Categories Label ">
                             <visible>Integer.IsEqual(Window.Property(CurrentFocus),9011)</visible>
                             <include>Defs_Settings_Button</include>
-                            <label> - Enable Cube Icon</label>
+                            <label> - $LOCALIZE[31490]</label>
                             <selected>Skin.HasSetting(DisableCubeIcon)</selected>
                             <onclick>Skin.ToggleSetting(DisableCubeIcon)</onclick>
                         </control>
@@ -1322,7 +1322,7 @@
                             <texturefocus colordiffuse="$VAR[Defs_Settings_ColorHighlight]">common/gradient-diffuse-horizontal.png</texturefocus>
                             <alttexturefocus colordiffuse="$VAR[Defs_Settings_ColorHighlight]">common/gradient-diffuse-horizontal.png</alttexturefocus>
                             <visible>Integer.IsEqual(Window.Property(CurrentFocus),9011)</visible>
-                            <label>[B]Submenu / Categories Widget[/B]</label>
+                            <label>[B]$LOCALIZE[31491][/B]</label>
                         </control>
                          <control type="radiobutton" id="9104" description="Display categories widget">
                             <visible>Integer.IsEqual(Window.Property(CurrentFocus),9011) + !Skin.HasSetting(DisableNetflixHome)</visible>

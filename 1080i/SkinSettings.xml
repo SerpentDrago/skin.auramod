@@ -144,13 +144,13 @@
                             <label>Library Views</label>
                         </control>
 
-                         <control type="togglebutton" id="9014" description="Hubs & Spotlight">
+                         <control type="togglebutton" id="9014" description="Hubs and Spotlight">
                             <onfocus>SetProperty(CurrentFocus,$NUMBER[9014])</onfocus>
                             <usealttexture>![Control.HasFocus(3901) | Control.HasFocus(3902) | Control.HasFocus(3903) | Control.HasFocus(300)] + !Control.HasFocus(302) + Integer.IsEqual(Window.Property(CurrentFocus),9014)</usealttexture>
                             <alttexturenofocus colordiffuse="$VAR[Defs_Settings_ColorHighlight]">common/gradient-diffuse-horizontal.png</alttexturenofocus>
                             <width>450</width>
                             <include>Defs_Settings_Button</include>
-                            <label>Hubs & Spotlight</label>
+                            <label>Hubs and Spotlight</label>
                         </control>
                          <control type="togglebutton" id="9015" description="My Lists">
                             <onfocus>SetProperty(CurrentFocus,$NUMBER[9015])</onfocus>
@@ -343,10 +343,10 @@
 			    <onclick>ActivateWindow(1130)</onclick>
                         </control>
 
-                       <control type="radiobutton" id="9692" description="Enable Time & Weather header on Home">
+                       <control type="radiobutton" id="9692" description="Enable Time and Weather header on Home">
                             <visible>Integer.IsEqual(Window.Property(CurrentFocus),9001)</visible>
                             <include>Defs_Settings_Button</include>
-                            <label>Enable Time & Weather header on Home</label>
+                            <label>Enable Time and Weather header on Home</label>
                             <onclick>Skin.ToggleSetting(EnableHomeHeader)</onclick>
                             <selected>Skin.HasSetting(EnableHomeHeader)</selected>
                         </control>
@@ -359,7 +359,7 @@
                         </control>
 
                         <!-- ========== -->
-                        <!-- --Hubs---- -->
+                        <!-- Hubs       -->
                         <!-- ========== -->
                            <control type="button" id="9665" description="Media Hubs ">
                             <textcolor>main_fg_100</textcolor>
@@ -758,7 +758,7 @@
                         <control type="radiobutton" id="92111" description="Zoom Effect">
                             <visible>Integer.IsEqual(Window.Property(CurrentFocus),9003)</visible>
                             <include>Defs_Settings_Button</include>
-                            <label>Animate fanart (zoom & pan ) </label>
+                            <label>Animate fanart (zoom and pan) </label>
                             <selected>Skin.HasSetting(animation_bg)</selected>
                             <onclick>Skin.ToggleSetting(animation_bg)</onclick>
                         </control>
@@ -1269,7 +1269,7 @@
                             <visible>Skin.HasSetting(EnableWetherRadar)</visible>
                         </control>
                         <!-- =============-->
-                        <!-- Widget Mods---->
+                        <!-- Widget Mods  -->
                         <!-- =============-->
                         <control type="button" id="9656" description="Widget Info bar ">
 		            <textcolor>main_fg_100</textcolor>
@@ -1497,7 +1497,7 @@
                         </control>
 
                         <!-- =============-->
-                        <!-- ----PVR-------->
+                        <!-- PVR          -->
                         <!-- =============-->
                         <control type="radiobutton" id="9620" description="PVR Guide Info">
                             <visible>Integer.IsEqual(Window.Property(CurrentFocus),9012)</visible>
@@ -1543,7 +1543,7 @@
                             <onclick>Skin.ToggleSetting(PVRGuideGenreName)</onclick>
                         </control>
                         <!-- =============-->
-                        <!-- Netflix View--->
+                        <!-- Netflix View -->
                         <!-- =============-->
 
 
@@ -1777,7 +1777,7 @@
                             <selected>System.HasAddon(script.module.metadatautils)</selected>
                             <include>Defs_Settings_Button</include>
                         </control>
-                        <control type="radiobutton" id="9806">
+                  <!--  <control type="radiobutton" id="9806">
                             <visible>Integer.IsEqual(Window.Property(CurrentFocus),9008)</visible>
                             <label>plugin.video.specialfeatures</label>
                             <label2>$INFO[System.AddonVersion(plugin.video.specialfeatures)]        </label2>
@@ -1785,7 +1785,7 @@
                             <onclick condition="!System.HasAddon(plugin.video.specialfeatures)">InstallAddon(plugin.video.specialfeatures)</onclick>
                             <selected>System.HasAddon(plugin.video.specialfeatures)</selected>
                             <include>Defs_Settings_Button</include>
-                        </control>
+                        </control> -->
                         <control type="radiobutton" id="9807">
                             <visible>Integer.IsEqual(Window.Property(CurrentFocus),9008)</visible>
                             <label>script.toolbox</label>
@@ -1914,14 +1914,14 @@
                         </control>
                         <control type="radiobutton" id="9821">
                             <visible>Integer.IsEqual(Window.Property(CurrentFocus),9008)</visible>
-                            <label>script.artwork.beef</label>
-                            <label2>$INFO[System.AddonVersion(script.artwork.beef)]        </label2>
-                            <onclick>Addon.OpenSettings(script.artwork.beef)</onclick>
-                            <onclick condition="!System.HasAddon(script.artwork.beef)">InstallAddon(script.artwork.beef)</onclick>
-                            <selected>System.HasAddon(script.artwork.beef)</selected>
+                            <label>script.artwork.dump</label>
+                            <label2>$INFO[System.AddonVersion(script.artwork.dump)]        </label2>
+                            <onclick>Addon.OpenSettings(script.artwork.dump)</onclick>
+                            <onclick condition="!System.HasAddon(script.artwork.dump)">InstallAddon(script.artwork.dump)</onclick>
+                            <selected>System.HasAddon(script.artwork.dump)</selected>
                             <include>Defs_Settings_Button</include>
                         </control>
-                        <control type="radiobutton" id="9822">
+                  <!--  <control type="radiobutton" id="9822">
                             <visible>Integer.IsEqual(Window.Property(CurrentFocus),9008)</visible>
                             <label>script.artwork.helper</label>
                             <label2>$INFO[System.AddonVersion(script.artwork.helper)]        </label2>
@@ -1929,7 +1929,7 @@
                             <onclick condition="!System.HasAddon(script.artwork.helper)">InstallAddon(script.artwork.helper)</onclick>
                             <selected>System.HasAddon(script.artwork.helper)</selected>
                             <include>Defs_Settings_Button</include>
-                        </control>
+                        </control> -->
 
                         <!-- ================ -->
                         <!-- Backup / Restore -->

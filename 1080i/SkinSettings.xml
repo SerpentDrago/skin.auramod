@@ -1734,22 +1734,22 @@
                         <!-- ============ -->
                         <control type="radiobutton" id="9801">
                             <visible>Integer.IsEqual(Window.Property(CurrentFocus),9008)</visible>
-                            <label>script.skin.helper.service</label>
-                            <label2>$INFO[System.AddonVersion(script.skin.helper.service)]        </label2>
-                            <onclick>Addon.OpenSettings(script.skin.helper.service)</onclick>
-                            <onclick condition="!System.HasAddon(script.skin.helper.service)">InstallAddon(script.skin.helper.service)</onclick>
-                            <selected>System.HasAddon(script.skin.helper.service)</selected>
+                            <label>script.artwork.dump</label>
+                            <label2>$INFO[System.AddonVersion(script.artwork.dump)]        </label2>
+                            <onclick>Addon.OpenSettings(script.artwork.dump)</onclick>
+                            <onclick condition="!System.HasAddon(script.artwork.dump)">InstallAddon(script.artwork.dump)</onclick>
+                            <selected>System.HasAddon(script.artwork.dump)</selected>
                             <include>Defs_Settings_Button</include>
                         </control>
                         <control type="radiobutton" id="9802">
                             <visible>Integer.IsEqual(Window.Property(CurrentFocus),9008)</visible>
-                            <label>script.skin.helper.widgets</label>
-                            <label2>$INFO[System.AddonVersion(script.skin.helper.widgets)]        </label2>
-                            <onclick>Addon.OpenSettings(script.skin.helper.widgets)</onclick>
-                            <onclick condition="!System.HasAddon(script.skin.helper.widgets)">InstallAddon(script.skin.helper.widgets)</onclick>
-                            <selected>System.HasAddon(script.skin.helper.widgets)</selected>
+                            <label>script.colorbox</label>
+                            <label2>$INFO[System.AddonVersion(script.colorbox)]        </label2>
+                            <onclick>Addon.OpenSettings(script.colorbox)</onclick>
+                            <onclick condition="!System.HasAddon(script.colorbox)">InstallAddon(script.colorbox)</onclick>
+                            <selected>System.HasAddon(script.colorbox)</selected>
                             <include>Defs_Settings_Button</include>
-                        </control>
+                        </control>                       
                         <control type="radiobutton" id="9803">
                             <visible>Integer.IsEqual(Window.Property(CurrentFocus),9008)</visible>
                             <label>script.skin.helper.colorpicker</label>
@@ -1761,6 +1761,24 @@
                         </control>
                         <control type="radiobutton" id="9804">
                             <visible>Integer.IsEqual(Window.Property(CurrentFocus),9008)</visible>
+                            <label>script.skin.helper.service</label>
+                            <label2>$INFO[System.AddonVersion(script.skin.helper.service)]        </label2>
+                            <onclick>Addon.OpenSettings(script.skin.helper.service)</onclick>
+                            <onclick condition="!System.HasAddon(script.skin.helper.service)">InstallAddon(script.skin.helper.service)</onclick>
+                            <selected>System.HasAddon(script.skin.helper.service)</selected>
+                            <include>Defs_Settings_Button</include>
+                        </control>
+                        <control type="radiobutton" id="9805">
+                            <visible>Integer.IsEqual(Window.Property(CurrentFocus),9008)</visible>
+                            <label>script.skin.helper.widgets</label>
+                            <label2>$INFO[System.AddonVersion(script.skin.helper.widgets)]        </label2>
+                            <onclick>Addon.OpenSettings(script.skin.helper.widgets)</onclick>
+                            <onclick condition="!System.HasAddon(script.skin.helper.widgets)">InstallAddon(script.skin.helper.widgets)</onclick>
+                            <selected>System.HasAddon(script.skin.helper.widgets)</selected>
+                            <include>Defs_Settings_Button</include>
+                        </control>
+                        <control type="radiobutton" id="9806">
+                            <visible>Integer.IsEqual(Window.Property(CurrentFocus),9008)</visible>
                             <label>script.skin.helper.skinbackup</label>
                             <label2>$INFO[System.AddonVersion(script.skin.helper.skinbackup)]        </label2>
                             <onclick>Addon.OpenSettings(script.skin.helper.skinbackup)</onclick>
@@ -1768,7 +1786,7 @@
                             <selected>System.HasAddon(script.skin.helper.skinbackup)</selected>
                             <include>Defs_Settings_Button</include>
                         </control>
-                        <control type="radiobutton" id="9805">
+                        <control type="radiobutton" id="9807">
                             <visible>Integer.IsEqual(Window.Property(CurrentFocus),9008)</visible>
                             <label>script.module.metadatautils</label>
                             <label2>$INFO[System.AddonVersion(script.module.metadatautils)]        </label2>
@@ -1777,7 +1795,7 @@
                             <selected>System.HasAddon(script.module.metadatautils)</selected>
                             <include>Defs_Settings_Button</include>
                         </control>
-                  <!--  <control type="radiobutton" id="9806">
+                  <!--  <control type="radiobutton" id="9808">
                             <visible>Integer.IsEqual(Window.Property(CurrentFocus),9008)</visible>
                             <label>plugin.video.specialfeatures</label>
                             <label2>$INFO[System.AddonVersion(plugin.video.specialfeatures)]        </label2>
@@ -1786,7 +1804,7 @@
                             <selected>System.HasAddon(plugin.video.specialfeatures)</selected>
                             <include>Defs_Settings_Button</include>
                         </control> -->
-                        <control type="radiobutton" id="9807">
+                        <control type="radiobutton" id="9809">
                             <visible>Integer.IsEqual(Window.Property(CurrentFocus),9008)</visible>
                             <label>script.toolbox</label>
                             <label2>$INFO[System.AddonVersion(script.toolbox)]        </label2>
@@ -1795,16 +1813,7 @@
                             <selected>System.HasAddon(script.toolbox)</selected>
                             <include>Defs_Settings_Button</include>
                         </control>
-                        <control type="radiobutton" id="9808">
-                            <visible>Integer.IsEqual(Window.Property(CurrentFocus),9008)</visible>
-                            <label>script.colorbox</label>
-                            <label2>$INFO[System.AddonVersion(script.colorbox)]        </label2>
-                            <onclick>Addon.OpenSettings(script.colorbox)</onclick>
-                            <onclick condition="!System.HasAddon(script.colorbox)">InstallAddon(script.colorbox)</onclick>
-                            <selected>System.HasAddon(script.colorbox)</selected>
-                            <include>Defs_Settings_Button</include>
-                        </control>
-                        <control type="radiobutton" id="9809">
+                        <control type="radiobutton" id="9810">
                             <visible>Integer.IsEqual(Window.Property(CurrentFocus),9008)</visible>
                             <label>script.extendedinfo</label>
                             <label2>$INFO[System.AddonVersion(script.extendedinfo)]        </label2>
@@ -1813,7 +1822,7 @@
                             <selected>System.HasAddon(script.extendedinfo)</selected>
                             <include>Defs_Settings_Button</include>
                         </control>
-                        <control type="radiobutton" id="9810">
+                        <control type="radiobutton" id="9811">
                             <visible>Integer.IsEqual(Window.Property(CurrentFocus),9008)</visible>
                             <label>script.skinshortcuts</label>
                             <label2>$INFO[System.AddonVersion(script.skinshortcuts)]        </label2>
@@ -1822,7 +1831,7 @@
                             <selected>System.HasAddon(script.skinshortcuts)</selected>
                             <include>Defs_Settings_Button</include>
                         </control>
-                        <control type="radiobutton" id="9811">
+                        <control type="radiobutton" id="9812">
                             <visible>Integer.IsEqual(Window.Property(CurrentFocus),9008)</visible>
                             <label>script.cu.lrclyrics</label>
                             <label2>$INFO[System.AddonVersion(script.cu.lrclyrics)]        </label2>
@@ -1831,7 +1840,7 @@
                             <selected>System.HasAddon(script.cu.lrclyrics)</selected>
                             <include>Defs_Settings_Button</include>
                         </control>
-                        <control type="radiobutton" id="9812">
+                        <control type="radiobutton" id="9813">
                             <visible>Integer.IsEqual(Window.Property(CurrentFocus),9008)</visible>
                             <label>script.artistslideshow</label>
                             <label2>$INFO[System.AddonVersion(script.artistslideshow)]        </label2>
@@ -1840,7 +1849,7 @@
                             <selected>System.HasAddon(script.artistslideshow)</selected>
                             <include>Defs_Settings_Button</include>
                         </control>
-                        <control type="radiobutton" id="9813">
+                        <control type="radiobutton" id="9814">
                             <visible>Integer.IsEqual(Window.Property(CurrentFocus),9008)</visible>
                             <label>script.globalsearch</label>
                             <label2>$INFO[System.AddonVersion(script.globalsearch)]        </label2>
@@ -1849,7 +1858,7 @@
                             <selected>System.HasAddon(script.globalsearch)</selected>
                             <include>Defs_Settings_Button</include>
                         </control>
-                        <control type="radiobutton" id="9814">
+                        <control type="radiobutton" id="9815">
                             <visible>Integer.IsEqual(Window.Property(CurrentFocus),9008)</visible>
                             <label>script.tv.show.next.aired</label>
                             <label2>$INFO[System.AddonVersion(script.tv.show.next.aired)]        </label2>
@@ -1858,7 +1867,7 @@
                             <selected>System.HasAddon(script.tv.show.next.aired)</selected>
                             <include>Defs_Settings_Button</include>
                         </control>
-                        <control type="radiobutton" id="9815">
+                        <control type="radiobutton" id="9816">
                             <visible>Integer.IsEqual(Window.Property(CurrentFocus),9008)</visible>
                             <label>plugin.program.autocompletion</label>
                             <label2>$INFO[System.AddonVersion(plugin.program.autocompletion)]        </label2>
@@ -1867,7 +1876,7 @@
                             <selected>System.HasAddon(plugin.program.autocompletion)</selected>
                             <include>Defs_Settings_Button</include>
                         </control>
-                        <control type="radiobutton" id="9816">
+                        <control type="radiobutton" id="9817">
                             <visible>Integer.IsEqual(Window.Property(CurrentFocus),9008)</visible>
                             <label>resource.images.studios.white</label>
                             <label2>$INFO[System.AddonVersion(resource.images.studios.white)]        </label2>
@@ -1876,7 +1885,7 @@
                             <selected>System.HasAddon(resource.images.studios.white)</selected>
                             <include>Defs_Settings_Button</include>
                         </control>
-                        <control type="radiobutton" id="9817">
+                        <control type="radiobutton" id="9818">
                             <visible>Integer.IsEqual(Window.Property(CurrentFocus),9008)</visible>
                             <label>resource.images.moviecountryicons.maps</label>
                             <label2>$INFO[System.AddonVersion(resource.images.moviecountryicons.maps)]        </label2>
@@ -1885,7 +1894,7 @@
                             <selected>System.HasAddon(resource.images.moviecountryicons.maps)</selected>
                             <include>Defs_Settings_Button</include>
                         </control>
-                        <control type="radiobutton" id="9818">
+                        <control type="radiobutton" id="9819">
                             <visible>Integer.IsEqual(Window.Property(CurrentFocus),9008)</visible>
                             <label>resource.images.moviegenreicons.transparent</label>
                             <label2>$INFO[System.AddonVersion(resource.images.moviegenreicons.transparent)]        </label2>
@@ -1894,7 +1903,7 @@
                             <selected>System.HasAddon(resource.images.moviegenreicons.transparent)</selected>
                             <include>Defs_Settings_Button</include>
                         </control>
-                        <control type="radiobutton" id="9819">
+                        <control type="radiobutton" id="9820">
                             <visible>Integer.IsEqual(Window.Property(CurrentFocus),9008)</visible>
                             <label>resource.images.weatherfanart.multi</label>
                             <label2>$INFO[System.AddonVersion(resource.images.weatherfanart.multi)]        </label2>
@@ -1903,7 +1912,7 @@
                             <selected>System.HasAddon(resource.images.weatherfanart.multi)</selected>
                             <include>Defs_Settings_Button</include>
                         </control>
-                        <control type="radiobutton" id="9820">
+                        <control type="radiobutton" id="9821">
                             <visible>Integer.IsEqual(Window.Property(CurrentFocus),9008)</visible>
                             <label>resource.images.weathericons.white</label>
                             <label2>$INFO[System.AddonVersion(resource.images.weathericons.white)]        </label2>
@@ -1912,16 +1921,16 @@
                             <selected>System.HasAddon(resource.images.weathericons.white)</selected>
                             <include>Defs_Settings_Button</include>
                         </control>
-                        <control type="radiobutton" id="9821">
+                 <!--   <control type="radiobutton" id="9822">
                             <visible>Integer.IsEqual(Window.Property(CurrentFocus),9008)</visible>
-                            <label>script.artwork.dump</label>
+                            <label>script.artwork.beef</label>
                             <label2>$INFO[System.AddonVersion(script.artwork.dump)]        </label2>
                             <onclick>Addon.OpenSettings(script.artwork.dump)</onclick>
                             <onclick condition="!System.HasAddon(script.artwork.dump)">InstallAddon(script.artwork.dump)</onclick>
                             <selected>System.HasAddon(script.artwork.dump)</selected>
                             <include>Defs_Settings_Button</include>
-                        </control>
-                  <!--  <control type="radiobutton" id="9822">
+                        </control> -->
+                  <!--  <control type="radiobutton" id="9823">
                             <visible>Integer.IsEqual(Window.Property(CurrentFocus),9008)</visible>
                             <label>script.artwork.helper</label>
                             <label2>$INFO[System.AddonVersion(script.artwork.helper)]        </label2>

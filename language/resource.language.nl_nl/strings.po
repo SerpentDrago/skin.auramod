@@ -1,0 +1,2307 @@
+# Kodi Media Center language file
+# Addon Name: Auramod Matrix 
+# Addon id: skin.auramod
+# Addon Provider: jurialmunkey
+# Translators: Wil83
+msgid ""
+msgstr ""
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Language: Nederlands"
+"Plural-Forms: nplurals=2; plural=(n != 1);\n"
+
+#: /1080i/Includes_Global.xml
+msgctxt "#31000"
+msgid "Reduced"
+msgstr "Verminderd"
+
+#: /1080i/DialogVideoInfo.xml
+msgctxt "#31001"
+msgid "Revenue"
+msgstr "Omzet"
+
+#: /1080i/SkinSettings.xml
+msgctxt "#31002"
+msgid "Enable Categories widget"
+msgstr "Schakel Categorieën-widget in"
+
+#: /1080i/Includes_Furniture.xml
+msgctxt "#31003"
+msgid "Current conditions"
+msgstr "De huidige omstandigheden"
+
+#: /1080i/Includes_Furniture.xml
+msgctxt "#31004"
+msgid "Sunset at"
+msgstr "Zonsondergang om"
+
+#: /1080i/Includes_Furniture.xml
+msgctxt "#31005"
+msgid "Sunrise at"
+msgstr "Zonsopgang om"
+
+#: /1080i/Includes_Furniture.xml
+msgctxt "#31006"
+msgid "Weather provided by"
+msgstr "Weer geleverd door"
+
+#: /1080i/Includes_Furniture.xml
+msgctxt "#31007"
+msgid "Weather forecast for"
+msgstr "Weersverwachting voor"
+
+#: /1080i/SkinSettings.xml
+msgctxt "#31008"
+msgid "Install weather fanart"
+msgstr "Installeer weerfanart"
+
+#: /1080i/SkinSettings.xml
+msgctxt "#31009"
+msgid "Complete"
+msgstr "compleet"
+
+#: /1080i/SkinSettings.xml
+msgctxt "#31010"
+msgid "Weather fanart successfully installed"
+msgstr "Weer fanart is succesvol geïnstalleerd"
+
+#: /1080i/MyWeather.xml
+msgctxt "#31011"
+msgid "Default weather icons"
+msgstr "Standaard weerpictogram"
+
+#: /1080i/MyWeather.xml
+msgctxt "#31012"
+msgid "Weather fanart installed"
+msgstr "Weer fanart geïnstalleerd"
+
+#: /1080i/SkinSettings.xml
+msgctxt "#31013"
+msgid "Set weather icons"
+msgstr "Stel weerpictogrammen in"
+
+#: /1080i/MyVideoNav.xml
+msgctxt "#31014"
+msgid "Extra fanart"
+msgstr "Extra fanart"
+
+#: /1080i/SkinSettings.xml
+msgctxt "#31015"
+msgid "Minimal busy loader"
+msgstr "Minimaal bezig lader"
+
+#: /1080i/DialogVideoInfo.xml
+msgctxt "#31016"
+msgid "By"
+msgstr "Door"
+
+#: /shortcuts/overrides.xml
+msgctxt "#31017"
+msgid "Smart Shortcuts"
+msgstr "Slimme snelkoppelingen"
+
+#: /shortcuts/overrides.xml
+msgctxt "#31018"
+msgid "Common Shortcut"
+msgstr "Gemeenschappelijke snelkoppeling"
+
+#: /1080i/script-globalsearch-main.xml
+msgctxt "#31019"
+msgid "Close"
+msgstr "Sluiten"
+
+#: /1080i/script-globalsearch-main.xml
+msgctxt "#31020"
+msgid "m"
+msgstr ""
+
+#: /1080i/SkinSettings.xml
+msgctxt "#31021"
+msgid "Colors"
+msgstr "Kleuren"
+
+#: /1080i/SkinSettings.xml
+msgctxt "#31022"
+msgid "Animated artwork"
+msgstr "Geanimeerde artwork"
+
+#: /1080i/Includes_Statusbar.xml
+msgctxt "#31023"
+msgid "Fullscreen"
+msgstr "Volledig scherm"
+
+#: /1080i/SkinSettings.xml
+msgctxt "#31024"
+msgid "Miscellaneous"
+msgstr "Diversen"
+
+#: /1080i/DialogVideoInfo.xml
+msgctxt "#31025"
+msgid "From"
+msgstr "Van"
+
+#: /1080i/SkinSettings.xml
+msgctxt "#31026"
+msgid "Alphabet strip"
+msgstr "Alfabet strip"
+
+#: /1080i/SkinSettings.xml
+msgctxt "#31027"
+msgid "Customise power menu"
+msgstr "Pas het powermenu aan"
+
+#: /1080i/SkinSettings.xml
+msgctxt "#31028"
+msgid "Reset skin settings to defaults (WARNING: This will reset your home menu to skin defaults)"
+msgstr "Reset skin-instellingen naar standaardwaarden (WAARSCHUWING: hiermee wordt uw startmenu teruggezet naar de standaardinstellingen van skin)"
+
+#: /1080i/script-nextup-notification-PostPlayInfo.xml
+msgctxt "#31029"
+msgid "Hide Spoilers"
+msgstr "Verberg spoiler"
+
+#: /1080i/SkinSettings.xml
+msgctxt "#31030"
+msgid "Backup / Restore"
+msgstr "Backup / herstel"
+
+#: /1080i/SkinSettings.xml
+msgctxt "#31031"
+msgid "Backup skin settings"
+msgstr "Back-up skin-instellingen"
+
+#: /1080i/SkinSettings.xml
+msgctxt "#31032"
+msgid "Restore skin settings"
+msgstr "Herstel skin instellingen"
+
+#: /1080i/Includes_Items.xml
+msgctxt "#31033"
+msgid "Audio Settings"
+msgstr "Geluidsinstellingen"
+
+#: /1080i/SkinSettings.xml
+msgctxt "#31034"
+msgid "Change backup and restore path"
+msgstr "Wijzig het back-up- en herstelpad"
+
+#: /1080i/Includes_Labels.xml
+msgctxt "#31035"
+msgid "hrs"
+msgstr "uur"
+
+#: /1080i/Includes_Labels.xml
+msgctxt "#31036"
+msgid "h"
+msgstr "u"
+
+#: /1080i/DialogSubtitles.xml
+msgctxt "#31037"
+msgid "Download Subtitles"
+msgstr "Download ondertitels"
+
+#: /1080i/Includes_View.xml
+msgctxt "#31038"
+msgid "Landscape"
+msgstr "Landschap"
+
+#: /1080i/Custom_1117_EnableViews.xml
+msgctxt "#31039"
+msgid "Enable / disable viewmodes"
+msgstr "Schakel weergavemodellen in / uit"
+
+#: /1080i/Custom_1117_EnableViews.xml
+msgctxt "#31040"
+msgid "Poster Showcase"
+msgstr ""
+
+#: /1080i/Includes_Labels.xml
+msgctxt "#31041"
+msgid "Customise your home menu items, widgets, and backgrounds."
+msgstr "Pas uw startmenu-items, widgets en achtergronden aan."
+
+#: /1080i/SkinSettings.xml
+msgctxt "#31042"
+msgid "Wall view text labels"
+msgstr ""
+
+#: /1080i/DialogVideoInfo.xml
+msgctxt "#31043"
+msgid "Select Action"
+msgstr "Selecteer actie"
+
+#: /1080i/DialogVideoInfo.xml
+msgctxt "#31044"
+msgid "Search library for movies staring"
+msgstr "Zoek in de bibliotheek naar films met in de hoofdrol"
+
+#: /1080i/DialogVideoInfo.xml
+msgctxt "#31045"
+msgid "Show extended info about"
+msgstr "Toon uitgebreide informatie over"
+
+#: /1080i/DialogVideoInfo.xml
+msgctxt "#31046"
+msgid "Search library"
+msgstr "Zoek bibliotheek"
+
+#: /1080i/Includes_Labels.xml
+msgctxt "#31047"
+msgid "This disables fanart in the library and shows the fallback image instead."
+msgstr "Deze uitgeschakelde fanart in de bibliotheek en toont in plaats daarvan de reserveafbeelding."
+
+#: /1080i/Includes_Labels.xml
+msgctxt "#31048"
+msgid "Set a fallback image for when no fanart is available."
+msgstr "Stel een fallback-afbeelding in voor wanneer er geen fanart beschikbaar is."
+
+#: /1080i/Includes_Labels.xml
+msgctxt "#31049"
+msgid "Display artist fanart stored from the library database on the music visualisation screen."
+msgstr "Geef artiestenfanart weer die is opgeslagen in de bibliotheekdatabase op het muziekvisualisatiescherm."
+
+#: /1080i/Includes_Labels.xml
+msgctxt "#31050"
+msgid "Use artist slideshow addon to display artist fanart on the music visualisation screen."
+msgstr "Gebruik de add-on voor diavoorstellingen van artiesten om artiestenfanaten weer te geven op het muziekvisualisatiescherm."
+
+#: /1080i/Includes_Labels.xml
+msgctxt "#31051"
+msgid "Make the artist fanart slightly transparent so that the music visualisation shows through."
+msgstr "Maak de artiest-fanart enigszins transparant zodat de muziekvisualisatie zichtbaar wordt."
+
+#: /1080i/Includes_Labels.xml
+msgctxt "#31052"
+msgid "Use a pan and zoom effect on the artist fanart in the music visualisation."
+msgstr "Gebruik een pan- en zoomeffect op de artiestenfanart in de muziekvisualisatie."
+
+#: /1080i/Includes_Labels.xml
+msgctxt "#31053"
+msgid "Display discart in showcase viewtypes. Available discart overrides logo if both options are enabled."
+msgstr "Toon discart in showcase-weergavetypes.  Beschikbare discart overschrijft logo als beide opties zijn ingeschakeld."
+
+#: /1080i/Includes_Labels.xml
+msgctxt "#31054"
+msgid "Display logo in showcase viewtypes. Available discart overrides logo if both options are enabled."
+msgstr "Toon logo in showcase-weergavetypes.  Beschikbare discart overschrijft logo als beide opties zijn ingeschakeld."
+
+#: /1080i/Includes_Labels.xml
+msgctxt "#31055"
+msgid "Use skinhelper to provide animated posters and fanart. These can be downloaded from the context menu."
+msgstr "Gebruik skinhelper om geanimeerde posters en fanart te maken.  Deze kunnen worden gedownload vanuit het contextmenu."
+
+#: /1080i/SkinSettings.xml
+msgctxt "#31056"
+msgid "Genre colors in PVR guide"
+msgstr "Genre kleuren in PVR-gids"
+
+#: /1080i/SkinSettings.xml
+msgctxt "#31057"
+msgid "Use fullscreen PVR guide (hide plot info)"
+msgstr "Gebruik de PVR-gids op volledig scherm (verberg plotinformatie) ""
+
+#: /1080i/Includes_Labels.xml
+msgctxt "#31058"
+msgid "Change the highlight focus colour used throughout the skin."
+msgstr "Verander de accentueringskleur die door de huid wordt gebruikt."
+
+#: /1080i/DialogContextMenu.xml
+msgctxt "#31059"
+msgid "Context Menu"
+msgstr ""
+
+#: /1080i/Includes_Labels.xml
+msgctxt "#31060"
+msgid "Set a music or video playlist that will run when kodi starts."
+msgstr "Stel een muziek- of video-afspeellijst in die wordt afgespeeld wanneer Kodi start."
+
+#: /1080i/Includes_Labels.xml
+msgctxt "#31061"
+msgid "Disable the alphabet strip and always use scrollbars instead."
+msgstr "Schakel de alfabetstrip uit en gebruik in plaats daarvan altijd schuifbalken."
+
+#: /1080i/Includes_Labels.xml
+msgctxt "#31062"
+msgid "Disable changing view settings and some settings buttons in information dialogs."
+msgstr "Schakel het wijzigen van weergave-instellingen en sommige instellingsknoppen in informatiedialogen uit."
+
+#: /1080i/Includes_Labels.xml
+msgctxt "#31063"
+msgid "Change the items displayed in the power menu."
+msgstr "Wijzig de items die worden weergegeven in het power menu."
+
+#: /1080i/Includes_Labels.xml
+msgctxt "#31064"
+msgid "Backup your skin settings and home menu shortcuts to a zipfile. Useful to migrate settings to a new setup."
+msgstr "Maak een back-up van uw skin-instellingen en snelkoppelingen van het startmenu naar een zip-bestand.  Handig om instellingen naar een nieuwe setup te migreren."
+
+#: /1080i/Includes_Labels.xml
+msgctxt "#31065"
+msgid "Restore your skin settings, shortcuts, and widgets from a backup file."
+msgstr "Herstel uw skin-instellingen, snelkoppelingen en widgets vanuit een back-upbestand."
+
+#: /1080i/Includes_Labels.xml
+msgctxt "#31066"
+msgid "Change the location where skin backup files are saved."
+msgstr "Wijzig de locatie waar skin backupbestanden worden opgeslagen."
+
+#: /1080i/Includes_Labels.xml
+msgctxt "#31067"
+msgid "Reset all your skin settings, shortcuts, and widgets to default skin settings. This will not change any kodi system settings."
+msgstr "Reset al uw skin-instellingen, snelkoppelingen en widgets naar de standaard skin-instellingen.  Dit zal geen enkele Kodi-systeeminstellingen veranderen."
+
+#: /1080i/Includes_Weather.xml
+msgctxt "#31068"
+msgid "Cloud cover"
+msgstr "Bewolkt"
+
+#: /1080i/Includes_Weather.xml
+msgctxt "#31069"
+msgid "Cloud cover is "
+msgstr "Wolkendek is "
+
+#: /1080i/Includes_Weather.xml
+msgctxt "#31070"
+msgid "Cloud Cover"
+msgstr "Bewolkt"
+
+#: /1080i/Includes_Labels.xml
+msgctxt "#31071"
+msgid "IMDB Top250"
+msgstr ""
+
+#: /1080i/DialogButtonMenu.xml
+msgctxt "#31072"
+msgid "Power Menu"
+msgstr ""
+
+#: /1080i/VideoOSD.xml
+msgctxt "#31073"
+msgid "Recommended Youtube Videos"
+msgstr "Aanbevolen YouTube-video's"
+
+#: /1080i/SkinSettings.xml
+msgctxt "#31074"
+msgid "Make bottom bar transparent"
+msgstr "Maak de onderste balk transparant"
+
+#: /1080i/SkinSettings.xml
+msgctxt "#31075"
+msgid "Apply transparency to bottom bar"
+msgstr "Pas transparantie toe op de onderste balk"
+
+#: /1080i/SkinSettings.xml
+msgctxt "#31076"
+msgid "Enable transparency"
+msgstr "Schakel transparantie in"
+
+#: /1080i/Includes_Labels.xml
+msgctxt "#31077"
+msgid "Add a slight transparency to the top and bottom bars."
+msgstr "Voeg een lichte transparantie toe aan de bovenste en onderste balken."
+
+#: /1080i/Includes_Labels.xml
+msgctxt "#31078"
+msgid "Ended"
+msgstr "Beëindigd"
+
+#: /1080i/SkinSettings.xml
+msgctxt "#31079"
+msgid "Pause video when opening extended info"
+msgstr "Pauzeer video bij het openen van uitgebreide informatie"
+
+#: /1080i/SkinSettings.xml
+msgctxt "#31080"
+msgid "Artwork button downloads all available artwork (as specified in artwork downloader settings)"
+msgstr "Artwork knop download alle beschikbare artwork (zoals gespecificeerd in de instellingen van de artwork-downloader) ""
+
+#: /1080i/SkinSettings.xml
+msgctxt "#31081"
+msgid "Hide plot"
+msgstr "Verberg plot"
+
+#: /1080i/DialogPlayerProcessInfo.xml
+msgctxt "#31082"
+msgid "Video process information"
+msgstr "Videoprocesinformatie"
+
+#: /1080i/DialogPlayerProcessInfo.xml
+msgctxt "#31083"
+msgid "Framerate"
+msgstr ""
+
+#: /1080i/DialogPlayerProcessInfo.xml
+msgctxt "#31084"
+msgid "Aspect Ratio"
+msgstr "Aspectverhouding"
+
+#: /1080i/Includes_OSD.xml
+msgctxt "#31085"
+msgid "Codec Info"
+msgstr "Codec-informatie"
+
+#: /1080i/Includes_OSD.xml
+msgctxt "#31086"
+msgid "Extended Info"
+msgstr "Uitgebreide informatie"
+
+#: /1080i/SkinSettings.xml
+msgctxt "#31087"
+msgid "Colour overlay effect"
+msgstr "Kleur overlay effect"
+
+#: /1080i/SkinSettings.xml
+msgctxt "#31088"
+msgid "Scrolling text effect"
+msgstr "Scrollend teksteffect"
+
+#: /1080i/SkinSettings.xml
+msgctxt "#31089"
+msgid "Position context menu based on focused item"
+msgstr "Plaats het contextmenu op basis van het gefocuste item"
+
+#: /1080i/SkinSettings.xml
+msgctxt "#31090"
+msgid "Display duration format as X HRS XX MINS"
+msgstr "Geef het duurformaat weer als X UUR XX MIN"
+
+#: /1080i/SkinSettings.xml
+msgctxt "#31091"
+msgid "Prefer list view for seasons"
+msgstr "Geef de voorkeur aan lijstweergave voor seizoenen"
+
+#: /1080i/Includes_Object.xml
+msgctxt "#31092"
+msgid "System Name"
+msgstr "Systeemnaam"
+
+#: /1080i/Includes_Object.xml
+msgctxt "#31093"
+msgid "Gateway Address"
+msgstr ""
+
+#: /1080i/Includes_Object.xml
+msgctxt "#31094"
+msgid "Network and Storage"
+msgstr "Netwerk en opslag"
+
+#: /1080i/Includes_Object.xml
+msgctxt "#31095"
+msgid "Video Encoder"
+msgstr ""
+
+#: /1080i/Includes_Object.xml
+msgctxt "#31096"
+msgid "Memory"
+msgstr "Geheugen"
+
+#: /1080i/Includes_Object.xml
+msgctxt "#31097"
+msgid "Fan Speed"
+msgstr "Ventilator snelheid"
+
+#: /1080i/Includes_Object.xml
+msgctxt "#31098"
+msgid "CPU Info"
+msgstr "CPU-informatie"
+
+#: /1080i/Includes_Object.xml
+msgctxt "#31099"
+msgid "CPU Usage"
+msgstr "CPU gebruik"
+
+#: /1080i/Includes_Object.xml
+msgctxt "#31100"
+msgid "Processor, Memory and Video"
+msgstr "Processor, geheugen en video"
+
+msgctxt "#31101"
+msgid "items"
+msgstr ""
+
+msgctxt "#31102"
+msgid "min"
+msgstr ""
+
+msgctxt "#31103"
+msgid "Live TV"
+msgstr ""
+
+msgctxt "#31104"
+msgid "Used Memory"
+msgstr "Gebruikt geheugen"
+
+msgctxt "#31105"
+msgid "Spotlight"
+msgstr ""
+
+msgctxt "#31106"
+msgid "Ends "
+msgstr "Afgelopen om "
+
+msgctxt "#31107"
+msgid "Video Stream"
+msgstr ""
+
+msgctxt "#31108"
+msgid "Current Menu"
+msgstr "Huidig ​​menu"
+
+msgctxt "#31109"
+msgid "Customise Home Menu & Widgets"
+msgstr "Pas het startmenu en widgets aan"
+
+msgctxt "#31110"
+msgid "Background"
+msgstr "Achtergrond"
+
+msgctxt "#31111"
+msgid "Display now playing video in background"
+msgstr "Geef nu video weer op de achtergrond"
+
+msgctxt "#31112"
+msgid "Submenu"
+msgstr ""
+
+msgctxt "#31113"
+msgid "No Timer"
+msgstr "Geen timer"
+
+msgctxt "#31114"
+msgid "Now Playing"
+msgstr "Nu aan het spelen"
+
+#: /1080i/Includes_OSD.xml
+msgctxt "#31115"
+msgid "Recommended"
+msgstr "Aanbevolen"
+
+msgctxt "#31116"
+msgid "DVD Menu"
+msgstr ""
+
+msgctxt "#31117"
+msgid "3D Mode"
+msgstr "3D-modus"
+
+msgctxt "#31118"
+msgid "Artist slideshow"
+msgstr "Diavoorstelling van de artiest"
+
+msgctxt "#31119"
+msgid "Visualisation behind slideshow"
+msgstr "Visualisatie achter diavoorstelling"
+
+msgctxt "#31120"
+msgid "Animate artist slideshow"
+msgstr "Animeer diavoorstelling van artiesten"
+
+msgctxt "#31121"
+msgid "Fanart"
+msgstr ""
+
+msgctxt "#31122"
+msgid "Ongoing Episodes"
+msgstr "Lopende afleveringen"
+
+msgctxt "#31123"
+msgid "Resumable Movies"
+msgstr "Hervatbare films"
+
+msgctxt "#31124"
+msgid "Recent Movies"
+msgstr "Recente films"
+
+msgctxt "#31125"
+msgid "Recent Episodes"
+msgstr "Recente afleveringen"
+
+msgctxt "#31126"
+msgid "Episodes Spotlight"
+msgstr "Afleveringen in de spotlights"
+
+msgctxt "#31127"
+msgid "Movies Spotlight"
+msgstr "Films in de spotlight"
+
+#: /1080i/SkinSettings.xml
+msgctxt "#31128"
+msgid "Allow scrolling through items when in full fanart mode"
+msgstr "Sta scrollen door items toe in de volledige fanart-modus"
+
+#: /1080i/SkinSettings.xml
+msgctxt "#31129"
+msgid "Enable full fanart mode"
+msgstr "Schakel de volledige fanart-modus in"
+
+#: /1080i/SkinSettings.xml
+msgctxt "#31130"
+msgid "Media flags"
+msgstr "Media vlaggen"
+
+#: /1080i/MusicOSD.xml
+msgctxt "#31131"
+msgid "Colour overlay"
+msgstr "Kleur overlay"
+
+msgctxt "#31132"
+msgid "Reset home menu shortcuts to defaults"
+msgstr "Reset de snelkoppelingen van het startmenu naar de standaardwaarden"
+
+msgctxt "#31133"
+msgid "Hide watched"
+msgstr "Verberg bekeken"
+
+msgctxt "#31134"
+msgid "Trending Movies"
+msgstr "Trending films"
+
+msgctxt "#31135"
+msgid "Trending Shows"
+msgstr "Trending shows"
+
+msgctxt "#31136"
+msgid "Airing Shows"
+msgstr "Uitgezonden shows"
+
+msgctxt "#31137"
+msgid "Premiering Shows"
+msgstr "Première shows"
+
+msgctxt "#31138"
+msgid "Content Loading"
+msgstr "Inhoud wordt geladen"
+
+msgctxt "#31139"
+msgid "Box Office"
+msgstr ""
+
+msgctxt "#31140"
+msgid "Budget"
+msgstr "Begroting"
+
+msgctxt "#31141"
+msgid "Youtube"
+msgstr ""
+
+#: /1080i/MusicOSD.xml
+msgctxt "#31142"
+msgid "Scrolling text"
+msgstr "Scrollende tekst"
+
+msgctxt "#31143"
+msgid "Set weather fanart"
+msgstr "Stel weer fanart in"
+
+msgctxt "#31144"
+msgid "Edit Widgets"
+msgstr "Widgets bewerken"
+
+#: /1080i/SkinSettings.xml
+msgctxt "#31145"
+msgid "Display poster and plot when video is paused"
+msgstr "Geef poster en plot weer wanneer de video is gepauzeerd"
+
+msgctxt "#31146"
+msgid "Animate fanart"
+msgstr "Animeer fanart"
+
+msgctxt "#31147"
+msgid "Extra Info"
+msgstr ""
+
+#: /1080i/Includes_Home.xml
+msgctxt "#31148"
+msgid "Hide artwork"
+msgstr "Verberg artwork"
+
+msgctxt "#31149"
+msgid "Replace widget fanart with background"
+msgstr "Vervang widget fanart door achtergrond"
+
+msgctxt "#31150"
+msgid "Set fallback image"
+msgstr "Stel een reserveafbeelding in"
+
+#: /1080i/SkinSettings.xml
+msgctxt "#31151"
+msgid "Hide tvshow labels"
+msgstr "Verberg tvshow labels"
+
+msgctxt "#31152"
+msgid "Furniture"
+msgstr ""
+
+#: /1080i/Includes_Statusbar.xml
+msgctxt "#31153"
+msgid "Sort by:"
+msgstr "Sorteer op"
+
+#: /1080i/SkinSettings.xml
+msgctxt "#31154"
+msgid "Only use blur in info dialog"
+msgstr "Gebruik alleen vervaging in het informatiedialoogvenster"
+
+#: /1080i/Includes_Labels.xml
+msgctxt "#31155"
+msgid "Disable the bounce in animation when scrolling between items."
+msgstr "Schakel de bounce in animatie uit bij het scrollen tussen items."
+
+#: /1080i/Includes_Labels.xml
+msgctxt "#31156"
+msgid "Apply a color changing overlay effect to music visualisation background."
+msgstr "Pas een kleur veranderend overlay-effect toe op de muziekvisualisatieachtergrond."
+
+#: /1080i/Includes_Labels.xml
+msgctxt "#31157"
+msgid "A scrolling text effect showing artist, album and song info overlayed on the music visualisation background."
+msgstr "Een scrollend teksteffect met informatie over de artiest, het album en het nummer over de muziek visualisatie achtergrond."
+
+#: /1080i/SkinSettings.xml
+msgctxt "#31158"
+msgid "Automatically open visualisation after starting a song"
+msgstr "Automatisch visualisatie openen na het starten van een nummer"
+
+#: /1080i/Includes_Labels.xml
+msgctxt "#31159"
+msgid "Video Sources"
+msgstr "Videobronnen"
+
+#: /1080i/Includes_Labels.xml
+msgctxt "#31160"
+msgid "Music sources"
+msgstr "Muziekbronnen"
+
+#: /1080i/Includes_View_Posters.xml
+msgctxt "#31161"
+msgid "Showcase"
+msgstr ""
+
+#: /1080i/Includes_Widgets.xml
+msgctxt "#31162"
+msgid "Categories"
+msgstr "Categorieën"
+
+#: /shortcuts/overrides.xml
+msgctxt "#31163"
+msgid "Submenu Items"
+msgstr ""
+
+#: /1080i/Includes_View_List.xml
+msgctxt "#31164"
+msgid "Info List"
+msgstr "Info lijst"
+
+#: /1080i/Includes_Labels.xml
+msgctxt "#31165"
+msgid "TV recordings"
+msgstr "TV-opnames"
+
+#: /1080i/Includes_Labels.xml
+msgctxt "#31166"
+msgid "TV timers"
+msgstr ""
+
+#: /1080i/Includes_View_List.xml
+msgctxt "#31167"
+msgid "Square list"
+msgstr "Vierkante lijst"
+
+msgctxt "#31168"
+msgid "Startup video or music playlist"
+msgstr "Start video of muziekafspeellijst"
+
+msgctxt "#31169"
+msgid "Extras"
+msgstr "Extra's"
+
+msgctxt "#31170"
+msgid "Cinema Experience"
+msgstr "Bioscoopervaring"
+
+msgctxt "#31171"
+msgid "Video Extras"
+msgstr "Video extra's"
+
+msgctxt "#31172"
+msgid "Display music visualisation in background"
+msgstr "Geef muziekvisualisatie op de achtergrond weer"
+
+msgctxt "#31173"
+msgid "Recently added"
+msgstr "Recent toegevoegd"
+
+msgctxt "#31174"
+msgid "Recently played"
+msgstr "Recent afgespeeld"
+
+msgctxt "#31175"
+msgid "Play random"
+msgstr "Speel willekeurig"
+
+msgctxt "#31176"
+msgid "Delete Settings Shortcut"
+msgstr "Instellingen snelkoppeling verwijderen"
+
+msgctxt "#31177"
+msgid "Are you sure you want to remove the settings shortcut?[CR]Please ensure that you have an alternative method of accessing settings before you remove this shortcut."
+msgstr "Weet u zeker dat u de instellingen snelkoppeling wilt verwijderen?[CR]Zorg ervoor dat u een alternatieve methode heeft om toegang te krijgen tot de instellingen voordat u deze snelkoppeling verwijdert."
+
+#: /1080i/DialogVideoInfo.xml
+msgctxt "#31178"
+msgid "Show extended info"
+msgstr "Toon uitgebreide info"
+
+#: /1080i/Includes_Home.xml
+msgctxt "#31179"
+msgid "Lock view"
+msgstr "Vergrendel de weergave"
+
+#: /1080i/Includes_Home.xml
+msgctxt "#31180"
+msgid "Unlock view"
+msgstr "Ontgrendel de weergave"
+
+msgctxt "#31181"
+msgid "Select icon"
+msgstr "Selecteer icoon"
+
+#: /shortcuts/overrides.xml
+msgctxt "#31182"
+msgid "Additional Widgets"
+msgstr "Extra widgets"
+
+#: /shortcuts/overrides.xml
+msgctxt "#31183"
+msgid "Default Widgets"
+msgstr "Standaard Widgets"
+
+#: /shortcuts/overrides.xml
+msgctxt "#31184"
+msgid "Recently played movies"
+msgstr "Onlangs afgespeelde films"
+
+#: /shortcuts/overrides.xml
+msgctxt "#31185"
+msgid "Recently Added Movies"
+msgstr "Recent toegevoegde films"
+
+#: /1080i/SkinSettings.xml
+msgctxt "#31186"
+msgid "Display osd submenu"
+msgstr "Geef het OSD submenu weer"
+
+msgctxt "#31187"
+msgid "Random Albums"
+msgstr "Willekeurige albums"
+
+msgctxt "#31188"
+msgid "Recent Albums"
+msgstr "Recente albums"
+
+msgctxt "#31189"
+msgid "Recommended Albums"
+msgstr "Aanbevolen albums"
+
+#: /shortcuts/overrides.xml
+msgctxt "#31190"
+msgid "Recently Played Movies"
+msgstr "Onlangs afgespeelde films"
+
+msgctxt "#31191"
+msgid "Directed by"
+msgstr "Geregisseerd door"
+
+#: /1080i/SkinSettings.xml
+msgctxt "#31192"
+msgid "Focus bounce animation"
+msgstr "Focus bounce animatie"
+
+#: /1080i/SkinSettings.xml
+msgctxt "#31193"
+msgid "Reset colors to default"
+msgstr "Reset kleuren naar standaard"
+
+#: /shortcuts/overrides.xml
+msgctxt "#31194"
+msgid "Recently Played TV Shows"
+msgstr "Onlangs afgespeelde tv-programma's"
+
+msgctxt "#31195"
+msgid "Reload Skin"
+msgstr "Herlaad skin"
+
+#: /shortcuts/overrides.xml
+msgctxt "#31196"
+msgid "In Progress TV Shows"
+msgstr "Lopende tv-programma's"
+
+#: /1080i/script-skinshortcuts.xml
+msgctxt "#31197"
+msgid "Save Changes"
+msgstr "Wijzigingen opslaan"
+
+#: /shortcuts/overrides.xml
+msgctxt "#31198"
+msgid "Recently Played Episodes"
+msgstr "Onlangs afgespeelde afleveringen"
+
+msgctxt "#31199"
+msgid "Kiosk mode"
+msgstr ""
+
+#: /shortcuts/overrides.xml
+msgctxt "#31200"
+msgid "Random Movies"
+msgstr "Willekeurige films"
+
+#: /1080i/SkinSettings.xml
+msgctxt "#31201"
+msgid "Pressing info only displays seekbar (hides poster and plot)"
+msgstr "Door op info te drukken wordt alleen de zoekbalk weergegeven (verbergt poster en plot)"
+
+#: /shortcuts/overrides.xml
+msgctxt "#31202"
+msgid "Random Episodes"
+msgstr "Willekeurige afleveringen"
+
+msgctxt "#31203"
+msgid "Artwork"
+msgstr ""
+
+msgctxt "#31204"
+msgid "Similar to"
+msgstr "Gelijkwaardig aan"
+
+msgctxt "#31205"
+msgid "Released by"
+msgstr "Uitgebracht door"
+
+msgctxt "#31206"
+msgid "Similar"
+msgstr "Vergelijkbaar"
+
+msgctxt "#31207"
+msgid "themoviedb.org"
+msgstr ""
+
+msgctxt "#31208"
+msgid "In Cinemas"
+msgstr "In de bioscopen"
+
+msgctxt "#31209"
+msgid "Upcoming"
+msgstr "Aankomende"
+
+msgctxt "#31210"
+msgid "Popular"
+msgstr "Populair"
+
+msgctxt "#31211"
+msgid "Top Rated"
+msgstr "Hoogst gewaardeerd"
+
+msgctxt "#31212"
+msgid "Airing"
+msgstr "Uitgezonden"
+
+msgctxt "#31213"
+msgid "Today"
+msgstr "Vandaag"
+
+#: /shortcuts/overrides.xml
+msgctxt "#31214"
+msgid "Recently Added Episodes"
+msgstr "Recent toegevoegde afleveringen"
+
+msgctxt "#31215"
+msgid "Unwatched"
+msgstr "Onbekeken"
+
+#: /shortcuts/overrides.xml
+msgctxt "#31216"
+msgid "In Progress Movies"
+msgstr "Lopende films"
+
+#: /1080i/Includes_Home.xml
+msgctxt "#31217"
+msgid "Change location"
+msgstr "Verander de locatie"
+
+#: /shortcuts/overrides.xml
+msgctxt "#31218"
+msgid "In Progress Episodes"
+msgstr "Afleveringen die bezig zijn"
+
+#: /1080i/script-nextup-notification-PostPlayInfo.xml
+msgctxt "#31219"
+msgid "Previous"
+msgstr "Vorige"
+
+msgctxt "#31220"
+msgid "Next Aired"
+msgstr "Volgende uitgezonden"
+
+#: /1080i/script-nextup-notification-PostPlayInfo.xml
+msgctxt "#31221"
+msgid "Next Up"
+msgstr "Volgende"
+
+#: /shortcuts/overrides.xml
+msgctxt "#31222"
+msgid "Top Rated TV Shows"
+msgstr "Best beoordeelde tv-programma's"
+
+msgctxt "#31223"
+msgid "Upcoming Movies"
+msgstr "Aankomende films"
+
+msgctxt "#31224"
+msgid "Popular Movies"
+msgstr "Populaire films"
+
+msgctxt "#31225"
+msgid "Top Rated Movies"
+msgstr "Best beoordeelde films"
+
+msgctxt "#31226"
+msgid "Popular TV Shows"
+msgstr "Populaire tv-programma's"
+
+msgctxt "#31227"
+msgid "Top Rated TV Shows"
+msgstr "Best beoordeelde tv-programma's"
+
+msgctxt "#31228"
+msgid "On Air TV Shows"
+msgstr "Tv-programma's die bezig zijn"
+
+msgctxt "#31229"
+msgid "TV Shows Airing Today"
+msgstr "Tv-programma's worden vandaag uitgezonden"
+
+#: /shortcuts/overrides.xml
+msgctxt "#31230"
+msgid "Top Rated Episodes"
+msgstr "Best beoordeelde afleveringen"
+
+#: /1080i/Includes_View_Posters.xml
+msgctxt "#31231"
+msgid "Lovefilm"
+msgstr "Liefdesfilm"
+
+msgctxt "#31232"
+msgid "Reset path"
+msgstr "Pad opnieuw instellen"
+
+#: /shortcuts/overrides.xml
+msgctxt "#31233"
+msgid "Random TV Shows"
+msgstr "Willekeurige tv-shows"
+
+#: /1080i/SettingsProfile.xml
+msgctxt "#31234"
+msgid "Customise your user profiles and enable/disable the login screen."
+msgstr "Pas uw gebruikersprofielen aan en schakel het inlogscherm in / uit."
+
+#: /1080i/script-skinshortcuts.xml
+msgctxt "#31235"
+msgid "Set sorting (default$COMMA year$COMMA rating$COMMA lastplayed$COMMA dateadded$COMMA etc.)"
+msgstr "Sortering instellen (standaard$COMMA jaar$COMMA waardering$COMMA laatst afgespeeld$COMMA datum toegevoegd$COMMA etc.)"
+
+msgctxt "#31236"
+msgid "Now playing..."
+msgstr "Nu aan het afspelen..."
+
+#: /1080i/script-skinshortcuts.xml
+msgctxt "#31237"
+msgid "Sort"
+msgstr "Sorteer"
+
+#: /shortcuts/overrides.xml
+msgctxt "#31238"
+msgid "Recently Added Albums"
+msgstr "Recent toegevoegde albums"
+
+#: /1080i/script-skinshortcuts.xml
+msgctxt "#31239"
+msgid "Direction"
+msgstr ""
+
+#: /1080i/script-skinshortcuts.xml
+msgctxt "#31240"
+msgid "Aspect"
+msgstr ""
+
+msgctxt "#31241"
+msgid "Additional info"
+msgstr "extra informatie"
+
+#: /shortcuts/overrides.xml
+msgctxt "#31242"
+msgid "Recently Played Albums"
+msgstr "Onlangs afgespeelde albums"
+
+#: /shortcuts/overrides.xml
+msgctxt "#31243"
+msgid "Top 100 Albums"
+msgstr ""
+
+#: /1080i/script-skinshortcuts.xml
+msgctxt "#31244"
+msgid "Select Widget"
+msgstr "Selecteer Widget"
+
+#: /1080i/script-skinshortcuts.xml
+msgctxt "#31245"
+msgid "Customize"
+msgstr "Aanpassen"
+
+#: /1080i/script-skinshortcuts.xml
+msgctxt "#31246"
+msgid "Press right to customize widgets"
+msgstr "Druk op rechts om widgets aan te passen"
+
+#: /1080i/script-skinshortcuts.xml
+msgctxt "#31247"
+msgid "Widgets"
+msgstr ""
+
+#: /1080i/script-skinshortcuts.xml
+msgctxt "#31248"
+msgid "Edit Shortcuts"
+msgstr "Bewerk snelkoppelingen"
+
+#: /1080i/script-skinshortcuts.xml
+msgctxt "#31249"
+msgid "Press right to customize shortcuts"
+msgstr "Druk op rechts om snelkoppelingen aan te passen"
+
+#: /1080i/SkinSettings.xml
+msgctxt "#31250"
+msgid "Gradient colour"
+msgstr "Kleurverloop"
+
+msgctxt "#31251"
+msgid "Weather Fanart"
+msgstr "Weer Fanart"
+
+msgctxt "#31252"
+msgid "Weather Forecast"
+msgstr "Weervoorspelling"
+
+#: /1080i/SkinSettings.xml
+msgctxt "#31253"
+msgid "Use larger font for progress bar"
+msgstr "Gebruik een groter lettertype voor de voortgangsbalk"
+
+#: /1080i/script-skinshortcuts.xml
+msgctxt "#31254"
+msgid "If you are having difficulties with widgets or home menu items not displaying correctly please make sure that you press the \"save changes\" button to ensure that your shortcuts and widgets are set."
+msgstr "Als je problemen hebt met widgets of items in het hoofdmenu die niet correct worden weergegeven, zorg er dan voor dat je op de knop \"wijzigingen opslaan\" drukt om ervoor te zorgen dat je snelkoppelingen en widgets zijn ingesteld."
+
+#: /1080i/SkinSettings.xml
+msgctxt "#31255"
+msgid "Generate landscape art"
+msgstr "Genereer landschapskunst"
+
+#: /1080i/Includes_Labels.xml
+msgctxt "#31256"
+msgid "Display artwork"
+msgstr ""
+
+#: /shortcuts/overrides.xml
+msgctxt "#31257"
+msgid "Movie Genres"
+msgstr "Filmgenres"
+
+#: /1080i/SkinSettings.xml
+msgctxt "#31258"
+msgid "Clearart with seekbar"
+msgstr "Clearart met zoekbalk"
+
+msgctxt "#31259"
+msgid "Extra fanart"
+msgstr ""
+
+#: /shortcuts/overrides.xml
+msgctxt "#31260"
+msgid "Movie Sets"
+msgstr "Filmsets"
+
+msgctxt "#31261"
+msgid "Widget aspect"
+msgstr ""
+
+msgctxt "#31262"
+msgid "Poster"
+msgstr ""
+
+msgctxt "#31263"
+msgid "Square"
+msgstr ""
+
+msgctxt "#31264"
+msgid "Thumbnail"
+msgstr ""
+
+msgctxt "#31265"
+msgid "Fanart"
+msgstr ""
+
+msgctxt "#31266"
+msgid "Widget"
+msgstr ""
+
+msgctxt "#31267"
+msgid "Action"
+msgstr "Actie"
+
+msgctxt "#31268"
+msgid "Label"
+msgstr ""
+
+msgctxt "#31269"
+msgid "Fallback widget"
+msgstr ""
+
+msgctxt "#31270"
+msgid "Video / Music OSD"
+msgstr "Video / muziek OSD"
+
+msgctxt "#31271"
+msgid "Single Image"
+msgstr "Enkele afbeelding"
+
+msgctxt "#31272"
+msgid "Multi Image"
+msgstr "Multi afbeelding"
+
+#: /1080i/SkinSettings.xml
+msgctxt "#31273"
+msgid "Background overlay color"
+msgstr "Achtergrond overlay kleur"
+
+#: /shortcuts/overrides.xml
+msgctxt "#31274"
+msgid "TvShow Genres"
+msgstr "Tv-programma genres"
+
+#: /1080i/SkinSettings.xml
+msgctxt "#31275"
+msgid "Blur fanart"
+msgstr "Vervaag de fanart"
+
+#: /shortcuts/overrides.xml
+msgctxt "#31276"
+msgid "IMDB Top 250 Movies"
+msgstr "IMDB Top 250 films"
+
+#: /1080i/SkinSettings.xml
+msgctxt "#31277"
+msgid "Animations"
+msgstr "Animaties"
+
+#: /shortcuts/overrides.xml
+msgctxt "#31278"
+msgid "Unwatched Movies"
+msgstr "Onbekeken films"
+
+msgctxt "#31279"
+msgid "Video decoder"
+msgstr ""
+
+msgctxt "#31280"
+msgid "Pixel format"
+msgstr ""
+
+msgctxt "#31281"
+msgid "by"
+msgstr "door"
+
+msgctxt "#31282"
+msgid "on"
+msgstr "aan"
+
+#: /shortcuts/overrides.xml
+msgctxt "#31283"
+msgid "Unwatched Episodes"
+msgstr "Niet-bekeken afleveringen"
+
+#: MPAA Rating
+msgctxt "#31284"
+msgid "Classification"
+msgstr "Classificatie"
+
+#: /1080i/Includes_Home.xml
+msgctxt "#31285"
+msgid "Extended info"
+msgstr "Uitgebreide info"
+
+msgctxt "#31286"
+msgid "Highlight colour"
+msgstr "Markeer kleur"
+
+msgctxt "#31287"
+msgid "Reset to default"
+msgstr "Reset naar standaard"
+
+#: /1080i/SkinSettings.xml
+msgctxt "#31288"
+msgid "Match highlight colors with poster"
+msgstr "Match markeerkleuren met poster"
+
+msgctxt "#31289"
+msgid "Awards"
+msgstr "Onderscheidingen"
+
+msgctxt "#31290"
+msgid "Consensus"
+msgstr ""
+
+#: /1080i/SkinSettings.xml
+msgctxt "#31291"
+msgid "Display text labels on landscape widget"
+msgstr "Geef tekstlabels weer op de liggende widget"
+
+#: /1080i/DialogBusy.xml
+msgctxt "#31292"
+msgid "Kodi is busy$COMMA one moment please"
+msgstr "Kodi is een moment bezig$COMMA even geduld AUB"
+
+#: /shortcuts/overrides.xml
+msgctxt "#31293"
+msgid "Skin Helper Widgets"
+msgstr ""
+
+#: /1080i/Includes_Home.xml
+msgctxt "#31294"
+msgid "PVR / Live TV"
+msgstr ""
+
+#: /shortcuts/overrides.xml
+msgctxt "#31295"
+msgid "Random Artists"
+msgstr "Willekeurige artiesten"
+
+#: /shortcuts/overrides.xml
+msgctxt "#31296"
+msgid "Movie Nodes"
+msgstr ""
+
+#: /shortcuts/overrides.xml
+msgctxt "#31297"
+msgid "TvShow Nodes"
+msgstr ""
+
+#: /1080i/Includes_View_List.xml
+msgctxt "#31298"
+msgid "Media Info"
+msgstr ""
+
+#: /1080i/DialogVideoInfo.xml
+msgctxt "#31299"
+msgid "Premiered"
+msgstr "Première"
+
+#: /shortcuts/overrides.xml
+msgctxt "#31300"
+msgid "Music Nodes"
+msgstr ""
+
+#: /shortcuts/overrides.xml
+msgctxt "#31301"
+msgid "TV Shows"
+msgstr ""
+
+#: /shortcuts/overrides.xml
+msgctxt "#31302"
+msgid "Music Sources"
+msgstr "Muziekbronnen"
+
+#: /1080i/DialogAddonInfo.xml
+msgctxt "#31303"
+msgid "Latest Changes"
+msgstr "Laatste wijzigingen"
+
+#: /shortcuts/overrides.xml
+msgctxt "#31304"
+msgid "Picture Sources"
+msgstr "Afbeeldingsbronnen"
+
+#: /1080i/SkinSettings.xml
+msgctxt "#31305"
+msgid "Color cycling"
+msgstr ""
+
+#: /1080i/Includes_Items.xml
+msgctxt "#31306"
+msgid "Special Features"
+msgstr ""
+
+#: /1080i/SkinSettings.xml
+msgctxt "#31307"
+msgid "Prefer plot outline"
+msgstr "Geef de voorkeur aan plot omtrek"
+
+#: /1080i/Includes_Labels.xml
+msgctxt "#31308"
+msgid "Player"
+msgstr "Speler"
+
+#: /1080i/SkinSettings.xml
+msgctxt "#31309"
+msgid "Blur effect type"
+msgstr "Type vervagingseffect"
+
+#: /1080i/Includes_Home.xml
+msgctxt "#31310"
+msgid "User rating"
+msgstr "Gebruikersbeoordeling"
+
+#: /1080i/Includes_OSD.xml
+msgctxt "#31311"
+msgid "Rate Song"
+msgstr "Beoordeel nummer"
+
+#: /1080i/SkinSettings.xml
+msgctxt "#31312"
+msgid "Enable / disable ratings"
+msgstr "Beoordeling inschakelen / uitschakelen"
+
+#: /1080i/SkinSettings.xml
+msgctxt "#31313"
+msgid "Background transparency"
+msgstr "Transparantie van de achtergrond"
+
+#: /1080i/SkinSettings.xml
+msgctxt "#31314"
+msgid "Automatically display music video info at beginning and end of clip"
+msgstr "Automatisch muziekvideo-informatie weergeven aan het begin en einde van de clip"
+
+#: /1080i/Includes_Home.xml
+msgctxt "#31315"
+msgid "CinemaVision"
+msgstr ""
+
+#: /1080i/SkinSettings.xml
+msgctxt "#31316"
+msgid "Increased"
+msgstr "Is gestegen"
+
+#: /1080i/SkinSettings.xml
+msgctxt "#31317"
+msgid "Watched indicators"
+msgstr "Bekeken indicatoren"
+
+#: /1080i/SkinSettings.xml
+msgctxt "#31318"
+msgid "Shadows"
+msgstr "Schaduwen"
+
+#: /1080i/SkinSettings.xml
+msgctxt "#31319"
+msgid "Indicator style"
+msgstr "Indicator stijl"
+
+#: /1080i/script-skinshortcuts.xml
+msgctxt "#31320"
+msgid "Important"
+msgstr "Belangrijk"
+
+#: /1080i/Custom_1116_ColorBoxAdvancedSettings.xml
+msgctxt "#31321"
+msgid "Reset to defaults"
+msgstr "Reset naar standaardinstellingen"
+
+#: /1080i/Custom_1116_ColorBoxAdvancedSettings.xml
+msgctxt "#31322"
+msgid "Image quality changes the resolution of the generated image. Better quality images take longer to process. Quality changes can alter the intensity of the effect in addition to other effect settings. The blend setting will blend the effect with the original image$COMMA with a value of 100 showing the full image effect."
+msgstr "De beeldkwaliteit verandert de resolutie van de gegenereerde afbeelding.  Het verwerken van afbeeldingen van betere kwaliteit duurt langer.  Kwaliteitsveranderingen kunnen naast andere effectinstellingen ook de intensiteit van het effect veranderen.  De blend-instelling zal het effect mengen met de originele afbeelding$COMMA met een waarde van 100, waarbij het volledige beeldeffect wordt weergegeven."
+
+#: /1080i/Custom_1116_ColorBoxAdvancedSettings.xml
+msgctxt "#31323"
+msgid "Blend"
+msgstr "Mengsel"
+
+#: /1080i/Custom_1116_ColorBoxAdvancedSettings.xml
+msgctxt "#31324"
+msgid "Bitsize"
+msgstr ""
+
+#: /1080i/Custom_1116_ColorBoxAdvancedSettings.xml
+msgctxt "#31325"
+msgid "Pixel size"
+msgstr "Pixelgrootte"
+
+#: /1080i/Custom_1116_ColorBoxAdvancedSettings.xml
+msgctxt "#31326"
+msgid "Blur radius"
+msgstr "Vervagingsradius"
+
+#: /1080i/Custom_1116_ColorBoxAdvancedSettings.xml
+msgctxt "#31327"
+msgid "Image quality"
+msgstr "Beeldkwaliteit"
+
+#: /1080i/Custom_1116_ColorBoxAdvancedSettings.xml
+msgctxt "#31328"
+msgid "Highest"
+msgstr "Hoogste"
+
+#: /1080i/Custom_1116_ColorBoxAdvancedSettings.xml
+msgctxt "#31329"
+msgid "Colorbox Advanced Settings"
+msgstr "Colorbox Geavanceerde instellingen"
+
+#: /1080i/SkinSettings.xml
+msgctxt "#31330"
+msgid "Advanced settings for colorbox (blur settings)"
+msgstr "Geavanceerde instellingen voor colorbox (instellingen voor vervaging)"
+
+#: /1080i/SkinSettings.xml
+msgctxt "#31331"
+msgid "Icon only mode"
+msgstr "Alleen pictogrammodus"
+
+#: /1080i/Custom_1116_ColorBoxAdvancedSettings.xml
+msgctxt "#31332"
+msgid "Change image"
+msgstr "Verander afbeelding"
+
+#: /1080i/script-globalsearch-main.xml
+msgctxt "#31333"
+msgid "Programmes"
+msgstr "Programma's"
+
+#: /1080i/Includes_Object.xml
+msgctxt "#31334"
+msgid "Alphabet strip is not available for this content"
+msgstr "Alfabetstrook is niet beschikbaar voor deze inhoud"
+
+#: /1080i/SkinSettings.xml
+msgctxt "#31335"
+msgid "Match background overlay color with poster"
+msgstr "Overlay achtergrondkleur met poster"
+
+#: /1080i/SkinSettings.xml
+msgctxt "#31336"
+msgid "Background overlay"
+msgstr "Achtergrond overlay"
+
+#: /1080i/Includes_Labels.xml
+msgctxt "#31337"
+msgid "Light"
+msgstr "Licht"
+
+#: /1080i/SkinSettings.xml
+msgctxt "#31338"
+msgid "Background vignette"
+msgstr "Achtergrond vignet"
+
+#: /1080i/SkinSettings.xml
+msgctxt "#31339"
+msgid "Effects"
+msgstr "Effecten"
+
+#: /1080i/Includes_Labels.xml
+msgctxt "#31340"
+msgid "Match poster"
+msgstr ""
+
+#: /1080i/Includes_Labels.xml
+msgctxt "#31341"
+msgid "Dark"
+msgstr "Donker"
+
+#: /1080i/SkinSettings.xml
+msgctxt "#31342"
+msgid "Widget item limit"
+msgstr "Limiet voor widget items"
+
+#: /1080i/Settings.xml
+msgctxt "#31343"
+msgid "PVR"
+msgstr ""
+
+#: /1080i/Settings.xml
+msgctxt "#31344"
+msgid "Install from repository or zip"
+msgstr "Installeer vanuit repository of zip"
+
+#: /1080i/Includes_Widgets.xml
+msgctxt "#31345"
+msgid "Event logging"
+msgstr "Gebeurtenisregistratie"
+
+#: /1080i/SkinSettings.xml
+msgctxt "#31346"
+msgid "Video OSD"
+msgstr ""
+
+#: /1080i/SkinSettings.xml
+msgctxt "#31347"
+msgid "Music OSD"
+msgstr "Muziek OSD"
+
+#: /1080i/Home.xml
+msgctxt "#31348"
+msgid "Loading Home Menu"
+msgstr "Startmenu laden"
+
+#: /1080i/Startup.xml
+msgctxt "#31349"
+msgid "Initialising Skin"
+msgstr "Initialiseren van de Skin"
+
+#: /1080i/DialogVideoInfo.xml
+msgctxt "#31350"
+msgid "Similar to "
+msgstr "Gelijkwaardig aan "
+
+#: /1080i/DialogVideoInfo.xml
+msgctxt "#31351"
+msgid "Directed by "
+msgstr "Geregisseerd door "
+
+#: /1080i/DialogVideoInfo.xml
+msgctxt "#31352"
+msgid "Added"
+msgstr "Toegevoegd"
+
+#: /1080i/DialogVideoInfo.xml
+msgctxt "#31353"
+msgid "Played"
+msgstr "Gespeeld"
+
+#: /1080i/DialogMusicInfo.xml
+msgctxt "#31354"
+msgid "Instrument"
+msgstr "Instrument"
+
+#: /1080i/DialogMusicInfo.xml
+msgctxt "#31355"
+msgid "Mood"
+msgstr ""
+
+#: /1080i/script-script.extendedinfo-DialogInfo.xml
+msgctxt "#31356"
+msgid "Years Old"
+msgstr "Jaar oud"
+
+#: /1080i/script-script.extendedinfo-DialogInfo.xml
+msgctxt "#31357"
+msgid "Crew"
+msgstr ""
+
+#: /1080i/Includes_View_Posters.xml
+msgctxt "#31358"
+msgid "Poster Wall"
+msgstr ""
+
+#: /1080i/Includes_View_Posters.xml
+msgctxt "#31359"
+msgid "Landscape Wall"
+msgstr ""
+
+#: /1080i/Includes_View_Posters.xml
+msgctxt "#31360"
+msgid "Square Wall"
+msgstr ""
+
+#: /1080i/Includes_View_Posters.xml
+msgctxt "#31361"
+msgid "Landscape Showcase"
+msgstr ""
+
+#: /1080i/Includes_View_Posters.xml
+msgctxt "#31362"
+msgid "Square Showcase"
+msgstr ""
+
+#: /1080i/Includes_View_Posters.xml
+msgctxt "#31363"
+msgid "Big Posters"
+msgstr ""
+
+#: /1080i/SkinSettings.xml
+msgctxt "#31364"
+msgid "Mouse compatability"
+msgstr "Muis compatibiliteit"
+
+#: /1080i/script-script.extendedinfo-DialogVideoInfo.xml
+msgctxt "#31365"
+msgid "Images"
+msgstr "Afbeeldingen"
+
+#: /1080i/SkinSettings.xml
+msgctxt "#31366"
+msgid "Artwork button downloads all artwork"
+msgstr "Artwork knop download alle artwork"
+
+#: /shortcuts/overrides.xml
+msgctxt "#31367"
+msgid "Recently Added TV Shows"
+msgstr "Onlangs toegevoegde tv-programma's"
+
+#: /1080i/script-script.extendedinfo-DialogInfo.xml
+msgctxt "#31368"
+msgid "Tagged Images"
+msgstr "Getagde afbeeldingen"
+
+#: /1080i/SkinSettings.xml
+msgctxt "#31369"
+msgid "Prefer fanart for landscape widgets"
+msgstr "Geef de voorkeur aan fanart voor landschaps widgets"
+
+#: /1080i/Includes_View_Posters.xml
+msgctxt "#31370"
+msgid "Banner Wall"
+msgstr ""
+
+#: /1080i/SkinSettings.xml
+msgctxt "#31371"
+msgid "Enable large Categories widget"
+msgstr "Schakel grote Categorieën widget in"
+
+#: /1080i/SkinSettings.xml
+msgctxt "#31372"
+msgid "Force default menu position"
+msgstr "Forceer standaard menupositie"
+
+#: /1080i/Includes_Widgets.xml
+msgctxt "#31373"
+msgid "See More"
+msgstr "Bekijk meer"
+
+#: /1080i/EventLog.xml
+msgctxt "#31374"
+msgid "Order"
+msgstr "Bestel"
+
+#: /1080i/SkinSettings.xml /1080i/SkinSettings.xml
+msgctxt "#31375"
+msgid "Gradients on backing panels"
+msgstr "Verlopen op achterpanelen"
+
+#: /1080i/SkinSettings.xml /1080i/SkinSettings.xml
+msgctxt "#31376"
+msgid " - Display \"See more\" widget item"
+msgstr "- Geef het widget item \"Zie meer\" weer"
+
+#: /1080i/SkinSettings.xml
+msgctxt "#31377"
+msgid "Video lyrics"
+msgstr "Video songteksten"
+
+#: /1080i/SkinSettings.xml
+msgctxt "#31378"
+msgid "Genre names in PVR guide"
+msgstr "Genrenamen in PVR-gids"
+
+#: /1080i/SkinSettings.xml
+msgctxt "#31379"
+msgid "Display plot overlay after delay"
+msgstr "Geef plot-overlay weer na vertraging"
+
+#: /1080i/Includes_Labels.xml
+msgctxt "#31380"
+msgid "Untitled"
+msgstr "Ongetiteld"
+
+#: /shortcuts/overrides.xml
+msgctxt "#31381"
+msgid "Last Played Channels"
+msgstr "Laatst afgespeelde kanalen"
+
+#: /shortcuts/overrides.xml
+msgctxt "#31382"
+msgid "Active Recordings"
+msgstr "Actieve opnames"
+
+#: /shortcuts/overrides.xml
+msgctxt "#31383"
+msgid "Grouped Active Recordings"
+msgstr "Gegroepeerde actieve opnames"
+
+#: /shortcuts/overrides.xml
+msgctxt "#31384"
+msgid "Grouped Deleted Recordings"
+msgstr "Gegroepeerde verwijderde opname"
+
+#: /1080i/Includes_View_Posters.xml
+msgctxt "#31385"
+msgid "Episode List"
+msgstr "Afleverings lijst"
+
+#: /1080i/SkinSettings.xml
+msgctxt "#31386"
+msgid "Auto close OSD controls after delay (in seconds)"
+msgstr "OSD-bedieningselementen automatisch sluiten na vertraging (in seconden)"
+
+#: /1080i/SkinSettings.xml
+msgctxt "#31387"
+msgid "Splash screen image"
+msgstr "Splash scherm afbeelding"
+
+#: /1080i/DialogVideoInfo.xml
+msgctxt "#31388"
+msgid "Download All Artwork"
+msgstr "Download alle artwork"
+
+#: /1080i/DialogVideoInfo.xml
+msgctxt "#31389"
+msgid "Select Artwork"
+msgstr "Selecteer Artwork"
+
+#: /1080i/SkinSettings.xml
+msgctxt "#31390"
+msgid "Pressing up from top menu shows fanart / plot"
+msgstr "Als u op het bovenste menu drukt, wordt fanart / plot weergegeven"
+
+#: /1080i/Includes_Topbar.xml
+msgctxt "#31391"
+msgid "Page"
+msgstr "Pagina"
+
+#: /1080i/Includes_Labels.xml
+msgctxt "#31392"
+msgid "Sort Letter"
+msgstr "Sorteer letter"
+
+#: /1080i/SkinSettings.xml
+msgctxt "#31393"
+msgid "Show media flags instead of ratings in library views"
+msgstr "Toon mediavlaggen in plaats van beoordelingen in bibliotheekweergaven"
+
+#: /1080i/SkinSettings.xml
+msgctxt "#31394"
+msgid "Monochrome flags"
+msgstr "Monochrome vlaggen"
+
+#: /1080i/Includes_Items.xml
+msgctxt "#31395"
+msgid "Music Playlist"
+msgstr "Muziekafspeellijst"
+
+#: /1080i/Includes_Items.xml
+msgctxt "#31396"
+msgid "Video Playlist"
+msgstr ""
+
+#: /1080i/Includes_View_Posters.xml
+msgctxt "#31397"
+msgid "Square Wall Large"
+msgstr ""
+
+#: /1080i/SkinSettings.xml
+msgctxt "#31398"
+msgid "Force extendedinfo to open when pressing info"
+msgstr "Forceer uitgebreide info om te openen wanneer u op info drukt"
+
+#: /1080i/Includes_Labels.xml
+msgctxt "#31399"
+msgid "Text"
+msgstr ""
+
+#: /1080i/Custom_1119_EnableInfoLists.xml
+msgctxt "#31400"
+msgid "Movies by Director"
+msgstr "Films van regisseur"
+
+#: /1080i/Custom_1119_EnableInfoLists.xml
+msgctxt "#31401"
+msgid "Next Up Episodes"
+msgstr "Volgende afleveringen"
+
+#: /1080i/Custom_1119_EnableInfoLists.xml
+msgctxt "#31402"
+msgid "Similar Movies"
+msgstr "Vergelijkbare films"
+
+#: /1080i/Custom_1119_EnableInfoLists.xml
+msgctxt "#31403"
+msgid "Similar Tv Shows"
+msgstr "Vergelijkbare tv-shows"
+
+#: /1080i/Custom_1119_EnableInfoLists.xml
+msgctxt "#31404"
+msgid "Movies from Studio"
+msgstr "Films uit Studio"
+
+#: /1080i/Custom_1119_EnableInfoLists.xml
+msgctxt "#31405"
+msgid "Extrafanart"
+msgstr ""
+
+#: /1080i/Custom_1119_EnableInfoLists.xml
+msgctxt "#31406"
+msgid "Extras / Special Features"
+msgstr "Extra's / speciale functies"
+
+#: /1080i/Custom_1119_EnableInfoLists.xml
+msgctxt "#31407"
+msgid "Enable / disable info dialog lists"
+msgstr "In- / uitschakelen van informatiedialooglijsten"
+
+#: /1080i/Includes_Items.xml
+msgctxt "#31408"
+msgid "Subtitle settings"
+msgstr "Ondertitelingsinstellingen"
+
+#: /1080i/SkinSettings.xml
+msgctxt "#31409"
+msgid "Subtitles button opens subtitle settings"
+msgstr "Ondertitelingsknop opent ondertitelinstellingen"
+
+#: /1080i/SkinSettings.xml
+msgctxt "#31410"
+msgid "Show trailers and special features in preview window"
+msgstr "Toon trailers en speciale functies in het voorbeeldvenster"
+
+#: /1080i/Includes_View.xml
+msgctxt "#31411"
+msgid "LandscapeWide"
+msgstr ""
+
+#: /1080i/Includes_View.xml
+msgctxt "#31412"
+msgid "WidgetLive"
+msgstr ""
+
+#: /1080i/SkinSettings.xml
+msgctxt "#31413"
+msgid "Enable Plot on Widget Bar"
+msgstr "Schakel Plot op Widget Bar in"
+
+#: /1080i/Includes_View.xml
+msgctxt "#31414"
+msgid "LandscapeWidePoster"
+msgstr ""
+
+#: /1080i/SkinSettings.xml
+msgctxt "#31415"
+msgid "Enable PVR Guide Info"
+msgstr "Schakel PVR Guide Info in"
+
+#: /1080i/SkinSettings.xml
+msgctxt "#31416"
+msgid "Main Label Color"
+msgstr "Kleur hoofdlabel"
+
+#: /1080i/SkinSettings.xml
+msgctxt "#31417"
+msgid "Enable Widget Overlays"
+msgstr "Schakel widget overlays in"
+
+#: /1080i/Includes_View.xml
+msgctxt "#31418"
+msgid "posterdetails"
+msgstr ""
+
+#: /1080i/SkinSettings.xml
+msgctxt "#31419"
+msgid "Enable Widget Banners"
+msgstr "Widget banners inschakelen"
+
+#: /1080i/SkinSettings.xml
+msgctxt "#31420"
+msgid "Enable Categories Widget labels"
+msgstr "Schakel Categorieën Widget labels in"
+
+msgctxt "#31421"
+msgid ""
+msgstr ""
+
+#: /1080i/SkinSettings.xml
+msgctxt "#31422"
+msgid "Enable Categories widget Label + icons"
+msgstr "Schakel Categorieën widget Label + pictogrammen in"
+
+msgctxt "#31423"
+msgid "Widgets"
+msgstr ""
+
+#: /1080i/SkinSettings.xml
+msgctxt "#31424"
+msgid "Enable Widget FixedFocus"
+msgstr "Widget FixedFocus inschakelen"
+
+#: /1080i/SkinSettings.xml
+msgctxt "#31425"
+msgid "Enable skin helper artwork lookups for addons"
+msgstr "Schakel het opzoeken van skin helper artwork in voor add-ons'
+
+#: /1080i/SkinSettings.xml
+msgctxt "#31426"
+msgid "Enable Ratings on Widget Bar"
+msgstr 'Beoordelingen op widgetbalk inschakelen'
+
+#: /1080i/SkinSettings.xml
+msgctxt "#31427"
+msgid "Enable Title  on Widget Bar"
+msgstr "Titel op widgetbalk inschakelen"
+
+#: /1080i/SkinSettings.xml
+msgctxt "#31428"
+msgid "Enable Netflix style Showcase Views"
+msgstr 'Showcase weergaven in Netflix stijl inschakelen'
+
+msgctxt "#31429"
+msgid "Default action for trailers"
+msgstr "Standaardactie voor trailers"
+
+#: /1080i/Includes_View.xml
+msgctxt "#31430"
+msgid "LandscapeNetflix"
+msgstr ""
+
+#: /1080i/SkinSettings.xml
+msgctxt "#31431"
+msgid "Enable Netflix Home"
+msgstr 'Schakel Netflix Home in'
+
+#: /1080i/SkinSettings.xml
+msgctxt "#31432"
+msgid "Enable Netflix Video Info"
+msgstr 'Schakel Netflix videogegevens in'
+
+#: /1080i/SkinSettings.xml
+msgctxt "#31433"
+msgid "Choose Menu Layout"
+msgstr "Kies menu-indeling"
+
+#: /1080i/SkinSettings.xml
+msgctxt "#31434"
+msgid "Enable Icon Only SideMenu"
+msgstr "Enable Icon Only SideMenu"
+
+msgctxt "#31435"
+msgid "AuraMod"
+msgstr ""
+
+msgctxt "#31436"
+msgid "PVR"
+msgstr ""
+
+#: /1080i/SkinSettings.xml
+msgctxt "#31437"
+msgid "Enable Sidemenu auto-hide"
+msgstr "Schakel Sidemenu automatisch verbergen in"
+
+#: /1080i/SkinSettings.xml
+msgctxt "#31438"
+msgid "Netflix Simple Home Layout"
+msgstr
+
+#: /1080i/SkinSettings.xml
+msgctxt "#31439"
+msgid "Enable Menu Background Image"
+msgstr
+
+#: /1080i/SkinSettings.xml
+msgctxt "#31440"
+msgid "Netflix Mixed Home Layout"
+msgstr
+
+#: /1080i/SkinSettings.xml
+msgctxt "#31441"
+msgid "Netflix Home Layout"
+msgstr
+
+#: /1080i/SkinSettings.xml
+msgctxt "#31442"
+msgid "Choose Home Layout Style"
+msgstr "Kies layoutstijl voor startpagina"
+
+#: /1080i/Includes_View.xml
+msgctxt "#31443"
+msgid "Category"
+msgstr "Categorie"
+
+#: /1080i/SkinSettings.xml
+msgctxt "#31444"
+msgid "Lock Hub Widgets"
+msgstr "Vergrendel Hub Widgets"
+
+#: /1080i/SkinSettings.xml
+msgctxt "#31445"
+msgid "Enable Small widget style"
+msgstr "Schakel Kleine widgetstijl in"
+
+#: /1080i/SkinSettings.xml
+msgctxt "#31446"
+msgid "Widget Status bar"
+msgstr
+
+#: /1080i/SkinSettings.xml
+msgctxt "#31447"
+msgid "Aura Home Layout"
+msgstrsgstr
+
+#: /1080i/SkinSettings.xml
+msgctxt "#31448"
+msgid "Choose Menu Layout"
+msgstr "Kies Menu-indeling"
+
+#: /1080i/SkinSettings.xml
+msgctxt "#31449"
+msgid "Vertical Icon Only"
+msgstr "Alleen verticaal pictogram"
+
+#: /1080i/SkinSettings.xml
+msgctxt "#31450"
+msgid "Vertical Full"
+msgstr "Verticaal volledig"
+
+#: /1080i/SkinSettings.xml
+msgctxt "#31451"
+msgid "Horizontal Top"
+msgstrsgstr
+
+#: /1080i/SkinSettings.xml
+msgctxt "#31452"
+msgid "Choose Netflix Widget Style"
+msgstr
+
+#: /1080i/SkinSettings.xml
+msgctxt "#31453"
+msgid "Large Widgets"
+msgstrsgstr
+
+#: /1080i/SkinSettings.xml
+msgctxt "#31454"
+msgid "Small Widgets"
+msgstrsgstr
+
+#: /1080i/SkinSettings.xml
+msgctxt "#31455"
+msgid "Widget Overlays"
+msgstrsgstr
+
+#: /1080i/SkinSettings.xml
+msgctxt "#31456"
+msgid "Widget General"
+msgstrsgstr
+
+#: /1080i/SkinSettings.xml
+msgctxt "#31457"
+msgid "Enable multi-row Categories Widget"
+msgstr "Schakel Categorieën-widget met meerdere rijen in"
+
+#: /1080i/SkinSettings.xml
+msgctxt "#31458"
+msgid "Enable Clearlogos on Widgets"
+msgstr "Schakel Clearlogos in op widgets"
+
+#: /1080i/SkinSettings.xml
+msgctxt "#31459"
+msgid "Enable Low Spotlight Info"
+msgstrsgstr
+
+#: /1080i/SkinSettings.xml
+msgctxt "#31461"
+msgid "Enable Video Info Trailer auto-play"
+msgstrsgstr
+
+#: /1080i/SkinSettings.xml
+msgctxt "#31462"
+msgid "Disable Main Menu Label"
+msgstrsgstr
+
+#: /1080i/SkinSettings.xml
+msgctxt "#31463"
+msgid "Menu Hubs"
+msgstrsgstr
+
+#: /1080i/SkinSettings.xml
+msgctxt "#31464"
+msgid "Media Hubs"
+msgstrsgstr
+
+#: /1080i/Includes_View_List.xml
+msgctxt "#31465"
+msgid "List"
+msgstr "Lijst"
+
+#: /1080i/SkinSettings.xml
+msgctxt "#31466"
+msgid "Down key starts trailer in Netflix Showcase Views"
+msgstr "Omlaagtoets start trailer in Netflix Showcase View"
+
+#: /1080i/Includes_View_Posters.xml
+msgctxt "#31467"
+msgid "Panel Showcase"
+msgstr ""
+
+#: /1080i/Includes_View_Posters.xml
+msgctxt "#31468"
+msgid "Netflix Season"
+msgstr "Netflix seizoen"
+
+#: /1080i/Includes_View_Posters.xml
+msgctxt "#31469"
+msgid "Side List Poster"
+msgstr ""
+
+#: /1080i/Includes_View_Posters.xml
+msgctxt "#31470"
+msgid "Season Showcase"
+msgstr "Seizoen Showcase"
+
+#: /1080i/SkinSettings.xml
+msgctxt "#31471"
+msgid "Enable Vertical Icon w/ Labels"
+msgstr "Schakel verticaal pictogram in met w/ labels"
+
+#: /1080i/Includes_View_Posters.xml
+msgctxt "#31472"
+msgid "List Landscape"
+msgstr ""
+
+#: /1080i/Includes_View_Posters.xml
+msgctxt "#31473"
+msgid "List Poster"
+msgstr ""
+
+#: /1080i/Includes_View_Posters.xml
+msgctxt "#31474"
+msgid "Poster MediaInfo"
+msgstr ""
+
+#: /1080i/Includes_View_Posters.xml
+msgctxt "#31475"
+msgid "4 seconds"
+msgstr "4 seconden"
+
+#: /1080i/Includes_View_Posters.xml
+msgctxt "#31476"
+msgid "8 seconds"
+msgstr "8 seconden"
+
+#: /1080i/Includes_View_Posters.xml
+msgctxt "#31477"
+msgid "16 seconds"
+msgstr "16 seconden"
+
+#: /1080i/Includes_View_Posters.xml
+msgctxt "#31478"
+msgid "30 seconds"
+msgstr "30 seconden"
+
+#: /1080i/SkinSettings.xml
+msgctxt "#31479"
+msgid "Enable Vertical Label"
+msgstr "Schakel Verticaal label in"
+
+#: /1080i/Includes_View_Posters.xml
+msgctxt "#31480"
+msgid "Side List Panel"
+msgstr ""
+
+#: /1080i/Includes_View_Posters.xml
+msgctxt "#31481"
+msgid "Netflix Landscape Showcase"
+msgstr ""
+

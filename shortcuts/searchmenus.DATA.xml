@@ -53,6 +53,13 @@
     <action>plugin://plugin.video.venom/?action=tvSearchterm&amp;name=</action>
   </shortcut>
   <shortcut>
+		<defaultID />
+		<label>Kod</label>
+		<label2>Custom item</label2>
+		<icon>DefaultShortcut.png</icon>
+		<action>plugin://plugin.video.kod/?ewogICAgImNoYW5uZWwiOiAic2VhcmNoIiwKICAgICJhY3Rpb24iOiAibmV3X3NlYXJjaCIsCiAgICAibW9kZSI6ICJhbGwiCn0=&amp;search_text=</action>
+	</shortcut>
+  <shortcut>
     <defaultID />
     <label>Library Movies</label>
     <label2>Custom item</label2>

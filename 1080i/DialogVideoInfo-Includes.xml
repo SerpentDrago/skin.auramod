@@ -114,6 +114,8 @@
                   <param name="visible" value="true" />
                   <param name="plot_height" value="135" />
                   <param name="titleright" value="300" />
+                  <param name="studioid_flags" value="90647" />
+                  <param name="studioid_ratings" value="90689" />
                 </include>
                 <control type="image">
                   <texture colordiffuse="main_fg_100">$VAR[studio]</texture>
@@ -134,6 +136,8 @@
                   <param name="hdsd_flag" value="true" />
                   <param name="visible" value="true" />
                   <param name="plot_height" value="170" />
+                  <param name="studioid_flags" value="90648" />
+                  <param name="studioid_ratings" value="90690" />
                 </include>
               </control>
             </control>
@@ -637,6 +641,7 @@
               <param name="container" value="" />
               <param name="directory" value="color" />
               <param name="align" value="left" />
+              <param name="studioid" value="90666" />
             </include>
           </control>
           <!-- Info -->
@@ -1171,6 +1176,7 @@
                 <param name="top250" value="true" />
                 <param name="plot" value="false" />
                 <param name="studio" value="false" />
+                <param name="studioid" value="90671" />
               </include>
             </control>
         <control type="label">
@@ -1203,6 +1209,7 @@
                 <param name="top250" value="false" />
                 <param name="plot" value="false" />
                 <param name="studio" value="false" />
+                <param name="studioid" value="90672" />
               </include>
               <control type="image">
                 <top>10</top>

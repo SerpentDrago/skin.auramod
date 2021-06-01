@@ -1,5 +1,5 @@
 <?xml version='1.0' encoding='UTF-8'?>
-<addon id="skin.auramod" version="1.0.8" name="Aura[COLOR cyan]MOD[/COLOR]" provider-name="auramod,jurialmunkey,Cartmandos,marduklev,marcelveldt">
+<addon id="skin.auramod" version="1.0.16" name="Aura[COLOR cyan]MOD[/COLOR]" provider-name="skyfsza,inb4after,SerpentDrago">
     <requires>
         <import addon="xbmc.gui" version="5.15.0"/>
         <import addon="script.skin.helper.service" version="1.1.24"/>
@@ -17,12 +17,11 @@
         <res width="1920" height="1080" aspect="16:9" default="true" folder="1080i"/>
     </extension>
     <extension point="xbmc.addon.metadata">
-        <summary lang="en">Matrix / Kodi 19 Version of Auramod with some personal mods</summary>
-        <description lang="en">Aura is highly customisable skin with multiple widgets and a horizontal home menu. Aura combines the minimalism and rounded edges of Arctic Zephyr with the sleek customisability of Horizon and Titan Bingie. [COLOR cyan]Mods to Aura by skyfsza[/COLOR]</description>
+        <summary lang="en">Matrix / Kodi 19 Version of Auramod </summary>
+        <description lang="en">AuraMod is a Heavily Modified version of Aura by jurialmunkey. Combining parts and code of Aura,AZ2,Titan bingie, and many other skins  Credit to all those Devs for without them this would not be possible [COLOR cyan]Mods to Aura by skyfsza,inb4after,SerpentDrago[/COLOR]</description>
         <platform>all</platform>
         <license>Creative Commons Attribution Non-Commercial Share-Alike 4.0</license>
-        <forum/>
-        <source/>
+        <source>https://github.com/SerpentDrago/skin.auramod</source>
         <assets>
             <icon>icon.png</icon>
             <fanart>fanart.jpg</fanart>
@@ -32,5 +31,82 @@
             <screenshot>resources/screenshot-04.jpg</screenshot>
             <screenshot>resources/screenshot-05.jpg</screenshot>
         </assets>
+        <news>
+            v1.0.16
+            -Fix studio logos for Widget Spotlights
+            v1.0.15
+            -Improve Netflix Episode List view
+            -Add clearlogo
+            -Adjust progress bar position and size
+            -Round corners for progress bar
+            -Adjust season and episode label position
+            v1.0.14
+            -Fix actor thumbnails on multi-widget spotlights
+            -Fix studio logos for multi-widget spotlights
+            v1.0.13
+            -Fix studio logos for Aura Home
+            v1.0.12
+            -Fix studio logo duplicate ID
+            v1.0.11
+            -Repo Release
+            -Reworked addon.xml
+            v1.0.10
+            -Fix star rating visibility on "See More" widget items
+            -addon.xml overhaul
+            v1.0.9
+            -Fix "small category widget" focus highlight for netflix home
+            v1.0.8
+            -Fix Studio logos for aura home
+            V1.0.7
+            -Massive Studio Logo and ratings overhall
+            -Add more default/built in search lists (Kato,Venom,Fen)
+            -updated instructions in readme
+            -added script.colorbox to imports
+            -added TMDBHelper 4.3.7 to imports
+            -Fix Skinshortcuts widgets with color code in label
+            -Fix RT usermeter visibility condition for Liked %
+            -changed Liked % to use RT usermeter rating
+            -Add Monochrome RT certified icon
+            -Add DialogVideoInfo.xml monochrome studio logo support 
+            -Fix star ratings for seasons in library views
+            -Fix episode duration visibility 
+            v1.0.6
+            -Fix RT icons in "More Info" section of "Cast and More"
+            -Improve custom Actor Window handling
+            -Fix missing ) in next aired and imdb_rating
+            -Fix "Cast and More" navigation initial info entry point
+            -Fix "Cast and More" actor navigation in MyVideoNav.xml
+            v1.0.5
+            -Massive overhal to use TMDBHelper for ratings and artwork instead of SkinHelper
+            -Massive overhal to navigation in Netflix info "cast and more"
+            -Massive overhal to Netflix info (fixed play , episodes , and other buttons)
+            v1.0.4
+            -Fix startup video hang bug
+            -Lots of fixs to various library views and the images used 
+            -Fix Dependency Hang on startup
+            -Removed old XBMC. references throughout skin
+            -Fix tmdbhelper widget netflix info "Episodes" button
+            -Fix hang on opening addon dependencies
+            -Fix Widget Aspect for skin shortcuts
+            -Fix addon versions menu
+            -removed unload conditions that are no longer needed for matrix
+            -Fixed unmatched ()
+            -Tweaked display of notification/busy dialog
+            -Fixed shade on volume controls 
+            -Temp fix error with "multi widget spotlight" style Removed actors for now
+            v1.0.3.1
+            -Status bar OSD now follows main skin Highlight color
+            -OSD time Elapsed Separators now match skin highlight color 2
+            -Removed disable mouse/touch on startup 
+            -Added Partial Spanish Translation
+            V1.0.2
+            -replaced old xbmc. commands with modern equivalents in power menus
+            -readme update
+            v1.0.1
+            -Fix addon info buttons not showing
+            -readme update
+            V1.0 Matrix Release
+            -Various changes so skin would install on Matrix
+        </news>
     </extension>
 </addon>

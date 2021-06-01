@@ -1,3 +1,86 @@
+v1.0.16
+-Fix studio logos for Widget Spotlights
+v1.0.15
+-Improve Netflix Episode List view
+-Add clearlogo
+-Adjust progress bar position and size
+-Round corners for progress bar
+-Adjust season and episode label position
+v1.0.14
+-Fix actor thumbnails on multi-widget spotlights
+-Fix studio logos for multi-widget spotlights
+v1.0.13
+-Fix studio logos for Aura Home
+v1.0.12
+-Fix studio logo duplicate ID
+v1.0.11
+-Repo Release
+-Reworked addon.xml
+v1.0.10
+-Fix star rating visibility on "See More" widget items
+v1.0.9
+-Fix "small category widget" focus highlight for netflix home
+v1.0.8
+-Fix Studio logos for aura home
+V1.0.7
+-Massive Studio Logo and ratings overhall
+-Add more default/built in search lists (Kato,Venom,Fen)
+-updated instructions in readme
+-added script.colorbox to imports
+-added TMDBHelper 4.3.7 to imports
+-Fix Skinshortcuts widgets with color code in label
+-Fix RT usermeter visibility condition for Liked %
+-changed Liked % to use RT usermeter rating
+-Add Monochrome RT certified icon
+-Add DialogVideoInfo.xml monochrome studio logo support 
+-Fix star ratings for seasons in library views
+-Fix episode duration visibility 
+v1.0.6
+-Fix RT icons in "More Info" section of "Cast & More"
+-Improve custom Actor Window handling
+-Fix missing ) in next aired and imdb_rating
+-Fix "Cast & More" navigation initial info entry point
+-Fix "Cast & More" actor navigation in MyVideoNav.xml
+v1.0.5
+-Massive overhal to use TMDBHelper for ratings and artwork instead of SkinHelper
+-Massive overhal to navigation in Netflix info "cast & more"
+-Massive overhal to Netflix info (fixed play , episodes , and other buttons)
+v1.0.4
+-Fix startup video hang bug
+-Lots of fixs to various library views and the images used 
+-Fix Dependency Hang on startup
+-Removed old XBMC. references throughout skin
+-Fix tmdbhelper widget netflix info "Episodes" button
+-Fix hang on opening addon dependencies
+-Fix Widget Aspect for skin shortcuts
+-Fix addon versions menu
+-removed unload conditions that are no longer needed for matrix
+-Fixed unmatched ()
+-Tweaked display of notification/busy dialog
+-Fixed shade on volume controls 
+-Temp fix error with "multi widget spotlight" style Removed actors for now
+v1.0.3.1
+-Status bar OSD now follows main skin Highlight color
+-OSD time Elapsed Separators now match skin highlight color 2
+-Removed disable mouse/touch on startup 
+-Added Partial Spanish Translation
+V1.0.2
+-replaced old xbmc. commands with modern equivalents in power menus
+-readme update
+v1.0.1
+-Fix addon info buttons not showing
+-readme update
+V1.0 Matrix Release
+-Various changes so skin would install on Matrix
+V0.9.x
+-"more episodes" button is now just "episodes"
+-slight fix's for "episodes" button on show items
+-fix focus alignment of clear-logo on landscapewidedetails to be more consistent  
+-Fix blanking filenameandpath for plugin content with dbid
+---------------------------
+V0.9.45.1 THE FORKING !
+Auramod Forked from skyfsza
+---------------------------
 v0.9.43
 - Add option to enable Main Menu on Aura / Netflix Hubs
 - Add option for Info Slide on Poster / Landscape Widgets

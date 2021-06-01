@@ -80,6 +80,8 @@
                                 <param name="hdsd_flag" value="true" />
                                 <param name="visible" value="true" />
                                 <param name="plot_height" value="170" />
+                                <param name="studioid_flags" value="90646" />
+                                <param name="studioid_ratings" value="90688" />
                             </include>
                         </control>
                     </control>
@@ -210,6 +212,7 @@
                             <param name="container" value="" />
                             <param name="directory" value="color" />
                             <param name="align" value="left" />
+                            <param name="studioid" value="90665" />
                         </include>
                     </control>
                     <!-- Info -->

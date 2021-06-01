@@ -105,9 +105,8 @@
               <include condition="Skin.HasSetting(EnableSpotlight)">Spotlight_TVNextAired_AuraWidget</include>
               <include condition="Skin.HasSetting(EnableSpotlight)">Widget_LiveTV</include>
             </control>
-              <!-- Look into why movies and shows cast is not working on multi spotlights at another time 
               <include condition="Skin.HasSetting(EnableSpotlight) + Skin.HasSetting(EnableMultiWidgetSpotlight)">Spotlight_MultiWidget_Movies_cast</include>
-              <include condition="Skin.HasSetting(EnableSpotlight) + Skin.HasSetting(EnableTVMultiWidgetSpotlight)">Spotlight_MultiWidget_TVShows_cast</include>-->
+              <include condition="Skin.HasSetting(EnableSpotlight) + Skin.HasSetting(EnableTVMultiWidgetSpotlight)">Spotlight_MultiWidget_TVShows_cast</include>
             <!-- Home Widget -->
             <include>Widgets_Grouplist</include>
             <include>WidgetHubScroll</include>
@@ -778,7 +777,7 @@
             <param name="top250" value="true" />
             <param name="plot" value="true" />
             <param name="studio" value="true" />
-            <param name="studioid" value="3$PARAM[id]" />
+            <param name="studioid" value="1$PARAM[id]" />
             <param name="studiotop" value="-2" />
             <param name="studioheight" value="70" />
             <param name="studiowidth" value="70" />
@@ -809,7 +808,7 @@
             <param name="top250" value="true" />
             <param name="plot" value="true" />
             <param name="studio" value="false" />
-            <param name="studioid" value="4$PARAM[id]" />
+            <param name="studioid" value="2$PARAM[id]" />
             <param name="studiotop" value="-2" />
             <param name="studioheight" value="70" />
             <param name="studiowidth" value="70" />

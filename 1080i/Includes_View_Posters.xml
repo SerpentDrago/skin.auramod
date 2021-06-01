@@ -119,6 +119,8 @@
                     <param name="plot_height" value="210" />
                     <param name="imdbvotes" value="false" />
                     <param name="top250" value="false" />
+                    <param name="studioid_flags" value="90651" />
+                    <param name="studioid_ratings" value="90693" />
                 </include>
                 </control>
             </control>
@@ -310,6 +312,8 @@
           <param name="discart" value="true" />
           <param name="hdsd_flag" value="true" />
           <param name="plot_height" value="170" />
+          <param name="studioid_flags" value="90652" />
+          <param name="studioid_ratings" value="90694" />
         </include>
         <include content="Object_Info_Netflix" condition="!Skin.HasSetting(DisableNetflixView)">
           <param name="id" value="55" />
@@ -317,6 +321,7 @@
           <param name="discart" value="true" />
           <param name="hdsd_flag" value="true" />
           <param name="plot_height" value="170" />
+          <param name="studioid" value="90661" />
         </include>
       </control>
     </control>
@@ -360,6 +365,8 @@
           <param name="discart" value="true" />
           <param name="hdsd_flag" value="true" />
           <param name="plot_height" value="170" />
+          <param name="studioid_flags" value="90653" />
+          <param name="studioid_ratings" value="90695" />
         </include>
         <include content="Object_Info_Netflix" condition="!Skin.HasSetting(DisableNetflixView)">
           <param name="id" value="509" />
@@ -367,6 +374,7 @@
           <param name="discart" value="true" />
           <param name="hdsd_flag" value="true" />
           <param name="plot_height" value="170" />
+          <param name="studioid" value="90662" />
         </include>
       </control>
     </control>
@@ -411,6 +419,8 @@
           <param name="discart" value="true" />
           <param name="hdsd_flag" value="true" />
           <param name="plot_height" value="170" />
+          <param name="studioid_flags" value="90654" />
+          <param name="studioid_ratings" value="90696" />
         </include>
         <include content="Object_Info_Netflix" condition="!Skin.HasSetting(DisableNetflixView)">
           <param name="id" value="56" />
@@ -418,6 +428,7 @@
           <param name="discart" value="true" />
           <param name="hdsd_flag" value="true" />
           <param name="plot_height" value="170" />
+          <param name="studioid" value="90663" />
         </include>
       </control>
     </control>
@@ -481,6 +492,8 @@
           <param name="discart" value="true" />
           <param name="hdsd_flag" value="true" />
           <param name="plot_height" value="170" />
+          <param name="studioid_flags" value="90655" />
+          <param name="studioid_ratings" value="90697" />
         </include>
       </control>
     </control>
@@ -526,6 +539,8 @@
               <param name="discart" value="true" />
               <param name="hdsd_flag" value="true" />
               <param name="plot_height" value="0" />
+              <param name="studioid_flags" value="90656" />
+              <param name="studioid_ratings" value="90698" />
             </include>
           </control>
           <control type="group">
@@ -538,6 +553,7 @@
               <param name="container" value="" />
               <param name="directory" value="color" />
               <param name="align" value="left" />
+              <param name="studioid" value="90670" />
             </include>
           </control>
           <control type="label">
@@ -644,6 +660,8 @@
               <param name="width" value="1068" />
               <param name="discart" value="false" />
               <param name="hdsd_flag" value="true" />
+              <param name="studioid_flags" value="90657" />
+              <param name="studioid_ratings" value="90699" />
             </include>
           </control>
         </control>
@@ -2323,42 +2341,43 @@
             <include>View_Landscape_Artwork</include>
           </control>
           <control type="label">
-            <top>160</top>
+            <top>180</top>
             <left>30</left>
             <font>font_medium_bold</font>
             <shadowcolor>black</shadowcolor>
             <textcolor>white</textcolor>
             <label>S$INFO[ListItem.Season]:E$INFO[ListItem.Episode]</label>
             <visible>!Container.Content(Seasons) + !String.IsEmpty(ListItem.Season) + !String.IsEmpty(ListItem.Episode)</visible>
-            <animation effect="slide" end="0,20" time="0" condition="!Integer.IsGreater(ListItem.PercentPlayed,0) + !Integer.IsGreater(ListItem.PlayCount,0)">Conditional</animation>
           </control>
           <control type="progress">
             <visible>Integer.IsGreater(ListItem.PercentPlayed,0)</visible>
-            <left>30</left>
-            <top>260</top>
+            <left>9</left>
+            <top>286</top>
             <description>progress bar</description>
-            <width>430</width>
-            <height>9</height>
+            <width>501</width>
+            <height>4</height>
             <align>center</align>
-            <texturebg colordiffuse="white" border="2">colors/color_white.png</texturebg>
+            <texturebg colordiffuse="white" border="2">diffuse/progress-bg.png</texturebg>
             <lefttexture></lefttexture>
-            <midtexture colordiffuse="red" border="2">colors/color_white.png</midtexture>
+            <midtexture colordiffuse="red" border="2">diffuse/progress-bg.png</midtexture>
             <righttexture></righttexture>
+            <reveal>true</reveal>
             <info>ListItem.PercentPlayed</info>
 	    <visible>!Container.Content(seasons)</visible>
           </control>
           <control type="progress">
             <visible>Integer.IsGreater(ListItem.PlayCount,0)</visible>
-            <left>30</left>
-            <top>260</top>
+            <left>9</left>
+            <top>286</top>
             <description>progress bar</description>
-            <width>430</width>
-            <height>9</height>
+            <width>501</width>
+            <height>4</height>
             <align>center</align>
-            <texturebg colordiffuse="red" border="2">colors/color_white.png</texturebg>
+            <texturebg colordiffuse="red" border="2">diffuse/progress-bg.png</texturebg>
             <lefttexture></lefttexture>
-            <midtexture colordiffuse="red" border="2">colors/color_white.png</midtexture>
+            <midtexture colordiffuse="red" border="2">diffuse/progress-bg.png</midtexture>
             <righttexture></righttexture>
+            <reveal>true</reveal>
             <info>ListItem.PercentPlayed</info>
 	    <visible>!Container.Content(seasons)</visible>
           </control>
@@ -2438,42 +2457,45 @@
             </control>
           </control>
           <control type="label">
-            <top>160</top>
+            <top>180</top>
             <left>30</left>
             <font>font_medium_bold</font>
             <shadowcolor>black</shadowcolor>
             <textcolor>white</textcolor>
             <label>S$INFO[ListItem.Season]:E$INFO[ListItem.Episode]</label>
             <visible>!Container.Content(Seasons) + !String.IsEmpty(ListItem.Season) + !String.IsEmpty(ListItem.Episode)</visible>
-            <animation effect="slide" end="0,20" time="0" condition="!Integer.IsGreater(ListItem.PercentPlayed,0) + !Integer.IsGreater(ListItem.PlayCount,0)">Conditional</animation>
           </control>
           <control type="progress">
+            <include>Animation_FocusBounce_Small</include>
             <visible>Integer.IsGreater(ListItem.PercentPlayed,0)</visible>
-            <left>30</left>
-            <top>260</top>
+            <left>9</left>
+            <top>286</top>
             <description>progress bar</description>
-            <width>430</width>
-            <height>9</height>
+            <width>501</width>
+            <height>4</height>
             <align>center</align>
-            <texturebg colordiffuse="white" border="2">colors/color_white.png</texturebg>
+            <texturebg colordiffuse="white" border="2">diffuse/progress-bg.png</texturebg>
             <lefttexture></lefttexture>
-            <midtexture colordiffuse="red" border="2">colors/color_white.png</midtexture>
+            <midtexture colordiffuse="red" border="2">diffuse/progress-bg.png</midtexture>
             <righttexture></righttexture>
+            <reveal>true</reveal>
             <info>ListItem.PercentPlayed</info>
 	    <visible>!Container.Content(seasons)</visible>
           </control>
           <control type="progress">
+            <include>Animation_FocusBounce_Small</include>
             <visible>Integer.IsGreater(ListItem.PlayCount,0)</visible>
-            <left>30</left>
-            <top>260</top>
+            <left>9</left>
+            <top>286</top>
             <description>progress bar</description>
-            <width>430</width>
-            <height>9</height>
+            <width>501</width>
+            <height>4</height>
             <align>center</align>
-            <texturebg colordiffuse="red" border="2">colors/color_white.png</texturebg>
+            <texturebg colordiffuse="red" border="2">diffuse/progress-bg.png</texturebg>
             <lefttexture></lefttexture>
-            <midtexture colordiffuse="red" border="2">colors/color_white.png</midtexture>
+            <midtexture colordiffuse="red" border="2">diffuse/progress-bg.png</midtexture>
             <righttexture></righttexture>
+            <reveal>true</reveal>
             <info>ListItem.PercentPlayed</info>
 	    <visible>!Container.Content(seasons)</visible>
           </control>
@@ -3159,7 +3181,7 @@
           <height>45%</height>
           <aspectratio>keep</aspectratio>
           <texture background="true">$VAR[Widget_ClearLogo]</texture>
-          <visible>!Window.IsVisible(DialogVideoInfo.xml) + !Window.IsVisible(DialogSelect.xml) + !Window.IsVisible(DialogContextMenu.xml) + !Window.IsVisible(DialogBusy.xml) + !Control.IsVisible(507) + !Control.IsVisible(502) + !Control.IsVisible(504) + Skin.HasSetting(DisableClearlogo) + String.IsEqual(ListItem.DBType,episode)</visible>
+          <visible>!Window.IsVisible(DialogVideoInfo.xml) + !Window.IsVisible(DialogSelect.xml) + !Window.IsVisible(DialogContextMenu.xml) + !Window.IsVisible(DialogBusy.xml) + !Control.IsVisible(507) + !Control.IsVisible(504) + Skin.HasSetting(DisableClearlogo) + String.IsEqual(ListItem.DBType,episode)</visible>
         </control>
 
             <control type="group">

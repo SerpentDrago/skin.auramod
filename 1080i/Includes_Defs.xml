@@ -241,6 +241,9 @@
         <value condition="String.IsEqual(Container(1506).ListItem.DBType,season) | String.IsEqual(Container(1506).ListItem.DBType,tvshow) | String.IsEqual(Container(1506).ListItem.DBType,episode) | Container.Content(tvshows) | Container.Content(seasons) | Container.Content(episode)">type=tv</value>
     </variable>
 
+    <variable name="Cast_Widget_Content_1506">
+        <value condition="!Integer.IsEqual(Container(1506).NumItems,0) + !Container(1506).IsUpdating + !Window.IsVisible(DialogButtonMenu.xml)">plugin://plugin.video.themoviedb.helper/?info=cast&amp;$VAR[Info_Param_Type_1506]&amp;$VAR[Info_Param_IMDB_or_QUERY_1506]</value>
+    </variable>
 
    <variable name="Info_Param_IMDB_or_QUERY_1505">
         <value condition="[String.IsEqual(Container(1505).ListItem.DBType,movie) | Container.Content(movies)] + !String.IsEmpty(Container(1505).ListItem.Property(imdb_id))">imdb_id=$INFO[Container(1505).ListItem.Property(imdb_id)]</value>
@@ -257,6 +260,9 @@
         <value condition="String.IsEqual(Container(1505).ListItem.DBType,season) | String.IsEqual(Container(1505).ListItem.DBType,tvshow) | String.IsEqual(Container(1505).ListItem.DBType,episode) | Container.Content(tvshows) | Container.Content(seasons) | Container.Content(episode)">type=tv</value>
     </variable>
 
+    <variable name="Cast_Widget_Content_1505">
+        <value condition="!Integer.IsEqual(Container(1505).NumItems,0) + !Container(1505).IsUpdating + !Window.IsVisible(DialogButtonMenu.xml)">plugin://plugin.video.themoviedb.helper/?info=cast&amp;$VAR[Info_Param_Type_1505]&amp;$VAR[Info_Param_IMDB_or_QUERY_1505]</value>
+    </variable>
 
     <variable name="Info_Param_Type">
         <value condition="String.IsEmpty(Window().Property(item.info.season)) + !String.IsEmpty(Window().Property(item.info.title))">type=movie</value>

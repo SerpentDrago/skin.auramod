@@ -133,6 +133,7 @@
                                     <param name="source" value="VideoPlayer." />
                                     <param name="fps" value="true" />
                                     <param name="directory" value="color" />
+                                    <param name="studioid" value="90668" />
                                 </include>
                             </control>
                         </control>
@@ -339,6 +340,7 @@
                                         <param name="fps" value="true" />
                                         <param name="directory" value="color" />
                                         <param name="align" value="right" />
+                                        <param name="studioid" value="90669" />
                                     </include>
                                 </control>
                             </control>

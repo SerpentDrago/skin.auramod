@@ -693,6 +693,7 @@
                     <param name="top250" value="false" />
                     <param name="plot" value="true" />
                     <param name="studio" value="false" />
+                    <param name="studioid" value="90684" />
                 </include>
                 </control>
 			<control type="label">
@@ -1577,4 +1578,3 @@
         </definition>
     </include>
 </includes>
-

@@ -42,6 +42,8 @@
                     <param name="discart" value="true" />
                     <param name="hdsd_flag" value="false" />
                     <param name="plot_height" value="170" />
+                    <param name="studioid_flags" value="90660" />
+                    <param name="studioid_ratings" value="90702" />
                 </include>
             </control>
 

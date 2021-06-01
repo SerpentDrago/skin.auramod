@@ -142,6 +142,8 @@
                     <param name="plot_height" value="130" />
                     <param name="imdbvotes" value="false" />
                     <param name="top250" value="false" />
+                    <param name="studioid_flags" value="90658" />
+                    <param name="studioid_ratings" value="90700" />
                 </include>
             </control>
         </control>
@@ -912,4 +914,3 @@
     </include>
 
 </includes>
-

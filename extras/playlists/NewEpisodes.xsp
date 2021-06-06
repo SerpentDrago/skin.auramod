@@ -2,5 +2,8 @@
 <smartplaylist type="episodes">
     <name>New Episodes</name>
     <match>all</match>
+    <rule field="playcount" operator="lessthan">
+        <value>1</value>
+    </rule>
     <order direction="descending">dateadded</order>
 </smartplaylist>

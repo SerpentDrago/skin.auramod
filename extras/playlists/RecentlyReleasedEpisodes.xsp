@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes" ?>
+<smartplaylist type="episodes">
+    <name>Recently Released Episodes</name>
+    <match>all</match>
+    <rule field="airdate" operator="inthelast">
+        <value>180</value>
+    </rule>
+    <order direction="descending">episode</order>
+</smartplaylist>

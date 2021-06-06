@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes" ?>
 <smartplaylist type="tvshows">
-    <name>New TvShows</name>
+    <name>New TV Shows</name>
     <match>all</match>
     <rule field="playcount" operator="lessthan">
         <value>1</value>

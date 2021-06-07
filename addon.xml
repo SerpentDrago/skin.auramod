@@ -1,5 +1,5 @@
 <?xml version='1.0' encoding='UTF-8'?>
-<addon id="skin.auramod" version="1.0.20" name="Aura[COLOR cyan]MOD[/COLOR]" provider-name="skyfsza,inb4after,SerpentDrago">
+<addon id="skin.auramod" version="1.0.22" name="Aura[COLOR cyan]MOD[/COLOR]" provider-name="skyfsza,inb4after,SerpentDrago">
     <requires>
         <import addon="xbmc.gui" version="5.15.0"/>
         <import addon="script.skin.helper.service" version="1.1.24"/>
@@ -32,6 +32,15 @@
             <screenshot>resources/screenshot-05.jpg</screenshot>
         </assets>
         <news>
+            v1.0.22
+            -Remove Netflix Info "Cast and More" Ratings
+            -Revert: Fix Netflix Info "Cast and More" Ratings
+            -Re-commit: Adjust Widget_TMDB position
+            v1.0.21
+            -Fix Netflix Info "Cast and More" Ratings
+            -Add separate Ratings include for container lookups
+            -Force widget container for dynamic container Widget_ID in DialogVideoInfo.xml
+            -Adjust Widget_TMDB position
             v1.0.20
             -Fix small category widget position for Aura Home
             v1.0.19

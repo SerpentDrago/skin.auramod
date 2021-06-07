@@ -6450,7 +6450,7 @@
           <visible>![Window.IsVisible(DialogVideoInfo.xml) + Control.HasFocus(53001)]</visible>
           <bottom>-5</bottom>
           <height>40</height>
-          <include content="Object_Ratings">
+          <include content="Object_Ratings" condition="!Window.IsVisible(DialogVideoInfo.xml)">
             <param name="directory" value="color" />
             <param name="align" value="left" />
             <param name="width" value="1400" />
@@ -6478,7 +6478,7 @@
           <visible>![Window.IsVisible(DialogVideoInfo.xml) + Control.HasFocus(53001)]</visible>
           <bottom>-5</bottom>
           <height>40</height>
-          <include content="Object_Ratings">
+          <include content="Object_Ratings" condition="!Window.IsVisible(DialogVideoInfo.xml)">
             <param name="directory" value="color" />
             <param name="align" value="left" />
             <param name="width" value="1400" />
@@ -6958,8 +6958,8 @@
         </control>
       </control>
       <control type="$PARAM[controltype]" id="$PARAM[id]">
-        <animation effect="slide" end="0,30" time="0" condition="!Skin.HasSetting(DisableAuraHomeLayout) + Window.IsVisible(DialogVideoInfo.xml)">Conditional</animation>
-        <animation effect="slide" end="0,70" time="0" condition="Skin.HasSetting(DisableAuraHomeLayout) + Window.IsVisible(DialogVideoInfo.xml)">Conditional</animation>
+        <animation effect="slide" end="0,35" time="0" condition="!Skin.HasSetting(DisableAuraHomeLayout) + Window.IsVisible(DialogVideoInfo.xml)">Conditional</animation>
+        <animation effect="slide" end="0,35" time="0" condition="Skin.HasSetting(DisableAuraHomeLayout) + Window.IsVisible(DialogVideoInfo.xml)">Conditional</animation>
         <onleft>$PARAM[onleft]</onleft>
 	<orientation>$PARAM[orientation]</orientation>
         <onup>$PARAM[onup]</onup>

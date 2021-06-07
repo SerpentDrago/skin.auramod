@@ -1,3 +1,12 @@
+v1.0.22
+-Remove Netflix Info "Cast & More" Ratings
+-Revert: Fix Netflix Info "Cast & More" Ratings
+-Re-commit: Adjust Widget_TMDB position
+v1.0.21
+-Fix Netflix Info "Cast & More" Ratings
+-Add separate Ratings include for container lookups
+-Force widget container for dynamic container Widget_ID in DialogVideoInfo.xml
+-Adjust Widget_TMDB position
 v1.0.20
 -Fix small category widget position for Aura Home
 v1.0.19

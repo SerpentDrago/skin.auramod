@@ -1577,9 +1577,12 @@
 
       <control type="list" id="8999">
 	<onleft>9570</onleft>
+        <onfocus>ClearProperty(TMDBHelper.WidgetContainer,Home)</onfocus>
+        <onleft>Skin.Reset(TMDbHelper.ForceWidgetContainer)</onleft>
         <ondown>8999</ondown>
         <onright>9000</onright>
         <onback>9570</onback>
+        <onback>Skin.Reset(TMDbHelper.ForceWidgetContainer)</onback>
         <visible allowhiddenfocus="true">Control.HasFocus(8999) | ControlGroup(9000).HasFocus</visible>
         <orientation>vertical</orientation>
         <top>280</top>
@@ -1607,7 +1610,7 @@
 
           <item id="13">
             <label>More Info</label>
-	    <visible>!String.IsEmpty(ListItem.Property(rottentomatoes_consensus)) | !String.IsEmpty(Window(Home).Property(TMDbHelper.ListItem.RottenTomatoes_Consensus))</visible>
+	    <visible>String.IsEqual(ListItem.DBType,movie)</visible>
           </item>
           <item id="1">
             <label>Cast</label>
@@ -1663,6 +1666,19 @@
 
 		<!-- TOMATO BLOCK -->
 		
+    <control type="label">
+      <top>305</top>
+      <left>330</left>
+      <width>100%</width>
+      <height>36</height>
+      <font>font_small_bold</font>
+      <textcolor>white</textcolor>
+      <label>19055</label>
+      <aligny>center</aligny>
+      <visible>Control.HasFocus(8999) + String.IsEqual(Container(8999).ListItem.Label,More Info)</visible>
+      <visible>String.IsEmpty(ListItem.Property(rottentomatoes_consensus)) + String.IsEmpty(Window(Home).Property(TMDbHelper.ListItem.RottenTomatoes_Consensus))</visible>
+    </control>
+
 		<control type="group">
 			<description>Tomato Block</description>
 		        <top>100</top>

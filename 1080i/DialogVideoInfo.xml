@@ -7,7 +7,11 @@
     <onload>ClearProperty(Header_Left_Text)</onload>
     <onload>ClearProperty(Header_Center_Text)</onload>
     <onload>ClearProperty(OSD_Menu,Home)</onload>
+    <onload>SetProperty(TMDbTemp,$INFO[Window(Home).Property(TMDbHelper.WidgetContainer)],Home)</onload>
 
+    <onunload>SetProperty(TMDbHelper.WidgetContainer,$INFO[Window(Home).Property(TMDbTemp)],Home)</onunload>
+    <onunload>ClearProperty(TMDbTemp,Home)</onunload>
+    <onunload>Skin.Reset(TMDbHelper.ForceWidgetContainer)</onunload>
     <onunload>ClearProperty(FilePath,home)</onunload>
     <onunload>ClearProperty(OSD_Menu,Home)</onunload>
     <onload condition="Skin.HasSetting(ForceExtendedInfo) + System.HasAddon(script.extendedinfo) + [String.IsEqual(ListItem.DBType,movie) | Container.Content(movies)]">RunScript(script.extendedinfo,info=extendedinfo,dbid=$INFO[ListItem.DBID],name=$INFO[ListItem.Title])</onload>

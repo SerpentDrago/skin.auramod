@@ -1,5 +1,5 @@
 <?xml version='1.0' encoding='UTF-8'?>
-<addon id="skin.auramod" version="1.0.22" name="Aura[COLOR cyan]MOD[/COLOR]" provider-name="skyfsza,inb4after,SerpentDrago">
+<addon id="skin.auramod" version="1.0.23" name="Aura[COLOR cyan]MOD[/COLOR]" provider-name="skyfsza,inb4after,SerpentDrago">
     <requires>
         <import addon="xbmc.gui" version="5.15.0"/>
         <import addon="script.skin.helper.service" version="1.1.24"/>
@@ -32,6 +32,14 @@
             <screenshot>resources/screenshot-05.jpg</screenshot>
         </assets>
         <news>
+            v1.0.23
+            -Re-add Netflix Info "Cast and More" Ratings
+            -Add separate Ratings include for container lookups
+            -Force widget container for dynamic container Widget_ID in DialogVideoInfo.xml
+            -Force home window properties to only be used if widget is focused: avoids performance issues and quickly hitting OMDb rate limits
+            -Save initial widget container onload/onunload of DialogVideoInfo.xml
+            -More Info widget made visible only for movies
+            -More Info fallback label added if no RT information found
             v1.0.22
             -Remove Netflix Info "Cast and More" Ratings
             -Revert: Fix Netflix Info "Cast and More" Ratings

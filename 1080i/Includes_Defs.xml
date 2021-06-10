@@ -31,6 +31,30 @@
   <include name="Widget_Items_menu_Small_Height_poster">
     <height>270</height>
   </include>
+  <include name="netflix_landscape_panel_top">
+    <top>-10</top>
+  </include>
+  <include name="netflix_landscape_panel_height">
+    <height>10</height>
+  </include>
+  <include name="netflix_landscape_panel_top_2">
+    <top>70</top>
+  </include>
+  <include name="netflix_landscape_panel_height_2">
+    <height>430</height>
+  </include>
+  <include name="netflix_landscape_panel_top_hub">
+    <top>-10</top>
+  </include>
+  <include name="netflix_landscape_panel_height_hub">
+    <height>35</height>
+  </include>
+  <include name="netflix_landscape_panel_top_2_hub">
+    <top>70</top>
+  </include>
+  <include name="netflix_landscape_panel_height_2_hub">
+    <height>430</height>
+  </include>
   <include name="Widget_Movement_Default">
     <movement>$PARAM[movement]</movement>
   </include>

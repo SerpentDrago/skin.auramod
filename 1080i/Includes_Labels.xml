@@ -848,7 +848,7 @@
     <variable name="NetflixDetailsSpin">
         <value condition="!String.IsEmpty(Window(Home).Property(TMDBHelper.ListItem.Awards)) + Integer.IsLessOrEqual(System.Time(ss),15) + !String.IsEmpty(Window(Home).Property(TMDBHelper.ListItem.Awards))">[I]$INFO[Window(Home).Property(TMDBHelper.ListItem.Awards)][/I]</value>
         <value condition="Integer.IsLessOrEqual(System.Time(ss),15) + !String.IsEmpty(Window(Home).Property(TMDBHelper.ListItem.Awards))">[I]$INFO[Window(Home).Property(TMDBHelper.ListItem.Awards)][/I]</value>
-        <value condition="Integer.IsLessOrEqual(System.Time(ss),30) + !String.IsEmpty(Window(Home).Property(TMDBHelper.ListItem.Cast))">[I]Staring $INFO[Window(Home).Property(TMDBHelper.ListItem.Cast)][/I]</value>
+        <value condition="Integer.IsLessOrEqual(System.Time(ss),30) + !String.IsEmpty(Window(Home).Property(TMDBHelper.ListItem.Cast))">[I]Starring $INFO[Window(Home).Property(TMDBHelper.ListItem.Cast)][/I]</value>
         <value condition="Integer.IsGreater(System.Time(ss),15) + Integer.IsLessOrEqual(System.Time(ss),30) + Integer.IsGreater(Window(Home).Property(TMDBHelper.ListItem.Top250),0)">[I]Ranked $INFO[Window(Home).Property(TMDBHelper.ListItem.Top250)] in IMDB Top 250[/I]</value>
         <value condition="Integer.IsGreater(System.Time(ss),15) + Integer.IsLessOrEqual(System.Time(ss),30) + !String.IsEmpty(ListItem.Director)">[I]Directed by $INFO[ListItem.Director][/I]</value>
         <value condition="Integer.IsGreater(System.Time(ss),15) + Integer.IsLessOrEqual(System.Time(ss),30) + Control.IsVisible(1505) + !String.IsEmpty(Container(1505).ListItem.Director)">[I]Directed by $INFO[Container(1505).ListItem.Director][/I]</value>
@@ -908,6 +908,14 @@
         <value condition="String.Contains(ListItem.FolderPath,pvr:)">$INFO[ListItem.Title]</value>
         <value condition="!String.IsEmpty(ListItem.TvShowTitle)">$INFO[ListItem.TvShowTitle]</value>
 	<value>$INFO[ListItem.Label]</value>
+    </variable>
+
+    <variable name="video_heading_container">
+        <value condition="[String.IsEqual(ListItem.DBType,episode) | Control.HasFocus(53012)] + !String.IsEmpty(ListItem.TvShowTitle) + String.IsEmpty(ListItem.Art(tvshow.clearlogo)) + String.IsEmpty(ListItem.Art(clearlogo))">$INFO[ListItem.TvShowTitle]</value>
+        <value condition="String.Contains(Container.ListItem.FolderPath,pvr:)">$INFO[Container.ListItem.Title]</value>
+        <value condition="!String.IsEmpty(Container.ListItem.TvShowTitle)">$INFO[Container.ListItem.TvShowTitle]</value>
+	<value condition="!Control.HasFocus(8999) + !Control.HasFocus(53001)">$INFO[Container.ListItem.Label]</value>
+  <value condition="!String.IsEqual(ListItem.DBType,episode) | !Control.HasFocus(8999) + !Control.HasFocus(53001)">$INFO[ListItem.Label]</value>
     </variable>
 
     <variable name="video_heading_1505">

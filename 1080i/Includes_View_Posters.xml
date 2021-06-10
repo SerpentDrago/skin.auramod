@@ -3181,7 +3181,7 @@
           <height>45%</height>
           <aspectratio>keep</aspectratio>
           <texture background="true">$VAR[Widget_ClearLogo]</texture>
-          <visible>!Window.IsVisible(DialogVideoInfo.xml) + !Window.IsVisible(DialogSelect.xml) + !Window.IsVisible(DialogContextMenu.xml) + !Window.IsVisible(DialogBusy.xml) + !Control.IsVisible(507) + !Control.IsVisible(504) + Skin.HasSetting(DisableClearlogo) + String.IsEqual(ListItem.DBType,episode)</visible>
+          <visible>!Window.IsVisible(DialogSelect.xml) + !Window.IsVisible(DialogContextMenu.xml) + !Window.IsVisible(DialogBusy.xml) + !Control.IsVisible(507) + !Control.IsVisible(504) + Skin.HasSetting(DisableClearlogo) + [String.IsEqual(ListItem.DBType,episode) | String.IsEqual(ListItem.DBType,season)]</visible>
         </control>
 
             <control type="group">

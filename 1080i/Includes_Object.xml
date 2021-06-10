@@ -6670,9 +6670,10 @@
           <include>Statusbar_Menubar_Items</include>
         </control>
         <control type="label">
-          <left>-16</left>
+          <font>font_widgetbar_bold</font>
+          <left>3</left>
           <textcolor>main_fg_100</textcolor>
-          <label>$INFO[Container($PARAM[id]).ListItem.Property(similartitle), $LOCALIZE[19160] ,]</label>
+          <label>$INFO[Container($PARAM[id]).ListItem.Property(similartitle)]</label>
           <include>Statusbar_Menubar_Items</include>
           <visible>!String.IsEmpty(Container($PARAM[id]).ListItem.Property(similartitle))</visible>
         </control>
@@ -7418,6 +7419,8 @@
     <param name="onback" default="9570" />
     <param name="onup" default="" />
     <param name="ondown" default="" />
+    <param name="onfocus" default="Skin.SetBool(TMDbHelper.ForceWidgetContainer)" />
+    <param name="onunfocus" default="Skin.Reset(TMDbHelper.ForceWidgetContainer)" />
     <param name="top" default="" />
     <param name="orientation" default="horizontal" />
     <definition>
@@ -7450,8 +7453,8 @@
 	<top>$PARAM[top]</top>
         <ondown>$PARAM[ondown]</ondown>
         <onback>$PARAM[onback]</onback>
-        <onfocus>Skin.SetBool(TMDbHelper.ForceWidgetContainer)</onfocus>
-        <onunfocus>Skin.Reset(TMDbHelper.ForceWidgetContainer)</onunfocus>
+        <onfocus>$PARAM[onfocus]</onfocus>
+        <onunfocus>$PARAM[onunfocus]</onunfocus>
         <onback>Skin.Reset(TMDbHelper.ForceWidgetContainer)</onback>
         <animation effect="fade" start="100" end="0" condition="Window.IsVisible(DialogVideoInfo.xml) + Container($PARAM[id]).IsUpdating">Conditional</animation>
         <movement>1</movement>
@@ -8483,42 +8486,43 @@
             <include>View_Landscape_Artwork</include>
           </control>
           <control type="label">
-            <top>160</top>
+            <top>180</top>
             <left>30</left>
             <font>font_medium_bold</font>
             <shadowcolor>black</shadowcolor>
             <textcolor>white</textcolor>
             <label>S$INFO[ListItem.Season]:E$INFO[ListItem.Episode]</label>
             <visible>!Container.Content(Seasons) + !String.IsEqual(ListItem.DBType,season) + !String.IsEmpty(ListItem.Season) + !String.IsEmpty(ListItem.Episode)</visible>
-            <animation effect="slide" end="0,20" time="0" condition="!Integer.IsGreater(ListItem.PercentPlayed,0) + !Integer.IsGreater(ListItem.PlayCount,0)">Conditional</animation>
           </control>
           <control type="progress">
             <visible>Integer.IsGreater(ListItem.PercentPlayed,0)</visible>
-            <left>30</left>
-            <top>260</top>
+            <left>9</left>
+            <top>286</top>
             <description>progress bar</description>
-            <width>430</width>
-            <height>9</height>
+            <width>501</width>
+            <height>4</height>
             <align>center</align>
-            <texturebg colordiffuse="white" border="2">colors/color_white.png</texturebg>
+            <texturebg colordiffuse="white" border="2">diffuse/progress-bg.png</texturebg>
             <lefttexture></lefttexture>
-            <midtexture colordiffuse="red" border="2">colors/color_white.png</midtexture>
+            <midtexture colordiffuse="red" border="2">diffuse/progress-bg.png</midtexture>
             <righttexture></righttexture>
+            <reveal>true</reveal>
             <info>ListItem.PercentPlayed</info>
             <visible>String.IsEqual(ListItem.DBType,episode)</visible>
           </control>
           <control type="progress">
             <visible>Integer.IsGreater(ListItem.PlayCount,0)</visible>
-            <left>30</left>
-            <top>260</top>
+            <left>9</left>
+            <top>286</top>
             <description>progress bar</description>
-            <width>430</width>
-            <height>9</height>
+            <width>501</width>
+            <height>4</height>
             <align>center</align>
-            <texturebg colordiffuse="red" border="2">colors/color_white.png</texturebg>
+            <texturebg colordiffuse="red" border="2">diffuse/progress-bg.png</texturebg>
             <lefttexture></lefttexture>
-            <midtexture colordiffuse="red" border="2">colors/color_white.png</midtexture>
+            <midtexture colordiffuse="red" border="2">diffuse/progress-bg.png</midtexture>
             <righttexture></righttexture>
+            <reveal>true</reveal>
             <info>ListItem.PercentPlayed</info>
             <visible>String.IsEqual(ListItem.DBType,episode)</visible>
           </control>
@@ -8595,42 +8599,45 @@
             </control>
           </control>
           <control type="label">
-            <top>160</top>
+            <top>180</top>
             <left>30</left>
             <font>font_medium_bold</font>
             <shadowcolor>black</shadowcolor>
             <textcolor>white</textcolor>
             <label>S$INFO[ListItem.Season]:E$INFO[ListItem.Episode]</label>
             <visible>!Container.Content(Seasons) + !String.IsEqual(ListItem.DBType,season) + !String.IsEmpty(ListItem.Season) + !String.IsEmpty(ListItem.Episode)</visible>
-            <animation effect="slide" end="0,20" time="0" condition="!Integer.IsGreater(ListItem.PercentPlayed,0) + !Integer.IsGreater(ListItem.PlayCount,0)">Conditional</animation>
           </control>
           <control type="progress">
+            <include>Animation_FocusBounce_Small</include>
             <visible>Integer.IsGreater(ListItem.PercentPlayed,0)</visible>
-            <left>30</left>
-            <top>260</top>
+            <left>9</left>
+            <top>286</top>
             <description>progress bar</description>
-            <width>430</width>
-            <height>9</height>
+            <width>501</width>
+            <height>4</height>
             <align>center</align>
-            <texturebg colordiffuse="white" border="2">colors/color_white.png</texturebg>
+            <texturebg colordiffuse="white" border="2">diffuse/progress-bg.png</texturebg>
             <lefttexture></lefttexture>
-            <midtexture colordiffuse="red" border="2">colors/color_white.png</midtexture>
+            <midtexture colordiffuse="red" border="2">diffuse/progress-bg.png</midtexture>
             <righttexture></righttexture>
+            <reveal>true</reveal>
             <info>ListItem.PercentPlayed</info>
             <visible>String.IsEqual(ListItem.DBType,episode)</visible>
           </control>
           <control type="progress">
+            <include>Animation_FocusBounce_Small</include>
             <visible>Integer.IsGreater(ListItem.PlayCount,0)</visible>
-            <left>30</left>
-            <top>260</top>
+            <left>9</left>
+            <top>286</top>
             <description>progress bar</description>
-            <width>430</width>
-            <height>9</height>
+            <width>501</width>
+            <height>4</height>
             <align>center</align>
-            <texturebg colordiffuse="red" border="2">colors/color_white.png</texturebg>
+            <texturebg colordiffuse="red" border="2">diffuse/progress-bg.png</texturebg>
             <lefttexture></lefttexture>
-            <midtexture colordiffuse="red" border="2">colors/color_white.png</midtexture>
+            <midtexture colordiffuse="red" border="2">diffuse/progress-bg.png</midtexture>
             <righttexture></righttexture>
+            <reveal>true</reveal>
             <info>ListItem.PercentPlayed</info>
             <visible>String.IsEqual(ListItem.DBType,episode)</visible>
           </control>

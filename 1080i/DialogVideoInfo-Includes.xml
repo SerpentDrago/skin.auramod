@@ -1102,6 +1102,17 @@
           <align>left</align>
           <aspectratio align="left" aligny="center">keep</aspectratio>
           <texture background="true">$VAR[NetflixHome_ClearLogo]</texture>
+          <visible>!Control.IsVisible(8999)</visible>
+        </control>
+        <control type="image">
+          <left>0</left>
+          <right>$PARAM[titleright]</right>
+          <height>218</height>
+          <width>563</width>
+          <align>left</align>
+          <aspectratio align="left" aligny="center">keep</aspectratio>
+          <texture background="true">$VAR[NetflixInfo_ClearLogo_Container]</texture>
+          <visible>Control.IsVisible(8999)</visible>
         </control>
         <control type="label">
           <visible>[String.IsEqual(ListItem.DBType,episode) | String.IsEqual(ListItem.DBType,movie) | String.IsEqual(ListItem.DBType,tvshow) | String.IsEqual(ListItem.DBType,season) | !String.IsEmpty(ListItem.ChannelName)] + String.IsEmpty(ListItem.Art(tvshow.clearlogo)) + String.IsEmpty(ListItem.Art(clearlogo)) + String.IsEmpty(Window(Home).Property(TMDBHelper.ListItem.ClearLogo))</visible>
@@ -1116,6 +1127,22 @@
           <aligny>center</aligny>
           <wrapmultiline>true</wrapmultiline>
           <scroll>true</scroll>
+          <visible>!Control.IsVisible(8999)</visible>
+        </control>
+        <control type="label">
+          <visible>[String.IsEqual(ListItem.DBType,episode) | String.IsEqual(ListItem.DBType,movie) | String.IsEqual(ListItem.DBType,tvshow) | String.IsEqual(ListItem.DBType,season) | !String.IsEmpty(ListItem.ChannelName)] + String.IsEmpty(Container.ListItem.Art(tvshow.clearlogo)) + String.IsEmpty(Container.ListItem.Art(clearlogo)) + String.IsEmpty(Window(Home).Property(TMDBHelper.ListItem.ClearLogo))</visible>
+          <top>-190</top>
+          <label>$VAR[video_heading_container]</label>
+          <textcolor>grey</textcolor>
+          <shadowcolor>black</shadowcolor>
+          <font>font_showcase_title</font>
+          <width>730</width>
+          <height min="30" max="110">auto</height>
+          <align>left</align>
+          <aligny>center</aligny>
+          <wrapmultiline>true</wrapmultiline>
+          <scroll>true</scroll>
+          <visible>Control.IsVisible(8999)</visible>
         </control>
         <!-- Netflix Info line -->
         <control type="group">
@@ -1918,6 +1945,8 @@
           <param name="id" value="53001" />
           <param name="onleft" value="8999" />
           <param name="onup" value="8999" />
+          <param name="onfocus" value="" />
+          <param name="onunfocus" value="" />
           <param name="target" value="videos" />
           <param name="sortby" value="" />
           <param name="sortorder" value="" />

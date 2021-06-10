@@ -1,5 +1,5 @@
 <?xml version='1.0' encoding='UTF-8'?>
-<addon id="skin.auramod" version="1.0.23" name="Aura[COLOR cyan]MOD[/COLOR]" provider-name="skyfsza,inb4after,SerpentDrago">
+<addon id="skin.auramod" version="1.0.31" name="Aura[COLOR cyan]MOD[/COLOR]" provider-name="skyfsza,inb4after,SerpentDrago">
     <requires>
         <import addon="xbmc.gui" version="5.15.0"/>
         <import addon="script.skin.helper.service" version="1.1.24"/>
@@ -32,6 +32,30 @@
             <screenshot>resources/screenshot-05.jpg</screenshot>
         </assets>
         <news>
+            v1.0.31
+            -Fix cast list "Staring" spelling mistake
+            v1.0.30
+            -Improve Skin Helper Service Widgets similar title
+            -Match font with widget label
+            -Remove prefix "to"
+            -Fix positioning
+            v1.0.29
+            -Improve LandscapePanel widget position
+            v1.0.28
+            -Improve Netflix Info "Cast and More" Seasons/Episodes/Next Up List views
+            -Add clearlogo
+            -Adjust progress bar position and size
+            -Round corners for progress bar
+            -Adjust season and episode label position
+            v1.0.27
+            -Fix Netflix Info "Cast and More" clearlogo fallback text inconsistency
+            v1.0.26
+            -Fix Netflix Info "Cast and More" clearlogo fallback text for episode info
+            v1.0.25
+            -Fix Netflix Info "Cast and More" clearlogo visibility on focus cast
+            -Fix Netflix Info "Cast and More" clearlogo texture inconsistencies
+            v1.0.24
+            -Add Netflix Info "Cast and More" dynamic container clearlogo
             v1.0.23
             -Re-add Netflix Info "Cast and More" Ratings
             -Add separate Ratings include for container lookups

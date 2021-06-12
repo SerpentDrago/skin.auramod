@@ -1,7 +1,34 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <!-- Foundation -->
 <window id="2006">
+    <onload>RunScript(script.artistslideshow)</onload>
     <controls>
+        <control type="image">
+            <aspectratio>scale</aspectratio>
+            <fadetime>400</fadetime>
+            <animation effect="fade" start="0" end="100" time="400">WindowOpen</animation>
+            <animation effect="fade" start="100" end="0" time="300">WindowClose</animation>
+            <texture background="true">$INFO[Player.Art(fanart)]</texture>
+            <visible>String.IsEmpty(Window(Visualisation).Property(ArtistSlideshow.Image))</visible>
+        </control>
+        <control type="image">
+            <aspectratio>scale</aspectratio>
+            <fadetime>400</fadetime>
+            <animation effect="fade" start="0" end="100" time="400">WindowOpen</animation>
+            <animation effect="fade" start="100" end="0" time="300">WindowClose</animation>
+            <texture background="true">$INFO[Window(Visualisation).Property(ArtistSlideshow.Image)]</texture>
+            <visible>!String.IsEmpty(Window(Visualisation).Property(ArtistSlideshow.Image))</visible>
+        </control>
+        <control type="multiimage">
+            <aspectratio>scale</aspectratio>
+            <timeperimage>10000</timeperimage>
+            <randomize>true</randomize>
+            <fadetime>600</fadetime>
+            <loop>yes</loop>
+            <imagepath background="true">$INFO[Window(Visualisation).Property(ArtistSlideshow)]</imagepath>
+            <visible>!String.IsEmpty(Window(Visualisation).Property(ArtistSlideshow.ArtworkReady)</visible>
+        </control>
+        
         <control type="visualisation" id="2">
             <visible>Skin.HasSetting(OSDVisualisation.ShowFanart) | [!Skin.HasSetting(musicvis.fanartfallback) + [!System.HasAddon(script.artistslideshow) | Skin.HasSetting(ArtistSlideShow.Disabled)]]</visible>
             <description>visualisation</description>

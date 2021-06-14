@@ -1033,7 +1033,7 @@
         <description>Play</description>
         <width>250</width>
         <height>80</height>
-        <label>[CAPITALIZE][B]Play[/B][/CAPITALIZE]</label>
+        <label>$LOCALIZE[31714]</label>
         <align>center</align>
         <textcolor>grey</textcolor>
         <focusedcolor>black</focusedcolor>
@@ -1058,7 +1058,7 @@
         <width>280</width>
         <height>80</height>
         <align>center</align>
-        <label>[B]More Info[/B]</label>
+        <label>$LOCALIZE[31715]</label>
         <textcolor>white</textcolor>
         <focusedcolor>black</focusedcolor>
         <texturefocus colordiffuse="d9ffffff" border="5">common/rounded-shadow8.png</texturefocus>
@@ -1109,7 +1109,7 @@
       <control type="label">
         <left>70</left>
         <top>-50</top>
-        <label>[B]My TV Calendar[/B]</label>
+        <label>$LOCALIZE[31716]</label>
         <height>40</height>
         <width>350</width>
         <align>left</align>
@@ -1369,7 +1369,7 @@
         <description>Play</description>
         <width>240</width>
         <height>80</height>
-        <label>[CAPITALIZE][B]Play[/B][/CAPITALIZE]</label>
+        <label>$LOCALIZE[31714]</label>
         <align>center</align>
         <textcolor>grey</textcolor>
         <focusedcolor>black</focusedcolor>
@@ -1394,7 +1394,7 @@
         <width>280</width>
         <height>80</height>
         <align>center</align>
-        <label>[B]More Info[/B]</label>
+        <label>$LOCALIZE[31715]</label>
         <textcolor>white</textcolor>
         <focusedcolor>black</focusedcolor>
         <texturefocus colordiffuse="d9ffffff" border="5">common/rounded-shadow8.png</texturefocus>
@@ -1510,7 +1510,7 @@
           <left>40</left>
           <height>40</height>
           <visible>String.IsEqual(ListItem.DBType,episode) + !Skin.HasSetting(EnableFullEpInfo)</visible>
-          <label>[B]Continue Watching[/B]</label>
+          <label>$LOCALIZE[31717]</label>
           <width>750</width>
           <textcolor>white</textcolor>
           <shadowcolor>black</shadowcolor>
@@ -1896,7 +1896,7 @@
             <visible>[String.IsEqual(ListItem.DBType,episode) + !Skin.HasSetting(EnableFullEpInfo)]</visible>
             <left>00</left>
             <height>30</height>
-            <label>[B]Continue Watching[/B]</label>
+            <label>$LOCALIZE[31717]</label>
             <width>750</width>
             <textcolor>white</textcolor>
             <shadowcolor>black</shadowcolor>
@@ -2215,7 +2215,7 @@
             <visible>[Control.IsVisible(1505) | Control.IsVisible(1506)] + !String.Contains(ListItem.Path,plugin.video.youtube)</visible>
           </control>
           <control type="textbox">
-            <label>[B]Channel:[/B] $INFO[Container($PARAM[id]).ListItem.Plot]</label>
+            <label>$LOCALIZE[31718] $INFO[Container($PARAM[id]).ListItem.Plot]</label>
             <width>620</width>
             <height min="20" max="175">auto</height>
             <aligny>top</aligny>
@@ -6492,7 +6492,7 @@
             <onup>131</onup>
             <width>130</width>
             <height>70</height>
-            <label>Clear</label>
+            <label>$LOCALIZE[31719]</label>
             <onclick>Skin.Reset(CustomSearchTerm)</onclick>
             <onclick>ActivateWindow(1136)</onclick>
             <include>Key</include>
@@ -6501,7 +6501,7 @@
             <onup>131</onup>
             <width>240</width>
             <height>70</height>
-            <label>Search</label>
+            <label>$LOCALIZE[31629]</label>
             <onclick>Skin.SetString(TempCustomSearchTerm,$INFO[Skin.String(osdCustomSearchTerm)])</onclick>
             <onclick>ActivateWindow(1136)</onclick>
             <onclick>Skin.SetString(CustomSearchTerm,$INFO[Skin.String(TempCustomSearchTerm)])</onclick>
@@ -6517,7 +6517,7 @@
       <centertop>30%</centertop>
       <font>search_heading</font>
       <textcolor>dimgrey</textcolor>
-      <label>Search for TV Shows and Movies</label>
+      <label>$LOCALIZE[31720]</label>
       <visible>String.IsEmpty(Skin.String(CustomSearchTerm))</visible>
     </control>
     <control type="group">
@@ -7851,7 +7851,7 @@
       <control type="label">
         <left>110</left>
         <top>40</top>
-        <label>Categories</label>
+        <label>$LOCALIZE[31721]</label>
         <height>40</height>
         <width>350</width>
         <align>left</align>
@@ -8020,7 +8020,7 @@
         <left>20</left>
         <width>450</width>
         <height>20</height>
-        <label>Device</label>
+        <label>$LOCALIZE[31722]</label>
         <align>left</align>
         <font>font_tiny_bold</font>
         <textcolor>white</textcolor>
@@ -8101,32 +8101,32 @@
         </focusedlayout>
         <content>
           <item>
-            <label>Interface</label>
+            <label>$LOCALIZE[31723]</label>
             <onclick>ActivateWindow(InterfaceSettings)</onclick>
             <thumb>special://skin/extras/icons/skinsettings.png</thumb>
           </item>
           <item>
-            <label>Services</label>
+            <label>$LOCALIZE[31724]</label>
             <onclick>activatewindow(servicesettings)</onclick>
             <icon>special://skin/extras/icons/network.png</icon>
           </item>
           <item>
-            <label>Player</label>
+            <label>$LOCALIZE[31725]</label>
             <onclick>ActivateWindow(playersettings)</onclick>
             <thumb>settings/tv.png</thumb>
           </item>
           <item>
-            <label>Media Settings</label>
+            <label>$LOCALIZE[31726]</label>
             <onclick>ActivateWindow(MediaSettings)</onclick>
             <thumb>settings/library.png</thumb>
           </item>
           <item>
-            <label>PVR &amp; Live TV</label>
+            <label>$LOCALIZE[31727]</label>
             <onclick>ActivateWindow(PVRSettings)</onclick>
             <icon>settings/PVR.png</icon>
           </item>
           <item>
-            <label>Accounts</label>
+            <label>$LOCALIZE[31728]</label>
             <onclick>ActivateWindow(profiles)</onclick>
             <thumb>settings/popcont.png</thumb>
           </item>
@@ -8138,7 +8138,7 @@
         <left>20</left>
         <width>300</width>
         <height>20</height>
-        <label>Preferences</label>
+        <label>$LOCALIZE[31729]</label>
         <align>left</align>
         <font>font_tiny_bold</font>
         <textcolor>white</textcolor>
@@ -8219,39 +8219,39 @@
         </focusedlayout>
         <content>
           <item>
-            <label>Menu &amp; Widgets</label>
+            <label>$LOCALIZE[31730]</label>
             <onclick condition="System.HasAddon(script.skinshortcuts)">RunScript(script.skinshortcuts,type=manage&amp;group=mainmenu)</onclick>
             <onclick condition="!System.HasAddon(script.skinshortcuts)">InstallAddon(script.skinshortcuts)</onclick>
             <visible>!Skin.HasSetting(KioskMode)</visible>
             <thumb>settings/widgets.png</thumb>
           </item>
           <item>
-            <label>TV Hubs</label>
+            <label>$LOCALIZE[31731]</label>
             <onclick>ActivateWindow(1127)</onclick>
             <thumb>special://skin/extras/icons/tv.png</thumb>
           </item>
           <item>
-            <label>Movie Hubs</label>
+            <label>$LOCALIZE[31732]</label>
             <onclick>ActivateWindow(1126)</onclick>
             <thumb>special://skin/extras/icons/movie.png</thumb>
           </item>
           <item>
-            <label>Home Spotlights</label>
+            <label>$LOCALIZE[31733]</label>
             <onclick>ActivateWindow(1128)</onclick>
             <thumb>settings/home.png</thumb>
           </item>
           <item>
-            <label>Home Style</label>
+            <label>$LOCALIZE[31734]</label>
             <onclick>ActivateWindow(1120)</onclick>
             <thumb>special://skin/extras/icons/videos.png</thumb>
           </item>
           <item>
-            <label>Menu Style</label>
+            <label>$LOCALIZE[31735]</label>
             <onclick>ActivateWindow(1125)</onclick>
             <thumb>special://skin/extras/icons/viewmode.png</thumb>
           </item>
           <item>
-            <label>My Lists</label>
+            <label>$LOCALIZE[31504]</label>
             <onclick>ActivateWindow(1164)</onclick>
             <thumb>special://skin/extras/icons/clipboard.png</thumb>
           </item>
@@ -8263,7 +8263,7 @@
         <left>20</left>
         <width>300</width>
         <height>20</height>
-        <label>Settings</label>
+        <label>$LOCALIZE[31736]</label>
         <align>left</align>
         <font>font_tiny_bold</font>
         <textcolor>white</textcolor>
@@ -8343,12 +8343,12 @@
         </focusedlayout>
         <content>
           <item>
-            <label>Skin Settings</label>
+            <label>$LOCALIZE[31737]</label>
             <onclick>ActivateWindow(skinsettings)</onclick>
             <thumb>special://skin/extras/icons/paintbrush.png</thumb>
           </item>
           <item>
-            <label>Search Lists</label>
+            <label>$LOCALIZE[31738]</label>
             <onclick>ActivateWindow(1163)</onclick>
             <thumb>special://skin/extras/icons/search.png</thumb>
           </item>
@@ -8358,22 +8358,22 @@
             <thumb>settings/apps.png</thumb>
           </item>
           <item>
-            <label>File Manager</label>
+            <label>$LOCALIZE[31739]</label>
             <onclick>ActivateWindow(filemanager)</onclick>
             <icon>settings/filemanager.png</icon>
           </item>
           <item>
-            <label>System</label>
+            <label>$LOCALIZE[31740]</label>
             <onclick>ActivateWindow(SystemSettings)</onclick>
             <icon>settings/settings.png</icon>
           </item>
           <item>
-            <label>Info</label>
+            <label>$LOCALIZE[31741]</label>
             <onclick>ActivateWindow(systeminfo)</onclick>
             <icon>settings/sysinfo.png</icon>
           </item>
           <item>
-            <label>Dependencies</label>
+            <label>$LOCALIZE[31742]</label>
             <onclick>ActivateWindow(10040,addons://dependencies/)</onclick>
             <icon>special://skin/extras/icons/bigbox.png</icon>
           </item>

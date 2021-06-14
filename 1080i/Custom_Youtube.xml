@@ -276,7 +276,7 @@
 					<align>left</align>
 					<aligny>center</aligny>
 					<textoffsetx>5</textoffsetx>
-					<label>Live</label>    
+					<label>$LOCALIZE[31679]</label>    
 				</control>
 		                <control type="group">
                                         <left>10</left>

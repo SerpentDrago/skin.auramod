@@ -20,7 +20,7 @@
             <font>font_medium_bold</font>
             <shadowcolor>black</shadowcolor>
             <textcolor>white</textcolor>
-            <label>Watch S$INFO[ListItem.Season]:E$INFO[ListItem.Episode]</label>
+            <label>$LOCALIZE[31749] S$INFO[ListItem.Season]:E$INFO[ListItem.Episode]</label>
             <visible>String.IsEqual(ListItem.DBType,episode)</visible>
           </control>
           <control type="image">
@@ -302,7 +302,7 @@
           <bottom>5</bottom>
           <align>center</align>
           <height>25</height>
-          <label>Season $INFO[ListItem.Season] Episode $INFO[ListItem.Episode]</label>
+          <label>$LOCALIZE[31750] $INFO[ListItem.Season] Episode $INFO[ListItem.Episode]</label>
           <textcolor>white</textcolor>
           <font>font_widget_plot</font>
         </control>
@@ -355,7 +355,7 @@
           <width>50%</width>
           <font>font_epg_timeline</font>
           <textcolor>dimgrey</textcolor>
-          <label>[I]Premiered $INFO[ListItem.Premiered(DDD MMM yyyy)] [/I]</label>
+          <label>[I]$LOCALIZE[31751] $INFO[ListItem.Premiered(DDD MMM yyyy)] [/I]</label>
           <visible>$EXP[DBTvideos]</visible>
           <visible>!Integer.IsGreater(ListItem.PercentPlayed,1)</visible>
         </control>
@@ -502,7 +502,7 @@
           <left>53%</left>
           <font>font_epg_timeline</font>
           <textcolor>dimgrey</textcolor>
-          <label>[I]Premiered $INFO[ListItem.Premiered(DDD MMM yyyy)] [/I]</label>
+          <label>[I]$LOCALIZE[31751] $INFO[ListItem.Premiered(DDD MMM yyyy)] [/I]</label>
           <visible>$EXP[DBTvideos]</visible>
           <visible>!Integer.IsGreater(ListItem.PercentPlayed,1)</visible>
         </control>

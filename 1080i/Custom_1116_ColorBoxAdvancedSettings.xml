@@ -17,7 +17,7 @@
         <control type="group">
             <include content="Dialog_Standard_Group">
                 <param name="width" value="1800" />
-                <param name="height" value="716" />
+                <param name="height" value="816" />
             </include>
 
             <control type="label">
@@ -32,7 +32,7 @@
                 <left>20</left>
                 <width>1060</width>
                 <top>100</top>
-                <height>596</height>
+                <height>696</height>
                 <control type="image">
                     <texture background="true">$INFO[Window(home).Property(ImageFilterFIVE)]</texture>
                 </control>
@@ -44,7 +44,7 @@
                 <left>20</left>
                 <width>1060</width>
                 <top>100</top>
-                <height>596</height>
+                <height>696</height>
                 <control type="image">
                     <texture background="true" colordiffuse="ff333333" fallback="special://skin/fanart.jpg">$INFO[Window.Property(Fanart)]</texture>
                 </control>
@@ -56,7 +56,7 @@
                 <right>20</right>
                 <width>680</width>
                 <top>100</top>
-                <height>596</height>
+                <height>696</height>
                 <itemgap>10</itemgap>
                 <orientation>vertical</orientation>
                 <pagecontrol>60</pagecontrol>
@@ -190,7 +190,7 @@
                 <right>20</right>
                 <width>680</width>
                 <top>100</top>
-                <height>581</height>
+                <height>651</height>
                 <itemgap>10</itemgap>
                 <orientation>vertical</orientation>
                 <pagecontrol>60</pagecontrol>

@@ -418,7 +418,7 @@
             <param name="onup" value="9501" />
             <param name="id" value="9502" />
             <param name="ondown" value="9503" />
-            <param name="label" value="Seasons" />
+            <param name="label" value="$LOCALIZE[31499]" />
             <param name="content" value="$VAR[seasons_content_videoinfo]" />
             <param name="infolabel" value="false" />
             <param name="include_onclick" value="true" />
@@ -1365,7 +1365,7 @@
             <onclick condition="String.IsEmpty(ListItem.FileNameAndPath) + String.IsEqual(ListItem.DBType,movie) + String.IsEmpty(ListItem.Property(tmdb_id))">RunScript(plugin.video.themoviedb.helper,close_dialog=1190,playmedia=plugin://plugin.video.themoviedb.helper/?info=play&amp;type=movie&amp;query=$INFO[ListItem.Title])</onclick>
             <onclick condition="String.IsEmpty(ListItem.FileNameAndPath) + String.IsEqual(ListItem.DBType,episode) + String.IsEmpty(ListItem.Property(tvshow.tmdb_id))">RunScript(plugin.video.themoviedb.helper,close_dialog=1190,playmedia=plugin://plugin.video.themoviedb.helper/?info=play&amp;type=episode&amp;query=$INFO[ListItem.TvShowTitle]&amp;season=$INFO[ListItem.Season]&amp;episode=$INFO[ListItem.Episode])</onclick>
             <visible>String.IsEmpty(Window(home).Property(TrailerPlaying)) + [String.IsEmpty(ListItem.DBID) | [!String.IsEmpty(ListItem.DBID) + !String.IsEmpty(ListItem.Property(tmdb_id))] | [!String.IsEmpty(ListItem.DBID) + String.IsEmpty(ListItem.Property(tmdb_id)) + String.Contains(ListItem.FolderPath,plugin.video.themoviedb.helper)] | [!String.IsEmpty(ListItem.DBID) + String.IsEmpty(ListItem.Property(tmdb_id)) + String.IsEmpty(ListItem.FolderPath)] + [String.IsEqual(ListItem.DBtype,movie) | String.IsEqual(ListItem.DBtype,episode)]] + !ListItem.IsResumable + !Control.IsVisible(33)</visible>
-            <label>Play $VAR[videoinfo_play_label]</label>
+            <label>$LOCALIZE[31712] $VAR[videoinfo_play_label]</label>
             <onclick>ClearProperty(BaseWindow,Home)</onclick>
           </control>
           <control type="radiobutton" id="8">
@@ -1376,7 +1376,7 @@
             <radioheight>28</radioheight>
             <radioposx>13</radioposx>
             <visible>String.IsEmpty(Window(home).Property(TrailerPlaying)) + !String.IsEmpty(ListItem.DBID) + !String.IsEmpty(ListItem.FolderPath) +  [String.IsEqual(ListItem.DBtype,movie) | String.IsEqual(ListItem.DBtype,episode)] + !ListItem.IsResumable + !Control.IsVisible(33) + !String.Contains(ListItem.FolderPath,plugin.video.themoviedb.helper)</visible>
-            <label>Play $VAR[videoinfo_play_label]</label>
+            <label>$LOCALIZE[31712] $VAR[videoinfo_play_label]</label>
             <onclick>ClearProperty(BaseWindow,Home)</onclick>
           </control>
           <control type="radiobutton" id="88">
@@ -1389,7 +1389,7 @@
             <onclick condition="String.IsEmpty(Window(home).Property(TrailerPlaying)) + String.IsEqual(ListItem.DBTYPE,tvshow) + !String.IsEmpty(ListItem.Property(trakt_id)) + String.Contains(ListItem.Path,plugin.video.seren)">RunPlugin(plugin://plugin.video.seren/?action=forceResumeShow&amp;actionArgs=%7B%22mediatype%22%3A%20%22tvshow%22%2C%20%22trakt_id%22%3A%20$INFO[ListItem.Property(trakt_id)]%7D)</onclick>
 	    <onclick condition="String.StartsWith(ListItem.FolderPath,plugin://plugin.video.themoviedb.helper)">RunPlugin(plugin://plugin.video.themoviedb.helper/?info=play&amp;season=1&amp;type=episode&amp;episode=1&amp;tmdb_id=$INFO[ListItem.Property(tmdb_id)])</onclick>
             <visible>Skin.HasSetting(VideoInfoButton.QuickPlay) + [[!String.IsEmpty(ListItem.Property(trakt_id)) + String.Contains(ListItem.Path,plugin.video.seren)] | String.StartsWith(ListItem.FolderPath,plugin://plugin.video.themoviedb.helper)] + String.IsEqual(ListItem.DBTYPE,tvshow)</visible>
-            <label>Quick Play</label>
+            <label>$LOCALIZE[31630]</label>
             <onclick>ClearProperty(BaseWindow,Home)</onclick>
           </control>
           <!-- Resume -->
@@ -1401,7 +1401,7 @@
             <radioheight>28</radioheight>
             <radioposx>13</radioposx>
             <visible>ListItem.IsResumable + String.IsEmpty(Window(home).Property(TrailerPlaying))</visible>
-            <label>Resume</label>
+            <label>$LOCALIZE[31687]</label>
           </control>
           <control type="group" id="332">
             <visible>Control.IsVisible(9)</visible>
@@ -1417,7 +1417,7 @@
             <onclick>PlayMedia($ESCINFO[ListItem.FileNameAndPath],noresume)</onclick>
             <onclick>RunScript(plugin.video.themoviedb.helper,close_dialog=1190)</onclick>
             <visible>ListItem.IsResumable + !String.Contains(ListItem.FolderPath,plugin.video.themoviedb.helper) + String.IsEmpty(Window(home).Property(TrailerPlaying))</visible>
-            <label>Play from Beginning</label>
+            <label>$LOCALIZE[31688]</label>
             <onclick>ClearProperty(BaseWindow,Home)</onclick>
           </control>
           <!-- Search TMDB -->
@@ -1435,7 +1435,7 @@
             <onclick>RunScript(plugin.video.themoviedb.helper,reset_path)</onclick>
             <onclick>ActivateWindow(1136)</onclick>
             <visible>Skin.HasSetting(VideoInfoButton.Search) + String.IsEmpty(Window(home).Property(TrailerPlaying)) + !Window.IsVisible(1138) + String.Contains(ListItem.FolderPath,plugin.video.themoviedb.helper)</visible>
-            <label>Search</label>
+            <label>$LOCALIZE[31629]</label>
           </control>
           <!--More episodes-->
           <control type="radiobutton" id="33">
@@ -1446,7 +1446,7 @@
             <radioheight>28</radioheight>
             <radioposx>13</radioposx>
             <visible>String.IsEmpty(Window(home).Property(TrailerPlaying)) + !Skin.HasSetting(VideoInfoButton.MoreEps) + [String.IsEqual(ListItem.DBTYPE,tvshow) | String.IsEqual(ListItem.Property(DBTYPE),tvshow) | String.IsEqual(Window(Home).Property(ListItem.DBTYPE,tvshow)) | String.IsEqual(Window(Home).Property(ListItem.Property(DBTYPE)),tvshow)]</visible>
-            <label>Episodes</label>
+            <label>$LOCALIZE[31500]</label>
             <onclick>Skin.SetString(AddonContainer,false)</onclick>
             <onclick>close</onclick>
             <onclick condition="Skin.HasSetting(EnableShowInfo) + Window.IsVisible(1138)">ActivateWindow(Home)</onclick>
@@ -1464,13 +1464,13 @@
             <radioheight>28</radioheight>
             <radioposx>13</radioposx>
             <visible>String.IsEmpty(Window(home).Property(TrailerPlaying)) + !Skin.HasSetting(VideoInfoButton.MoreEps) + [!String.IsEmpty(ListItem.Property(tvshow.trakt_id)) + String.Contains(ListItem.Path,plugin.video.seren) | String.Contains(ListItem.FolderPath,plugin.video.themoviedb.helper) + !String.IsEmpty(ListItem.Property(TMDb_ID))] + String.IsEqual(ListItem.DBType,episode)</visible>
-            <label>More Episodes</label>
+            <label>$LOCALIZE[31623]</label>
             <onclick>Skin.SetString(AddonContainer,false)</onclick>
             <onclick>close</onclick>
             <onclick condition="Skin.HasSetting(EnableShowInfo) + Window.IsVisible(1138)">ActivateWindow(Home)</onclick>
             <onclick condition="String.Contains(ListItem.Path,plugin.video.seren) + String.IsEqual(ListItem.DBType,episode)">ActivateWindow(10025,plugin://plugin.video.seren/?action=showSeasons&amp;actionArgs=%7b%22item_type%22%3a%20%22show%22%2c%20%22trakt_id%22%3a%20$INFO[ListItem.Property(tvshow.trakt_id)]%7d,return)</onclick>
-            <onclick condition="String.Contains(ListItem.FolderPath,plugin.video.themoviedb.helper) + String.IsEqual(ListItem.DBType,episode)">ActivateWindow(10025,plugin://plugin.video.themoviedb.helper/?info=seasons&amp;tmdb_id=$INFO[ListItem.Property(TMDb_ID)]&amp;tmdb_type=tv,return)</onclick>
-          </control>
+			<onclick condition="String.Contains(ListItem.FolderPath,plugin.video.themoviedb.helper) + String.IsEqual(ListItem.DBType,episode)">ActivateWindow(10025,plugin://plugin.video.themoviedb.helper/?info=seasons&amp;tmdb_id=$INFO[ListItem.Property(TMDb_ID)]&amp;tmdb_type=tv,return)</onclick>
+		  </control>
           <control type="radiobutton" id="38">
             <include name="netflix_button" content="netflix_button">
               <param name="icon" value="actors" />
@@ -1478,7 +1478,7 @@
             <radiowidth>45</radiowidth>
             <radioheight>48</radioheight>
             <radioposx>2</radioposx>
-            <label>Cast &amp; More</label>
+            <label>$LOCALIZE[31689]</label>
             <onclick>SetFocus(8999,0)</onclick>
             <visible>String.IsEmpty(Window(home).Property(TrailerPlaying)) + !Skin.HasSetting(VideoInfo.Disable) + !Skin.HasSetting(VideoInfoButton.CastMore)</visible>
           </control>
@@ -1489,7 +1489,7 @@
             <radiowidth>45</radiowidth>
             <radioheight>48</radioheight>
             <radioposx>2</radioposx>
-            <label>Add/Remove from Watchlist</label>
+            <label>$LOCALIZE[31690]</label>
 	    <onclick condition="String.IsEqual(ListItem.DBType,movie)">RunScript(plugin.video.themoviedb.helper,sync_trakt=watchlist,tmdb_id=$INFO[ListItem.Property(tmdb_id)],type=movie,cache_refresh)</onclick>
             <onclick condition="String.IsEqual(ListItem.DBType,tvshow)">RunScript(plugin.video.themoviedb.helper,sync_trakt=watchlist,tmdb_id=$INFO[ListItem.Property(tmdb_id)],type=tv)</onclick>
             <visible>!String.IsEmpty(Window(Home).Property(TMDbHelper.TraktIsAuth)) + [String.IsEqual(ListItem.DBType,tvshow) | String.IsEqual(ListItem.DBType,movie)] + String.IsEmpty(Window(home).Property(TrailerPlaying)) + !Skin.HasSetting(VideoInfoButton.Watchlist) + !Skin.HasSetting(VideoInfo.Disable) + !String.IsEmpty(ListItem.Property(tmdb_id))</visible>
@@ -1518,7 +1518,7 @@
             <radioheight>48</radioheight>
             <radioposx>2</radioposx>
             <visible>Player.HasVideo + [String.IsEqual(ListItem.DBType,tvshow) | String.IsEqual(ListItem.DBType,movie)]</visible>
-            <label>Fullscreen</label>
+            <label>$LOCALIZE[31691]</label>
             <onclick condition="Player.HasVideo">FullScreen</onclick>
             <onclick condition="Player.HasVideo">SetProperty(BaseWindow,InfoDialog,Home)</onclick>
           </control>
@@ -1530,7 +1530,7 @@
             <radiowidth>45</radiowidth>
             <radioheight>48</radioheight>
             <radioposx>2</radioposx>
-            <label>Stop</label>
+            <label>$LOCALIZE[31692]</label>
             <visible>Player.HasVideo</visible>
             <onclick>Stop</onclick>
             <onclick>ClearProperty(TrailerPlaying,Home)</onclick>
@@ -1544,7 +1544,7 @@
             <radiowidth>25</radiowidth>
             <radioheight>28</radioheight>
             <radioposx>8</radioposx>
-            <label>Extended Info</label>
+            <label>$LOCALIZE[31693]</label>
             <onclick condition="String.IsEqual(ListItem.DBType,movie)">RunScript(script.extendedinfo,info=extendedinfo,dbid=$INFO[ListItem.DBID],name=$INFO[ListItem.Title])</onclick>
             <onclick condition="String.IsEqual(ListItem.DBType,tvshow)">RunScript(script.extendedinfo,info=extendedtvinfo,dbid=$INFO[ListItem.DBID],name=$INFO[ListItem.TvShowTitle])</onclick>
             <onclick condition="String.IsEqual(ListItem.DBType,season)">RunScript(script.extendedinfo,info=seasoninfo,tvshow=$INFO[ListItem.TvShowTitle],season=$INFO[ListItem.Season],silent=True)</onclick>
@@ -1581,7 +1581,7 @@
           <control type="radiobutton" id="10">
             <visible>Control.IsEnabled(10)</visible>
             <visible>String.IsEmpty(Window(home).Property(TrailerPlaying)) + !String.IsEmpty(ListItem.DBID) + !Skin.HasSetting(VideoInfoButton.Art)</visible>
-            <label>Choose Artwork</label>
+            <label>$LOCALIZE[31627]</label>
             <include name="netflix_button" content="netflix_button">
               <param name="icon" value="pictures" />
             </include>
@@ -1637,27 +1637,27 @@
         <content>
 
           <item id="13">
-            <label>More Info</label>
+            <label>$LOCALIZE[31694]</label>
 	    <visible>String.IsEqual(ListItem.DBType,movie)</visible>
           </item>
           <item id="1">
-            <label>Cast</label>
+            <label>$LOCALIZE[31695]</label>
             <visible>Integer.IsGreater(Container(53001).NumItems,0) | Container(53001).IsUpdating</visible>
           </item>
           <item id="2">
-            <label>Seasons</label>
+            <label>$LOCALIZE[31499]</label>
             <visible>[Integer.IsGreater(Container(53000).NumItems,0) | Container(53000).IsUpdating]</visible>
           </item>
           <item id="10">
-            <label>Episodes</label>
+            <label>$LOCALIZE[31610]</label>
             <visible>[Integer.IsGreater(Container(53011).NumItems,0) | Container(53011).IsUpdating] + !Skin.HasSetting(VideoInfo.Disable) + Skin.HasSetting(VideoInfo.Episodes) + String.IsEmpty(ListItem.DBID) + String.IsEqual(ListItem.DBType,episode) + String.Contains(ListItem.Path,plugin.video.seren)</visible>
           </item>
           <item id="11">
-            <label>Next Up</label>
+            <label>$LOCALIZE[31221]</label>
             <visible>[Integer.IsGreater(Container(53012).NumItems,0) | Container(53012).IsUpdating] + !Skin.HasSetting(VideoInfo.Disable) + Skin.HasSetting(VideoInfo.Episodes) + String.IsEmpty(ListItem.DBID)</visible>
           </item>
           <item id="3">
-            <label>Sets</label>
+            <label>$LOCALIZE[31696]</label>
             <visible>!String.IsEmpty(ListItem.Set) + [Integer.IsGreater(Container(53002).NumItems,0) | Container(53002).IsUpdating]</visible>
           </item>
           <item id="4">
@@ -1665,23 +1665,23 @@
             <visible>Integer.IsGreater(Container(53003).NumItems,0) | Container(53003).IsUpdating</visible>
           </item>
           <item id="5">
-            <label>Recommended</label>
+            <label>$LOCALIZE[31495]</label>
             <visible>Integer.IsGreater(Container(53007).NumItems,0) | Container(53007).IsUpdating</visible>
           </item>
           <item id="6">
-            <label>By Director</label>
+            <label>$LOCALIZE[31697]</label>
             <visible>[!String.IsEmpty(ListItem.Director) | !String.IsEmpty(Window(Home).Property(TMDBHelper.ListItem.Director))]  + [Integer.IsGreater(Container(53004).NumItems,0) | Container(53004).IsUpdating]</visible>
           </item>
           <item id="7">
-            <label>By Studio</label>
+            <label>$LOCALIZE[31698]</label>
             <visible>[!String.IsEmpty(ListItem.Studio) | !String.IsEmpty(Window(Home).Property(TMDBHelper.ListItem.Studio.1.Name))]  + [Integer.IsGreater(Container(53006).NumItems,0) | Container(53006).IsUpdating]</visible>
           </item>
           <item id="8">
-            <label>By Year</label>
+            <label>$LOCALIZE[31699]</label>
             <visible>Integer.IsGreater(Container(53005).NumItems,0) | Container(53005).IsUpdating</visible>
           </item>
           <item id="9">
-            <label>By Genre</label>
+            <label>$LOCALIZE[31700]</label>
             <visible>[!String.IsEmpty(ListItem.Genre) | !String.IsEmpty(Window(Home).Property(TMDBHelper.ListItem.Genre))] + [Integer.IsGreater(Container(53008).NumItems,0) | Container(53008).IsUpdating]</visible>
           </item>
           <item id="14">
@@ -1703,7 +1703,7 @@
       <textcolor>white</textcolor>
       <label>19055</label>
       <aligny>center</aligny>
-      <visible>Control.HasFocus(8999) + String.IsEqual(Container(8999).ListItem.Label,More Info)</visible>
+      <visible>Control.HasFocus(8999) + String.IsEqual(Container(8999).ListItem.Label,$LOCALIZE[31694])</visible>
       <visible>String.IsEmpty(ListItem.Property(rottentomatoes_consensus)) + String.IsEmpty(Window(Home).Property(TMDbHelper.ListItem.RottenTomatoes_Consensus))</visible>
     </control>
 
@@ -1739,7 +1739,7 @@
 						<scroll>true</scroll>
 						<scrollspeed>15</scrollspeed>
 						<textcolor>white</textcolor>
-						<label fallback="19055">[B]$VAR[videoinfo_usermeter]%[/B] [LIGHT]liked it[/LIGHT]</label>
+						<label fallback="19055">[B]$VAR[videoinfo_usermeter]%[/B] $LOCALIZE[31713]</label>
 						<aligny>center</aligny>
 					</control>
 				</control>
@@ -1758,7 +1758,7 @@
 						<height>36</height>
 						<font>font_tiny</font>
 						<textcolor>white</textcolor>
-						<label>[B]Box Office[/B]</label>
+						<label>$LOCALIZE[31701]</label>
 						<aligny>center</aligny>
 					</control>
 					<control type="label">
@@ -1782,7 +1782,7 @@
 						<height>36</height>
 						<font>font_tiny</font>
 						<textcolor>white</textcolor>
-						<label>[B]Budget[/B]</label>
+						<label>$LOCALIZE[31702]</label>
 						<aligny>center</aligny>
 					</control>
 					<control type="label">
@@ -1807,7 +1807,7 @@
 						<height>36</height>
 						<font>font_tiny</font>
 						<textcolor>white</textcolor>
-						<label>[B]Awards[/B]</label>
+						<label>$LOCALIZE[31703]</label>
 						<aligny>center</aligny>
 					</control>
 					<control type="textbox">
@@ -1832,7 +1832,7 @@
 					<left>30</left>
 					<font>font_small</font>
 					<textcolor>white</textcolor>
-					<label>[B]Critics Consensus[/B]</label>
+					<label>$LOCALIZE[31704]</label>
 				</control>
 				
 			</control>
@@ -1844,7 +1844,7 @@
 				<left>30</left>
 				<right>10</right>
 				<itemgap>60</itemgap>
-				<visible>String.IsEqual(Container(8999).ListItem.Label,More Info)</visible>
+				<visible>String.IsEqual(Container(8999).ListItem.Label,$LOCALIZE[31694]))</visible>
 				<animation effect="fade" start="0" end="100" time="50">VisibleChange</animation><!-- Necessary to avoid Control buttons overlapping -->
 				
 				<control type="textbox">
@@ -1960,8 +1960,8 @@
           <param name="orientation" value="vertical" />
           <param name="height" value="880" />
           <param name="width" value="1800" />
-          <param name="label" value="Cast" />
-          <param name="visible" value="String.IsEqual(Container(8999).ListItem.Label,Cast) + !String.IsEmpty(ListItem.Label)" />
+          <param name="label" value="$LOCALIZE[31695]" />
+          <param name="visible" value="String.IsEqual(Container(8999).ListItem.Label,$LOCALIZE[31695]) + !String.IsEmpty(ListItem.Label)" />
         </include>
         <include condition="!Skin.HasSetting(VideoInfo.Disable) + !Skin.HasSetting(VideoInfo.Sets) + String.IsEqual(ListItem.DBType,movie)" content="Widget_TMDB">
           <param name="id" value="53002" />
@@ -1977,8 +1977,8 @@
           <param name="orientation" value="vertical" />
           <param name="height" value="880" />
           <param name="width" value="1800" />
-          <param name="label" value="Sets" />
-          <param name="visible" value="String.IsEqual(Container(8999).ListItem.Label,Sets) + !String.IsEmpty(ListItem.Label)" />
+          <param name="label" value="$LOCALIZE[31696]" />
+          <param name="visible" value="String.IsEqual(Container(8999).ListItem.Label,$LOCALIZE[31696]) + !String.IsEmpty(ListItem.Label)" />
         </include>
         <include condition="!Skin.HasSetting(VideoInfo.Disable) + !Skin.HasSetting(VideoInfo.Similar)" content="Widget_TMDB">
           <param name="id" value="53003" />
@@ -2011,8 +2011,8 @@
           <param name="orientation" value="vertical" />
           <param name="height" value="880" />
           <param name="width" value="1800" />
-          <param name="label" value="$INFO[ListItem.Director,Directed By ,]" />
-          <param name="visible" value="String.IsEqual(Container(8999).ListItem.Label,By Director) + [!String.IsEmpty(ListItem.Director) | !String.IsEmpty(Window(Home).Property(TMDBHelper.ListItem.Director))]" />
+          <param name="label" value="$INFO[ListItem.Director,$LOCALIZE[31351] ,]" />
+          <param name="visible" value="String.IsEqual(Container(8999).ListItem.Label,$LOCALIZE[31697]) + [!String.IsEmpty(ListItem.Director) | !String.IsEmpty(Window(Home).Property(TMDBHelper.ListItem.Director))]" />
         </include>
         <include condition="!Skin.HasSetting(VideoInfo.Disable) + !Skin.HasSetting(VideoInfo.Year)" content="Widget_TMDB">
           <param name="id" value="53005" />
@@ -2029,7 +2029,7 @@
           <param name="height" value="880" />
           <param name="width" value="1800" />
           <param name="label" value="From $INFO[ListItem.Year]" />
-          <param name="visible" value="String.IsEqual(Container(8999).ListItem.Label,By Year) + !String.IsEmpty(ListItem.Year)" />
+          <param name="visible" value="String.IsEqual(Container(8999).ListItem.Label,$LOCALIZE[31699]) + !String.IsEmpty(ListItem.Year)" />
         </include>
         <include condition="!Skin.HasSetting(VideoInfo.Disable) + !Skin.HasSetting(VideoInfo.Studio) + String.IsEqual(ListItem.DBType,movie)" content="Widget_TMDB">
           <param name="id" value="53006" />
@@ -2046,7 +2046,7 @@
           <param name="height" value="880" />
           <param name="width" value="1800" />
           <param name="label" value="$INFO[ListItem.Studio]" />
-          <param name="visible" value="String.IsEqual(Container(8999).ListItem.Label,By Studio) + !String.IsEmpty(ListItem.Studio)" />
+          <param name="visible" value="String.IsEqual(Container(8999).ListItem.Label,$LOCALIZE[31698]) + !String.IsEmpty(ListItem.Studio)" />
         </include>
         <include condition="!Skin.HasSetting(VideoInfo.Disable) + !Skin.HasSetting(VideoInfo.Recommended)" content="Widget_TMDB">
           <param name="id" value="53007" />
@@ -2063,7 +2063,7 @@
           <param name="height" value="880" />
           <param name="width" value="1800" />
           <param name="label" value="Recommended" />
-          <param name="visible" value="String.IsEqual(Container(8999).ListItem.Label,Recommended) + !String.IsEmpty(ListItem.Label)" />
+          <param name="visible" value="String.IsEqual(Container(8999).ListItem.Label,$LOCALIZE[31495]) + !String.IsEmpty(ListItem.Label)" />
         </include>
         <include condition="!Skin.HasSetting(VideoInfo.Disable) + !Skin.HasSetting(VideoInfo.Genre)" content="Widget_TMDB">
           <param name="id" value="53008" />
@@ -2080,7 +2080,7 @@
           <param name="height" value="880" />
           <param name="width" value="1800" />
           <param name="label" value="$INFO[ListItem.Genre]" />
-          <param name="visible" value="String.IsEqual(Container(8999).ListItem.Label,By Genre) + !String.IsEmpty(ListItem.Genre)" />
+          <param name="visible" value="String.IsEqual(Container(8999).ListItem.Label,$LOCALIZE[31700]) + !String.IsEmpty(ListItem.Genre)" />
         </include>
         <include condition="!Skin.HasSetting(VideoInfo.Disable) + !Skin.HasSetting(VideoInfo.Youtube)" content="Widget_TMDB">
           <param name="id" value="53009" />
@@ -2205,7 +2205,7 @@
     <control type="label">
       <left>60</left>
       <top>40</top>
-      <label>Actor Info</label>
+      <label>$LOCALIZE[31616]</label>
       <height>40</height>
       <width>800</width>
       <aligny>top</aligny>

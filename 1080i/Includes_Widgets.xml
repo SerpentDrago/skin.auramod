@@ -2130,7 +2130,7 @@
               <align>center</align>
               <aligny>center</aligny>
               <textcolor>bbwhite</textcolor>
-              <label>Loading Channels</label>
+              <label>$LOCALIZE[31752]</label>
               <scroll>false</scroll>
             </control>
           </control>

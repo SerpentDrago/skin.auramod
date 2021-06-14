@@ -296,7 +296,7 @@
         <align>left</align>
         <font>Reg32</font>
         <textoffsetx>65</textoffsetx>
-        <label>[B]Click to set Widget Content[/B]</label>
+        <label>$LOCALIZE[31636]</label>
         <textcolor>white</textcolor>
         <texturefocus colordiffuse="white">netflix/border_netflix.png</texturefocus>
         <onclick>ActivateWindow(1060)</onclick>
@@ -530,7 +530,7 @@
           <font>font_tiny_bold</font>
           <textcolor>dimgrey</textcolor>
           <focusedcolor>red</focusedcolor>
-          <label>Discover Movies</label>
+          <label>$LOCALIZE[31637]</label>
         </control>
         <control type="button" id="52">
           <ondown condition="!Skin.String(mediahub-520.label) + !Skin.HasSetting(LockHubWidgets)">5205</ondown>
@@ -544,7 +544,7 @@
           <font>font_tiny_bold</font>
           <textcolor>dimgrey</textcolor>
           <focusedcolor>red</focusedcolor>
-          <label>Discover TV</label>
+          <label>$LOCALIZE[31706]</label>
         </control>
         <control type="button" id="53">
           <ondown condition="!Skin.String(mediahub-530.label) + !Skin.HasSetting(LockHubWidgets)">5305</ondown>
@@ -557,7 +557,7 @@
           <font>font_tiny_bold</font>
           <textcolor>dimgrey</textcolor>
           <focusedcolor>red</focusedcolor>
-          <label>My Movies</label>
+          <label>$LOCALIZE[31707]</label>
           <onclick>close</onclick>
         </control>
         <control type="radiobutton" id="54">
@@ -571,7 +571,7 @@
           <font>font_tiny_bold</font>
           <textcolor>dimgrey</textcolor>
           <focusedcolor>red</focusedcolor>
-          <label>My TV</label>
+          <label>$LOCALIZE[31708]</label>
           <onclick>close</onclick>
         </control>
         <control type="radiobutton" id="55">
@@ -585,7 +585,7 @@
           <font>font_tiny_bold</font>
           <textcolor>dimgrey</textcolor>
           <focusedcolor>red</focusedcolor>
-          <label>My Apps</label>
+          <label>$LOCALIZE[31709]</label>
           <onclick>close</onclick>
         </control>
       </control>

@@ -9,7 +9,7 @@
     <control type="label">
       <left>110</left>
       <top>40</top>
-      <label>Genres</label>
+      <label>$LOCALIZE[31668]</label>
       <height>40</height>
       <width>350</width>
       <align>left</align>

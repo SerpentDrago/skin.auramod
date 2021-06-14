@@ -2579,1577 +2579,877 @@ msgctxt "#31536"
 msgid "Configure Addons Lists 1"
 msgstr ""
 
-<<<<<<< Updated upstream
-: /1080i/SkinSettings.xml
-=======
 #: /1080i/SkinSettings.xml
->>>>>>> Stashed changes
 msgctxt "#31537"
 msgid "Configure Addons List 2"
 msgstr ""
 
-<<<<<<< Updated upstream
-: /1080i/SkinSettings.xml
-=======
 #: /1080i/SkinSettings.xml
->>>>>>> Stashed changes
 msgctxt "#31538"
 msgid "Configure LiveTV Lists 1"
 msgstr ""
 
-<<<<<<< Updated upstream
-: /1080i/SkinSettings.xml
-=======
 #: /1080i/SkinSettings.xml
->>>>>>> Stashed changes
 msgctxt "#31539"
 msgid "Configure LiveTV Lists 2"
 msgstr ""
 
-<<<<<<< Updated upstream
-: /1080i/SkinSettings.xml
-=======
 #: /1080i/SkinSettings.xml
->>>>>>> Stashed changes
 msgctxt "#31540"
 msgid "Home Fanart"
 msgstr ""
 
-<<<<<<< Updated upstream
-: /1080i/SkinSettings.xml
-=======
 #: /1080i/SkinSettings.xml
->>>>>>> Stashed changes
 msgctxt "#31541"
 msgid "View Fanart"
 msgstr ""
 
-<<<<<<< Updated upstream
-: /1080i/SkinSettings.xml
-=======
 #: /1080i/SkinSettings.xml
->>>>>>> Stashed changes
 msgctxt "#31542"
 msgid "Disable Setings Background"
 msgstr ""
 
-<<<<<<< Updated upstream
-: /1080i/SkinSettings.xml
-=======
 #: /1080i/SkinSettings.xml
->>>>>>> Stashed changes
 msgctxt "#31543"
 msgid "Set Timer Per Image"
 msgstr ""
 
-<<<<<<< Updated upstream
-: /1080i/SkinSettings.xml
-=======
 #: /1080i/SkinSettings.xml
->>>>>>> Stashed changes
 msgctxt "#31544"
 msgid "Disable Transparency"
 msgstr ""
 
-<<<<<<< Updated upstream
-: /1080i/SkinSettings.xml
-=======
 #: /1080i/SkinSettings.xml
->>>>>>> Stashed changes
 msgctxt "#31545"
 msgid "Animate fanart (zoom & pan)"
 msgstr ""
 
-<<<<<<< Updated upstream
-: /1080i/SkinSettings.xml
-=======
 #: /1080i/SkinSettings.xml
->>>>>>> Stashed changes
 msgctxt "#31546"
 msgid " - Enable Info overlay box"
 msgstr ""
 
-<<<<<<< Updated upstream
-: /1080i/SkinSettings.xml
-=======
 #: /1080i/SkinSettings.xml
->>>>>>> Stashed changes
 msgctxt "#31547"
 msgid " - Use round style actor thumbs"
 msgstr ""
 
-<<<<<<< Updated upstream
-: /1080i/SkinSettings.xml
-=======
 #: /1080i/SkinSettings.xml
->>>>>>> Stashed changes
 msgctxt "#31548"
 msgid " - Configure Netflix VideoInfo"
 msgstr ""
 
-<<<<<<< Updated upstream
-: /1080i/SkinSettings.xml
-=======
 #: /1080i/SkinSettings.xml
->>>>>>> Stashed changes
 msgctxt "#31549"
 msgid " - Disable Netflix Overlay"
 msgstr ""
 
-<<<<<<< Updated upstream
-: /1080i/SkinSettings.xml
-=======
 #: /1080i/SkinSettings.xml
->>>>>>> Stashed changes
 msgctxt "#31550"
 msgid " - Down key starts trailer in Showcase Views"
 msgstr ""
 
-<<<<<<< Updated upstream
-: /1080i/SkinSettings.xml
-=======
 #: /1080i/SkinSettings.xml
->>>>>>> Stashed changes
 msgctxt "#31551"
 msgid "Show full Spotlight info for Episodes"
 msgstr ""
 
-<<<<<<< Updated upstream
-: /1080i/SkinSettings.xml
-=======
 #: /1080i/SkinSettings.xml
->>>>>>> Stashed changes
 msgctxt "#31552"
 msgid "Disable Spotlight Trailer auto-play"
 msgstr ""
 
-<<<<<<< Updated upstream
-: /1080i/SkinSettings.xml
-=======
 #: /1080i/SkinSettings.xml
->>>>>>> Stashed changes
 msgctxt "#31553"
 msgid "Disable Aura Home Widget gap"
 msgstr ""
 
-<<<<<<< Updated upstream
-: /1080i/SkinSettings.xml
-=======
 #: /1080i/SkinSettings.xml
->>>>>>> Stashed changes
 msgctxt "#31554"
 msgid "AuraMod Settings Style"
 msgstr ""
 
-<<<<<<< Updated upstream
-: /1080i/SkinSettings.xml
-=======
 #: /1080i/SkinSettings.xml
->>>>>>> Stashed changes
 msgctxt "#31555"
 msgid "Enable TMDBHelper service monitor"
 msgstr ""
 
-<<<<<<< Updated upstream
-: /1080i/SkinSettings.xml
-=======
 #: /1080i/SkinSettings.xml
->>>>>>> Stashed changes
 msgctxt "#31556"
 msgid "Enable Power Menu Bar Style"
 msgstr ""
 
-<<<<<<< Updated upstream
-: /1080i/SkinSettings.xml
-=======
 #: /1080i/SkinSettings.xml
->>>>>>> Stashed changes
 msgctxt "#31557"
 msgid " - Use Aura Default loading icon"
 msgstr ""
 
-<<<<<<< Updated upstream
-: /1080i/SkinSettings.xml
-=======
 #: /1080i/SkinSettings.xml
->>>>>>> Stashed changes
 msgctxt "#31558"
 msgid "Select Loading gif"
 msgstr ""
 
-<<<<<<< Updated upstream
-: /1080i/SkinSettings.xml
-=======
 #: /1080i/SkinSettings.xml
->>>>>>> Stashed changes
 msgctxt "#31559"
 msgid "Disable Splash screen Image"
 msgstr ""
 
-<<<<<<< Updated upstream
-: /1080i/SkinSettings.xml
-=======
 #: /1080i/SkinSettings.xml
->>>>>>> Stashed changes
 msgctxt "#31560"
 msgid " - Choose Splash screen Image"
 msgstr ""
 
-<<<<<<< Updated upstream
-: /1080i/SkinSettings.xml
-=======
 #: /1080i/SkinSettings.xml
->>>>>>> Stashed changes
 msgctxt "#31561"
 msgid "Skin icons for Seren"
 msgstr ""
 
-<<<<<<< Updated upstream
-: /1080i/SkinSettings.xml
-=======
 #: /1080i/SkinSettings.xml
->>>>>>> Stashed changes
 msgctxt "#31562"
 msgid "Enable Weather Radar Map"
 msgstr ""
 
-<<<<<<< Updated upstream
-: /1080i/SkinSettings.xml
-=======
 #: /1080i/SkinSettings.xml
->>>>>>> Stashed changes
 msgctxt "#31563"
 msgid "- Set Radar Map URL"
 msgstr ""
 
-<<<<<<< Updated upstream
-: /1080i/SkinSettings.xml
-=======
 #: /1080i/SkinSettings.xml
->>>>>>> Stashed changes
 msgctxt "#31564"
 msgid "[B]Widget Info bar[/B]"
 msgstr ""
 
-<<<<<<< Updated upstream
-: /1080i/SkinSettings.xml
-=======
 #: /1080i/SkinSettings.xml
->>>>>>> Stashed changes
 msgctxt "#31565"
 msgid "Select WidgetBar Items"
 msgstr ""
 
-<<<<<<< Updated upstream
-: /1080i/SkinSettings.xml
-=======
 #: /1080i/SkinSettings.xml
->>>>>>> Stashed changes
 msgctxt "#31566"
 msgid " - Enable Large Label Font"
 msgstr ""
 
-<<<<<<< Updated upstream
-: /1080i/SkinSettings.xml
-=======
 #: /1080i/SkinSettings.xml
->>>>>>> Stashed changes
 msgctxt "#31567"
 msgid " - Enable Cube Icon"
 msgstr ""
 
-<<<<<<< Updated upstream
-: /1080i/SkinSettings.xml
-=======
 #: /1080i/SkinSettings.xml
->>>>>>> Stashed changes
 msgctxt "#31568"
 msgid "[B]Submenu / Categories Widget[/B]"
 msgstr ""
 
-<<<<<<< Updated upstream
-: /1080i/SkinSettings.xml
-=======
 #: /1080i/SkinSettings.xml
->>>>>>> Stashed changes
 msgctxt "#31569"
 msgid "Disable Category Widget"
 msgstr ""
 
-<<<<<<< Updated upstream
-: /1080i/SkinSettings.xml
-=======
 #: /1080i/SkinSettings.xml
->>>>>>> Stashed changes
 msgctxt "#31570"
 msgid "Choose Category Widget Size"
 msgstr ""
 
-<<<<<<< Updated upstream
-: /1080i/SkinSettings.xml
-=======
 #: /1080i/SkinSettings.xml
->>>>>>> Stashed changes
 msgctxt "#31571"
 msgid "Enable Labels on Widget"
 msgstr ""
 
-<<<<<<< Updated upstream
-: /1080i/SkinSettings.xml
-=======
 #: /1080i/SkinSettings.xml
->>>>>>> Stashed changes
 msgctxt "#31572"
 msgid "Enable 'Categories' Label on WidgetBar"
 msgstr ""
 
-<<<<<<< Updated upstream
-: /1080i/SkinSettings.xml
-=======
 #: /1080i/SkinSettings.xml
->>>>>>> Stashed changes
 msgctxt "#31573"
 msgid "Detatch Home Widgets from Main Menu"
 msgstr ""
 
-<<<<<<< Updated upstream
-: /1080i/SkinSettings.xml
-=======
 #: /1080i/SkinSettings.xml
->>>>>>> Stashed changes
 msgctxt "#31574"
 msgid "Use TV Show Fanart for Episodes"
 msgstr ""
 
-<<<<<<< Updated upstream
-: /1080i/SkinSettings.xml
-=======
 #: /1080i/SkinSettings.xml
->>>>>>> Stashed changes
 msgctxt "#31575"
 msgid "[B]Suggested Movie/TV Widget[/B]"
 msgstr ""
 
-<<<<<<< Updated upstream
-: /1080i/SkinSettings.xml
-=======
 #: /1080i/SkinSettings.xml
->>>>>>> Stashed changes
 msgctxt "#31576"
 msgid "Enable Suggested Movies/TV Widget"
 msgstr ""
 
-<<<<<<< Updated upstream
-: /1080i/SkinSettings.xml
-=======
 #: /1080i/SkinSettings.xml
->>>>>>> Stashed changes
 msgctxt "#31577"
 msgid "Choose Movies List"
 msgstr ""
 
-<<<<<<< Updated upstream
-: /1080i/SkinSettings.xml
-=======
 #: /1080i/SkinSettings.xml
->>>>>>> Stashed changes
 msgctxt "#31578"
 msgid "Choose Episodes List"
 msgstr ""
 
-<<<<<<< Updated upstream
-: /1080i/SkinSettings.xml
-=======
 #: /1080i/SkinSettings.xml
->>>>>>> Stashed changes
 msgctxt "#31579"
 msgid "Enable Mini OSD Guide"
 msgstr ""
 
-<<<<<<< Updated upstream
-: /1080i/SkinSettings.xml
-=======
 #: /1080i/SkinSettings.xml
->>>>>>> Stashed changes
 msgctxt "#31580"
 msgid "Enable Live TV OSD Channels"
 msgstr ""
 
-<<<<<<< Updated upstream
-: /1080i/SkinSettings.xml
-=======
 #: /1080i/SkinSettings.xml
->>>>>>> Stashed changes
 msgctxt "#31581"
 msgid "Use Channel Icon on Widget Live TV"
 msgstr ""
 
-<<<<<<< Updated upstream
-: /1080i/SkinSettings.xml
-=======
 #: /1080i/SkinSettings.xml
->>>>>>> Stashed changes
 msgctxt "#31582"
 msgid " - use ClearLogo instead of ClearArt"
 msgstr ""
 
-<<<<<<< Updated upstream
-: /1080i/SkinSettings.xml
-=======
 #: /1080i/SkinSettings.xml
->>>>>>> Stashed changes
 msgctxt "#31583"
 msgid "Configure Metadatautils APIs"
 msgstr ""
 
-<<<<<<< Updated upstream
-: /1080i/SkinSettings.xml
-=======
 #: /1080i/SkinSettings.xml
->>>>>>> Stashed changes
 msgctxt "#31584"
 msgid "Configure TMDBHelper APIs"
 msgstr ""
 
-<<<<<<< Updated upstream
-: /1080i/Custom_1126_MovieHub_config.xml
-=======
 #: /1080i/Custom_1126_MovieHub_config.xml
->>>>>>> Stashed changes
 msgctxt "#31585"
 msgid "[CAPITALIZE]Movie Hub Configuration[/CAPITALIZE]"
 msgstr ""
 
-<<<<<<< Updated upstream
-: /1080i/Custom_1126_MovieHub_config.xml
-=======
 #: /1080i/Custom_1126_MovieHub_config.xml
->>>>>>> Stashed changes
 msgctxt "#31586"
 msgid "Movie Lists Hub Items"
 msgstr ""
 
-<<<<<<< Updated upstream
-: /1080i/Custom_1126_MovieHub_config.xml
-=======
 #: /1080i/Custom_1126_MovieHub_config.xml
->>>>>>> Stashed changes
 msgctxt "#31587"
 msgid "Movie Aura Hub Items"
 msgstr ""
 
-<<<<<<< Updated upstream
-: /1080i/Custom_1126_MovieHub_config.xml
-=======
 #: /1080i/Custom_1126_MovieHub_config.xml
->>>>>>> Stashed changes
 msgctxt "#31588"
 msgid " - Enable Compact Widget spacing"
 msgstr ""
 
-<<<<<<< Updated upstream
-: /1080i/Custom_1126_MovieHub_config.xml
-=======
 #: /1080i/Custom_1126_MovieHub_config.xml
->>>>>>> Stashed changes
 msgctxt "#31589"
 msgid "Movie Netflix Hub Items"
 msgstr ""
 
-<<<<<<< Updated upstream
-: /1080i/Custom_1126_MovieHub_config.xml
-=======
 #: /1080i/Custom_1126_MovieHub_config.xml
->>>>>>> Stashed changes
 msgctxt "#31590"
 msgid "Movie Genre Hub Items"
 msgstr ""
 
-<<<<<<< Updated upstream
-: /1080i/Custom_1127_TVHub_config.xml
-=======
 #: /1080i/Custom_1127_TVHub_config.xml
->>>>>>> Stashed changes
 msgctxt "#31591"
 msgid "[CAPITALIZE]TV Hub Configuration[/CAPITALIZE]"
 msgstr ""
 
-<<<<<<< Updated upstream
-: /1080i/Custom_1127_TVHub_config.xml
-=======
 #: /1080i/Custom_1127_TVHub_config.xml
->>>>>>> Stashed changes
 msgctxt "#31592"
 msgid "TV Lists Hub Items"
 msgstr ""
 
-<<<<<<< Updated upstream
-: /1080i/Custom_1127_TVHub_config.xml
-=======
 #: /1080i/Custom_1127_TVHub_config.xml
->>>>>>> Stashed changes
 msgctxt "#31593"
 msgid "TV Aura Hub Items"
 msgstr ""
 
-<<<<<<< Updated upstream
-: /1080i/Custom_1127_TVHub_config.xml
-=======
 #: /1080i/Custom_1127_TVHub_config.xml
->>>>>>> Stashed changes
 msgctxt "#31594"
 msgid "TV Netflix Hub Items"
 msgstr ""
 
-<<<<<<< Updated upstream
-: /1080i/Custom_1127_TVHub_config.xml
-=======
 #: /1080i/Custom_1127_TVHub_config.xml
->>>>>>> Stashed changes
 msgctxt "#31595"
 msgid "TV Genre Hub Items"
 msgstr ""
 
-<<<<<<< Updated upstream
-: /1080i/Custom_1127_TVHub_config.xml
-=======
 #: /1080i/Custom_1127_TVHub_config.xml
->>>>>>> Stashed changes
 msgctxt "#31596"
 msgid "TV Networks Hub Items"
 msgstr ""
 
-<<<<<<< Updated upstream
-: /1080i/Custom_1128_Spotlight_config.xml
-=======
 #: /1080i/Custom_1128_Spotlight_config.xml
->>>>>>> Stashed changes
 msgctxt "#31597"
 msgid "[CAPITALIZE]Home Spotlight Config[/CAPITALIZE]"
 msgstr ""
 
-<<<<<<< Updated upstream
-: /1080i/Custom_1128_Spotlight_config.xml
-=======
 #: /1080i/Custom_1128_Spotlight_config.xml
->>>>>>> Stashed changes
 msgctxt "#31598"
 msgid "Enable Spotlights"
 msgstr ""
 
-<<<<<<< Updated upstream
-: /1080i/Custom_1128_Spotlight_config.xml
-=======
 #: /1080i/Custom_1128_Spotlight_config.xml
->>>>>>> Stashed changes
 msgctxt "#31599"
 msgid "Choose Movie Spotlight Style"
 msgstr ""
 
-<<<<<<< Updated upstream
-: /1080i/Custom_1128_Spotlight_config.xml
-=======
 #: /1080i/Custom_1128_Spotlight_config.xml
->>>>>>> Stashed changes
 msgctxt "#31600"
 msgid "Movies Content"
 msgstr ""
 
-<<<<<<< Updated upstream
-: /1080i/Custom_1128_Spotlight_config.xml
-=======
 #: /1080i/Custom_1128_Spotlight_config.xml
->>>>>>> Stashed changes
 msgctxt "#31601"
 msgid " - Configure Custom Movie Lists"
 msgstr ""
 
-<<<<<<< Updated upstream
-: /1080i/Custom_1128_Spotlight_config.xml
-=======
 #: /1080i/Custom_1128_Spotlight_config.xml
->>>>>>> Stashed changes
 msgctxt "#31602"
 msgid "Choose TV Spotlight Style"
 msgstr ""
 
-<<<<<<< Updated upstream
-: /1080i/Custom_1128_Spotlight_config.xml
-=======
 #: /1080i/Custom_1128_Spotlight_config.xml
->>>>>>> Stashed changes
 msgctxt "#31603"
 msgid "TV Shows Content"
 msgstr ""
 
-<<<<<<< Updated upstream
-: /1080i/Custom_1128_Spotlight_config.xml
-=======
 #: /1080i/Custom_1128_Spotlight_config.xml
->>>>>>> Stashed changes
 msgctxt "#31604"
 msgid " - Configure Custom TV Lists"
 msgstr ""
 
-<<<<<<< Updated upstream
-: /1080i/Custom_1128_Spotlight_config.xml
-=======
 #: /1080i/Custom_1128_Spotlight_config.xml
->>>>>>> Stashed changes
 msgctxt "#31605"
 msgid "Spotlight Random Sorting"
 msgstr ""
 
-<<<<<<< Updated upstream
-: /1080i/Custom_1128_Spotlight_config.xml
-=======
 #: /1080i/Custom_1128_Spotlight_config.xml
->>>>>>> Stashed changes
 msgctxt "#31606"
 msgid "Configure LiveTV Spotlight"
 msgstr ""
 
-<<<<<<< Updated upstream
-: /1080i/Custom_1130_ShowInfo.xml
-=======
 #: /1080i/Custom_1130_ShowInfo.xml
->>>>>>> Stashed changes
 msgctxt "#31607"
 msgid "[CAPITALIZE]Show Info Media types[/CAPITALIZE]"
 msgstr ""
 
-<<<<<<< Updated upstream
-: /1080i/Custom_1130_ShowInfo.xml
-=======
 #: /1080i/Custom_1130_ShowInfo.xml
->>>>>>> Stashed changes
 msgctxt "#31608"
 msgid "Movies"
 msgstr ""
 
-<<<<<<< Updated upstream
-: /1080i/Custom_1130_ShowInfo.xml
-=======
 #: /1080i/Custom_1130_ShowInfo.xml
->>>>>>> Stashed changes
 msgctxt "#31609"
 msgid "TV Shows"
 msgstr ""
 
-<<<<<<< Updated upstream
-: /1080i/Custom_1130_ShowInfo.xml-DialogVideoInfo-Includes.xml
-=======
 #: /1080i/Custom_1130_ShowInfo.xml-DialogVideoInfo-Includes.xml
->>>>>>> Stashed changes
 msgctxt "#31610"
 msgid "Episodes"
 msgstr ""
 
-<<<<<<< Updated upstream
-: /1080i/Custom_1132_SpotlightStyle.xml
-=======
 #: /1080i/Custom_1132_SpotlightStyle.xml
->>>>>>> Stashed changes
 msgctxt "#31611"
 msgid "[CAPITALIZE]Spotlight Style[/CAPITALIZE]"
 msgstr ""
 
-<<<<<<< Updated upstream
-: /1080i/Custom_1132_SpotlightStyle.xml
-=======
 #: /1080i/Custom_1132_SpotlightStyle.xml
->>>>>>> Stashed changes
 msgctxt "#31612"
 msgid "Enable Fullscreen Spotlight"
 msgstr ""
 
-<<<<<<< Updated upstream
-: /1080i/Custom_1132_SpotlightStyle.xml
-=======
 #: /1080i/Custom_1132_SpotlightStyle.xml
->>>>>>> Stashed changes
 msgctxt "#31613"
 msgid " - Disable Spotlight Trailer auto-play"
 msgstr ""
 
-<<<<<<< Updated upstream
-: /1080i/Custom_1132_SpotlightStyle.xml
-=======
 #: /1080i/Custom_1132_SpotlightStyle.xml
->>>>>>> Stashed changes
 msgctxt "#31614"
 msgid "Enable Widget Spotlight"
 msgstr ""
 
-<<<<<<< Updated upstream
-: /1080i/Custom_1132_SpotlightStyle.xml
-=======
 #: /1080i/Custom_1132_SpotlightStyle.xml
->>>>>>> Stashed changes
 msgctxt "#31615"
 msgid "Enable Multi Widget Spotlight"
 msgstr ""
 
-<<<<<<< Updated upstream
-: /1080i/Custom_1134_TMDB_Info.xml-DialogVideoInfo-Includes.xml
-=======
 #: /1080i/Custom_1134_TMDB_Info.xml-DialogVideoInfo-Includes.xml
->>>>>>> Stashed changes
 msgctxt "#31616"
 msgid "Actor Info"
 msgstr ""
 
-<<<<<<< Updated upstream
-: /1080i/Custom_1139_SearchWinRefresh.xml
-=======
 #: /1080i/Custom_1139_SearchWinRefresh.xml
->>>>>>> Stashed changes
 msgctxt "#31617"
 msgid "reload"
 msgstr ""
 
-<<<<<<< Updated upstream
-: /1080i/Custom_1140_EnableSubmenuSize.xml
-=======
 #: /1080i/Custom_1140_EnableSubmenuSize.xml
->>>>>>> Stashed changes
 msgctxt "#31618"
 msgid "[CAPITALIZE]Choose Category Widget Size[/CAPITALIZE]"
 msgstr ""
 
-<<<<<<< Updated upstream
-: /1080i/Custom_1140_EnableSubmenuSize.xml
-=======
 #: /1080i/Custom_1140_EnableSubmenuSize.xml
->>>>>>> Stashed changes
 msgctxt "#31619"
 msgid "Enable Small Category Widget"
 msgstr ""
 
-<<<<<<< Updated upstream
-: /1080i/Custom_1140_EnableSubmenuSize.xml
-=======
 #: /1080i/Custom_1140_EnableSubmenuSize.xml
->>>>>>> Stashed changes
 msgctxt "#31620"
 msgid "Enable Medium Category Widget"
 msgstr ""
 
-<<<<<<< Updated upstream
-: /1080i/Custom_1140_EnableSubmenuSize.xml
-=======
 #: /1080i/Custom_1140_EnableSubmenuSize.xml
->>>>>>> Stashed changes
 msgctxt "#31621"
 msgid "Enable Large Category Widget"
 msgstr ""
 
-<<<<<<< Updated upstream
-: /1080i/Custom_1157_VideoInfoButtons.xml
-=======
 #: /1080i/Custom_1157_VideoInfoButtons.xml
->>>>>>> Stashed changes
 msgctxt "#31622"
 msgid "[CAPITALIZE]VideoInfo Buttons[/CAPITALIZE]"
 msgstr ""
 
-<<<<<<< Updated upstream
-: /1080i/Custom_1157_VideoInfoButtons.xml-DialogVideoInfo-Includes.xml
-=======
 #: /1080i/Custom_1157_VideoInfoButtons.xml-DialogVideoInfo-Includes.xml
->>>>>>> Stashed changes
 msgctxt "#31623"
 msgid "More Episodes"
 msgstr ""
 
-<<<<<<< Updated upstream
-: /1080i/Custom_1157_VideoInfoButtons.xml
-=======
 #: /1080i/Custom_1157_VideoInfoButtons.xml
->>>>>>> Stashed changes
 msgctxt "#31624"
 msgid "Cast & More"
 msgstr ""
 
-<<<<<<< Updated upstream
-: /1080i/Custom_1157_VideoInfoButtons.xml
-=======
 #: /1080i/Custom_1157_VideoInfoButtons.xml
->>>>>>> Stashed changes
 msgctxt "#31625"
 msgid "Extended Info"
 msgstr ""
 
-<<<<<<< Updated upstream
-: /1080i/Custom_1157_VideoInfoButtons.xml
-=======
 #: /1080i/Custom_1157_VideoInfoButtons.xml
->>>>>>> Stashed changes
 msgctxt "#31626"
 msgid "Add to Watchlist"
 msgstr ""
 
-<<<<<<< Updated upstream
-: /1080i/Custom_1157_VideoInfoButtons.xml-DialogVideoInfo-Includes.xml
-=======
 #: /1080i/Custom_1157_VideoInfoButtons.xml-DialogVideoInfo-Includes.xml
->>>>>>> Stashed changes
 msgctxt "#31627"
 msgid "Choose Artwork"
 msgstr ""
 
-<<<<<<< Updated upstream
-: /1080i/Custom_1157_VideoInfoButtons.xml
-=======
 #: /1080i/Custom_1157_VideoInfoButtons.xml
->>>>>>> Stashed changes
 msgctxt "#31628"
 msgid "Refresh"
 msgstr ""
 
-<<<<<<< Updated upstream
-: /1080i/Custom_1157_VideoInfoButtons.xml-DialogVideoInfo-Includes.xml-Includes_Object.xml
-=======
 #: /1080i/Custom_1157_VideoInfoButtons.xml-DialogVideoInfo-Includes.xml-Includes_Object.xml
->>>>>>> Stashed changes
 msgctxt "#31629"
 msgid "Search"
 msgstr ""
 
-<<<<<<< Updated upstream
-: /1080i/Custom_1157_VideoInfoButtons.xml
-=======
 #: /1080i/Custom_1157_VideoInfoButtons.xml
->>>>>>> Stashed changes
 msgctxt "#31630"
 msgid "Quick Play"
 msgstr ""
 
-<<<<<<< Updated upstream
-: /1080i/Custom_1158_VideoInfo.xml
-=======
 #: /1080i/Custom_1158_VideoInfo.xml
->>>>>>> Stashed changes
 msgctxt "#31631"
 msgid "[CAPITALIZE]Netflix VideoInfo Settings[/CAPITALIZE]"
 msgstr ""
 
-<<<<<<< Updated upstream
-: /1080i/Custom_1158_VideoInfo.xml
-=======
 #: /1080i/Custom_1158_VideoInfo.xml
->>>>>>> Stashed changes
 msgctxt "#31632"
 msgid "Configure Buttons"
 msgstr ""
 
-<<<<<<< Updated upstream
-: /1080i/Custom_1158_VideoInfo.xml
-=======
 #: /1080i/Custom_1158_VideoInfo.xml
->>>>>>> Stashed changes
 msgctxt "#31633"
 msgid "Configure Lists"
 msgstr ""
 
-<<<<<<< Updated upstream
-: /1080i/Custom_1158_VideoInfo.xml
-=======
 #: /1080i/Custom_1158_VideoInfo.xml
->>>>>>> Stashed changes
 msgctxt "#31634"
 msgid "Hide Details when Trailer playing"
 msgstr ""
 
-<<<<<<< Updated upstream
-: /1080i/Custom_1158_VideoInfo.xml
-=======
 #: /1080i/Custom_1158_VideoInfo.xml
->>>>>>> Stashed changes
 msgctxt "#31635"
 msgid "Use Large Plot"
 msgstr ""
 
-<<<<<<< Updated upstream
-: /1080i/Includes_MediaHub.xml
-=======
 #: /1080i/Includes_MediaHub.xml
->>>>>>> Stashed changes
 msgctxt "#31636"
 msgid "[B]Click to set Widget Content[/B]"
 msgstr ""
 
-<<<<<<< Updated upstream
-: /1080i/Includes_MediaHub.xml
-=======
 #: /1080i/Includes_MediaHub.xml
->>>>>>> Stashed changes
 msgctxt "#31637"
 msgid "Discover Movies"
 msgstr ""
 
-<<<<<<< Updated upstream
-: /1080i/Custom_1160_Spotlight_TV_List.xml
-=======
 #: /1080i/Custom_1160_Spotlight_TV_List.xml
->>>>>>> Stashed changes
 msgctxt "#31638"
 msgid "[CAPITALIZE]Spotlight TV Lists[/CAPITALIZE]"
 msgstr ""
 
-<<<<<<< Updated upstream
-: /1080i/Custom_1160_Spotlight_TV_List.xml
-=======
 #: /1080i/Custom_1160_Spotlight_TV_List.xml
->>>>>>> Stashed changes
 msgctxt "#31639"
 msgid "TV List 1"
 msgstr ""
 
-<<<<<<< Updated upstream
-: /1080i/Custom_1160_Spotlight_TV_List.xml
-=======
 #: /1080i/Custom_1160_Spotlight_TV_List.xml
->>>>>>> Stashed changes
 msgctxt "#31640"
 msgid "TV List 2"
 msgstr ""
 
-<<<<<<< Updated upstream
-: /1080i/Custom_1160_Spotlight_TV_List.xml
-=======
 #: /1080i/Custom_1160_Spotlight_TV_List.xml
->>>>>>> Stashed changes
 msgctxt "#31641"
 msgid "TV List 3"
 msgstr ""
 
-<<<<<<< Updated upstream
-: /1080i/Custom_1160_Spotlight_TV_List.xml
-=======
 #: /1080i/Custom_1160_Spotlight_TV_List.xml
->>>>>>> Stashed changes
 msgctxt "#31642"
 msgid "TV List 4"
 msgstr ""
 
-<<<<<<< Updated upstream
-: /1080i/Custom_1161_Spotlight_Movie_List.xml
-=======
 #: /1080i/Custom_1161_Spotlight_Movie_List.xml
->>>>>>> Stashed changes
 msgctxt "#31642"
 msgid "[CAPITALIZE]Spotlight Movie Lists[/CAPITALIZE]"
 msgstr ""
 
-<<<<<<< Updated upstream
-: /1080i/Custom_1161_Spotlight_Movie_List.xml
-=======
 #: /1080i/Custom_1161_Spotlight_Movie_List.xml
->>>>>>> Stashed changes
 msgctxt "#31643"
 msgid "Movie List 1"
 msgstr ""
 
-<<<<<<< Updated upstream
-: /1080i/Custom_1161_Spotlight_Movie_List.xml
-=======
 #: /1080i/Custom_1161_Spotlight_Movie_List.xml
->>>>>>> Stashed changes
 msgctxt "#31644"
 msgid "Movie List 2"
 msgstr ""
 
-<<<<<<< Updated upstream
-: /1080i/Custom_1161_Spotlight_Movie_List.xml
-=======
 #: /1080i/Custom_1161_Spotlight_Movie_List.xml
->>>>>>> Stashed changes
 msgctxt "#31645"
 msgid "Movie List 3"
 msgstr ""
 
-<<<<<<< Updated upstream
-: /1080i/Custom_1161_Spotlight_Movie_List.xml
-=======
 #: /1080i/Custom_1161_Spotlight_Movie_List.xml
->>>>>>> Stashed changes
 msgctxt "#31646"
 msgid "Movie List 4"
 msgstr ""
 
-<<<<<<< Updated upstream
-: /1080i/Custom_1163_SearchConfig.xml
-=======
 #: /1080i/Custom_1163_SearchConfig.xml
->>>>>>> Stashed changes
 msgctxt "#31647"
 msgid "[CAPITALIZE]Search Hub Configuration[/CAPITALIZE]"
 msgstr ""
 
-<<<<<<< Updated upstream
-: /1080i/Custom_1163_SearchConfig.xml
-=======
 #: /1080i/Custom_1163_SearchConfig.xml
->>>>>>> Stashed changes
 msgctxt "#31648"
 msgid "Configure Search Lists"
 msgstr ""
 
-<<<<<<< Updated upstream
-: /1080i/Custom_1163_SearchConfig.xml
-=======
 #: /1080i/Custom_1163_SearchConfig.xml
->>>>>>> Stashed changes
 msgctxt "#31649"
 msgid " - Use default keyboard"
 msgstr ""
 
-<<<<<<< Updated upstream
-: /1080i/Custom_1163_SearchConfig.xml
-=======
 #: /1080i/Custom_1163_SearchConfig.xml
->>>>>>> Stashed changes
 msgctxt "#31650"
 msgid " - Enable Search History (requires tmdb lists)"
 msgstr ""
 
-<<<<<<< Updated upstream
-: /1080i/Custom_1164_MyLists.xml
-=======
 #: /1080i/Custom_1164_MyLists.xml
->>>>>>> Stashed changes
 msgctxt "#31651"
 msgid "[CAPITALIZE]My Lists Configuration[/CAPITALIZE]"
 msgstr ""
 
-<<<<<<< Updated upstream
-: /1080i/Custom_1164_MyLists.xml
-=======
 #: /1080i/Custom_1164_MyLists.xml
->>>>>>> Stashed changes
 msgctxt "#31652"
 msgid "Configure Movie List"
 msgstr ""
 
-<<<<<<< Updated upstream
-: /1080i/Custom_1164_MyLists.xml
-=======
 #: /1080i/Custom_1164_MyLists.xml
->>>>>>> Stashed changes
 msgctxt "#31653"
 msgid "Configure TV List"
 msgstr ""
 
-<<<<<<< Updated upstream
-: /1080i/Custom_1164_MyLists.xml
-=======
 #: /1080i/Custom_1164_MyLists.xml
->>>>>>> Stashed changes
 msgctxt "#31654"
 msgid "Configure My Lists 1"
 msgstr ""
 
-<<<<<<< Updated upstream
-: /1080i/Custom_1164_MyLists.xml
-=======
 #: /1080i/Custom_1164_MyLists.xml
->>>>>>> Stashed changes
 msgctxt "#31655"
 msgid "Configure My Lists 2"
 msgstr ""
 
-<<<<<<< Updated upstream
-: /1080i/Custom_1164_MyLists.xml
-=======
 #: /1080i/Custom_1164_MyLists.xml
->>>>>>> Stashed changes
 msgctxt "#31656"
 msgid "Configure My Lists 3"
 msgstr ""
 
-<<<<<<< Updated upstream
-: /1080i/Custom_1164_MyLists.xml
-=======
 #: /1080i/Custom_1164_MyLists.xml
->>>>>>> Stashed changes
 msgctxt "#31657"
 msgid "Configure Addons Lists 1"
 msgstr ""
 
-<<<<<<< Updated upstream
-: /1080i/Custom_1164_MyLists.xml
-=======
 #: /1080i/Custom_1164_MyLists.xml
->>>>>>> Stashed changes
 msgctxt "#31658"
 msgid "Configure Addons Lists 2"
 msgstr ""
 
-<<<<<<< Updated upstream
-: /1080i/Custom_1164_MyLists.xml
-=======
 #: /1080i/Custom_1164_MyLists.xml
->>>>>>> Stashed changes
 msgctxt "#31659"
 msgid "Configure LiveTV Lists 1"
 msgstr ""
 
-<<<<<<< Updated upstream
-: /1080i/Custom_1164_MyLists.xml
-=======
 #: /1080i/Custom_1164_MyLists.xml
->>>>>>> Stashed changes
 msgctxt "#31660"
 msgid "Configure LiveTV Lists 2"
 msgstr ""
 
-<<<<<<< Updated upstream
-: /1080i/Custom_1164_MyLists.xml
-=======
 #: /1080i/Custom_1164_MyLists.xml
->>>>>>> Stashed changes
 msgctxt "#31661"
 msgid "Use AuraMod style for Menu Hub"
 msgstr ""
 
-<<<<<<< Updated upstream
-: /1080i/Custom_Hub_MovieAura.xml
-=======
 #: /1080i/Custom_Hub_MovieAura.xml
->>>>>>> Stashed changes
 msgctxt "#31662"
 msgid "[B]Movie AuraHub[/B]"
 msgstr ""
 
-<<<<<<< Updated upstream
-: /1080i/Custom_Hub_MovieAura.xml
-=======
 #: /1080i/Custom_Hub_MovieAura.xml
->>>>>>> Stashed changes
 msgctxt "#31663"
 msgid "Hub is Empty - Click to Add Items"
 msgstr ""
 
-<<<<<<< Updated upstream
-: /1080i/Custom_Hub_MovieNetflix.xml
-=======
 #: /1080i/Custom_Hub_MovieNetflix.xml
->>>>>>> Stashed changes
 msgctxt "#31664"
 msgid "Hub is Empty - Click to Add Items"
 msgstr ""
 
-<<<<<<< Updated upstream
-: /1080i/Custom_Hub_MoviesGenres.xml
-=======
 #: /1080i/Custom_Hub_MoviesGenres.xml
->>>>>>> Stashed changes
 msgctxt "#31665"
 msgid "Genres"
 msgstr ""
 
-<<<<<<< Updated upstream
-: /1080i/Custom_Hub_MoviesGenres.xml
-=======
 #: /1080i/Custom_Hub_MoviesGenres.xml
->>>>>>> Stashed changes
 msgctxt "#31666"
 msgid "[B]TV AuraHub[/B]"
 msgstr ""
 
-<<<<<<< Updated upstream
-: /1080i/Custom_Hub_TVAura.xml
-=======
 #: /1080i/Custom_Hub_TVAura.xml
->>>>>>> Stashed changes
 msgctxt "#31667"
 msgid "Hub is Empty - Click to Add Items"
 msgstr ""
 
-<<<<<<< Updated upstream
-: /1080i/Custom_Hub_TVGenres.xml
-=======
 #: /1080i/Custom_Hub_TVGenres.xml
->>>>>>> Stashed changes
 msgctxt "#31668"
 msgid "Genres"
 msgstr ""
 
-<<<<<<< Updated upstream
-: /1080i/Custom_Hub_TVNetflix.xml
-=======
 #: /1080i/Custom_Hub_TVNetflix.xml
->>>>>>> Stashed changes
 msgctxt "#31669"
 msgid "Hub is Empty - Click to Add Items"
 msgstr ""
 
-<<<<<<< Updated upstream
-: /1080i/Custom_MenuHub_Movie2.xml
-=======
 #: /1080i/Custom_MenuHub_Movie2.xml
->>>>>>> Stashed changes
 msgctxt "#31670"
 msgid "Categories"
 msgstr ""
 
-<<<<<<< Updated upstream
-: /1080i/Custom_Hub_TVGenres.xml
-=======
 #: /1080i/Custom_Hub_TVGenres.xml
->>>>>>> Stashed changes
 msgctxt "#31671"
 msgid "Hub Empty - Choose Items"
 msgstr ""
 
-<<<<<<< Updated upstream
-: /1080i/Custom_MenuHub_TV2.xml
-=======
 #: /1080i/Custom_MenuHub_TV2.xml
->>>>>>> Stashed changes
 msgctxt "#31672"
 msgid "Categories"
 msgstr ""
 
-<<<<<<< Updated upstream
-: /1080i/Custom_MenuHub_TV2.xml
-=======
 #: /1080i/Custom_MenuHub_TV2.xml
->>>>>>> Stashed changes
 msgctxt "#31673"
 msgid "Hub Empty - Choose Items"
 msgstr ""
 
-<<<<<<< Updated upstream
-: /1080i/Custom_MenuHub_TVNetworks.xml
-=======
 #: /1080i/Custom_MenuHub_TVNetworks.xml
->>>>>>> Stashed changes
 msgctxt "#31674"
 msgid "Networks"
 msgstr ""
 
-<<<<<<< Updated upstream
-: /1080i/Custom_Setup.xml
-=======
 #: /1080i/Custom_Setup.xml
->>>>>>> Stashed changes
 msgctxt "#31675"
 msgid "[CAPITALIZE][B]Run Wizard[/B][/CAPITALIZE]"
 msgstr ""
 
-<<<<<<< Updated upstream
-: /1080i/Custom_Setup.xml
-=======
 #: /1080i/Custom_Setup.xml
->>>>>>> Stashed changes
 msgctxt "#31676"
 msgid "[CAPITALIZE][B]Manual Setup[/B][/CAPITALIZE]"
 msgstr ""
 
-<<<<<<< Updated upstream
-: /1080i/Custom_Setup.xml
-=======
 #: /1080i/Custom_Setup.xml
->>>>>>> Stashed changes
 msgctxt "#31677"
 msgid "[CAPITALIZE][B]Configure Hubs & Spotlights[/B][/CAPITALIZE]"
 msgstr ""
 
-<<<<<<< Updated upstream
-: /1080i/Custom_Setup.xml
-=======
 #: /1080i/Custom_Setup.xml
->>>>>>> Stashed changes
 msgctxt "#31678"
 msgid "[CAPITALIZE][B]Finish Setup[/B][/CAPITALIZE]"
 msgstr ""
 
-<<<<<<< Updated upstream
-: /1080i/Custom_Youtube.xml
-=======
 #: /1080i/Custom_Youtube.xml
->>>>>>> Stashed changes
 msgctxt "#31679"
 msgid "Live"
 msgstr ""
 
-<<<<<<< Updated upstream
-: /1080i/Custom_Youtube.xml
-=======
 #: /1080i/Custom_Youtube.xml
->>>>>>> Stashed changes
 msgctxt "#31679"
 msgid "Live"
 msgstr ""
 
-<<<<<<< Updated upstream
-: /1080i/DialogButtonMenu-Includes.xml
-=======
 #: /1080i/DialogButtonMenu-Includes.xml
->>>>>>> Stashed changes
 msgctxt "#31680"
 msgid "Programs"
 msgstr ""
 
-<<<<<<< Updated upstream
-: /1080i/DialogButtonMenu-Includes.xml
-=======
 #: /1080i/DialogButtonMenu-Includes.xml
->>>>>>> Stashed changes
 msgctxt "#31681"
 msgid "Favourites"
 msgstr ""
 
-<<<<<<< Updated upstream
-: /1080i/DialogButtonMenu-Includes.xml
-=======
 #: /1080i/DialogButtonMenu-Includes.xml
->>>>>>> Stashed changes
 msgctxt "#31682"
 msgid "Main Menu Config"
 msgstr ""
 
-<<<<<<< Updated upstream
-: /1080i/DialogButtonMenu-Includes.xml
-=======
 #: /1080i/DialogButtonMenu-Includes.xml
->>>>>>> Stashed changes
 msgctxt "#31683"
 msgid "TV Hubs Config"
 msgstr ""
 
-<<<<<<< Updated upstream
-: /1080i/DialogButtonMenu-Includes.xml
-=======
 #: /1080i/DialogButtonMenu-Includes.xml
->>>>>>> Stashed changes
 msgctxt "#31684"
 msgid "Movie Hubs Config"
 msgstr ""
 
-<<<<<<< Updated upstream
-: /1080i/DialogButtonMenu-Includes.xml
-=======
 #: /1080i/DialogButtonMenu-Includes.xml
->>>>>>> Stashed changes
 msgctxt "#31685"
 msgid "Home"
 msgstr ""
 
-<<<<<<< Updated upstream
-: /1080i/DialogButtonMenu-Includes.xml
-=======
 #: /1080i/DialogButtonMenu-Includes.xml
->>>>>>> Stashed changes
 msgctxt "#31686"
 msgid "Settings"
 msgstr ""
 
-<<<<<<< Updated upstream
-: /1080i/DialogVideoInfo-Includes.xml
-=======
 #: /1080i/DialogVideoInfo-Includes.xml
->>>>>>> Stashed changes
 msgctxt "#31687"
 msgid "Resume"
 msgstr ""
 
-<<<<<<< Updated upstream
-: /1080i/DialogVideoInfo-Includes.xml
-=======
 #: /1080i/DialogVideoInfo-Includes.xml
->>>>>>> Stashed changes
 msgctxt "#31688"
 msgid "Play from Beginning"
 msgstr ""
 
-<<<<<<< Updated upstream
-: /1080i/DialogVideoInfo-Includes.xml
-=======
 #: /1080i/DialogVideoInfo-Includes.xml
->>>>>>> Stashed changes
 msgctxt "#31689"
 msgid "Cast &amp; More"
 msgstr ""
 
-<<<<<<< Updated upstream
-: /1080i/DialogVideoInfo-Includes.xml
-=======
 #: /1080i/DialogVideoInfo-Includes.xml
->>>>>>> Stashed changes
 msgctxt "#31690"
 msgid "Add/Remove from Watchlist"
 msgstr ""
 
-<<<<<<< Updated upstream
-: /1080i/DialogVideoInfo-Includes.xml
-=======
 #: /1080i/DialogVideoInfo-Includes.xml
->>>>>>> Stashed changes
 msgctxt "#31691"
 msgid "Fullscreen"
 msgstr ""
 
-<<<<<<< Updated upstream
-: /1080i/DialogVideoInfo-Includes.xml
-=======
 #: /1080i/DialogVideoInfo-Includes.xml
->>>>>>> Stashed changes
 msgctxt "#31692"
 msgid "Stop"
 msgstr ""
 
-<<<<<<< Updated upstream
-: /1080i/DialogVideoInfo-Includes.xml
-=======
 #: /1080i/DialogVideoInfo-Includes.xml
->>>>>>> Stashed changes
 msgctxt "#31693"
 msgid "Extended Info"
 msgstr ""
 
-<<<<<<< Updated upstream
-: /1080i/DialogVideoInfo-Includes.xml
-=======
 #: /1080i/DialogVideoInfo-Includes.xml
->>>>>>> Stashed changes
 msgctxt "#31694"
 msgid "More Info"
 msgstr ""
 
-<<<<<<< Updated upstream
-: /1080i/DialogVideoInfo-Includes.xml
-=======
 #: /1080i/DialogVideoInfo-Includes.xml
->>>>>>> Stashed changes
 msgctxt "#31695"
 msgid "Cast"
 msgstr ""
 
-<<<<<<< Updated upstream
-: /1080i/DialogVideoInfo-Includes.xml
-=======
 #: /1080i/DialogVideoInfo-Includes.xml
->>>>>>> Stashed changes
 msgctxt "#31696"
 msgid "Sets"
 msgstr ""
 
-<<<<<<< Updated upstream
-: /1080i/DialogVideoInfo-Includes.xml
-=======
 #: /1080i/DialogVideoInfo-Includes.xml
->>>>>>> Stashed changes
 msgctxt "#31697"
 msgid "By Director"
 msgstr ""
 
-<<<<<<< Updated upstream
-: /1080i/DialogVideoInfo-Includes.xml
-=======
 #: /1080i/DialogVideoInfo-Includes.xml
->>>>>>> Stashed changes
 msgctxt "#31698"
 msgid "By Studio"
 msgstr ""
 
-<<<<<<< Updated upstream
-: /1080i/DialogVideoInfo-Includes.xml
-=======
 #: /1080i/DialogVideoInfo-Includes.xml
->>>>>>> Stashed changes
 msgctxt "#31699"
 msgid "By Year"
 msgstr ""
 
-<<<<<<< Updated upstream
-: /1080i/DialogVideoInfo-Includes.xml
-=======
 #: /1080i/DialogVideoInfo-Includes.xml
->>>>>>> Stashed changes
 msgctxt "#31700"
 msgid "By Genre"
 msgstr ""
 
-<<<<<<< Updated upstream
-: /1080i/DialogVideoInfo-Includes.xml
-=======
 #: /1080i/DialogVideoInfo-Includes.xml
->>>>>>> Stashed changes
 msgctxt "#31701"
 msgid "[B]Box Office[/B]"
 msgstr ""
 
-<<<<<<< Updated upstream
-: /1080i/DialogVideoInfo-Includes.xml
-=======
 #: /1080i/DialogVideoInfo-Includes.xml
->>>>>>> Stashed changes
 msgctxt "#31702"
 msgid "[B]Budget[/B]"
 msgstr ""
 
-<<<<<<< Updated upstream
-: /1080i/DialogVideoInfo-Includes.xml
-=======
 #: /1080i/DialogVideoInfo-Includes.xml
->>>>>>> Stashed changes
 msgctxt "#31703"
 msgid "[B]Awards[/B]"
 msgstr ""
 
-<<<<<<< Updated upstream
-: /1080i/DialogVideoInfo-Includes.xml
-=======
 #: /1080i/DialogVideoInfo-Includes.xml
->>>>>>> Stashed changes
 msgctxt "#31704"
 msgid "[B]Critics Consensus[/B]"
 msgstr ""
 
-<<<<<<< Updated upstream
-: /1080i/Includes_Items.xml
-=======
 #: /1080i/Includes_Items.xml
->>>>>>> Stashed changes
 msgctxt "#31705"
 msgid "File Manager"
 msgstr ""
 
-<<<<<<< Updated upstream
-: /1080i/Includes_MediaHub.xml
-=======
 #: /1080i/Includes_MediaHub.xml
->>>>>>> Stashed changes
 msgctxt "#31706"
 msgid "Discover TV"
 msgstr ""
 
-<<<<<<< Updated upstream
-: /1080i/Includes_MediaHub.xml
-=======
 #: /1080i/Includes_MediaHub.xml
->>>>>>> Stashed changes
 msgctxt "#31707"
 msgid "My Movies"
 msgstr ""
 
-<<<<<<< Updated upstream
-: /1080i/Includes_MediaHub.xml
-=======
 #: /1080i/Includes_MediaHub.xml
->>>>>>> Stashed changes
 msgctxt "#31708"
 msgid "My TV"
 msgstr ""
 
-<<<<<<< Updated upstream
-: /1080i/Includes_MediaHub.xml
-=======
 #: /1080i/Includes_MediaHub.xml
->>>>>>> Stashed changes
 msgctxt "#31709"
 msgid "My Apps"
 msgstr ""

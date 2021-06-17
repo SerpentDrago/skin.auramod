@@ -414,7 +414,7 @@
             <width>450</width>
             <font>Netflix_Info_main</font>
             <textcolor>dimgrey</textcolor>
-            <label>$VAR[ListItemPercentRemained,,% remaining]</label>
+            <label>$VAR[ListItemPercentRemained,,% $LOCALIZE[31783]]</label>
           </control>
         </control>
       </control>
@@ -563,7 +563,7 @@
             <width>450</width>
             <font>Netflix_Info_main</font>
             <textcolor>dimgrey</textcolor>
-            <label>$VAR[ListItemPercentRemained,,% remaining]</label>
+            <label>$VAR[ListItemPercentRemained,,% $LOCALIZE[31783]]</label>
           </control>
         </control>
       </control>
@@ -1216,7 +1216,7 @@
                     <width>450</width>
                     <font>Netflix_Info_main</font>
                     <textcolor>grey</textcolor>
-                    <label>$VAR[ListItemPercentRemained,,% remaining]</label>
+                    <label>$VAR[ListItemPercentRemained,,% $LOCALIZE[31783]]</label>
                   </control>
               </control>
               </control>
@@ -1332,7 +1332,7 @@
               <width>450</width>
               <font>Netflix_Info_main</font>
               <textcolor>grey</textcolor>
-              <label>$VAR[ListItemPercentRemained,,% remaining]</label>
+              <label>$VAR[ListItemPercentRemained,,% $LOCALIZE[31783]]</label>
             </control>
           </control>
         </control>

@@ -172,11 +172,11 @@
     </variable>
 
      <variable name="liked_percent">
-        <value condition="!String.IsEmpty(Window(Home).Property(TMDBHelper.ListItem.RottenTomatoes_UserMeter))">[B]$INFO[Window(Home).Property(TMDBHelper.ListItem.RottenTomatoes_UserMeter)]$VAR[liked_percent_symbol] Liked[/B]</value>
-        <value condition="!String.IsEmpty(Window(Home).Property(TMDBHelper.ListItem.IMDb_Rating))">[B]$VAR[RatingDecimalToPercentageListItemRatingIMDb]$VAR[liked_percent_symbol] Liked[/B]</value>
-	<value condition="!String.IsEmpty(ListItem.Rating)">[B]$VAR[RatingDecimalToPercentageListItemRating]$VAR[liked_percent_symbol] Liked[/B]</value>
-	<value condition="!String.IsEmpty(Container(1505).ListItem.Rating)">[B]$VAR[RatingDecimalToPercentageListItemRating1505]$VAR[liked_percent_symbol] Liked[/B]</value>
-	<value condition="!String.IsEmpty(Container(1506).ListItem.Rating)">[B]$VAR[RatingDecimalToPercentageListItemRating1506]$VAR[liked_percent_symbol] Liked[/B]</value>
+        <value condition="!String.IsEmpty(Window(Home).Property(TMDBHelper.ListItem.RottenTomatoes_UserMeter))">[B]$INFO[Window(Home).Property(TMDBHelper.ListItem.RottenTomatoes_UserMeter)]$VAR[liked_percent_symbol] $LOCALIZE[31782][/B]</value>
+        <value condition="!String.IsEmpty(Window(Home).Property(TMDBHelper.ListItem.IMDb_Rating))">[B]$VAR[RatingDecimalToPercentageListItemRatingIMDb]$VAR[liked_percent_symbol] $LOCALIZE[31782][/B]</value>
+	<value condition="!String.IsEmpty(ListItem.Rating)">[B]$VAR[RatingDecimalToPercentageListItemRating]$VAR[liked_percent_symbol] $LOCALIZE[31782][/B]</value>
+	<value condition="!String.IsEmpty(Container(1505).ListItem.Rating)">[B]$VAR[RatingDecimalToPercentageListItemRating1505]$VAR[liked_percent_symbol] $LOCALIZE[31782][/B]</value>
+	<value condition="!String.IsEmpty(Container(1506).ListItem.Rating)">[B]$VAR[RatingDecimalToPercentageListItemRating1506]$VAR[liked_percent_symbol] $LOCALIZE[31782][/B]</value>
      </variable>
 
      <variable name="liked_percent_symbol">

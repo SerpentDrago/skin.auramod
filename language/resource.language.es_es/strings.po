@@ -3773,3 +3773,13 @@ msgstr "Dirigido Por"
 msgctxt "#31781"
 msgid "Use Oz Weather Radar Map"
 msgstr "Usar el Mapa de Radar Meteorológico de Oz"
+
+#: /1080i/Includes_Labels.xml
+msgctxt "#31782"
+msgid "Liked"
+msgstr ""
+
+#: /1080i/Includes_Object.xml
+msgctxt "#31783"
+msgid "remaining"
+msgstr ""

@@ -141,14 +141,14 @@
 	<value>skinshortcuts-template-searchlist</value>
     </variable>
     <variable name="searchhistorydf">
-	<value>plugin://plugin.video.themoviedb.helper/?fanarttv=True&info=dir_search&nextpage=True&type=movie</value>
+	<value>plugin://plugin.video.themoviedb.helper/?fanarttv=True&amp;info=dir_search&amp;nextpage=True&amp;type=movie</value>
     </variable>
 
     <variable name="searchhistory">
-	<value condition="String.IsEmpty(Skin.String(CustomSearchTerm))">plugin://plugin.video.themoviedb.helper/?fanarttv=True&info=dir_search&nextpage=True&type=movie</value>
+	<value condition="String.IsEmpty(Skin.String(CustomSearchTerm))">plugin://plugin.video.themoviedb.helper/?fanarttv=True&amp;info=dir_search&amp;nextpage=True&amp;type=movie</value>
     </variable>
     <variable name="autocomplete">
-        <value condition="Window.IsVisible(1136) + String.IsEmpty(Skin.String(CustomSearchTerm))">plugin://plugin.video.themoviedb.helper/?fanarttv=True&info=dir_search&nextpage=True&type=movie</value>
+        <value condition="Window.IsVisible(1136) + String.IsEmpty(Skin.String(CustomSearchTerm))">plugin://plugin.video.themoviedb.helper/?fanarttv=True&amp;info=dir_search&amp;nextpage=True&amp;type=movie</value>
         <value>plugin://plugin.program.autocompletion?info=autocomplete&amp;&amp;id=$INFO[Control.GetLabel(312).index(1)]&amp;&amp;limit=9</value>
     </variable>
     <variable name="Play_tmdb">

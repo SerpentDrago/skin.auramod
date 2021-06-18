@@ -3762,7 +3762,7 @@ msgstr "Activar la Auto-Ocultación del Escaparate"
 #: /1080i/Custom_1161_Spotlight_Movie_List.xml
 msgctxt "#31779"
 msgid "Spotlight Movie Lists"
-msgstr ""
+msgstr "Listas de Películas Destacadas"
 
 #: /1080i/DialogVideoInfo-Includes.xml
 msgctxt "#31780"
@@ -3772,4 +3772,4 @@ msgstr "Dirigido Por"
 #: /1080i/SkinSettings.xml
 msgctxt "#31781"
 msgid "Use Oz Weather Radar Map"
-msgstr ""
+msgstr "Usar el Mapa de Radar Meteorológico de Oz"

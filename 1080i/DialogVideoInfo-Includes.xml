@@ -2028,7 +2028,7 @@
           <param name="orientation" value="vertical" />
           <param name="height" value="880" />
           <param name="width" value="1800" />
-          <param name="label" value="From $INFO[ListItem.Year]" />
+          <param name="label" value="$LOCALIZE[31025] $INFO[ListItem.Year]" /> <!-- From -->
           <param name="visible" value="String.IsEqual(Container(8999).ListItem.Label,$LOCALIZE[31699]) + !String.IsEmpty(ListItem.Year)" /> <!-- By Year -->
         </include>
         <include condition="!Skin.HasSetting(VideoInfo.Disable) + !Skin.HasSetting(VideoInfo.Studio) + String.IsEqual(ListItem.DBType,movie)" content="Widget_TMDB">
@@ -2062,7 +2062,7 @@
           <param name="orientation" value="vertical" />
           <param name="height" value="880" />
           <param name="width" value="1800" />
-          <param name="label" value="Recommended" />
+          <param name="label" value="$LOCALIZE[31495]" /> <!-- Recommended -->
           <param name="visible" value="String.IsEqual(Container(8999).ListItem.Label,$LOCALIZE[31495]) + !String.IsEmpty(ListItem.Label)" /> <!-- Recommended -->
         </include>
         <include condition="!Skin.HasSetting(VideoInfo.Disable) + !Skin.HasSetting(VideoInfo.Genre)" content="Widget_TMDB">

@@ -2683,7 +2683,7 @@ msgstr "Abilita lo stile della barra del Power menu"
 #: /1080i/SkinSettings.xml
 msgctxt "#31557"
 msgid "Use Aura Default loading icon"
-msgstr "Ustilizza l'icona di caricamento predefinita Aura"
+msgstr "Utilizza l'icona di caricamento predefinita Aura"
 
 #: /1080i/SkinSettings.xml
 msgctxt "#31558"

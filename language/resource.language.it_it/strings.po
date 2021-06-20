@@ -2153,7 +2153,7 @@ msgstr "Solo icone verticali"
 #: /1080i/SkinSettings.xml
 msgctxt "#31450"
 msgid "Vertical Full"
-msgstr "Tutto Verticaleo"
+msgstr "Tutto Verticale"
 
 #: /1080i/SkinSettings.xml
 msgctxt "#31451"

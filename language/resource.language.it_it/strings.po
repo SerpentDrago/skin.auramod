@@ -3788,7 +3788,7 @@ msgstr "restanti"
 #: /1080i/Custom_1133_WidgetBar.xml
 msgctxt "#31784"
 msgid "Aura Widget Bar"
-msgstr ""
+msgstr "Barra del Widget Aura"
 
 #: /1080i/Custom_1157_VideoInfoButtons.xml
 msgctxt "#31785"
@@ -3798,7 +3798,7 @@ msgstr ""
 #: /1080i/Custom_1157_VideoInfoButtons.xml
 msgctxt "#31786"
 msgid "Trakt Manager"
-msgstr ""
+msgstr "Gestore Trakt"
 
 #: /1080i/DialogButtonMenu-Includes.xml
 msgctxt "#31787"
@@ -3808,12 +3808,12 @@ msgstr ""
 #: /1080i/DialogVideoInfo-Includes.xml
 msgctxt "#31788"
 msgid "No reviews available"
-msgstr ""
+msgstr "Nessuna recensione disponibile"
 
 #: /1080i/Includes_Object.xml
 msgctxt "#31789"
 msgid "Aired"
-msgstr ""
+msgstr "In onda"
 
 #: /1080i/Includes_Object.xml
 msgctxt "#31790"
@@ -3823,264 +3823,264 @@ msgstr ""
 #: /1080i/Includes_View_Posters.xml
 msgctxt "#31791"
 msgid "EPISODE"
-msgstr ""
+msgstr "EPISODIO"
 
 #: /1080i/Includes_WidgetMods.xml
 msgctxt "#31792"
 msgid "Length"
-msgstr ""
+msgstr "Lunghezza"
 
 #: /1080i/script-skinshortcuts.xml
 msgctxt "#31793"
 msgid "Enable My List as Widget"
-msgstr ""
+msgstr "Abilita il mio elenco come Widget"
 
 #: /1080i/script-skinshortcuts.xml
 msgctxt "#31794"
 msgid "Choose List"
-msgstr ""
+msgstr "Scegli Elenco"
 
 #: /1080i/script-skinshortcuts.xml
 msgctxt "#31795"
 msgid "Widget Aspect"
-msgstr ""
+msgstr "Aspetto del Widget"
 
 #: /1080i/script-skinshortcuts.xml
 msgctxt "#31796"
 msgid "Widget Location"
-msgstr ""
+msgstr "Percorso del Widget"
 
 #: /1080i/script-skinshortcuts.xml
 msgctxt "#31797"
 msgid "Global"
-msgstr ""
+msgstr "Globale"
 
 #: /1080i/SkinSettings.xml
 msgctxt "#31798"
 msgid "LiveTV Button Color"
-msgstr ""
+msgstr "Colore pulsante LiveTV"
 
 #: /1080i/SkinSettings.xml
 msgctxt "#31799"
 msgid "Enable / disable Video Info lists"
-msgstr ""
+msgstr "Abilita / disabilita gli elenchi Info video"
 
 #: /1080i/SkinSettings.xml
 msgctxt "#31800"
 msgid "Enable / disable Video Info buttons"
-msgstr ""
+msgstr "Abilita/disabilita i pulsanti Info video"
 
 #: /1080i/SkinSettings.xml
 msgctxt "#31801"
 msgid "Enable Netflix Style Fixed Focus"
-msgstr ""
+msgstr "Abilita il focus fisso in stile Netflix"
 
 #: /shortcuts/moviehubmenu.DATA.xml
 msgctxt "#31802"
 msgid "Movie Categories"
-msgstr ""
+msgstr "Categorie film"
 
 #: /shortcuts/moviehubmenu.DATA.xml
 msgctxt "#31803"
 msgid "Movie Aura Hub"
-msgstr ""
+msgstr "Aura Hub Film"
 
 #: /shortcuts/moviehubmenu.DATA.xml
 msgctxt "#31804"
 msgid "Movie Netflix Hub"
-msgstr ""
+msgstr "Hub Film Netflix"
 
 #: /shortcuts/movies.DATA.xml
 msgctxt "#31805"
 msgid "Movie Lists"
-msgstr ""
+msgstr "Elenco Film"
 
 #: /shortcuts/movies.DATA.xml
 msgctxt "#31806"
 msgid "Genres Hub"
-msgstr ""
+msgstr "Hub Generi"
 
 #: /shortcuts/searchmenus.DATA.xml
 msgctxt "#31807"
 msgid "TMDB Movies"
-msgstr ""
+msgstr "Film TMDB"
 
 #: /shortcuts/searchmenus.DATA.xml
 msgctxt "#31808"
 msgid "TMDB TV Shows"
-msgstr ""
+msgstr "Serie TV TMDB"
 
 #: /shortcuts/searchmenus.DATA.xml
 msgctxt "#31809"
 msgid "Seren Movies"
-msgstr ""
+msgstr "Film Seren"
 
 #: /shortcuts/searchmenus.DATA.xml
 msgctxt "#31810"
 msgid "Seren TV Shows"
-msgstr ""
+msgstr "Serie TV Seren"
 
 #: /shortcuts/searchmenus.DATA.xml
 msgctxt "#31811"
 msgid "Fen Movies"
-msgstr ""
+msgstr "Film Fen"
 
 #: /shortcuts/searchmenus.DATA.xml
 msgctxt "#31812"
 msgid "Fen TV Shows"
-msgstr ""
+msgstr "Serie TV Fen"
 
 #: /shortcuts/searchmenus.DATA.xml
 msgctxt "#31813"
 msgid "Venom Movies"
-msgstr ""
+msgstr "Film Venom"
 
 #: /shortcuts/searchmenus.DATA.xml
 msgctxt "#31814"
 msgid "Venom TV Shows"
-msgstr ""
+msgstr "Serie TV Venom"
 
 #: /shortcuts/searchmenus.DATA.xml
 msgctxt "#31816"
 msgid "Library Movies"
-msgstr ""
+msgstr "Libreria Film"
 
 #: /shortcuts/searchmenus.DATA.xml
 msgctxt "#31817"
 msgid "Library TV Shows"
-msgstr ""
+msgstr "Libreria Serie TV"
 
 #: /shortcuts/searchmenus.DATA.xml
 msgctxt "#31818"
 msgid "Library Episodes"
-msgstr ""
+msgstr "Libreria Episodi"
 
 #: /shortcuts/searchmenus.DATA.xml
 msgctxt "#31819"
 msgid "Library Genres"
-msgstr ""
+msgstr "Libreria Generi"
 
 #: /shortcuts/searchmenus.DATA.xml
 msgctxt "#31820"
 msgid "Library Year"
-msgstr ""
+msgstr "Libreria Anni"
 
 #: /shortcuts/searchmenus.DATA.xml
 msgctxt "#31821"
 msgid "Library Studio"
-msgstr ""
+msgstr "Libreria Studio"
 
 #: /shortcuts/searchmenus.DATA.xml
 msgctxt "#31822"
 msgid "Library Country"
-msgstr ""
+msgstr "Libreria Paese"
 
 #: /shortcuts/searchmenus.DATA.xml
 msgctxt "#31823"
 msgid "Library Actor"
-msgstr ""
+msgstr "Libreria Attori"
 
 #: /shortcuts/searchmenus.DATA.xml
 msgctxt "#31824"
 msgid "Music Videos"
-msgstr ""
+msgstr "Video Musicali"
 
 #: /shortcuts/searchmenus.DATA.xml
 msgctxt "#31825"
 msgid "Music Video Artists"
-msgstr ""
+msgstr "Artisti dei video musicali"
 
 #: /shortcuts/tvhubmenu.DATA.xml
 msgctxt "#31826"
 msgid "TV Categories"
-msgstr ""
+msgstr "Categorie TV"
 
 #: /shortcuts/tvhubmenu.DATA.xml
 msgctxt "#31827"
 msgid "TV Aura Hub"
-msgstr ""
+msgstr "Hub TV Aura"
 
 #: /shortcuts/tvhubmenu.DATA.xml
 msgctxt "#31828"
 msgid "TV Netflix Hub"
-msgstr ""
+msgstr "Hub TV Netflix"
 
 #: /shortcuts/tvshows.DATA.xml
 msgctxt "#31829"
 msgid "TV Lists"
-msgstr ""
+msgstr "Elenco TV"
 
 #: /shortcuts/x1101.DATA.xml
 msgctxt "#31830"
 msgid "Media Hub"
-msgstr ""
+msgstr "Hub Media"
 
 #: /shortcuts/x1101.DATA.xml
 msgctxt "#31831"
 msgid "Academy Awards - Best Picture Winners"
-msgstr ""
+msgstr "Academy Awards - Vincitori del miglior film"
 
 #: /shortcuts/x1101.DATA.xml
 msgctxt "#31832"
 msgid "Rotten Tomatoes: Best of 2018"
-msgstr ""
+msgstr "Rotten Tomatoes: Il meglio del 2018"
 
 #: /shortcuts/x1101.DATA.xml
 msgctxt "#31833"
 msgid "2018 - Golden Globe Nominees & Winners"
-msgstr ""
+msgstr "2018 - Candidati e vincitori ai Golden Globe"
 
 #: /shortcuts/x1101.DATA.xml
 msgctxt "#31834"
 msgid "2018 - Oscar Nominees & Winners"
-msgstr ""
+msgstr "2018 - Candidati e vincitori agli Oscar"
 
 #: /shortcuts/x1101.DATA.xml
 msgctxt "#31835"
 msgid "IMDB: Top Rated Movies"
-msgstr ""
+msgstr "IMDB: i film più votati"
 
 #: /shortcuts/x1101.DATA.xml
 msgctxt "#31836"
 msgid "Reddit Top 250 (2018 Edition)"
-msgstr ""
+msgstr "Reddit Top 250 (edizione 2018)"
 
 #: /shortcuts/x1103.DATA.xml
 msgctxt "#31837"
 msgid "IMDB: Top Rated TV Shows"
-msgstr ""
+msgstr "IMDB: le serie TV più votate"
 
 #: /shortcuts/x1103.DATA.xml
 msgctxt "#31838"
 msgid "Rolling Stone's 100 Greatest TV Shows of All Time"
-msgstr ""
+msgstr "Le 100 migliori serie TV di tutti i tempi secondo Rolling Stone"
 
 #: /shortcuts/x1103.DATA.xml
 msgctxt "#31839"
 msgid "Most Popular"
-msgstr ""
+msgstr "Più popolare"
 
 #: /shortcuts/x1103.DATA.xml
 msgctxt "#31840"
 msgid "TV Shows 2018 ➛ Scripted (USA)"
-msgstr ""
+msgstr "Programmi TV 2018 ➛ Sceneggiato (USA)"
 
 #: /shortcuts/x1103.DATA.xml
 msgctxt "#31841"
 msgid "TV Shows 2018 ➛ Scripted (UK)"
-msgstr ""
+msgstr "Programmi TV 2018 ➛ Sceneggiato (UK)"
 
 #. Context: Genres
 #: /shortcuts/x1108.DATA.xml
 msgctxt "#31842"
 msgid "Action"
-msgstr ""
+msgstr "Azione"
 
 #. Context: Genres
 #: /shortcuts/x1108.DATA.xml
 msgctxt "#31843"
 msgid "Animation"
-msgstr ""
+msgstr "Animazione"
 
 #. Context: Genres
 #: /shortcuts/x1108.DATA.xml
@@ -4092,91 +4092,91 @@ msgstr ""
 #: /shortcuts/x1108.DATA.xml
 msgctxt "#31845"
 msgid "Comedy"
-msgstr ""
+msgstr "Commedia"
 
 #. Context: Genres
 #: /shortcuts/x1108.DATA.xml
 msgctxt "#31846"
 msgid "Crime"
-msgstr ""
+msgstr "Poliziesco"
 
 #. Context: Genres
 #: /shortcuts/x1108.DATA.xml
 msgctxt "#31847"
 msgid "Documentary"
-msgstr ""
+msgstr "Documentario"
 
 #. Context: Genres
 #: /shortcuts/x1108.DATA.xml
 msgctxt "#31848"
 msgid "Drama"
-msgstr ""
+msgstr "Drammatico"
 
 #. Context: Genres
 #: /shortcuts/x1108.DATA.xml
 msgctxt "#31849"
 msgid "Family"
-msgstr ""
+msgstr "Famiglia"
 
 #. Context: Genres
 #: /shortcuts/x1108.DATA.xml
 msgctxt "#31850"
 msgid "History"
-msgstr ""
+msgstr "Storia"
 
 #. Context: Genres
 #: /shortcuts/x1108.DATA.xml
 msgctxt "#31851"
 msgid "Horror"
-msgstr ""
+msgstr "Orrore"
 
 #. Context: Genres
 #: /shortcuts/x1108.DATA.xml
 msgctxt "#31852"
 msgid "Mystery"
-msgstr ""
+msgstr "Mistero"
 
 #. Context: Genres
 #: /shortcuts/x1108.DATA.xml
 msgctxt "#31853"
 msgid "Romance"
-msgstr ""
+msgstr "Romantico"
 
 #. Context: Genres
 #: /shortcuts/x1108.DATA.xml
 msgctxt "#31854"
 msgid "Science Fiction"
-msgstr ""
+msgstr "Fantascienza"
 
 #. Context: Genres
 #: /shortcuts/x1108.DATA.xml
 msgctxt "#31855"
 msgid "Superhero"
-msgstr ""
+msgstr "Supereroi"
 
 #. Context: Genres
 #: /shortcuts/x1108.DATA.xml
 msgctxt "#31856"
 msgid "Thriller"
-msgstr ""
+msgstr "Triller"
 
 #. Context: Genres
 #: /shortcuts/x1108.DATA.xml
 msgctxt "#31857"
 msgid "War"
-msgstr ""
+msgstr "Guerra"
 
 #. Context: Genres
 #: /shortcuts/x1109.DATA.xml
 msgctxt "#31858"
 msgid "Game Show"
-msgstr ""
+msgstr "Giochi televisivi"
 
 #. Context: Genres
 #: /shortcuts/x1109.DATA.xml
 msgctxt "#31859"
 msgid "Home and Garden"
-msgstr ""
+msgstr "Casa e giardino"
 
 #. Context: Genres
 #: /shortcuts/x1109.DATA.xml

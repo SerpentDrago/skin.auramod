@@ -619,7 +619,7 @@ msgstr "Episodi recenti"
 
 msgctxt "#31126"
 msgid "Episodes Spotlight"
-msgstr "Spotlisht Episodi"
+msgstr "Spotlight Episodi"
 
 msgctxt "#31127"
 msgid "Movies Spotlight"
@@ -663,7 +663,7 @@ msgstr "Serie Tv in tendenza"
 
 msgctxt "#31136"
 msgid "Airing Shows"
-msgstr "Serie Tv in programmate"
+msgstr "Serie Tv in onda"
 
 msgctxt "#31137"
 msgid "Premiering Shows"
@@ -1553,7 +1553,7 @@ msgstr "Migliore"
 #: /1080i/Custom_1116_ColorBoxAdvancedSettings.xml
 msgctxt "#31329"
 msgid "Colorbox Advanced Settings"
-msgstr "Impostazioni avanzate di Colorbox"
+msgstr "Impostazioni avanzate per Colorbox"
 
 #: /1080i/SkinSettings.xml
 msgctxt "#31330"
@@ -1693,7 +1693,7 @@ msgstr "Anni"
 #: /1080i/script-script.extendedinfo-DialogInfo.xml
 msgctxt "#31357"
 msgid "Crew"
-msgstr "Squadra"
+msgstr "Troupe"
 
 #: /1080i/Includes_View_Posters.xml
 msgctxt "#31358"
@@ -2153,7 +2153,7 @@ msgstr "Solo icone verticali"
 #: /1080i/SkinSettings.xml
 msgctxt "#31450"
 msgid "Vertical Full"
-msgstr "Verticale pieno"
+msgstr "Tutto Verticaleo"
 
 #: /1080i/SkinSettings.xml
 msgctxt "#31451"
@@ -2658,7 +2658,7 @@ msgstr "Mostra informazioni complete su Spotlight per gli episodi"
 #: /1080i/SkinSettings.xml
 msgctxt "#31552"
 msgid "Disable Spotlight Trailer auto-play"
-msgstr "Disattiva la riproduzione automatica del trailer nello Spotlight"
+msgstr "Disabilita la riproduzione automatica del trailer nello Spotlight"
 
 #: /1080i/SkinSettings.xml
 msgctxt "#31553"
@@ -2683,7 +2683,7 @@ msgstr "Abilita lo stile della barra del Power menu"
 #: /1080i/SkinSettings.xml
 msgctxt "#31557"
 msgid "Use Aura Default loading icon"
-msgstr "Ustilizza l'icona di caricamento predefinita Aura"
+msgstr "Utilizza l'icona di caricamento predefinita Aura"
 
 #: /1080i/SkinSettings.xml
 msgctxt "#31558"
@@ -3143,7 +3143,7 @@ msgstr "Configura elenchi di ricerca"
 #: /1080i/Custom_1163_SearchConfig.xml
 msgctxt "#31649"
 msgid "Use default keyboard"
-msgstr "Utilizzaa la tastiera predefinita"
+msgstr "Utilizza la tastiera predefinita"
 
 #: /1080i/Custom_1163_SearchConfig.xml
 msgctxt "#31650"
@@ -3373,7 +3373,7 @@ msgstr "stesso Genere"
 #: /1080i/DialogVideoInfo-Includes.xml
 msgctxt "#31701"
 msgid "Box Office"
-msgstr ""
+msgstr "Botteghino"
 
 #: /1080i/DialogVideoInfo-Includes.xml
 msgctxt "#31702"
@@ -3784,3 +3784,13 @@ msgstr "Piace"
 msgctxt "#31783"
 msgid "remaining"
 msgstr "restanti"
+
+#: /1080i/Includes_Labels.xml
+msgctxt "#31784"
+msgid "Season"
+msgstr "Stagione"
+
+#: /1080i/Includes_Labels.xml
+msgctxt "#31785"
+msgid "Seasons"
+msgstr "Stagioni"

@@ -73,7 +73,7 @@ msgstr "iconos del tiempo por defecto"
 #: /1080i/MyWeather.xml
 msgctxt "#31012"
 msgid "Weather fanart installed"
-msgstr "fanart del tiempo instalado"
+msgstr "Fanart del tiempo instalado"
 
 #: /1080i/SkinSettings.xml
 msgctxt "#31013"
@@ -152,8 +152,8 @@ msgstr "Personalizar menú de apagado"
 
 #: /1080i/SkinSettings.xml
 msgctxt "#31028"
-msgid "Restablezca la configuracion de skin a los valores predeterminados (ADVERTENCIA: Esto restablecera su menu de inicio a los valores predeterminados de skin)"
-msgstr ""
+msgid "Reset the skin settings to the default values ​​(WARNING: This will reset your start menu to the default skin values)"
+msgstr "Restablezca la configuración de skin a los valores predeterminados (ADVERTENCIA: Esto restablecerá su menú de inicio a los valores predeterminados de skin)"
 
 #: /1080i/script-nextup-notification-PostPlayInfo.xml
 msgctxt "#31029"
@@ -163,7 +163,7 @@ msgstr "Ocultar Spoilers"
 #: /1080i/SkinSettings.xml
 msgctxt "#31030"
 msgid "Backup / Restore"
-msgstr "Copia / Restauracion"
+msgstr "Copia / Restauración"
 
 #: /1080i/SkinSettings.xml
 msgctxt "#31031"
@@ -183,7 +183,7 @@ msgstr "Ajustes de Sonido"
 #: /1080i/SkinSettings.xml
 msgctxt "#31034"
 msgid "Change backup and restore path"
-msgstr "Cambiar ruta de las copias y restauracion"
+msgstr "Cambiar ruta de las copias y restauración"
 
 #: /1080i/Includes_Labels.xml
 msgctxt "#31035"
@@ -228,17 +228,17 @@ msgstr "Etiquetas de texto de vista de pared"
 #: /1080i/DialogVideoInfo.xml
 msgctxt "#31043"
 msgid "Select Action"
-msgstr "Elegir Accion"
+msgstr "Elegir Acción"
 
 #: /1080i/DialogVideoInfo.xml
 msgctxt "#31044"
 msgid "Search library for movies staring"
-msgstr "Buscar en la biblioteca para ver peliculas"
+msgstr "Buscar en la biblioteca para ver películas"
 
 #: /1080i/DialogVideoInfo.xml
 msgctxt "#31045"
 msgid "Show extended info about"
-msgstr "Mostrar informacion extendida sobre"
+msgstr "Mostrar información extendida sobre"
 
 #: /1080i/DialogVideoInfo.xml
 msgctxt "#31046"
@@ -263,7 +263,7 @@ msgstr "Muestra el fanart del artista almacenado desde la base de datos de la bi
 #: /1080i/Includes_Labels.xml
 msgctxt "#31050"
 msgid "Use artist slideshow addon to display artist fanart on the music visualisation screen."
-msgstr "Use el complemento de presentacion de diapositivas de artista para mostrar fanart de artista en la pantalla de visualizacion de musica"
+msgstr "Use el complemento de presentación de diapositivas de artista para mostrar fanart de artista en la pantalla de visualización de música"
 
 #: /1080i/Includes_Labels.xml
 msgctxt "#31051"
@@ -378,7 +378,7 @@ msgstr "Menu apagar"
 #: /1080i/VideoOSD.xml
 msgctxt "#31073"
 msgid "Recommended Youtube Videos"
-msgstr "Videos Recomendado de Youtube"
+msgstr "Videos Recomendados de Youtube"
 
 #: /1080i/SkinSettings.xml
 msgctxt "#31074"
@@ -408,7 +408,7 @@ msgstr "Acabado"
 #: /1080i/SkinSettings.xml
 msgctxt "#31079"
 msgid "Pause video when opening extended info"
-msgstr "Pausa el video al abrir información extendida"
+msgstr "Pausa el vídeo al abrir información extendida"
 
 #: /1080i/SkinSettings.xml
 msgctxt "#31080"
@@ -423,7 +423,7 @@ msgstr "Ocultar sinopsis"
 #: /1080i/DialogPlayerProcessInfo.xml
 msgctxt "#31082"
 msgid "Video process information"
-msgstr "nformacion de proceso de video"
+msgstr "Informacion de proceso de video"
 
 #: /1080i/DialogPlayerProcessInfo.xml
 msgctxt "#31083"
@@ -433,7 +433,7 @@ msgstr "Imagenes por segundo"
 #: /1080i/DialogPlayerProcessInfo.xml
 msgctxt "#31084"
 msgid "Aspect Ratio"
-msgstr "Relacion de aspecto"
+msgstr "Relación de aspecto"
 
 #: /1080i/Includes_OSD.xml
 msgctxt "#31085"
@@ -443,12 +443,12 @@ msgstr "Info del Codec"
 #: /1080i/Includes_OSD.xml
 msgctxt "#31086"
 msgid "Extended Info"
-msgstr ""
+msgstr "Información Extendida"
 
 #: /1080i/SkinSettings.xml
 msgctxt "#31087"
 msgid "Colour overlay effect"
-msgstr "Efecto de superposicion"
+msgstr "Efecto de superposición"
 
 #: /1080i/SkinSettings.xml
 msgctxt "#31088"
@@ -468,7 +468,7 @@ msgstr "Mostrar formato de duración como X HRS XX MINS"
 #: /1080i/SkinSettings.xml
 msgctxt "#31091"
 msgid "Prefer list view for seasons"
-msgstr "Vista de lista preferida para estaciones"
+msgstr "Vista de lista preferida para temporadas"
 
 #: /1080i/Includes_Object.xml
 msgctxt "#31092"
@@ -478,7 +478,7 @@ msgstr "Nombre del sistema"
 #: /1080i/Includes_Object.xml
 msgctxt "#31093"
 msgid "Gateway Address"
-msgstr "Direccion Gateway"
+msgstr "Dirección Gateway"
 
 #: /1080i/Includes_Object.xml
 msgctxt "#31094"
@@ -513,7 +513,7 @@ msgstr "Uso de la CPU"
 #: /1080i/Includes_Object.xml
 msgctxt "#31100"
 msgid "Processor, Memory and Video"
-msgstr "Procesador, Memoria y Video"
+msgstr "Procesador, Memoria y Vídeo"
 
 msgctxt "#31101"
 msgid "items"
@@ -541,15 +541,15 @@ msgstr "Termina "
 
 msgctxt "#31107"
 msgid "Video Stream"
-msgstr "Video en directo"
+msgstr "Vídeo en Directo"
 
 msgctxt "#31108"
 msgid "Current Menu"
-msgstr "Menu actual"
+msgstr "Menú actual"
 
 msgctxt "#31109"
 msgid "Customise Home Menu & Widgets"
-msgstr "Personalizar Menu Inicio y Widgets"
+msgstr "Personalizar Menú Inicio y Widgets"
 
 msgctxt "#31110"
 msgid "Background"
@@ -557,15 +557,15 @@ msgstr "Fondo"
 
 msgctxt "#31111"
 msgid "Display now playing video in background"
-msgstr "Mostrar reproduccion actual en el fondo"
+msgstr "Mostrar reproducción actual en el fondo"
 
 msgctxt "#31112"
 msgid "Submenu"
-msgstr ""
+msgstr "Submenú"
 
 msgctxt "#31113"
 msgid "No Timer"
-msgstr ""
+msgstr "Sin Temporizador"
 
 msgctxt "#31114"
 msgid "Now Playing"
@@ -602,27 +602,27 @@ msgstr ""
 
 msgctxt "#31122"
 msgid "Ongoing Episodes"
-msgstr "Episodios en curso"
+msgstr "Episodios en Curso"
 
 msgctxt "#31123"
 msgid "Resumable Movies"
-msgstr "Peliculas reanudables"
+msgstr "Peliculas Reanudables"
 
 msgctxt "#31124"
 msgid "Recent Movies"
-msgstr "Peliculas recientes"
+msgstr "Películas Recientes"
 
 msgctxt "#31125"
 msgid "Recent Episodes"
-msgstr "Episodios recientes"
+msgstr "Episodios Recientes"
 
 msgctxt "#31126"
 msgid "Episodes Spotlight"
-msgstr "Episodios destacados"
+msgstr "Episodios Destacados"
 
 msgctxt "#31127"
 msgid "Movies Spotlight"
-msgstr "Peliculas destacadas"
+msgstr "Películas Destacadas"
 
 #: /1080i/SkinSettings.xml
 msgctxt "#31128"
@@ -654,23 +654,23 @@ msgstr "Ocultar vistos"
 
 msgctxt "#31134"
 msgid "Trending Movies"
-msgstr "Peliculas en tendencia"
+msgstr "Películas en Tendencia"
 
 msgctxt "#31135"
 msgid "Trending Shows"
-msgstr "Series en tendencia"
+msgstr "Series en Tendencia"
 
 msgctxt "#31136"
 msgid "Airing Shows"
-msgstr "Espectaculos al aire"
+msgstr "Programas en Emisión"
 
 msgctxt "#31137"
 msgid "Premiering Shows"
-msgstr "Espectaculos de estreno"
+msgstr "Programas de Estreno"
 
 msgctxt "#31138"
 msgid "Content Loading"
-msgstr "Cargando contenido"
+msgstr "Cargando Contenido"
 
 msgctxt "#31139"
 msgid "Box Office"
@@ -700,7 +700,7 @@ msgstr "Editar widgets"
 #: /1080i/SkinSettings.xml
 msgctxt "#31145"
 msgid "Display poster and plot when video is paused"
-msgstr "Mostrar poster y sinopsis cuando el video está en pausa"
+msgstr "Mostrar poster y sinopsis cuando el vídeo está en pausa"
 
 msgctxt "#31146"
 msgid "Animate fanart"
@@ -765,7 +765,7 @@ msgstr "Visualización abierta automáticamente después de comenzar una canció
 #: /1080i/Includes_Labels.xml
 msgctxt "#31159"
 msgid "Video Sources"
-msgstr "Fuentes de Video"
+msgstr "Fuentes de Vídeo"
 
 #: /1080i/Includes_Labels.xml
 msgctxt "#31160"
@@ -785,7 +785,7 @@ msgstr "Categorias"
 #: /shortcuts/overrides.xml
 msgctxt "#31163"
 msgid "Submenu Items"
-msgstr "Items Submenu"
+msgstr "Items Submenú"
 
 #: /1080i/Includes_View_List.xml
 msgctxt "#31164"
@@ -800,7 +800,7 @@ msgstr "Grabaciones TV"
 #: /1080i/Includes_Labels.xml
 msgctxt "#31166"
 msgid "TV timers"
-msgstr "Horas TV"
+msgstr "Temporizadores de TV"
 
 #: /1080i/Includes_View_List.xml
 msgctxt "#31167"
@@ -809,7 +809,7 @@ msgstr "Lista cuadrada"
 
 msgctxt "#31168"
 msgid "Startup video or music playlist"
-msgstr "Video de inicio o lista de reproducción de música"
+msgstr "Vídeo de inicio o lista de reproducción de música"
 
 msgctxt "#31169"
 msgid "Extras"
@@ -825,7 +825,7 @@ msgstr ""
 
 msgctxt "#31172"
 msgid "Display music visualisation in background"
-msgstr "Mostrar visualizacion musical en el fondo"
+msgstr "Mostrar visualización musical en el fondo"
 
 msgctxt "#31173"
 msgid "Recently added"
@@ -841,7 +841,7 @@ msgstr "Reproduccion aleatoria"
 
 msgctxt "#31176"
 msgid "Delete Settings Shortcut"
-msgstr "Borrar Ajustes de atajos"
+msgstr "Borrar Ajustes de Atajos"
 
 msgctxt "#31177"
 msgid "Are you sure you want to remove the settings shortcut?[CR]Please ensure that you have an alternative method of accessing settings before you remove this shortcut."
@@ -869,12 +869,12 @@ msgstr "Seleccionar icono"
 #: /shortcuts/overrides.xml
 msgctxt "#31182"
 msgid "Additional Widgets"
-msgstr "Widgets adicionales"
+msgstr "Widgets Adicionales"
 
 #: /shortcuts/overrides.xml
 msgctxt "#31183"
 msgid "Default Widgets"
-msgstr "Widgets por defecto"
+msgstr "Widgets por Defecto"
 
 #: /shortcuts/overrides.xml
 msgctxt "#31184"
@@ -889,24 +889,24 @@ msgstr "Peliculas agregadas recientemente"
 #: /1080i/SkinSettings.xml
 msgctxt "#31186"
 msgid "Display osd submenu"
-msgstr "Mostrar submenu OSD"
+msgstr "Mostrar submenú OSD"
 
 msgctxt "#31187"
 msgid "Random Albums"
-msgstr "Albums aleatorios"
+msgstr "Albums Aleatorios"
 
 msgctxt "#31188"
 msgid "Recent Albums"
-msgstr "Albums recientes"
+msgstr "Albums Recientes"
 
 msgctxt "#31189"
 msgid "Recommended Albums"
-msgstr "Albums recomendados"
+msgstr "Albums Recomendados"
 
 #: /shortcuts/overrides.xml
 msgctxt "#31190"
 msgid "Recently Played Movies"
-msgstr "Peliculas reproducidas recientemente"
+msgstr "Peliculas Reproducidas Recientemente"
 
 msgctxt "#31191"
 msgid "Directed by"
@@ -915,7 +915,7 @@ msgstr "Dirigida por"
 #: /1080i/SkinSettings.xml
 msgctxt "#31192"
 msgid "Focus bounce animation"
-msgstr "Animacion de rebote de foco"
+msgstr "Animación de rebote de foco"
 
 #: /1080i/SkinSettings.xml
 msgctxt "#31193"
@@ -925,26 +925,26 @@ msgstr "Resetear colores a los predeterminados"
 #: /shortcuts/overrides.xml
 msgctxt "#31194"
 msgid "Recently Played TV Shows"
-msgstr "Series reproducidas recientemente"
+msgstr "Series Reproducidas Recientemente"
 
 msgctxt "#31195"
 msgid "Reload Skin"
-msgstr "Recargan skin"
+msgstr "Recargar Skin"
 
 #: /shortcuts/overrides.xml
 msgctxt "#31196"
 msgid "In Progress TV Shows"
-msgstr "Series en progreso"
+msgstr "Series en Progreso"
 
 #: /1080i/script-skinshortcuts.xml
 msgctxt "#31197"
 msgid "Save Changes"
-msgstr "Guardar cambios"
+msgstr "Guardar Cambios"
 
 #: /shortcuts/overrides.xml
 msgctxt "#31198"
 msgid "Recently Played Episodes"
-msgstr "Episodios reproducidos recientemente"
+msgstr "Episodios Reproducidos Recientemente"
 
 msgctxt "#31199"
 msgid "Kiosk mode"
@@ -953,7 +953,7 @@ msgstr "Modo kiosko"
 #: /shortcuts/overrides.xml
 msgctxt "#31200"
 msgid "Random Movies"
-msgstr "Peliculas aleatorias"
+msgstr "Peliculas Aleatorias"
 
 #: /1080i/SkinSettings.xml
 msgctxt "#31201"
@@ -963,7 +963,7 @@ msgstr "Al presionar información solo se muestra la barra de búsqueda (oculta 
 #: /shortcuts/overrides.xml
 msgctxt "#31202"
 msgid "Random Episodes"
-msgstr "Episodios aleatorios"
+msgstr "Episodios Aleatorios"
 
 msgctxt "#31203"
 msgid "Artwork"
@@ -987,11 +987,11 @@ msgstr ""
 
 msgctxt "#31208"
 msgid "In Cinemas"
-msgstr "En cines"
+msgstr "En Cines"
 
 msgctxt "#31209"
 msgid "Upcoming"
-msgstr "Proximo"
+msgstr "Próximo"
 
 msgctxt "#31210"
 msgid "Popular"
@@ -999,11 +999,11 @@ msgstr ""
 
 msgctxt "#31211"
 msgid "Top Rated"
-msgstr "Mas valorados"
+msgstr "Mas Valorados"
 
 msgctxt "#31212"
 msgid "Airing"
-msgstr "En emision"
+msgstr "En Emisión"
 
 msgctxt "#31213"
 msgid "Today"
@@ -1012,7 +1012,7 @@ msgstr "Hoy"
 #: /shortcuts/overrides.xml
 msgctxt "#31214"
 msgid "Recently Added Episodes"
-msgstr "Episodios agregados recientemente"
+msgstr "Episodios Agregados Recientemente"
 
 msgctxt "#31215"
 msgid "Unwatched"
@@ -1021,26 +1021,26 @@ msgstr "No vistos"
 #: /shortcuts/overrides.xml
 msgctxt "#31216"
 msgid "In Progress Movies"
-msgstr "Peliculas en progreso"
+msgstr "Peliculas en Progreso"
 
 #: /1080i/Includes_Home.xml
 msgctxt "#31217"
 msgid "Change location"
-msgstr "Cambiar ubicacion"
+msgstr "Cambiar ubicación"
 
 #: /shortcuts/overrides.xml
 msgctxt "#31218"
 msgid "In Progress Episodes"
-msgstr "Episodios en progreso"
+msgstr "Episodios en Progreso"
 
 #: /1080i/script-nextup-notification-PostPlayInfo.xml
 msgctxt "#31219"
 msgid "Previous"
-msgstr "Previo"
+msgstr "Anterior"
 
 msgctxt "#31220"
 msgid "Next Aired"
-msgstr ""
+msgstr "Siguiente Emitida"
 
 #: /1080i/script-nextup-notification-PostPlayInfo.xml
 msgctxt "#31221"
@@ -1050,19 +1050,19 @@ msgstr "Siguiente"
 #: /shortcuts/overrides.xml
 msgctxt "#31222"
 msgid "Top Rated TV Shows"
-msgstr "Series mas valoradas"
+msgstr "Series Más Valoradas"
 
 msgctxt "#31223"
 msgid "Upcoming Movies"
-msgstr "Proximas peliculas"
+msgstr "Próximas Películas"
 
 msgctxt "#31224"
 msgid "Popular Movies"
-msgstr "Peliculas populares"
+msgstr "Películas Populares"
 
 msgctxt "#31225"
 msgid "Top Rated Movies"
-msgstr "Peliculas mas valoradas"
+msgstr "Peliculas Más Valoradas"
 
 msgctxt "#31226"
 msgid "Popular TV Shows"
@@ -1070,20 +1070,20 @@ msgstr "Series Populares"
 
 msgctxt "#31227"
 msgid "Top Rated TV Shows"
-msgstr "Series mas valoradas"
+msgstr "Series Más Valoradas"
 
 msgctxt "#31228"
 msgid "On Air TV Shows"
-msgstr "Series en emision"
+msgstr "Series en Emisión"
 
 msgctxt "#31229"
 msgid "TV Shows Airing Today"
-msgstr "Series en emision hoy"
+msgstr "Series en Emisión Hoy"
 
 #: /shortcuts/overrides.xml
 msgctxt "#31230"
 msgid "Top Rated Episodes"
-msgstr "Episodios mas valorados"
+msgstr "Episodios Más Valorados"
 
 #: /1080i/Includes_View_Posters.xml
 msgctxt "#31231"
@@ -1092,7 +1092,7 @@ msgstr ""
 
 msgctxt "#31232"
 msgid "Reset path"
-msgstr "Restablecer parche"
+msgstr "Restablecer ruta"
 
 #: /shortcuts/overrides.xml
 msgctxt "#31233"
@@ -1102,7 +1102,7 @@ msgstr "Series Aleatorias"
 #: /1080i/SettingsProfile.xml
 msgctxt "#31234"
 msgid "Customise your user profiles and enable/disable the login screen."
-msgstr "Personalice sus perfiles de usuario y active / desactive la pantalla de inicio de sesión."
+msgstr "Personalice sus perfiles de usuario y active/desactive la pantalla de inicio de sesión."
 
 #: /1080i/script-skinshortcuts.xml
 msgctxt "#31235"
@@ -1116,17 +1116,17 @@ msgstr "Reproduciendo ahora..."
 #: /1080i/script-skinshortcuts.xml
 msgctxt "#31237"
 msgid "Sort"
-msgstr "Orden"
+msgstr "Clasificar"
 
 #: /shortcuts/overrides.xml
 msgctxt "#31238"
 msgid "Recently Added Albums"
-msgstr "Albums recientemente agregados"
+msgstr "Albums Recientemente Agregados"
 
 #: /1080i/script-skinshortcuts.xml
 msgctxt "#31239"
 msgid "Direction"
-msgstr "Direccion"
+msgstr "Dirección"
 
 #: /1080i/script-skinshortcuts.xml
 msgctxt "#31240"
@@ -1135,12 +1135,12 @@ msgstr "Aspecto"
 
 msgctxt "#31241"
 msgid "Additional info"
-msgstr "Info adicional"
+msgstr "Info Adicional"
 
 #: /shortcuts/overrides.xml
 msgctxt "#31242"
 msgid "Recently Played Albums"
-msgstr "Albums reproducidos recientemente"
+msgstr "Albums Reproducidos Recientemente"
 
 #: /shortcuts/overrides.xml
 msgctxt "#31243"
@@ -1170,7 +1170,7 @@ msgstr ""
 #: /1080i/script-skinshortcuts.xml
 msgctxt "#31248"
 msgid "Edit Shortcuts"
-msgstr "Editar atajos"
+msgstr "Editar Atajos"
 
 #: /1080i/script-skinshortcuts.xml
 msgctxt "#31249"
@@ -1184,7 +1184,7 @@ msgstr "Color degradado"
 
 msgctxt "#31251"
 msgid "Weather Fanart"
-msgstr "Fanart del tiempo"
+msgstr "Fanart del Tiempo"
 
 msgctxt "#31252"
 msgid "Weather Forecast"
@@ -1203,7 +1203,7 @@ msgstr "Si tiene dificultades con los widgets o los elementos del menú de inici
 #: /1080i/SkinSettings.xml
 msgctxt "#31255"
 msgid "Generate landscape art"
-msgstr "Generar arte paisajistico"
+msgstr "Generar arte paisajístico"
 
 #: /1080i/Includes_Labels.xml
 msgctxt "#31256"
@@ -1213,7 +1213,7 @@ msgstr "Mostrar arte"
 #: /shortcuts/overrides.xml
 msgctxt "#31257"
 msgid "Movie Genres"
-msgstr "Generos de Peliculas"
+msgstr "Géneros de Películas"
 
 #: /1080i/SkinSettings.xml
 msgctxt "#31258"
@@ -1227,7 +1227,7 @@ msgstr ""
 #: /shortcuts/overrides.xml
 msgctxt "#31260"
 msgid "Movie Sets"
-msgstr "Sets de peliculas"
+msgstr "Sets de Películas"
 
 msgctxt "#31261"
 msgid "Widget aspect"
@@ -1235,7 +1235,7 @@ msgstr "Aspecto del widget"
 
 msgctxt "#31262"
 msgid "Poster"
-msgstr ""
+msgstr "Póster"
 
 msgctxt "#31263"
 msgid "Square"
@@ -1267,7 +1267,7 @@ msgstr "Widget de reserva"
 
 msgctxt "#31270"
 msgid "Video / Music OSD"
-msgstr "Video / Musica OSD"
+msgstr "Vídeo / Música OSD"
 
 msgctxt "#31271"
 msgid "Single Image"
@@ -1280,12 +1280,12 @@ msgstr "Multi imagen"
 #: /1080i/SkinSettings.xml
 msgctxt "#31273"
 msgid "Background overlay color"
-msgstr "Superposicion de color de fondo"
+msgstr "Superposición de color de fondo"
 
 #: /shortcuts/overrides.xml
 msgctxt "#31274"
 msgid "TvShow Genres"
-msgstr "Generos de Series"
+msgstr "Géneros de Series"
 
 #: /1080i/SkinSettings.xml
 msgctxt "#31275"
@@ -1305,7 +1305,7 @@ msgstr "Animaciones"
 #: /shortcuts/overrides.xml
 msgctxt "#31278"
 msgid "Unwatched Movies"
-msgstr "Peliculas No vistas"
+msgstr "Películas No vistas"
 
 msgctxt "#31279"
 msgid "Video decoder"
@@ -1331,7 +1331,7 @@ msgstr "Episodios No vistos"
 #: MPAA Rating
 msgctxt "#31284"
 msgid "Classification"
-msgstr "Clasificacion"
+msgstr "Clasificación"
 
 #: /1080i/Includes_Home.xml
 msgctxt "#31285"
@@ -1362,12 +1362,12 @@ msgstr "Consenso"
 #: /1080i/SkinSettings.xml
 msgctxt "#31291"
 msgid "Display text labels on landscape widget"
-msgstr "Mostrar Etiquetas de Texto en el Widget de Apaisado"
+msgstr "Mostrar etiquetas de texto en el widget de apaisado"
 
 #: /1080i/DialogBusy.xml
 msgctxt "#31292"
 msgid "Kodi is busy$COMMA one moment please"
-msgstr "Kodi esta ocupado$COMMA un momento por favor "
+msgstr "Kodi esta ocupado$COMMA un momento por favor"
 
 #: /shortcuts/overrides.xml
 msgctxt "#31293"
@@ -1387,7 +1387,7 @@ msgstr "Artistas aleatorios"
 #: /shortcuts/overrides.xml
 msgctxt "#31296"
 msgid "Movie Nodes"
-msgstr "Nodos de Pelicula"
+msgstr "Nodos de Película"
 
 #: /shortcuts/overrides.xml
 msgctxt "#31297"
@@ -1407,7 +1407,7 @@ msgstr "Estrenada"
 #: /shortcuts/overrides.xml
 msgctxt "#31300"
 msgid "Music Nodes"
-msgstr "Nodos de Musica"
+msgstr "Nodos de Música"
 
 #: /shortcuts/overrides.xml
 msgctxt "#31301"
@@ -1417,17 +1417,17 @@ msgstr "Series"
 #: /shortcuts/overrides.xml
 msgctxt "#31302"
 msgid "Music Sources"
-msgstr "Fuentes de Musica"
+msgstr "Fuentes de Música"
 
 #: /1080i/DialogAddonInfo.xml
 msgctxt "#31303"
 msgid "Latest Changes"
-msgstr "Ultimos cambios"
+msgstr "Últimos Cambios"
 
 #: /shortcuts/overrides.xml
 msgctxt "#31304"
 msgid "Picture Sources"
-msgstr "Fuentes de imagenes"
+msgstr "Fuentes de Imágenes"
 
 #: /1080i/SkinSettings.xml
 msgctxt "#31305"
@@ -1437,7 +1437,7 @@ msgstr "Ciclo de colores"
 #: /1080i/Includes_Items.xml
 msgctxt "#31306"
 msgid "Special Features"
-msgstr "Caracteristicas especiales"
+msgstr "Características Especiales"
 
 #: /1080i/SkinSettings.xml
 msgctxt "#31307"
@@ -1452,7 +1452,7 @@ msgstr "Reproductor"
 #: /1080i/SkinSettings.xml
 msgctxt "#31309"
 msgid "Blur effect type"
-msgstr "Efecto Tipo Desenfoque"
+msgstr "Efecto tipo desenfoque"
 
 #: /1080i/Includes_Home.xml
 msgctxt "#31310"
@@ -1462,7 +1462,7 @@ msgstr "Opiniones de los usuarios"
 #: /1080i/Includes_OSD.xml
 msgctxt "#31311"
 msgid "Rate Song"
-msgstr "Valoracion de la cancion"
+msgstr "Valoración de la canción"
 
 #: /1080i/SkinSettings.xml
 msgctxt "#31312"
@@ -1477,7 +1477,7 @@ msgstr "Transparencia del fondo"
 #: /1080i/SkinSettings.xml
 msgctxt "#31314"
 msgid "Automatically display music video info at beginning and end of clip"
-msgstr "Muestra automáticamente la información del video musical al principio y al final del clip"
+msgstr "Muestra automáticamente la información del vídeo musical al principio y al final del clip"
 
 #: /1080i/Includes_Home.xml
 msgctxt "#31315"
@@ -1492,7 +1492,7 @@ msgstr "Aumentado"
 #: /1080i/SkinSettings.xml
 msgctxt "#31317"
 msgid "Watched indicators"
-msgstr "Indicadores de Visto"
+msgstr "Indicadores de visto"
 
 #: /1080i/SkinSettings.xml
 msgctxt "#31318"
@@ -1512,7 +1512,7 @@ msgstr "Importante"
 #: /1080i/Custom_1116_ColorBoxAdvancedSettings.xml
 msgctxt "#31321"
 msgid "Reset to defaults"
-msgstr "Restaurar predeterminados"
+msgstr "Restaurar a predeterminados"
 
 #: /1080i/Custom_1116_ColorBoxAdvancedSettings.xml
 msgctxt "#31322"
@@ -1542,17 +1542,17 @@ msgstr "Radio de Desenfoque"
 #: /1080i/Custom_1116_ColorBoxAdvancedSettings.xml
 msgctxt "#31327"
 msgid "Image quality"
-msgstr "Calidad de Imagen"
+msgstr "Calidad de imagen"
 
 #: /1080i/Custom_1116_ColorBoxAdvancedSettings.xml
 msgctxt "#31328"
 msgid "Highest"
-msgstr "Mas alto"
+msgstr "Más alto"
 
 #: /1080i/Custom_1116_ColorBoxAdvancedSettings.xml
 msgctxt "#31329"
 msgid "Colorbox Advanced Settings"
-msgstr "Ajustes avanzados del colorbox"
+msgstr "Ajustes Avanzados del Colorbox"
 
 #: /1080i/SkinSettings.xml
 msgctxt "#31330"
@@ -1562,7 +1562,7 @@ msgstr "Ajustes avanzados para colorbox (ajustes de opacidad)"
 #: /1080i/SkinSettings.xml
 msgctxt "#31331"
 msgid "Icon only mode"
-msgstr "Solo Iconos"
+msgstr "Sólo Iconos"
 
 #: /1080i/Custom_1116_ColorBoxAdvancedSettings.xml
 msgctxt "#31332"
@@ -1587,7 +1587,7 @@ msgstr "Haga coincidir el color de la superposición de fondo con el póster"
 #: /1080i/SkinSettings.xml
 msgctxt "#31336"
 msgid "Background overlay"
-msgstr "Superposicion de fondo"
+msgstr "Superposición de fondo"
 
 #: /1080i/Includes_Labels.xml
 msgctxt "#31337"
@@ -1607,7 +1607,7 @@ msgstr "Efectos"
 #: /1080i/Includes_Labels.xml
 msgctxt "#31340"
 msgid "Match poster"
-msgstr "Coincidencia de Poster"
+msgstr "Coincidencia de poster"
 
 #: /1080i/Includes_Labels.xml
 msgctxt "#31341"
@@ -1617,7 +1617,7 @@ msgstr "Oscuro"
 #: /1080i/SkinSettings.xml
 msgctxt "#31342"
 msgid "Widget item limit"
-msgstr "Límite de Elementos de Widget"
+msgstr "Límite de elementos de widget"
 
 #: /1080i/Settings.xml
 msgctxt "#31343"
@@ -1637,17 +1637,17 @@ msgstr "Registro de eventos"
 #: /1080i/SkinSettings.xml
 msgctxt "#31346"
 msgid "Video OSD"
-msgstr ""
+msgstr "Vídeo OSD"
 
 #: /1080i/SkinSettings.xml
 msgctxt "#31347"
 msgid "Music OSD"
-msgstr ""
+msgstr "Música OSD"
 
 #: /1080i/Home.xml
 msgctxt "#31348"
 msgid "Loading Home Menu"
-msgstr "Cargando Menu Inicio"
+msgstr "Cargando Menú Inicio"
 
 #: /1080i/Startup.xml
 msgctxt "#31349"
@@ -1712,7 +1712,7 @@ msgstr "Pared de Cuadrados"
 #: /1080i/Includes_View_Posters.xml
 msgctxt "#31361"
 msgid "Landscape Showcase"
-msgstr "Escaparate de Paisajes"
+msgstr "Escaparate de Paísajes"
 
 #: /1080i/Includes_View_Posters.xml
 msgctxt "#31362"
@@ -1722,17 +1722,17 @@ msgstr "Escaparate de Cuadrados"
 #: /1080i/Includes_View_Posters.xml
 msgctxt "#31363"
 msgid "Big Posters"
-msgstr ""
+msgstr "Carteles Grandes"
 
 #: /1080i/SkinSettings.xml
 msgctxt "#31364"
 msgid "Mouse compatability"
-msgstr "Compatibilidad con raton"
+msgstr "Compatibilidad con ratón"
 
 #: /1080i/script-script.extendedinfo-DialogVideoInfo.xml
 msgctxt "#31365"
 msgid "Images"
-msgstr "Imagenes"
+msgstr "Imágenes"
 
 #: /1080i/SkinSettings.xml
 msgctxt "#31366"
@@ -1742,12 +1742,12 @@ msgstr "Botón de ilustraciones descarga todas las ilustraciones"
 #: /shortcuts/overrides.xml
 msgctxt "#31367"
 msgid "Recently Added TV Shows"
-msgstr "Series recientemente agregadas"
+msgstr "Series Recientemente Agregadas"
 
 #: /1080i/script-script.extendedinfo-DialogInfo.xml
 msgctxt "#31368"
 msgid "Tagged Images"
-msgstr "Imagenes etiquetadas"
+msgstr "Imagenes Etiquetadas"
 
 #: /1080i/SkinSettings.xml
 msgctxt "#31369"
@@ -1762,17 +1762,17 @@ msgstr "Pared de Banners"
 #: /1080i/SkinSettings.xml
 msgctxt "#31371"
 msgid "Enable large Categories widget"
-msgstr "Habilitar widget de Categorias grande"
+msgstr "Habilitar widget de Categorías grande"
 
 #: /1080i/SkinSettings.xml
 msgctxt "#31372"
 msgid "Force default menu position"
-msgstr "Forzar posicion por defecto del menu"
+msgstr "Forzar posición por defecto del menú"
 
 #: /1080i/Includes_Widgets.xml
 msgctxt "#31373"
 msgid "See More"
-msgstr "Ver mas"
+msgstr "Ver más"
 
 #: /1080i/EventLog.xml
 msgctxt "#31374"
@@ -1787,17 +1787,17 @@ msgstr "Gradientes en paneles de respaldo"
 #: /1080i/SkinSettings.xml /1080i/SkinSettings.xml
 msgctxt "#31376"
 msgid " - Display \"See more\" widget item"
-msgstr " - Mostrar \"Ver mas\" en Widget"
+msgstr " - Mostrar \"Ver más\" elemento de widget"
 
 #: /1080i/SkinSettings.xml
 msgctxt "#31377"
 msgid "Video lyrics"
-msgstr "Letras de video"
+msgstr "Letras de vídeo"
 
 #: /1080i/SkinSettings.xml
 msgctxt "#31378"
 msgid "Genre names in PVR guide"
-msgstr "Generos en Guia PVR"
+msgstr "Géneros en Guía PVR"
 
 #: /1080i/SkinSettings.xml
 msgctxt "#31379"
@@ -1807,12 +1807,12 @@ msgstr "Mostrar superposición de trama después del retraso"
 #: /1080i/Includes_Labels.xml
 msgctxt "#31380"
 msgid "Untitled"
-msgstr "Sin titulo"
+msgstr "Sin Título"
 
 #: /shortcuts/overrides.xml
 msgctxt "#31381"
 msgid "Last Played Channels"
-msgstr "Ultimo Canal visto"
+msgstr "Último Canal Visto"
 
 #: /shortcuts/overrides.xml
 msgctxt "#31382"
@@ -1822,37 +1822,37 @@ msgstr "Activar Grabaciones"
 #: /shortcuts/overrides.xml
 msgctxt "#31383"
 msgid "Grouped Active Recordings"
-msgstr "Grabación activa agrupada"
+msgstr "Grabación Activa Agrupada"
 
 #: /shortcuts/overrides.xml
 msgctxt "#31384"
 msgid "Grouped Deleted Recordings"
-msgstr "Grabación eliminada agrupada"
+msgstr "Grabación Agrupada Eliminada"
 
 #: /1080i/Includes_View_Posters.xml
 msgctxt "#31385"
 msgid "Episode List"
-msgstr "Lista de episodios"
+msgstr "Lista de Episodios"
 
 #: /1080i/SkinSettings.xml
 msgctxt "#31386"
 msgid "Auto close OSD controls after delay (in seconds)"
-msgstr "Controles de OSD de cierre automático después del retraso (en segundos)"
+msgstr "Cierre automático de los controles OSD después del retraso (en segundos)"
 
 #: /1080i/SkinSettings.xml
 msgctxt "#31387"
 msgid "Splash screen image"
-msgstr "Imagen de la pantalla de bienvenida"
+msgstr "Imágen de la pantalla de bienvenida"
 
 #: /1080i/DialogVideoInfo.xml
 msgctxt "#31388"
 msgid "Download All Artwork"
-msgstr "Descargar todo el arte"
+msgstr "Descargar Todo el Arte"
 
 #: /1080i/DialogVideoInfo.xml
 msgctxt "#31389"
 msgid "Select Artwork"
-msgstr "Elegir arte"
+msgstr "Elegir Arte"
 
 #: /1080i/SkinSettings.xml
 msgctxt "#31390"
@@ -1862,12 +1862,12 @@ msgstr "Al pulsar hacia arriba desde el menú superior se muestra fanart / sinop
 #: /1080i/Includes_Topbar.xml
 msgctxt "#31391"
 msgid "Page"
-msgstr "Pagina"
+msgstr "Página"
 
 #: /1080i/Includes_Labels.xml
 msgctxt "#31392"
 msgid "Sort Letter"
-msgstr "Ordenar letras"
+msgstr "Ordenar Letras"
 
 #: /1080i/SkinSettings.xml
 msgctxt "#31393"
@@ -1877,22 +1877,22 @@ msgstr "Mostrar banderas de medios en lugar de calificaciones en vistas de bibli
 #: /1080i/SkinSettings.xml
 msgctxt "#31394"
 msgid "Monochrome flags"
-msgstr "Banderas monocromas"
+msgstr "Banderas monocromáticas"
 
 #: /1080i/Includes_Items.xml
 msgctxt "#31395"
 msgid "Music Playlist"
-msgstr "Playlist de Musica"
+msgstr "Playlist de Música"
 
 #: /1080i/Includes_Items.xml
 msgctxt "#31396"
 msgid "Video Playlist"
-msgstr ""
+msgstr "Playlist de Vídeo"
 
 #: /1080i/Includes_View_Posters.xml
 msgctxt "#31397"
 msgid "Square Wall Large"
-msgstr "Pared grande cuadrados"
+msgstr "Muro de cuadrados grandes"
 
 #: /1080i/SkinSettings.xml
 msgctxt "#31398"
@@ -1907,27 +1907,27 @@ msgstr "Texto"
 #: /1080i/Custom_1119_EnableInfoLists.xml
 msgctxt "#31400"
 msgid "Movies by Director"
-msgstr "Peliculas por director"
+msgstr "Películas por Director"
 
 #: /1080i/Custom_1119_EnableInfoLists.xml
 msgctxt "#31401"
 msgid "Next Up Episodes"
-msgstr "Proximos Episodios"
+msgstr "Próximos Episodios"
 
 #: /1080i/Custom_1119_EnableInfoLists.xml
 msgctxt "#31402"
 msgid "Similar Movies"
-msgstr "Peliculas similares"
+msgstr "Películas Similares"
 
 #: /1080i/Custom_1119_EnableInfoLists.xml
 msgctxt "#31403"
 msgid "Similar Tv Shows"
-msgstr "Series similares"
+msgstr "Series Similares"
 
 #: /1080i/Custom_1119_EnableInfoLists.xml
 msgctxt "#31404"
 msgid "Movies from Studio"
-msgstr "Peliculas por Estudio"
+msgstr "Películas por Estudio"
 
 #: /1080i/Custom_1119_EnableInfoLists.xml
 msgctxt "#31405"
@@ -1937,7 +1937,7 @@ msgstr ""
 #: /1080i/Custom_1119_EnableInfoLists.xml
 msgctxt "#31406"
 msgid "Extras / Special Features"
-msgstr "Extras / Caracteristicas especiales"
+msgstr "Extras / Características Especiales"
 
 #: /1080i/Custom_1119_EnableInfoLists.xml
 msgctxt "#31407"
@@ -1947,12 +1947,12 @@ msgstr "Activar / Desact. listas de dialogo de información"
 #: /1080i/Includes_Items.xml
 msgctxt "#31408"
 msgid "Subtitle settings"
-msgstr "Ajustes de Subtitulos"
+msgstr "Ajustes de subtítulos"
 
 #: /1080i/SkinSettings.xml
 msgctxt "#31409"
 msgid "Subtitles button opens subtitle settings"
-msgstr "Boton de subtitulos abre ajustes de subtitulos"
+msgstr "Boton de subtítulos abre ajustes de subtítulos"
 
 #: /1080i/SkinSettings.xml
 msgctxt "#31410"
@@ -1967,7 +1967,7 @@ msgstr "Paisaje Ancho"
 #: /1080i/Includes_View.xml
 msgctxt "#31412"
 msgid "WidgetLive"
-msgstr "Widget en vivo"
+msgstr "Widget en directo"
 
 #: /1080i/SkinSettings.xml
 msgctxt "#31413"
@@ -1987,27 +1987,27 @@ msgstr "Activar Info Guia PVR"
 #: /1080i/SkinSettings.xml
 msgctxt "#31416"
 msgid "Main Label Color"
-msgstr "Color de etiqueta principal"
+msgstr "Color de Etiqueta Principal"
 
 #: /1080i/SkinSettings.xml
 msgctxt "#31417"
 msgid "Enable Widget Overlays"
-msgstr "Habilitar superposicion de Widget"
+msgstr "Habilitar Superposición de Widget"
 
 #: /1080i/Includes_View.xml
 msgctxt "#31418"
 msgid "posterdetails"
-msgstr "Detalles de poster"
+msgstr "detalles de poster"
 
 #: /1080i/SkinSettings.xml
 msgctxt "#31419"
 msgid "Enable Widget Banners"
-msgstr "Habilitar Banner Widget"
+msgstr "Habilitar Banners de Widget"
 
 #: /1080i/SkinSettings.xml
 msgctxt "#31420"
 msgid "Enable Categories Widget labels"
-msgstr "Habilitar etiquetas en widget de categorias"
+msgstr "Habilitar Etiquetas de Widget de Categorías"
 
 msgctxt "#31421"
 msgid ""
@@ -2016,7 +2016,7 @@ msgstr ""
 #: /1080i/SkinSettings.xml
 msgctxt "#31422"
 msgid "Enable Categories widget Label + icons"
-msgstr "Habilitar etiquetas + iconos en categorias"
+msgstr "Habilitar Etiquetas de Widget de Categorías + iconos"
 
 msgctxt "#31423"
 msgid "Widgets"
@@ -2025,7 +2025,7 @@ msgstr ""
 #: /1080i/SkinSettings.xml
 msgctxt "#31424"
 msgid "Enable Widget FixedFocus"
-msgstr "Habilitar Foco fijo en widget"
+msgstr "Habilitar Foco fijo en Widget"
 
 #: /1080i/SkinSettings.xml
 msgctxt "#31425"
@@ -2035,21 +2035,21 @@ msgstr "Habilitar skin helper artwork para búsqueda de addons"
 #: /1080i/SkinSettings.xml
 msgctxt "#31426"
 msgid "Enable Ratings on Widget Bar"
-msgstr "Habilitar Puntuaciones en Barra de widget"
+msgstr "Habilitar Puntuaciones en Barra de Widget"
 
 #: /1080i/SkinSettings.xml
 msgctxt "#31427"
-msgid "Enable Title  on Widget Bar"
-msgstr "Habilitar Titulo en Barra de Widget"
+msgid "Enable Title on Widget Bar"
+msgstr "Habilitar Título en Barra de Widget"
 
 #: /1080i/SkinSettings.xml
 msgctxt "#31428"
 msgid "Enable Netflix style Showcase Views"
-msgstr "Habilitar Vista de escaparate de estilo Netflix"
+msgstr "Habilitar Vista de Escaparate de estilo Netflix"
 
 msgctxt "#31429"
 msgid "Default action for trailers"
-msgstr "Accion por defecto para trailers"
+msgstr "Acción por defecto para trailers"
 
 #: /1080i/Includes_View.xml
 msgctxt "#31430"
@@ -2064,7 +2064,7 @@ msgstr "Habilitar Inicio Netflix"
 #: /1080i/SkinSettings.xml
 msgctxt "#31432"
 msgid "Enable Netflix Video Info"
-msgstr "Habilitar Info de Video Netflix"
+msgstr "Habilitar Info de Vídeo Netflix"
 
 #: /1080i/SkinSettings.xml
 msgctxt "#31433"
@@ -2074,7 +2074,7 @@ msgstr "Elegir Diseño de Menú"
 #: /1080i/SkinSettings.xml
 msgctxt "#31434"
 msgid "Enable Icon Only SideMenu"
-msgstr "habilitar solo Menu lateral de icono"
+msgstr "Habilitar solo Menu lateral de icono"
 
 msgctxt "#31435"
 msgid "AuraMod"
@@ -2087,7 +2087,7 @@ msgstr ""
 #: /1080i/SkinSettings.xml
 msgctxt "#31437"
 msgid "Enable Sidemenu auto-hide"
-msgstr "Habilitar auto-ocultar menu lateral"
+msgstr "Habilitar auto-ocultar menú lateral"
 
 #: /1080i/SkinSettings.xml
 msgctxt "#31438"
@@ -2097,12 +2097,12 @@ msgstr "Diseño de inicio simple estilo Netflix"
 #: /1080i/SkinSettings.xml
 msgctxt "#31439"
 msgid "Enable Menu Background Image"
-msgstr "Habilitar Imagen de fondo del Menu"
+msgstr "Habilitar Imagen de Fondo del Menú"
 
 #: /1080i/SkinSettings.xml
 msgctxt "#31440"
 msgid "Netflix Mixed Home Layout"
-msgstr "Diseño de inicio Mixto Netflix"
+msgstr "Diseño de Inicio Mixto Netflix"
 
 #: /1080i/SkinSettings.xml
 msgctxt "#31441"
@@ -2117,7 +2117,7 @@ msgstr "Elegir Estilo de Inicio"
 #: /1080i/Includes_View.xml
 msgctxt "#31443"
 msgid "Category"
-msgstr "Categoria"
+msgstr "Categoría"
 
 #: /1080i/SkinSettings.xml
 msgctxt "#31444"
@@ -2162,17 +2162,17 @@ msgstr "Parte Superior Horizontal"
 #: /1080i/SkinSettings.xml
 msgctxt "#31452"
 msgid "Choose Netflix Widget Style"
-msgstr "Elegir widget estilo Netflix"
+msgstr "Elegir Widget Estilo Netflix"
 
 #: /1080i/SkinSettings.xml
 msgctxt "#31453"
 msgid "Large Widgets"
-msgstr "Widgets grandes"
+msgstr "Widgets Grandes"
 
 #: /1080i/SkinSettings.xml
 msgctxt "#31454"
 msgid "Small Widgets"
-msgstr "Widgets pequeños"
+msgstr "Widgets Pequeños"
 
 #: /1080i/SkinSettings.xml
 msgctxt "#31455"
@@ -2187,12 +2187,12 @@ msgstr ""
 #: /1080i/SkinSettings.xml
 msgctxt "#31457"
 msgid "Enable multi-row Categories Widget"
-msgstr "Habilitar Categorias de varias filas"
+msgstr "Habilitar Categorías de varias filas"
 
 #: /1080i/SkinSettings.xml
 msgctxt "#31458"
 msgid "Enable Clearlogos on Widgets"
-msgstr "Activar Logos Claros en Widgets"
+msgstr "Activar Clearlogos en Widgets"
 
 #: /1080i/SkinSettings.xml
 msgctxt "#31459"
@@ -2202,12 +2202,12 @@ msgstr "Habilitar Info debajo de Destacados"
 #: /1080i/SkinSettings.xml
 msgctxt "#31461"
 msgid "Enable Video Info Trailer auto-play"
-msgstr "Habilitar reproduccion automatica del trailer"
+msgstr "Habilitar reproducción automática del Trailer"
 
 #: /1080i/SkinSettings.xml
 msgctxt "#31462"
 msgid "Disable Main Menu Label"
-msgstr "Desactivar Etiquetas del Menu principal"
+msgstr "Desactivar Etiquetas del Menú principal"
 
 #: /1080i/SkinSettings.xml
 msgctxt "#31463"
@@ -2227,7 +2227,7 @@ msgstr "Lista"
 #: /1080i/SkinSettings.xml
 msgctxt "#31466"
 msgid "Down key starts trailer in Netflix Showcase Views"
-msgstr "La tecla Abajo inicia el tráiler en Vista de escaparete Netflix"
+msgstr "La tecla Abajo inicia el tráiler en Vista de escaparate Netflix"
 
 #: /1080i/Includes_View_Posters.xml
 msgctxt "#31467"
@@ -2242,12 +2242,12 @@ msgstr "Temporada Netflix"
 #: /1080i/Includes_View_Posters.xml
 msgctxt "#31469"
 msgid "Side List Poster"
-msgstr "Poster de lista lateral"
+msgstr "Póster de lista lateral"
 
 #: /1080i/Includes_View_Posters.xml
 msgctxt "#31470"
 msgid "Season Showcase"
-msgstr "Escaparate de temporada"
+msgstr "Escaparate de Temporada"
 
 #: /1080i/SkinSettings.xml
 msgctxt "#31471"
@@ -2262,12 +2262,12 @@ msgstr "Lista de Paisajes"
 #: /1080i/Includes_View_Posters.xml
 msgctxt "#31473"
 msgid "List Poster"
-msgstr "Lista de Poster"
+msgstr "Lista de Póster"
 
 #: /1080i/Includes_View_Posters.xml
 msgctxt "#31474"
 msgid "Poster MediaInfo"
-msgstr "Poster Info de Medios"
+msgstr "Póster Info de Medios"
 
 #: /1080i/Includes_View_Posters.xml
 msgctxt "#31475"
@@ -2367,12 +2367,12 @@ msgstr "Año"
 #: /1080i/Custom_1119_EnableInfoLists.xml
 msgctxt "#31494"
 msgid "Similar"
-msgstr "Similar"
+msgstr "Similares"
 
 #: /1080i/Custom_1119_EnableInfoLists.xml
 msgctxt "#31495"
 msgid "Recommended"
-msgstr "Recomendado"
+msgstr "Recomendadas"
 
 #: /1080i/Custom_1119_EnableInfoLists.xml
 msgctxt "#31496"
@@ -2437,7 +2437,7 @@ msgstr "Descativar el Enfoque del Menú Izquierdo"
 #: /1080i/SkinSettings.xml
 msgctxt "#31508"
 msgid "Default Select Action - Show Information"
-msgstr "Acción Predeterminada de Selección - Mostrar Informacion"
+msgstr "Acción Predeterminada de Selección - Mostrar Información"
 
 #: /1080i/SkinSettings.xml
 msgctxt "#31509"
@@ -2462,7 +2462,7 @@ msgstr "Configurar Centros de Series"
 #: /1080i/SkinSettings.xml
 msgctxt "#31513"
 msgid "Configure Movie Hubs"
-msgstr "Configurar Centros de Peliculas"
+msgstr "Configurar Centros de Películas"
 
 #: /1080i/SkinSettings.xml
 msgctxt "#31514"
@@ -2537,17 +2537,17 @@ msgstr "Habilitar Submenú Películas/Series a la izquierda"
 #: /1080i/SkinSettings.xml
 msgctxt "#31528"
 msgid "Select TV Menu Items"
-msgstr "Seleccionar Elementos del Menu de Series"
+msgstr "Seleccionar Elementos del Menú de Series"
 
 #: /1080i/SkinSettings.xml
 msgctxt "#31529"
 msgid "Select Movie Menu Items"
-msgstr "Seleccionar Elementos del Menu de Películas"
+msgstr "Seleccionar Elementos del Menú de Películas"
 
 #: /1080i/SkinSettings.xml
 msgctxt "#31530"
 msgid "Configure Movie Lists 1"
-msgstr "Configurar Lista de Peliculas 1"
+msgstr "Configurar Lista de Películas 1"
 
 #: /1080i/SkinSettings.xml
 msgctxt "#31531"
@@ -2641,13 +2641,13 @@ msgstr "Configurar Netflix VideoInfo"
 
 #: /1080i/SkinSettings.xml
 msgctxt "#31549"
-msgid " Disable Netflix Overlay"
+msgid "Disable Netflix Overlay"
 msgstr "Desactivar Superposición de Netflix"
 
 #: /1080i/SkinSettings.xml
 msgctxt "#31550"
 msgid "Down key starts trailer in Showcase Views"
-msgstr "La Tecla Abajo Comienza Trailer en Vista de Escaparate"
+msgstr "La tecla abajo comienza trailer en Vista de Escaparate"
 
 #: /1080i/SkinSettings.xml
 msgctxt "#31551"
@@ -2817,7 +2817,7 @@ msgstr "Configurar APIs Metadatautils"
 #: /1080i/SkinSettings.xml
 msgctxt "#31584"
 msgid "Configure TMDBHelper APIs"
-msgstr "Configurar APIs TMDB Helper"
+msgstr "Configurar APIs TMDBHelper"
 
 #: /1080i/Custom_1126_MovieHub_config.xml
 msgctxt "#31585"
@@ -2982,7 +2982,7 @@ msgstr "Información del Actor"
 #: /1080i/Custom_1139_SearchWinRefresh.xml
 msgctxt "#31617"
 msgid "reload"
-msgstr "Recargar"
+msgstr "recargar"
 
 #: /1080i/Custom_1140_EnableSubmenuSize.xml
 msgctxt "#31618"
@@ -3142,12 +3142,12 @@ msgstr "Configurar Listas de Búsqueda"
 #: /1080i/Custom_1163_SearchConfig.xml
 msgctxt "#31649"
 msgid "Use default keyboard"
-msgstr "Usar Teclado Predeterminado"
+msgstr "Usar teclado predeterminado"
 
 #: /1080i/Custom_1163_SearchConfig.xml
 msgctxt "#31650"
 msgid "Enable Search History (requires tmdb lists)"
-msgstr "Habilitar Historial de Búsqueda (Requiere Listas TMDB)"
+msgstr "Habilitar Historial de Búsqueda (requiere listas TMDB)"
 
 #: /1080i/Custom_1164_MyLists.xml
 msgctxt "#31651"
@@ -3307,7 +3307,7 @@ msgstr "Reanudar"
 #: /1080i/DialogVideoInfo-Includes.xml
 msgctxt "#31688"
 msgid "Play from Beginning"
-msgstr "Reproducir Desde el Principio"
+msgstr "Reproducir desde el Principio"
 
 #: /1080i/DialogVideoInfo-Includes.xml
 msgctxt "#31689"
@@ -3452,7 +3452,7 @@ msgstr "Mi Guía de Programación"
 #: /1080i/Includes_Object.xml
 msgctxt "#31717"
 msgid "Continue Watching"
-msgstr "Continuar viendo"
+msgstr "Continuar Viendo"
 
 #: /1080i/Includes_Object.xml
 msgctxt "#31718"
@@ -3697,7 +3697,7 @@ msgstr "Ordenar Por"
 #: /1080i/script-skinshortcuts.xml
 msgctxt "#31766"
 msgid "Sort Direction"
-msgstr "Dirección de Orden"
+msgstr "Dirección del Orden"
 
 #: /1080i/script-skinshortcuts.xml
 msgctxt "#31767"
@@ -3787,12 +3787,12 @@ msgstr "restante"
 #: /1080i/Custom_1133_WidgetBar.xml
 msgctxt "#31784"
 msgid "Aura Widget Bar"
-msgstr ""
+msgstr "Barra de Widget Aura"
 
 #: /1080i/Custom_1157_VideoInfoButtons.xml
 msgctxt "#31785"
 msgid "Trailer"
-msgstr ""
+msgstr "Tráiler"
 
 #: /1080i/Custom_1157_VideoInfoButtons.xml
 msgctxt "#31786"
@@ -3807,12 +3807,12 @@ msgstr ""
 #: /1080i/DialogVideoInfo-Includes.xml
 msgctxt "#31788"
 msgid "No reviews available"
-msgstr ""
+msgstr "No hay reseñas disponibles"
 
 #: /1080i/Includes_Object.xml
 msgctxt "#31789"
 msgid "Aired"
-msgstr ""
+msgstr "Emitido"
 
 #: /1080i/Includes_Object.xml
 msgctxt "#31790"
@@ -3822,32 +3822,32 @@ msgstr ""
 #: /1080i/Includes_View_Posters.xml
 msgctxt "#31791"
 msgid "EPISODE"
-msgstr ""
+msgstr "EPISODIO"
 
 #: /1080i/Includes_WidgetMods.xml
 msgctxt "#31792"
 msgid "Length"
-msgstr ""
+msgstr "Duración"
 
 #: /1080i/script-skinshortcuts.xml
 msgctxt "#31793"
 msgid "Enable My List as Widget"
-msgstr ""
+msgstr "Habilitar Mi Lista como Widget"
 
 #: /1080i/script-skinshortcuts.xml
 msgctxt "#31794"
 msgid "Choose List"
-msgstr ""
+msgstr "Elegir Lista"
 
 #: /1080i/script-skinshortcuts.xml
 msgctxt "#31795"
 msgid "Widget Aspect"
-msgstr ""
+msgstr "Aspecto del Widget"
 
 #: /1080i/script-skinshortcuts.xml
 msgctxt "#31796"
 msgid "Widget Location"
-msgstr ""
+msgstr "Ubicación del Widget"
 
 #: /1080i/script-skinshortcuts.xml
 msgctxt "#31797"
@@ -3857,313 +3857,313 @@ msgstr ""
 #: /1080i/SkinSettings.xml
 msgctxt "#31798"
 msgid "LiveTV Button Color"
-msgstr ""
+msgstr "Color del Botón de LiveTV"
 
 #: /1080i/SkinSettings.xml
 msgctxt "#31799"
 msgid "Enable / disable Video Info lists"
-msgstr ""
+msgstr "Activar / desactivar listas de Video Info"
 
 #: /1080i/SkinSettings.xml
 msgctxt "#31800"
 msgid "Enable / disable Video Info buttons"
-msgstr ""
+msgstr "Activar / desactivar botones de Video Info"
 
 #: /1080i/SkinSettings.xml
 msgctxt "#31801"
 msgid "Enable Netflix Style Fixed Focus"
-msgstr ""
+msgstr "Activar Enfoque Fijo Estilo Netflix"
 
 #: /shortcuts/moviehubmenu.DATA.xml
 msgctxt "#31802"
 msgid "Movie Categories"
-msgstr ""
+msgstr "Categorías de Películas"
 
 #: /shortcuts/moviehubmenu.DATA.xml
 msgctxt "#31803"
 msgid "Movie Aura Hub"
-msgstr ""
+msgstr "Centro de Película Aura"
 
 #: /shortcuts/moviehubmenu.DATA.xml
 msgctxt "#31804"
 msgid "Movie Netflix Hub"
-msgstr ""
+msgstr "Centro de Película Netflix"
 
 #: /shortcuts/movies.DATA.xml
 msgctxt "#31805"
 msgid "Movie Lists"
-msgstr ""
+msgstr "Listas de Películas"
 
 #: /shortcuts/movies.DATA.xml
 msgctxt "#31806"
 msgid "Genres Hub"
-msgstr ""
+msgstr "Centro de Géneros"
 
 #: /shortcuts/searchmenus.DATA.xml
 msgctxt "#31807"
 msgid "TMDB Movies"
-msgstr ""
+msgstr "Películas TMDB"
 
 #: /shortcuts/searchmenus.DATA.xml
 msgctxt "#31808"
 msgid "TMDB TV Shows"
-msgstr ""
+msgstr "Series TMDB"
 
 #: /shortcuts/searchmenus.DATA.xml
 msgctxt "#31809"
 msgid "Seren Movies"
-msgstr ""
+msgstr "Películas Seren"
 
 #: /shortcuts/searchmenus.DATA.xml
 msgctxt "#31810"
 msgid "Seren TV Shows"
-msgstr ""
+msgstr "Series Seren"
 
 #: /shortcuts/searchmenus.DATA.xml
 msgctxt "#31811"
 msgid "Fen Movies"
-msgstr ""
+msgstr "Películas Fen"
 
 #: /shortcuts/searchmenus.DATA.xml
 msgctxt "#31812"
 msgid "Fen TV Shows"
-msgstr ""
+msgstr "Series Fen"
 
 #: /shortcuts/searchmenus.DATA.xml
 msgctxt "#31813"
 msgid "Venom Movies"
-msgstr ""
+msgstr "Películas Venom"
 
 #: /shortcuts/searchmenus.DATA.xml
 msgctxt "#31814"
 msgid "Venom TV Shows"
-msgstr ""
+msgstr "Series Venom"
 
 #: /shortcuts/searchmenus.DATA.xml
 msgctxt "#31816"
 msgid "Library Movies"
-msgstr ""
+msgstr "Biblioteca de Películas"
 
 #: /shortcuts/searchmenus.DATA.xml
 msgctxt "#31817"
 msgid "Library TV Shows"
-msgstr ""
+msgstr "Biblioteca de Series"
 
 #: /shortcuts/searchmenus.DATA.xml
 msgctxt "#31818"
 msgid "Library Episodes"
-msgstr ""
+msgstr "Biblioteca de Espisodios"
 
 #: /shortcuts/searchmenus.DATA.xml
 msgctxt "#31819"
 msgid "Library Genres"
-msgstr ""
+msgstr "Biblioteca de Géneros"
 
 #: /shortcuts/searchmenus.DATA.xml
 msgctxt "#31820"
 msgid "Library Year"
-msgstr ""
+msgstr "Biblioteca de Año"
 
 #: /shortcuts/searchmenus.DATA.xml
 msgctxt "#31821"
 msgid "Library Studio"
-msgstr ""
+msgstr "Biblioteca de Estudio"
 
 #: /shortcuts/searchmenus.DATA.xml
 msgctxt "#31822"
 msgid "Library Country"
-msgstr ""
+msgstr "Biblioteca de País"
 
 #: /shortcuts/searchmenus.DATA.xml
 msgctxt "#31823"
 msgid "Library Actor"
-msgstr ""
+msgstr "Biblioteca de Actor"
 
 #: /shortcuts/searchmenus.DATA.xml
 msgctxt "#31824"
 msgid "Music Videos"
-msgstr ""
+msgstr "Vídeos Musicales"
 
 #: /shortcuts/searchmenus.DATA.xml
 msgctxt "#31825"
 msgid "Music Video Artists"
-msgstr ""
+msgstr "Artistas de Vídeos Musicales"
 
 #: /shortcuts/tvhubmenu.DATA.xml
 msgctxt "#31826"
 msgid "TV Categories"
-msgstr ""
+msgstr "Categorías de TV"
 
 #: /shortcuts/tvhubmenu.DATA.xml
 msgctxt "#31827"
 msgid "TV Aura Hub"
-msgstr ""
+msgstr "Centro de TV Aura"
 
 #: /shortcuts/tvhubmenu.DATA.xml
 msgctxt "#31828"
 msgid "TV Netflix Hub"
-msgstr ""
+msgstr "Centro de TV Netflix"
 
 #: /shortcuts/tvshows.DATA.xml
 msgctxt "#31829"
 msgid "TV Lists"
-msgstr ""
+msgstr "Listas TV"
 
 #: /shortcuts/x1101.DATA.xml
 msgctxt "#31830"
 msgid "Media Hub"
-msgstr ""
+msgstr "Centro de Medios"
 
 #: /shortcuts/x1101.DATA.xml
 msgctxt "#31831"
 msgid "Academy Awards - Best Picture Winners"
-msgstr ""
+msgstr "Premios de la Academia - Ganadores de la Mejor Película"
 
 #: /shortcuts/x1101.DATA.xml
 msgctxt "#31832"
 msgid "Rotten Tomatoes: Best of 2018"
-msgstr ""
+msgstr "Rotten Tomatoes: Mejor de 2018"
 
 #: /shortcuts/x1101.DATA.xml
 msgctxt "#31833"
 msgid "2018 - Golden Globe Nominees & Winners"
-msgstr ""
+msgstr "2018 - Nominados y Ganadores de los Globos de Oro"
 
 #: /shortcuts/x1101.DATA.xml
 msgctxt "#31834"
 msgid "2018 - Oscar Nominees & Winners"
-msgstr ""
+msgstr "2018 - Nominados y Ganadores de los Oscar"
 
 #: /shortcuts/x1101.DATA.xml
 msgctxt "#31835"
 msgid "IMDB: Top Rated Movies"
-msgstr ""
+msgstr "IMDB: Películas Mejor Valoradas"
 
 #: /shortcuts/x1101.DATA.xml
 msgctxt "#31836"
 msgid "Reddit Top 250 (2018 Edition)"
-msgstr ""
+msgstr "Reddit Top 250 (Edición 2018)"
 
 #: /shortcuts/x1103.DATA.xml
 msgctxt "#31837"
 msgid "IMDB: Top Rated TV Shows"
-msgstr ""
+msgstr "IMDB: Series Mejor Valoradas"
 
 #: /shortcuts/x1103.DATA.xml
 msgctxt "#31838"
 msgid "Rolling Stone's 100 Greatest TV Shows of All Time"
-msgstr ""
+msgstr "Las 100 mejores series de todos los tiempos según Rolling Stone"
 
 #: /shortcuts/x1103.DATA.xml
 msgctxt "#31839"
 msgid "Most Popular"
-msgstr ""
+msgstr "Más Popular"
 
 #: /shortcuts/x1103.DATA.xml
 msgctxt "#31840"
 msgid "TV Shows 2018 ➛ Scripted (USA)"
-msgstr ""
+msgstr "Series 2018 ➛ Scripted (USA)"
 
 #: /shortcuts/x1103.DATA.xml
 msgctxt "#31841"
 msgid "TV Shows 2018 ➛ Scripted (UK)"
-msgstr ""
+msgstr "Series 2018 ➛ Scripted (UK)"
 
 #. Context: Genres
 #: /shortcuts/x1108.DATA.xml
 msgctxt "#31842"
 msgid "Action"
-msgstr ""
+msgstr "Acción"
 
 #. Context: Genres
 #: /shortcuts/x1108.DATA.xml
 msgctxt "#31843"
 msgid "Animation"
-msgstr ""
+msgstr "Animación"
 
 #. Context: Genres
 #: /shortcuts/x1108.DATA.xml
 msgctxt "#31844"
 msgid "Anime"
-msgstr ""
+msgstr "Anime"
 
 #. Context: Genres
 #: /shortcuts/x1108.DATA.xml
 msgctxt "#31845"
 msgid "Comedy"
-msgstr ""
+msgstr "Comedia"
 
 #. Context: Genres
 #: /shortcuts/x1108.DATA.xml
 msgctxt "#31846"
 msgid "Crime"
-msgstr ""
+msgstr "Crimen"
 
 #. Context: Genres
 #: /shortcuts/x1108.DATA.xml
 msgctxt "#31847"
-msgid "Documentary"
-msgstr ""
+msgid "Documental"
+msgstr "Documentales"
 
 #. Context: Genres
 #: /shortcuts/x1108.DATA.xml
 msgctxt "#31848"
 msgid "Drama"
-msgstr ""
+msgstr "Drama"
 
 #. Context: Genres
 #: /shortcuts/x1108.DATA.xml
 msgctxt "#31849"
 msgid "Family"
-msgstr ""
+msgstr "Familia"
 
 #. Context: Genres
 #: /shortcuts/x1108.DATA.xml
 msgctxt "#31850"
 msgid "History"
-msgstr ""
+msgstr "Historia"
 
 #. Context: Genres
 #: /shortcuts/x1108.DATA.xml
 msgctxt "#31851"
 msgid "Horror"
-msgstr ""
+msgstr "Terror"
 
 #. Context: Genres
 #: /shortcuts/x1108.DATA.xml
 msgctxt "#31852"
 msgid "Mystery"
-msgstr ""
+msgstr "Misterio"
 
 #. Context: Genres
 #: /shortcuts/x1108.DATA.xml
 msgctxt "#31853"
 msgid "Romance"
-msgstr ""
+msgstr "Romance"
 
 #. Context: Genres
 #: /shortcuts/x1108.DATA.xml
 msgctxt "#31854"
 msgid "Science Fiction"
-msgstr ""
+msgstr "Ciencia Ficción"
 
 #. Context: Genres
 #: /shortcuts/x1108.DATA.xml
 msgctxt "#31855"
 msgid "Superhero"
-msgstr ""
+msgstr "Superheroe"
 
 #. Context: Genres
 #: /shortcuts/x1108.DATA.xml
 msgctxt "#31856"
 msgid "Thriller"
-msgstr ""
+msgstr "Thriller"
 
 #. Context: Genres
 #: /shortcuts/x1108.DATA.xml
 msgctxt "#31857"
 msgid "War"
-msgstr ""
+msgstr "Guerra"
 
 #. Context: Genres
 #: /shortcuts/x1109.DATA.xml
@@ -4175,10 +4175,10 @@ msgstr ""
 #: /shortcuts/x1109.DATA.xml
 msgctxt "#31859"
 msgid "Home and Garden"
-msgstr ""
+msgstr "Hogar y Jardín"
 
 #. Context: Genres
 #: /shortcuts/x1109.DATA.xml
 msgctxt "#31860"
 msgid "Reality"
-msgstr ""
+msgstr "Reality"

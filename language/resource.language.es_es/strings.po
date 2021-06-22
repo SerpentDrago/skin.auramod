@@ -4181,34 +4181,34 @@ msgstr "Hogar y Jardín"
 #: /shortcuts/x1109.DATA.xml
 msgctxt "#31860"
 msgid "Reality"
-msgstr ""
+msgstr "Realidad"
 
 #: /1080i/Includes_Labels.xml
 msgctxt "#31861"
 msgid "Returning Series"
-msgstr ""
+msgstr "Series Retomadas"
 
 #: /1080i/Includes_Labels.xml
 msgctxt "#31862"
 msgid "Planned"
-msgstr ""
+msgstr "Planificada"
 
 #: /1080i/Includes_Labels.xml
 msgctxt "#31863"
 msgid "In Production"
-msgstr ""
+msgstr "En Producción"
 
 #: /1080i/Includes_Labels.xml
 msgctxt "#31864"
 msgid "Ended"
-msgstr ""
+msgstr "Finalizada"
 
 #: /1080i/Includes_Labels.xml
 msgctxt "#31865"
 msgid "Canceled"
-msgstr ""
+msgstr "Cancelada"
 
 #: /1080i/Includes_Labels.xml
 msgctxt "#31866"
 msgid "Pilot"
-msgstr ""
+msgstr "Piloto"

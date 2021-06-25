@@ -4216,42 +4216,42 @@ msgstr "Piloto"
 #: /1080i/Includes_Labels.xml
 msgctxt "#31867"
 msgid "Nominated for"
-msgstr ""
+msgstr "Indicado a"
 
 #: /1080i/Includes_Labels.xml
 msgctxt "#31868"
 msgid "Won"
-msgstr ""
+msgstr "Vencedor"
 
 #. Context: Further wins
 #: /1080i/Includes_Labels.xml
 msgctxt "#31869"
 msgid "Another"
-msgstr ""
+msgstr "Outro"
 
 #. Context: More than one win
 #: /1080i/Includes_Labels.xml
 msgctxt "#31870"
 msgid "wins"
-msgstr ""
+msgstr "vitórias"
 
 #. Context: Only one win
 #: /1080i/Includes_Labels.xml
 msgctxt "#31871"
 msgid "win"
-msgstr ""
+msgstr "vitória"
 
 #. Context: More than one nomination
 #: /1080i/Includes_Labels.xml
 msgctxt "#31872"
 msgid "nominations"
-msgstr ""
+msgstr "indicações"
 
 #. Context: Only one nomination
 #: /1080i/Includes_Labels.xml
 msgctxt "#31873"
 msgid "nomination"
-msgstr ""
+msgstr "indicação"
 
 #. Context: Awards in total
 #: /1080i/Includes_Labels.xml
@@ -4287,16 +4287,16 @@ msgstr ""
 #: /1080i/Includes_Labels.xml
 msgctxt "#31879"
 msgid "Starring"
-msgstr ""
+msgstr "Estrelando"
 
 #. Context: Rank in IMDB Top 250
 #: /1080i/Includes_Labels.xml
 msgctxt "#31880"
 msgid "Ranked"
-msgstr ""
+msgstr "Classificado"
 
 #. Context: Rank in IMDB Top 250
 #: /1080i/Includes_Labels.xml
 msgctxt "#31881"
 msgid "in IMDB Top 250"
-msgstr ""
+msgstr "no 250 Melhores do IMDB"

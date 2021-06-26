@@ -4304,14 +4304,14 @@ msgstr "en el Top 250 de IMBD"
 #: /1080i/Includes_Labels.xml
 msgctxt "#31882"
 msgid "Season Premiere"
-msgstr ""
+msgstr "Estreno de la Temporada"
 
 #: /1080i/Includes_Labels.xml
 msgctxt "#31883"
 msgid "Continue"
-msgstr ""
+msgstr "Continuar"
 
 #: /1080i/Includes_Labels.xml
 msgctxt "#31884"
 msgid "Episode"
-msgstr ""
+msgstr "Episodio"

@@ -13,7 +13,7 @@
     <control type="label">
       <left>60</left>
       <top>40</top>
-      <label>Actor Info</label>
+      <label>$LOCALIZE[31616]</label> <!-- Actor Info -->
       <height>40</height>
       <width>800</width>
       <aligny>top</aligny>

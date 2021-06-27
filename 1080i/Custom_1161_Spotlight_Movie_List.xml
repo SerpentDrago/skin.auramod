@@ -16,7 +16,7 @@
 
             <control type="label">
                 <description>Header Label</description>
-                <label>[CAPITALIZE]Spotlight Movie Lists[/CAPITALIZE]</label>
+                <label>[CAPITALIZE]$LOCALIZE[31779][/CAPITALIZE]</label> <!-- Spotlight Movie Lists -->
                 <textcolor>grey</textcolor>
                 <shadowcolor>dimgrey</shadowcolor>
                 <font>font_heading_small</font>
@@ -36,7 +36,7 @@
 
                         <control type="button" id="8002" description="List 1">
                             <include>Dialog_Standard_ListButton</include>
-                            <label>Movie List 1</label>
+                            <label>$LOCALIZE[31643]</label> <!-- Movie List 1 -->
                             <label2>$INFO[Skin.String(spotlightmovies1.label)]</label2>
                             <onclick condition="String.IsEmpty(Skin.String(spotlightmovies1.label))">RunScript(script.skinshortcuts,type=widgets&amp;showNone=true&amp;skinWidgetName=spotlightmovies1.label&amp;skinWidgetTarget=spotlightmovies1.target&amp;skinWidgetPath=spotlightmovies1.path)</onclick>
                             <onclick condition="!String.IsEmpty(Skin.String(spotlightmovies1.label))">Skin.Reset(spotlightmovies1.label)</onclick>
@@ -44,7 +44,7 @@
                         </control>
                         <control type="button" id="8003" description="List 2">
                             <include>Dialog_Standard_ListButton</include>
-                            <label>Movie List 2</label>
+                            <label>$LOCALIZE[31644]</label> <!-- Movie List 2 -->
                             <label2>$INFO[Skin.String(spotlightmovies2.label)]</label2>
                             <onclick condition="String.IsEmpty(Skin.String(spotlightmovies2.label))">RunScript(script.skinshortcuts,type=widgets&amp;showNone=true&amp;skinWidgetName=spotlightmovies2.label&amp;skinWidgetTarget=spotlightmovies2.target&amp;skinWidgetPath=spotlightmovies2.path)</onclick>
                             <onclick condition="!String.IsEmpty(Skin.String(spotlightmovies2.label))">Skin.Reset(spotlightmovies2.label)</onclick>
@@ -52,7 +52,7 @@
                         </control>
                         <control type="button" id="8004" description="List 3">
                             <include>Dialog_Standard_ListButton</include>
-                            <label>Movie List 3</label>
+                            <label>$LOCALIZE[31645]</label> <!-- Movie List 3 -->
                             <label2>$INFO[Skin.String(spotlightmovies3.label)]</label2>
                             <onclick condition="String.IsEmpty(Skin.String(spotlightmovies3.label))">RunScript(script.skinshortcuts,type=widgets&amp;showNone=true&amp;skinWidgetName=spotlightmovies3.label&amp;skinWidgetTarget=spotlightmovies3.target&amp;skinWidgetPath=spotlightmovies3.path)</onclick>
                             <onclick condition="!String.IsEmpty(Skin.String(spotlightmovies3.label))">Skin.Reset(spotlightmovies3.label)</onclick>
@@ -60,7 +60,7 @@
                         </control>
                         <control type="button" id="8005" description="List 4">
                             <include>Dialog_Standard_ListButton</include>
-                            <label>Movie List 4</label>
+                            <label>$LOCALIZE[31646]</label> <!-- Movie List 4 -->
                             <label2>$INFO[Skin.String(spotlightmovies4.label)]</label2>
                             <onclick condition="String.IsEmpty(Skin.String(spotlightmovies4.label))">RunScript(script.skinshortcuts,type=widgets&amp;showNone=true&amp;skinWidgetName=spotlightmovies4.label&amp;skinWidgetTarget=spotlightmovies4.target&amp;skinWidgetPath=spotlightmovies4.path)</onclick>
                             <onclick condition="!String.IsEmpty(Skin.String(spotlightmovies4.label))">Skin.Reset(spotlightmovies4.label)</onclick>

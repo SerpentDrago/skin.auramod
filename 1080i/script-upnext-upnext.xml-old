@@ -24,7 +24,7 @@
                 <height>64</height>
                 <aligny>center</aligny>
                 <font>font_small</font>
-                <label>Continue Watching...</label>
+                <label>$LOCALIZE[31717]...</label> <!-- Continue Watching -->
                 <textcolor>main_fg_100</textcolor>
                 <shadowcolor>bf000000</shadowcolor>
             </control>

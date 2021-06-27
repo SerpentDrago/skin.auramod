@@ -83,21 +83,21 @@
                     <selected>Skin.HasSetting(Ratings.IMDBVotes)</selected>
                 </control>
                 <control type="radiobutton" id="90072">
-                    <label>Star</label>
+                    <label>$LOCALIZE[31488]</label> <!-- Star -->
                     <radioposx>730</radioposx>
                     <include>Dialog_Standard_ListButton</include>
                     <onclick>Skin.ToggleSetting(Ratings.Star)</onclick>
                     <selected>!Skin.HasSetting(Ratings.Star)</selected>
                 </control>
                 <control type="radiobutton" id="90071">
-                    <label>Trakt Rating</label>
+                    <label>$LOCALIZE[31489]</label> <!-- Trakt Rating -->
                     <radioposx>730</radioposx>
                     <include>Dialog_Standard_ListButton</include>
                     <onclick>Skin.ToggleSetting(Ratings.Trakt)</onclick>
                     <selected>!Skin.HasSetting(Ratings.Trakt)</selected>
                 </control>
                 <control type="radiobutton" id="90073">
-                    <label>Trakt Votes</label>
+                    <label>$LOCALIZE[31490]</label> <!-- Trakt Votes -->
                     <radioposx>730</radioposx>
                     <include>Dialog_Standard_ListButton</include>
                     <onclick>Skin.ToggleSetting(Ratings.TraktVotes)</onclick>
@@ -113,7 +113,7 @@
                     <onclick condition="Skin.HasSetting(DisableLiked)">Skin.ToggleSetting(DisableLiked)</onclick>
                 </control>
                 <control type="radiobutton" id="9010">
-                    <label>Liked Percent</label>
+                    <label>$LOCALIZE[31491]</label> <!-- Liked Percent -->
                     <radioposx>730</radioposx>
                     <include>Dialog_Standard_ListButton</include>
                     <selected>Skin.HasSetting(DisableLiked)</selected>

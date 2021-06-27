@@ -15,7 +15,7 @@
             </include>
             <control type="label">
                 <description>Header Label</description>
-                <label>[CAPITALIZE]My Lists Configuration[/CAPITALIZE]</label>
+                <label>[CAPITALIZE]$LOCALIZE[31651][/CAPITALIZE]</label> <!-- My Lists Configuration -->
                 <textcolor>grey</textcolor>
                 <shadowcolor>dimgrey</shadowcolor>
                 <font>font_heading_small</font>
@@ -35,52 +35,52 @@
 
                        <control type="button" id="8001" description="Configure Search lists">
                             <include>Dialog_Standard_ListButton</include>
-                            <label>Configure Movie List</label>
+                            <label>$LOCALIZE[31652]</label> <!-- Configure Movie List -->
                             <onclick>RunScript(script.skinshortcuts,type=manage&amp;group=x1101)</onclick>
 			    <onright>SetFocus(8101)</onright>
                         </control>
                        <control type="button" id="8002" description="Configure Search lists">
                             <include>Dialog_Standard_ListButton</include>
-                            <label>Configure TV List</label>
+                            <label>$LOCALIZE[31653]</label> <!-- Configure TV List -->
                             <onclick>RunScript(script.skinshortcuts,type=manage&amp;group=x1103)</onclick>
                             <onright>SetFocus(8102)</onright>
                         </control>
                        <control type="button" id="8003" description="Configure Search lists">
                             <include>Dialog_Standard_ListButton</include>
-                            <label>Configure My Lists 1</label>
+                            <label>$LOCALIZE[31654]</label> <!-- Configure My Lists 1 -->
                             <onclick>RunScript(script.skinshortcuts,type=manage&amp;group=x1105)</onclick>
                             <onright>SetFocus(8103)</onright>
                         </control>
                        <control type="button" id="8004" description="Configure Search lists">
                             <include>Dialog_Standard_ListButton</include>
-                            <label>Configure My Lists 2</label>
+                            <label>$LOCALIZE[31655]</label> <!-- Configure My Lists 2 -->
                             <onclick>RunScript(script.skinshortcuts,type=manage&amp;group=x1106)</onclick>
                             <onright>SetFocus(8104)</onright>
                         </control>
                        <control type="button" id="8005" description="Configure Search lists">
                             <include>Dialog_Standard_ListButton</include>
-                            <label>Configure My Lists 3</label>
+                            <label>$LOCALIZE[31656]</label> <!-- Configure My Lists 3 -->
                             <onclick>RunScript(script.skinshortcuts,type=manage&amp;group=x1107)</onclick>
                             <onright>SetFocus(8105)</onright>
                         </control>
                        <control type="button" id="8006" description="Configure Search lists">
                             <include>Dialog_Standard_ListButton</include>
-                            <label>Configure Addons Lists 1</label>
+                            <label>$LOCALIZE[31657]</label> <!-- Configure Addons Lists 1 -->
                             <onclick>RunScript(script.skinshortcuts,type=manage&amp;group=x1110)</onclick>
                         </control>
                        <control type="button" id="8007" description="Configure Search lists">
                             <include>Dialog_Standard_ListButton</include>
-                            <label>Configure Addons Lists 2</label>
+                            <label>$LOCALIZE[31658]</label> <!-- Configure Addons Lists 2 -->
                             <onclick>RunScript(script.skinshortcuts,type=manage&amp;group=x1111)</onclick>
                         </control>
                        <control type="button" id="8008" description="Configure Search lists">
                             <include>Dialog_Standard_ListButton</include>
-                            <label>Configure LiveTV Lists 1</label>
+                            <label>$LOCALIZE[31659]</label> <!-- Configure LiveTV Lists 1 -->
                             <onclick>RunScript(script.skinshortcuts,type=manage&amp;group=x1112)</onclick>
                         </control>
                        <control type="button" id="8009" description="Configure Search lists">
                             <include>Dialog_Standard_ListButton</include>
-                            <label>Configure LiveTV Lists 2</label>
+                            <label>$LOCALIZE[31660]</label> <!-- Configure LiveTV Lists 2 -->
                             <onclick>RunScript(script.skinshortcuts,type=manage&amp;group=x1113)</onclick>
                         </control>
 
@@ -97,7 +97,7 @@
                 <usecontrolcoords>true</usecontrolcoords>
                         <control type="radiobutton" id="8101" description="Aura Style">
                             <include>Dialog_Standard_ListButton</include>
-                            <label>Use AuraMod style for Menu Hub</label>
+                            <label>$LOCALIZE[31661]</label> <!-- Use AuraMod style for Menu Hub -->
                             <radioposx>530</radioposx>
                             <onclick>Skin.ToggleSetting(EnableAuraMovie1)</onclick>
                             <selected>Skin.HasSetting(EnableAuraMovie1)</selected>
@@ -106,7 +106,7 @@
                         </control>
                         <control type="radiobutton" id="8102" description="Aura Style">
                             <include>Dialog_Standard_ListButton</include>
-                            <label>Use AuraMod style for Menu Hub</label>
+                            <label>$LOCALIZE[31661]</label> <!-- Use AuraMod style for Menu Hub -->
                             <radioposx>530</radioposx>
                             <onclick>Skin.ToggleSetting(EnableAuraTV1)</onclick>
                             <selected>Skin.HasSetting(EnableAuraTV1)</selected>
@@ -115,7 +115,7 @@
                         </control>
                         <control type="radiobutton" id="8103" description="Aura Style">
                             <include>Dialog_Standard_ListButton</include>
-                            <label>Use AuraMod style for Menu Hub</label>
+                            <label>$LOCALIZE[31661]</label> <!-- Use AuraMod style for Menu Hub -->
                             <radioposx>530</radioposx>
                             <onclick>Skin.ToggleSetting(EnableAuraMy1)</onclick>
                             <selected>Skin.HasSetting(EnableAuraMy1)</selected>
@@ -124,7 +124,7 @@
                         </control>
                         <control type="radiobutton" id="8104" description="Aura Style">
                             <include>Dialog_Standard_ListButton</include>
-                            <label>Use AuraMod style for Menu Hub</label>
+                            <label>$LOCALIZE[31661]</label> <!-- Use AuraMod style for Menu Hub -->
                             <radioposx>530</radioposx>
                             <onclick>Skin.ToggleSetting(EnableAuraMy2)</onclick>
                             <selected>Skin.HasSetting(EnableAuraMy2)</selected>
@@ -133,7 +133,7 @@
                         </control>
                         <control type="radiobutton" id="8105" description="Aura Style">
                             <include>Dialog_Standard_ListButton</include>
-                            <label>Use AuraMod style for Menu Hub</label>
+                            <label>$LOCALIZE[31661]</label> <!-- Use AuraMod style for Menu Hub -->
                             <radioposx>530</radioposx>
                             <onclick>Skin.ToggleSetting(EnableAuraMy3)</onclick>
                             <selected>Skin.HasSetting(EnableAuraMy3)</selected>

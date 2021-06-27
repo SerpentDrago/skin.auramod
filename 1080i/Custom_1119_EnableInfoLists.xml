@@ -29,7 +29,7 @@
 		<onup>9000</onup>
 		<ondown>9000</ondown>
                 <control type="radiobutton" id="9010">
-                    <label>Disable All</label>
+                    <label>$LOCALIZE[31492]</label> <!-- Disable All -->
                     <radioposx>730</radioposx>
                     <include>Dialog_Standard_ListButton</include>
                     <selected>Skin.HasSetting(VideoInfo.Disable)</selected>
@@ -52,7 +52,7 @@
 		    <enable>!Skin.HasSetting(VideoInfo.Disable)</enable>
                 </control>
                 <control type="radiobutton" id="9003">
-                    <label>Year</label>
+                    <label>$LOCALIZE[31493]</label> <!-- Year -->
                     <radioposx>730</radioposx>
                     <include>Dialog_Standard_ListButton</include>
                     <onclick>Skin.ToggleSetting(VideoInfo.Year)</onclick>
@@ -60,7 +60,7 @@
 		    <enable>!Skin.HasSetting(VideoInfo.Disable)</enable>
                 </control>
                 <control type="radiobutton" id="9004">
-                    <label>Similar</label>
+                    <label>$LOCALIZE[31494]</label> <!-- Similar -->
                     <radioposx>730</radioposx>
                     <include>Dialog_Standard_ListButton</include>
                     <onclick>Skin.ToggleSetting(VideoInfo.Similar)</onclick>
@@ -68,7 +68,7 @@
 		    <enable>!Skin.HasSetting(VideoInfo.Disable)</enable>
                 </control>
                 <control type="radiobutton" id="9005">
-                    <label>Recommended</label>
+                    <label>$LOCALIZE[31495]</label> <!-- Recommended -->
                     <radioposx>730</radioposx>
                     <include>Dialog_Standard_ListButton</include>
                     <onclick>Skin.ToggleSetting(VideoInfo.Recommended)</onclick>
@@ -76,7 +76,7 @@
 		    <enable>!Skin.HasSetting(VideoInfo.Disable)</enable>
                 </control>
                 <control type="radiobutton" id="9006">
-                    <label>Studio</label>
+                    <label>$LOCALIZE[31496]</label> <!-- Studio -->
                     <radioposx>730</radioposx>
                     <include>Dialog_Standard_ListButton</include>
                     <onclick>Skin.ToggleSetting(VideoInfo.Studio)</onclick>
@@ -84,7 +84,7 @@
 		    <enable>!Skin.HasSetting(VideoInfo.Disable)</enable>
                 </control>
                 <control type="radiobutton" id="9007">
-                    <label>Genre</label>
+                    <label>$LOCALIZE[31497]</label> <!-- Genre -->
                     <radioposx>730</radioposx>
                     <include>Dialog_Standard_ListButton</include>
                     <onclick>Skin.ToggleSetting(VideoInfo.Genre)</onclick>
@@ -92,7 +92,7 @@
 		    <enable>!Skin.HasSetting(VideoInfo.Disable)</enable>
                 </control>
                 <control type="radiobutton" id="9008">
-                    <label>Movie Sets</label>
+                    <label>$LOCALIZE[31498]</label> <!-- Movie Sets -->
                     <radioposx>730</radioposx>
                     <include>Dialog_Standard_ListButton</include>
                     <onclick>Skin.ToggleSetting(VideoInfo.Sets)</onclick>
@@ -108,7 +108,7 @@
 		    <enable>!Skin.HasSetting(VideoInfo.Disable)</enable>
                 </control>
                 <control type="radiobutton" id="9011">
-                    <label>Seasons</label>
+                    <label>$LOCALIZE[31499]</label> <!-- Seasons -->
                     <radioposx>730</radioposx>
                     <include>Dialog_Standard_ListButton</include>
                     <onclick>Skin.ToggleSetting(VideoInfo.Seasons)</onclick>
@@ -116,7 +116,7 @@
                     <enable>!Skin.HasSetting(VideoInfo.Disable)</enable>
                 </control>
                 <control type="radiobutton" id="9012">
-                    <label>Episodes</label>
+                    <label>$LOCALIZE[31500]</label> <!-- Episodes -->
                     <radioposx>730</radioposx>
                     <include>Dialog_Standard_ListButton</include>
                     <onclick>Skin.ToggleSetting(VideoInfo.Episodes)</onclick>

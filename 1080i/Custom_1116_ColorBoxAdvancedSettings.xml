@@ -189,7 +189,7 @@
                 <description>Control Area</description>
                 <right>20</right>
                 <width>680</width>
-                <top>100</top>
+                <top>465</top>
                 <height>581</height>
                 <itemgap>10</itemgap>
                 <orientation>vertical</orientation>
@@ -203,7 +203,7 @@
                 <control type="textbox">
                     <left>15</left>
                     <right>15</right>
-                    <height>auto</height>
+                    <height>690</height>
                     <textcolor>dialog_fg_70</textcolor>
                     <font>font_tiny</font>
                     <label>[B]$LOCALIZE[31320][/B][CR]$LOCALIZE[31322]</label>

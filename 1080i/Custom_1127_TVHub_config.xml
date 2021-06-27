@@ -14,7 +14,7 @@
 
             <control type="label">
                 <description>Header Label</description>
-                <label>[CAPITALIZE]TV Hub Configuration[/CAPITALIZE]</label>
+                <label>[CAPITALIZE]$LOCALIZE[31591][/CAPITALIZE]</label> <!-- TV Hub Configuration -->
 		<textcolor>grey</textcolor>
 		<shadowcolor>dimgrey</shadowcolor>
 		<font>font_heading_small</font>
@@ -48,39 +48,39 @@
                 <usecontrolcoords>true</usecontrolcoords>
                        <control type="button" id="8001" description="TV Lists Items">
                             <include>Dialog_Standard_ListButton</include>
-                            <label>TV Lists Hub Items</label>
+                            <label>$LOCALIZE[31592]</label> <!-- TV Lists Hub Items -->
                             <onfocus>SetProperty(Image_Preview,special://skin/extras/backgrounds/viewmodes/hub-tv-categories.jpg)</onfocus>
             		     <onclick>RunScript(script.skinshortcuts,type=manage&amp;group=x1104)</onclick>
                         </control>
                         <control type="button" id="8002" description="TV Aura Hub Items">
                             <include>Dialog_Standard_ListButton</include>
-                            <label>TV Aura Hub Items</label>
+                            <label>$LOCALIZE[31593]</label> <!-- TV Aura Hub Items -->
                             <onfocus>SetProperty(Image_Preview,special://skin/extras/backgrounds/viewmodes/hub-tv-aura.jpg)</onfocus>
 			    <onclick>RunScript(script.skinshortcuts,type=manage&amp;group=aurahubtv)</onclick> 
                         </control>
                         <control type="radiobutton" id="80021" description="TV Aura Hub Items">
                             <include>Dialog_Standard_ListButton</include>
                             <radioposx>630</radioposx>
-                            <label> - Enable Compact Widget spacing</label>
+                            <label> - $LOCALIZE[31588]</label> <!-- Enable Compact Widget spacing -->
                             <selected>Skin.HasSetting(AuraHubSpacingSmall)</selected>
                             <onclick>Skin.ToggleSetting(AuraHubSpacingSmall)</onclick>
                             <onfocus>SetProperty(Image_Preview,special://skin/extras/backgrounds/viewmodes/hub-tv-aura-small.jpg)</onfocus>
                         </control>
                         <control type="button" id="8003" description="TV Netflix Hub Items">
                             <include>Dialog_Standard_ListButton</include>
-                            <label>TV Netflix Hub Items</label>
+                            <label>$LOCALIZE[31594]</label> <!-- TV Netflix Hub Items -->
                             <onfocus>SetProperty(Image_Preview,special://skin/extras/backgrounds/viewmodes/hub-tv-netflix.jpg)</onfocus>
 			    <onclick>RunScript(script.skinshortcuts,type=manage&amp;group=netflixhubtv)</onclick>
                         </control>
                         <control type="button" id="8004" description="TV Genre Hub Items">
                             <include>Dialog_Standard_ListButton</include>
-                            <label>TV Genre Hub Items</label>
+                            <label>$LOCALIZE[31595]</label> <!-- TV Genre Hub Items -->
                             <onfocus>SetProperty(Image_Preview,special://skin/extras/backgrounds/viewmodes/hub-tv-genres.jpg)</onfocus>
 			    <onclick>RunScript(script.skinshortcuts,type=manage&amp;group=x1109)</onclick>
                         </control>
                         <control type="button" id="8005" description="TV Networks Hub Items">
                             <include>Dialog_Standard_ListButton</include>
-                            <label>TV Networks Hub Items</label>
+                            <label>$LOCALIZE[31596]</label> <!-- TV Networks Hub Items -->
                             <onfocus>SetProperty(Image_Preview,special://skin/extras/backgrounds/viewmodes/hub-tv-networks.jpg)</onfocus>
 			    <onclick>RunScript(script.skinshortcuts,type=manage&amp;group=hubtvnetworks)</onclick>
                         </control>

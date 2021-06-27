@@ -2,7 +2,7 @@
 <shortcuts>
 	<shortcut>
 		<defaultID />
-		<label>Action</label>
+		<label>$LOCALIZE[31842]</label> <!-- Action -->
 		<label2>Video Add-On</label2>
 		<icon>DefaultShortcut.png</icon>
 		<thumb></thumb>
@@ -10,7 +10,7 @@
 	</shortcut>
 	<shortcut>
 		<defaultID />
-		<label>Animation</label>
+		<label>$LOCALIZE[31843]</label> <!-- Animation -->
 		<label2>Video Add-On</label2>
 		<icon>DefaultShortcut.png</icon>
                 <thumb></thumb>
@@ -18,7 +18,7 @@
 	</shortcut>
 	<shortcut>
 		<defaultID />
-		<label>Anime</label>
+		<label>$LOCALIZE[31844]</label> <!-- Anime -->
 		<label2>Video Add-On</label2>
 		<icon>DefaultShortcut.png</icon>
                 <thumb></thumb>
@@ -26,7 +26,7 @@
 	</shortcut>
 	<shortcut>
 		<defaultID />
-		<label>Comedy</label>
+		<label>$LOCALIZE[31845]</label> <!-- Comedy -->
 		<label2>Video Add-On</label2>
 		<icon>DefaultShortcut.png</icon>
                 <thumb></thumb>
@@ -34,7 +34,7 @@
 	</shortcut>
 	<shortcut>
 		<defaultID />
-		<label>Crime</label>
+		<label>$LOCALIZE[31846]</label> <!-- Crime -->
 		<label2>Video Add-On</label2>
 		<icon>DefaultShortcut.png</icon>
                 <thumb></thumb>
@@ -42,7 +42,7 @@
 	</shortcut>
 	<shortcut>
 		<defaultID />
-		<label>Documentary</label>
+		<label>$LOCALIZE[31847]</label> <!-- Documentary -->
 		<label2>Video Add-On</label2>
 		<icon>DefaultShortcut.png</icon>
                 <thumb></thumb>
@@ -50,7 +50,7 @@
 	</shortcut>
 	<shortcut>
 		<defaultID />
-		<label>Drama</label>
+		<label>$LOCALIZE[31848]</label> <!-- Drama -->
 		<label2>Video Add-On</label2>
 		<icon>DefaultShortcut.png</icon>
                 <thumb></thumb>
@@ -58,7 +58,7 @@
 	</shortcut>
 	<shortcut>
 		<defaultID />
-		<label>Family</label>
+		<label>$LOCALIZE[31849]</label> <!-- Family -->
 		<label2>Video Add-On</label2>
 		<icon>DefaultShortcut.png</icon>
                 <thumb></thumb>
@@ -66,7 +66,7 @@
 	</shortcut>
 	<shortcut>
 		<defaultID />
-		<label>History</label>
+		<label>$LOCALIZE[31850]</label> <!-- History -->
 		<label2>Video Add-On</label2>
 		<icon>DefaultShortcut.png</icon>
                 <thumb></thumb>
@@ -74,7 +74,7 @@
 	</shortcut>
 	<shortcut>
 		<defaultID />
-		<label>Horror</label>
+		<label>$LOCALIZE[31851]</label> <!-- Horror -->
 		<label2>Video Add-On</label2>
 		<icon>DefaultShortcut.png</icon>
                 <thumb></thumb>
@@ -82,7 +82,7 @@
 	</shortcut>
 	<shortcut>
 		<defaultID />
-		<label>Mystery</label>
+		<label>$LOCALIZE[31852]</label> <!-- Mystery -->
 		<label2>Video Add-On</label2>
 		<icon>DefaultShortcut.png</icon>
                 <thumb></thumb>
@@ -90,7 +90,7 @@
 	</shortcut>
 	<shortcut>
 		<defaultID />
-		<label>Romance</label>
+		<label>$LOCALIZE[31853]</label> <!-- Romance -->
 		<label2>Video Add-On</label2>
 		<icon>DefaultShortcut.png</icon>
                 <thumb></thumb>
@@ -98,7 +98,7 @@
 	</shortcut>
 	<shortcut>
 		<defaultID />
-		<label>Science Fiction</label>
+		<label>$LOCALIZE[31854]</label> <!-- Science Fiction -->
 		<label2>Video Add-On</label2>
 		<icon>DefaultShortcut.png</icon>
                 <thumb></thumb>
@@ -106,7 +106,7 @@
 	</shortcut>
 	<shortcut>
 		<defaultID />
-		<label>Superhero</label>
+		<label>$LOCALIZE[31855]</label> <!-- Superhero -->
 		<label2>Video Add-On</label2>
 		<icon>DefaultShortcut.png</icon>
                 <thumb></thumb>
@@ -114,7 +114,7 @@
 	</shortcut>
 	<shortcut>
 		<defaultID />
-		<label>Thriller</label>
+		<label>$LOCALIZE[31856]</label> <!-- Thriller -->
 		<label2>Video Add-On</label2>
 		<icon>DefaultShortcut.png</icon>
                 <thumb></thumb>
@@ -122,7 +122,7 @@
 	</shortcut>
 	<shortcut>
 		<defaultID />
-		<label>War</label>
+		<label>$LOCALIZE[31857]</label> <!-- War -->
 		<label2>Video Add-On</label2>
 		<icon>DefaultShortcut.png</icon>
                 <thumb></thumb>

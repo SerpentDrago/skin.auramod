@@ -144,7 +144,7 @@
                 <height>20</height>
                 <font>font_heading_small</font>
                 <textcolor>white</textcolor>
-                <label>Channel</label>
+                <label>$LOCALIZE[31744]</label> <!-- Channel -->
                 </control> 
               <control type="label">
                 <top>-40</top>
@@ -153,7 +153,7 @@
                 <height>20</height>
                 <font>font_heading_small</font>
                 <textcolor>white</textcolor>
-                <label>Now</label>
+                <label>$LOCALIZE[31745]</label> <!-- Now -->
                 </control>
               <control type="label">
                 <top>-40</top>
@@ -162,7 +162,7 @@
                 <height>20</height>
                 <font>font_heading_small</font>
                 <textcolor>white</textcolor>
-                <label>Next</label>
+                <label>$LOCALIZE[31746]</label> <!-- Next -->
                 </control>
               <control type="label">
                 <top>-40</top>
@@ -171,7 +171,7 @@
                 <height>20</height>
                 <font>font_heading_small</font>
                 <textcolor>white</textcolor>
-                <label>Start</label>
+                <label>$LOCALIZE[31747]</label> <!-- Start -->
                 </control>
               <control type="label">
                 <top>-40</top>
@@ -180,7 +180,7 @@
                 <height>20</height>
                 <font>font_heading_small</font>
                 <textcolor>white</textcolor>
-                <label>Ends</label>
+                <label>$LOCALIZE[31748]</label> <!-- Ends -->
                 </control>
             </control>
         </control>

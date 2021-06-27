@@ -9,10 +9,10 @@
       <include>Animation_Right</include>
       <include>object_menuhub_includes</include>
       <include condition="Skin.HasSetting(DisableSubMenuVert)">Home_MovieHubMenu_Layout</include>
-    <control type="label">
+    <control type="label" description="Categories">
       <left>60</left>
       <top>40</top>
-      <label>Categories</label>
+      <label>$LOCALIZE[31670]</label>
       <height>40</height>
       <width>350</width>
       <align>left</align>
@@ -21,12 +21,12 @@
       <font>font_heading_small</font>
       <visible>Control.HasFocus(505) | Control.HasFocus(401)</visible>
     </control>
-    <control type="button" id="5051">
+    <control type="button" id="5051" description="Hub Empty - Choose Items">
      <centerleft>50%</centerleft>
      <centertop>50%</centertop>
      <width>500</width>
      <height>60</height>
-     <label>Hub Empty - Choose Items</label>
+     <label>$LOCALIZE[31671]</label>
      <textcolor>white</textcolor>
      <focusedcolor>White</focusedcolor>
      <texturefocus colordiffuse="$VAR[ColorHighlight]" border="16">common/white.png</texturefocus>

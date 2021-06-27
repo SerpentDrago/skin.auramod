@@ -1,3 +1,16 @@
+v1.0.36
+-Localization rework
+-Add localization for many skin labels
+-Add new localized labels to all languages
+-Add en_gb, nl_nl, pt_br strings.po
+-Fix localization issues in all strings.po
+-Fix TV show status being cut-off
+-Fix LoveFilm view ratings being cut-off
+-Fix episode airdate being cut-off
+-Fix script.skinshortcuts header label being cut-off
+-Fix RT critics consensus visibility
+-Fix double end tag
+-Fix colorbox advanced blur settings textbox position
 v1.0.35
 -Fix Netflix Home Info "jumping" when clearlogo missing for adjacent item
 v1.0.34

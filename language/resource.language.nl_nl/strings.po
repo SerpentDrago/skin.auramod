@@ -114,7 +114,7 @@ msgstr "Sluiten"
 #: /1080i/script-globalsearch-main.xml
 msgctxt "#31020"
 msgid "m"
-msgstr ""
+msgstr "m"
 
 #: /1080i/SkinSettings.xml
 msgctxt "#31021"
@@ -522,7 +522,7 @@ msgstr ""
 
 msgctxt "#31102"
 msgid "min"
-msgstr ""
+msgstr "min"
 
 msgctxt "#31103"
 msgid "Live TV"
@@ -1438,7 +1438,7 @@ msgstr ""
 #: /1080i/Includes_Items.xml
 msgctxt "#31306"
 msgid "Special Features"
-msgstr ""
+msgstr "Speciale eigenschappen"
 
 #: /1080i/SkinSettings.xml
 msgctxt "#31307"
@@ -1688,7 +1688,7 @@ msgstr ""
 #: /1080i/script-script.extendedinfo-DialogInfo.xml
 msgctxt "#31356"
 msgid "Years Old"
-msgstr "Jaar oud"
+msgstr "Jaren oud"
 
 #: /1080i/script-script.extendedinfo-DialogInfo.xml
 msgctxt "#31357"
@@ -1788,7 +1788,7 @@ msgstr "Verlopen op achterpanelen"
 #: /1080i/SkinSettings.xml /1080i/SkinSettings.xml
 msgctxt "#31376"
 msgid " - Display \"See more\" widget item"
-msgstr "- Geef het widget item \"Zie meer\" weer"
+msgstr " - Geef het widget item \"Zie meer\" weer"
 
 #: /1080i/SkinSettings.xml
 msgctxt "#31377"
@@ -1843,7 +1843,7 @@ msgstr "OSD-bedieningselementen automatisch sluiten na vertraging (in seconden)"
 #: /1080i/SkinSettings.xml
 msgctxt "#31387"
 msgid "Splash screen image"
-msgstr "Splash scherm afbeelding"
+msgstr "Afbeelding op het opstartscherm"
 
 #: /1080i/DialogVideoInfo.xml
 msgctxt "#31388"
@@ -1888,7 +1888,7 @@ msgstr "Muziekafspeellijst"
 #: /1080i/Includes_Items.xml
 msgctxt "#31396"
 msgid "Video Playlist"
-msgstr ""
+msgstr "Video afspeellijst"
 
 #: /1080i/Includes_View_Posters.xml
 msgctxt "#31397"
@@ -2093,12 +2093,12 @@ msgstr "Schakel Sidemenu automatisch verbergen in"
 #: /1080i/SkinSettings.xml
 msgctxt "#31438"
 msgid "Netflix Simple Home Layout"
-msgstr ""
+msgstr "Netflix eenvoudige Home layout"
 
 #: /1080i/SkinSettings.xml
 msgctxt "#31439"
 msgid "Enable Menu Background Image"
-msgstr ""
+msgstr "Achtergrondafbeelding menu inschakelen"
 
 #: /1080i/SkinSettings.xml
 msgctxt "#31440"
@@ -2158,12 +2158,12 @@ msgstr "Verticaal volledig"
 #: /1080i/SkinSettings.xml
 msgctxt "#31451"
 msgid "Horizontal Top"
-msgstr ""
+msgstr "Horizontale bovenkant"
 
 #: /1080i/SkinSettings.xml
 msgctxt "#31452"
 msgid "Choose Netflix Widget Style"
-msgstr ""
+msgstr "Kies Netflix widgetstijl"
 
 #: /1080i/SkinSettings.xml
 msgctxt "#31453"
@@ -2203,12 +2203,12 @@ msgstr ""
 #: /1080i/SkinSettings.xml
 msgctxt "#31461"
 msgid "Enable Video Info Trailer auto-play"
-msgstr ""
+msgstr "Automatisch afspelen van video info trailer inschakelen"
 
 #: /1080i/SkinSettings.xml
 msgctxt "#31462"
 msgid "Disable Main Menu Label"
-msgstr ""
+msgstr "Label hoofdmenu uitschakelen"
 
 #: /1080i/SkinSettings.xml
 msgctxt "#31463"
@@ -2443,7 +2443,7 @@ msgstr "Standaard actie selecteren - Informatie weergeven"
 #: /1080i/SkinSettings.xml
 msgctxt "#31509"
 msgid "Media Types"
-msgstr ""
+msgstr "Mediatypen"
 
 #: /1080i/SkinSettings.xml
 msgctxt "#31510"
@@ -2508,92 +2508,92 @@ msgstr "Aangepaste tv lijsten configureren"
 #: /1080i/SkinSettings.xml
 msgctxt "#31522"
 msgid "Configure LiveTV Spotlight"
-msgstr ""
+msgstr "LiveTV Spotlight configureren"
 
 #: /1080i/SkinSettings.xml
 msgctxt "#31523"
 msgid "Search"
-msgstr ""
+msgstr "Zoeken"
 
 #: /1080i/SkinSettings.xml
 msgctxt "#31524"
 msgid "Configure Search Lists"
-msgstr ""
+msgstr "Zoeklijsten configureren"
 
 #: /1080i/SkinSettings.xml
 msgctxt "#31525"
 msgid "Use default keyboard"
-msgstr ""
+msgstr "Standaard toetsenbord gebruiken"
 
 #: /1080i/SkinSettings.xml
 msgctxt "#31526"
 msgid "Enable MainMenu on Hubs"
-msgstr ""
+msgstr "Hoofdmenu inschakelen op Hubs"
 
 #: /1080i/SkinSettings.xml
 msgctxt "#31527"
 msgid "Enable TV/Movie Submenu on left"
-msgstr ""
+msgstr "Schakel het tv/filmsubmenu links in"
 
 #: /1080i/SkinSettings.xml
 msgctxt "#31528"
 msgid "Select TV Menu Items"
-msgstr ""
+msgstr "Selecteer tv menu items"
 
 #: /1080i/SkinSettings.xml
 msgctxt "#31529"
 msgid "Select Movie Menu Items"
-msgstr ""
+msgstr "Selecteer filmmenu items"
 
 #: /1080i/SkinSettings.xml
 msgctxt "#31530"
 msgid "Configure Movie Lists 1"
-msgstr ""
+msgstr "Filmlijsten configureren 1"
 
 #: /1080i/SkinSettings.xml
 msgctxt "#31531"
 msgid "Enable AuraHub style"
-msgstr ""
+msgstr "AuraHub stijl inschakelen"
 
 #: /1080i/SkinSettings.xml
 msgctxt "#31532"
 msgid "Configure TV Lists 1"
-msgstr ""
+msgstr "Tv lijsten configureren 1"
 
 #: /1080i/SkinSettings.xml
 msgctxt "#31533"
 msgid "Configure My Lists 1"
-msgstr ""
+msgstr "Mijn lijsten configureren 1"
 
 #: /1080i/SkinSettings.xml
 msgctxt "#31534"
 msgid "Configure My Lists 2"
-msgstr ""
+msgstr "Mijn lijsten configureren 2"
 
 #: /1080i/SkinSettings.xml
 msgctxt "#31535"
 msgid "Configure My Lists 3"
-msgstr ""
+msgstr "Mijn lijsten configureren 3"
 
 #: /1080i/SkinSettings.xml
 msgctxt "#31536"
 msgid "Configure Addons Lists 1"
-msgstr ""
+msgstr "Addons lijsten configureren 1"
 
 #: /1080i/SkinSettings.xml
 msgctxt "#31537"
 msgid "Configure Addons Lists 2"
-msgstr ""
+msgstr "Addons lijsten configureren 2""
 
 #: /1080i/SkinSettings.xml
 msgctxt "#31538"
 msgid "Configure LiveTV Lists 1"
-msgstr ""
+msgstr "LiveTV lijsten configureren 1"
 
 #: /1080i/SkinSettings.xml
 msgctxt "#31539"
 msgid "Configure LiveTV Lists 2"
-msgstr ""
+msgstr "LiveTV lijsten configureren 2"
 
 #: /1080i/SkinSettings.xml
 msgctxt "#31540"
@@ -2618,7 +2618,7 @@ msgstr "Timer per afbeelding instellen"
 #: /1080i/SkinSettings.xml
 msgctxt "#31544"
 msgid "Disable Transparency"
-msgstr ""
+msgstr "Transparantie uitschakelen"
 
 #: /1080i/SkinSettings.xml
 msgctxt "#31545"
@@ -2628,7 +2628,7 @@ msgstr ""
 #: /1080i/SkinSettings.xml
 msgctxt "#31546"
 msgid "Enable Info overlay box"
-msgstr ""
+msgstr "Info overlayvenster inschakelen"
 
 #: /1080i/SkinSettings.xml
 msgctxt "#31547"
@@ -2683,7 +2683,7 @@ msgstr "Stijl Power Menubalk inschakelen"
 #: /1080i/SkinSettings.xml
 msgctxt "#31557"
 msgid "Use Aura Default loading icon"
-msgstr ""
+msgstr "Gebruik Aura Standaard laadpictogram"
 
 #: /1080i/SkinSettings.xml
 msgctxt "#31558"
@@ -2913,7 +2913,7 @@ msgstr "Kies TV Spotlight stijl"
 #: /1080i/Custom_1128_Spotlight_config.xml
 msgctxt "#31603"
 msgid "TV Shows Content"
-msgstr ""
+msgstr "Inhoud van tv programma's"
 
 #: /1080i/Custom_1128_Spotlight_config.xml
 msgctxt "#31604"
@@ -3278,7 +3278,7 @@ msgstr "Favorieten"
 #: /1080i/DialogButtonMenu-Includes.xml
 msgctxt "#31682"
 msgid "Main Menu Config"
-msgstr ""
+msgstr "Configuratie hoofdmenu"
 
 #: /1080i/DialogButtonMenu-Includes.xml
 msgctxt "#31683"
@@ -3378,7 +3378,7 @@ msgstr ""
 #: /1080i/DialogVideoInfo-Includes.xml
 msgctxt "#31702"
 msgid "Budget"
-msgstr ""
+msgstr "Begroting"
 
 #: /1080i/DialogVideoInfo-Includes.xml
 msgctxt "#31703"
@@ -3428,7 +3428,7 @@ msgstr "Gedetailleerde informatie over bedieningselementen weergeven"
 #: /1080i/DialogVideoInfo-Includes.xml
 msgctxt "#31712"
 msgid "Play"
-msgstr ""
+msgstr "Afspelen"
 
 #: /1080i/DialogVideoInfo-Includes.xml
 msgctxt "#31713"
@@ -3438,7 +3438,7 @@ msgstr "vond het leuk"
 #: /1080i/Includes_Object.xml
 msgctxt "#31714"
 msgid "Play"
-msgstr ""
+msgstr "Afspelen"
 
 #: /1080i/Includes_Object.xml
 msgctxt "#31715"
@@ -3493,7 +3493,7 @@ msgstr "Diensten"
 #: /1080i/Includes_Object.xml
 msgctxt "#31725"
 msgid "Player"
-msgstr ""
+msgstr "Speler"
 
 #: /1080i/Includes_Object.xml
 msgctxt "#31726"
@@ -3598,12 +3598,12 @@ msgstr "Nu"
 #: /1080i/Includes_View_List.xml
 msgctxt "#31746"
 msgid "Next"
-msgstr "De volgende"
+msgstr "Volgende"
 
 #: /1080i/Includes_View_List.xml
 msgctxt "#31747"
 msgid "Start"
-msgstr "Begint"
+msgstr "Begin"
 
 #: /1080i/Includes_View_List.xml
 msgctxt "#31748"
@@ -3688,7 +3688,7 @@ msgstr ""
 #: /1080i/script-skinshortcuts.xml
 msgctxt "#31764"
 msgid "Content Type"
-msgstr ""
+msgstr "Inhoudstype"
 
 #: /1080i/script-skinshortcuts.xml
 msgctxt "#31765"
@@ -3698,7 +3698,7 @@ msgstr "Sorteer op"
 #: /1080i/script-skinshortcuts.xml
 msgctxt "#31766"
 msgid "Sort Direction"
-msgstr ""
+msgstr "Sorteer richting"
 
 #: /1080i/script-skinshortcuts.xml
 msgctxt "#31767"
@@ -3883,17 +3883,17 @@ msgstr "Film categorieën"
 #: /shortcuts/moviehubmenu.DATA.xml
 msgctxt "#31803"
 msgid "Movie Aura Hub"
-msgstr ""
+msgstr "Film Aura Hub"
 
 #: /shortcuts/moviehubmenu.DATA.xml
 msgctxt "#31804"
 msgid "Movie Netflix Hub"
-msgstr ""
+msgstr "Film Netflix Hub"
 
 #: /shortcuts/movies.DATA.xml
 msgctxt "#31805"
 msgid "Movie Lists"
-msgstr ""
+msgstr "Filmlijsten"
 
 #: /shortcuts/movies.DATA.xml
 msgctxt "#31806"
@@ -4008,7 +4008,7 @@ msgstr ""
 #: /shortcuts/tvshows.DATA.xml
 msgctxt "#31829"
 msgid "TV Lists"
-msgstr ""
+msgstr "Tv lijsten"
 
 #: /shortcuts/x1101.DATA.xml
 msgctxt "#31830"
@@ -4092,13 +4092,13 @@ msgstr ""
 #: /shortcuts/x1108.DATA.xml
 msgctxt "#31845"
 msgid "Comedy"
-msgstr ""
+msgstr "Komedie"
 
 #. Context: Genres
 #: /shortcuts/x1108.DATA.xml
 msgctxt "#31846"
 msgid "Crime"
-msgstr ""
+msgstr "Misdrijf"
 
 #. Context: Genres
 #: /shortcuts/x1108.DATA.xml
@@ -4187,12 +4187,12 @@ msgstr "Realiteit"
 #: /1080i/Includes_Labels.xml
 msgctxt "#31861"
 msgid "Returning Series"
-msgstr "Gepland"
+msgstr "Terugkerende serie"
 
 #: /1080i/Includes_Labels.xml
 msgctxt "#31862"
 msgid "Planned"
-msgstr ""
+msgstr "Gepland"
 
 #: /1080i/Includes_Labels.xml
 msgctxt "#31863"
@@ -4222,7 +4222,7 @@ msgstr "Genomineerd voor"
 #: /1080i/Includes_Labels.xml
 msgctxt "#31868"
 msgid "Won"
-msgstr ""
+msgstr "Win"
 
 #. Context: Further wins
 #: /1080i/Includes_Labels.xml
@@ -4246,13 +4246,13 @@ msgstr ""
 #: /1080i/Includes_Labels.xml
 msgctxt "#31872"
 msgid "nominations"
-msgstr ""
+msgstr "nominaties"
 
 #. Context: Only one nomination
 #: /1080i/Includes_Labels.xml
 msgctxt "#31873"
 msgid "nomination"
-msgstr ""
+msgstr "nominatie"
 
 #. Context: Awards in total
 #: /1080i/Includes_Labels.xml

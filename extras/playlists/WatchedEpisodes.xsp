@@ -1,7 +1,9 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes" ?>
 <smartplaylist type="episodes">
-    <name>In Progress Episodes</name>
+    <name>Watched Episodes</name>
     <match>all</match>
-    <rule field="inprogress" operator="true" />
+    <rule field="playcount" operator="greaterthan">
+        <value>0</value>
+    </rule>
     <order direction="descending">lastplayed</order>
 </smartplaylist>

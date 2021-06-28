@@ -5,5 +5,6 @@
     <rule field="playcount" operator="is">
         <value>0</value>
     </rule>
-    <order direction="ascending">dateadded</order>
+    <rule field="inprogress" operator="false" />
+    <order direction="ascending">tvshowtitle</order>
 </smartplaylist>

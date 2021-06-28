@@ -1932,12 +1932,12 @@
           <param name="visible" value="String.IsEqual(Container(8999).ListItem.Label,$LOCALIZE[31221])" /> <!-- Next Up -->
           <param name="content" value="$VAR[nextup_content_videoinfo]" />
           <param name="onclick" value="" />
-          <param name="onclick2" value="PlayMedia(plugin://plugin.video.themoviedb.helper/?info=play&season=$INFO[Container.ListItem.Season]&type=episode&episode=$INFO[Container.ListItem.Episode]&tmdb_id=$INFO[Container.ListItem.Property(tvshow.tmdb_id)])" />
+          <param name="onclick2" value="PlayMedia(plugin://plugin.video.themoviedb.helper/?info=play&amp;season=$INFO[Container.ListItem.Season]&amp;type=episode&amp;episode=$INFO[Container.ListItem.Episode]&amp;tmdb_id=$INFO[Container.ListItem.Property(tvshow.tmdb_id)])" />
         </include>
        <include condition="!Skin.HasSetting(VideoInfo.Disable) + Skin.HasSetting(VideoInfo.Episodes) + String.IsEmpty(ListItem.DBID) + String.IsEqual(ListItem.DBType,episode) + String.Contains(ListItem.Path,plugin.video.seren)" content="episode_list">
           <param name="id" value="53011" />
           <param name="visible" value="String.IsEqual(Container(8999).ListItem.Label,$LOCALIZE[31500])" /> <!-- Episodes -->
-          <param name="content" value="plugin://plugin.video.seren/?action=seasonEpisodes&actionArgs=%7B%22item_type%22%3A%20%22season%22%2C%20%22trakt_id%22%3A%20$INFO[ListItem.Property(tvshow.trakt_id)]%2C%20%22season%22%3A%20$INFO[ListItem.Season]%7D" />
+          <param name="content" value="plugin://plugin.video.seren/?action=seasonEpisodes&amp;actionArgs=%7B%22item_type%22%3A%20%22season%22%2C%20%22trakt_id%22%3A%20$INFO[ListItem.Property(tvshow.trakt_id)]%2C%20%22season%22%3A%20$INFO[ListItem.Season]%7D" />
           <param name="onclick" value="Dialog.Close(all,force)" />
           <param name="onclick2" value="$VAR[videoinfo_onclick_episode]" />
         </include>

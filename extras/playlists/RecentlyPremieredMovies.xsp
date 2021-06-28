@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes" ?>
+<smartplaylist type="movies">
+    <name>Recently Premiered Movies</name>
+    <match>all</match>
+    <rule field="year" operator="is">
+        <value>2021</value>
+    </rule>
+    <order direction="descending">year</order>
+</smartplaylist>

@@ -2,8 +2,8 @@
 <includes>
 
     <variable name="videoinfo_seasoneps">
-      <value condition="String.IsEmpty(Container(9502).ListItem.FolderPath">$VAR[seasons_content_videoinfo]</value>
-      <value condition="!String.IsEmpty(Container(9502).ListItem.FolderPath">$INFO[Container(9502).ListItem.FolderPath]</value>
+      <value condition="String.IsEmpty(Container(9502).ListItem.FolderPath)">$VAR[seasons_content_videoinfo]</value>
+      <value condition="!String.IsEmpty(Container(9502).ListItem.FolderPath)">$INFO[Container(9502).ListItem.FolderPath]</value>
     </variable>
 
     <variable name="studio">
@@ -158,16 +158,16 @@
     </variable>
 
     <variable name="similar_movie_content">
-        <value condition="!String.IsEmpty(Skin.String(similar_movies_traktid))">plugin://plugin.video.seren/?action=moviesRelated&actionArgs=$INFO[Skin.String(similar_movies_traktid)]</value>
+        <value condition="!String.IsEmpty(Skin.String(similar_movies_traktid))">plugin://plugin.video.seren/?action=moviesRelated&amp;actionArgs=$INFO[Skin.String(similar_movies_traktid)]</value>
     </variable>
     <variable name="similar_movie2_content">
-        <value condition="!String.IsEmpty(Skin.String(similar_movies2_traktid))">plugin://plugin.video.seren/?action=moviesRelated&actionArgs=$INFO[Skin.String(similar_movies2_traktid)]</value>
+        <value condition="!String.IsEmpty(Skin.String(similar_movies2_traktid))">plugin://plugin.video.seren/?action=moviesRelated&amp;actionArgs=$INFO[Skin.String(similar_movies2_traktid)]</value>
     </variable>
     <variable name="similar_tv_content">
-        <value condition="!String.IsEmpty(Skin.String(similar_tv_traktid))">plugin://plugin.video.seren/?action=showsRelated&actionArgs=$INFO[Skin.String(similar_tv_traktid)]</value>
+        <value condition="!String.IsEmpty(Skin.String(similar_tv_traktid))">plugin://plugin.video.seren/?action=showsRelated&amp;actionArgs=$INFO[Skin.String(similar_tv_traktid)]</value>
     </variable>
     <variable name="similar_tv2_content">
-        <value condition="!String.IsEmpty(Skin.String(similar_tv2_traktid))">plugin://plugin.video.seren/?action=showsRelated&actionArgs=$INFO[Skin.String(similar_tv2_traktid)]</value>
+        <value condition="!String.IsEmpty(Skin.String(similar_tv2_traktid))">plugin://plugin.video.seren/?action=showsRelated&amp;actionArgs=$INFO[Skin.String(similar_tv2_traktid)]</value>
     </variable>
 
     <variable name="similarserentv2">
@@ -810,8 +810,8 @@
     </variable>
 
     <variable name="show_count">
-    <value condition="!String.IsEmpty(ListItem.Property(WatchedEpisodes)">$INFO[ListItem.Property(WatchedEpisodes)]</value>
-    <value condition="String.IsEmpty(ListItem.Property(WatchedEpisodes) + !String.IsEmpty(ListItem.Property(TotalEpisodes)">$INFO[ListItem.Property(TotalEpisodes)]</value>
+    <value condition="!String.IsEmpty(ListItem.Property(WatchedEpisodes))">$INFO[ListItem.Property(WatchedEpisodes)]</value>
+    <value condition="String.IsEmpty(ListItem.Property(WatchedEpisodes)) + !String.IsEmpty(ListItem.Property(TotalEpisodes))">$INFO[ListItem.Property(TotalEpisodes)]</value>
     </variable>
     <variable name="total_seasons">
     <value condition="String.IsEqual(ListItem.Property(TotalSeasons),1)">$INFO[ListItem.Property(TotalSeasons)] $LOCALIZE[31750]</value> <!-- Season -->

@@ -570,7 +570,7 @@
                             </control>
                         </control>
                     </focusedlayout>
-                    <content>plugin://plugin.video.themoviedb.helper/?fanarttv=True&info=dir_search&nextpage=True&type=movie$INFO[Skin.String(kbtemp)]</content>
+                    <content>plugin://plugin.video.themoviedb.helper/?fanarttv=True&amp;info=dir_search&amp;nextpage=True&amp;type=movie$INFO[Skin.String(kbtemp)]</content>
                 </control>
             </control>
         </control>

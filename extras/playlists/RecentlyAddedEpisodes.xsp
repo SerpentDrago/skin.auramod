@@ -1,9 +1,6 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes" ?>
-<smartplaylist type="tvshows">
-    <name>New TvShows</name>
+<smartplaylist type="episodes">
+    <name>Recently Added Episodes</name>
     <match>all</match>
-    <rule field="playcount" operator="lessthan">
-        <value>1</value>
-    </rule>
     <order direction="descending">dateadded</order>
 </smartplaylist>

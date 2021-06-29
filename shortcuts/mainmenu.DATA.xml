@@ -1,7 +1,7 @@
 <?xml version='1.0' encoding='UTF-8'?>
 <shortcuts>
     <shortcut>
-	<label>Search</label>
+	<label>$LOCALIZE[31523]</label> <!-- Search -->
 	<label2>Custom item</label2>
 	<icon>DefaultShortcut.png</icon>
 	<thumb>special://skin/extras/icons/search.png</thumb>

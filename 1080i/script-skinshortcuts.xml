@@ -29,9 +29,11 @@
                 <left>22</left>
                 <right>22</right>
                 <height>66</height>
+                <width>625</width>
                 <font>font_heading_small</font>
                 <align>left</align>
                 <textcolor>dialog_fg_70</textcolor>
+                <wrapmultiline>true</wrapmultiline>
             </control>
 
             <!-- Edit Widgets / Shortcuts Header -->
@@ -251,7 +253,7 @@
                     <height>66</height>
                     <align>left</align>
                     <visible>!String.IsEqual(Container(211).ListItem.Property(skinshortcuts-disabled),True)</visible>
-                    <label>Choose Widget</label>
+                    <label>$LOCALIZE[31759]</label> <!-- Choose Widget -->
                     <onclick>SetProperty(custom-grouping,widget)</onclick>
                     <onclick>SendClick(401)</onclick>
                     <include>Dialog_Standard_Right_Buttons</include>
@@ -337,7 +339,7 @@
                 </control>
 		<control type="label" id="9991">
 		   <height>70</height>
-		   <label>Widgets</label>
+		   <label>$LOCALIZE[31247]</label> <!-- Widgets -->
 		   <font>font_heading_small</font>
                    <textcolor>dialog_fg_70</textcolor>
 		</control>
@@ -346,7 +348,7 @@
                 <control type="button" id="405" description="Set Submenu">
                     <width>100%</width>
                     <height>66</height>
-                    <label>Configure Submenu / Category Widget</label>
+                    <label>$LOCALIZE[31760]</label> <!-- Configure Submenu / Category Widget -->
                     <visible>String.IsEqual(Window.Property(groupname),mainmenu)</visible>
                     <texturenofocus colordiffuse="dialog_fg_12" border="5">common/box.png</texturenofocus>
                     <align>left</align>
@@ -357,7 +359,7 @@
                 <control type="button" id="99102" description="Widget Type">
                     <width>100%</width>
                     <height>66</height>
-                    <label>Home Widget Type</label>
+                    <label>$LOCALIZE[31761]</label> <!-- Home Widget Type -->
                     <label2>$INFO[Container(211).ListItem.Property(widgetType)]</label2>
                     <texturenofocus colordiffuse="dialog_fg_12" border="5">common/box.png</texturenofocus>
                     <align>left</align>
@@ -368,7 +370,7 @@
 
                 <control type="button" id="406" description="Widgets">
                     <width>100%</width>
-                    <label>Configure Widgets</label>
+                    <label>$LOCALIZE[31762]</label> <!-- Configure Widgets -->
                     <height>66</height>
                     <texturenofocus colordiffuse="dialog_fg_12" border="5">common/box.png</texturenofocus>
                     <align>left</align>
@@ -388,7 +390,7 @@
                 <control type="button" id="9901" description="Widget Submenu Aspect">
                    <width>100%</width>
                     <height>66</height>
-                    <label>Widget Style</label>
+                    <label>$LOCALIZE[31763]</label> <!-- Widget Style -->
                     <visible>!String.IsEqual(Container(211).ListItem.Property(skinshortcuts-disabled),True)</visible>
                     <label2>$INFO[Container(211).ListItem.Property(widgetAspect)]</label2>
                     <texturenofocus colordiffuse="dialog_fg_12" border="5">common/box.png</texturenofocus>
@@ -399,7 +401,7 @@
                 <control type="button" id="9905" description="Widget Submenu Aspect">
                    <width>100%</width>
                     <height>66</height>
-                    <label>Widget Style</label>
+                    <label>$LOCALIZE[31763]</label> <!-- Widget Style -->
                     <visible>!String.IsEqual(Container(211).ListItem.Property(skinshortcuts-disabled),True)</visible>
                     <label2>$INFO[Container(211).ListItem.Property(widgetHubAspect)]</label2>
                     <texturenofocus colordiffuse="dialog_fg_12" border="5">common/box.png</texturenofocus>
@@ -410,7 +412,7 @@
                 <control type="button" id="9902" description="Content Type / Widget Target">
                    <width>100%</width>
                     <height>66</height>
-                    <label>Content Type</label>
+                    <label>$LOCALIZE[31764]</label> <!-- Content Type -->
                     <visible>!String.IsEqual(Container(211).ListItem.Property(skinshortcuts-disabled),True)</visible>
                     <texturenofocus colordiffuse="dialog_fg_12" border="5">common/box.png</texturenofocus>
                     <label2>$INFO[Container(211).ListItem.Property(widgetTarget)]</label2>
@@ -422,7 +424,7 @@
                 <control type="button" id="9903" description="Sort by">
                    <width>100%</width>
                     <height>66</height>
-                    <label>Sort By</label>
+                    <label>$LOCALIZE[31765]</label> <!-- Sort By -->
                     <visible>!String.IsEqual(Container(211).ListItem.Property(skinshortcuts-disabled),True)</visible>
                     <texturenofocus colordiffuse="dialog_fg_12" border="5">common/box.png</texturenofocus>
                     <label2>$INFO[Container(211).ListItem.Property(widgetSortby)]</label2>
@@ -434,7 +436,7 @@
                 <control type="button" id="9904" description="Sort direction">
                    <width>100%</width>
                     <height>66</height>
-                    <label>Sort Direction</label>
+                    <label>$LOCALIZE[31766]</label> <!-- Sort Direction -->
                     <visible>!String.IsEqual(Container(211).ListItem.Property(skinshortcuts-disabled),True)</visible>
                     <texturenofocus colordiffuse="dialog_fg_12" border="5">common/box.png</texturenofocus>
                     <label2>$INFO[Container(211).ListItem.Property(widgetSortorder)]</label2>
@@ -443,9 +445,9 @@
                     <include>Dialog_Standard_Right_Buttons</include>
                 </control>
 <!--
-                <control type="radiobutton" id="99139" description="Widget Netflix">
+                <control type="radiobutton" id="99139" description="Enable Netflix Style">
                     <width>100%</width>
-                    <label>Enable Netflix Style</label>
+                    <label>$LOCALIZE[31767]</label>
                     <height>66</height>
                     <texturenofocus colordiffuse="dialog_fg_12" border="5">common/box.png</texturenofocus>
                     <include>Dialog_Standard_ListButton</include>
@@ -462,7 +464,7 @@
 -->
                 <control type="radiobutton" id="9913" description="Widget Spotlight">
                     <width>100%</width>
-                    <label>Enable Spotlight</label>
+                    <label>$LOCALIZE[31768]</label> <!-- Enable Spotlight -->
                     <height>66</height>
                     <texturenofocus colordiffuse="dialog_fg_12" border="5">common/box.png</texturenofocus>
                     <include>Dialog_Standard_ListButton</include>
@@ -479,7 +481,7 @@
                 <control type="button" id="9906" description="Choose Spotlight">
                    <width>100%</width>
                     <height>66</height>
-                    <label>Choose Spotlight</label>
+                    <label>$LOCALIZE[31769]</label> <!-- Choose Spotlight -->
                     <visible>!String.IsEqual(Container(211).ListItem.Property(skinshortcuts-disabled),True) + String.IsEqual(Container(211).ListItem.Property(widgetspotlight),true)</visible>
                     <texturenofocus colordiffuse="dialog_fg_12" border="5">common/box.png</texturenofocus>
                     <label2>$INFO[Container(211).ListItem.Property(widgetSpotlighttype)]</label2>
@@ -489,7 +491,7 @@
 <!--
                 <control type="radiobutton" id="9907" description="List as Widget">
                     <width>100%</width>
-                    <label>Enable My List as Widget</label>
+                    <label>$LOCALIZE[31793]</label>
                     <height>66</height>
                     <texturenofocus colordiffuse="dialog_fg_12" border="5">common/box.png</texturenofocus>
                     <include>Dialog_Standard_ListButton</include>
@@ -506,7 +508,7 @@
                 <control type="button" id="9908" description="Choose MenuHub">
                    <width>100%</width>
                     <height>66</height>
-                    <label> - Choose List</label>
+                    <label> - $LOCALIZE[31794]</label>
                     <visible>!String.IsEqual(Container(211).ListItem.Property(skinshortcuts-disabled),True) + String.IsEqual(Container(211).ListItem.Property(widgethub),true)</visible>
                     <texturenofocus colordiffuse="dialog_fg_12" border="5">common/box.png</texturenofocus>
                     <label2>$INFO[Container(211).ListItem.Property(widgethubselect)]</label2>
@@ -516,7 +518,7 @@
 -->
                 <control type="radiobutton" id="9909" description="Auto Scroll to Hub">
                     <width>100%</width>
-                    <label>Enable Autoscroll to Hub</label>
+                    <label>$LOCALIZE[31770]</label> <!-- Enable Autoscroll to Hub -->
                     <height>66</height>
                     <texturenofocus colordiffuse="dialog_fg_12" border="5">common/box.png</texturenofocus>
                     <include>Dialog_Standard_ListButton</include>
@@ -533,7 +535,7 @@
                 <control type="button" id="9910" description="Choose Scroll Hub">
                    <width>100%</width>
                     <height>66</height>
-                    <label> - Choose Autoscroll Hub</label>
+                    <label> - $LOCALIZE[31771]</label> <!-- Choose Autoscroll Hub -->
                     <visible>!String.IsEqual(Container(211).ListItem.Property(skinshortcuts-disabled),True) + String.IsEqual(Container(211).ListItem.Property(widgethubscroll),true)</visible>
                     <texturenofocus colordiffuse="dialog_fg_12" border="5">common/box.png</texturenofocus>
                     <label2>$INFO[Container(211).ListItem.Property(widgethubscrollselect)]</label2>
@@ -543,7 +545,7 @@
 <!--
                 <control type="radiobutton" id="9919" description="My List Widget">
                     <width>100%</width>
-                    <label>Enable My List as Widget</label>
+                    <label>$LOCALIZE[31793]</label>
                     <height>66</height>
                     <texturenofocus colordiffuse="dialog_fg_12" border="5">common/box.png</texturenofocus>
                     <include>Dialog_Standard_ListButton</include>
@@ -560,7 +562,7 @@
                 <control type="button" id="99101" description="Choose List">
                    <width>100%</width>
                     <height>66</height>
-                    <label> - Choose List</label>
+                    <label> - $LOCALIZE[31794]</label>
                     <visible>!String.IsEqual(Container(211).ListItem.Property(skinshortcuts-disabled),True) + String.IsEqual(Container(211).ListItem.Property(menuonleft),true) + !Skin.HasSetting(DisableAuraHomeLayout)</visible>
                     <texturenofocus colordiffuse="dialog_fg_12" border="5">common/box.png</texturenofocus>
                     <label2>$INFO[Container(211).ListItem.Property(menuonleftselect)]</label2>
@@ -570,7 +572,7 @@
                 <control type="button" id="99103" description="List Widget Aspect">
                    <width>100%</width>
                     <height>66</height>
-                    <label> - Widget Aspect</label>
+                    <label> - $LOCALIZE[31795]</label>
                     <visible>!String.IsEqual(Container(211).ListItem.Property(skinshortcuts-disabled),True) + String.IsEqual(Container(211).ListItem.Property(menuonleft),true) + !Skin.HasSetting(DisableAuraHomeLayout)</visible>
                     <texturenofocus colordiffuse="dialog_fg_12" border="5">common/box.png</texturenofocus>
                     <label2>$INFO[Container(211).ListItem.Property(menuonleftaspect)]</label2>
@@ -580,7 +582,7 @@
                 <control type="button" id="99104" description="List Widget Aspect">
                    <width>100%</width>
                     <height>66</height>
-                    <label> - Widget Location</label>
+                    <label> - $LOCALIZE[31796]</label>
                     <visible>!String.IsEqual(Container(211).ListItem.Property(skinshortcuts-disabled),True) + String.IsEqual(Container(211).ListItem.Property(menuonleft),true) + !Skin.HasSetting(DisableAuraHomeLayout)</visible>
                     <texturenofocus colordiffuse="dialog_fg_12" border="5">common/box.png</texturenofocus>
                     <label2>$INFO[Skin.String(menuonleftposition)]</label2>
@@ -592,7 +594,7 @@
 -->
                 <control type="radiobutton" id="9919" description="My List Widget">
                     <width>100%</width>
-                    <label>Enable Menu on Left</label>
+                    <label>$LOCALIZE[31772]</label> <!-- Enable Menu on Left -->
                     <height>66</height>
                     <texturenofocus colordiffuse="dialog_fg_12" border="5">common/box.png</texturenofocus>
                     <include>Dialog_Standard_ListButton</include>
@@ -609,7 +611,7 @@
                 <control type="button" id="99101" description="Choose List">
                    <width>100%</width>
                     <height>66</height>
-                    <label> - Choose Menu</label>
+                    <label> - $LOCALIZE[31773]</label> <!-- Choose Menu -->
                     <visible>!String.IsEqual(Container(211).ListItem.Property(skinshortcuts-disabled),True) + String.IsEqual(Container(211).ListItem.Property(menuonleft),true) + !Skin.HasSetting(DisableAuraHomeLayout)</visible>
                     <texturenofocus colordiffuse="dialog_fg_12" border="5">common/box.png</texturenofocus>
                     <label2>$INFO[Container(211).ListItem.Property(menulist)]</label2>
@@ -621,7 +623,7 @@
 
                 <control type="radiobutton" id="9911" description="Widget Control">
                     <width>100%</width>
-                    <label>Disable Fixed Focus</label>
+                    <label>$LOCALIZE[31774]</label> <!-- Disable Fixed Focus -->
                     <height>66</height>
                     <texturenofocus colordiffuse="dialog_fg_12" border="5">common/box.png</texturenofocus>
                     <include>Dialog_Standard_ListButton</include>
@@ -637,7 +639,7 @@
 
                 <control type="radiobutton" id="99131" description="Widget Info Slide">
                     <width>100%</width>
-                    <label>Enable Widget Info Slide</label>
+                    <label>$LOCALIZE[31775]</label> <!-- Enable Widget Info Slide -->
                     <height>66</height>
                     <texturenofocus colordiffuse="dialog_fg_12" border="5">common/box.png</texturenofocus>
                     <include>Dialog_Standard_ListButton</include>
@@ -653,7 +655,7 @@
                 </control>
                 <control type="radiobutton" id="99105" description="Widget Landscapewide BG">
                     <width>100%</width>
-                    <label>Enable Widget Background</label>
+                    <label>$LOCALIZE[31776]</label> <!-- Enable Widget Background -->
                     <height>66</height>
                     <texturenofocus colordiffuse="dialog_fg_12" border="5">common/box.png</texturenofocus>
                     <include>Dialog_Standard_ListButton</include>
@@ -671,7 +673,7 @@
 
                 <control type="radiobutton" id="9912" description="Widget Showcase">
                     <width>100%</width>
-                    <label>Enable Widget Showcase Overlay</label>
+                    <label>$LOCALIZE[31777]</label> <!-- Enable Widget Showcase Overlay -->
                     <height>66</height>
                     <texturenofocus colordiffuse="dialog_fg_12" border="5">common/box.png</texturenofocus>
                     <include>Dialog_Standard_ListButton</include>
@@ -688,7 +690,7 @@
 
                 <control type="radiobutton" id="99121" description="Widget Showcase">
                     <width>100%</width>
-                    <label> - Enable Showcase auto-hide</label>
+                    <label> - $LOCALIZE[31778]</label> <!-- Enable Showcase auto-hide -->
                     <height>66</height>
                     <texturenofocus colordiffuse="dialog_fg_12" border="5">common/box.png</texturenofocus>
                     <include>Dialog_Standard_ListButton</include>
@@ -704,7 +706,7 @@
                 </control>
                 <control type="label" id="9992">
                    <height>70</height>
-                   <label>Global</label>
+                   <label>$LOCALIZE[31797]</label> <!-- Global -->
                    <font>font_heading_small</font>
                    <textcolor>dialog_fg_70</textcolor>
                 </control>

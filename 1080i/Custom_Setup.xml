@@ -28,7 +28,7 @@
         <height>100</height>
         <bottom>180</bottom>
         <left>600</left> 
-        <label>[CAPITALIZE][B]Run Wizard[/B][/CAPITALIZE]</label>
+        <label>[CAPITALIZE][B]$LOCALIZE[31675][/B][/CAPITALIZE]</label> <!-- Run Wizard -->
         <align>center</align>
         <textcolor>grey</textcolor>
         <focusedcolor>black</focusedcolor>
@@ -46,7 +46,7 @@
 	<left>950</left>
         <width>300</width>
         <height>100</height>
-        <label>[CAPITALIZE][B]Manual Setup[/B][/CAPITALIZE]</label>
+        <label>[CAPITALIZE][B]$LOCALIZE[31676][/B][/CAPITALIZE]</label> <!-- Manual Setup -->
         <align>center</align>
         <textcolor>grey</textcolor>
         <focusedcolor>black</focusedcolor>
@@ -64,7 +64,7 @@
         <height>100</height>
         <bottom>180</bottom>
         <left>600</left>
-        <label>[CAPITALIZE][B]Configure Hubs & Spotlights[/B][/CAPITALIZE]</label>
+        <label>[CAPITALIZE][B]$LOCALIZE[31677][/B][/CAPITALIZE]</label> <!-- Configure Hubs & Spotlights -->
         <align>center</align>
         <textcolor>grey</textcolor>
         <focusedcolor>black</focusedcolor>
@@ -81,7 +81,7 @@
         <left>1050</left>
         <width>300</width>
         <height>100</height>
-        <label>[CAPITALIZE][B]Finish Setup[/B][/CAPITALIZE]</label>
+        <label>[CAPITALIZE][B]$LOCALIZE[31678][/B][/CAPITALIZE]</label> <!-- Finish Setup -->
         <align>center</align>
         <textcolor>grey</textcolor>
         <focusedcolor>black</focusedcolor>

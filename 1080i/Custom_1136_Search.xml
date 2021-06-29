@@ -28,7 +28,7 @@
       <font>search_heading</font>
       <textcolor>dimgrey</textcolor>
       <shadowcolor>dimgrey</shadowcolor>
-      <label>Search for TV Shows and Movies</label>
+      <label>$LOCALIZE[31720]</label> <!-- Search for TV Shows and Movies -->
     </control>
 </controls>
 </window>

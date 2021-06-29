@@ -88,7 +88,7 @@
                        <control type="radiobutton" id="90042" description="Enable Vertical Icon wLabel">
                             <include>Dialog_Standard_ListButton</include>
                             <radioposx>630</radioposx>
-                            <label> - Disable menu background color</label>
+                            <label> - $LOCALIZE[31501]</label> <!-- Disable menu background color -->
                             <visible>!Skin.HasSetting(DisableMenuVertIcon)</visible>
                             <selected>Skin.HasSetting(DisableMenuVertLabelBG)</selected>
                             <onclick>Skin.ToggleSetting(DisableMenuVertLabelBG)</onclick>
@@ -162,7 +162,7 @@
                        <control type="radiobutton" id="90041" description="Enable Vertical Icon wLabel">
                             <include>Dialog_Standard_ListButton</include>
                             <radioposx>630</radioposx>
-                            <label> - Disable menu background color</label>
+                            <label> - $LOCALIZE[31501]</label> <!-- Disable menu background color -->
 			    <visible>Skin.HasSetting(DisableMenuVertLabel)</visible>
                             <selected>Skin.HasSetting(DisableMenuVertLabelBG)</selected>
                             <onclick>Skin.ToggleSetting(DisableMenuVertLabelBG)</onclick>

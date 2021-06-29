@@ -731,7 +731,7 @@
         <!-- Add Airdate -->
         <control type="label">
           <top>-2</top>
-          <label>| Aired: $INFO[ListItem.Premiered(dd MMM yyyy)]</label>
+          <label>| $LOCALIZE[31789]: $INFO[ListItem.Premiered(dd MMM yyyy)]</label> <!-- Aired -->
           <textcolor>$VAR[ColorHighlight2]</textcolor>
           <include>Statusbar_Menubar_Items</include>
           <visible>Control.HasFocus($PARAM[id])</visible>
@@ -741,7 +741,7 @@
         </control>
         <control type="label">
           <top>-2</top>
-          <label>| Aired: $INFO[ListItem.Premiered(dd MMM yyyy)]</label>
+          <label>| $LOCALIZE[31789]: $INFO[ListItem.Premiered(dd MMM yyyy)]</label> <!-- Aired -->
           <textcolor>$VAR[ColorHighlight2]</textcolor>
           <font>font_widgetbar_bold</font>
           <include>Statusbar_Menubar_Items</include>
@@ -1942,7 +1942,7 @@
       <control type="label">
         <left>-40</left>
         <top>50</top>
-        <label>Live TV</label>
+        <label>$LOCALIZE[31103]</label> <!-- Live TV -->
         <height>40</height>
         <width>350</width>
         <align>center</align>
@@ -2130,7 +2130,7 @@
               <align>center</align>
               <aligny>center</aligny>
               <textcolor>bbwhite</textcolor>
-              <label>Loading Channels</label>
+              <label>$LOCALIZE[31752]</label> <!-- Loading Channels -->
               <scroll>false</scroll>
             </control>
           </control>

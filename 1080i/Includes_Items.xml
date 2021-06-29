@@ -101,7 +101,7 @@
                     </item>
                     <item id="13">
                         <description>Filemanager</description>
-                        <label>File Manager</label>
+                        <label>$LOCALIZE[31705]</label> <!-- File Manager -->
                         <label2>$LOCALIZE[115] • $LOCALIZE[116] • $LOCALIZE[117][CR]$LOCALIZE[118] • $LOCALIZE[14226]</label2>
                         <onclick>activatewindow(filemanager)</onclick>
                         <icon>special://skin/extras/icons/files.png</icon>
@@ -332,7 +332,7 @@
             </item>
             <!-- Plot -->
             <item>
-                <label>Plot</label>
+                <label>$LOCALIZE[31483]</label> <!-- Plot -->
                 <icon>special://skin/extras/icons/quote.png</icon>
                 <onclick>SetFocus(9601)</onclick>
             </item>
@@ -754,7 +754,7 @@
             </item>
             <item>
                 <icon>special://skin/extras/icons/updatelibrary.png</icon>
-                <label>Refresh</label>
+                <label>$LOCALIZE[31628]</label> <!-- Refresh -->
                 <onclick>Container.Refresh</onclick>
             </item>
             <!-- Configure -->

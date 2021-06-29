@@ -2,7 +2,7 @@
 <shortcuts>
 	<shortcut>
 		<defaultID />
-		<label>Search...</label>
+		<label>$LOCALIZE[31523]...</label> <!-- Search -->
 		<label2>Video Add-On</label2>
 		<icon>DefaultShortcut.png</icon>
 		<thumb>special://skin/media/exuary/search.png</thumb>
@@ -10,7 +10,7 @@
 	</shortcut>
 	<shortcut>
 		<defaultID />
-		<label>Genres</label>
+		<label>$LOCALIZE[31665]</label> <!-- Genres -->
 		<label2>Custom item</label2>
 		<icon>DefaultShortcut.png</icon>
 		<thumb>special://skin/extras/icons/genre.png</thumb>
@@ -18,7 +18,7 @@
 	</shortcut>
 	<shortcut>
 		<defaultID>mediahub</defaultID>
-		<label>Media Hub</label>
+		<label>$LOCALIZE[31830]</label> <!-- Media Hub -->
 		<label2 />
 		<icon>special://skin/extras/icons/tv.png</icon>
 		<thumb>special://skin/extras/icons/emby.png</thumb>
@@ -26,7 +26,7 @@
 	</shortcut>
 	<shortcut>
 		<defaultID />
-		<label>IMDB: Top Rated TV Shows</label>
+		<label>$LOCALIZE[31837]</label> <!-- IMDB: Top Rated TV Shows -->
 		<label2>Video Add-On</label2>
 		<icon>DefaultShortcut.png</icon>
 		<thumb>special://skin/extras/lists/icons/imdb-color.png</thumb>
@@ -34,7 +34,7 @@
 	</shortcut>
 	<shortcut>
 		<defaultID />
-		<label>Rolling Stone's 100 Greatest TV Shows of All Time</label>
+		<label>$LOCALIZE[31838]</label> <!-- Rolling Stone's 100 Greatest TV Shows of All Time -->
 		<label2>Video Add-On</label2>
 		<icon>DefaultShortcut.png</icon>
 		<thumb>special://skin/extras/lists/icons/rollingstone.png</thumb>
@@ -42,7 +42,7 @@
 	</shortcut>
 	<shortcut>
 		<defaultID />
-		<label>Most Popular</label>
+		<label>$LOCALIZE[31839]</label> <!-- Most Popular -->
 		<label2>Video Add-On</label2>
 		<icon>DefaultShortcut.png</icon>
 		<thumb>special://skin/media/exuary/trakt.png</thumb>
@@ -50,7 +50,7 @@
 	</shortcut>
 	<shortcut>
 		<defaultID />
-		<label>TV Shows 2018 ➛ Scripted (USA)</label>
+		<label>$LOCALIZE[31840]</label> <!-- TV Shows 2018 ➛ Scripted (USA) -->
 		<label2>Video Add-On</label2>
 		<icon>DefaultShortcut.png</icon>
 		<thumb>special://skin/extras/lists/icons/ustv.png</thumb>
@@ -58,7 +58,7 @@
 	</shortcut>
 	<shortcut>
 		<defaultID />
-		<label>TV Shows 2018 ➛ Scripted (UK)</label>
+		<label>$LOCALIZE[31841]</label> <!-- TV Shows 2018 ➛ Scripted (UK) -->
 		<label2>Video Add-On</label2>
 		<icon>DefaultShortcut.png</icon>
 		<thumb>special://skin/extras/lists/icons/uktv.png</thumb>
@@ -66,7 +66,7 @@
 	</shortcut>
 	<shortcut>
 		<defaultID>tvnetflixhub</defaultID>
-		<label>TV Netflix Hub</label>
+		<label>$LOCALIZE[31828]</label> <!-- TV Netflix Hub -->
 		<label2 />
 		<icon>special://skin/extras/icons/tv.png</icon>
 		<thumb />
@@ -74,7 +74,7 @@
 	</shortcut>
 	<shortcut>
 		<defaultID>tvaurahub</defaultID>
-		<label>TV Aura Hub</label>
+		<label>$LOCALIZE[31827]</label> <!-- TV Aura Hub -->
 		<label2 />
 		<icon>special://skin/extras/icons/tv.png</icon>
 		<thumb />

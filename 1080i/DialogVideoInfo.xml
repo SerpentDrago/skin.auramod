@@ -21,7 +21,7 @@
 <onload condition="String.IsEqual(Window(Home).Property(BaseWindow),InfoDialog)">ClearProperty(BaseWindow,Home)</onload>
     <onload>ClearProperty(TrailerPlaying,Home)</onload>
     <onunload>ClearProperty(TrailerPlaying,Home)</onunload>
-    <onload condition="[Container.Content(movies) | Container.Content(tvshows)] + !Player.HasVideo + Skin.HasSetting(EnableVideoInfoAutoplay)">AlarmClock(trailer_delay,PlayMedia($INFO[ListItem.Trailer],false,1),00:02,silent)</onload>>
+    <onload condition="[Container.Content(movies) | Container.Content(tvshows)] + !Player.HasVideo + Skin.HasSetting(EnableVideoInfoAutoplay)">AlarmClock(trailer_delay,PlayMedia($INFO[ListItem.Trailer],false,1),00:02,silent)</onload>
     <onunload condition="System.HasAlarm(trailer_delay)">CancelAlarm(trailer_delay,true)</onunload>
     <controls>
       <include condition="Skin.HasSetting(SkinHelper.EnableExtraFanart)">fanart_multi</include>

@@ -232,11 +232,11 @@
 	<value condition="!Skin.HasSetting(EnableShowCaseOverlay)">$PARAM[movement]</value>
     </variable>
     <variable name="OSD_Info_Label">
-        <value condition="Control.HasFocus(18)">Subtitles</value>
-        <value condition="Control.HasFocus(32)">Extended Info</value>
-        <value condition="Control.HasFocus(25)">Settings</value>
-        <value condition="Control.HasFocus(25)">More Info</value>
-        <value condition="Control.HasFocus(34)">Cast</value>
+        <value condition="Control.HasFocus(18)">$LOCALIZE[287]</value> <!-- Subtitles -->
+        <value condition="Control.HasFocus(32)">$LOCALIZE[31086]</value> <!-- Extended Info -->
+        <value condition="Control.HasFocus(25)">$LOCALIZE[31736]</value> <!-- Settings -->
+        <value condition="Control.HasFocus(25)">$LOCALIZE[31715]</value> <!-- More Info -->
+        <value condition="Control.HasFocus(34)">$LOCALIZE[31695]</value> <!-- Cast -->
     </variable>
     <variable name="Info_Cast_List01">
         <value condition="!Container(3100).IsUpdating + Integer.IsGreater(Container(3100).NumItems,0)">$INFO[Container(3100).ListItemAbsolute(1).FolderPath]</value>
@@ -348,13 +348,13 @@
 
     <variable name="Info_FromDirector">
         <value condition="String.IsEqual(ListItem.DBType,movie) + !String.IsEmpty(ListItem.Director) + System.HasAddon(plugin.video.themoviedb.helper)">plugin://plugin.video.themoviedb.helper/?info=crew_in_movies&amp;type=person&amp;filter_key=job&amp;filter_value=Director&amp;query=$INFO[ListItem.Director]&amp;exclude_key=title&amp;exclude_value=$INFO[ListItem.Title]</value>
-        <value condition="String.IsEqual(ListItem.DBType,movie) + !String.IsEmpty(Window(Home).Property(TMDBHelper.ListItem.Director)) + System.HasAddon(plugin.video.themoviedb.helper) + String.IsEqual(Container(8999).ListItem.Label,By Director)">plugin://plugin.video.themoviedb.helper/?info=crew_in_movies&amp;type=person&amp;filter_key=job&amp;filter_value=Director&amp;query=$INFO[Window(Home).Property(TMDBHelper.ListItem.Director)]&amp;exclude_key=title&amp;exclude_value=$INFO[ListItem.Title]</value>
+        <value condition="String.IsEqual(ListItem.DBType,movie) + !String.IsEmpty(Window(Home).Property(TMDBHelper.ListItem.Director)) + System.HasAddon(plugin.video.themoviedb.helper) + String.IsEqual(Container(8999).ListItem.Label,$LOCALIZE[31697])">plugin://plugin.video.themoviedb.helper/?info=crew_in_movies&amp;type=person&amp;filter_key=job&amp;filter_value=Director&amp;query=$INFO[Window(Home).Property(TMDBHelper.ListItem.Director)]&amp;exclude_key=title&amp;exclude_value=$INFO[ListItem.Title]</value> <!-- By Director -->
         <value condition="String.IsEqual(ListItem.DBType,movie)">videodb://movies/titles/?xsp=%7b%22rules%22%3a%7b%22and%22%3a%5b%7b%22field%22%3a%22director%22%2c%22operator%22%3a%22is%22%2c%22value%22%3a%5b%22$INFO[ListItem.Director]%22%5d%7d%5d%7d%2c%22type%22%3a%22movies%22%7d</value>
     </variable>
 
     <variable name="Info_FromStudio">
         <value condition="[String.IsEqual(ListItem.DBType,tvshow) | String.IsEqual(ListItem.DBType,episode) | String.IsEqual(ListItem.DBType,movie) | Container.Content(movies)] + System.HasAddon(plugin.video.themoviedb.helper) + !String.IsEmpty(ListItem.Studio)">plugin://plugin.video.themoviedb.helper?info=discover&amp;$VAR[Info_Param_Type]&amp;with_companies=$INFO[ListItem.Studio]</value>
-        <value condition="[String.IsEqual(ListItem.DBType,tvshow) | String.IsEqual(ListItem.DBType,episode) | String.IsEqual(ListItem.DBType,movie) | Container.Content(movies)] + System.HasAddon(plugin.video.themoviedb.helper) + !String.IsEmpty(Window(Home).Property(TMDBHelper.ListItem.Studio.1.Name)) + String.IsEqual(Container(8999).ListItem.Label,By Studio)">plugin://plugin.video.themoviedb.helper?info=discover&amp;$VAR[Info_Param_Type]&amp;with_companies=$INFO[Window(Home).Property(TMDBHelper.ListItem.Studio.1.Name)]</value>
+        <value condition="[String.IsEqual(ListItem.DBType,tvshow) | String.IsEqual(ListItem.DBType,episode) | String.IsEqual(ListItem.DBType,movie) | Container.Content(movies)] + System.HasAddon(plugin.video.themoviedb.helper) + !String.IsEmpty(Window(Home).Property(TMDBHelper.ListItem.Studio.1.Name)) + String.IsEqual(Container(8999).ListItem.Label,$LOCALIZE[31698])">plugin://plugin.video.themoviedb.helper?info=discover&amp;$VAR[Info_Param_Type]&amp;with_companies=$INFO[Window(Home).Property(TMDBHelper.ListItem.Studio.1.Name)]</value> <!-- By Studio -->
         <value condition="Container.Content(movies)">videodb://movies/titles/?xsp=%7b%22rules%22%3a%7b%22and%22%3a%5b%7b%22field%22%3a%22studio%22%2c%22operator%22%3a%22is%22%2c%22value%22%3a%5b%22$INFO[ListItem.Studio]%22%5d%7d%5d%7d%2c%22type%22%3a%22movies%22%7d</value>
     </variable>
 

@@ -760,7 +760,7 @@
       </focusedlayout>
 	<content>
 	   <item>
-            <label>Home</label>
+            <label>$LOCALIZE[31685]</label> <!-- Home -->
             <onclick>activatewindow(Home)</onclick>
             <onclick>SetFocus(400,0,absolute)</onclick>
             <icon>special://skin/extras/icons/home.png</icon>
@@ -823,7 +823,7 @@
       </focusedlayout>
 	<content>
           <item id="1">
-          <label>Home</label>
+          <label>$LOCALIZE[31685]</label> <!-- Home -->
           <onclick>activatewindow(Home)</onclick>
           <onclick>SetFocus(401,0,absolute)</onclick>
           <icon>special://skin/extras/icons/home.png</icon>

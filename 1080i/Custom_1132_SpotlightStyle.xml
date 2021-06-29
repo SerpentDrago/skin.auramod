@@ -15,7 +15,7 @@
 
             <control type="label">
                 <description>Header Label</description>
-                <label>[CAPITALIZE]Spotlight Style[/CAPITALIZE]</label>
+                <label>[CAPITALIZE]$LOCALIZE[31611][/CAPITALIZE]</label> <!-- Spotlight Style -->
                 <include>Dialog_Standard_Header</include>
             </control>
             <!-- Image -->
@@ -48,7 +48,7 @@
                        <control type="radiobutton" id="9001" description="Enable Fullscreen Spotlight">
                             <include>Dialog_Standard_ListButton</include>
                             <radioposx>630</radioposx>
-                            <label>Enable Fullscreen Spotlight</label>
+                            <label>$LOCALIZE[31612]</label> <!-- Enable Fullscreen Spotlight -->
                             <selected>Skin.HasSetting(EnableFullSpotlight)</selected>
                             <onclick condition="Skin.HasSetting(EnableMultiWidgetSpotlight)">Skin.ToggleSetting(EnableMultiWidgetSpotlight)</onclick>
                             <onclick condition="!Skin.HasSetting(EnableWidgetSpotlight)">Skin.ToggleSetting(EnableWidgetSpotlight)</onclick>
@@ -60,14 +60,14 @@
 			    <visible>Skin.HasSetting(EnableFullSpotlight)</visible>
                             <radioposx>630</radioposx>
                             <include>Dialog_Standard_ListButton</include>
-                            <label> - Disable Spotlight Trailer auto-play</label>
+                            <label> - $LOCALIZE[31613]</label> <!-- Disable Spotlight Trailer auto-play -->
                             <selected>Skin.HasSetting(DisableSpotlightAutoplay)</selected>
                             <onclick>Skin.ToggleSetting(DisableSpotlightAutoplay)</onclick>
                         </control>
                         <control type="radiobutton" id="9002" description="Enable Widget Spotlight">
                             <include>Dialog_Standard_ListButton</include>
                             <radioposx>630</radioposx>
-                            <label>Enable Widget Spotlight</label>
+                            <label>$LOCALIZE[31614]</label> <!-- Enable Widget Spotlight -->
                             <selected>!Skin.HasSetting(EnableWidgetSpotlight)</selected>
                             <onclick condition="Skin.HasSetting(EnableMultiWidgetSpotlight)">Skin.ToggleSetting(EnableMultiWidgetSpotlight)</onclick>
                             <onclick condition="Skin.HasSetting(EnableFullSpotlight)">Skin.ToggleSetting(EnableFullSpotlight)</onclick>
@@ -78,7 +78,7 @@
                         <control type="radiobutton" id="9003" description="Enable Widget Spotlight">
                             <include>Dialog_Standard_ListButton</include>
                             <radioposx>630</radioposx>
-                            <label>Enable Multi Widget Spotlight</label>
+                            <label>$LOCALIZE[31615]</label> <!-- Enable Multi Widget Spotlight -->
                             <selected>Skin.HasSetting(EnableMultiWidgetSpotlight)</selected>
                             <onclick condition="Skin.HasSetting(EnableFullSpotlight)">Skin.ToggleSetting(EnableFullSpotlight)</onclick>
                             <onclick condition="!Skin.HasSetting(EnableWidgetSpotlight)">Skin.ToggleSetting(EnableWidgetSpotlight)</onclick>
@@ -101,7 +101,7 @@
                        <control type="radiobutton" id="9001" description="Enable Fullscreen Spotlight">
                             <include>Dialog_Standard_ListButton</include>
                             <radioposx>630</radioposx>
-                            <label>Enable Fullscreen Spotlight</label>
+                            <label>$LOCALIZE[31612]</label> <!-- Enable Fullscreen Spotlight -->
                             <selected>Skin.HasSetting(EnableTVFullSpotlight)</selected>
                             <onclick condition="Skin.HasSetting(EnableTVMultiWidgetSpotlight)">Skin.ToggleSetting(EnableTVMultiWidgetSpotlight)</onclick>
                             <onclick condition="!Skin.HasSetting(EnableTVWidgetSpotlight)">Skin.ToggleSetting(EnableTVWidgetSpotlight)</onclick>
@@ -113,14 +113,14 @@
                             <visible>Skin.HasSetting(EnableTVFullSpotlight)</visible>
                             <radioposx>630</radioposx>
                             <include>Dialog_Standard_ListButton</include>
-                            <label> - Disable Spotlight Trailer auto-play</label>
+                            <label> - $LOCALIZE[31613]</label> <!-- Disable Spotlight Trailer auto-play -->
                             <selected>Skin.HasSetting(DisableSpotlightAutoplay)</selected>
                             <onclick>Skin.ToggleSetting(DisableSpotlightAutoplay)</onclick>
                         </control>
                         <control type="radiobutton" id="9002" description="Enable Widget Spotlight">
                             <include>Dialog_Standard_ListButton</include>
                             <radioposx>630</radioposx>
-                            <label>Enable Widget Spotlight</label>
+                            <label>$LOCALIZE[31614]</label> <!-- Enable Widget Spotlight -->
                             <selected>!Skin.HasSetting(EnableTVWidgetSpotlight)</selected>
                             <onclick condition="Skin.HasSetting(EnableTVMultiWidgetSpotlight)">Skin.ToggleSetting(EnableTVMultiWidgetSpotlight)</onclick>
                             <onclick condition="Skin.HasSetting(EnableTVFullSpotlight)">Skin.ToggleSetting(EnableTVFullSpotlight)</onclick>
@@ -131,7 +131,7 @@
                         <control type="radiobutton" id="9003" description="Enable Widget Spotlight">
                             <include>Dialog_Standard_ListButton</include>
                             <radioposx>630</radioposx>
-                            <label>Enable Multi Widget Spotlight</label>
+                            <label>$LOCALIZE[31615]</label> <!-- Enable Multi Widget Spotlight -->
                             <selected>Skin.HasSetting(EnableTVMultiWidgetSpotlight)</selected>
                             <onclick condition="Skin.HasSetting(EnableTVFullSpotlight)">Skin.ToggleSetting(EnableTVFullSpotlight)</onclick>
                             <onclick condition="!Skin.HasSetting(EnableTVWidgetSpotlight)">Skin.ToggleSetting(EnableTVWidgetSpotlight)</onclick>

@@ -21,7 +21,7 @@
    <height>35</height>
    <font>font_heading_small</font>
    <textcolor>white</textcolor>
-   <label>[B]Movie AuraHub[/B]</label>
+   <label>[B]$LOCALIZE[31662][/B]</label> <!-- Movie AuraHub -->
    </control>
    </control>
     <control type="button" id="5051">
@@ -29,7 +29,7 @@
      <centertop>50%</centertop>
      <width>700</width>
      <height>60</height>
-     <label>Hub is Empty - Click to Add Items</label>
+     <label>$LOCALIZE[31663]</label> <!-- Hub is Empty - Click to Add Items -->
      <textcolor>white</textcolor>
      <focusedcolor>White</focusedcolor>
      <texturefocus colordiffuse="$VAR[ColorHighlight]" border="16">common/white.png</texturefocus>

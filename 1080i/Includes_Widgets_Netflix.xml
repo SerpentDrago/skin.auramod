@@ -298,7 +298,7 @@
                     </item>
                     <item id="5">
                         <description>Customise Home Menu</description>
-                        <label>Customize Home</label>
+                        <label>$LOCALIZE[31753]</label> <!-- Customize Home -->
                         <label2>Menu • Submenu • Widgets</label2>
                         <onclick>RunScript(script.skinshortcuts,type=manage&amp;group=mainmenu)</onclick>
                         <icon>special://skin/extras/icons/tags.png</icon>
@@ -387,7 +387,7 @@
                     </item>
                     <item id="13">
                         <description>Filemanager</description>
-                        <label>File Manager</label>
+                        <label>$LOCALIZE[31739]</label> <!-- File Manager -->
                         <label2>$LOCALIZE[115] • $LOCALIZE[116] • $LOCALIZE[117][CR]$LOCALIZE[118] • $LOCALIZE[14226]</label2>
                         <onclick>activatewindow(filemanager)</onclick>
                         <icon>special://skin/extras/icons/files.png</icon>
@@ -676,7 +676,7 @@
 			</control>
 	<!-- Add Ratings -->
                      <control type="label">
-                        <label>Aired: $INFO[ListItem.Premiered(dd MMM yyyy)]</label>
+                        <label>$LOCALIZE[31789]: $INFO[ListItem.Premiered(dd MMM yyyy)]</label> <!-- Aired -->
                         <textcolor>$VAR[ColorHighlight2]</textcolor>
                         <font>font_tiny_bold</font>
                         <include>Statusbar_Menubar_Items</include>

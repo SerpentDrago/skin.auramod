@@ -5,7 +5,7 @@ import requests
 import shutil
 import time
 
-settings_path = xbmc.translatePath('special://home/userdata/addon_data/skin.auramod/settings.xml')
+settings_path = xbmcvfs.translatePath('special://home/userdata/addon_data/skin.auramod/settings.xml')
 image_store_path = os.path.join(os.path.dirname(__file__), 'weather/weather-%s.gif' % time.strftime("%Y%m%d-%H%M%S"))
 image_store_dir = os.path.dirname(image_store_path)
 
@@ -27,4 +27,3 @@ if image_response.status_code == 200:
     with open(image_store_path, 'wb') as image_file:
         image_response.raw.decode_content = True
         shutil.copyfileobj(image_response.raw, image_file)
-

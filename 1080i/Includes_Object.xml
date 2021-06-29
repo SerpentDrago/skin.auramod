@@ -773,8 +773,8 @@
         <autoscroll time="15000">Control.HasFocus(30222) | ControlGroup(505).HasFocus</autoscroll>
         <scrolltime>500</scrolltime>
         <onup>300</onup>
-        <ondown condition="!Skin.HasSetting(DisableNetflixCatWidget)">30222</ondown>
-        <ondown condition="Skin.HasSetting(DisableNetflixCatWidget)">330</ondown>
+        <ondown condition="!Skin.HasSetting(DisableNetflixCatWidget) + !$EXP[noSubMenu]">30222</ondown>
+        <ondown condition="Skin.HasSetting(DisableNetflixCatWidget) | $EXP[noSubMenu]">330</ondown>
         <movement>1</movement>
         <include content="Widget_Common">
           <param name="top" value="$PARAM[top]" />

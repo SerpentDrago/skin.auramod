@@ -1533,13 +1533,13 @@
         <value condition="!String.IsEmpty(Window(Home).Property(TMDBHelper.ListItem.Plot))">$INFO[Window(Home).Property(TMDBHelper.ListItem.Plot)]</value>
     </variable>
     <variable name="Label_Netflix_Tagline">
+        <value condition="String.IsEqual(ListItem.DBType,episode)">$VAR[videoinfo_play_label]</value>
         <value condition="String.IsEqual(ListItem.DBType,season)">$INFO[ListItem.Label]</value>
         <value condition="!String.IsEmpty(ListItem.Tagline)">[I]$INFO[ListItem.Tagline][/I]</value>
         <value condition="!String.IsEmpty(Window(Home).Property(TMDBHelper.ListItem.Tagline))">[I]$INFO[Window(Home).Property(TMDBHelper.ListItem.Tagline)][/I]</value>
         <value condition="!String.IsEmpty(ListItem.Property(Artist_Description))">$INFO[ListItem.Property(Artist_Description)]</value>
         <value condition="!String.IsEmpty(ListItem.Property(Album_Description))">$INFO[ListItem.Property(Album_Description)]</value>
         <value condition="!String.IsEmpty(ListItem.AddonDescription)">$INFO[ListItem.AddonDescription]</value>
-        <value condition="String.IsEqual(ListItem.DBType,episode)">$VAR[videoinfo_play_label]</value>
         <value condition="String.IsEqual(ListItem.DBType,episode) + String.IsEqual(ListItem.Episode,1)">[I][COLOR=green]$LOCALIZE[31882][/COLOR] $INFO[ListItem.Season, S,: ]$INFO[ListItem.Episode,E, ][/I]</value> <!-- Season Premiere -->
         <value condition="String.IsEqual(ListItem.DBType,season)">$INFO[ListItem.Season,$LOCALIZE[31750] , ]</value> <!-- Season -->
 

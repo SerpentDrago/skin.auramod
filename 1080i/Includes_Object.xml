@@ -625,7 +625,7 @@
         <effect type="zoom" end="105" time="75" tween="sine" easing="out" center="auto" />
         <effect type="zoom" end="95.2380952" time="225" tween="sine" delay="100" easing="out" center="auto" />
       </animation>
-      <visible>!String.IsEmpty(Container(1505).ListItem.Label) + Control.IsVisible(1506) + [Control.HasFocus(1506) | Control.HasFocus(300) | Control.HasFocus(401) | String.IsEqual(Container(330).CurrentItem,1) | Control.HasFocus(30222)]</visible>
+      <visible>!String.IsEmpty(Container(1506).ListItem.Label) + Control.IsVisible(1506) + [Control.HasFocus(1506) | Control.HasFocus(300) | Control.HasFocus(401) | String.IsEqual(Container(330).CurrentItem,1) | Control.HasFocus(30222)]</visible>
       <animation effect="slide" start="0,0" end="0,80" time="0" condition="Skin.HasSetting(DisableMenuHor)">Conditonal</animation>
       <animation effect="fade" start="100" end="0" time="0" reversible="false" condition="Container(7711).IsUpdating">Conditional</animation>
       <animation effect="fade" start="0" end="100" delay="700" time="400" tween="quadratic" reversible="false" condition="!String.IsEqual(Window(Home).Property(SpotFocus),true) + String.IsEqual(Container(330).CurrentItem,1)">Conditional</animation>

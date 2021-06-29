@@ -3532,7 +3532,7 @@ msgstr "Hubs de Filmes"
 #: /1080i/Includes_Object.xml
 msgctxt "#31733"
 msgid "Home Spotlights"
-msgstr "Inicial de Destaques"
+msgstr "Destaques na Inicial"
 
 #: /1080i/Includes_Object.xml
 msgctxt "#31734"

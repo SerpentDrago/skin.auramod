@@ -4186,7 +4186,7 @@ msgstr "Realidade"
 #: /1080i/Includes_Labels.xml
 msgctxt "#31861"
 msgid "Returning Series"
-msgstr "Seriados Retornando"
+msgstr "Seriados Em Exibição"
 
 #: /1080i/Includes_Labels.xml
 msgctxt "#31862"
@@ -4201,7 +4201,7 @@ msgstr "Em Produção"
 #: /1080i/Includes_Labels.xml
 msgctxt "#31864"
 msgid "Ended"
-msgstr "Terminado"
+msgstr "Concluído"
 
 #: /1080i/Includes_Labels.xml
 msgctxt "#31865"
@@ -4216,7 +4216,7 @@ msgstr "Piloto"
 #: /1080i/Includes_Labels.xml
 msgctxt "#31867"
 msgid "Nominated for"
-msgstr "Indicado a"
+msgstr "Indicado ao"
 
 #: /1080i/Includes_Labels.xml
 msgctxt "#31868"

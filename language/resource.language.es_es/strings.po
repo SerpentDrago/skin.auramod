@@ -1294,7 +1294,7 @@ msgstr "Opacidad del fanart"
 
 #: /shortcuts/overrides.xml
 msgctxt "#31276"
-msgid "IMDB Top 250 Movies"
+msgid "IMDB Top 250 Películas"
 msgstr ""
 
 #: /1080i/SkinSettings.xml

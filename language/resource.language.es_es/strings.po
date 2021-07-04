@@ -1294,8 +1294,8 @@ msgstr "Opacidad del fanart"
 
 #: /shortcuts/overrides.xml
 msgctxt "#31276"
-msgid "IMDB Top 250 Películas"
-msgstr ""
+msgid "IMDB Top 250 Movies"
+msgstr "IMDB Top 250 Películas"
 
 #: /1080i/SkinSettings.xml
 msgctxt "#31277"
@@ -2509,7 +2509,7 @@ msgctxt "#31522"
 msgid "Configure LiveTV Spotlight"
 msgstr "Configurar Destacado de LiveTV"
 
-#: /1080i/SkinSettings.xml
+#: /1080i/SkinSettings.xml-/shortcuts/overrides.xml
 msgctxt "#31523"
 msgid "Search"
 msgstr "Búsqueda"
@@ -3884,12 +3884,12 @@ msgctxt "#31803"
 msgid "Movie Aura Hub"
 msgstr "Centro de Película Aura"
 
-#: /shortcuts/moviehubmenu.DATA.xml
+#: /shortcuts/moviehubmenu.DATA.xml-/shortcuts/overrides.xml
 msgctxt "#31804"
 msgid "Movie Netflix Hub"
 msgstr "Centro de Película Netflix"
 
-#: /shortcuts/movies.DATA.xml
+#: /shortcuts/movies.DATA.xml-/shortcuts/overrides.xml
 msgctxt "#31805"
 msgid "Movie Lists"
 msgstr "Listas de Películas"
@@ -3994,12 +3994,12 @@ msgctxt "#31826"
 msgid "TV Categories"
 msgstr "Categorías de TV"
 
-#: /shortcuts/tvhubmenu.DATA.xml
+#: /shortcuts/tvhubmenu.DATA.xml-/shortcuts/overrides.xml
 msgctxt "#31827"
 msgid "TV Aura Hub"
 msgstr "Centro de TV Aura"
 
-#: /shortcuts/tvhubmenu.DATA.xml
+#: /shortcuts/tvhubmenu.DATA.xml-/shortcuts/overrides.xml
 msgctxt "#31828"
 msgid "TV Netflix Hub"
 msgstr "Centro de TV Netflix"
@@ -4315,3 +4315,123 @@ msgstr "Continuar"
 msgctxt "#31884"
 msgid "Episode"
 msgstr "Episodio"
+
+#: /shortcuts/overrides.xml
+msgctxt "#31885"
+msgid "Hubs"
+msgstr "Centros"
+
+#: /shortcuts/overrides.xml
+msgctxt "#31886"
+msgid "Setup"
+msgstr "Configuración"
+
+#: /shortcuts/overrides.xml
+msgctxt "#31887"
+msgid "Movie Categories Hub"
+msgstr "Centro de Categorías de Películas"
+
+#: /shortcuts/overrides.xml
+msgctxt "#31888"
+msgid "Movie Genres Hub"
+msgstr "Centro de Géneros de Películas"
+
+#: /shortcuts/overrides.xml
+msgctxt "#31889"
+msgid "TV Categories Hub"
+msgstr "Centro de Categorías de TV"
+
+#: /shortcuts/overrides.xml
+msgctxt "#31890"
+msgid "TV Genres Hub"
+msgstr "Centro de Géneros de TV"
+
+#: /shortcuts/overrides.xml
+msgctxt "#31891"
+msgid "TV Networks Hub"
+msgstr "Centro de Redes de TV"
+
+#: /shortcuts/overrides.xml
+msgctxt "#31892"
+msgid "Movie Lists Hub 1"
+msgstr "Centro de Listas de Películas 1"
+
+#: /shortcuts/overrides.xml
+msgctxt "#31893"
+msgid "TV Lists Hub 1"
+msgstr "Centro de Listas de TV 1"
+
+#: /shortcuts/overrides.xml
+msgctxt "#31894"
+msgid "My Lists Hub 1"
+msgstr "Centro de Mis Listas 1"
+
+#: /shortcuts/overrides.xml
+msgctxt "#31895"
+msgid "My Lists Hub 2"
+msgstr "Centro de Mis Listas 2"
+
+#: /shortcuts/overrides.xml
+msgctxt "#31896"
+msgid "My Lists Hub 3"
+msgstr "Centro de Mis Listas 3"
+
+#: /shortcuts/overrides.xml
+msgctxt "#31897"
+msgid "My Addons List 1"
+msgstr "Mi Lista de Addons 1"
+
+#: /shortcuts/overrides.xml
+msgctxt "#31898"
+msgid "My Addons List 2"
+msgstr "Mi Lista de Addons 2"
+
+#: /shortcuts/overrides.xml
+msgctxt "#31899"
+msgid "My LiveTV List 1"
+msgstr "Mi Lista de LiveTV 1"
+
+#: /shortcuts/overrides.xml
+msgctxt "#31900"
+msgid "My LiveTV List 2"
+msgstr "Mi Lista de LiveTV 2"
+
+#: /shortcuts/overrides.xml
+msgctxt "#31901"
+msgid "My List Dialogs"
+msgstr "Diálogos de Mi Lista"
+
+#: /shortcuts/overrides.xml
+msgctxt "#31902"
+msgid "Movie Lists 1"
+msgstr "Listas de Películas 1"
+
+#: /shortcuts/overrides.xml
+msgctxt "#31903"
+msgid "Movie Categories List"
+msgstr "Lista de Categorías de Películas"
+
+#: /shortcuts/overrides.xml
+msgctxt "#31904"
+msgid "TV Lists 1"
+msgstr "Listas de TV 1"
+
+#: /shortcuts/overrides.xml
+msgctxt "#31905"
+msgid "TV Categories List"
+msgstr "Lista de Categorías de TV"
+
+#: /shortcuts/overrides.xml
+msgctxt "#31906"
+msgid "My Lists 1"
+msgstr "Mis Listas 1"
+
+#: /shortcuts/overrides.xml
+msgctxt "#31907"
+msgid "My Lists 2"
+msgstr "Mis Listas 2"
+
+#: /shortcuts/overrides.xml
+msgctxt "#31908"
+msgid "My Lists 3"
+msgstr "Mis Listas 3"

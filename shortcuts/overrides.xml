@@ -494,44 +494,44 @@
             <shortcut label="Media Hub" grouping="32029" icon="special://skin/extras/icons/tv.png">ActivateWindow(3730,return)</shortcut>
             <shortcut label="Search" grouping="32029" icon="special://skin/extras/icons/search.png">ActivateWindow(1136)</shortcut>
         </node>
-        <node label="Hubs">
-            <shortcut label="Setup" grouping="32029" icon="special://skin/extras/icons/clipboard.png">ActivateWindow(5111,return)</shortcut>
-            <shortcut label="Movie Categories Hub" grouping="32029" icon="special://skin/extras/icons/clipboard.png">ActivateWindow(2112,return)</shortcut>
-            <shortcut label="Movie Netflix Hub" grouping="32029" icon="special://skin/extras/icons/film.png">ActivateWindow(3820,return)</shortcut>
-            <shortcut label="Movie Aura Hub " grouping="32029" icon="special://skin/extras/icons/film.png">ActivateWindow(3920,return)</shortcut>
-            <shortcut label="Movie Genres Hub" grouping="32029" icon="special://skin/extras/icons/tv.png">ActivateWindow(4010,return)</shortcut>
-            <shortcut label="TV Categories Hub" grouping="32029" icon="special://skin/extras/icons/clipboard.png">ActivateWindow(2114,return)</shortcut>
-            <shortcut label="TV Genres Hub" grouping="32029" icon="special://skin/extras/icons/tv.png">ActivateWindow(4020,return)</shortcut>
-            <shortcut label="TV Networks Hub" grouping="32029" icon="special://skin/extras/icons/tv.png">ActivateWindow(2118,return)</shortcut>
-            <shortcut label="TV Aura Hub" grouping="32029" icon="special://skin/extras/icons/tv.png">ActivateWindow(3910,return)</shortcut>
-            <shortcut label="TV Netflix Hub" grouping="32029" icon="special://skin/extras/icons/tv.png">ActivateWindow(3810,return)</shortcut>
-            <shortcut label="Search" grouping="32029" icon="special://skin/extras/icons/search.png">ActivateWindow(1136)</shortcut>
+        <node label="$LOCALIZE[31885]"> <!-- Hubs -->
+            <shortcut label="$LOCALIZE[31886]" grouping="32029" icon="special://skin/extras/icons/clipboard.png">ActivateWindow(5111,return)</shortcut> <!-- Setup -->
+            <shortcut label="$LOCALIZE[31887]" grouping="32029" icon="special://skin/extras/icons/clipboard.png">ActivateWindow(2112,return)</shortcut> <!-- Movie Categories Hub -->
+            <shortcut label="$LOCALIZE[31804]" grouping="32029" icon="special://skin/extras/icons/film.png">ActivateWindow(3820,return)</shortcut> <!-- Movie Netflix Hub -->
+            <shortcut label="$LOCALIZE[31803]" grouping="32029" icon="special://skin/extras/icons/film.png">ActivateWindow(3920,return)</shortcut> <!-- Movie Aura Hub -->
+            <shortcut label="$LOCALIZE[31888]" grouping="32029" icon="special://skin/extras/icons/tv.png">ActivateWindow(4010,return)</shortcut> <!-- Movie Genres Hub -->
+            <shortcut label="$LOCALIZE[31889]" grouping="32029" icon="special://skin/extras/icons/clipboard.png">ActivateWindow(2114,return)</shortcut> <!-- TV Categories Hub -->
+            <shortcut label="$LOCALIZE[31890]" grouping="32029" icon="special://skin/extras/icons/tv.png">ActivateWindow(4020,return)</shortcut> <!-- TV Genres Hub -->
+            <shortcut label="$LOCALIZE[31891]" grouping="32029" icon="special://skin/extras/icons/tv.png">ActivateWindow(2118,return)</shortcut> <!-- TV Networks Hub -->
+            <shortcut label="$LOCALIZE[31827]" grouping="32029" icon="special://skin/extras/icons/tv.png">ActivateWindow(3910,return)</shortcut> <!-- TV Aura Hub -->
+            <shortcut label="$LOCALIZE[31828]" grouping="32029" icon="special://skin/extras/icons/tv.png">ActivateWindow(3810,return)</shortcut> <!-- TV Netflix Hub -->
+            <shortcut label="$LOCALIZE[31523]" grouping="32029" icon="special://skin/extras/icons/search.png">ActivateWindow(1136)</shortcut> <!-- Search -->
 
-            <shortcut label="Movie Lists Hub 1" grouping="32029" icon="special://skin/extras/icons/clipboard.png">ActivateWindow(2111,return)</shortcut>
-            <shortcut label="TV Lists Hub 1" grouping="32029" icon="special://skin/extras/icons/clipboard.png">ActivateWindow(2113,return)</shortcut>
-            <shortcut label="My Lists Hub 1" grouping="32029" icon="special://skin/extras/icons/clipboard.png">ActivateWindow(2115,return)</shortcut>
-            <shortcut label="My Lists Hub 2" grouping="32029" icon="special://skin/extras/icons/clipboard.png">ActivateWindow(2116,return)</shortcut>
-            <shortcut label="My Lists Hub 3" grouping="32029" icon="special://skin/extras/icons/clipboard.png">ActivateWindow(2117,return)</shortcut>
-            <shortcut label="My Addons List 1" grouping="32029" icon="special://skin/extras/icons/clipboard.png">ActivateWindow(2120,return)</shortcut>
-            <shortcut label="My Addons List 2" grouping="32029" icon="special://skin/extras/icons/clipboard.png">ActivateWindow(2121,return)</shortcut>
-            <shortcut label="My LiveTV List 1" grouping="32029" icon="special://skin/extras/icons/clipboard.png">ActivateWindow(2122,return)</shortcut>
-            <shortcut label="My LiveTV List 2" grouping="32029" icon="special://skin/extras/icons/clipboard.png">ActivateWindow(2123,return)</shortcut>
+            <shortcut label="$LOCALIZE[31892]" grouping="32029" icon="special://skin/extras/icons/clipboard.png">ActivateWindow(2111,return)</shortcut> <!-- Movie Lists Hub 1 -->
+            <shortcut label="$LOCALIZE[31893]" grouping="32029" icon="special://skin/extras/icons/clipboard.png">ActivateWindow(2113,return)</shortcut> <!-- TV Lists Hub 1 -->
+            <shortcut label="$LOCALIZE[31894]" grouping="32029" icon="special://skin/extras/icons/clipboard.png">ActivateWindow(2115,return)</shortcut> <!-- My Lists Hub 1 -->
+            <shortcut label="$LOCALIZE[31895]" grouping="32029" icon="special://skin/extras/icons/clipboard.png">ActivateWindow(2116,return)</shortcut> <!-- My Lists Hub 2 -->
+            <shortcut label="$LOCALIZE[31896]" grouping="32029" icon="special://skin/extras/icons/clipboard.png">ActivateWindow(2117,return)</shortcut> <!-- My Lists Hub 3 -->
+            <shortcut label="$LOCALIZE[31897]" grouping="32029" icon="special://skin/extras/icons/clipboard.png">ActivateWindow(2120,return)</shortcut> <!-- My Addons List 1 -->
+            <shortcut label="$LOCALIZE[31898]" grouping="32029" icon="special://skin/extras/icons/clipboard.png">ActivateWindow(2121,return)</shortcut> <!-- My Addons List 2 -->
+            <shortcut label="$LOCALIZE[31899]" grouping="32029" icon="special://skin/extras/icons/clipboard.png">ActivateWindow(2122,return)</shortcut> <!-- My LiveTV List 1 -->
+            <shortcut label="$LOCALIZE[31900]" grouping="32029" icon="special://skin/extras/icons/clipboard.png">ActivateWindow(2123,return)</shortcut> <!-- My LiveTV List 2 -->
         </node>
 
-        <node label="My List Dialogs">
-            <shortcut label="Movie Lists 1" grouping="32029" icon="special://skin/extras/icons/clipboard.png">ActivateWindow(1101,return)</shortcut>
-            <shortcut label="Movie Categories List" grouping="32029" icon="special://skin/extras/icons/clipboard.png">ActivateWindow(1102,return)</shortcut>
+        <node label="$LOCALIZE[31901]"> <!-- My List Dialogs -->
+            <shortcut label="$LOCALIZE[31902]" grouping="32029" icon="special://skin/extras/icons/clipboard.png">ActivateWindow(1101,return)</shortcut> <!-- Movie Lists 1 -->
+            <shortcut label="$LOCALIZE[31903]" grouping="32029" icon="special://skin/extras/icons/clipboard.png">ActivateWindow(1102,return)</shortcut> <!-- Movie Categories List -->
 
-            <shortcut label="TV Lists 1" grouping="32029" icon="special://skin/extras/icons/clipboard.png">ActivateWindow(1103,return)</shortcut>
-            <shortcut label="TV Categories List" grouping="32029" icon="special://skin/extras/icons/clipboard.png">ActivateWindow(1104,return)</shortcut>
+            <shortcut label="$LOCALIZE[31904]" grouping="32029" icon="special://skin/extras/icons/clipboard.png">ActivateWindow(1103,return)</shortcut> <!-- TV Lists 1 -->
+            <shortcut label="$LOCALIZE[31905]" grouping="32029" icon="special://skin/extras/icons/clipboard.png">ActivateWindow(1104,return)</shortcut> <!-- TV Categories List -->
 
-            <shortcut label="My Lists 1" grouping="32029" icon="special://skin/extras/icons/clipboard.png">ActivateWindow(1105,return)</shortcut>
-            <shortcut label="My Lists 2" grouping="32029" icon="special://skin/extras/icons/clipboard.png">ActivateWindow(1106,return)</shortcut>
-            <shortcut label="My Lists 3" grouping="32029" icon="special://skin/extras/icons/clipboard.png">ActivateWindow(1107,return)</shortcut> 
-            <shortcut label="My Addons List 1" grouping="32029" icon="special://skin/extras/icons/clipboard.png">ActivateWindow(3110,return)</shortcut>
-            <shortcut label="My Addons List 2" grouping="32029" icon="special://skin/extras/icons/clipboard.png">ActivateWindow(3111,return)</shortcut>
-            <shortcut label="My LiveTV List 1" grouping="32029" icon="special://skin/extras/icons/clipboard.png">ActivateWindow(3112,return)</shortcut>
-            <shortcut label="My LiveTV List 2" grouping="32029" icon="special://skin/extras/icons/clipboard.png">ActivateWindow(3113,return)</shortcut>
+            <shortcut label="$LOCALIZE[31906]" grouping="32029" icon="special://skin/extras/icons/clipboard.png">ActivateWindow(1105,return)</shortcut> <!-- My Lists 1 -->
+            <shortcut label="$LOCALIZE[31907]" grouping="32029" icon="special://skin/extras/icons/clipboard.png">ActivateWindow(1106,return)</shortcut> <!-- My Lists 2 -->
+            <shortcut label="$LOCALIZE[31908]" grouping="32029" icon="special://skin/extras/icons/clipboard.png">ActivateWindow(1107,return)</shortcut> <!-- My Lists 3 -->
+            <shortcut label="$LOCALIZE[31897]" grouping="32029" icon="special://skin/extras/icons/clipboard.png">ActivateWindow(3110,return)</shortcut> <!-- My Addons List 1 -->
+            <shortcut label="$LOCALIZE[31898]" grouping="32029" icon="special://skin/extras/icons/clipboard.png">ActivateWindow(3111,return)</shortcut> <!-- My Addons List 2 -->
+            <shortcut label="$LOCALIZE[31899]" grouping="32029" icon="special://skin/extras/icons/clipboard.png">ActivateWindow(3112,return)</shortcut> <!-- My LiveTV List 1 -->
+            <shortcut label="$LOCALIZE[31900]" grouping="32029" icon="special://skin/extras/icons/clipboard.png">ActivateWindow(3113,return)</shortcut> <!-- My LiveTV List 2 -->
         </node>
 
         <node label="32030">

@@ -73,6 +73,76 @@
          <value condition="!String.IsEmpty(Window(Home).Property(TMDbHelper.ListItem.Awards)) + !String.IsEmpty(Window(Home).Property(TMDbHelper.ListItem.Emmy_Wins)) + !Integer.IsGreater(Window(Home).Property(TMDbHelper.ListItem.Emmy_Wins),1) | !String.IsEmpty(Window(Home).Property(TMDbHelper.ListItem.Awards)) + !String.IsEmpty(Window(Home).Property(TMDbHelper.ListItem.Emmy_Nominations)) + !Integer.IsGreater(Window(Home).Property(TMDbHelper.ListItem.Emmy_Nominations),1)"> $LOCALIZE[31878].</value>
     </variable>
 
+    <variable name="localized_awards_container">
+         <value condition="Control.IsVisible(1505) + !String.IsEmpty(Container(90001).ListItem.Property(Awards)) + !String.IsEmpty(Container(90001).ListItem.Property(Oscar_Nominations)) + String.IsEmpty(Container(90001).ListItem.Property(Oscar_Wins))">$VAR[localized_award_string_nominated_or_won_container]$INFO[Container(90001).ListItem.Property(Oscar_Nominations)]$VAR[localized_award_string_oscars_container] $VAR[localized_award_string_another_container]$INFO[Container(90001).ListItem.Property(Award_Wins)]$VAR[localized_award_string_wins_container] &amp; $INFO[Container(90001).ListItem.Property(Award_Nominations)]$VAR[localized_award_string_nominations_container]</value>
+         <value condition="Control.IsVisible(1505) + !String.IsEmpty(Container(90001).ListItem.Property(Awards)) + !String.IsEmpty(Container(90001).ListItem.Property(Emmy_Nominations)) + String.IsEmpty(Container(90001).ListItem.Property(Emmy_Wins))">$VAR[localized_award_string_nominated_or_won_container]$INFO[Container(90001).ListItem.Property(Emmy_Nominations)]$VAR[localized_award_string_emmys_container] $VAR[localized_award_string_another_container]$INFO[Container(90001).ListItem.Property(Award_Wins)]$VAR[localized_award_string_wins_container] &amp; $INFO[Container(90001).ListItem.Property(Award_Nominations)]$VAR[localized_award_string_nominations_container]</value>
+         <value condition="Control.IsVisible(1505) + !String.IsEmpty(Container(90001).ListItem.Property(Awards)) + String.IsEmpty(Container(90001).ListItem.Property(Oscar_Nominations)) + !String.IsEmpty(Container(90001).ListItem.Property(Oscar_Wins))">$VAR[localized_award_string_nominated_or_won_container]$INFO[Container(90001).ListItem.Property(Oscar_Wins)]$VAR[localized_award_string_oscars_container] $VAR[localized_award_string_another_container]$INFO[Container(90001).ListItem.Property(Award_Wins)]$VAR[localized_award_string_wins_container] &amp; $INFO[Container(90001).ListItem.Property(Award_Nominations)]$VAR[localized_award_string_nominations_container]</value>
+         <value condition="Control.IsVisible(1505) + !String.IsEmpty(Container(90001).ListItem.Property(Awards)) + String.IsEmpty(Container(90001).ListItem.Property(Emmy_Nominations)) + !String.IsEmpty(Container(90001).ListItem.Property(Emmy_Wins))">$VAR[localized_award_string_nominated_or_won_container]$INFO[Container(90001).ListItem.Property(Emmy_Wins)]$VAR[localized_award_string_emmys_container] $VAR[localized_award_string_another_container]$INFO[Container(90001).ListItem.Property(Award_Wins)]$VAR[localized_award_string_wins_container] &amp; $INFO[Container(90001).ListItem.Property(Award_Nominations)]$VAR[localized_award_string_nominations_container]</value>
+         <value condition="Control.IsVisible(1505) + !String.IsEmpty(Container(90001).ListItem.Property(Awards)) + String.IsEmpty(Container(90001).ListItem.Property(Oscar_Nominations)) + String.IsEmpty(Container(90001).ListItem.Property(Oscar_Wins)) + String.IsEmpty(Container(90001).ListItem.Property(Emmy_Nominations)) + String.IsEmpty(Container(90001).ListItem.Property(Emmy_Wins)) + !String.IsEmpty(Container(90001).ListItem.Property(Award_Wins)) + !String.IsEmpty(Container(90001).ListItem.Property(Award_Nominations))">$INFO[Container(90001).ListItem.Property(Award_Wins)]$VAR[localized_award_string_wins_container] &amp; $INFO[Container(90001).ListItem.Property(Award_Nominations)]$VAR[localized_award_string_nominations_container]</value>
+         <value condition="Control.IsVisible(1505) + !String.IsEmpty(Container(90001).ListItem.Property(Awards)) + String.IsEmpty(Container(90001).ListItem.Property(Oscar_Nominations)) + String.IsEmpty(Container(90001).ListItem.Property(Oscar_Wins)) + String.IsEmpty(Container(90001).ListItem.Property(Emmy_Nominations)) + String.IsEmpty(Container(90001).ListItem.Property(Emmy_Wins)) + !String.IsEmpty(Container(90001).ListItem.Property(Award_Wins)) + String.IsEmpty(Container(90001).ListItem.Property(Award_Nominations))">$INFO[Container(90001).ListItem.Property(Award_Wins)]$VAR[localized_award_string_wins_container]</value>
+         <value condition="Control.IsVisible(1505) + !String.IsEmpty(Container(90001).ListItem.Property(Awards)) + String.IsEmpty(Container(90001).ListItem.Property(Oscar_Nominations)) + String.IsEmpty(Container(90001).ListItem.Property(Oscar_Wins)) + String.IsEmpty(Container(90001).ListItem.Property(Emmy_Nominations)) + String.IsEmpty(Container(90001).ListItem.Property(Emmy_Wins)) + String.IsEmpty(Container(90001).ListItem.Property(Award_Wins)) + !String.IsEmpty(Container(90001).ListItem.Property(Award_Nominations))">$INFO[Container(90001).ListItem.Property(Award_Nominations)]$VAR[localized_award_string_nominations_container]</value>
+
+         <value condition="Control.IsVisible(1506) + !String.IsEmpty(Container(90002).ListItem.Property(Awards)) + !String.IsEmpty(Container(90002).ListItem.Property(Oscar_Nominations)) + String.IsEmpty(Container(90002).ListItem.Property(Oscar_Wins))">$VAR[localized_award_string_nominated_or_won_container]$INFO[Container(90002).ListItem.Property(Oscar_Nominations)]$VAR[localized_award_string_oscars_container] $VAR[localized_award_string_another_container]$INFO[Container(90002).ListItem.Property(Award_Wins)]$VAR[localized_award_string_wins_container] &amp; $INFO[Container(90002).ListItem.Property(Award_Nominations)]$VAR[localized_award_string_nominations_container]</value>
+         <value condition="Control.IsVisible(1506) + !String.IsEmpty(Container(90002).ListItem.Property(Awards)) + !String.IsEmpty(Container(90002).ListItem.Property(Emmy_Nominations)) + String.IsEmpty(Container(90002).ListItem.Property(Emmy_Wins))">$VAR[localized_award_string_nominated_or_won_container]$INFO[Container(90002).ListItem.Property(Emmy_Nominations)]$VAR[localized_award_string_emmys_container] $VAR[localized_award_string_another_container]$INFO[Container(90002).ListItem.Property(Award_Wins)]$VAR[localized_award_string_wins_container] &amp; $INFO[Container(90002).ListItem.Property(Award_Nominations)]$VAR[localized_award_string_nominations_container]</value>
+         <value condition="Control.IsVisible(1506) + !String.IsEmpty(Container(90002).ListItem.Property(Awards)) + String.IsEmpty(Container(90002).ListItem.Property(Oscar_Nominations)) + !String.IsEmpty(Container(90002).ListItem.Property(Oscar_Wins))">$VAR[localized_award_string_nominated_or_won_container]$INFO[Container(90002).ListItem.Property(Oscar_Wins)]$VAR[localized_award_string_oscars_container] $VAR[localized_award_string_another_container]$INFO[Container(90002).ListItem.Property(Award_Wins)]$VAR[localized_award_string_wins_container] &amp; $INFO[Container(90002).ListItem.Property(Award_Nominations)]$VAR[localized_award_string_nominations_container]</value>
+         <value condition="Control.IsVisible(1506) + !String.IsEmpty(Container(90002).ListItem.Property(Awards)) + String.IsEmpty(Container(90002).ListItem.Property(Emmy_Nominations)) + !String.IsEmpty(Container(90002).ListItem.Property(Emmy_Wins))">$VAR[localized_award_string_nominated_or_won_container]$INFO[Container(90002).ListItem.Property(Emmy_Wins)]$VAR[localized_award_string_emmys_container] $VAR[localized_award_string_another_container]$INFO[Container(90002).ListItem.Property(Award_Wins)]$VAR[localized_award_string_wins_container] &amp; $INFO[Container(90002).ListItem.Property(Award_Nominations)]$VAR[localized_award_string_nominations_container]</value>
+         <value condition="Control.IsVisible(1506) + !String.IsEmpty(Container(90002).ListItem.Property(Awards)) + String.IsEmpty(Container(90002).ListItem.Property(Oscar_Nominations)) + String.IsEmpty(Container(90002).ListItem.Property(Oscar_Wins)) + String.IsEmpty(Container(90002).ListItem.Property(Emmy_Nominations)) + String.IsEmpty(Container(90002).ListItem.Property(Emmy_Wins)) + !String.IsEmpty(Container(90002).ListItem.Property(Award_Wins)) + !String.IsEmpty(Container(90002).ListItem.Property(Award_Nominations))">$INFO[Container(90002).ListItem.Property(Award_Wins)]$VAR[localized_award_string_wins_container] &amp; $INFO[Container(90002).ListItem.Property(Award_Nominations)]$VAR[localized_award_string_nominations_container]</value>
+         <value condition="Control.IsVisible(1506) + !String.IsEmpty(Container(90002).ListItem.Property(Awards)) + String.IsEmpty(Container(90002).ListItem.Property(Oscar_Nominations)) + String.IsEmpty(Container(90002).ListItem.Property(Oscar_Wins)) + String.IsEmpty(Container(90002).ListItem.Property(Emmy_Nominations)) + String.IsEmpty(Container(90002).ListItem.Property(Emmy_Wins)) + !String.IsEmpty(Container(90002).ListItem.Property(Award_Wins)) + String.IsEmpty(Container(90002).ListItem.Property(Award_Nominations))">$INFO[Container(90002).ListItem.Property(Award_Wins)]$VAR[localized_award_string_wins_container]</value>
+         <value condition="Control.IsVisible(1506) + !String.IsEmpty(Container(90002).ListItem.Property(Awards)) + String.IsEmpty(Container(90002).ListItem.Property(Oscar_Nominations)) + String.IsEmpty(Container(90002).ListItem.Property(Oscar_Wins)) + String.IsEmpty(Container(90002).ListItem.Property(Emmy_Nominations)) + String.IsEmpty(Container(90002).ListItem.Property(Emmy_Wins)) + String.IsEmpty(Container(90002).ListItem.Property(Award_Wins)) + !String.IsEmpty(Container(90002).ListItem.Property(Award_Nominations))">$INFO[Container(90002).ListItem.Property(Award_Nominations)]$VAR[localized_award_string_nominations_container]</value>
+    </variable>
+
+    <variable name="localized_award_string_nominated_or_won_container">
+         <value condition="Control.IsVisible(1505) + !String.IsEmpty(Container(90001).ListItem.Property(Awards)) + [!String.IsEmpty(Container(90001).ListItem.Property(Oscar_Nominations)) + String.IsEmpty(Container(90001).ListItem.Property(Oscar_Wins)) | !String.IsEmpty(Container(90001).ListItem.Property(Emmy_Nominations)) + String.IsEmpty(Container(90001).ListItem.Property(Emmy_Wins))]">$LOCALIZE[31867] </value>
+         <value condition="Control.IsVisible(1505) + !String.IsEmpty(Container(90001).ListItem.Property(Awards)) + [String.IsEmpty(Container(90001).ListItem.Property(Oscar_Nominations)) + !String.IsEmpty(Container(90001).ListItem.Property(Oscar_Wins)) | String.IsEmpty(Container(90001).ListItem.Property(Emmy_Nominations)) + !String.IsEmpty(Container(90001).ListItem.Property(Emmy_Wins))]">$LOCALIZE[31868] </value>
+
+         <value condition="Control.IsVisible(1506) + !String.IsEmpty(Container(90002).ListItem.Property(Awards)) + [!String.IsEmpty(Container(90002).ListItem.Property(Oscar_Nominations)) + String.IsEmpty(Container(90002).ListItem.Property(Oscar_Wins)) | !String.IsEmpty(Container(90002).ListItem.Property(Emmy_Nominations)) + String.IsEmpty(Container(90002).ListItem.Property(Emmy_Wins))]">$LOCALIZE[31867] </value>
+         <value condition="Control.IsVisible(1506) + !String.IsEmpty(Container(90002).ListItem.Property(Awards)) + [String.IsEmpty(Container(90002).ListItem.Property(Oscar_Nominations)) + !String.IsEmpty(Container(90002).ListItem.Property(Oscar_Wins)) | String.IsEmpty(Container(90002).ListItem.Property(Emmy_Nominations)) + !String.IsEmpty(Container(90002).ListItem.Property(Emmy_Wins))]">$LOCALIZE[31868] </value>
+    </variable>
+
+    <variable name="localized_award_string_another_container">
+         <value condition="Control.IsVisible(1505) + !String.IsEmpty(Container(90001).ListItem.Property(Awards)) + String.Contains(Container(90001).ListItem.Property(Awards),Another)">$LOCALIZE[31869] </value>
+         <value condition="Control.IsVisible(1505) + !String.IsEmpty(Container(90001).ListItem.Property(Awards)) + !String.Contains(Container(90001).ListItem.Property(Awards),Another)"></value>
+
+         <value condition="Control.IsVisible(1506) + !String.IsEmpty(Container(90002).ListItem.Property(Awards)) + String.Contains(Container(90002).ListItem.Property(Awards),Another)">$LOCALIZE[31869] </value>
+         <value condition="Control.IsVisible(1506) + !String.IsEmpty(Container(90002).ListItem.Property(Awards)) + !String.Contains(Container(90002).ListItem.Property(Awards),Another)"></value>
+    </variable>
+
+    <variable name="localized_award_string_wins_container">
+         <value condition="Control.IsVisible(1505) + !String.IsEmpty(Container(90001).ListItem.Property(Awards)) + !String.IsEmpty(Container(90001).ListItem.Property(Award_Wins)) + Integer.IsGreater(Container(90001).ListItem.Property(Award_Wins),1)"> $LOCALIZE[31870]</value>
+         <value condition="Control.IsVisible(1505) + !String.IsEmpty(Container(90001).ListItem.Property(Awards)) + !String.IsEmpty(Container(90001).ListItem.Property(Award_Wins)) + !Integer.IsGreater(Container(90001).ListItem.Property(Award_Wins),1)"> $LOCALIZE[31871]</value>
+
+         <value condition="Control.IsVisible(1506) + !String.IsEmpty(Container(90002).ListItem.Property(Awards)) + !String.IsEmpty(Container(90002).ListItem.Property(Award_Wins)) + Integer.IsGreater(Container(90002).ListItem.Property(Award_Wins),1)"> $LOCALIZE[31870]</value>
+         <value condition="Control.IsVisible(1506) + !String.IsEmpty(Container(90002).ListItem.Property(Awards)) + !String.IsEmpty(Container(90002).ListItem.Property(Award_Wins)) + !Integer.IsGreater(Container(90002).ListItem.Property(Award_Wins),1)"> $LOCALIZE[31871]</value>
+    </variable>
+
+    <variable name="localized_award_string_nominations_container">
+         <value condition="Control.IsVisible(1505) + !String.IsEmpty(Container(90001).ListItem.Property(Awards)) + !String.IsEmpty(Container(90001).ListItem.Property(Award_Nominations)) + Integer.IsGreater(Container(90001).ListItem.Property(Award_Nominations),1) + String.EndsWith(Container(90001).ListItem.Property(Awards),total)"> $LOCALIZE[31872] $LOCALIZE[31874].</value>
+         <value condition="Control.IsVisible(1505) + !String.IsEmpty(Container(90001).ListItem.Property(Awards)) + !String.IsEmpty(Container(90001).ListItem.Property(Award_Nominations)) + !Integer.IsGreater(Container(90001).ListItem.Property(Award_Nominations),1) + String.EndsWith(Container(90001).ListItem.Property(Awards),total)"> $LOCALIZE[31873] $LOCALIZE[31874].</value>
+         <value condition="Control.IsVisible(1505) + !String.IsEmpty(Container(90001).ListItem.Property(Awards)) + !String.IsEmpty(Container(90001).ListItem.Property(Award_Nominations)) + Integer.IsGreater(Container(90001).ListItem.Property(Award_Nominations),1) + !String.EndsWith(Container(90001).ListItem.Property(Awards),total)"> $LOCALIZE[31872].</value>
+         <value condition="Control.IsVisible(1505) + !String.IsEmpty(Container(90001).ListItem.Property(Awards)) + !String.IsEmpty(Container(90001).ListItem.Property(Award_Nominations)) + !Integer.IsGreater(Container(90001).ListItem.Property(Award_Nominations),1) + !String.EndsWith(Container(90001).ListItem.Property(Awards),total)"> $LOCALIZE[31873].</value>
+
+         <value condition="Control.IsVisible(1506) + !String.IsEmpty(Container(90002).ListItem.Property(Awards)) + !String.IsEmpty(Container(90002).ListItem.Property(Award_Nominations)) + Integer.IsGreater(Container(90002).ListItem.Property(Award_Nominations),1) + String.EndsWith(Container(90002).ListItem.Property(Awards),total)"> $LOCALIZE[31872] $LOCALIZE[31874].</value>
+         <value condition="Control.IsVisible(1506) + !String.IsEmpty(Container(90002).ListItem.Property(Awards)) + !String.IsEmpty(Container(90002).ListItem.Property(Award_Nominations)) + !Integer.IsGreater(Container(90002).ListItem.Property(Award_Nominations),1) + String.EndsWith(Container(90002).ListItem.Property(Awards),total)"> $LOCALIZE[31873] $LOCALIZE[31874].</value>
+         <value condition="Control.IsVisible(1506) + !String.IsEmpty(Container(90002).ListItem.Property(Awards)) + !String.IsEmpty(Container(90002).ListItem.Property(Award_Nominations)) + Integer.IsGreater(Container(90002).ListItem.Property(Award_Nominations),1) + !String.EndsWith(Container(90002).ListItem.Property(Awards),total)"> $LOCALIZE[31872].</value>
+         <value condition="Control.IsVisible(1506) + !String.IsEmpty(Container(90002).ListItem.Property(Awards)) + !String.IsEmpty(Container(90002).ListItem.Property(Award_Nominations)) + !Integer.IsGreater(Container(90002).ListItem.Property(Award_Nominations),1) + !String.EndsWith(Container(90002).ListItem.Property(Awards),total)"> $LOCALIZE[31873].</value>
+    </variable>
+
+    <variable name="localized_award_string_oscars_container">
+         <value condition="Control.IsVisible(1505) + !String.IsEmpty(Container(90001).ListItem.Property(Awards)) + !String.IsEmpty(Container(90001).ListItem.Property(Oscar_Wins)) + Integer.IsGreater(Container(90001).ListItem.Property(Oscar_Wins),1) | !String.IsEmpty(Container(90001).ListItem.Property(Awards)) + !String.IsEmpty(Container(90001).ListItem.Property(Oscar_Nominations)) + Integer.IsGreater(Container(90001).ListItem.Property(Oscar_Nominations),1)"> $LOCALIZE[31875].</value>
+         <value condition="Control.IsVisible(1505) + !String.IsEmpty(Container(90001).ListItem.Property(Awards)) + !String.IsEmpty(Container(90001).ListItem.Property(Oscar_Wins)) + !Integer.IsGreater(Container(90001).ListItem.Property(Oscar_Wins),1) | !String.IsEmpty(Container(90001).ListItem.Property(Awards)) + !String.IsEmpty(Container(90001).ListItem.Property(Oscar_Nominations)) + !Integer.IsGreater(Container(90001).ListItem.Property(Oscar_Nominations),1)"> $LOCALIZE[31876].</value>
+
+         <value condition="Control.IsVisible(1506) + !String.IsEmpty(Container(90002).ListItem.Property(Awards)) + !String.IsEmpty(Container(90002).ListItem.Property(Oscar_Wins)) + Integer.IsGreater(Container(90002).ListItem.Property(Oscar_Wins),1) | !String.IsEmpty(Container(90002).ListItem.Property(Awards)) + !String.IsEmpty(Container(90002).ListItem.Property(Oscar_Nominations)) + Integer.IsGreater(Container(90002).ListItem.Property(Oscar_Nominations),1)"> $LOCALIZE[31875].</value>
+         <value condition="Control.IsVisible(1506) + !String.IsEmpty(Container(90002).ListItem.Property(Awards)) + !String.IsEmpty(Container(90002).ListItem.Property(Oscar_Wins)) + !Integer.IsGreater(Container(90002).ListItem.Property(Oscar_Wins),1) | !String.IsEmpty(Container(90002).ListItem.Property(Awards)) + !String.IsEmpty(Container(90002).ListItem.Property(Oscar_Nominations)) + !Integer.IsGreater(Container(90002).ListItem.Property(Oscar_Nominations),1)"> $LOCALIZE[31876].</value>
+    </variable>
+
+    <variable name="localized_award_string_emmys_container">
+         <value condition="Control.IsVisible(1505) + !String.IsEmpty(Container(90001).ListItem.Property(Awards)) + !String.IsEmpty(Container(90001).ListItem.Property(Emmy_Wins)) + Integer.IsGreater(Container(90001).ListItem.Property(Emmy_Wins),1) | !String.IsEmpty(Container(90001).ListItem.Property(Awards)) + !String.IsEmpty(Container(90001).ListItem.Property(Emmy_Nominations)) + Integer.IsGreater(Container(90001).ListItem.Property(Emmy_Nominations),1)"> $LOCALIZE[31877].</value>
+         <value condition="Control.IsVisible(1505) + !String.IsEmpty(Container(90001).ListItem.Property(Awards)) + !String.IsEmpty(Container(90001).ListItem.Property(Emmy_Wins)) + !Integer.IsGreater(Container(90001).ListItem.Property(Emmy_Wins),1) | !String.IsEmpty(Container(90001).ListItem.Property(Awards)) + !String.IsEmpty(Container(90001).ListItem.Property(Emmy_Nominations)) + !Integer.IsGreater(Container(90001).ListItem.Property(Emmy_Nominations),1)"> $LOCALIZE[31878].</value>
+
+         <value condition="Control.IsVisible(1506) + !String.IsEmpty(Container(90002).ListItem.Property(Awards)) + !String.IsEmpty(Container(90002).ListItem.Property(Emmy_Wins)) + Integer.IsGreater(Container(90002).ListItem.Property(Emmy_Wins),1) | !String.IsEmpty(Container(90002).ListItem.Property(Awards)) + !String.IsEmpty(Container(90002).ListItem.Property(Emmy_Nominations)) + Integer.IsGreater(Container(90002).ListItem.Property(Emmy_Nominations),1)"> $LOCALIZE[31877].</value>
+         <value condition="Control.IsVisible(1506) + !String.IsEmpty(Container(90002).ListItem.Property(Awards)) + !String.IsEmpty(Container(90002).ListItem.Property(Emmy_Wins)) + !Integer.IsGreater(Container(90002).ListItem.Property(Emmy_Wins),1) | !String.IsEmpty(Container(90002).ListItem.Property(Awards)) + !String.IsEmpty(Container(90002).ListItem.Property(Emmy_Nominations)) + !Integer.IsGreater(Container(90002).ListItem.Property(Emmy_Nominations),1)"> $LOCALIZE[31878].</value>
+    </variable>
+
     <variable name="metacritic_rating">
         <value condition="!String.IsEmpty(ListItem.Property(Metacritic_Rating))">$INFO[ListItem.Property(Metacritic_Rating), ,% ]</value>
 	<value condition="!String.IsEmpty(Window(Home).Property(TMDBHelper.ListItem.Metacritic_Rating))">$INFO[Window(Home).Property(TMDBHelper.ListItem.Metacritic_Rating), ,% ]</value>
@@ -81,6 +151,14 @@
     <variable name="metacritic_rating_container">
         <value condition="!String.IsEmpty(Container.ListItem.Property(Metacritic_Rating))">$INFO[Container.ListItem.Property(Metacritic_Rating), ,% ]</value>
 	<value condition="!String.IsEmpty(Window(Home).Property(TMDBHelper.ListItem.Metacritic_Rating))">$INFO[Window(Home).Property(TMDBHelper.ListItem.Metacritic_Rating), ,% ]</value>
+    </variable>
+
+    <variable name="metacritic_rating_90001">
+        <value condition="!String.IsEmpty(Container(90001).ListItem.Property(Metacritic_Rating))">$INFO[Container(90001).ListItem.Property(Metacritic_Rating), ,% ]</value>
+    </variable>
+
+    <variable name="metacritic_rating_90002">
+        <value condition="!String.IsEmpty(Container(90002).ListItem.Property(Metacritic_Rating))">$INFO[Container(90002).ListItem.Property(Metacritic_Rating), ,% ]</value>
     </variable>
 
     <variable name="rating_rtmeter">
@@ -92,6 +170,15 @@
 	 <value condition="!String.IsEmpty(Container.ListItem.Property(rottentomatoes_rating))">$INFO[Container.ListItem.Property(rottentomatoes_rating), ,% ]</value>
 	 <value condition="!String.IsEmpty(Window(Home).Property(TMDbHelper.ListItem.RottenTomatoes_Rating))">$INFO[Window(Home).Property(TMDbHelper.ListItem.RottenTomatoes_Rating), ,% ]</value>
     </variable>
+
+    <variable name="rating_rtmeter_90001">
+        <value condition="!String.IsEmpty(Container(90001).ListItem.Property(rottentomatoes_rating))">$INFO[Container(90001).ListItem.Property(rottentomatoes_rating), ,% ]</value>
+    </variable>
+
+    <variable name="rating_rtmeter_90002">
+        <value condition="!String.IsEmpty(Container(90002).ListItem.Property(rottentomatoes_rating))">$INFO[Container(90002).ListItem.Property(rottentomatoes_rating), ,% ]</value>
+    </variable>
+
     <variable name="rating_tmdb">
          <value condition="!String.IsEmpty(ListItem.Property(tmdb_rating))">$INFO[ListItem.Property(tmdb_rating), , ]</value>
          <value condition="!String.IsEmpty(Window(Home).Property(TMDbHelper.ListItem.TMDb_Rating))">$INFO[Window(Home).Property(TMDbHelper.ListItem.TMDb_Rating), , ]</value>
@@ -100,6 +187,14 @@
     <variable name="rating_tmdb_container">
          <value condition="!String.IsEmpty(Container.ListItem.Property(tmdb_rating))">$INFO[Container.ListItem.Property(tmdb_rating), , ]</value>
          <value condition="!String.IsEmpty(Window(Home).Property(TMDbHelper.ListItem.TMDb_Rating))">$INFO[Window(Home).Property(TMDbHelper.ListItem.TMDb_Rating), , ]</value>
+    </variable>
+
+    <variable name="rating_tmdb_90001">
+        <value condition="!String.IsEmpty(Container(90001).ListItem.Property(tmdb_rating))">$INFO[Container(90001).ListItem.Property(tmdb_rating), , ]</value>
+    </variable>
+
+    <variable name="rating_tmdb_90002">
+        <value condition="!String.IsEmpty(Container(90002).ListItem.Property(tmdb_rating))">$INFO[Container(90002).ListItem.Property(tmdb_rating), , ]</value>
     </variable>
 
     <variable name="videoinfo_rtmeter">
@@ -115,6 +210,14 @@
     <variable name="rating_usermeter_container">
          <value condition="!String.IsEmpty(Container.ListItem.Property(rottentomatoes_usermeter))">$INFO[Container.ListItem.Property(rottentomatoes_usermeter), ,% ]</value>
          <value condition="!String.IsEmpty(Window(Home).Property(TMDbHelper.ListItem.RottenTomatoes_UserMeter))">$INFO[Window(Home).Property(TMDbHelper.ListItem.RottenTomatoes_UserMeter), ,% ]</value>
+    </variable>
+
+    <variable name="rating_usermeter_90001">
+        <value condition="!String.IsEmpty(Container(90001).ListItem.Property(rottentomatoes_usermeter))">$INFO[Container(90001).ListItem.Property(rottentomatoes_usermeter), ,% ]</value>
+    </variable>
+
+    <variable name="rating_usermeter_90002">
+        <value condition="!String.IsEmpty(Container(90002).ListItem.Property(rottentomatoes_usermeter))">$INFO[Container(90002).ListItem.Property(rottentomatoes_usermeter), ,% ]</value>
     </variable>
 
     <variable name="videoinfo_usermeter">
@@ -218,6 +321,11 @@
 	<value condition="!String.IsEmpty(ListItem.Rating)">[B]$VAR[RatingDecimalToPercentageListItemRating]$VAR[liked_percent_symbol] $LOCALIZE[31782][/B]</value> <!-- Liked -->
 	<value condition="!String.IsEmpty(Container(1505).ListItem.Rating)">[B]$VAR[RatingDecimalToPercentageListItemRating1505]$VAR[liked_percent_symbol] $LOCALIZE[31782][/B]</value> <!-- Liked -->
 	<value condition="!String.IsEmpty(Container(1506).ListItem.Rating)">[B]$VAR[RatingDecimalToPercentageListItemRating1506]$VAR[liked_percent_symbol] $LOCALIZE[31782][/B]</value> <!-- Liked -->
+     </variable>
+
+     <variable name="liked_percent_container">
+	<value condition="Control.IsVisible(1505) + !String.IsEmpty(Container(1505).ListItem.Rating)">[B]$VAR[RatingDecimalToPercentageListItemRating1505]$VAR[liked_percent_symbol] $LOCALIZE[31782][/B]</value> <!-- Liked -->
+	<value condition="Control.IsVisible(1506) + !String.IsEmpty(Container(1506).ListItem.Rating)">[B]$VAR[RatingDecimalToPercentageListItemRating1506]$VAR[liked_percent_symbol] $LOCALIZE[31782][/B]</value> <!-- Liked -->
      </variable>
 
      <variable name="liked_percent_symbol">
@@ -909,6 +1017,50 @@
         <value condition="!String.IsEmpty(Window(Home).Property(TMDBHelper.ListItem.Genre))">[I]$INFO[Window(Home).Property(TMDBHelper.ListItem.Genre)][/I]</value>
     </variable>
 
+    <!-- Spotlight Info @cartmandos -->
+    <variable name="DetailsSpinImage_container">
+        <value condition="Control.IsVisible(1505) + !String.IsEmpty(Container(90001).ListItem.Property(Awards)) + Integer.IsLessOrEqual(System.Time(ss),15) + !String.IsEmpty(Container(90001).ListItem.Property(Awards))">awards</value>
+        <value condition="Control.IsVisible(1506) + !String.IsEmpty(Container(90002).ListItem.Property(Awards)) + Integer.IsLessOrEqual(System.Time(ss),15) + !String.IsEmpty(Container(90002).ListItem.Property(Awards))">awards</value>
+        <value condition="Control.IsVisible(1505) + Integer.IsLessOrEqual(System.Time(ss),15) + !String.IsEmpty(Container(90001).ListItem.Property(Awards))">awards</value>
+        <value condition="Control.IsVisible(1506) + Integer.IsLessOrEqual(System.Time(ss),15) + !String.IsEmpty(Container(90002).ListItem.Property(Awards))">awards</value>
+        <value condition="Control.IsVisible(1505) + Integer.IsLessOrEqual(System.Time(ss),30) + !String.IsEmpty(Container(90001).ListItem.Property(Cast))">star</value>
+        <value condition="Control.IsVisible(1506) + Integer.IsLessOrEqual(System.Time(ss),30) + !String.IsEmpty(Container(90002).ListItem.Property(Cast))">star</value>
+        <value condition="Integer.IsGreater(System.Time(ss),15) + Integer.IsLessOrEqual(System.Time(ss),30) + Control.IsVisible(505) + !String.IsEmpty(Container(5055).ListItem.Director) + !String.IsEmpty(Container(5055).ListItem.Director)">director</value>
+        <value condition="Integer.IsGreater(System.Time(ss),15) + Integer.IsLessOrEqual(System.Time(ss),30) + Control.IsVisible(506) + !String.IsEmpty(Container(5056).ListItem.Director) + !String.IsEmpty(Container(5056).ListItem.Director)">director</value>
+        <value condition="Integer.IsGreater(System.Time(ss),15) + Integer.IsLessOrEqual(System.Time(ss),30) + Control.IsVisible(1505) + !String.IsEmpty(Container(1505).ListItem.Director)">director</value>
+        <value condition="Integer.IsGreater(System.Time(ss),15) + Integer.IsLessOrEqual(System.Time(ss),30) + Control.IsVisible(1506) + !String.IsEmpty(Container(1506).ListItem.Director)">director</value>
+        <value condition="Control.IsVisible(1505) + !String.IsEmpty(Container(1505).ListItem.Genre)">genre</value>
+        <value condition="Control.IsVisible(1506) + !String.IsEmpty(Container(1506).ListItem.Genre)">genre</value>
+        <value condition="Control.IsVisible(1505) + !String.IsEmpty(Container(90001).ListItem.Property(Cast))">star</value>
+        <value condition="Control.IsVisible(1506) + !String.IsEmpty(Container(90002).ListItem.Property(Cast))">star</value>
+        <value condition="Control.IsVisible(505) + !String.IsEmpty(Container(5055).ListItem.Genre)">genre</value>
+        <value condition="Control.IsVisible(506) + !String.IsEmpty(Container(5056).ListItem.Genre)">genre</value>
+        <value condition="Control.IsVisible(505) + !String.IsEmpty(Container(5055).ListItem.Cast)">star</value>
+        <value condition="Control.IsVisible(506) + !String.IsEmpty(Container(5056).ListItem.Cast)">star</value>
+    </variable>
+
+   <!-- Spotlight buttons @cartmandos -->
+    <variable name="NetflixDetailsSpin_container">
+        <value condition="Control.IsVisible(1505) + !String.IsEmpty(Container(90001).ListItem.Property(Awards)) + Integer.IsLessOrEqual(System.Time(ss),15) + !String.IsEmpty(Container(90001).ListItem.Property(Awards))">[I]$VAR[localized_awards_container][/I]</value>
+        <value condition="Control.IsVisible(1506) + !String.IsEmpty(Container(90002).ListItem.Property(Awards)) + Integer.IsLessOrEqual(System.Time(ss),15) + !String.IsEmpty(Container(90002).ListItem.Property(Awards))">[I]$VAR[localized_awards_container][/I]</value>
+        <value condition="Control.IsVisible(1505) + Integer.IsLessOrEqual(System.Time(ss),15) + !String.IsEmpty(Container(90001).ListItem.Property(Awards))">[I]$VAR[localized_awards_container][/I]</value>
+        <value condition="Control.IsVisible(1506) + Integer.IsLessOrEqual(System.Time(ss),15) + !String.IsEmpty(Container(90002).ListItem.Property(Awards))">[I]$VAR[localized_awards_container][/I]</value>
+        <value condition="Control.IsVisible(1505) + Integer.IsLessOrEqual(System.Time(ss),30) + !String.IsEmpty(Container(90001).ListItem.Property(Cast))">[I]$LOCALIZE[31879] $INFO[Container(90001).ListItem.Property(Cast)][/I]</value> <!-- Starring -->
+        <value condition="Control.IsVisible(1506) + Integer.IsLessOrEqual(System.Time(ss),30) + !String.IsEmpty(Container(90002).ListItem.Property(Cast))">[I]$LOCALIZE[31879] $INFO[Container(90002).ListItem.Property(Cast)][/I]</value> <!-- Starring -->
+        <value condition="Integer.IsGreater(System.Time(ss),15) + Integer.IsLessOrEqual(System.Time(ss),30) + Control.IsVisible(1505) + !String.IsEmpty(Container(1505).ListItem.Director)">[I]$LOCALIZE[31191] $INFO[Container(1505).ListItem.Director][/I]</value> <!-- Directed by -->
+        <value condition="Integer.IsGreater(System.Time(ss),15) + Integer.IsLessOrEqual(System.Time(ss),30) + Control.IsVisible(1506) + !String.IsEmpty(Container(1506).ListItem.Director)">[I]$LOCALIZE[31191] $INFO[Container(1506).ListItem.Director][/I]</value> <!-- Directed by -->
+        <value condition="Integer.IsGreater(System.Time(ss),15) + Integer.IsLessOrEqual(System.Time(ss),30) + Control.IsVisible(505) + !String.IsEmpty(Container(5055).ListItem.Director)">[I]$LOCALIZE[31191] $INFO[Container(5055).ListItem.Director][/I]</value> <!-- Directed by -->
+        <value condition="Integer.IsGreater(System.Time(ss),15) + Integer.IsLessOrEqual(System.Time(ss),30) + Control.IsVisible(506) + !String.IsEmpty(Container(5056).ListItem.Director)">[I]$LOCALIZE[31191] $INFO[Container(5056).ListItem.Director][/I]</value> <!-- Directed by -->
+        <value condition="Control.IsVisible(1505) + !String.IsEmpty(Container(1505).ListItem.Genre)">[I]$INFO[Container(1505).ListItem.Genre][/I]</value>
+        <value condition="Control.IsVisible(1506) + !String.IsEmpty(Container(1506).ListItem.Genre)">[I]$INFO[Container(1506).ListItem.Genre][/I]</value>
+        <value condition="Control.IsVisible(1505) + !String.IsEmpty(Container(90001).ListItem.Property(Cast))">[I]$INFO[Container(90001).ListItem.Property(Cast)][/I]</value>
+        <value condition="Control.IsVisible(1506) + !String.IsEmpty(Container(90002).ListItem.Property(Cast))">[I]$INFO[Container(90002).ListItem.Property(Cast)][/I]</value>
+        <value condition="Control.IsVisible(505) + !String.IsEmpty(Container(5055).ListItem.Genre)">[I]$INFO[Container(5055).ListItem.Genre][/I]</value>
+        <value condition="Control.IsVisible(506) + !String.IsEmpty(Container(5056).ListItem.Genre)">[I]$INFO[Container(5056).ListItem.Genre][/I]</value>
+        <value condition="Control.IsVisible(505) + !String.IsEmpty(Container(5055).ListItem.Cast)">[I]$INFO[Container(5055).ListItem.Cast][/I]</value>
+        <value condition="Control.IsVisible(506) + !String.IsEmpty(Container(5056).ListItem.Cast)">[I]$INFO[Container(5056).ListItem.Cast][/I]</value>
+    </variable>
+
 
    <variable name="home_simple_episode">
 	<value>[COLOR=$INFO[Skin.String(mainmenutcolor.name)]]S$INFO[ListItem.Season] E$INFO[ListItem.Episode] - $INFO[ListItem.Title][/COLOR]</value>
@@ -971,8 +1123,24 @@
        <value condition="String.IsEmpty(Window(Home).Property(TMDbHelper.IsUpdating)) + !String.IsEmpty(Window(Home).Property(TMDbHelper.ListItem.IMDb_Votes))">$INFO[Window(Home).Property(TMDbHelper.ListItem.IMDb_Votes), (, $LOCALIZE[205])]</value>
     </variable>
 
+    <variable name="imdb_votes_90001">
+        <value condition="!String.IsEmpty(Container(90001).ListItem.Property(IMDb_Votes))">$INFO[Container(90001).ListItem.Property(IMDb_Votes), (, $LOCALIZE[205])]</value>
+    </variable>
+
+    <variable name="imdb_votes_90002">
+        <value condition="!String.IsEmpty(Container(90002).ListItem.Property(IMDb_Votes))">$INFO[Container(90002).ListItem.Property(IMDb_Votes), (, $LOCALIZE[205])]</value>
+    </variable>
+
     <variable name="imdb_ratings">
        <value condition="String.IsEmpty(Window(Home).Property(TMDbHelper.IsUpdating)) + !String.IsEmpty(Window(Home).Property(TMDbHelper.ListItem.IMDb_Rating))">$INFO[Window(Home).Property(TMDbHelper.ListItem.IMDb_Rating), ,]</value>
+    </variable>
+
+    <variable name="imdb_ratings_90001">
+        <value condition="!String.IsEmpty(Container(90001).ListItem.Property(IMDb_Rating))">$INFO[Container(90001).ListItem.Property(IMDb_Rating), ,]</value>
+    </variable>
+
+    <variable name="imdb_ratings_90002">
+        <value condition="!String.IsEmpty(Container(90002).ListItem.Property(IMDb_Rating))">$INFO[Container(90002).ListItem.Property(IMDb_Rating), ,]</value>
     </variable>
 
     <variable name="star_ratings">
@@ -986,6 +1154,15 @@
        <value condition="Control.IsVisible(1505) + !String.IsEmpty(Container(1505).ListItem.Rating)">$INFO[Container(1505).ListItem.Rating,, ]</value>
        <value condition="Control.IsVisible(1506) + !String.IsEmpty(Container(1506).ListItem.Rating)">$INFO[Container(1506).ListItem.Rating,, ]</value>
     </variable>
+
+    <variable name="star_ratings_90001">
+        <value condition="!String.IsEmpty(Container(90001).ListItem.Rating)">$INFO[Container(90001).ListItem.Rating,, ]</value>
+    </variable>
+
+    <variable name="star_ratings_90002">
+        <value condition="!String.IsEmpty(Container(90002).ListItem.Rating)">$INFO[Container(90002).ListItem.Rating,, ]</value>
+    </variable>
+
     <variable name="video_heading5055">
         <value condition="Control.IsVisible(505) + !String.IsEmpty(Container(5055).ListItem.TvShowTitle)">$INFO[Container(5055).ListItem.TvShowTitle]</value>
         <value condition="Control.IsVisible(505) + !String.IsEmpty(Container(5055).ListItem.Label)">$INFO[Container(5055).ListItem.Label]</value>
@@ -1135,6 +1312,52 @@
         <value condition="String.Contains(Window(Home).Property(TMDbHelper.Player.Awards),3 Oscar)">x3</value>
         <value condition="String.Contains(Window(Home).Property(TMDbHelper.Player.Awards),2 Oscar)">x2</value>
         <value condition="String.Contains(Window(Home).Property(TMDbHelper.Player.Awards),1 Oscar)">x1</value>
+    </variable>
+
+    <variable name="Label_Oscars_90001">
+        <value condition="String.Contains(Container(90001).ListItem.Property(Awards),20 Oscar)">x20</value>
+        <value condition="String.Contains(Container(90001).ListItem.Property(Awards),19 Oscar)">x19</value>
+        <value condition="String.Contains(Container(90001).ListItem.Property(Awards),18 Oscar)">x18</value>
+        <value condition="String.Contains(Container(90001).ListItem.Property(Awards),17 Oscar)">x17</value>
+        <value condition="String.Contains(Container(90001).ListItem.Property(Awards),16 Oscar)">x16</value>
+        <value condition="String.Contains(Container(90001).ListItem.Property(Awards),15 Oscar)">x15</value>
+        <value condition="String.Contains(Container(90001).ListItem.Property(Awards),14 Oscar)">x14</value>
+        <value condition="String.Contains(Container(90001).ListItem.Property(Awards),13 Oscar)">x13</value>
+        <value condition="String.Contains(Container(90001).ListItem.Property(Awards),12 Oscar)">x12</value>
+        <value condition="String.Contains(Container(90001).ListItem.Property(Awards),11 Oscar)">x11</value>
+        <value condition="String.Contains(Container(90001).ListItem.Property(Awards),10 Oscar)">x10</value>
+        <value condition="String.Contains(Container(90001).ListItem.Property(Awards),9 Oscar)">x9</value>
+        <value condition="String.Contains(Container(90001).ListItem.Property(Awards),8 Oscar)">x8</value>
+        <value condition="String.Contains(Container(90001).ListItem.Property(Awards),7 Oscar)">x7</value>
+        <value condition="String.Contains(Container(90001).ListItem.Property(Awards),6 Oscar)">x6</value>
+        <value condition="String.Contains(Container(90001).ListItem.Property(Awards),5 Oscar)">x5</value>
+        <value condition="String.Contains(Container(90001).ListItem.Property(Awards),4 Oscar)">x4</value>
+        <value condition="String.Contains(Container(90001).ListItem.Property(Awards),3 Oscar)">x3</value>
+        <value condition="String.Contains(Container(90001).ListItem.Property(Awards),2 Oscar)">x2</value>
+        <value condition="String.Contains(Container(90001).ListItem.Property(Awards),1 Oscar)">x1</value>
+    </variable>
+
+    <variable name="Label_Oscars_90002">
+        <value condition="String.Contains(Container(90002).ListItem.Property(Awards),20 Oscar)">x20</value>
+        <value condition="String.Contains(Container(90002).ListItem.Property(Awards),19 Oscar)">x19</value>
+        <value condition="String.Contains(Container(90002).ListItem.Property(Awards),18 Oscar)">x18</value>
+        <value condition="String.Contains(Container(90002).ListItem.Property(Awards),17 Oscar)">x17</value>
+        <value condition="String.Contains(Container(90002).ListItem.Property(Awards),16 Oscar)">x16</value>
+        <value condition="String.Contains(Container(90002).ListItem.Property(Awards),15 Oscar)">x15</value>
+        <value condition="String.Contains(Container(90002).ListItem.Property(Awards),14 Oscar)">x14</value>
+        <value condition="String.Contains(Container(90002).ListItem.Property(Awards),13 Oscar)">x13</value>
+        <value condition="String.Contains(Container(90002).ListItem.Property(Awards),12 Oscar)">x12</value>
+        <value condition="String.Contains(Container(90002).ListItem.Property(Awards),11 Oscar)">x11</value>
+        <value condition="String.Contains(Container(90002).ListItem.Property(Awards),10 Oscar)">x10</value>
+        <value condition="String.Contains(Container(90002).ListItem.Property(Awards),9 Oscar)">x9</value>
+        <value condition="String.Contains(Container(90002).ListItem.Property(Awards),8 Oscar)">x8</value>
+        <value condition="String.Contains(Container(90002).ListItem.Property(Awards),7 Oscar)">x7</value>
+        <value condition="String.Contains(Container(90002).ListItem.Property(Awards),6 Oscar)">x6</value>
+        <value condition="String.Contains(Container(90002).ListItem.Property(Awards),5 Oscar)">x5</value>
+        <value condition="String.Contains(Container(90002).ListItem.Property(Awards),4 Oscar)">x4</value>
+        <value condition="String.Contains(Container(90002).ListItem.Property(Awards),3 Oscar)">x3</value>
+        <value condition="String.Contains(Container(90002).ListItem.Property(Awards),2 Oscar)">x2</value>
+        <value condition="String.Contains(Container(90002).ListItem.Property(Awards),1 Oscar)">x1</value>
     </variable>
 
 
@@ -1288,6 +1511,11 @@
         <value condition="!String.IsEmpty(Window(Home).Property(SkinHelper.ListItem.Duration))">$INFO[Window(Home).Property(SkinHelper.ListItem.Duration.Hours),,$LOCALIZE[31036]] $INFO[Window(Home).Property(SkinHelper.ListItem.Duration.Minutes),,$LOCALIZE[31020]]</value> <!-- DURATION(hours) h DURATION(minutes) m -->
     </variable>
 
+    <variable name="infoview_duration_container">
+        <value condition="Control.IsVisible(1505) + !String.IsEmpty(Container(1505).ListItem.Duration)">$INFO[Container(1505).ListItem.Duration(h),,$LOCALIZE[31036]] $INFO[Container(1505).ListItem.Duration(mm),,$LOCALIZE[31020]]</value> <!-- DURATION(hours) h DURATION(minutes) m -->
+        <value condition="Control.IsVisible(1506) + !String.IsEmpty(Container(1506).ListItem.Duration)">$INFO[Container(1506).ListItem.Duration(h),,$LOCALIZE[31036]] $INFO[Container(1506).ListItem.Duration(mm),,$LOCALIZE[31020]]</value> <!-- DURATION(hours) h DURATION(minutes) m -->
+    </variable>
+
 
     <variable name="MPAA">
         <value condition="Control.IsVisible(1505) + [Control.HasFocus(30222) | Control.HasFocus(400) | Control.HasFocus(401) | Control.HasFocus(300) | ControlGroup(505).Hasfocus] + !String.IsEmpty(Container(1505).ListItem.MPAA)">$INFO[Container(1505).ListItem.MPAA]</value>
@@ -1296,6 +1524,11 @@
         <value condition="String.IsEmpty(Window(Home).Property(TMDbHelper.IsUpdating))	 + String.IsEmpty(ListItem.MPAA) + String.IsEmpty(Container(5055).ListItem.MPAA) + !String.IsEmpty(Window(Home).Property(TMDBHelper.ListItem.MPAA))">$INFO[Window(Home).Property(TMDBHelper.ListItem.MPAA)]</value>
         <value condition="String.IsEmpty(ListItem.MPAA) + String.IsEmpty(Container(5055).ListItem.MPAA) + !String.IsEmpty(Window(Home).Property(TMDBHelper.ListItem.MPAA))">$INFO[Window(Home).Property(TMDBHelper.ListItem.MPAA)]</value>
         <value condition="!String.IsEmpty(ListItem.MPAA)">$INFO[ListItem.MPAA]</value>
+    </variable>
+
+    <variable name="MPAA_container">
+        <value condition="Control.IsVisible(1505) + !String.IsEmpty(Container(1505).ListItem.MPAA)">$INFO[Container(1505).ListItem.MPAA]</value>
+        <value condition="Control.IsVisible(1506) + !String.IsEmpty(Container(1506).ListItem.MPAA)">$INFO[Container(1506).ListItem.MPAA]</value>
     </variable>
 
     <variable name="Label_Settings_Header">

@@ -316,6 +316,24 @@
         <value condition="String.IsEqual(ListItem.DBType,season) | String.IsEqual(ListItem.DBType,tvshow) | String.IsEqual(ListItem.DBType,episode) | Container.Content(tvshows) | Container.Content(seasons) | Container.Content(episode) | VideoPlayer.Content(Episodes)">type=tv</value>
     </variable>
 
+    <variable name="DetailsContent_1505">
+        <value condition="String.IsEqual(Container(1505).ListItem.DBType,movie) + !String.IsEmpty(Container(1505).ListItem.IMDbNumber)">plugin://plugin.video.themoviedb.helper/?info=details&amp;tmdb_type=movie&amp;imdb_id=$INFO[Container(1505).ListItem.IMDbNumber]</value>
+        <value condition="String.IsEqual(Container(1505).ListItem.DBType,movie) + String.IsEmpty(Container(1505).ListItem.IMDbNumber)">plugin://plugin.video.themoviedb.helper/?info=details&amp;tmdb_type=movie&amp;query=$INFO[Container(1505).ListItem.Title]&amp;year=$INFO[Container(1505).ListItem.Year]</value>
+        <value condition="String.IsEqual(Container(1505).ListItem.DBType,tvshow) + !String.IsEmpty(Container(1505).ListItem.IMDbNumber)">plugin://plugin.video.themoviedb.helper/?info=details&amp;tmdb_type=tv&amp;imdb_id=$INFO[Container(1505).ListItem.IMDbNumber]</value>
+        <value condition="String.IsEqual(Container(1505).ListItem.DBType,tvshow) + String.IsEmpty(Container(1505).ListItem.IMDbNumber)">plugin://plugin.video.themoviedb.helper/?info=details&amp;tmdb_type=tv&amp;query=$INFO[Container(1505).ListItem.TvShowTitle]&amp;year=$INFO[Container(1505).ListItem.Year]</value>
+        <value condition="String.IsEqual(Container(1505).ListItem.DBType,season)">plugin://plugin.video.themoviedb.helper/?info=details&amp;tmdb_type=tv&amp;query=$INFO[Container(1505).ListItem.TvShowTitle]&amp;year=$INFO[Container(1505).ListItem.Year]&amp;season=$INFO[Container(1505).ListItem.Season]</value>
+        <value condition="String.IsEqual(Container(1505).ListItem.DBType,episode)">plugin://plugin.video.themoviedb.helper/?info=details&amp;tmdb_type=tv&amp;query=$INFO[Container(1505).ListItem.TvShowTitle]&amp;year=$INFO[Container(1505).ListItem.Year]&amp;season=$INFO[Container(1505).ListItem.Season]&amp;episode=$INFO[Container(1505).ListItem.Episode]</value>
+    </variable>
+
+    <variable name="DetailsContent_1506">
+        <value condition="String.IsEqual(Container(1506).ListItem.DBType,movie) + !String.IsEmpty(Container(1506).ListItem.IMDbNumber)">plugin://plugin.video.themoviedb.helper/?info=details&amp;tmdb_type=movie&amp;imdb_id=$INFO[Container(1506).ListItem.IMDbNumber]</value>
+        <value condition="String.IsEqual(Container(1506).ListItem.DBType,movie) + String.IsEmpty(Container(1506).ListItem.IMDbNumber)">plugin://plugin.video.themoviedb.helper/?info=details&amp;tmdb_type=movie&amp;query=$INFO[Container(1506).ListItem.Title]&amp;year=$INFO[Container(1506).ListItem.Year]</value>
+        <value condition="String.IsEqual(Container(1506).ListItem.DBType,tvshow) + !String.IsEmpty(Container(1506).ListItem.IMDbNumber)">plugin://plugin.video.themoviedb.helper/?info=details&amp;tmdb_type=tv&amp;imdb_id=$INFO[Container(1506).ListItem.IMDbNumber]</value>
+        <value condition="String.IsEqual(Container(1506).ListItem.DBType,tvshow) + String.IsEmpty(Container(1506).ListItem.IMDbNumber)">plugin://plugin.video.themoviedb.helper/?info=details&amp;tmdb_type=tv&amp;query=$INFO[Container(1506).ListItem.TvShowTitle]&amp;year=$INFO[Container(1506).ListItem.Year]</value>
+        <value condition="String.IsEqual(Container(1506).ListItem.DBType,season)">plugin://plugin.video.themoviedb.helper/?info=details&amp;tmdb_type=tv&amp;query=$INFO[Container(1506).ListItem.TvShowTitle]&amp;year=$INFO[Container(1506).ListItem.Year]&amp;season=$INFO[Container(1506).ListItem.Season]</value>
+        <value condition="String.IsEqual(Container(1506).ListItem.DBType,episode)">plugin://plugin.video.themoviedb.helper/?info=details&amp;tmdb_type=tv&amp;query=$INFO[Container(1506).ListItem.TvShowTitle]&amp;year=$INFO[Container(1506).ListItem.Year]&amp;season=$INFO[Container(1506).ListItem.Season]&amp;episode=$INFO[Container(1506).ListItem.Episode]</value>
+    </variable>
+
     <variable name="Info_Fanart">
         <value condition="[String.IsEqual(ListItem.DBType,movie) | String.IsEqual(ListItem.DBType,tvshow) | Container.Content(movies) | Container.Content(tvshows)] + !Skin.HasSetting(DisableExtendedInfo) + System.HasAddon(plugin.video.themoviedb.helper)">plugin://plugin.video.themoviedb.helper/?info=fanart&amp;$VAR[Info_Param_Type]&amp;$VAR[Info_Param_IMDB_or_QUERY]</value>
     </variable>

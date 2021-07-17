@@ -283,7 +283,7 @@
 			<onright condition="Window.IsVisible(Home) + [String.IsEqual(Container(300).ListItem.Property(widget),Weather) | String.IsEqual(Container(300).ListItem.Property(widgetType),Weather Widget)]">9966</onright>	
                         <onright condition="Window.IsVisible(script-globalsearch-main.xml)">9500</onright>
 			<onright condition="Skin.HasSetting(EnableSpotlight) + $EXP[NextUpTVSpotlight] + String.IsEqual(Container(300).ListItem.Property(hasSubmenu),true) + Integer.IsGreater(Container(30222).NumItems,0)">30222</onright>
-			<onright condition="Skin.HasSetting(EnableSpotlight) + $EXP[NextUpTVSpotlight] + !String.IsEqual(Container(300).ListItem.Property(hasSubmenu),true) | !Integer.IsGreater(Container(30222).NumItems,0)">330</onright>
+			<onright condition="Skin.HasSetting(EnableSpotlight) + $EXP[NextUpTVSpotlight] + !String.IsEqual(Container(300).ListItem.Property(hasSubmenu),true) + !Integer.IsGreater(Container(30222).NumItems,0)">330</onright>
                         <onright condition="Window.IsVisible(Home) + !Skin.HasSetting(DisableAuraHomeLayout) + Integer.IsGreater(Container(330).NumItems,0)">3000</onright>
                         <onright condition="Window.IsVisible(Home) + !Integer.IsGreater(Container(30222).NumItems,0) + Integer.IsGreater(Container(330).NumItems,0)">3000</onright>
 

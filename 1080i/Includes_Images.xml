@@ -293,7 +293,6 @@
         <value condition="Control.IsVisible(1505) + !String.IsEmpty(Container(1505).ListItem.Art(tvshow.clearlogo))">$INFO[Container(1505).ListItem.Art(tvshow.clearlogo)]</value>
         <value condition="Control.IsVisible(1505) + !String.IsEmpty(Container(1505).ListItem.Art(clearlogo))">$INFO[Container(1505).ListItem.Art(clearlogo)]</value>
         <value condition="Control.IsVisible(1506) + !String.IsEmpty(Container(1506).ListItem.Art(clearlogo))">$INFO[Container(1506).ListItem.Art(clearlogo)]</value>
-        <value condition="!String.IsEmpty(Window(Home).Property(TMDBHelper.ListItem.ClearLogo))">$INFO[Window(Home).Property(TMDBHelper.ListItem.ClearLogo)]</value>
     </variable>
 
     <variable name="Widget_ClearLogo_1505">

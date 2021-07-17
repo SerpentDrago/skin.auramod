@@ -1,5 +1,5 @@
 <?xml version='1.0' encoding='UTF-8'?>
-<addon id="skin.auramod" version="1.0.36" name="Aura[COLOR cyan]MOD[/COLOR]" provider-name="skyfsza,inb4after,SerpentDrago">
+<addon id="skin.auramod" version="1.1.0" name="Aura[COLOR cyan]MOD[/COLOR]" provider-name="skyfsza,inb4after,SerpentDrago">
     <requires>
         <import addon="xbmc.gui" version="5.15.0"/>
         <import addon="script.skin.helper.service" version="1.1.24"/>
@@ -32,6 +32,34 @@
             <screenshot>resources/screenshot-05.jpg</screenshot>
         </assets>
         <news>
+            v1.1.0
+            -Rework Aura Home layout
+            -Remove widget gap when category widget is disabled
+            -Fix focus skipping first widget when scrolling right from main menu to widgets
+            -Fix focus skipping first widget when scrolling down from multi-widget spotlight to widgets
+            -Improve spotlight current item indicators
+            -Fix first widget being cut-off
+            -Add conditional spacers
+            -Reposition multi-widget spotlight
+            -Reposition widget spotlight
+            -Fix disable aura home widget gap for new design
+            -Fix fullscreen spotlight button visibility when on first widget
+            -Fix fullscreen spotlight buttons inconsistencies
+            -Add invisible category widget to workaround grouplist usecontrolcoords
+            -Fix spotlight content being affected by normal widget focus
+            -Fix spotlight ratings being affected by normal widget focus
+            -Add hidden lists for spotlight content details
+            -Add gap for landscape widget style if spotlight is enabled
+            -Add autoscroll for widget spotlight plot
+            -Add autoscroll for multi-widget spotlight plot
+            -Fix autoscroll for multi-widget spotlight items
+            -Increase autoscroll timing for multi-widget spotlight items
+            -Increase multi-widget spotlight title width
+            -Fix multi-widget spotlight content being affected by normal widget focus
+            -Fix movies fullscreen spotlight disappearing on normal widget focus
+            -Add autoscroll for fullscreen spotlight plot
+            -Increase autoscroll timing for fullscreen spotlight items
+            -Fix Netflix Home widgets sliding down on fullscreen spotlight focus with category widget disabled
             v1.0.36
             -Localization rework
             -Add localization for many skin labels

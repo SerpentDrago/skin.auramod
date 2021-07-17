@@ -14,6 +14,18 @@
   </include>
 
   <include name="Widgets">
+    <control type="list" id="90001">
+      <itemlayout />
+      <focusedlayout />
+      <content>$VAR[DetailsContent_1505]</content>
+      <visible>!Integer.IsEqual(Container(1505).NumItems,0) + !Container(1505).IsUpdating</visible>
+    </control>
+    <control type="list" id="90002">
+      <itemlayout />
+      <focusedlayout />
+      <content>$VAR[DetailsContent_1506]</content>
+      <visible>!Integer.IsEqual(Container(1506).NumItems,0) + !Container(1506).IsUpdating</visible>
+    </control>
     <include>Animation_Right</include>
     <include condition="Skin.HasSetting(DisableNetflixHomeSidemenu)">nosidemenu_widget_control</include>
     <control type="group">
@@ -27,11 +39,12 @@
           <right>-400</right>
           <control type="group" id="3000">
             <left>0</left>
-            <top>0</top>
+            <top>-50</top>
             <bottom>0</bottom>
             <control type="group">
               <!-- Spotlight Multi Widget -->
               <control type="group">
+                <top>20</top>
                 <left>70</left>
                 <animation effect="slide" start="0,0" end="0,80" time="0" condition="Skin.HasSetting(DisableMenuHor)">Conditonal</animation>
                 <include content="Spotlight_MultiWidget" condition="Skin.HasSetting(EnableSpotlight) + Skin.HasSetting(EnableMultiWidgetSpotlight)">
@@ -47,8 +60,15 @@
                   <param name="visible" value="$EXP[TVSpotlight]" />
                 </include>
               </control>
+              <control type="group">
+                <top>20</top>
+                <include condition="Skin.HasSetting(EnableSpotlight) + Skin.HasSetting(EnableMultiWidgetSpotlight)">Spotlight_MultiWidget_Movies_cast</include>
+                <include condition="Skin.HasSetting(EnableSpotlight) + Skin.HasSetting(EnableTVMultiWidgetSpotlight)">Spotlight_MultiWidget_TVShows_cast</include>
+              </control>
 
               <!-- Spotlight Widget -->
+              <control type="group">
+                <top>20</top>
               <control type="group">
                 <left>60</left>
                 <include content="Spotlight_AuraWidget" condition="Skin.HasSetting(EnableSpotlight) + !Skin.HasSetting(EnableTVWidgetSpotlight)">
@@ -65,6 +85,7 @@
 		<visible>Control.IsVisible(1505)</visible>
                 <include content="Spotlight_AuraWidget_info" condition="Skin.HasSetting(EnableSpotlight) + !Skin.HasSetting(EnableTVWidgetSpotlight)">
                   <param name="id" value="1505" />
+                  <param name="detailsid" value="90001" />
                 </include>
 		</control>
 
@@ -84,8 +105,10 @@
                 <visible>Control.IsVisible(1506)</visible>
                 <include content="Spotlight_AuraWidget_info" condition="Skin.HasSetting(EnableSpotlight) + !Skin.HasSetting(EnableWidgetSpotlight)">
                   <param name="id" value="1506" />
+                  <param name="detailsid" value="90002" />
                 </include>
               </control>
+            </control>
               <control type="group">
                 <include condition="!Skin.HasSetting(DisableAuraHomeLayout)">spotlightfull_aura_top</include>
                 <include condition="Skin.HasSetting(EnableSpotlight) + Skin.HasSetting(EnableTVFullSpotlight)">Spotlight_Tvshows_Widget</include>
@@ -105,8 +128,6 @@
               <include condition="Skin.HasSetting(EnableSpotlight)">Spotlight_TVNextAired_AuraWidget</include>
               <include condition="Skin.HasSetting(EnableSpotlight)">Widget_LiveTV</include>
             </control>
-              <include condition="Skin.HasSetting(EnableSpotlight) + Skin.HasSetting(EnableMultiWidgetSpotlight)">Spotlight_MultiWidget_Movies_cast</include>
-              <include condition="Skin.HasSetting(EnableSpotlight) + Skin.HasSetting(EnableTVMultiWidgetSpotlight)">Spotlight_MultiWidget_TVShows_cast</include>
             <!-- Home Widget -->
             <include>Widgets_Grouplist</include>
             <include>WidgetHubScroll</include>
@@ -147,7 +168,7 @@
     <control type="grouplist" id="330">
       <top>0</top>
       <left>60</left>
-      <height>1070</height>
+      <height>1120</height>
       <orientation>vertical</orientation>
       <itemgap>0</itemgap>
       <usecontrolcoords>true</usecontrolcoords>
@@ -170,7 +191,7 @@
       <ondown>3337</ondown>
       <animation effect="slide" end="40,0" time="200" condition="!Skin.HasSetting(DisableMenuHor) + !Skin.HasSetting(DisableMenuVertLabelOnly) + !Skin.HasSetting(DisableMenuVertLabel) + [Control.HasFocus(300) | !Skin.HasSetting(DisableNetflixHomeSidemenuHide)]">Conditional</animation>
       <control type="group" id="331" description="Spacer">
-        <height>250</height>
+        <height>210</height>
 	<visible>!Skin.HasSetting(DisableAuraModeGap) | Skin.HasSetting(DisableMenuHor)</visible>
       </control>
       <control type="group" id="337" description="Spacer">
@@ -190,8 +211,24 @@
         <visible>Skin.HasSetting(DisableMenuHor)</visible>
       </control>
       <control type="group" id="334" description="Spacer">
-        <height>30</height>
+        <height>-875</height>
         <visible>$EXP[noSubMenu] + [[!Skin.HasSetting(DisableMenuHor) + !$EXP[LiveTVSpotlight]] | Skin.HasSetting(DisableMenuHor)]</visible>
+      </control>
+      <control type="group" id="339" description="Spacer">
+        <height>30</height>
+        <visible>$EXP[noSubMenu] + Skin.HasSetting(DisableAuraModeGap) + !Skin.HasSetting(DisableMenuHor) + [$EXP[LiveTVSpotlight] | $EXP[TVSpotlight] | $EXP[MovieSpotlight]]</visible>
+      </control>
+      <control type="group" id="340" description="Spacer">
+        <height>50</height>
+        <visible>$EXP[noSubMenu] + Skin.HasSetting(DisableAuraModeGap) + !Skin.HasSetting(DisableMenuHor) + !$EXP[LiveTVSpotlight] + !$EXP[TVSpotlight] + !$EXP[MovieSpotlight]</visible>
+      </control>
+      <control type="group" id="341" description="Spacer">
+        <height>70</height>
+        <visible>!Skin.HasSetting(DisableAuraModeGap) + !Skin.HasSetting(DisableMenuHor) + !Skin.HasSetting(EnableSpotlight)</visible>
+      </control>
+      <control type="group" id="342" description="Spacer">
+        <height>855</height>
+        <visible>Skin.HasSetting(HideSubmenuWidget)</visible>
       </control>
       <include content="WidgetSubmenu" condition="!Skin.HasSetting(HideSubmenuWidget)">
         <param name="id" value="30222" />
@@ -199,6 +236,13 @@
         <param name="aspect" value="$LOCALIZE[31263]" />
         <param name="label" value="$VAR[catlabel]" />
         <param name="visible" value="String.IsEqual(Container(300).ListItem.Property(hasSubmenu),true)" />
+      </include>
+      <include content="WidgetSubmenu" condition="Skin.HasSetting(HideSubmenuWidget)">
+        <param name="id" value="30222" />
+        <param name="submenu" value="true" />
+        <param name="aspect" value="$LOCALIZE[31263]" />
+        <param name="label" value="$VAR[catlabel]" />
+        <param name="visible" value="false" />
       </include>
       <include>skinshortcuts-template-vertical-submenu</include>
       <control type="group" id="336">
@@ -348,7 +392,8 @@
         <include condition="$PARAM[submenucondition] + Skin.HasSetting(SubmenuLabel)">Widget_Items_SubmenuWidget_Big_Height</include>
         <include condition="$PARAM[submenucondition] + !Skin.HasSetting(SubmenuLabel)">Widget_Items_SubmenuWidget_Big_Height_small</include>
         <include condition="$PARAM[landscapecondition] + !Skin.HasSetting(SubmenuLabel)">Widget_Items_Landscape_Big_Height_small</include>
-        <include condition="$PARAM[landscapecondition] + Skin.HasSetting(SubmenuLabel) + !Skin.HasSetting(WidgetLabelsBelow)">Widget_Items_Landscape_Big_Height</include>
+        <include condition="$PARAM[landscapecondition] + Skin.HasSetting(SubmenuLabel) + !Skin.HasSetting(WidgetLabelsBelow) + !Skin.HasSetting(EnableSpotlight)">Widget_Items_Landscape_Big_Height</include>
+        <include condition="$PARAM[landscapecondition] + Skin.HasSetting(SubmenuLabel) + !Skin.HasSetting(WidgetLabelsBelow) + Skin.HasSetting(EnableSpotlight)">Widget_Items_Landscape_Big_Height_Spotlight</include>
         <include condition="$PARAM[landscapecondition] + Skin.HasSetting(SubmenuLabel) + Skin.HasSetting(WidgetLabelsBelow)">Widget_Items_Landscape_Big_Height_Label</include>
         <include condition="$PARAM[postercondition] + Skin.HasSetting(SubmenuLabel) + !Skin.HasSetting(WidgetLabelsBelow)">Widget_Items_Poster_Big</include>
         <include condition="$PARAM[postercondition] + !Skin.HasSetting(SubmenuLabel)">Widget_Items_Poster_Big_small</include>
@@ -473,6 +518,9 @@
   </include>
   <include name="Widget_Items_Landscape_Big_Height">
     <height>570</height>
+  </include>
+  <include name="Widget_Items_Landscape_Big_Height_Spotlight">
+    <height>580</height>
   </include>
   <include name="Widget_Items_LandscapeWide">
     <height>700</height>

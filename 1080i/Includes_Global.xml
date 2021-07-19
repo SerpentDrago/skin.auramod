@@ -20,7 +20,9 @@
             <ondown condition="Control.HasFocus(300) + !Skin.HasSetting(SettingsNew)  + Skin.HasSetting(DisableMenuHor) + [String.IsEqual(Container(300).ListItem.Property(widget),Settings) | String.IsEqual(Container(300).ListItem.Property(widgetType),Settings Widget)]">9000</ondown>
             <ondown condition="Control.HasFocus(300) + Skin.HasSetting(DisableMenuHor)  + [String.IsEqual(Container(300).ListItem.Property(widget),Weather) | String.IsEqual(Container(300).ListItem.Property(widgetType),Weather Widget)]">9966</ondown>
             <ondown condition="String.IsEqual(Container(300).ListItem.Property(widgetspotlight),true) + String.IsEqual(Container(300).ListItem.Property(widgetSpotlighttype),LiveTV)">SetFocus(901)</ondown>
-            <ondown condition="[$EXP[TVSpotlight] | $EXP[MovieSpotlight] | $EXP[NextUpTVSpotlight]]">330</ondown>
+            <ondown condition="$EXP[TVSpotlight]">1505</ondown>
+            <ondown condition="$EXP[MovieSpotlight]">1506</ondown>
+            <ondown condition="$EXP[NextUpTVSpotlight]">1507</ondown>
             <ondown>ClearProperty(spotback)</ondown>
 	    <ondown>3000</ondown>
             <ondown condition="Control.IsVisible(3902)">3902</ondown>

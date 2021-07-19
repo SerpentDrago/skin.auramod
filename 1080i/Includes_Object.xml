@@ -504,7 +504,7 @@
   </include>
   <include name="Spotlight_MultiWidget_TVShows_cast">
     <control type="group">
-      <animation effect="slide" end="0,20" time="0" condition="Skin.HasSetting(DisableMenuHor)">Conditional</animation>
+      <animation effect="slide" end="0,50" time="0" condition="Skin.HasSetting(DisableMenuHor)">Conditional</animation>
       <animation effect="slide" end="40,0" time="200" condition="!Skin.HasSetting(DisableMenuHor) + !Skin.HasSetting(DisableMenuVertLabelOnly) + !Skin.HasSetting(DisableMenuVertLabel) + [Control.HasFocus(300) | !Skin.HasSetting(DisableNetflixHomeSidemenuHide)]">Conditional</animation>
       <animation effect="fade" start="0" end="100" time="400" condition="String.IsEqual(Window(Home).Property(SpotFocus),true) + Control.HasFocus(300)">Visible</animation>
       <visible>!String.IsEmpty(Container(1505).ListItem.Label) + Control.IsVisible(1505) + [String.IsEqual(Container(330).CurrentItem,1) | Control.HasFocus(1505) | Control.HasFocus(300) | Control.HasFocus(400) | Control.HasFocus(30222)]</visible>
@@ -609,16 +609,19 @@
         <content limit="6" target="video">$VAR[Cast_Widget_Content_1505]</content>
       </control>
     </control>
-    <include content="Object_Studio_Logo_Multi_Widget" condition="!Skin.HasSetting(MonochromeFlags)">
-      <param name="studiodirectory" value="coloured" />
-    </include>
-    <include content="Object_Studio_Logo_Multi_Widget" condition="Skin.HasSetting(MonochromeFlags)">
-      <param name="studiodirectory" value="white" />
-    </include>
+    <control type="group">
+      <animation effect="slide" start="0,0" end="0,110" time="0" condition="Skin.HasSetting(DisableMenuHor)">Conditonal</animation>
+      <include content="Object_Studio_Logo_Multi_Widget" condition="!Skin.HasSetting(MonochromeFlags)">
+        <param name="studiodirectory" value="coloured" />
+      </include>
+      <include content="Object_Studio_Logo_Multi_Widget" condition="Skin.HasSetting(MonochromeFlags)">
+        <param name="studiodirectory" value="white" />
+      </include>
+    </control>
   </include>
   <include name="Spotlight_MultiWidget_Movies_cast">
     <control type="group">
-      <animation effect="slide" end="0,20" time="0" condition="Skin.HasSetting(DisableMenuHor)">Conditional</animation>
+      <animation effect="slide" end="0,50" time="0" condition="Skin.HasSetting(DisableMenuHor)">Conditional</animation>
       <animation effect="slide" end="40,0" time="200" condition="!Skin.HasSetting(DisableMenuHor) + !Skin.HasSetting(DisableMenuVertLabelOnly) + !Skin.HasSetting(DisableMenuVertLabel) + [Control.HasFocus(300) | !Skin.HasSetting(DisableNetflixHomeSidemenuHide)]">Conditional</animation>
       <animation effect="fade" start="0" end="100" time="400" condition="!String.IsEqual(Window(Home).Property(SpotFocus),true) + Control.HasFocus(300)">Visible</animation>
       <animation type="Conditonal" condition="Control.HasFocus(1506)" reversible="false">
@@ -721,12 +724,15 @@
         <content limit="6" target="video">$VAR[Cast_Widget_Content_1506]</content>
       </control>
     </control>
-    <include content="Object_Studio_Logo_Multi_Widget" condition="!Skin.HasSetting(MonochromeFlags)">
-      <param name="studiodirectory" value="coloured" />
-    </include>
-    <include content="Object_Studio_Logo_Multi_Widget" condition="Skin.HasSetting(MonochromeFlags)">
-      <param name="studiodirectory" value="white" />
-    </include>
+    <control type="group">
+      <animation effect="slide" start="0,0" end="0,110" time="0" condition="Skin.HasSetting(DisableMenuHor)">Conditonal</animation>
+      <include content="Object_Studio_Logo_Multi_Widget" condition="!Skin.HasSetting(MonochromeFlags)">
+        <param name="studiodirectory" value="coloured" />
+      </include>
+      <include content="Object_Studio_Logo_Multi_Widget" condition="Skin.HasSetting(MonochromeFlags)">
+        <param name="studiodirectory" value="white" />
+      </include>
+    </control>
   </include>
   <include name="Spotlight_MultiWidget">
     <param name="id" default="" />
@@ -949,6 +955,7 @@
         <content target="videos" sortby="$VAR[spotlight_sortby]" sortorder="descending" limit="5">$PARAM[content]</content>
       </control>
       <control type="group">
+        <animation effect="slide" start="0,0" end="0,20" time="0" condition="Skin.HasSetting(DisableMenuHor)">Conditonal</animation>
         <visible>Control.HasFocus(30222) | Control.HasFocus($PARAM[id]) | Control.HasFocus(300) | Control.HasFocus(400) | Control.HasFocus(401) | String.IsEqual(Container(330).CurrentItem,1)</visible>
         <include content="spotlight_buttons">
           <param name="id" value="$PARAM[id]" />
@@ -1200,7 +1207,7 @@
     <definition>
      <control type="group">
         <animation effect="slide" end="40,0" time="200" condition="!Skin.HasSetting(DisableMenuHor) + !Skin.HasSetting(DisableMenuVertLabelOnly) + !Skin.HasSetting(DisableMenuVertLabel) + [Control.HasFocus(300) | !Skin.HasSetting(DisableNetflixHomeSidemenuHide)]">Conditional</animation>
-       <animation effect="slide" end="0,80" time="0" condition="Skin.HasSetting(DisableMenuHor)">Conditional</animation>
+       <animation effect="slide" end="0,100" time="0" condition="Skin.HasSetting(DisableMenuHor)">Conditional</animation>
       <top>-600</top>
       <left>30</left>
       <include content="addon_view_infospotlight">
@@ -1317,7 +1324,7 @@
       <control type="group">
         <top>5</top>
         <visible>Control.HasFocus(300) | Control.HasFocus(30222) | Control.HasFocus($PARAM[id]) | Control.HasFocus(400) | Control.HasFocus(401) | String.IsEqual(Container(330).CurrentItem,1)</visible>
-        <animation effect="slide" end="0,90" time="0" condition="Skin.HasSetting(DisableMenuHor)">Conditional</animation>
+        <animation effect="slide" end="0,100" time="0" condition="Skin.HasSetting(DisableMenuHor)">Conditional</animation>
         <include content="spotlight_buttons">
           <param name="id" value="$PARAM[id]" />
           <param name="visible" value="$PARAM[visible]" />

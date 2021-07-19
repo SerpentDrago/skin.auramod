@@ -1,3 +1,15 @@
+v1.1.1
+-Fix Aura Home horizontal menu layout
+-Fix spotlight info and normal widget positions
+-Fix Settings and Weather widget positions
+-Fix home widget navigation with spotlights enabled
+-Add conditional spacers for small category widget size
+-Fix fullscreen spotlight widget positions
+-Fix fullscreen spotlight button positions
+-Add conditional spacers for fullscreen spotlight
+-Add conditional spacers for widget spotlight
+-Add conditional spacers for multi-widget spotlight
+-Add conditional spacers for category widget size
 v1.1.0
 -Rework Aura Home layout
 -Remove widget gap when category widget is disabled

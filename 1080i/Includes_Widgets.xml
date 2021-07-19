@@ -46,7 +46,7 @@
               <control type="group">
                 <top>20</top>
                 <left>70</left>
-                <animation effect="slide" start="0,0" end="0,80" time="0" condition="Skin.HasSetting(DisableMenuHor)">Conditonal</animation>
+                <animation effect="slide" start="0,0" end="0,110" time="0" condition="Skin.HasSetting(DisableMenuHor)">Conditonal</animation>
                 <include content="Spotlight_MultiWidget" condition="Skin.HasSetting(EnableSpotlight) + Skin.HasSetting(EnableMultiWidgetSpotlight)">
                   <param name="id" value="1506" />
                   <param name="content" value="$VAR[moviemultispotlightpath]" />
@@ -68,6 +68,7 @@
 
               <!-- Spotlight Widget -->
               <control type="group">
+                <animation effect="slide" start="0,0" end="0,40" time="0" condition="Skin.HasSetting(DisableMenuHor)">Conditonal</animation>
                 <top>20</top>
               <control type="group">
                 <left>60</left>
@@ -117,6 +118,7 @@
                 <include condition="Skin.HasSetting(EnableSpotlight) + Skin.HasSetting(EnableFullSpotlight)">Spotlight_Movies_Info</include>
               </control>
               <control type="group">
+                <animation effect="slide" start="0,0" end="0,80" time="0" condition="Skin.HasSetting(DisableMenuHor)">Conditonal</animation>
                 <left>130</left>
                 <include condition="Skin.HasSetting(DisableAuraHomeLayout)">spotlightfull_buttons_top</include>
                 <include condition="!Skin.HasSetting(DisableAuraHomeLayout)">spotlightfull_buttons_aura_top</include>
@@ -136,28 +138,31 @@
               <onfocus>SetFocus(300)</onfocus>
             </control>
             <!-- Weather Widget -->
-            <control type="button" id="9966">
-              <onleft>300</onleft>
-              <onright>300</onright>
-              <onup>300</onup>
-              <ondown>300</ondown>
-              <onback>300</onback>
-              <width>1</width>
-              <height>1</height>
-              <top>-1000</top>
-              <onclick>ActivateWindow(Weather)</onclick>
-              <visible>String.IsEqual(Container(300).ListItem.Property(widget),Weather)</visible>
-              <animation effect="fade" end="0" condition="true">Conditional</animation>
-            </control>
             <control type="group">
-              <visible>[String.IsEqual(Container(300).ListItem.Property(widget),Weather) + [!String.IsEqual(Container(300).ListItem.Property(widgetType),Default) + !String.IsEqual(Container(300).ListItem.Property(widgetType),Settings Widget)]] | String.IsEqual(Container(300).ListItem.Property(widgetType),Weather Widget)</visible>
-              <include>Weather</include>
-            </control>
-            <!-- Settings Widget -->
-            <control type="group">
-              <visible>[String.IsEqual(Container(300).ListItem.Property(widget),Settings) +  [!String.IsEqual(Container(300).ListItem.Property(widgetType),Default) + !String.IsEqual(Container(300).ListItem.Property(widgetType),Weather Widget)]]  | String.IsEqual(Container(300).ListItem.Property(widgetType),Settings Widget)</visible>
-              <include condition="Skin.HasSetting(SettingsNew)">Widget_Settings</include>
-              <include condition="!Skin.HasSetting(SettingsNew)">Widget_Settings_New</include>
+              <animation effect="slide" start="0,0" end="0,60" time="0" condition="Skin.HasSetting(DisableMenuHor)">Conditonal</animation>
+              <control type="button" id="9966">
+                <onleft>300</onleft>
+                <onright>300</onright>
+                <onup>300</onup>
+                <ondown>300</ondown>
+                <onback>300</onback>
+                <width>1</width>
+                <height>1</height>
+                <top>-1000</top>
+                <onclick>ActivateWindow(Weather)</onclick>
+                <visible>String.IsEqual(Container(300).ListItem.Property(widget),Weather)</visible>
+                <animation effect="fade" end="0" condition="true">Conditional</animation>
+              </control>
+              <control type="group">
+                <visible>[String.IsEqual(Container(300).ListItem.Property(widget),Weather) + [!String.IsEqual(Container(300).ListItem.Property(widgetType),Default) + !String.IsEqual(Container(300).ListItem.Property(widgetType),Settings Widget)]] | String.IsEqual(Container(300).ListItem.Property(widgetType),Weather Widget)</visible>
+                <include>Weather</include>
+              </control>
+              <!-- Settings Widget -->
+              <control type="group">
+                <visible>[String.IsEqual(Container(300).ListItem.Property(widget),Settings) +  [!String.IsEqual(Container(300).ListItem.Property(widgetType),Default) + !String.IsEqual(Container(300).ListItem.Property(widgetType),Weather Widget)]]  | String.IsEqual(Container(300).ListItem.Property(widgetType),Settings Widget)</visible>
+                <include condition="Skin.HasSetting(SettingsNew)">Widget_Settings</include>
+                <include condition="!Skin.HasSetting(SettingsNew)">Widget_Settings_New</include>
+              </control>
             </control>
           </control>
         </control>
@@ -190,6 +195,10 @@
       <onleft condition="Skin.HasSetting(DisableMenuHor) + String.IsEqual(Container(300).ListItem.Property(menulist),Movie Menu) + String.IsEqual(Container(300).ListItem.Property(menuonleft),true)">SetFocus(401,0)</onleft>
       <ondown>3337</ondown>
       <animation effect="slide" end="40,0" time="200" condition="!Skin.HasSetting(DisableMenuHor) + !Skin.HasSetting(DisableMenuVertLabelOnly) + !Skin.HasSetting(DisableMenuVertLabel) + [Control.HasFocus(300) | !Skin.HasSetting(DisableNetflixHomeSidemenuHide)]">Conditional</animation>
+      <animation effect="slide" end="0,60" time="0" condition="Skin.HasSetting(DisableMenuHor)">Conditional</animation>
+      <animation effect="slide" end="0,50" time="0" condition="$EXP[noSubMenu] + Skin.HasSetting(DisableMenuHor)">Conditional</animation>
+      <animation effect="slide" end="0,-70" time="0" condition="$EXP[noSubMenu] + Skin.HasSetting(DisableMenuHor) + [$EXP[TVSpotlight] + Skin.HasSetting(EnableTVFullSpotlight) | $EXP[MovieSpotlight] + Skin.HasSetting(EnableFullSpotlight)]">Conditional</animation>
+      <animation effect="slide" end="0,-40" time="0" condition="!$EXP[noSubMenu] + Skin.HasSetting(DisableMenuHor) + [$EXP[TVSpotlight] + Skin.HasSetting(EnableTVFullSpotlight) | $EXP[MovieSpotlight] + Skin.HasSetting(EnableFullSpotlight)]">Conditional</animation>
       <control type="group" id="331" description="Spacer">
         <height>210</height>
 	<visible>!Skin.HasSetting(DisableAuraModeGap) | Skin.HasSetting(DisableMenuHor)</visible>
@@ -230,6 +239,26 @@
         <height>855</height>
         <visible>Skin.HasSetting(HideSubmenuWidget)</visible>
       </control>
+      <control type="group" id="343" description="Spacer">
+        <height>20</height>
+        <visible>$EXP[noSubMenu] + !Skin.HasSetting(SubmenuLabel) + Skin.HasSetting(DisableMenuHor)</visible>
+      </control>
+      <control type="group" id="344" description="Spacer">
+        <height>30</height>
+        <visible>$EXP[noSubMenu] + !Skin.HasSetting(SubmenuLabel) + !Skin.HasSetting(DisableMenuHor)</visible>
+      </control>
+      <control type="group" id="345" description="Spacer">
+        <height>-40</height>
+        <visible>Skin.HasSetting(DisableMenuHor) + [$EXP[TVSpotlight] + Skin.HasSetting(EnableTVFullSpotlight) | $EXP[MovieSpotlight] + Skin.HasSetting(EnableFullSpotlight)]</visible>
+      </control>
+      <control type="group" id="346" description="Spacer">
+        <height>-60</height>
+        <visible>!$EXP[noSubMenu] + Skin.HasSetting(DisableMenuHor) + [$EXP[TVSpotlight] + Skin.HasSetting(EnableTVFullSpotlight) | $EXP[MovieSpotlight] + Skin.HasSetting(EnableFullSpotlight)]</visible>
+      </control>
+      <control type="group" id="357" description="Spacer">
+        <height>40</height>
+        <visible>!$EXP[noSubMenu] + Skin.HasSetting(DisableMenuHor) + !Skin.HasSetting(DisableCatlabel) + [!$EXP[TVSpotlight] | !$EXP[MovieSpotlight]]</visible>
+      </control>
       <include content="WidgetSubmenu" condition="!Skin.HasSetting(HideSubmenuWidget)">
         <param name="id" value="30222" />
         <param name="submenu" value="true" />
@@ -247,6 +276,50 @@
       <include>skinshortcuts-template-vertical-submenu</include>
       <control type="group" id="336">
         <height>-200</height>
+      </control>
+      <control type="group" id="347" description="Spacer">
+        <height>20</height>
+        <visible>$EXP[noSubMenu] + Skin.HasSetting(DisableMenuHor) + [$EXP[TVSpotlight] + Skin.HasSetting(EnableTVFullSpotlight) | $EXP[MovieSpotlight] + Skin.HasSetting(EnableFullSpotlight)]</visible>
+      </control>
+      <control type="group" id="348" description="Spacer">
+        <height>40</height>
+        <visible>!$EXP[noSubMenu] + Skin.HasSetting(DisableMenuHor) + [$EXP[TVSpotlight] + !Skin.HasSetting(EnableTVFullSpotlight) + !Skin.HasSetting(EnableTVWidgetSpotlight) + !Skin.HasSetting(EnableTVMultiWidgetSpotlight) | $EXP[MovieSpotlight] + !Skin.HasSetting(EnableFullSpotlight) + !Skin.HasSetting(EnableWidgetSpotlight) + !Skin.HasSetting(EnableMultiWidgetSpotlight)]</visible>
+      </control>
+      <control type="group" id="349" description="Spacer">
+        <height>90</height>
+        <visible>$EXP[noSubMenu] + Skin.HasSetting(DisableMenuHor) + [$EXP[TVSpotlight] + !Skin.HasSetting(EnableTVFullSpotlight) + !Skin.HasSetting(EnableTVWidgetSpotlight) + !Skin.HasSetting(EnableTVMultiWidgetSpotlight) | $EXP[MovieSpotlight] + !Skin.HasSetting(EnableFullSpotlight) + !Skin.HasSetting(EnableWidgetSpotlight) + !Skin.HasSetting(EnableMultiWidgetSpotlight)]</visible>
+      </control>
+      <control type="group" id="350" description="Spacer">
+        <height>40</height>
+        <visible>!$EXP[noSubMenu] + Skin.HasSetting(DisableMenuHor) + [$EXP[TVSpotlight] + !Skin.HasSetting(EnableTVFullSpotlight) + Skin.HasSetting(EnableTVWidgetSpotlight) + Skin.HasSetting(EnableTVMultiWidgetSpotlight) | $EXP[MovieSpotlight] + !Skin.HasSetting(EnableFullSpotlight) + Skin.HasSetting(EnableWidgetSpotlight) + Skin.HasSetting(EnableMultiWidgetSpotlight)]</visible>
+      </control>
+      <control type="group" id="351" description="Spacer">
+        <height>90</height>
+        <visible>$EXP[noSubMenu] + Skin.HasSetting(DisableMenuHor) + [$EXP[TVSpotlight] + !Skin.HasSetting(EnableTVFullSpotlight) + Skin.HasSetting(EnableTVWidgetSpotlight) + Skin.HasSetting(EnableTVMultiWidgetSpotlight) | $EXP[MovieSpotlight] + !Skin.HasSetting(EnableFullSpotlight) + Skin.HasSetting(EnableWidgetSpotlight) + Skin.HasSetting(EnableMultiWidgetSpotlight)]</visible>
+      </control>
+      <control type="group" id="352" description="Spacer">
+        <height>40</height>
+        <visible>!$EXP[noSubMenu] + Skin.HasSetting(DisableMenuHor) + Skin.HasSetting(SubmenuLabel) + !Skin.HasSetting(LargeSubmenuLabel) + [!$EXP[TVSpotlight] | !$EXP[MovieSpotlight]]</visible>
+      </control>
+      <control type="group" id="353" description="Spacer">
+        <height>90</height>
+        <visible>$EXP[noSubMenu] + Skin.HasSetting(DisableMenuHor) + Skin.HasSetting(SubmenuLabel) + !Skin.HasSetting(LargeSubmenuLabel) + [!$EXP[TVSpotlight] | !$EXP[MovieSpotlight]]</visible>
+      </control>
+      <control type="group" id="354" description="Spacer">
+        <height>40</height>
+        <visible>!$EXP[noSubMenu] + Skin.HasSetting(DisableMenuHor) + Skin.HasSetting(SubmenuLabel) + Skin.HasSetting(LargeSubmenuLabel) + [!$EXP[TVSpotlight] | !$EXP[MovieSpotlight]]</visible>
+      </control>
+      <control type="group" id="355" description="Spacer">
+        <height>90</height>
+        <visible>$EXP[noSubMenu] + Skin.HasSetting(DisableMenuHor) + Skin.HasSetting(SubmenuLabel) + Skin.HasSetting(LargeSubmenuLabel) + [!$EXP[TVSpotlight] | !$EXP[MovieSpotlight]]</visible>
+      </control>
+      <control type="group" id="356" description="Spacer">
+        <height>-5</height>
+        <visible>!$EXP[noSubMenu] + Skin.HasSetting(DisableMenuHor) + !Skin.HasSetting(SubmenuLabel) + !Skin.HasSetting(LargeSubmenuLabel) + [!$EXP[TVSpotlight] | !$EXP[MovieSpotlight]]</visible>
+      </control>
+      <control type="group" id="357" description="Spacer">
+        <height>45</height>
+        <visible>$EXP[noSubMenu] + Skin.HasSetting(DisableMenuHor) + !Skin.HasSetting(SubmenuLabel) + !Skin.HasSetting(LargeSubmenuLabel) + [!$EXP[TVSpotlight] | !$EXP[MovieSpotlight]]</visible>
       </control>
     </control>
   </include>

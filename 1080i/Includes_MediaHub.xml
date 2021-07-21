@@ -296,7 +296,7 @@
         <align>left</align>
         <font>Reg32</font>
         <textoffsetx>65</textoffsetx>
-        <label>[B]Click to set Widget Content[/B]</label>
+        <label>[B]$LOCALIZE[31636][/B]</label> <!-- Click to set Widget Content -->
         <textcolor>white</textcolor>
         <texturefocus colordiffuse="white">netflix/border_netflix.png</texturefocus>
         <onclick>ActivateWindow(1060)</onclick>
@@ -456,14 +456,14 @@
                       <visible>String.IsEqual(ListItem.DBType,episode) | String.IsEqual(ListItem.DBType,movie) | String.IsEqual(ListItem.DBType,season) | String.IsEqual(ListItem.DBType,tvshow)</visible>
                       <control type="label">
                         <top>-90</top>
-                        <label>$VAR[date_aired] Length: [/COLOR][B]$VAR[Label_Duration][/B][COLOR=$VAR[ColorHighlight]] Ends: [/COLOR][B]$INFO[ListItem.EndTime][/B]</label>
+                        <label>$VAR[date_aired] $LOCALIZE[31792]: [/COLOR][B]$VAR[Label_Duration][/B][COLOR=$VAR[ColorHighlight]] $LOCALIZE[31748]: [/COLOR][B]$INFO[ListItem.EndTime][/B]</label> <!-- Length DURATION Ends ENDTIME -->
                         <width>650</width>
                         <textcolor>grey</textcolor>
                         <font>font_small</font>
                       </control>
                       <control type="label">
                         <top>-10</top>
-                        <label>[COLOR=$VAR[ColorHighlight]]Genre: [/COLOR]$INFO[ListItem.Genre]</label>
+                        <label>[COLOR=$VAR[ColorHighlight]]$LOCALIZE[31497]: [/COLOR]$INFO[ListItem.Genre]</label> <!-- Genre -->
                         <width>650</width>
                         <textcolor>grey</textcolor>
                         <font>font_small</font>
@@ -530,7 +530,7 @@
           <font>font_tiny_bold</font>
           <textcolor>dimgrey</textcolor>
           <focusedcolor>red</focusedcolor>
-          <label>Discover Movies</label>
+          <label>$LOCALIZE[31637]</label> <!-- Discover Movies -->
         </control>
         <control type="button" id="52">
           <ondown condition="!Skin.String(mediahub-520.label) + !Skin.HasSetting(LockHubWidgets)">5205</ondown>
@@ -544,7 +544,7 @@
           <font>font_tiny_bold</font>
           <textcolor>dimgrey</textcolor>
           <focusedcolor>red</focusedcolor>
-          <label>Discover TV</label>
+          <label>$LOCALIZE[31706]</label> <!-- Discover TV -->
         </control>
         <control type="button" id="53">
           <ondown condition="!Skin.String(mediahub-530.label) + !Skin.HasSetting(LockHubWidgets)">5305</ondown>
@@ -557,7 +557,7 @@
           <font>font_tiny_bold</font>
           <textcolor>dimgrey</textcolor>
           <focusedcolor>red</focusedcolor>
-          <label>My Movies</label>
+          <label>$LOCALIZE[31707]</label> <!-- My Movies -->
           <onclick>close</onclick>
         </control>
         <control type="radiobutton" id="54">
@@ -571,7 +571,7 @@
           <font>font_tiny_bold</font>
           <textcolor>dimgrey</textcolor>
           <focusedcolor>red</focusedcolor>
-          <label>My TV</label>
+          <label>$LOCALIZE[31708]</label> <!-- My TV -->
           <onclick>close</onclick>
         </control>
         <control type="radiobutton" id="55">
@@ -585,7 +585,7 @@
           <font>font_tiny_bold</font>
           <textcolor>dimgrey</textcolor>
           <focusedcolor>red</focusedcolor>
-          <label>My Apps</label>
+          <label>$LOCALIZE[31709]</label> <!-- My Apps -->
           <onclick>close</onclick>
         </control>
       </control>

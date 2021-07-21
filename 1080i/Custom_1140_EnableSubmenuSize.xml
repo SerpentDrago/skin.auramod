@@ -13,7 +13,7 @@
 
             <control type="label">
                 <description>Header Label</description>
-                <label>[CAPITALIZE]Choose Category Widget Size[/CAPITALIZE]</label>
+                <label>[CAPITALIZE]$LOCALIZE[31618][/CAPITALIZE]</label> <!-- Choose Category Widget Size -->
                 <include>Dialog_Standard_Header</include>
             </control>
             <!-- Image -->
@@ -45,7 +45,7 @@
                        <control type="radiobutton" id="9001" description="Enable Small Submenu">
                             <include>Dialog_Standard_ListButton</include>
                             <radioposx>630</radioposx>
-                            <label>Enable Small Category Widget</label>
+                            <label>$LOCALIZE[31619]</label> <!-- Enable Small Category Widget -->
                             <selected>!Skin.HasSetting(SubmenuLabel)</selected>
                             <onclick>Skin.ToggleSetting(SubmenuLabel)</onclick>
                             <onclick condition="Skin.HasSetting(LargeSubmenuLabel)">Skin.ToggleSetting(LargeSubmenuLabel)</onclick>
@@ -57,7 +57,7 @@
                         <control type="radiobutton" id="9002" description="Enable Medium Submenu">
                             <include>Dialog_Standard_ListButton</include>
                             <radioposx>630</radioposx>
-                            <label>Enable Medium Category Widget</label>
+                            <label>$LOCALIZE[31620]</label> <!-- Enable Medium Category Widget -->
                             <selected>Skin.HasSetting(SubmenuLabel) + !Skin.HasSetting(LargeSubmenuLabel)</selected>
                             <onclick condition="!Skin.HasSetting(SubmenuLabel)">Skin.ToggleSetting(SubmenuLabel)</onclick>
                             <onclick condition="Skin.HasSetting(LargeSubmenuLabel)">Skin.ToggleSetting(LargeSubmenuLabel)</onclick>
@@ -69,7 +69,7 @@
                         <control type="radiobutton" id="9003" description="Enable Large Submenu">
                             <include>Dialog_Standard_ListButton</include>
                             <radioposx>630</radioposx>
-                            <label>Enable Large Category Widget</label>
+                            <label>$LOCALIZE[31621]</label> <!-- Enable Large Category Widget -->
                             <selected>Skin.HasSetting(LargeSubmenuLabel)</selected>
                             <onclick condition="!Skin.HasSetting(LargeSubmenuLabel)">Skin.ToggleSetting(LargeSubmenuLabel)</onclick>
                             <onclick condition="!Skin.HasSetting(SubmenuLabel)">Skin.ToggleSetting(SubmenuLabel)</onclick>

@@ -2,7 +2,7 @@
 <shortcuts>
 	<shortcut>
 		<defaultID />
-		<label>Search...</label>
+		<label>$LOCALIZE[31523]...</label> <!-- Search -->
 		<label2>Video Add-On</label2>
 		<icon>DefaultShortcut.png</icon>
 		<thumb>special://skin/media/exuary/search.png</thumb>
@@ -10,7 +10,7 @@
 	</shortcut>
 	<shortcut>
 		<defaultID>mediahub</defaultID>
-		<label>Media Hub</label>
+		<label>$LOCALIZE[31830]</label> <!-- Media Hub -->
 		<label2 />
 		<icon>special://skin/extras/icons/tv.png</icon>
 		<thumb>special://skin/extras/icons/emby.png</thumb>
@@ -18,7 +18,7 @@
 	</shortcut>
 	<shortcut>
 		<defaultID>genreshub</defaultID>
-		<label>Genres Hub</label>
+		<label>$LOCALIZE[31806]</label> <!-- Genres Hub -->
 		<label2 />
 		<icon>special://skin/extras/icons/tv.png</icon>
 		<thumb>special://skin/media/exuary/genres.png</thumb>
@@ -26,7 +26,7 @@
 	</shortcut>
 	<shortcut>
 		<defaultID />
-		<label>Academy Awards - Best Picture Winners</label>
+		<label>$LOCALIZE[31831]</label> <!-- Academy Awards - Best Picture Winners -->
 		<label2>Video Add-On</label2>
 		<icon>DefaultShortcut.png</icon>
 		<thumb>special://skin/extras/lists/icons/academybestpic.png</thumb>
@@ -34,7 +34,7 @@
 	</shortcut>
 	<shortcut>
 		<defaultID />
-		<label>Rotten Tomatoes: Best of 2018</label>
+		<label>$LOCALIZE[31832]</label> <!-- Rotten Tomatoes: Best of 2018 -->
 		<label2>Video Add-On</label2>
 		<icon>DefaultShortcut.png</icon>
 		<thumb>special://skin/extras/lists/icons/rottentomatoes.png</thumb>
@@ -42,7 +42,7 @@
 	</shortcut>
 	<shortcut>
 		<defaultID />
-		<label>2018 - Golden Globe Nominees &amp; Winners</label>
+		<label>$LOCALIZE[31833]</label> <!-- 2018 - Golden Globe Nominees & Winners -->
 		<label2>Custom item</label2>
 		<icon>DefaultShortcut.png</icon>
 		<thumb>special://skin/extras/lists/icons/goldenglobe.png</thumb>
@@ -50,7 +50,7 @@
 	</shortcut>
 	<shortcut>
 		<defaultID />
-		<label>2018 - Oscar Nominees &amp; Winners</label>
+		<label>$LOCALIZE[31834]</label> <!-- 2018 - Oscar Nominees & Winners -->
 		<label2>Video Add-On</label2>
 		<icon>DefaultShortcut.png</icon>
 		<thumb>special://skin/media/exuary/oscar-winners.png</thumb>
@@ -58,7 +58,7 @@
 	</shortcut>
 	<shortcut>
 		<defaultID />
-		<label>IMDB: Top Rated Movies</label>
+		<label>$LOCALIZE[31835]</label> <!-- IMDB: Top Rated Movies -->
 		<label2>Video Add-On</label2>
 		<icon>DefaultShortcut.png</icon>
 		<thumb>special://skin/extras/lists/icons/imdb-color.png</thumb>
@@ -66,7 +66,7 @@
 	</shortcut>
 	<shortcut>
 		<defaultID />
-		<label>Reddit Top 250 (2018 Edition)</label>
+		<label>$LOCALIZE[31836]</label> <!-- Reddit Top 250 (2018 Edition) -->
 		<label2>Video Add-On</label2>
 		<icon>DefaultShortcut.png</icon>
 		<thumb>special://skin/extras/lists/icons/reddit.png</thumb>
@@ -74,7 +74,7 @@
 	</shortcut>
 	<shortcut>
 		<defaultID>movieaurahub</defaultID>
-		<label>Movie Aura Hub </label>
+		<label>$LOCALIZE[31803]</label> <!-- Movie Aura Hub -->
 		<label2 />
 		<icon>special://skin/extras/icons/film.png</icon>
 		<thumb />
@@ -82,7 +82,7 @@
 	</shortcut>
 	<shortcut>
 		<defaultID>movienetflixhub</defaultID>
-		<label>Movie Netflix Hub</label>
+		<label>$LOCALIZE[31804]</label> <!-- Movie Netflix Hub -->
 		<label2 />
 		<icon>special://skin/extras/icons/film.png</icon>
 		<thumb />

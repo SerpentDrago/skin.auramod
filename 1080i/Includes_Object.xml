@@ -320,7 +320,7 @@
         <height>70</height>
         <textoffsetx>15</textoffsetx>
         <align>left</align>
-        <label>Season $INFO[ListItem.Season]</label>
+        <label>$LOCALIZE[31750] $INFO[ListItem.Season]</label> <!-- Season -->
         <textcolor>white</textcolor>
         <shadowcolor>black</shadowcolor>
         <font>font_tiny_bold</font>
@@ -1033,7 +1033,7 @@
         <description>Play</description>
         <width>250</width>
         <height>80</height>
-        <label>[CAPITALIZE][B]Play[/B][/CAPITALIZE]</label>
+        <label>[CAPITALIZE][B]$LOCALIZE[31714][/B][/CAPITALIZE]</label> <!-- Play -->
         <align>center</align>
         <textcolor>grey</textcolor>
         <focusedcolor>black</focusedcolor>
@@ -1058,7 +1058,7 @@
         <width>280</width>
         <height>80</height>
         <align>center</align>
-        <label>[B]More Info[/B]</label>
+        <label>[B]$LOCALIZE[31715][/B]</label> <!-- More Info -->
         <textcolor>white</textcolor>
         <focusedcolor>black</focusedcolor>
         <texturefocus colordiffuse="d9ffffff" border="5">common/rounded-shadow8.png</texturefocus>
@@ -1109,7 +1109,7 @@
       <control type="label">
         <left>70</left>
         <top>-50</top>
-        <label>[B]My TV Calendar[/B]</label>
+        <label>[B]$LOCALIZE[31716][/B]</label> <!-- My TV Calendar -->
         <height>40</height>
         <width>350</width>
         <align>left</align>
@@ -1369,7 +1369,7 @@
         <description>Play</description>
         <width>240</width>
         <height>80</height>
-        <label>[CAPITALIZE][B]Play[/B][/CAPITALIZE]</label>
+        <label>[CAPITALIZE][B]$LOCALIZE[31714][/B][/CAPITALIZE]</label> <!-- Play -->
         <align>center</align>
         <textcolor>grey</textcolor>
         <focusedcolor>black</focusedcolor>
@@ -1394,7 +1394,7 @@
         <width>280</width>
         <height>80</height>
         <align>center</align>
-        <label>[B]More Info[/B]</label>
+        <label>[B]$LOCALIZE[31715][/B]</label> <!-- More Info -->
         <textcolor>white</textcolor>
         <focusedcolor>black</focusedcolor>
         <texturefocus colordiffuse="d9ffffff" border="5">common/rounded-shadow8.png</texturefocus>
@@ -1510,7 +1510,7 @@
           <left>40</left>
           <height>40</height>
           <visible>String.IsEqual(ListItem.DBType,episode) + !Skin.HasSetting(EnableFullEpInfo)</visible>
-          <label>[B]Continue Watching[/B]</label>
+          <label>[B]$LOCALIZE[31717][/B]</label> <!-- Continue Watching -->
           <width>750</width>
           <textcolor>white</textcolor>
           <shadowcolor>black</shadowcolor>
@@ -1536,7 +1536,7 @@
           <visible>Integer.IsEqual(ListItem.PercentPlayed,0) + String.IsEqual(ListItem.DBType,episode) + !Skin.HasSetting(EnableFullEpInfo)</visible>
           <control type="label">
             <width>450</width>
-            <label>Aired $INFO[ListItem.Premiered(DDD MMM yyyy)] on</label>
+            <label>$LOCALIZE[31789] $INFO[ListItem.Premiered(DDD MMM yyyy)] $LOCALIZE[31282]</label> <!-- Aired DAY on -->
             <textcolor>grey</textcolor>
             <shadowcolor>black</shadowcolor>
             <font>font_small</font>
@@ -1584,7 +1584,7 @@
             <width>450</width>
             <font>Netflix_Info_main</font>
             <textcolor>grey</textcolor>
-            <label>$VAR[ListItemPercentRemained,,% remaining]</label>
+            <label>$VAR[ListItemPercentRemained,,% $LOCALIZE[31783]]</label> <!-- remaining -->
           </control>
         </control>
         <!-- Plot Low spotlight -->
@@ -1896,7 +1896,7 @@
             <visible>[String.IsEqual(ListItem.DBType,episode) + !Skin.HasSetting(EnableFullEpInfo)]</visible>
             <left>00</left>
             <height>30</height>
-            <label>[B]Continue Watching[/B]</label>
+            <label>[B]$LOCALIZE[31717][/B]</label> <!-- Continue Watching -->
             <width>750</width>
             <textcolor>white</textcolor>
             <shadowcolor>black</shadowcolor>
@@ -1919,7 +1919,7 @@
             <left>0</left>
             <height>60</height>
             <visible>!Integer.IsGreater(ListItem.PercentPlayed,1) + String.IsEqual(ListItem.DBType,episode) + !Skin.HasSetting(EnableFullEpInfo)</visible>
-            <label fallback="19055">[I]Aired $INFO[ListItem.Premiered(DDD MMM yyyy)] on $INFO[ListItem.Studio][/I]</label>
+            <label fallback="19055">[I]$LOCALIZE[31789] $INFO[ListItem.Premiered(DDD MMM yyyy)] $LOCALIZE[31282] $INFO[ListItem.Studio][/I]</label> <!-- Aired DATE on STUDIO -->
             <width>750</width>
             <textcolor>main_fg_100</textcolor>
             <shadowcolor>black</shadowcolor>
@@ -1980,7 +1980,7 @@
                 <width>450</width>
                 <font>Netflix_Info_main</font>
                 <textcolor>grey</textcolor>
-                <label>$VAR[ListItemPercentRemained,,% remaining]</label>
+                <label>$VAR[ListItemPercentRemained,,% $LOCALIZE[31783]]</label> <!-- remaining -->
               </control>
             </control>
           </control>
@@ -2175,7 +2175,7 @@
                 <!-- Aired -->
                 <control type="label">
                   <width>195</width>
-                  <label>Aired: $INFO[Container($PARAM[id]).ListItem.Premiered(dd MMM yyyy)]</label>
+                  <label>$LOCALIZE[31789]: $INFO[Container($PARAM[id]).ListItem.Premiered(dd MMM yyyy)]</label> <!-- Aired -->
                   <textcolor>$VAR[ColorHighlight2]</textcolor>
                   <font>font_tiny_bold</font>
                   <visible>String.IsEqual(Container($PARAM[id]).ListItem.DBType,episode)</visible>
@@ -2215,7 +2215,7 @@
             <visible>[Control.IsVisible(1505) | Control.IsVisible(1506)] + !String.Contains(ListItem.Path,plugin.video.youtube)</visible>
           </control>
           <control type="textbox">
-            <label>[B]Channel:[/B] $INFO[Container($PARAM[id]).ListItem.Plot]</label>
+            <label>[B]$LOCALIZE[31718]:[/B] $INFO[Container($PARAM[id]).ListItem.Plot]</label> <!-- Channel -->
             <width>620</width>
             <height min="20" max="175">auto</height>
             <aligny>top</aligny>
@@ -5945,7 +5945,7 @@
                 <font>widget_trakt_title2</font>
                 <textcolor>white</textcolor>
                 <scroll>false</scroll>
-                <label>$INFO[Container($PARAM[id]).ListItem.Duration(h),,h] $INFO[Container($PARAM[id]).ListItem.Duration(mm),,m]</label>
+                <label>$INFO[Container($PARAM[id]).ListItem.Duration(h),,$LOCALIZE[31036]] $INFO[Container($PARAM[id]).ListItem.Duration(mm),,$LOCALIZE[31020]]</label> <!-- DURATION(hours) h DURATION(minutes) m -->
               </control>
             </control>
             <!-- Season Count -->
@@ -5968,7 +5968,7 @@
                 <align>center</align>
                 <font>widget_trakt_title2</font>
                 <textcolor>grey</textcolor>
-                <label>$INFO[Container($PARAM[id]).ListItem.Property(TotalSeasons)] Season</label>
+                <label>$INFO[Container($PARAM[id]).ListItem.Property(TotalSeasons)] $LOCALIZE[31750]</label> <!-- Season -->
                 <visible>String.IsEqual(Container($PARAM[id]).ListItem.DBType,tvshow) + String.IsEqual(Container($PARAM[id]).ListItem.Property(TotalSeasons),1)</visible>
               </control>
 
@@ -5978,14 +5978,14 @@
                 <align>center</align>
                 <font>widget_trakt_title2</font>
                 <textcolor>grey</textcolor>
-                <label>$INFO[Container($PARAM[id]).ListItem.Property(TotalSeasons)] Seasons</label>
+                <label>$INFO[Container($PARAM[id]).ListItem.Property(TotalSeasons)] $LOCALIZE[31499]</label> <!-- Seasons -->
                 <visible>String.IsEqual(Container($PARAM[id]).ListItem.DBType,tvshow) + String.IsGreaterOrEqual(Container($PARAM[id]).ListItem.Property(TotalSeasons),2) + !String.IsEmpty(Container($PARAM[id]).ListItem.Property(TotalSeasons))</visible>
               </control>
             </control>
             <!-- Aired -->
             <control type="label">
               <width>195</width>
-              <label>Aired: $INFO[Container($PARAM[id]).ListItem.Premiered(dd MMM yyyy)]</label>
+              <label>$LOCALIZE[31789]: $INFO[Container($PARAM[id]).ListItem.Premiered(dd MMM yyyy)]</label> <!-- Aired -->
               <textcolor>$VAR[ColorHighlight2]</textcolor>
               <font>font_tiny_bold</font>
               <visible>String.IsEqual(Container($PARAM[id]).ListItem.DBType,episode)</visible>
@@ -6031,7 +6031,7 @@
           <visible>!$EXP[MainSubMenuHasFocus]</visible>
         </control>
         <control type="group">
-          <width>570</width> <!--500-->
+          <width>auto</width> <!--500-->
           <control type="grouplist">
             <orientation>horizontal</orientation>
             <itemgap>10</itemgap>
@@ -6117,8 +6117,7 @@
             </control>
             <!-- Aired -->
             <control type="label">
-              <width>195</width>
-              <label>Aired: $INFO[ListItem.Premiered(dd MMM yyyy)]</label>
+              <label>$LOCALIZE[31789]: $INFO[ListItem.Premiered(dd MMM yyyy)]</label> <!-- Aired -->
               <textcolor>$VAR[ColorHighlight2]</textcolor>
               <font>font_tiny_bold</font>
               <visible>String.IsEqual(ListItem.DBType,episode)</visible>
@@ -6492,7 +6491,7 @@
             <onup>131</onup>
             <width>130</width>
             <height>70</height>
-            <label>Clear</label>
+            <label>$LOCALIZE[31719]</label> <!-- Clear -->
             <onclick>Skin.Reset(CustomSearchTerm)</onclick>
             <onclick>ActivateWindow(1136)</onclick>
             <include>Key</include>
@@ -6501,7 +6500,7 @@
             <onup>131</onup>
             <width>240</width>
             <height>70</height>
-            <label>Search</label>
+            <label>$LOCALIZE[31629]</label> <!-- Search -->
             <onclick>Skin.SetString(TempCustomSearchTerm,$INFO[Skin.String(osdCustomSearchTerm)])</onclick>
             <onclick>ActivateWindow(1136)</onclick>
             <onclick>Skin.SetString(CustomSearchTerm,$INFO[Skin.String(TempCustomSearchTerm)])</onclick>
@@ -6517,7 +6516,7 @@
       <centertop>30%</centertop>
       <font>search_heading</font>
       <textcolor>dimgrey</textcolor>
-      <label>Search for TV Shows and Movies</label>
+      <label>$LOCALIZE[31720]</label> <!-- Search for TV Shows and Movies -->
       <visible>String.IsEmpty(Skin.String(CustomSearchTerm))</visible>
     </control>
     <control type="group">
@@ -6704,7 +6703,7 @@
         </control>
         <!-- Add Ratings -->
         <control type="label">
-          <label>Aired: $INFO[ListItem.Premiered(dd MMM yyyy)]</label>
+          <label>$LOCALIZE[31789]: $INFO[ListItem.Premiered(dd MMM yyyy)]</label> <!-- Aired -->
           <textcolor>$VAR[ColorHighlight2]</textcolor>
           <font>font_tiny_bold</font>
           <include>Statusbar_Menubar_Items</include>
@@ -6883,7 +6882,7 @@
         <!-- Add Airdate -->
         <control type="label">
           <top>-2</top>
-          <label>Aired: $INFO[ListItem.Premiered(dd MMM yyyy)]</label>
+          <label>$LOCALIZE[31789]: $INFO[ListItem.Premiered(dd MMM yyyy)]</label> <!-- Aired -->
           <textcolor>$VAR[ColorHighlight2]</textcolor>
           <font>font_tiny_bold</font>
           <include>Statusbar_Menubar_Items</include>
@@ -7819,7 +7818,7 @@
    <height>40</height>
    <font>font_heading_small</font>
    <textcolor>white</textcolor>
-   <label>[B]AuraHub[/B]</label>
+   <label>[B]$LOCALIZE[31790][/B]</label> <!-- AuraHub -->
    </control> 
    </control> 
 
@@ -7851,7 +7850,7 @@
       <control type="label">
         <left>110</left>
         <top>40</top>
-        <label>Categories</label>
+        <label>$LOCALIZE[31721]</label> <!-- Categories -->
         <height>40</height>
         <width>350</width>
         <align>left</align>
@@ -8014,13 +8013,13 @@
       <left>50</left>
       <animation effect="slide" end="40,0" time="200" condition="!Skin.HasSetting(DisableMenuVertIcon) + [Control.HasFocus(300) | !Skin.HasSetting(DisableNetflixHomeSidemenuHide)]">Conditional</animation>
       <animation effect="slide" end="40,0" time="500" delay="0" condition="Skin.HasSetting(DisableMenuVertLabelOnly) + [!Control.HasFocus(300) | !Control.HasFocus(400) | !Control.HasFocus(401)]" reversible="true">Conditional</animation>
-      <!--> Row 1 <!-->
+      <!-- Row 1 -->
       <control type="label">
         <top>50</top>
         <left>20</left>
         <width>450</width>
         <height>20</height>
-        <label>Device</label>
+        <label>$LOCALIZE[31722]</label> <!-- Device -->
         <align>left</align>
         <font>font_tiny_bold</font>
         <textcolor>white</textcolor>
@@ -8101,44 +8100,44 @@
         </focusedlayout>
         <content>
           <item>
-            <label>Interface</label>
+            <label>$LOCALIZE[31723]</label> <!-- Interface -->
             <onclick>ActivateWindow(InterfaceSettings)</onclick>
             <thumb>special://skin/extras/icons/skinsettings.png</thumb>
           </item>
           <item>
-            <label>Services</label>
+            <label>$LOCALIZE[31724]</label> <!-- Services -->
             <onclick>activatewindow(servicesettings)</onclick>
             <icon>special://skin/extras/icons/network.png</icon>
           </item>
           <item>
-            <label>Player</label>
+            <label>$LOCALIZE[31725]</label> <!-- Player -->
             <onclick>ActivateWindow(playersettings)</onclick>
             <thumb>settings/tv.png</thumb>
           </item>
           <item>
-            <label>Media Settings</label>
+            <label>$LOCALIZE[31726]</label> <!-- Media Settings -->
             <onclick>ActivateWindow(MediaSettings)</onclick>
             <thumb>settings/library.png</thumb>
           </item>
           <item>
-            <label>PVR &amp; Live TV</label>
+            <label>$LOCALIZE[31727]</label> <!-- PVR &amp; Live TV -->
             <onclick>ActivateWindow(PVRSettings)</onclick>
             <icon>settings/PVR.png</icon>
           </item>
           <item>
-            <label>Accounts</label>
+            <label>$LOCALIZE[31728]</label> <!-- Accounts -->
             <onclick>ActivateWindow(profiles)</onclick>
             <thumb>settings/popcont.png</thumb>
           </item>
         </content>
       </control>
-      <!--> Row 2 <!-->
+      <!-- Row 2 -->
       <control type="label">
         <top>370</top>
         <left>20</left>
         <width>300</width>
         <height>20</height>
-        <label>Preferences</label>
+        <label>$LOCALIZE[31729]</label> <!-- Preferences -->
         <align>left</align>
         <font>font_tiny_bold</font>
         <textcolor>white</textcolor>
@@ -8219,51 +8218,51 @@
         </focusedlayout>
         <content>
           <item>
-            <label>Menu &amp; Widgets</label>
+            <label>$LOCALIZE[31730]</label> <!-- Menu &amp; Widgets -->
             <onclick condition="System.HasAddon(script.skinshortcuts)">RunScript(script.skinshortcuts,type=manage&amp;group=mainmenu)</onclick>
             <onclick condition="!System.HasAddon(script.skinshortcuts)">InstallAddon(script.skinshortcuts)</onclick>
             <visible>!Skin.HasSetting(KioskMode)</visible>
             <thumb>settings/widgets.png</thumb>
           </item>
           <item>
-            <label>TV Hubs</label>
+            <label>$LOCALIZE[31731]</label> <!-- TV Hubs -->
             <onclick>ActivateWindow(1127)</onclick>
             <thumb>special://skin/extras/icons/tv.png</thumb>
           </item>
           <item>
-            <label>Movie Hubs</label>
+            <label>$LOCALIZE[31732]</label> <!-- Movie Hubs -->
             <onclick>ActivateWindow(1126)</onclick>
             <thumb>special://skin/extras/icons/movie.png</thumb>
           </item>
           <item>
-            <label>Home Spotlights</label>
+            <label>$LOCALIZE[31733]</label> <!-- Home Spotlights -->
             <onclick>ActivateWindow(1128)</onclick>
             <thumb>settings/home.png</thumb>
           </item>
           <item>
-            <label>Home Style</label>
+            <label>$LOCALIZE[31734]</label> <!-- Home Style -->
             <onclick>ActivateWindow(1120)</onclick>
             <thumb>special://skin/extras/icons/videos.png</thumb>
           </item>
           <item>
-            <label>Menu Style</label>
+            <label>$LOCALIZE[31735]</label> <!-- Menu Style -->
             <onclick>ActivateWindow(1125)</onclick>
             <thumb>special://skin/extras/icons/viewmode.png</thumb>
           </item>
           <item>
-            <label>My Lists</label>
+            <label>$LOCALIZE[31504]</label> <!-- My Lists -->
             <onclick>ActivateWindow(1164)</onclick>
             <thumb>special://skin/extras/icons/clipboard.png</thumb>
           </item>
         </content>
       </control>
-      <!--> Row 3 <!-->
+      <!-- Row 3 -->
       <control type="label">
         <top>690</top>
         <left>20</left>
         <width>300</width>
         <height>20</height>
-        <label>Settings</label>
+        <label>$LOCALIZE[31736]</label> <!-- Settings -->
         <align>left</align>
         <font>font_tiny_bold</font>
         <textcolor>white</textcolor>
@@ -8343,37 +8342,37 @@
         </focusedlayout>
         <content>
           <item>
-            <label>Skin Settings</label>
+            <label>$LOCALIZE[31737]</label> <!-- Skin Settings -->
             <onclick>ActivateWindow(skinsettings)</onclick>
             <thumb>special://skin/extras/icons/paintbrush.png</thumb>
           </item>
           <item>
-            <label>Search Lists</label>
+            <label>$LOCALIZE[31738]</label> <!-- Search Lists -->
             <onclick>ActivateWindow(1163)</onclick>
             <thumb>special://skin/extras/icons/search.png</thumb>
           </item>
           <item>
-            <label>Addons</label>
+            <label>$LOCALIZE[31787]</label> <!-- Addons -->
             <onclick>ActivateWindow(addonbrowser)</onclick>
             <thumb>settings/apps.png</thumb>
           </item>
           <item>
-            <label>File Manager</label>
+            <label>$LOCALIZE[31739]</label> <!-- File Manager -->
             <onclick>ActivateWindow(filemanager)</onclick>
             <icon>settings/filemanager.png</icon>
           </item>
           <item>
-            <label>System</label>
+            <label>$LOCALIZE[31740]</label> <!-- System -->
             <onclick>ActivateWindow(SystemSettings)</onclick>
             <icon>settings/settings.png</icon>
           </item>
           <item>
-            <label>Info</label>
+            <label>$LOCALIZE[31741]</label> <!-- Info -->
             <onclick>ActivateWindow(systeminfo)</onclick>
             <icon>settings/sysinfo.png</icon>
           </item>
           <item>
-            <label>Dependencies</label>
+            <label>$LOCALIZE[31742]</label> <!-- Dependencies -->
             <onclick>ActivateWindow(10040,addons://dependencies/)</onclick>
             <icon>special://skin/extras/icons/bigbox.png</icon>
           </item>

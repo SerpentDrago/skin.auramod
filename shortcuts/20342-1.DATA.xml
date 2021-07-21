@@ -2,7 +2,7 @@
 <shortcuts>
 	<shortcut>
 		<defaultID />
-		<label>Upcoming movies</label>
+		<label>$LOCALIZE[31223]</label> <!-- Upcoming Movies -->
 		<label2>Video Add-On</label2>
 		<icon>DefaultShortcut.png</icon>
 		<thumb>image://DefaultFolder.png/</thumb>

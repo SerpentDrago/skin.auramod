@@ -15,7 +15,7 @@
             </include>
             <control type="label">
                 <description>Header Label</description>
-                <label>[CAPITALIZE]Home Spotlight Config[/CAPITALIZE]</label>
+                <label>[CAPITALIZE]$LOCALIZE[31597][/CAPITALIZE]</label> <!-- Home Spotlight Config -->
                 <textcolor>grey</textcolor>
                 <shadowcolor>dimgrey</shadowcolor>
                 <font>font_heading_small</font>
@@ -36,7 +36,7 @@
                        <control type="radiobutton" id="8001" description="Enable Spotlight">
                             <include>Dialog_Standard_ListButton</include>
                             <radioposx>730</radioposx>
-                            <label>Enable Spotlights</label>
+                            <label>$LOCALIZE[31598]</label> <!-- Enable Spotlights -->
                             <onclick>Skin.ToggleSetting(EnableSpotlight)</onclick>
                             <selected>Skin.HasSetting(EnableSpotlight)</selected>
                         </control>
@@ -45,14 +45,14 @@
                         </control>
                         <control type="button" id="8002" description="Choose Spotlight Style">
                             <include>Dialog_Standard_ListButton</include>
-                            <label>Choose Movie Spotlight Style</label>
+                            <label>$LOCALIZE[31599]</label> <!-- Choose Movie Spotlight Style -->
                             <enable>Skin.HasSetting(EnableSpotlight)</enable>
 			    <onclick>SetProperty(MovieSpotlightStyle,1,home)</onclick>
                             <onclick>ActivateWindow(1132)</onclick>
                         </control>
                         <control type="button" id="8003" description="Choose Movies Spotlight">
                             <include>Dialog_Standard_ListButton</include>
-                            <label>Movies Content</label>
+                            <label>$LOCALIZE[31600]</label> <!-- Movies Content -->
                             <label2>$INFO[Skin.String(spotlightmovies.label)]</label2>
                             <onclick condition="String.IsEmpty(Skin.String(spotlightmovies.label))">RunScript(script.skinshortcuts,type=widgets&amp;showNone=true&amp;skinWidgetName=spotlightmovies.label&amp;skinWidgetTarget=spotlightmovies.target&amp;skinWidgetPath=spotlightmovies.path)</onclick>
                             <onclick condition="!String.IsEmpty(Skin.String(spotlightmovies.label))">Skin.Reset(spotlightmovies.label)</onclick>
@@ -61,7 +61,7 @@
                         </control>
                         <control type="button" id="80031" description="Choose Movies Spotlight">
                             <include>Dialog_Standard_ListButton</include>
-                            <label> - Configure Custom Movie Lists</label>
+                            <label> - $LOCALIZE[31601]</label> <!-- Configure Custom Movie Lists -->
                             <onclick>ActivateWindow(1161)</onclick>
                             <visible>String.IsEqual(Skin.String(spotlightmovies.label),Spotlight Movies)</visible>
                             <visible>!Skin.HasSetting(DisableAuraHomeLayout)</visible>
@@ -72,14 +72,14 @@
 			</control>
                         <control type="button" id="80021" description="Choose Spotlight Style">
                             <include>Dialog_Standard_ListButton</include>
-                            <label>Choose TV Spotlight Style</label>
+                            <label>$LOCALIZE[31602]</label> <!-- Choose TV Spotlight Style -->
                             <enable>Skin.HasSetting(EnableSpotlight)</enable>
                             <onclick>SetProperty(TVSpotlightStyle,1,home)</onclick>
                             <onclick>ActivateWindow(1132)</onclick>
                         </control>
                         <control type="button" id="8004" description="Choose TV Shows Spotlight">
                             <include>Dialog_Standard_ListButton</include>
-                            <label>TV Shows Content</label>
+                            <label>$LOCALIZE[31603]</label> <!-- TV Shows Content -->
                             <label2>$INFO[Skin.String(spotlighttvshows.label)]</label2>
                             <onclick condition="String.IsEmpty(Skin.String(spotlighttvshows.label))">RunScript(script.skinshortcuts,type=widgets&amp;showNone=true&amp;skinWidgetName=spotlighttvshows.label&amp;skinWidgetTarget=spotlighttvshows.target&amp;skinWidgetPath=spotlighttvshows.path)</onclick>
                             <onclick condition="!String.IsEmpty(Skin.String(spotlighttvshows.label))">Skin.Reset(spotlighttvshows.label)</onclick>
@@ -88,7 +88,7 @@
                         </control>
                         <control type="button" id="80041" description="Choose TV Spotlight">
                             <include>Dialog_Standard_ListButton</include>
-                            <label> - Configure Custom TV Lists</label>
+                            <label> - $LOCALIZE[31604]</label> <!-- Configure Custom TV Lists -->
                             <onclick>ActivateWindow(1160)</onclick>
                             <visible>String.IsEqual(Skin.String(spotlighttvshows.label),Spotlight TV)</visible>
                             <visible>!Skin.HasSetting(DisableAuraHomeLayout)</visible>
@@ -99,7 +99,7 @@
                         </control>
                         <control type="radiobutton" id="8005" description="Enable Random Spotlight">
                             <include>Dialog_Standard_ListButton</include>
-                            <label>Spotlight Random Sorting</label>
+                            <label>$LOCALIZE[31605]</label> <!-- Spotlight Random Sorting -->
                             <radioposx>730</radioposx>
                             <selected>Skin.HasSetting(EnableSpotlightRandom)</selected>
                             <onclick>Skin.ToggleSetting(EnableSpotlightRandom)</onclick>
@@ -108,7 +108,7 @@
 
                         <control type="button" id="8006" description="Configure LiveTV Spotlight">
                             <include>Dialog_Standard_ListButton</include>
-                            <label>Configure LiveTV Spotlight</label>
+                            <label>$LOCALIZE[31606]</label> <!-- Configure LiveTV Spotlight -->
                             <onclick>RunScript(script.skinshortcuts,type=manage&amp;group=pvrspot)</onclick>
                             <enable>Skin.HasSetting(EnableSpotlight)</enable>
                         </control>

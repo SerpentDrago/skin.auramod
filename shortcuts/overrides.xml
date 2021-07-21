@@ -491,47 +491,47 @@
             <content>common</content>
             <shortcut label="$LOCALIZE[33060]" type="$LOCALIZE[31018]" icon="special://skin/extras/icons/power.png">ActivateWindow(shutdownmenu)</shortcut>
             <shortcut label="$LOCALIZE[31017]" type="32010">||BROWSE||script.skin.helper.service/?action=smartshortcuts</shortcut>
-            <shortcut label="Media Hub" grouping="32029" icon="special://skin/extras/icons/tv.png">ActivateWindow(3730,return)</shortcut>
-            <shortcut label="Search" grouping="32029" icon="special://skin/extras/icons/search.png">ActivateWindow(1136)</shortcut>
+            <shortcut label="$LOCALIZE[31830]" grouping="32029" icon="special://skin/extras/icons/tv.png">ActivateWindow(3730,return)</shortcut>
+            <shortcut label="$LOCALIZE[31523]" grouping="32029" icon="special://skin/extras/icons/search.png">ActivateWindow(1136)</shortcut>
         </node>
-        <node label="Hubs">
-            <shortcut label="Setup" grouping="32029" icon="special://skin/extras/icons/clipboard.png">ActivateWindow(5111,return)</shortcut>
-            <shortcut label="Movie Categories Hub" grouping="32029" icon="special://skin/extras/icons/clipboard.png">ActivateWindow(2112,return)</shortcut>
-            <shortcut label="Movie Netflix Hub" grouping="32029" icon="special://skin/extras/icons/film.png">ActivateWindow(3820,return)</shortcut>
-            <shortcut label="Movie Aura Hub " grouping="32029" icon="special://skin/extras/icons/film.png">ActivateWindow(3920,return)</shortcut>
-            <shortcut label="Movie Genres Hub" grouping="32029" icon="special://skin/extras/icons/tv.png">ActivateWindow(4010,return)</shortcut>
-            <shortcut label="TV Categories Hub" grouping="32029" icon="special://skin/extras/icons/clipboard.png">ActivateWindow(2114,return)</shortcut>
-            <shortcut label="TV Genres Hub" grouping="32029" icon="special://skin/extras/icons/tv.png">ActivateWindow(4020,return)</shortcut>
-            <shortcut label="TV Networks Hub" grouping="32029" icon="special://skin/extras/icons/tv.png">ActivateWindow(2118,return)</shortcut>
-            <shortcut label="TV Aura Hub" grouping="32029" icon="special://skin/extras/icons/tv.png">ActivateWindow(3910,return)</shortcut>
-            <shortcut label="TV Netflix Hub" grouping="32029" icon="special://skin/extras/icons/tv.png">ActivateWindow(3810,return)</shortcut>
-            <shortcut label="Search" grouping="32029" icon="special://skin/extras/icons/search.png">ActivateWindow(1136)</shortcut>
+        <node label="$LOCALIZE[31885]">
+            <shortcut label="$LOCALIZE[31886]" grouping="32029" icon="special://skin/extras/icons/clipboard.png">ActivateWindow(5111,return)</shortcut>
+            <shortcut label="$LOCALIZE[31887]" grouping="32029" icon="special://skin/extras/icons/clipboard.png">ActivateWindow(2112,return)</shortcut>
+            <shortcut label="$LOCALIZE[31804]" grouping="32029" icon="special://skin/extras/icons/film.png">ActivateWindow(3820,return)</shortcut>
+            <shortcut label="$LOCALIZE[31803]" grouping="32029" icon="special://skin/extras/icons/film.png">ActivateWindow(3920,return)</shortcut>
+            <shortcut label="$LOCALIZE[31888]" grouping="32029" icon="special://skin/extras/icons/tv.png">ActivateWindow(4010,return)</shortcut>
+            <shortcut label="$LOCALIZE[31889]" grouping="32029" icon="special://skin/extras/icons/clipboard.png">ActivateWindow(2114,return)</shortcut>
+            <shortcut label="$LOCALIZE[31890]" grouping="32029" icon="special://skin/extras/icons/tv.png">ActivateWindow(4020,return)</shortcut>
+            <shortcut label="$LOCALIZE[31891]" grouping="32029" icon="special://skin/extras/icons/tv.png">ActivateWindow(2118,return)</shortcut>
+            <shortcut label="$LOCALIZE[31827]" grouping="32029" icon="special://skin/extras/icons/tv.png">ActivateWindow(3910,return)</shortcut>
+            <shortcut label="$LOCALIZE[31828]" grouping="32029" icon="special://skin/extras/icons/tv.png">ActivateWindow(3810,return)</shortcut>
+            <shortcut label="$LOCALIZE[31523]" grouping="32029" icon="special://skin/extras/icons/search.png">ActivateWindow(1136)</shortcut>
 
-            <shortcut label="Movie Lists Hub 1" grouping="32029" icon="special://skin/extras/icons/clipboard.png">ActivateWindow(2111,return)</shortcut>
-            <shortcut label="TV Lists Hub 1" grouping="32029" icon="special://skin/extras/icons/clipboard.png">ActivateWindow(2113,return)</shortcut>
-            <shortcut label="My Lists Hub 1" grouping="32029" icon="special://skin/extras/icons/clipboard.png">ActivateWindow(2115,return)</shortcut>
-            <shortcut label="My Lists Hub 2" grouping="32029" icon="special://skin/extras/icons/clipboard.png">ActivateWindow(2116,return)</shortcut>
-            <shortcut label="My Lists Hub 3" grouping="32029" icon="special://skin/extras/icons/clipboard.png">ActivateWindow(2117,return)</shortcut>
-            <shortcut label="My Addons List 1" grouping="32029" icon="special://skin/extras/icons/clipboard.png">ActivateWindow(2120,return)</shortcut>
-            <shortcut label="My Addons List 2" grouping="32029" icon="special://skin/extras/icons/clipboard.png">ActivateWindow(2121,return)</shortcut>
-            <shortcut label="My LiveTV List 1" grouping="32029" icon="special://skin/extras/icons/clipboard.png">ActivateWindow(2122,return)</shortcut>
-            <shortcut label="My LiveTV List 2" grouping="32029" icon="special://skin/extras/icons/clipboard.png">ActivateWindow(2123,return)</shortcut>
+            <shortcut label="$LOCALIZE[31892]" grouping="32029" icon="special://skin/extras/icons/clipboard.png">ActivateWindow(2111,return)</shortcut>
+            <shortcut label="$LOCALIZE[31893]" grouping="32029" icon="special://skin/extras/icons/clipboard.png">ActivateWindow(2113,return)</shortcut>
+            <shortcut label="$LOCALIZE[31894]" grouping="32029" icon="special://skin/extras/icons/clipboard.png">ActivateWindow(2115,return)</shortcut>
+            <shortcut label="$LOCALIZE[31895]" grouping="32029" icon="special://skin/extras/icons/clipboard.png">ActivateWindow(2116,return)</shortcut>
+            <shortcut label="$LOCALIZE[31896]" grouping="32029" icon="special://skin/extras/icons/clipboard.png">ActivateWindow(2117,return)</shortcut>
+            <shortcut label="$LOCALIZE[31897]" grouping="32029" icon="special://skin/extras/icons/clipboard.png">ActivateWindow(2120,return)</shortcut>
+            <shortcut label="$LOCALIZE[31898]" grouping="32029" icon="special://skin/extras/icons/clipboard.png">ActivateWindow(2121,return)</shortcut>
+            <shortcut label="$LOCALIZE[31899]" grouping="32029" icon="special://skin/extras/icons/clipboard.png">ActivateWindow(2122,return)</shortcut>
+            <shortcut label="$LOCALIZE[31900]" grouping="32029" icon="special://skin/extras/icons/clipboard.png">ActivateWindow(2123,return)</shortcut>
         </node>
 
-        <node label="My List Dialogs">
-            <shortcut label="Movie Lists 1" grouping="32029" icon="special://skin/extras/icons/clipboard.png">ActivateWindow(1101,return)</shortcut>
-            <shortcut label="Movie Categories List" grouping="32029" icon="special://skin/extras/icons/clipboard.png">ActivateWindow(1102,return)</shortcut>
+        <node label="$LOCALIZE[31901]">
+            <shortcut label="$LOCALIZE[31902]" grouping="32029" icon="special://skin/extras/icons/clipboard.png">ActivateWindow(1101,return)</shortcut>
+            <shortcut label="$LOCALIZE[31903]" grouping="32029" icon="special://skin/extras/icons/clipboard.png">ActivateWindow(1102,return)</shortcut>
 
-            <shortcut label="TV Lists 1" grouping="32029" icon="special://skin/extras/icons/clipboard.png">ActivateWindow(1103,return)</shortcut>
-            <shortcut label="TV Categories List" grouping="32029" icon="special://skin/extras/icons/clipboard.png">ActivateWindow(1104,return)</shortcut>
+            <shortcut label="$LOCALIZE[31904]" grouping="32029" icon="special://skin/extras/icons/clipboard.png">ActivateWindow(1103,return)</shortcut>
+            <shortcut label="$LOCALIZE[31905]" grouping="32029" icon="special://skin/extras/icons/clipboard.png">ActivateWindow(1104,return)</shortcut>
 
-            <shortcut label="My Lists 1" grouping="32029" icon="special://skin/extras/icons/clipboard.png">ActivateWindow(1105,return)</shortcut>
-            <shortcut label="My Lists 2" grouping="32029" icon="special://skin/extras/icons/clipboard.png">ActivateWindow(1106,return)</shortcut>
-            <shortcut label="My Lists 3" grouping="32029" icon="special://skin/extras/icons/clipboard.png">ActivateWindow(1107,return)</shortcut> 
-            <shortcut label="My Addons List 1" grouping="32029" icon="special://skin/extras/icons/clipboard.png">ActivateWindow(3110,return)</shortcut>
-            <shortcut label="My Addons List 2" grouping="32029" icon="special://skin/extras/icons/clipboard.png">ActivateWindow(3111,return)</shortcut>
-            <shortcut label="My LiveTV List 1" grouping="32029" icon="special://skin/extras/icons/clipboard.png">ActivateWindow(3112,return)</shortcut>
-            <shortcut label="My LiveTV List 2" grouping="32029" icon="special://skin/extras/icons/clipboard.png">ActivateWindow(3113,return)</shortcut>
+            <shortcut label="$LOCALIZE[31906]" grouping="32029" icon="special://skin/extras/icons/clipboard.png">ActivateWindow(1105,return)</shortcut>
+            <shortcut label="$LOCALIZE[31907]" grouping="32029" icon="special://skin/extras/icons/clipboard.png">ActivateWindow(1106,return)</shortcut>
+            <shortcut label="$LOCALIZE[31908]" grouping="32029" icon="special://skin/extras/icons/clipboard.png">ActivateWindow(1107,return)</shortcut> 
+            <shortcut label="$LOCALIZE[31897]" grouping="32029" icon="special://skin/extras/icons/clipboard.png">ActivateWindow(3110,return)</shortcut>
+            <shortcut label="$LOCALIZE[31898]" grouping="32029" icon="special://skin/extras/icons/clipboard.png">ActivateWindow(3111,return)</shortcut>
+            <shortcut label="$LOCALIZE[31899]" grouping="32029" icon="special://skin/extras/icons/clipboard.png">ActivateWindow(3112,return)</shortcut>
+            <shortcut label="$LOCALIZE[31900]" grouping="32029" icon="special://skin/extras/icons/clipboard.png">ActivateWindow(3113,return)</shortcut>
         </node>
 
         <node label="32030">
@@ -540,7 +540,7 @@
                 <content>playlist-video</content>
             </node>
             <node label="32010">
-                <shortcut label="Video-Addons" type="32014" icon="DefaultAddonVideo.png">ActivateWindow(Videos,Addons,return)</shortcut>
+                <shortcut label="$LOCALIZE[31909]" type="32014" icon="DefaultAddonVideo.png">ActivateWindow(Videos,Addons,return)</shortcut>
                 <content>addon-video</content>
             </node>
             <node label="32075">
@@ -588,11 +588,11 @@
         </node>
         <node label="32007">
             <node label="32009">
-                <shortcut label="Programs" type="32021" icon="DefaultAddonProgram.png">ActivateWindow(Programs,Addons,return)</shortcut>
+                <shortcut label="$LOCALIZE[31680]" type="32021" icon="DefaultAddonProgram.png">ActivateWindow(Programs,Addons,return)</shortcut>
                 <content>addon-program</content>
             </node>
             <node label="32010">
-                <shortcut label="Video-Addons" type="32014" icon="DefaultAddonVideo.png">ActivateWindow(Videos,Addons,return)</shortcut>
+                <shortcut label="$LOCALIZE[31909]" type="32014" icon="DefaultAddonVideo.png">ActivateWindow(Videos,Addons,return)</shortcut>
                 <content>addon-video</content>
             </node>
             <node label="32011">
@@ -621,7 +621,7 @@
             <content>playlist-video</content>
         </node>
         <node label="32010">
-            <shortcut label="Video-Addons" type="32014" icon="DefaultAddonVideo.png">ActivateWindow(Videos,Addons,return)</shortcut>
+            <shortcut label="$LOCALIZE[31909]" type="32014" icon="DefaultAddonVideo.png">ActivateWindow(Videos,Addons,return)</shortcut>
             <content>addon-video</content>
         </node>
         <content>video</content>
@@ -631,16 +631,16 @@
     <!-- Widget Grouping -->
     <widget-groupings>
         <node label="$LOCALIZE[31183]">
-            <node label="My Lists">
-                <shortcut widget="MyMovieList1" label="My Movie List 1" icon="DefaultSets.png" widgetTarget="video">x1101</shortcut>
-                <shortcut widget="MyTVList1" label="My TV List 1" icon="DefaultSets.png" widgetTarget="video">x1103</shortcut>
-                <shortcut widget="MyMyList1" label="My List 1" icon="DefaultSets.png" widgetTarget="video">x1105</shortcut>
-                <shortcut widget="MyMyList2" label="My List 2" icon="DefaultSets.png" widgetTarget="video">x1106</shortcut>
-                <shortcut widget="MyMyList3" label="My List 3" icon="DefaultSets.png" widgetTarget="video">x1107</shortcut>
-                <shortcut widget="MyAddonsList1" label="My Addons List 1" icon="DefaultSets.png" widgetTarget="video">x1110</shortcut>
-                <shortcut widget="MyAddonsList2" label="My Addons List 2" icon="DefaultSets.png" widgetTarget="video">x1111</shortcut>
-                <shortcut widget="MyLiveTVList1" label="My LiveTV List 1" icon="DefaultSets.png" widgetTarget="video">x1112</shortcut>
-                <shortcut widget="MyLiveTVList2" label="My LiveTV List 2" icon="DefaultSets.png" widgetTarget="video">x1113</shortcut>
+            <node label="$LOCALIZE[31504]">
+                <shortcut widget="MyMovieList1" label="$LOCALIZE[31910]" icon="DefaultSets.png" widgetTarget="video">x1101</shortcut>
+                <shortcut widget="MyTVList1" label="$LOCALIZE[31911]" icon="DefaultSets.png" widgetTarget="video">x1103</shortcut>
+                <shortcut widget="MyMyList1" label="$LOCALIZE[31912]" icon="DefaultSets.png" widgetTarget="video">x1105</shortcut>
+                <shortcut widget="MyMyList2" label="$LOCALIZE[31913]" icon="DefaultSets.png" widgetTarget="video">x1106</shortcut>
+                <shortcut widget="MyMyList3" label="$LOCALIZE[31914]" icon="DefaultSets.png" widgetTarget="video">x1107</shortcut>
+                <shortcut widget="MyAddonsList1" label="$LOCALIZE[31915]" icon="DefaultSets.png" widgetTarget="video">x1110</shortcut>
+                <shortcut widget="MyAddonsList2" label="$LOCALIZE[31916]" icon="DefaultSets.png" widgetTarget="video">x1111</shortcut>
+                <shortcut widget="MyLiveTVList1" label="$LOCALIZE[31917]" icon="DefaultSets.png" widgetTarget="video">x1112</shortcut>
+                <shortcut widget="MyLiveTVList2" label="$LOCALIZE[31918]" icon="DefaultSets.png" widgetTarget="video">x1113</shortcut>
             </node>
 
             <node label="$LOCALIZE[342]">
@@ -654,9 +654,9 @@
                 <shortcut widget="MovieNodes" label="$LOCALIZE[31296]" icon="special://skin/extras/icons/title.png" widgetTarget="video">library://video/movies/</shortcut>
                 <shortcut widget="MovieGenres" label="$LOCALIZE[31257]" icon="DefaultGenre.png" widgetTarget="video">library://video/movies/genres.xml</shortcut>
                 <shortcut widget="MovieSets" label="$LOCALIZE[31260]" icon="DefaultSets.png" widgetTarget="video">videodb://movies/sets/</shortcut>
-                <shortcut widget="SimilarSerenMovies" label="Because you watched $VAR[similarserenmovie]" icon="DefaultSets.png" widgetTarget="video">$VAR[similar_movie_content]</shortcut>
-                <shortcut widget="SimilarSerenMovies 2" label="Because you watched $VAR[similarserenmovie2]" icon="DefaultSets.png" widgetTarget="video">$VAR[similar_movie2_content]</shortcut>
-                <shortcut widget="RandomSerenMovies" label="Spotlight Movies" icon="DefaultSets.png" widgetTarget="video">videodb://movies/sets/</shortcut>
+                <shortcut widget="SimilarSerenMovies" label="$LOCALIZE[31919] $VAR[similarserenmovie]" icon="DefaultSets.png" widgetTarget="video">$VAR[similar_movie_content]</shortcut>
+                <shortcut widget="SimilarSerenMovies 2" label="$LOCALIZE[31919] $VAR[similarserenmovie2]" icon="DefaultSets.png" widgetTarget="video">$VAR[similar_movie2_content]</shortcut>
+                <shortcut widget="RandomSerenMovies" label="$LOCALIZE[31920]" icon="DefaultSets.png" widgetTarget="video">videodb://movies/sets/</shortcut>
 
             </node>
             <node label="$LOCALIZE[31301]">
@@ -667,9 +667,9 @@
                 <shortcut widget="TopRatedTvShows" label="$LOCALIZE[31222]" icon="DefaultMusicTop100Albums.png" widgetTarget="video">special://skin/extras/playlists/TopRatedTvShows.xsp</shortcut>
                 <shortcut widget="TvShowNodes" label="$LOCALIZE[31297]" icon="special://skin/extras/icons/title.png" widgetTarget="video">library://video/tvshows/</shortcut>
                 <shortcut widget="TvShowGenres" label="$LOCALIZE[31274]" icon="DefaultGenre.png" widgetTarget="video">library://video/tvshows/genres.xml</shortcut>
-                <shortcut widget="SimilarSerenTV" label="Because you watched $VAR[similarserentv]" icon="DefaultSets.png" widgetTarget="video">$VAR[similar_tv_content]</shortcut>
-                <shortcut widget="SimilarSerenTV 2" label="Because you watched $VAR[similarserentv2]" icon="DefaultSets.png" widgetTarget="video">$VAR[similar_tv2_content]</shortcut>
-                <shortcut widget="RandomSerenTV" label="Spotlight TV" icon="DefaultGenre.png" widgetTarget="video">videodb://tv</shortcut>
+                <shortcut widget="SimilarSerenTV" label="$LOCALIZE[31919] $VAR[similarserentv]" icon="DefaultSets.png" widgetTarget="video">$VAR[similar_tv_content]</shortcut>
+                <shortcut widget="SimilarSerenTV 2" label="$LOCALIZE[31919] $VAR[similarserentv2]" icon="DefaultSets.png" widgetTarget="video">$VAR[similar_tv2_content]</shortcut>
+                <shortcut widget="RandomSerenTV" label="$LOCALIZE[31921]" icon="DefaultGenre.png" widgetTarget="video">videodb://tv</shortcut>
             </node>
             <node label="$LOCALIZE[20360]">
                 <shortcut widget="NewEpisodes" label="$LOCALIZE[31214]" icon="DefaultRecentlyAddedMovies.png" widgetTarget="video">special://skin/extras/playlists/NewEpisodes.xsp</shortcut>
@@ -719,9 +719,9 @@
             <node label="32009">
                 <content>addon-program-plugin</content>
             </node>
-            <shortcut label="Programs" type="32021" icon="DefaultAddonProgram.png" widget="addon" widgetType="program" widgetTarget="programs">addons://sources/executable/</shortcut>
+            <shortcut label="$LOCALIZE[31680]" type="32021" icon="DefaultAddonProgram.png" widget="addon" widgetType="program" widgetTarget="programs">addons://sources/executable/</shortcut>
             <shortcut label="20244" type="32021" icon="DefaultAddonProgram.png" widget="addon" widgetType="program" widgetTarget="programs" condition="System.Platform.Android">androidapp://sources/apps/</shortcut>
-            <shortcut label="Video-Addons" type="32014" icon="DefaultAddonVideo.png" widget="addon" widgetType="video" widgetTarget="video">addons://sources/video/</shortcut>
+            <shortcut label="$LOCALIZE[31909]" type="32014" icon="DefaultAddonVideo.png" widget="addon" widgetType="video" widgetTarget="video">addons://sources/video/</shortcut>
             <shortcut label="1038" type="32019" icon="DefaultAddonMusic.png" widget="addon" widgetType="music" widgetTarget="music">addons://sources/audio/</shortcut>
             <shortcut label="1039" type="32020" icon="DefaultAddonPicture.png" widget="addon" widgetType="picture" widgetTarget="pictures">addons://sources/image/</shortcut>
         </node>

@@ -2,7 +2,7 @@
 <shortcuts>
   <shortcut>
     <defaultID>tvcategorieshub1</defaultID>
-    <label>TV Lists</label>
+    <label>$LOCALIZE[31829]</label> <!-- TV Lists -->
     <label2>Custom item</label2>
     <icon>special://skin/extras/icons/tv.png</icon>
     <thumb>special://skin/extras/icons/clipboard.png</thumb>
@@ -10,7 +10,7 @@
   </shortcut>
   <shortcut>
     <defaultID>tvaurahub</defaultID>
-    <label>TV Aura Hub</label>
+    <label>$LOCALIZE[31827]</label> <!-- TV Aura Hub -->
     <label2>Custom item</label2>
     <icon>special://skin/extras/icons/tv.png</icon>
     <thumb>special://skin/extras/icons/emby.png</thumb>
@@ -18,7 +18,7 @@
   </shortcut>
   <shortcut>
     <defaultID>tvnetflixhub</defaultID>
-    <label>TV Netflix Hub</label>
+    <label>$LOCALIZE[31828]</label> <!-- TV Netflix Hub -->
     <label2 />
     <icon>special://skin/extras/icons/tv.png</icon>
     <thumb />
@@ -26,7 +26,7 @@
   </shortcut>
   <shortcut>
     <defaultID>tvgenrehub</defaultID>
-    <label>Genres Hub</label>
+    <label>$LOCALIZE[31806]</label> <!-- Genres Hub -->
     <label2>Custom item</label2>
     <icon>special://skin/extras/icons/tv.png</icon>
     <thumb>special://skin/media/exuary/genres.png</thumb>

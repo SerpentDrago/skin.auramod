@@ -149,7 +149,7 @@
 					<align>left</align>
 					<aligny>center</aligny>
 					<textoffsetx>5</textoffsetx>
-					<label>Trending</label>    
+					<label>$LOCALIZE[31754]</label> <!-- Trending -->    
 				</control>
 			        <control type="group">
 					<top>-100</top>
@@ -276,7 +276,7 @@
 					<align>left</align>
 					<aligny>center</aligny>
 					<textoffsetx>5</textoffsetx>
-					<label>Live</label>    
+					<label>$LOCALIZE[31679]</label>  <!-- Live -->   
 				</control>
 		                <control type="group">
                                         <left>10</left>
@@ -402,7 +402,7 @@
 					<align>left</align>
 					<aligny>center</aligny>
 					<textoffsetx>5</textoffsetx>
-					<label>Subscriptions</label>    
+					<label>$LOCALIZE[31756]</label> <!-- Subscriptions -->    
 				</control>
 
                                 <control type="group">
@@ -529,7 +529,7 @@
                                         <align>left</align>
                                         <aligny>center</aligny>
                                         <textoffsetx>5</textoffsetx>
-                                        <label>Recommended</label>
+                                        <label>$LOCALIZE[31757]</label> <!-- Recommended -->
                                 </control>
                                 <control type="group">
                                         <left>10</left>
@@ -656,7 +656,7 @@
 					<align>left</align>
 					<aligny>center</aligny>
 					<textoffsetx>5</textoffsetx>
-					<label>History</label>    
+					<label>$LOCALIZE[31758]</label> <!-- History -->    
 				</control>
 
                                 <control type="group">

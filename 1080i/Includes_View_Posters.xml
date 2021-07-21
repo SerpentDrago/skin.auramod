@@ -653,7 +653,7 @@
           <control type="group">
             <left>40</left>
             <right>40</right>
-            <bottom>30</bottom>
+            <top>-8</top>
             <include content="Object_Info">
               <param name="plot_height" value="300" />
               <param name="id" value="59" />
@@ -1335,7 +1335,7 @@
                   <aligny>top</aligny>
                   <font>font_tiny</font>
                   <textcolor>dimgrey</textcolor>
-                  <label>EPISODE $INFO[Container(507).ListItem.Episode]</label>
+                  <label>$LOCALIZE[31791] $INFO[Container(507).ListItem.Episode]</label> <!-- EPISODE -->
                 </control>
                 <control type="label">
 		  <top>30</top>
@@ -1360,7 +1360,7 @@
                 </control>
                 <control type="label">
                   <top>230</top>
-                  <label>$INFO[Container(50221).ListItem.Duration,,m]  Aired $INFO[ListItem.Premiered(DDD MMM yyyy)]</label>
+                  <label>$INFO[Container(50221).ListItem.Duration,,$LOCALIZE[31020]]  $LOCALIZE[31789] $INFO[ListItem.Premiered(DDD MMM yyyy)]</label> <!-- DURATION() m Aired DATE -->
                   <height>80</height>
                   <aligny>top</aligny>
                   <textcolor>grey</textcolor>
@@ -1440,7 +1440,7 @@
                   <aligny>top</aligny>
                   <font>font_tiny</font>
                   <textcolor>dimgrey</textcolor>
-                  <label>EPISODE $INFO[Container(507).ListItem.Episode]</label>
+                  <label>$LOCALIZE[31791] $INFO[Container(507).ListItem.Episode]</label> <!-- EPISODE -->
                 </control>
                 <control type="label">
 		  <top>30</top>
@@ -1464,7 +1464,7 @@
                 </control>
                 <control type="label">
                   <top>230</top>
-                  <label>$INFO[Container(50221).ListItem.Duration,,m]  Aired $INFO[ListItem.Premiered(DDD MMM yyyy)]</label>
+                  <label>$INFO[Container(50221).ListItem.Duration,,$LOCALIZE[31020]]  $LOCALIZE[31789] $INFO[ListItem.Premiered(DDD MMM yyyy)]</label> <!-- DURATION() m Aired DATE -->
                   <height>80</height>
                   <aligny>top</aligny>
                   <textcolor>darkgrey</textcolor>
@@ -2247,7 +2247,7 @@
           </control>
           <control type="label">
             <right>30</right>
-            <label>$INFO[Container(504).ListItem.Property(UnWatchedEpisodes)] Episodes</label>
+            <label>$INFO[Container(504).ListItem.Property(UnWatchedEpisodes)] $LOCALIZE[31500]</label> <!-- Episodes -->
             <align>right</align>
             <aligny>center</aligny>
             <font>font_small</font>
@@ -2296,7 +2296,7 @@
           </control>
           <control type="label">
             <right>30</right>
-            <label>$INFO[Container(504).ListItem.Property(UnWatchedEpisodes)] Episodes</label>
+            <label>$INFO[Container(504).ListItem.Property(UnWatchedEpisodes)] $LOCALIZE[31500]</label> <!-- Episodes -->
             <align>right</align>
             <aligny>center</aligny>
             <font>font_small</font>

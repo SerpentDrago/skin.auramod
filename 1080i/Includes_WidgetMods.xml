@@ -20,7 +20,7 @@
             <font>font_medium_bold</font>
             <shadowcolor>black</shadowcolor>
             <textcolor>white</textcolor>
-            <label>Watch S$INFO[ListItem.Season]:E$INFO[ListItem.Episode]</label>
+            <label>$LOCALIZE[31749] S$INFO[ListItem.Season]:E$INFO[ListItem.Episode]</label> <!-- Watch -->
             <visible>String.IsEqual(ListItem.DBType,episode)</visible>
           </control>
           <control type="image">
@@ -302,7 +302,7 @@
           <bottom>5</bottom>
           <align>center</align>
           <height>25</height>
-          <label>Season $INFO[ListItem.Season] Episode $INFO[ListItem.Episode]</label>
+          <label>$LOCALIZE[31750] $INFO[ListItem.Season] $LOCALIZE[31884] $INFO[ListItem.Episode]</label> <!-- Season SEASON Episode EPISODE -->
           <textcolor>white</textcolor>
           <font>font_widget_plot</font>
         </control>
@@ -355,7 +355,7 @@
           <width>50%</width>
           <font>font_epg_timeline</font>
           <textcolor>dimgrey</textcolor>
-          <label>[I]Premiered $INFO[ListItem.Premiered(DDD MMM yyyy)] [/I]</label>
+          <label>[I]$LOCALIZE[31751] $INFO[ListItem.Premiered(DDD MMM yyyy)] [/I]</label> <!-- Premiered -->
           <visible>$EXP[DBTvideos]</visible>
           <visible>!Integer.IsGreater(ListItem.PercentPlayed,1)</visible>
         </control>
@@ -379,7 +379,7 @@
           <height>40</height>
           <font>font_widgetbar_bold</font>
           <textcolor>$VAR[ColorHighlight]</textcolor>
-          <label>Continue Watching S$INFO[ListItem.Season]:E$INFO[ListItem.Episode]</label>
+          <label>$LOCALIZE[31717] S$INFO[ListItem.Season]:E$INFO[ListItem.Episode]</label>
           <scroll>true</scroll>
         </control>
         <control type="label">
@@ -414,7 +414,7 @@
             <width>450</width>
             <font>Netflix_Info_main</font>
             <textcolor>dimgrey</textcolor>
-            <label>$VAR[ListItemPercentRemained,,% remaining]</label>
+            <label>$VAR[ListItemPercentRemained,,% $LOCALIZE[31783]]</label> <!-- remaining -->
           </control>
         </control>
       </control>
@@ -502,7 +502,7 @@
           <left>53%</left>
           <font>font_epg_timeline</font>
           <textcolor>dimgrey</textcolor>
-          <label>[I]Premiered $INFO[ListItem.Premiered(DDD MMM yyyy)] [/I]</label>
+          <label>[I]$LOCALIZE[31751] $INFO[ListItem.Premiered(DDD MMM yyyy)] [/I]</label> <!-- Premiered -->
           <visible>$EXP[DBTvideos]</visible>
           <visible>!Integer.IsGreater(ListItem.PercentPlayed,1)</visible>
         </control>
@@ -526,7 +526,7 @@
           <left>53%</left>
           <font>font_widgetbar_bold</font>
           <textcolor>$VAR[ColorHighlight]</textcolor>
-          <label>Continue Watching S$INFO[ListItem.Season]:E$INFO[ListItem.Episode]</label>
+          <label>$LOCALIZE[31717] S$INFO[ListItem.Season]:E$INFO[ListItem.Episode]</label>
           <scroll>true</scroll>
         </control>
         <control type="label">
@@ -563,7 +563,7 @@
             <width>450</width>
             <font>Netflix_Info_main</font>
             <textcolor>dimgrey</textcolor>
-            <label>$VAR[ListItemPercentRemained,,% remaining]</label>
+            <label>$VAR[ListItemPercentRemained,,% $LOCALIZE[31783]]</label> <!-- remaining -->
           </control>
         </control>
       </control>
@@ -665,7 +665,7 @@
           <left>53%</left>
           <font>font_epg_timeline</font>
           <textcolor>dimgrey</textcolor>
-          <label fallback="19055">[I]Aired $INFO[ListItem.Premiered(DDD MMM yyyy)] on [/I]</label>
+          <label fallback="19055">[I]$LOCALIZE[31789] $INFO[ListItem.Premiered(DDD MMM yyyy)] $LOCALIZE[31282] [/I]</label> <!-- Aired PREMIEREDATE on -->
         </control>
         <control type="image">
           <top>180</top>
@@ -860,7 +860,7 @@
             <aligny>center</aligny>
             <font>font_tiny_bold</font>
             <textcolor>main_fg_70</textcolor>
-            <label>[B]$INFO[ListItem.Season,Season , ]$INFO[ListItem.Episode,Episode , ][/B]</label>
+            <label>[B]$INFO[ListItem.Season,$LOCALIZE[31750] , ]$INFO[ListItem.Episode,$LOCALIZE[31884] , ][/B]</label> <!-- Season SEASON Episode EPISODE -->
           </control>
         </control>
       </control>
@@ -1008,7 +1008,7 @@
         <width>490</width>
         <font>font_posterdetail_small</font>
         <textcolor>main_fg_100</textcolor>
-        <label>$VAR[date_aired] Length: [/COLOR][B]$VAR[Label_Duration][/B][COLOR=$VAR[ColorHighlight]] Ends: [/COLOR][B]$INFO[ListItem.EndTime][/B]</label>
+        <label>$VAR[date_aired] $LOCALIZE[31792]: [/COLOR][B]$VAR[Label_Duration][/B][COLOR=$VAR[ColorHighlight]] $LOCALIZE[31748]: [/COLOR][B]$INFO[ListItem.EndTime][/B]</label> <!-- Length: DURATION Ends: ENDTIME -->
         <visible>!String.IsEqual(ListItem.Label,See More...)</visible>
       </control>
       <control type="textbox">
@@ -1021,7 +1021,7 @@
         <scroll>true</scroll>
         <font>font_posterdetail_small</font>
         <textcolor>main_fg_100</textcolor>
-        <label>[COLOR=$VAR[ColorHighlight]]Genre: [/COLOR]$INFO[ListItem.Genre]</label>
+        <label>[COLOR=$VAR[ColorHighlight]]$LOCALIZE[31497]: [/COLOR]$INFO[ListItem.Genre]</label> <!-- Genre -->
         <visible>!String.IsEqual(ListItem.Label,See More...)</visible>
       </control>
       <control type="textbox">
@@ -1216,7 +1216,7 @@
                     <width>450</width>
                     <font>Netflix_Info_main</font>
                     <textcolor>grey</textcolor>
-                    <label>$VAR[ListItemPercentRemained,,% remaining]</label>
+                    <label>$VAR[ListItemPercentRemained,,% $LOCALIZE[31783]]</label> <!-- remaining -->
                   </control>
               </control>
               </control>
@@ -1332,7 +1332,7 @@
               <width>450</width>
               <font>Netflix_Info_main</font>
               <textcolor>grey</textcolor>
-              <label>$VAR[ListItemPercentRemained,,% remaining]</label>
+              <label>$VAR[ListItemPercentRemained,,% $LOCALIZE[31783]]</label> <!-- remaining -->
             </control>
           </control>
         </control>

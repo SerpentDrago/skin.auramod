@@ -2,144 +2,144 @@
 <shortcuts>
   <shortcut>
     <defaultID />
-    <label>TMDB Movies</label>
+    <label>$LOCALIZE[31807]</label> <!-- TMDB Movies -->
     <label2>Custom item</label2>
     <icon>DefaultShortcut.png</icon>
     <action>DefaultSearch-TMDBMovies</action>
   </shortcut>
   <shortcut>
     <defaultID />
-    <label>TMDB TV Shows</label>
+    <label>$LOCALIZE[31808]</label> <!-- TMDB TV Shows -->
     <label2>Custom item</label2>
     <icon>DefaultShortcut.png</icon>
     <action>DefaultSearch-TMDBShows</action>
   </shortcut>
   <shortcut>
     <defaultID />
-    <label>Seren Movies</label>
+    <label>$LOCALIZE[31809]</label> <!-- Seren Movies -->
     <label2>Custom item</label2>
     <icon>DefaultShortcut.png</icon>
     <action>ActivateWindow(Videos,"plugin://plugin.video.seren/?action=moviesSearchResults&amp;actionArgs=",return)</action>
   </shortcut>
   <shortcut>
     <defaultID />
-    <label>Seren Shows</label>
+    <label>$LOCALIZE[31810]</label> <!-- Seren TV Shows -->
     <label2>Custom item</label2>
     <icon>DefaultShortcut.png</icon>
     <action>ActivateWindow(Videos,"plugin://plugin.video.seren/?action=showsSearchResults&amp;actionArgs=",return)</action>
   </shortcut>
   <shortcut>
-    <label>Fen Movies</label>
+    <label>$LOCALIZE[31811]</label> <!-- Fen Movies -->
     <label2>Custom item</label2>
     <icon>DefaultShortcut.png</icon>
     <action>plugin://plugin.video.fen/?mode=build_movie_list&amp;action=tmdb_movies_search&amp;query=</action>
   </shortcut>
   <shortcut>
-    <label>Fen Shows</label>
+    <label>$LOCALIZE[31812]</label> <!-- Fen TV Shows -->
     <label2>Custom item</label2>
     <icon>DefaultShortcut.png</icon>
     <action>plugin://plugin.video.fen/?mode=build_tvshow_list&amp;action=tmdb_tv_search&amp;query=</action>
   </shortcut>
   <shortcut>
-    <label>Venom Movies</label>
+    <label>$LOCALIZE[31813]</label> <!-- Venom Movies -->
     <label2>Custom item</label2>
     <icon>DefaultShortcut.png</icon>
     <action>plugin://plugin.video.venom/','12','?action=movieSearchterm&amp;name=</action>
   </shortcut>
   <shortcut>
-    <label>Venom Shows</label>
+    <label>$LOCALIZE[31814]</label> <!-- Venom TV Shows -->
     <label2>Custom item</label2>
     <icon>DefaultShortcut.png</icon>
     <action>plugin://plugin.video.venom/?action=tvSearchterm&amp;name=</action>
   </shortcut>
   <shortcut>
     <defaultID />
-    <label>Kod</label>
+    <label>Kodi On Demand</label>
     <label2>Custom item</label2>
     <icon>DefaultShortcut.png</icon>
     <action>plugin://plugin.video.kod/?ewogICAgImNoYW5uZWwiOiAic2VhcmNoIiwKICAgICJhY3Rpb24iOiAibmV3X3NlYXJjaCIsCiAgICAibW9kZSI6ICJhbGwiCn0=&amp;search_text=</action>
   </shortcut>
   <shortcut>
     <defaultID />
-    <label>Library Movies</label>
+    <label>$LOCALIZE[31816]</label> <!-- Library Movies -->
     <label2>Custom item</label2>
     <icon>DefaultShortcut.png</icon>
     <action>DefaultSearch-Movies</action>
   </shortcut>
   <shortcut>
-    <label>Library Tv Shows</label>
+    <label>$LOCALIZE[31817]</label> <!-- Library TV Shows -->
     <label2>$LOCALIZE[571]</label2>
     <icon>special://skin/extras/icons/tv.png</icon>
     <action>DefaultSearch-TvShows</action>
   </shortcut>
   <shortcut>
-    <label>Library Episodes</label>
+    <label>$LOCALIZE[31818]</label> <!-- Library Episodes -->
     <label2>$LOCALIZE[571]</label2>
     <icon>special://skin/extras/icons/tv.png</icon>
     <action>DefaultSearch-Episodes</action>
   </shortcut>
   <shortcut>
-    <label>Library Genres</label>
+    <label>$LOCALIZE[31819]</label> <!-- Library Genres -->
     <label2>$LOCALIZE[571]</label2>
     <icon>special://skin/extras/icons/genres.png</icon>
     <action>DefaultSearch-Genres</action>
   </shortcut>
   <shortcut>
-    <label>Library Year</label>
+    <label>$LOCALIZE[31820]</label> <!-- Library Year -->
     <label2>$LOCALIZE[571]</label2>
     <icon>special://skin/extras/icons/years.png</icon>
     <action>DefaultSearch-Year</action>
   </shortcut>
   <shortcut>
-    <label>Library Studio</label>
+    <label>$LOCALIZE[31821]</label> <!-- Library Studio -->
     <label2>$LOCALIZE[571]</label2>
     <icon>special://skin/extras/icons/studio.png</icon>
     <action>DefaultSearch-Studio</action>
   </shortcut>
   <shortcut>
-    <label>Library Country</label>
+    <label>$LOCALIZE[31822]</label> <!-- Library Country -->
     <label2>$LOCALIZE[571]</label2>
     <icon>special://skin/extras/icons/country.png</icon>
     <action>DefaultSearch-Country</action>
   </shortcut>
   <shortcut>
-    <label>Library Actor</label>
+    <label>$LOCALIZE[31823]</label> <!-- Library Actor -->
     <label2>$LOCALIZE[571]</label2>
     <icon>special://skin/extras/icons/person.png</icon>
     <action>DefaultSearch-Actor</action>
   </shortcut>
   <shortcut>
-    <label>Director</label>
+    <label>$LOCALIZE[20339]</label> <!-- Director -->
     <label2>$LOCALIZE[571]</label2>
     <icon>special://skin/extras/icons/person.png</icon>
     <action>DefaultSearch-Director</action>
   </shortcut>
   <shortcut>
-    <label>Albums</label>
+    <label>$LOCALIZE[132]</label> <!-- Albums -->
     <label2>$LOCALIZE[571]</label2>
     <icon>special://skin/extras/icons/songs.png</icon>
     <action>DefaultSearch-Albums</action>
   </shortcut>
   <shortcut>
-    <label>Artists</label>
+    <label>$LOCALIZE[133]</label> <!-- Artists -->
     <label2>$LOCALIZE[571]</label2>
     <icon>special://skin/extras/icons/songs.png</icon>
     <action>DefaultSearch-Artists</action>
   </shortcut>
   <shortcut>
-    <label>Music Videos</label>
+    <label>$LOCALIZE[31824]</label> <!-- Music Videos -->
     <label2>$LOCALIZE[571]</label2>
     <icon>special://skin/extras/icons/musicvideo.png</icon>
     <action>DefaultSearch-MusicVideos</action>
   </shortcut>
   <shortcut>
-    <label>Music Video Artists</label>
+    <label>$LOCALIZE[31825]</label> <!-- Music Video Artists -->
     <label2>$LOCALIZE[571]</label2>
     <icon>special://skin/extras/icons/musicvideo.png</icon>
     <action>DefaultSearch-MusicVideoArtists</action>
   </shortcut>
   <shortcut>
-    <label>Add-ons</label>
+    <label>$LOCALIZE[31787]</label> <!-- Addons -->
     <label2>$LOCALIZE[571]</label2>
     <icon>special://skin/extras/icons/addons.png</icon>
     <action>DefaultSearch-Addons</action>

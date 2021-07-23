@@ -134,20 +134,20 @@
        <value condition="!String.IsEqual(Container(505).ListItem.Property(widgetAspect),Poster)">special://skin/media/dialogs/loading_landscape.png</value>
    </variable>
    <variable name="movie_list_background">
-	<value condition="String.Contains(ListItem.Label,Academy Awards Nominees)">special://skin/media/exuary/movielist/dunkirk.jpg</value>
-	<value condition="String.Contains(ListItem.Label,Academy Awards Best)">special://skin/media/exuary/movielist/thegodfather.jpg</value>
-	<value condition="String.Contains(ListItem.Label,Golden Globe)">special://skin//media/exuary/movielist/shapeofwater.jpg</value>
-	<value condition="String.Contains(ListItem.Label,Top 250 Movies)">special://skin/media/exuary/movielist/shawshank.jpg</value>
-	<value condition="String.Contains(ListItem.Label,Top 250 of 2018)">special://skin/media/exuary/movielist/thedarknight.jpg</value>
-	<value condition="String.Contains(ListItem.Label,Best of 2018)">special://skin/media/exuary/movielist/blackpanther.jpg</value>
+	<value condition="String.IsEqual(ListItem.Label,$LOCALIZE[31834])">special://skin/media/exuary/movielist/dunkirk.jpg</value> <!-- 2018 - Oscar Nominees & Winners -->
+	<value condition="String.IsEqual(ListItem.Label,$LOCALIZE[31831])">special://skin/media/exuary/movielist/thegodfather.jpg</value> <!-- Academy Awards - Best Picture Winners -->
+	<value condition="String.IsEqual(ListItem.Label,$LOCALIZE[31833])">special://skin//media/exuary/movielist/shapeofwater.jpg</value> <!-- 2018 - Golden Globe Nominees & Winners -->
+	<value condition="String.IsEqual(ListItem.Label,$LOCALIZE[31835])">special://skin/media/exuary/movielist/shawshank.jpg</value> <!-- IMDB: Top Rated Movies -->
+	<value condition="String.IsEqual(ListItem.Label,$LOCALIZE[31836])">special://skin/media/exuary/movielist/thedarknight.jpg</value> <!-- Reddit Top 250 (2018 Edition) -->
+	<value condition="String.IsEqual(ListItem.Label,$LOCALIZE[31832])">special://skin/media/exuary/movielist/blackpanther.jpg</value> <!-- Rotten Tomatoes: Best of 2018 -->
    </variable>
    <variable name="tv_list_background">
-        <value condition="String.Contains(ListItem.Label,IMDB)">special://skin/media/exuary/tvlist/sopranos.jpg</value>
-        <value condition="String.Contains(ListItem.Label,Rolling Stone)">special://skin/media/exuary/tvlist/bandofbrothers.jpg</value>
-        <value condition="String.Contains(ListItem.Label,Popular)">special://skin/media/exuary/tvlist/breakingbad.jpg</value>
-        <value condition="String.Contains(ListItem.Label,US TV)">special://skin/media/exuary/tvlist/suits.jpg</value>
-        <value condition="String.Contains(ListItem.Label,UK TV)">special://skin/media/exuary/tvlist/bodyguard.jpg</value>
-        <value condition="String.Contains(ListItem.Label,Genres)">special://skin/media/exuary/tvlist/genres-background.jpg</value>
+        <value condition="String.IsEqual(ListItem.Label,$LOCALIZE[31837])">special://skin/media/exuary/tvlist/sopranos.jpg</value> <!-- IMDB: Top Rated TV Shows -->
+        <value condition="String.IsEqual(ListItem.Label,$LOCALIZE[31838])">special://skin/media/exuary/tvlist/bandofbrothers.jpg</value> <!-- Rolling Stone's 100 Greatest TV Shows of All Time -->
+        <value condition="String.IsEqual(ListItem.Label,$LOCALIZE[31839])">special://skin/media/exuary/tvlist/breakingbad.jpg</value> <!-- Most Popular -->
+        <value condition="String.IsEqual(ListItem.Label,$LOCALIZE[31840])">special://skin/media/exuary/tvlist/suits.jpg</value> <!-- TV Shows 2018 ➛ Scripted (USA) -->
+        <value condition="String.IsEqual(ListItem.Label,$LOCALIZE[31841])">special://skin/media/exuary/tvlist/bodyguard.jpg</value> <!-- TV Shows 2018 ➛ Scripted (UK) -->
+        <value condition="String.IsEqual(ListItem.Label,$LOCALIZE[31665])">special://skin/media/exuary/tvlist/genres-background.jpg</value> <!-- Genres -->
    </variable> 
    <variable name="Spotlight_Fanart">
         <value condition="String.IsEmpty(ListItem.DBType) + !String.IsEmpty(ListItem.Property(background)) + [Window.IsVisible(3810) | Window.IsVisible(3820)] ">$INFO[ListItem.Property(background)]</value>
@@ -220,12 +220,12 @@
         <value>$VAR[Image_MainMenu_fanart]</value>
     </variable>
     <variable name="Image_MainMenu_fanart"> 
-	<value condition="String.Contains(ListItem.Label,Shows)">special://skin/extras/backgrounds/tv-shows-mainmenu-bg.jpg</value>	
-	<value condition="String.Contains(ListItem.Label,Movies)">special://skin/extras/backgrounds/movies-mainmenu-bg.jpg</value>	
-	<value condition="String.Contains(ListItem.Label,live)">special://skin/extras/backgrounds/live-tv-mainmenu-bg.jpg</value>	
-        <value condition="String.Contains(Container(300).ListItem.Label,Shows)">special://skin/extras/backgrounds/tv-shows-mainmenu-bg.jpg</value>
-        <value condition="String.Contains(Container(300).ListItem.Label,Movies)">special://skin/extras/backgrounds/movies-mainmenu-bg.jpg</value>
-        <value condition="String.Contains(Container(300).ListItem.Label,live)">special://skin/extras/backgrounds/live-tv-mainmenu-bg.jpg</value>
+	<value condition="String.IsEqual(ListItem.Label,$LOCALIZE[20343])">special://skin/extras/backgrounds/tv-shows-mainmenu-bg.jpg</value> <!-- TV shows -->
+	<value condition="String.IsEqual(ListItem.Label,$LOCALIZE[20342])">special://skin/extras/backgrounds/movies-mainmenu-bg.jpg</value> <!-- Movies -->
+	<value condition="String.IsEqual(ListItem.Label,$LOCALIZE[31103])">special://skin/extras/backgrounds/live-tv-mainmenu-bg.jpg</value> <!-- Live TV -->
+        <value condition="String.IsEqual(Container(300).ListItem.Label,$LOCALIZE[20343])">special://skin/extras/backgrounds/tv-shows-mainmenu-bg.jpg</value> <!-- TV shows -->
+        <value condition="String.IsEqual(Container(300).ListItem.Label,$LOCALIZE[20342])">special://skin/extras/backgrounds/movies-mainmenu-bg.jpg</value> <!-- Movies -->
+        <value condition="String.IsEqual(Container(300).ListItem.Label,$LOCALIZE[31103])">special://skin/extras/backgrounds/live-tv-mainmenu-bg.jpg</value> <!-- Live TV -->
 	<value condition="Window.IsVisible(Custom_Hub_TVNetflix.xml)">special://skin/extras/backgrounds/tv-shows-mainmenu-bg.jpg</value>
 	<value condition="Window.IsVisible(Custom_Hub_MovieNetflix.xml)">special://skin/extras/backgrounds/movies-mainmenu-bg.jpg</value>
 	<value condition="Window.IsVisible(MyVideoNav.xml) + !String.IsEmpty(Container(505).ListItem.Art(fanart))">$INFO[Container(505).ListItem.Art(fanart)]</value>

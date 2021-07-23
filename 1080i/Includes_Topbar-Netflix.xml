@@ -908,7 +908,7 @@
                             <width>auto</width>
                             <font>font_topbar</font>
                             <textcolor>main_fg_100</textcolor>
-                            <label>Information</label>
+                            <label>$LOCALIZE[31743]</label> <!-- Information -->
                             <visible>!Control.HasFocus(300) + Window.IsVisible(DialogVideoInfo.xml)</visible>
                         </control>
                     </control>

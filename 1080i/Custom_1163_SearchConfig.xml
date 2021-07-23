@@ -15,7 +15,7 @@
             </include>
             <control type="label">
                 <description>Header Label</description>
-                <label>[CAPITALIZE]Search Hub Configuration[/CAPITALIZE]</label>
+                <label>[CAPITALIZE]$LOCALIZE[31647][/CAPITALIZE]</label> <!-- Search Hub Configuration -->
                 <textcolor>grey</textcolor>
                 <shadowcolor>dimgrey</shadowcolor>
                 <font>font_heading_small</font>
@@ -35,13 +35,13 @@
 
                        <control type="button" id="8001" description="Configure Search lists">
                             <include>Dialog_Standard_ListButton</include>
-                            <label>Configure Search Lists</label>
+                            <label>$LOCALIZE[31648]</label> <!-- Configure Search Lists -->
                             <onclick>RunScript(script.skinshortcuts,type=manage&amp;group=searchmenus)</onclick>
                         </control>
 <!--
-                        <control type="radiobutton" id="8002" description="Enable Random Spotlight">
+                        <control type="radiobutton" id="8002" description="Use default keyboard">
                             <include>Dialog_Standard_ListButton</include>
-                            <label> - Use default keyboard</label>
+                            <label> - $LOCALIZE[31649]</label>
                             <radioposx>730</radioposx>
                             <onclick>Skin.ToggleSetting(EnableSearchDefaultKB)</onclick>
                             <selected>Skin.HasSetting(EnableSearchDefaultKB)</selected>
@@ -49,7 +49,7 @@
 -->
                         <control type="radiobutton" id="8003" description="Enable Yt Search History">
                             <include>Dialog_Standard_ListButton</include>
-                            <label> - Enable Search History (requires tmdb lists)</label>
+                            <label> - $LOCALIZE[31650]</label> <!-- Enable Search History (requires tmdb lists) -->
                             <radioposx>730</radioposx>
                             <onclick>Skin.ToggleSetting(EnableSearchHistory)</onclick>
                             <selected>Skin.HasSetting(EnableSearchHistory)</selected>

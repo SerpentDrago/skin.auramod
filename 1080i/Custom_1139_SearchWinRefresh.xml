@@ -5,7 +5,7 @@
 <control type="label">
 <textcolor>black</textcolor>
 <font>font_tiny</font>
-<label>reload</label>
+<label>$LOCALIZE[31617]</label> <!-- reload -->
 </control>
 </controls>
 </window>

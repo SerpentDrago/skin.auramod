@@ -14,7 +14,7 @@
 
             <control type="label">
                 <description>Header Label</description>
-                <label>[CAPITALIZE]Movie Hub Configuration[/CAPITALIZE]</label>
+                <label>[CAPITALIZE]$LOCALIZE[31585][/CAPITALIZE]</label> <!-- Movie Hub Configuration -->
                 <textcolor>grey</textcolor>
                 <shadowcolor>dimgrey</shadowcolor>
                 <font>font_heading_small</font>
@@ -48,33 +48,33 @@
                 <usecontrolcoords>true</usecontrolcoords>
                        <control type="button" id="8001" description="Movie Lists Items">
                             <include>Dialog_Standard_ListButton</include>
-                            <label>Movie Lists Hub Items</label>
+                            <label>$LOCALIZE[31586]</label> <!-- Movie Lists Hub Items -->
                             <onfocus>SetProperty(Image_Preview,special://skin/extras/backgrounds/viewmodes/hub-movie-categories.jpg)</onfocus>
             		     <onclick>RunScript(script.skinshortcuts,type=manage&amp;group=x1102)</onclick>
                         </control>
                         <control type="button" id="8002" description="Movie Aura Hub Items">
                             <include>Dialog_Standard_ListButton</include>
-                            <label>Movie Aura Hub Items</label>
+                            <label>$LOCALIZE[31587]</label> <!-- Movie Aura Hub Items -->
                             <onfocus>SetProperty(Image_Preview,special://skin/extras/backgrounds/viewmodes/hub-movie-aura.jpg)</onfocus>
 			    <onclick>RunScript(script.skinshortcuts,type=manage&amp;group=aurahubmovies)</onclick> 
                         </control>
                         <control type="radiobutton" id="80021" description="Movie Aura Hub Items">
                             <include>Dialog_Standard_ListButton</include>
                             <radioposx>630</radioposx>
-                            <label> - Enable Compact Widget spacing</label>
+                            <label> - $LOCALIZE[31588]</label> <!-- Enable Compact Widget spacing -->
                             <selected>Skin.HasSetting(AuraHubSpacingSmall)</selected>
                             <onclick>Skin.ToggleSetting(AuraHubSpacingSmall)</onclick>
                             <onfocus>SetProperty(Image_Preview,special://skin/extras/backgrounds/viewmodes/hub-movie-aura-small.jpg)</onfocus>
                         </control>
                         <control type="button" id="8003" description="Movie Netflix Hub Items">
                             <include>Dialog_Standard_ListButton</include>
-                            <label>Movie Netflix Hub Items</label>
+                            <label>$LOCALIZE[31589]</label> <!-- Movie Netflix Hub Items -->
                             <onfocus>SetProperty(Image_Preview,special://skin/extras/backgrounds/viewmodes/hub-movie-netflix.jpg)</onfocus>
 			    <onclick>RunScript(script.skinshortcuts,type=manage&amp;group=netflixhubmovies)</onclick>
                         </control>
                         <control type="button" id="8004" description="Movie Genre Hub Items">
                             <include>Dialog_Standard_ListButton</include>
-                            <label>Movie Genre Hub Items</label>
+                            <label>$LOCALIZE[31590]</label> <!-- Movie Genre Hub Items -->
                             <onfocus>SetProperty(Image_Preview,special://skin/extras/backgrounds/viewmodes/hub-movie-genres.jpg)</onfocus>
 			    <onclick>RunScript(script.skinshortcuts,type=manage&amp;group=x1108)</onclick>
                         </control>

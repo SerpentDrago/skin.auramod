@@ -12,7 +12,7 @@
 
             <control type="label">
                 <description>Header Label</description>
-                <label>[CAPITALIZE]Aura Widget Bar[/CAPITALIZE]</label>
+                <label>[CAPITALIZE]$LOCALIZE[31784][/CAPITALIZE]</label> <!-- Aura Widget Bar -->
                 <include>Dialog_Standard_Header</include>
             </control>
 
@@ -27,21 +27,21 @@
                 <pagecontrol>60</pagecontrol>
                 <usecontrolcoords>true</usecontrolcoords>
                 <control type="radiobutton" id="9001">
-                    <label>Title</label>
+                    <label>$LOCALIZE[31710]</label> <!-- Title -->
                     <radioposx>730</radioposx>
                     <include>Dialog_Standard_ListButton</include>
                             <selected>Skin.HasSetting(DisableWidgetTitle)</selected>
                             <onclick>Skin.ToggleSetting(DisableWidgetTitle)</onclick>
                 </control>
                 <control type="radiobutton" id="9002">
-                    <label>Episode Airdate</label>
+                    <label>$LOCALIZE[31482]</label> <!-- Episode Airdate -->
                     <radioposx>730</radioposx>
                     <include>Dialog_Standard_ListButton</include>
                     <selected>Skin.HasSetting(DisableWidgetAirdate)</selected>
                     <onclick>Skin.ToggleSetting(DisableWidgetAirdate)</onclick>
                 </control>
                 <control type="radiobutton" id="9003">
-                    <label>Plot</label>
+                    <label>$LOCALIZE[31483]</label> <!-- Plot -->
                     <radioposx>730</radioposx>
                     <include>Dialog_Standard_ListButton</include>
                             <visible>!Skin.HasSetting(DisableNetflixHome)</visible>
@@ -50,14 +50,14 @@
                             <onclick>Skin.ToggleSetting(DisableWidgetPlot)</onclick>
                 </control>
                 <control type="radiobutton" id="9004">
-                    <label>Ratings</label>
+                    <label>$LOCALIZE[31484]</label> <!-- Ratings -->
                     <radioposx>730</radioposx>
                     <include>Dialog_Standard_ListButton</include>
                             <selected>Skin.HasSetting(DisableWidgetIMDB)</selected>
                             <onclick>Skin.ToggleSetting(DisableWidgetIMDB)</onclick>
                 </control>
                 <control type="radiobutton" id="9005">
-                    <label>Studio Logo</label>
+                    <label>$LOCALIZE[31485]</label> <!-- Studio Logo -->
                     <radioposx>730</radioposx>
                     <include>Dialog_Standard_ListButton</include>
                             <selected>Skin.HasSetting(DisableWidgetStudio)</selected>
@@ -72,14 +72,14 @@
                             <onclick>Skin.ToggleSetting(DisableWidgetMPAA)</onclick>
                 </control>
                 <control type="radiobutton" id="9007">
-                    <label>Year</label>
+                    <label>$LOCALIZE[31486]</label> <!-- Year -->
                     <radioposx>730</radioposx>
                     <include>Dialog_Standard_ListButton</include>
                             <selected>Skin.HasSetting(DisableWidgetYear)</selected>
                             <onclick>Skin.ToggleSetting(DisableWidgetYear)</onclick>
                 </control>
                 <control type="radiobutton" id="9008">
-                    <label>Duration</label>
+                    <label>$LOCALIZE[31487]</label> <!-- Duration -->
                     <radioposx>730</radioposx>
                     <include>Dialog_Standard_ListButton</include>
                             <selected>Skin.HasSetting(DisableWidgetDuration)</selected>

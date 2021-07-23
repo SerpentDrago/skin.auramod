@@ -207,7 +207,7 @@
                         <align>left</align>
                         <font>font_tiny</font>
                         <textcolor>Selected</textcolor>
-                        <label>[B][COLOR=$VAR[ColorHighlight2]]Next: [/COLOR][/B]$INFO[ListItem.NextTitle]</label>
+                        <label>[B][COLOR=$VAR[ColorHighlight2]]$LOCALIZE[31746]: [/COLOR][/B]$INFO[ListItem.NextTitle]</label> <!-- Next -->
                         <selectedcolor>Selected</selectedcolor>
                     </control>
                 </focusedlayout>

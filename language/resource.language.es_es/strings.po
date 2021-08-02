@@ -4439,64 +4439,64 @@ msgstr "Mis Listas 3"
 #: /shortcuts/overrides.xml
 msgctxt "#31909"
 msgid "Video-Addons"
-msgstr ""
+msgstr "Addons de Vídeo"
 
 #: /shortcuts/overrides.xml
 msgctxt "#31910"
 msgid "My Movie List 1"
-msgstr ""
+msgstr "Mi Lista de Películas 1"
 
 #: /shortcuts/overrides.xml
 msgctxt "#31911"
 msgid "My TV List 1"
-msgstr ""
+msgstr "Mi Lista de Series 1"
 
 #: /shortcuts/overrides.xml
 msgctxt "#31912"
 msgid "My List 1"
-msgstr ""
+msgstr "Mi Lista 1"
 
 #: /shortcuts/overrides.xml
 msgctxt "#31913"
 msgid "My List 2"
-msgstr ""
+msgstr "Mi Lista 2"
 
 #: /shortcuts/overrides.xml
 msgctxt "#31914"
 msgid "My List 3"
-msgstr ""
+msgstr "Mi Lista 3"
 
 #: /shortcuts/overrides.xml
 msgctxt "#31915"
 msgid "My Addons List 1"
-msgstr ""
+msgstr "Mi Lista de Addons 1"
 
 #: /shortcuts/overrides.xml
 msgctxt "#31916"
 msgid "My Addons List 2"
-msgstr ""
+msgstr "Mi Lista de Addons 2"
 
 #: /shortcuts/overrides.xml
 msgctxt "#31917"
 msgid "My LiveTV List 1"
-msgstr ""
+msgstr "Mi Lista LiveTV 1"
 
 #: /shortcuts/overrides.xml
 msgctxt "#31918"
 msgid "My LiveTV List 2"
-msgstr ""
+msgstr "Mi Lista LiveTV 2"
 
 #: /shortcuts/overrides.xml
 msgctxt "#31919"
 msgid "Because you watched"
-msgstr ""
+msgstr "Porque viste"
 
 #: /shortcuts/overrides.xml
 msgctxt "#31920"
 msgid "Spotlight Movies"
-msgstr ""
+msgstr "Destacados de Películas"
 
 #: /shortcuts/overrides.xml
 msgctxt "#31921"
 msgid "Spotlight TV"
-msgstr ""
+msgstr "Destacados de Series"

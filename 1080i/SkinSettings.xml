@@ -144,7 +144,7 @@
                             <label>$LOCALIZE[31502]</label> <!-- Library Views -->
                         </control>
 
-                         <control type="togglebutton" id="9014" description="Hubs & Spotlight">
+                         <control type="togglebutton" id="9014" description="Hubs and Spotlight">
                             <onfocus>SetProperty(CurrentFocus,$NUMBER[9014])</onfocus>
                             <usealttexture>![Control.HasFocus(3901) | Control.HasFocus(3902) | Control.HasFocus(3903) | Control.HasFocus(300)] + !Control.HasFocus(302) + Integer.IsEqual(Window.Property(CurrentFocus),9014)</usealttexture>
                             <alttexturenofocus colordiffuse="$VAR[Defs_Settings_ColorHighlight]">common/gradient-diffuse-horizontal.png</alttexturenofocus>
@@ -343,7 +343,7 @@
 			    <onclick>ActivateWindow(1130)</onclick>
                         </control>
 
-                       <control type="radiobutton" id="9692" description="Enable Time & Weather header on Home">
+                       <control type="radiobutton" id="9692" description="Enable Time and Weather header on Home">
                             <visible>Integer.IsEqual(Window.Property(CurrentFocus),9001)</visible>
                             <include>Defs_Settings_Button</include>
                             <label>$LOCALIZE[31510]</label> <!-- Enable Time & Weather header on Home -->
@@ -359,7 +359,7 @@
                         </control>
 
                         <!-- ========== -->
-                        <!-- --Hubs---- -->
+                        <!--   Hubs     -->
                         <!-- ========== -->
                            <control type="button" id="9665" description="Media Hubs ">
                             <textcolor>main_fg_100</textcolor>
@@ -1269,7 +1269,7 @@
                             <visible>Skin.HasSetting(EnableWetherRadar)</visible>
                         </control>
                         <!-- =============-->
-                        <!-- Widget Mods---->
+                        <!-- Widget Mods  -->
                         <!-- =============-->
                         <control type="button" id="9656" description="Widget Info bar ">
 		            <textcolor>main_fg_100</textcolor>
@@ -1496,9 +1496,9 @@
                             <onclick condition="!String.IsEmpty(Skin.String(similartv.path))">Skin.Reset(similartv.path)</onclick>
                         </control>
 
-                        <!-- =============-->
-                        <!-- ----PVR-------->
-                        <!-- =============-->
+                        <!-- ============ -->
+                        <!--     PVR      -->
+                        <!-- ============ -->
                         <control type="radiobutton" id="9620" description="PVR Guide Info">
                             <visible>Integer.IsEqual(Window.Property(CurrentFocus),9012)</visible>
                             <include>Defs_Settings_Button</include>
@@ -1542,9 +1542,9 @@
                             <selected>!Skin.HasSetting(PVRGuideGenreName)</selected>
                             <onclick>Skin.ToggleSetting(PVRGuideGenreName)</onclick>
                         </control>
-                        <!-- =============-->
-                        <!-- Netflix View--->
-                        <!-- =============-->
+                        <!-- ============ -->
+                        <!-- Netflix View -->
+                        <!-- ============ -->
 
 
                         <!-- ================= -->

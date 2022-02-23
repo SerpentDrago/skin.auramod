@@ -205,7 +205,8 @@
                         <label>$VAR[Weather_UVIndex_Info]</label>
                     </control>
                 </control>
-            </control>      
+            </control>
+            <visible>Weather.IsFetched</visible>      
         </control>
         <control type="grouplist">
             <left>view_pad</left>
@@ -340,6 +341,7 @@
                 <label fallback="161">$INFO[Window(Weather).Property($PARAM[day].Outlook),[CAPITALIZE],[/CAPITALIZE]]</label>
             </control>
         </control>
+        <visible>Weather.IsFetched</visible>
     </include>
 
     <variable name="Weather_Sunrise">

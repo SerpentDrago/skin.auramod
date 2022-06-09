@@ -173,7 +173,7 @@
     <control type="grouplist" id="330">
       <top>0</top>
       <left>60</left>
-      <height>1120</height>
+      <height>1080</height>
       <orientation>vertical</orientation>
       <itemgap>0</itemgap>
       <usecontrolcoords>true</usecontrolcoords>

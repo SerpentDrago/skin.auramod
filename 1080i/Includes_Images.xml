@@ -6,6 +6,7 @@
 	<value condition="!String.Contains(ListItem.Studio,/)">$INFO[ListItem.Studio,resource://resource.images.studios.coloured/,.png]</value>
      </variable>
      <variable name="serenicons">
+       <value condition="ListItem.IsParentFolder">DefaultFolderBack.png</value>
 	<value condition="!Skin.HasSetting(SerenIcons) + String.StartsWith(ListItem.Icon,DefaultFolder)">DefaultFolder.png</value>
 	<value condition="!Skin.HasSetting(SerenIcons)">ListItem.Icon</value>
 	<value condition="Skin.HasSetting(SerenIcons) + String.IsEqual(ListItem.FileNameAndPath,plugin://plugin.video.seren/?action=moviesHome)">special://skin/media/exuary/movies.png</value>
@@ -117,9 +118,36 @@
         <resetonlabelchange>true</resetonlabelchange>
    </control>
    </include> 
+     <include name="fanart_multi_container">
+     <control type="fadelabel" id="398065">
+        <description>Randomizer for plugin-free multiple fanart</description>
+        <top>-1000</top> <!-- Don't need to see it, but can't change its visibility. Put it off screen -->
+        <width>1</width>
+        <height>1</height>
+        <info>Container($PARAM[id]).ListItem.Art(fanart)</info>
+        <info>Container($PARAM[id]).ListItem.Art(fanart1)</info>
+        <info>Container($PARAM[id]).ListItem.Art(fanart2)</info>
+        <info>Container($PARAM[id]).ListItem.Art(fanart3)</info>
+        <!-- ... repeat for each numbered fanart -->
+        <!-- tvshow.fanart are filled with the series fanart when navigating season and episode lists -->
+        <randomize>false</randomize>
+	<include>Defs_PauseAtEnd</include>
+        <!-- No scrolling so only the pauseatend above (plus a short fade-in) affects length of time each
+                image is shown -->
+        <scroll>false</scroll>
+        <scrollout>false</scrollout>
+        <!-- Resets the timer when navigating to a new item, so each item's first visible fanart will
+                show for the full amount of time -->
+        <resetonlabelchange>true</resetonlabelchange>
+   </control>
+   </include> 
    <variable name="fanart_multi_fadelabel">
        <value condition="Skin.HasSetting(SkinHelper.EnableExtraFanart) + !String.IsEmpty(ListItem.Art(fanart1)) + !String.IsEmpty(Control.GetLabel(398045))">$INFO[Control.GetLabel(398045)]</value>
        <value>$VAR[Spotlight_Fanart]</value>
+   </variable>
+   <variable name="fanart_multi_fadelabel_container">
+       <value condition="Skin.HasSetting(SkinHelper.EnableExtraFanart) + !String.IsEmpty(ListItem.Art(fanart1)) + !String.IsEmpty(Control.GetLabel(398045))">$INFO[Control.GetLabel(398065)]</value>
+       <value>$VAR[Spotlight_Fanart_Container]</value>
    </variable>
    <variable name="fanart_multi_fadelabel_1505">
        <value condition="Skin.HasSetting(SkinHelper.EnableExtraFanart) + !String.IsEmpty(ListItem.Art(fanart1)) + !String.IsEmpty(Control.GetLabel(398095))">$INFO[Control.GetLabel(398095)]</value>
@@ -156,8 +184,18 @@
         <value condition="!String.IsEmpty(ListItem.Art(landscape))">$INFO[ListItem.Art(landscape)]</value>
         <value condition="!String.IsEmpty(ListItem.Art(tvshow.landscape))">$INFO[ListItem.Art(tvshow.landscape)]</value>
         <value condition="Skin.HasSetting(SkinHelper.EnableExtraFanart) + !String.IsEmpty(ListItem.Art(fanart)) + System.HasAddon(script.artwork.helper) + [Window.IsVisible(Home) | Window.IsVisible(DialogVideoInfo.xml)] + [String.IsEqual(ListItem.DBTYPE,season) | String.IsEqual(ListItem.DBTYPE,episode)]">plugin://script.artwork.helper/multiimage/listitem/?refresh=$INFO[ListItem.Label]</value>
+        <value condition="!String.IsEmpty(Window(Home).Property(TMDbHelper.ListItem.BlurImage.Original)) + !Window.IsVisible(DialogVideoInfo.xml)">$INFO[Window(Home).Property(TMDbHelper.ListItem.BlurImage.Original)]</value>
+        <value condition="!String.IsEmpty(Window(Home).Property(ListItem.BlurImage.Original)) + Window.IsVisible(DialogVideoInfo.xml)">$INFO[Window(Home).Property(ListItem.BlurImage.Original)]</value>
         <value>$INFO[ListItem.Icon]</value>
    </variable> 
+   <variable name="Spotlight_Fanart_Container">
+        <value condition="!String.IsEmpty(Container($PARAM[id]).ListItem.Art(fanart))">$INFO[Container($PARAM[id]).ListItem.Art(fanart)]</value>
+        <value condition="!String.IsEmpty(Container(5055).ListItem.Art(fanart)) + Control.IsVisible(5055) + Control.HasFocus(5055)">$INFO[Container(5055).ListItem.Art(fanart)]</value>
+        <value condition="!String.IsEmpty(Container(5056).ListItem.Art(fanart)) + Control.IsVisible(5056) + Control.HasFocus(5056)">$INFO[Container(5056).ListItem.Art(fanart)]</value>
+        <value condition="!String.IsEmpty(Container(5055).ListItem.Art(landscape)) + Control.IsVisible(5055) + Control.HasFocus(5055)">$INFO[Container(5055).ListItem.Art(landscape)]</value>
+        <value condition="!String.IsEmpty(Container(5056).ListItem.Art(landscape)) + Control.IsVisible(5056) + Control.HasFocus(5056)">$INFO[Container(5056).ListItem.Art(landscape)]</value>
+        <value>$INFO[Window(Home).Property(TMDbHelper.ListItem.BlurImage.Original)]</value>
+   </variable>
 
    <variable name="Spotlight_Fanart_1505">
         <value condition="!String.IsEmpty(Container(1505).ListItem.Art(fanart))">$INFO[Container(1505).ListItem.Art(fanart)]</value>
@@ -175,11 +213,12 @@
 
 
    <variable name="Image_Fanart">
+        <value condition="ListItem.IsParentFolder">DefaultFolderBack.png</value>
         <value condition="Window.IsVisible(DialogVideoInfo.xml) + String.IsEqual(ListItem.DBType,season) + !String.IsEmpty(ListItem.Art(landscape))">$INFO[ListItem.Art(landscape)]</value>
         <value condition="Window.IsVisible(DialogVideoInfo.xml) + String.IsEqual(ListItem.DBType,season) + !String.IsEmpty(ListItem.Art(fanart))">$INFO[ListItem.Art(fanart)]</value>
         <value condition="String.Contains(ListItem.Path,plugin.video.twitch) + !String.IsEmpty(ListItem.Art(poster))">$INFO[ListItem.Art(poster)]</value>
         <value condition="!String.IsEmpty(ListItem.Art(landscape)) + String.IsEqual(ListItem.Art(landscape),0)">$INFO[ListItem.Art(fanart)]</value>
-        <value condition="[Container.Content(episodes) | String.IsEqual(ListItem.DBType,episode)] + [Skin.HasSetting(PreferFanartHome) | String.IsEqual(ListItem.Icon,ListItem.Art(fanart))] + !String.IsEmpty(ListItem.Art(tvshow.fanart))">$INFO[ListItem.Art(tvshow.fanart)]</value>
+        <value condition="[Container.Content(episodes) | String.IsEqual(ListItem.DBType,episode)] + Skin.HasSetting(PreferFanartHome) + !String.IsEmpty(ListItem.Art(tvshow.fanart))">$INFO[ListItem.Art(tvshow.fanart)]</value>
         <value condition="[Container.Content(episodes) | String.IsEqual(ListItem.DBType,episode)] + Skin.HasSetting(PreferFanartHome) + !String.IsEmpty(ListItem.Art(fanart))">$INFO[ListItem.Art(fanart)]</value>
         <value condition="[Container.Content(episodes) | String.IsEqual(ListItem.DBType,episode)] + !Skin.HasSetting(PreferFanartHome) + String.IsEqual(ListItem.Art(thumb),ListItem.Art(poster))">$INFO[ListItem.Art(fanart)]</value>
         <value condition="[Container.Content(episodes) | String.IsEqual(ListItem.DBType,episode)] + !Skin.HasSetting(PreferFanartHome) + !String.IsEmpty(ListItem.Art(thumb))">$INFO[ListItem.Art(thumb)]</value>
@@ -198,11 +237,18 @@
         <value condition="[!Control.HasFocus(5055) + !Control.IsVisible(505)] + !String.IsEmpty(ListItem.Thumb)">$INFO[ListItem.Thumb]</value>
         <value condition="[!Control.HasFocus(5055) + !Control.IsVisible(505)] + !String.IsEmpty(ListItem.Art(thumb))">$INFO[ListItem.Art(thumb)]</value>
         <value condition="!Container.Content(episodes) + !Container.Content(tvshows) + !Container.Content(movies) + !Container.Content(seasons) + !Control.HasFocus(5055) + !Control.IsVisible(505)">$INFO[ListItem.Icon]</value>
+        <value>$INFO[ListItem.Icon]</value>
     </variable>
 
     <variable name="Image_MainMenu_fanart_aurahub"> 
         <value condition="Window.IsVisible(MyVideoNav.xml) + !String.IsEmpty(Container(5055).ListItem.Art(fanart)) + Control.IsVisible(5055)">$INFO[Container(5055).ListItem.Art(fanart)]</value>
         <value condition="Window.IsVisible(MyVideoNav.xml) + !String.IsEmpty(Container(5056).ListItem.Art(fanart)) + Control.IsVisible(5056)">$INFO[Container(5056).ListItem.Art(fanart)]</value>
+        <value condition="Window.IsVisible(MyVideoNav.xml) + !String.IsEmpty(Container.ListItem.Art(fanart)) + Control.HasFocus(505)">$INFO[Container.ListItem.Art(fanart)]</value>
+        <value condition="Window.IsVisible(MyVideoNav.xml) + !String.IsEmpty(Container.ListItem.Art(fanart)) + Control.HasFocus(506)">$INFO[Container.ListItem.Art(fanart)]</value>
+        <value condition="Window.IsVisible(MyVideoNav.xml) + !String.IsEmpty(Container(5055).ListItem.Art(landscape)) + Control.IsVisible(5055)">$INFO[Container(5055).ListItem.Art(landscape)]</value>
+        <value condition="Window.IsVisible(MyVideoNav.xml) + !String.IsEmpty(Container(5056).ListItem.Art(landscape)) + Control.IsVisible(5056)">$INFO[Container(5056).ListItem.Art(landscape)]</value>
+        <value condition="Window.IsVisible(MyVideoNav.xml) + !String.IsEmpty(Container.ListItem.Art(landscape)) + Control.HasFocus(505)">$INFO[Container.ListItem.Art(landscape)]</value>
+        <value condition="Window.IsVisible(MyVideoNav.xml) + !String.IsEmpty(Container.ListItem.Art(landscape)) + Control.HasFocus(506)">$INFO[Container.ListItem.Art(landscape)]</value>
         <value condition="!String.IsEmpty(Container(6051).ListItem.Art(fanart)) + Control.IsVisible(6051)">$INFO[Container(6051).ListItem.Art(fanart)]</value>
         <value condition="!String.IsEmpty(Container(6052).ListItem.Art(fanart)) + Control.IsVisible(6052)">$INFO[Container(6052).ListItem.Art(fanart)]</value>
         <value condition="!String.IsEmpty(Container(6053).ListItem.Art(fanart)) + Control.IsVisible(6053)">$INFO[Container(6053).ListItem.Art(fanart)]</value>
@@ -318,10 +364,12 @@
     </variable>
 
     <variable name="NetflixInfo_ClearLogo_Container">
-        <value condition="$EXP[clearlogo_container_updating] + !String.IsEmpty(ListItem.Art(tvshow.clearlogo))">$INFO[ListItem.Art(tvshow.clearlogo)]</value>
-        <value condition="$EXP[clearlogo_container_updating] + !String.IsEmpty(ListItem.Art(clearlogo))">$INFO[ListItem.Art(clearlogo)]</value>
+        <value condition="[$EXP[clearlogo_container_updating] | String.IsEqual(Container.ListItem.Label,$LOCALIZE[31923]) | String.IsEqual(Container.ListItem.Label,$LOCALIZE[31924])] + !String.IsEmpty(ListItem.Art(tvshow.clearlogo))">$INFO[ListItem.Art(tvshow.clearlogo)]</value>
+        <value condition="[$EXP[clearlogo_container_updating] | String.IsEqual(Container.ListItem.Label,$LOCALIZE[31923]) | String.IsEqual(Container.ListItem.Label,$LOCALIZE[31924])] + !String.IsEmpty(ListItem.Art(clearlogo))">$INFO[ListItem.Art(clearlogo)]</value>
         <value condition="!String.IsEmpty(Container.ListItem.Art(tvshow.clearlogo))">$INFO[Container.ListItem.Art(tvshow.clearlogo)]</value>
         <value condition="!String.IsEmpty(Container.ListItem.Art(clearlogo))">$INFO[Container.ListItem.Art(clearlogo)]</value>
+        <value condition="!String.IsEmpty(ListItem.Art(tvshow.clearlogo))">$INFO[ListItem.Art(tvshow.clearlogo)]</value>
+        <value condition="!String.IsEmpty(ListItem.Art(clearlogo))">$INFO[ListItem.Art(clearlogo)]</value>
         <value condition="String.IsEmpty(Container.ListItem.Art(clearlogo)) + !String.IsEmpty(Window(Home).Property(TMDBHelper.ListItem.ClearLogo))">$INFO[Window(Home).Property(TMDBHelper.ListItem.ClearLogo)]</value>
     </variable>
 
@@ -380,7 +428,7 @@
         <value condition="ListItem.IsResumable + Integer.IsGreater(ListItem.PercentPlayed,66)">indicator/inprogress-75.png</value>
         <value condition="ListItem.IsResumable + Integer.IsGreater(ListItem.PercentPlayed,33)">indicator/inprogress-50.png</value>
         <value condition="ListItem.IsResumable">indicator/inprogress-25.png</value>
-        <value condition="Integer.IsGreater(ListItem.Property(TotalEpisodes),0) + Integer.IsLess(ListItem.Property(UnWatchedEpisodes),1) + [Container.Content(tvshows) | Container.Content(seasons)]">indicator/checkmark-fo.png</value>
+        <value condition="Integer.IsGreater(ListItem.Property(TotalEpisodes),0) + !String.IsEmpty(ListItem.Property(UnWatchedEpisodes)) + Integer.IsLess(ListItem.Property(UnWatchedEpisodes),1) + [Container.Content(tvshows) | Container.Content(seasons)]">indicator/checkmark-fo.png</value>
         <value condition="Integer.IsGreater(ListItem.PlayCount,0)">indicator/checkmark-fo.png</value>
         <value condition="String.IsEqual(ListItem.Overlay,OverlayWatched.png)">indicator/checkmark.png</value>
         <value condition="[Window.IsVisible(DialogVideoInfo.xml) | Window.IsVisible(script-script.extendedinfo-DialogInfo.xml) | Window.IsVisible(script-script.extendedinfo-DialogVideoInfo.xml) | Window.IsVisible(script-script.extendedinfo-VideoList.xml)]+ !String.IsEmpty(ListItem.DBID)">indicator/library.png</value>
@@ -391,7 +439,7 @@
         <value condition="ListItem.IsResumable + Integer.IsGreater(ListItem.PercentPlayed,66)">indicator/inprogress-75.png</value>
         <value condition="ListItem.IsResumable + Integer.IsGreater(ListItem.PercentPlayed,33)">indicator/inprogress-50.png</value>
         <value condition="ListItem.IsResumable">indicator/inprogress-25.png</value>
-        <value condition="Integer.IsGreater(ListItem.Property(TotalEpisodes),0) + Integer.IsLess(ListItem.Property(UnWatchedEpisodes),1) + [Container.Content(tvshows) | Container.Content(seasons)]">indicator/checkmark-fo.png</value>
+        <value condition="Integer.IsGreater(ListItem.Property(TotalEpisodes),0) + !String.IsEmpty(ListItem.Property(UnWatchedEpisodes)) + Integer.IsLess(ListItem.Property(UnWatchedEpisodes),1) + [Container.Content(tvshows) | Container.Content(seasons)]">indicator/checkmark-fo.png</value>
         <value condition="Integer.IsGreater(ListItem.PlayCount,0)">indicator/checkmark-fo.png</value>
         <value condition="String.IsEqual(ListItem.Overlay,OverlayWatched.png)">indicator/checkmark-fo.png</value>
         <value condition="[Window.IsVisible(DialogVideoInfo.xml) | Window.IsVisible(script-script.extendedinfo-DialogInfo.xml) | Window.IsVisible(script-script.extendedinfo-DialogVideoInfo.xml) | Window.IsVisible(script-script.extendedinfo-VideoList.xml)]+ !String.IsEmpty(ListItem.DBID)">indicator/library.png</value>
@@ -404,10 +452,11 @@
         <value condition="String.IsEqual(ListItem.Overlay,OverlayWatched.png)">indicator/corner.png</value>
         <value condition="ListItem.IsCollection">indicator/corner.png</value>
         <value condition="Integer.IsGreater(ListItem.Property(UnWatchedEpisodes),0) + [Container.Content(tvshows) | Container.Content(seasons) | Window.IsVisible(Home)]">indicator/corner.png</value>
-        <value condition="Integer.IsGreater(ListItem.Property(TotalEpisodes),0) + Integer.IsLess(ListItem.Property(UnWatchedEpisodes),1) + [Container.Content(tvshows) | Container.Content(seasons)]">indicator/corner.png</value>
+        <value condition="Integer.IsGreater(ListItem.Property(TotalEpisodes),0) + !String.IsEmpty(ListItem.Property(UnWatchedEpisodes)) + Integer.IsLess(ListItem.Property(UnWatchedEpisodes),1) + [Container.Content(tvshows) | Container.Content(seasons)]">indicator/corner.png</value>
     </variable>
 
     <variable name="Image_Poster">
+        <value condition="ListItem.IsParentFolder">DefaultFolderBack.png</value>
         <value condition="Skin.HasSetting(SkinHelper.EnableAnimatedPosters) + !String.IsEmpty(ListItem.Art(animatedposter))">$INFO[ListItem.Art(animatedposter)]</value>
         <value condition="Skin.HasSetting(SkinHelper.EnableAnimatedPosters) + !String.IsEmpty(Window(Home).Property(SkinHelper.ListItem.Art.AnimatedPoster))">$INFO[Window(Home).Property(SkinHelper.ListItem.Art.AnimatedPoster)]</value>
         <value condition="[Container.Content(seasons) | Container.Content(episodes) | String.IsEqual(ListItem.DBType,episode) | String.IsEqual(ListItem.DBType,season)] + !String.IsEmpty(ListItem.Art(season.poster))">$INFO[ListItem.Art(season.poster)]</value>

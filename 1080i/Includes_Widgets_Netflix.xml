@@ -558,6 +558,7 @@
                 </control>
             </control>
             <control type="$PARAM[controltype]" id="$PARAM[id]">
+              <onfocus>$PARAM[onfocus]</onfocus>
 	                <animation effect="fade" start="100" end="0" condition="Window.IsVisible(1138) + Container($PARAM[id]).IsUpdating">Conditional</animation>
 			<onback condition="ControlGroup(5600).HasFocus">9000</onback>
 			<scrolltime tween="linear">400</scrolltime>
@@ -948,6 +949,7 @@
 			    <param name="squarecondition" value="$PARAM[squarecondition]" />
 			    <param name="genrecondition" value="$PARAM[genrecondition]" />
 			    <param name="submenucondition" value="$PARAM[submenucondition]" />
+          <param name="tmdbwidgetonfocus" value="$PARAM[tmdbwidgetonfocus]" />
 		</include>
 		<include condition="Skin.HasSetting(DisableNetflixSmallWidget) + !Window.IsVisible(1138) + !Window.IsVisible(3910) + !Window.IsVisible(3920) + ![Window.IsVisible(2111)| Window.IsVisible(2112) | Window.IsVisible(2113) | Window.IsVisible(2114) | Window.IsVisible(2115) | Window.IsVisible(2116) | Window.IsVisible(2117) | Window.IsVisible(4010) | Window.IsVisible(4020) | Window.IsVisible(DialogVideoInfo.xml)]" content="Widget_Items_Small">
 			<param name="top" value="$PARAM[top]" />
@@ -1481,7 +1483,7 @@
                     <include condition="$PARAM[landscapedetails] + !$PARAM[studios] + !$PARAM[genres] + !$PARAM[text]">Widget_Items_LandscapeDetails</include>
                     <include condition="$PARAM[widgetlive] + !$PARAM[studios] + !$PARAM[genres] + !$PARAM[text]">Widget_Items_WidgetLive</include>
 		    <include condition="$PARAM[landscapenetflix] + !$PARAM[studios] + !$PARAM[genres] + !$PARAM[text]">Widget_Items_LandscapeNetflix</include>
-		    <include condition="$PARAM[landscapepanel] + !$PARAM[studios] + !$PARAM[genres] + !$PARAM[text]">Widget_Items_LandscapeNetflix</include>
+		    <include condition="$PARAM[landscapepanel] + !$PARAM[studios] + !$PARAM[genres] + !$PARAM[text]">Widget_Items_LandscapePanel</include>
 		    <include condition="$PARAM[category] + !$PARAM[studios] + !$PARAM[genres] + !$PARAM[text]">Widget_Items_Category</include>
                     <include condition="$PARAM[submenuwidget] + !$PARAM[studios] + !$PARAM[genres] + !$PARAM[text]">Widget_Items_SubmenuWidget</include>
                 </control>
@@ -1554,7 +1556,7 @@
 		    <include condition="$PARAM[widgetlive] + !$PARAM[studios] + !$PARAM[genres] + !$PARAM[text]">Widget_Items_WidgetLive</include>
                     <include condition="$PARAM[landscapedetails] + !$PARAM[studios] + !$PARAM[genres] + !$PARAM[text]">Widget_Items_LandscapeDetails_Focused</include>
 		    <include condition="$PARAM[landscapenetflix] + !$PARAM[studios] + !$PARAM[genres] + !$PARAM[text]">Widget_Items_LandscapeNetflix</include>
-		    <include condition="$PARAM[landscapepanel] + !$PARAM[studios] + !$PARAM[genres] + !$PARAM[text]">Widget_Items_LandscapeNetflix</include>
+		    <include condition="$PARAM[landscapepanel] + !$PARAM[studios] + !$PARAM[genres] + !$PARAM[text]">Widget_Items_LandscapePanel</include>
 		    <include condition="$PARAM[category] + !$PARAM[studios] + !$PARAM[genres] + !$PARAM[text]">Widget_Items_Category</include>
 	            <include condition="$PARAM[submenuwidget] + !$PARAM[studios] + !$PARAM[genres] + !$PARAM[text]">Widget_Items_SubmenuWidget</include>
                 </control>

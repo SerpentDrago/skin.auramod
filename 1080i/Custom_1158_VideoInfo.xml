@@ -37,6 +37,11 @@
                     <label>$LOCALIZE[31633]</label> <!-- Configure Lists -->
                     <onclick>ActivateWindow(1119,return)</onclick>
                 </control>
+                <control type="button" id="90021" description="Configure Cast & More Details">
+                    <include>Dialog_Standard_ListButton</include>
+                    <label>$LOCALIZE[31928]</label> <!-- Configure Cast & More Details -->
+                    <onclick>ActivateWindow(1159,return)</onclick>
+                </control>
                 <control type="radiobutton" id="9003">
                     <label>$LOCALIZE[31634]</label> <!-- Hide Details when Trailer playing -->
                     <radioposx>730</radioposx>
@@ -50,6 +55,13 @@
                     <include>Dialog_Standard_ListButton</include>
                     <onclick>Skin.ToggleSetting(VideoInfo.LargePlot)</onclick>
                     <selected>Skin.HasSetting(VideoInfo.LargePlot)</selected>
+                </control>
+                <control type="radiobutton" id="9005">
+                    <label>$LOCALIZE[31922]</label> <!-- Enable Previous/Next page buttons in Lists -->
+                    <radioposx>730</radioposx>
+                    <include>Dialog_Standard_ListButton</include>
+                    <onclick>Skin.ToggleSetting(VideoInfo.Pagination)</onclick>
+                    <selected>Skin.HasSetting(VideoInfo.Pagination)</selected>
                 </control>
             </control>
         </control>

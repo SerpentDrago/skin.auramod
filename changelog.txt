@@ -1,3 +1,133 @@
+v2.0.0
+-Fix Netflix Info "Cast & More" clearlogo image fallbacks
+-Fix episode thumb artwork priority
+-Fix Aura Home TMDBHelper widget label
+-Improve Aura Home LandscapeWide widget
+--Remove widget item title label
+-Improve Aura Home LandscapeDetails widget
+--Adjust landscape artwork size
+--Adjust clearlogo position
+--Adjust progress bar width
+--Adjust details position
+-Improve Aura Home PosterDetails widget
+--Add separate Poster Details layout
+--Improve poster artwork position
+--Improve plot label
+--Adjust poster artwork position
+-Improve Aura Home landscape widgets
+--Add progress bar
+--Adjust clearlogo position
+--Add season and episode label
+--Add separate Landscape layout
+--Add separate Landscape Wide Poster layout
+--Add separate Landscape Netflix layout
+--Add separate Landscape Panel layout
+--Add separate Landscape Details layout
+-Fix infoline duration visibility
+-Improve library landscape views
+--Add progress bar
+--Adjust clearlogo position
+--Add season and episode label
+--Fix clearlogo visibility
+-Improve Netflix Home landscape widgets
+--Remove old episode progress bar
+--Add separate Landscape Panel layout
+--Fix separate Landscape Wide Poster layout
+-Improve Netflix Home Landscape and LandscapeWide widgets
+--Add progress bar
+--Adjust clearlogo position
+--Improve season and episode label
+--Fix season and episode label visibility
+-Fix MyLists hub widget visibility
+-Fix conditional expression formatting
+-Fix MyLists search label
+-Fix MyLists widget visibility
+-Fix clearlogo visibility when landscape artwork not available
+-Fix addon landscape artwork unnecessary clearlogo duplication
+-Fix Liked % disappearing when modal dialog opened
+-Fix icon image scaling when landscape artwork not available
+-Fix poster image fallbacks
+-Fix Netflix Home Spotlight Fanart "jumping" when navigating between items
+-Add "Reset to defaults" skin setting for Background settings tab
+-Add Extra fanart skin setting
+-Fix Netflix Info "Cast & More" Seasons watched label visibility
+-Fix library infoline disappearing when topbar focused
+-Fix library landscape artwork unnecessary clearlogo duplication
+-Fix fanart image fallbacks
+--Fix poster fanart scaling when landscape artwork not available
+--Fix TMDBHelper next page icon scaling
+--Add container cycling fanart
+-Rework Aura Home layout
+--Fix focus skipping first widget when scrolling down from spotlights to widgets
+--Fix widgets being cut-off
+--Remove Aura Home widget gap skin setting
+--Remove gap for landscape widget style when spotlight is enabled
+--Fix small category widget label
+--Add conditional category widget gap
+--Consolidate conditional spacers
+--Consolidate spotlight animations
+--Fix spotlight animations affecting widgets
+--Fix spotlight animations triggering when scrolling down last widget
+--Add widget animations
+--Reposition spotlight using animations only
+--Reposition widgets using animations only
+--Fix Aura Home horizontal menu topbar shadow
+-Fix Netflix Season List view
+--Remove overlay image on landscape artwork
+--Fix watched overlay conditions
+-Improve Netflix Season List view
+--Add clearlogo
+--Adjust progress bar position and size
+--Round corners for progress bar
+--Adjust season and episode label position
+--Add infoline flag skin setting for seasons and episodes
+--Fix infoline flag visibility
+--Fix unnecessary plot duplication
+--Fix clearlogo disappearing when modal dialog opened
+-Add notification addon icon skin setting
+-Fix Netflix Info button list moving when scrolling between buttons
+-Remove Netflix Info arrow indicator
+-Fix Netflix Info "Cast & More" Seasons plot width
+-Fix Netflix Info "Cast & More" Seasons watched label
+-Fix TV show watched overlay conditions
+-Fix Liked % variables
+-Improve Netflix Side List hub views
+--Fix landscape artwork visibility when fanart not available
+-Fix skin settings unfocused text color
+-Fix settings highlight when modal dialog opened
+-Fix PVR settings overlap
+-Add dynamic global background
+-Fix parent folder icon visibility
+-Fix global background artwork changing when modal dialog opened
+-Improve Netflix Landscape Showcase view
+-Improve Netflix Poster Showcase view
+-Add disable library time header skin setting
+-Improve Netflix Simple Home item title and plot labels
+-Fix autoscroll bug
+-Improve Netflix Home/Info item title and plot labels
+-Improve cast list label separator
+-Fix Netflix Home tagline label changing when modal dialog opened
+-Fix parent folder label visibility
+-Fix parent folder icon
+-Fix Netflix Info "Cast & More" artwork changing when modal dialog opened
+-Fix Netflix Home artwork disappearing when modal dialog opened
+-Add notification shadow skin setting
+-Fix settings page widget position
+-Add new localization for list pagination and its skin setting
+-Fix settings page positioning
+-Fix studio logo visibility for widget spotlight
+--Fix container ratings visibility when widget spotlight not visible
+--Fix container ratings visibility when widget spotlight not focused
+-Fix Aura Home horizontal menu layout
+--Add hidden list to force submenu widget gap when category widget is enabled but list is empty
+-Fix Netflix Home horizontal menu layout
+--Add separate topbar includes for Netflix Home and Aura Home layouts
+--Remove topbar shadow on Netflix Home
+--Fix widget navigation up when spotlight is disabled
+-Fix disable settings background
+-Fix virtual search keyboard
+-Fix Netflix Info "Cast & More" empty variables when modal dialog opened
+-Fix Netflix Info "Cast & More" list pagination
 v1.1.9
 -Fix Aura Home horizontal menu layout
 -Fix conditional spacers when horizontal menu enabled

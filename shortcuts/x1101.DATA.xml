@@ -2,7 +2,7 @@
 <shortcuts>
 	<shortcut>
 		<defaultID />
-		<label>$LOCALIZE[31523]...</label> <!-- Search -->
+		<label>$LOCALIZE[31523]</label> <!-- Search -->
 		<label2>Video Add-On</label2>
 		<icon>DefaultShortcut.png</icon>
 		<thumb>special://skin/media/exuary/search.png</thumb>

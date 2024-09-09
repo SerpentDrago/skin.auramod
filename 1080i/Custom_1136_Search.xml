@@ -3,8 +3,8 @@
   <defaultcontrol always="true">9000</defaultcontrol>
   <onload condition="String.IsEmpty(Skin.String(TempCustomSearchTerm)) + String.IsEmpty(Skin.String(TMDB_Search))">Skin.Reset(CustomSearchTerm)</onload>
   <onload condition="String.IsEmpty(Skin.String(TempCustomSearchTerm)) + Skin.HasSetting(EnableSearchDefaultKB) + String.IsEmpty(Skin.String(TMDB_Search))">Skin.SetString(CustomSearchTerm)</onload>
-  <onload condition="!Skin.HasSetting(EnableSearchDefaultKB) + String.IsEmpty(Skin.String(TMDB_Search))">Skin.SetString(CustomSearchTerm,$LOCALIZE[31138])</onload>
-  <onload condition="!String.IsEmpty(Skin.String(TempCustomSearchTerm)) + Skin.HasSetting(EnableSearchDefaultKB) + String.IsEmpty(Skin.String(TMDB_Search))">Skin.SetString(CustomSearchTerm,$INFO[Skin.String(TempCustomSearchTerm)])</onload>
+  <onload condition="!Skin.HasSetting(EnableSearchDefaultKB)">Skin.Reset(osdCustomSearchTerm)</onload>
+  <onload condition="!String.IsEmpty(Skin.String(TempCustomSearchTerm)) + String.IsEmpty(Skin.String(TMDB_Search))">Skin.SetString(CustomSearchTerm,$INFO[Skin.String(TempCustomSearchTerm)])</onload>
   <onload>ActivateWindow(1138)</onload>
   <controls>
     <include>Global_Background</include>

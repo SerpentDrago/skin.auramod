@@ -12,6 +12,7 @@
 
         <!-- Standard Furniture -->
         <include condition="Skin.HasSetting(SkinHelper.EnableExtraFanart)">fanart_multi</include>
+        <include condition="Skin.HasSetting(SkinHelper.EnableExtraFanart)">fanart_multi_container</include>
         <include condition="Skin.HasSetting(DisableNetflixView)">Global_Background</include>
         <include>Object_PlotOverlay</include>
         <include>View_Library</include>

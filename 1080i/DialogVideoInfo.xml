@@ -8,6 +8,8 @@
     <onload>ClearProperty(Header_Center_Text)</onload>
     <onload>ClearProperty(OSD_Menu,Home)</onload>
     <onload>SetProperty(TMDbTemp,$INFO[Window(Home).Property(TMDbHelper.WidgetContainer)],Home)</onload>
+    <include>Defs_VideoInfo_WidgetPage</include>
+    <include>Defs_VideoInfo_SetProp</include>
 
     <onunload>SetProperty(TMDbHelper.WidgetContainer,$INFO[Window(Home).Property(TMDbTemp)],Home)</onunload>
     <onunload>ClearProperty(TMDbTemp,Home)</onunload>
@@ -25,6 +27,7 @@
     <onunload condition="System.HasAlarm(trailer_delay)">CancelAlarm(trailer_delay,true)</onunload>
     <controls>
       <include condition="Skin.HasSetting(SkinHelper.EnableExtraFanart)">fanart_multi</include>
+      <include condition="Skin.HasSetting(SkinHelper.EnableExtraFanart)">fanart_multi_container</include>
 	<control type="button" id="9005">
 	 <visible allowhiddenfocus="true">false</visible>
 	    <onback condition="!String.IsEmpty(Window(home).Property(TrailerPlaying))">ClearProperty(TrailerPlaying,Home)</onback>

@@ -9,8 +9,8 @@
      <expression name="MainSubMenuHasFocus">Control.HasFocus(3001) | Control.HasFocus(302) | Control.HasFocus(30222) | Control.HasFocus(300)</expression>
      <expression name="HubMenu">Control.HasFocus(400) + Control.HasFocus(401)</expression>
      <expression name="isMenuOpen">[Control.HasFocus(400) | Control.HasFocus(401) | Control.HasFocus(300)]</expression>
-     <expression name="NetflixListHubs">Window.IsActive(2111) | Window.IsActive(2112) | Window.IsActive(2113)| Window.IsActive(2114) | Window.IsActive(2115)| Window.IsActive(2116) | Window.IsActive(2117) |  Window.IsActive(2118) | Window.IsVisible(4010) | Window.IsVisible(4020)</expression>
-     <expression name="ListHubsActive">Window.IsActive(2111) | Window.IsActive(2112) | Window.IsActive(2113)| Window.IsActive(2114) | Window.IsActive(2115)| Window.IsActive(2116) | Window.IsActive(2117) | Window.IsActive(2118)</expression>
+     <expression name="NetflixListHubs">Window.IsActive(2111) | Window.IsActive(2112) | Window.IsActive(2113) | Window.IsActive(2114) | Window.IsActive(2115) | Window.IsActive(2116) | Window.IsActive(2117) |  Window.IsActive(2118) | Window.IsVisible(4010) | Window.IsVisible(4020)</expression>
+     <expression name="ListHubsActive">Window.IsActive(2111) | Window.IsActive(2112) | Window.IsActive(2113) | Window.IsActive(2114) | Window.IsActive(2115) | Window.IsActive(2116) | Window.IsActive(2117) | Window.IsActive(2118)</expression>
      <expression name="TVSpotlight">!String.IsEmpty(Skin.String(spotlighttvshows.path)) + String.IsEqual(Container(300).ListItem.Property(widgetspotlight),true) + String.IsEqual(Container(300).ListItem.Property(widgetspotlighttype),TVShows) + [Container(1505).IsUpdating | Integer.IsGreater(Container(1505).NumItems,0)]</expression>
      <expression name="MovieSpotlight">!String.IsEmpty(Skin.String(spotlightmovies.path)) + String.IsEqual(Container(300).ListItem.Property(widgetspotlight),true) + String.IsEqual(Container(300).ListItem.Property(widgetspotlighttype),Movies) + [Container(1506).IsUpdating | Integer.IsGreater(Container(1506).NumItems,0)]</expression>
      <expression name="LiveTVSpotlight">String.IsEqual(Container(300).ListItem.Property(widgetspotlight),true) + String.IsEqual(Container(300).ListItem.Property(widgetspotlighttype),LiveTV)</expression>
@@ -19,8 +19,8 @@
      <expression name="HomeSpotFocusContainers">[ControlGroup(51507).HasFocus | Control.HasFocus(1505) | Control.HasFocus(1506) | Control.HasFocus(400) | Control.HasFocus(401) | Control.HasFocus(300) | ControlGroup(900).HasFocus | Control.HasFocus(30222) | Control.IsVisible(1505) | Control.IsVisible(1506) | Control.IsVisible(901)]</expression>
      <expression name="HomeSpotFocusWidgets">String.IsEmpty(Window(Home).Property(SpotReturnHome)) + [ControlGroup(330).HasFocus + !String.IsEqual(Container(330).CurrentItem,1)] </expression>
      <expression name="noSubMenu">!String.IsEqual(Container(300).ListItem.Property(hasSubmenu),true) | [String.IsEqual(Container(300).ListItem.Property(hasSubmenu),true) + !Integer.IsGreater(Container(30222).NumItems,0)]</expression>
-     <expression name="HomeSpotscrollup">String.IsEmpty(Window(Home).Property(SpotReturnHome)) + !String.IsEqual(Window(Home).Property(SpotFocus),true) + String.IsEqual(Container(330).CurrentItem,1) + String.IsEmpty(Window(Home).Property(spothubscroll))</expression>
-     <expression name="HomeSpotscrolldown">String.IsEmpty(Window(Home).Property(SpotReturnHome)) + [ControlGroup(330).HasFocus + !Control.HasFocus(3337)] + Integer.IsGreater(Container(330).CurrentItem,1) + String.IsEmpty(Window(Home).Property(spothubscroll))</expression>
+     <expression name="HomeSpotscrollup">String.IsEmpty(Window(Home).Property(SpotReturnHome)) + !String.IsEqual(Window(Home).Property(SpotFocus),true) + String.IsEqual(Container(330).CurrentItem,1)</expression>
+     <expression name="HomeSpotscrolldown">String.IsEmpty(Window(Home).Property(SpotReturnHome)) + [ControlGroup(330).HasFocus + !Control.HasFocus(3337)] + Integer.IsGreater(Container(330).CurrentItem,1)</expression>
      <expression name="NotSettingsWeather">![String.IsEqual(Container(300).ListItem.Property(widget),Weather) + [!String.IsEqual(Container(300).ListItem.Property(widgetType),Default) + !String.IsEqual(Container(300).ListItem.Property(widgetType),Settings Widget)]] + ![String.IsEqual(Container(300).ListItem.Property(widget),Settings) + [!String.IsEqual(Container(300).ListItem.Property(widgetType),Default) + !String.IsEqual(Container(300).ListItem.Property(widgetType),Weather Widget)]] +  !String.IsEqual(Container(300).ListItem.Property(widgetType),Settings Widget) + !String.IsEqual(Container(300).ListItem.Property(widgetType),Weather Widget)</expression>
    <!--  <expression name="NotSettingsWeather">!String.IsEqual(Container(300).ListItem.Property(widget),Weather) + !String.IsEqual(Container(300).ListItem.Property(widget),Settings) + !String.IsEqual(Container(300).ListItem.Property(widgetType),Settings Widget) + !String.IsEqual(Container(300).ListItem.Property(widgetType),Weather Widget)</expression> -->
     <expression name="tmdbu">String.IsEmpty(Window(Home).Property(TMDbHelper.IsUpdating))</expression>
@@ -44,7 +44,8 @@
     <include file="Includes_OSD.xml" />
     <include file="Includes_Statusbar.xml" />
     <include file="IncludesBingieSearch.xml" />
-    <include file="Includes_Topbar-Netflix.xml" />
+    <include condition="!Skin.HasSetting(DisableNetflixHome)" file="Includes_Topbar.xml" />
+    <include condition="Skin.HasSetting(DisableNetflixHome)" file="Includes_Topbar-Netflix.xml" />
     <include file="Includes_Home.xml" />
     <include file="Includes_VideoLyrics.xml" />
     <include file="Includes_Weather.xml" />

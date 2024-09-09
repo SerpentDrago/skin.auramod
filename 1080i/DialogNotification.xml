@@ -16,6 +16,12 @@
                         <include>Dialog_Notification_Icon</include>
                         <aspectratio>keep</aspectratio>
                         <texture colordiffuse="panel_fg_100">DefaultIconInfo.png</texture>
+                        <bordertexture colordiffuse="dialog_bg_100">DefaultIconInfo.png</bordertexture>
+                    </control>
+                    <control type="image" id="400">
+                        <include>Dialog_Notification_Addon_Icon</include>
+                        <texture diffuse="common/circle.png">$INFO[Control.GetLabel(400)]</texture>
+                        <visible>Skin.HasSetting(EnableNotificationAddonIcon) + !String.StartsWith(Control.GetLabel(400),Default)</visible>
                     </control>
                     <control type="label" id="401">
                         <include>Dialog_Notification_MainLabel</include>

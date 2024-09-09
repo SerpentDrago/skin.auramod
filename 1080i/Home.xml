@@ -10,7 +10,6 @@
   <onload condition="!Skin.HasSetting(SkinHelper.EnableMusicArt)">Skin.SetBool(SkinHelper.EnableMusicArt)</onload>
     <onload condition="Skin.HasSetting(SkinHelper.EnableAnimatedPosters)">Skin.SetBool(SkinHelper.EnableAnimatedPosters)</onload>
     <onload condition="!Skin.HasSetting(SkinHelper.EnableAnimatedPosters)">Skin.Reset(SkinHelper.EnableAnimatedPosters)</onload>
-  <onload condition="!Skin.HasSetting(EnableSearchDefaultKB)">Skin.ToggleSetting(EnableSearchDefaultKB)</onload>
   <onload>ClearProperty(HomeFocus,Home)</onload>
   <onload>AlarmClock(SkinSplashStarted,SetProperty(SkinSplashStarted,1,home),00:01,silent,false)</onload>
   <onload>ClearProperty(WidgetLoading,Home)</onload>
@@ -21,9 +20,13 @@
   <onload condition="!String.IsEmpty(Skin.String(TMDB_Search))">ActivateWindow(1136)</onload>
   <onload condition="!Skin.HasSetting(DisableInfoRatings)">Skin.ToggleSetting(DisableInfoRatings)</onload>
   <onload>Skin.SetString(AddonContainer,false)</onload>
+  <onload condition="!Skin.HasSetting(TMDbHelper.EnableBlur)">Skin.SetBool(TMDbHelper.EnableBlur)</onload>
+  <onload>SetProperty(TMDbHelper.Blur.SourceImage,fanart,Home)</onload>
+  <include>Defs_VideoInfo_WidgetPage_Init</include>
   <onunload>SetProperty(SpotReturnHome,true,Home)</onunload>
   <onunload>ClearProperty(spothubscroll)</onunload>
   <onunload>ClearProperty(TMDBHelper.WidgetContainer)</onunload>
+  <onunload>ClearProperty(Current_Container_Fanart,Home)</onunload>
   <onunload condition="Integer.IsGreater(Container(12341).NumItems,0)">Skin.SetString(similar_movies_traktid,$INFO[Container(12341).ListItem(0).Property(trakt_id)])</onunload>
   <onunload condition="Integer.IsGreater(Container(12341).NumItems,0)">Skin.SetString(similar_movies2_traktid,$INFO[Container(12341).ListItem(2).Property(trakt_id)])</onunload>
   <onunload condition="Integer.IsGreater(Container(12341).NumItems,0)">Skin.SetString(similar_movies_label,$INFO[Container(12341).ListItem(0).Label])</onunload>
@@ -35,6 +38,19 @@
   <onunload>SetProperty(MainMenuPosition,$INFO[Container(300).Position],home)</onunload>
   <onunload>ClearProperty(MainMenuHubFocus,home)</onunload>
   <controls>
+    <control type="list" id="9986">
+      <description>hidden container for global fanart</description>
+      <include>Defs_Offscreen</include>
+      <orientation>vertical</orientation>
+      <itemlayout />
+      <focusedlayout />
+      <content><include>skinshortcuts-template-global-fanart</include></content>
+    </control>
+    <control type="list" id="9987">
+      <description>hidden container for submenu widget count</description>
+      <include>Defs_Hidden_List</include>
+      <content><include>skinshortcuts-submenu</include></content>
+    </control>
     <control type="list" id="9988">
       <description>hidden container for playlist background</description>
       <posx>-20</posx>
@@ -53,6 +69,7 @@
     </control>
     <!--Multi Image fadelabel and Global Background -->
     <include condition="Skin.HasSetting(SkinHelper.EnableExtraFanart)">fanart_multi</include>
+    <include condition="Skin.HasSetting(SkinHelper.EnableExtraFanart)">fanart_multi_container</include>
 <!--    <include condition="Skin.HasSetting(SkinHelper.EnableExtraFanart)">fanart_multi_1505</include> -->
     <include condition="!Skin.HasSetting(DisableAuraHomeLayout) | [Skin.HasSetting(DisableAuraHomeLayout) + Skin.HasSetting(DisableNetflixSubmenuBG)]">Global_Background</include>
     <control type="group"> 

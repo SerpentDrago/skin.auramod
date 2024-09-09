@@ -4500,3 +4500,53 @@ msgstr "Filmes em Destaque"
 msgctxt "#31921"
 msgid "Spotlight TV"
 msgstr "Seriados em Destaque"
+
+#: /1080i/Custom_1158_VideoInfo.xml
+msgctxt "#31922"
+msgid "Enable Previous/Next page buttons in Lists"
+msgstr ""
+
+#: /1080i/Includes_Object.xml
+msgctxt "#31923"
+msgid "Previous page"
+msgstr ""
+
+#: /1080i/Includes_Object.xml
+msgctxt "#31924"
+msgid "Next page"
+msgstr ""
+
+#: /1080i/SkinSettings.xml
+msgctxt "#31925"
+msgid "Enable notification shadow outside player"
+msgstr ""
+
+#: /1080i/SkinSettings.xml
+msgctxt "#31926"
+msgid "Disable Time header in Library Views"
+msgstr ""
+
+#: /1080i/SkinSettings.xml
+msgctxt "#31927"
+msgid "Enable notification icon for addons"
+msgstr ""
+
+#: /1080i/Custom_1158_VideoInfo.xml
+msgctxt "#31928"
+msgid "Configure Cast & More Details"
+msgstr ""
+
+#: /1080i/Custom_1159_CastAndMoreDetails.xml
+msgctxt "#31929"
+msgid "Cast & More Details"
+msgstr ""
+
+#: /1080i/Custom_1159_CastAndMoreDetails.xml
+msgctxt "#31930"
+msgid "Season flags"
+msgstr ""
+
+#: /1080i/Custom_1159_CastAndMoreDetails.xml
+msgctxt "#31931"
+msgid "Episode flags"
+msgstr ""

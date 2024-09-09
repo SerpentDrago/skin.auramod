@@ -6,7 +6,7 @@
     <onload condition="String.IsEmpty(Window.Property(CurrentFocus))">SetProperty(CurrentFocus,$NUMBER[9001])</onload>
     <controls>
 
-        <include>Global_Background</include>
+        <include condition="!Skin.HasSetting(DisableSettingsBackground)">Global_Background</include>
 
         <control type="group">
             <include>Dialog_Settings_Panel</include>
@@ -19,29 +19,6 @@
                     <textcolor>main_fg_30</textcolor>
                 </control>
 
-          <control type="group">
-            <left>0</left>
-            <centertop>50%</centertop>
-            <width>450</width>
-            <height>1200</height>
-	    <visible>!Skin.HasSetting(DisableSettingsBackground)</visible>
-            <control type="image">
-                <include condition="!Skin.HasSetting(DisableShadows)">Defs_Shadow_24</include>
-                <texture border="16" colordiffuse="dialog_bg_100">common/rounded-dialog.png</texture>
-            </control>
-            </control>
-
-          <control type="group">
-            <left>450</left>
-            <centertop>50%</centertop>
-            <width>100%</width>
-            <height>1200</height>
-	    <visible>!Skin.HasSetting(DisableSettingsBackground)</visible>
-            <control type="image">
-                <include condition="!Skin.HasSetting(DisableShadows)">Defs_Shadow_24</include>
-                <texture border="16" colordiffuse="darkgrey">common/rounded-dialog.png</texture>
-            </control>
-            </control>
                 <control type="group">
                     <top>80</top>
                     <height>800</height>
@@ -116,6 +93,7 @@
                             <width>450</width>
                             <include>Defs_Settings_Button</include>
                             <label>10000</label>
+                            <focusedcolor />
                         </control>
 <!--
                          <control type="togglebutton" id="9013" description="Netflix View">
@@ -134,6 +112,7 @@
                             <width>450</width>
                             <include>Defs_Settings_Button</include>
                             <label>$LOCALIZE[31423]</label>
+                            <focusedcolor />
                         </control>
                         <control type="togglebutton" id="9005" description="Views">
                             <onfocus>SetProperty(CurrentFocus,$NUMBER[9005])</onfocus>
@@ -142,6 +121,7 @@
                             <width>450</width>
                             <include>Defs_Settings_Button</include>
                             <label>$LOCALIZE[31502]</label> <!-- Library Views -->
+                            <focusedcolor />
                         </control>
 
                          <control type="togglebutton" id="9014" description="Hubs & Spotlight">
@@ -151,6 +131,7 @@
                             <width>450</width>
                             <include>Defs_Settings_Button</include>
                             <label>$LOCALIZE[31503]</label> <!-- Hubs & Spotlight -->
+                            <focusedcolor />
                         </control>
                          <control type="togglebutton" id="9015" description="My Lists">
                             <onfocus>SetProperty(CurrentFocus,$NUMBER[9015])</onfocus>
@@ -159,6 +140,7 @@
                             <width>450</width>
                             <include>Defs_Settings_Button</include>
                             <label>$LOCALIZE[31504]</label> <!-- My Lists -->
+                            <focusedcolor />
                         </control>
                          <control type="togglebutton" id="9012" description="General Mods">
                             <onfocus>SetProperty(CurrentFocus,$NUMBER[9012])</onfocus>
@@ -167,6 +149,7 @@
                             <width>450</width>
                             <include>Defs_Settings_Button</include>
                             <label>$LOCALIZE[31436]</label>
+                            <focusedcolor />
                         </control>
 
                         <control type="togglebutton" id="9007" description="OSD">
@@ -176,6 +159,7 @@
                             <width>450</width>
                             <include>Defs_Settings_Button</include>
                             <label>$LOCALIZE[31270]</label> <!-- Video / Music OSD -->
+                            <focusedcolor />
                         </control>
                         <control type="togglebutton" id="9002" description="Background">
                             <onfocus>SetProperty(CurrentFocus,$NUMBER[9002])</onfocus>
@@ -184,6 +168,7 @@
                             <width>450</width>
                             <include>Defs_Settings_Button</include>
                             <label>$LOCALIZE[31110]</label> <!-- Background -->
+                            <focusedcolor />
                         </control>
 
                         <control type="togglebutton" id="9003" description="Background Effects">
@@ -193,6 +178,7 @@
                             <width>450</width>
                             <include>Defs_Settings_Button</include>
                             <label>$LOCALIZE[31339]</label>
+                            <focusedcolor />
                         </control>
 
                         <control type="togglebutton" id="9004" description="Colors">
@@ -202,6 +188,7 @@
                             <width>450</width>
                             <include>Defs_Settings_Button</include>
                             <label>$LOCALIZE[31021]</label>
+                            <focusedcolor />
                         </control>
 
                         <control type="togglebutton" id="9006" description="Miscellaneous">
@@ -211,6 +198,7 @@
                             <width>450</width>
                             <include>Defs_Settings_Button</include>
                             <label>$LOCALIZE[31024]</label>
+                            <focusedcolor />
                         </control>
 
                         <control type="togglebutton" id="90081" description="Dependencies">
@@ -220,6 +208,7 @@
                             <width>450</width>
                             <include>Defs_Settings_Button</include>
                             <label>$LOCALIZE[31505]</label> <!-- API Settings -->
+                            <focusedcolor />
                         </control>
 
                         <control type="togglebutton" id="9008" description="Dependencies">
@@ -229,6 +218,7 @@
                             <width>450</width>
                             <include>Defs_Settings_Button</include>
                             <label>$LOCALIZE[24996]</label>
+                            <focusedcolor />
                         </control>
 
                         <control type="togglebutton" id="9009" description="Reset Backup">
@@ -238,6 +228,7 @@
                             <width>450</width>
                             <include>Defs_Settings_Button</include>
                             <label>$LOCALIZE[31030]</label>
+                            <focusedcolor />
                         </control>
                     </control>
 
@@ -701,6 +692,13 @@
                             <onclick>Skin.ToggleSetting(DisableSettingsBackground)</onclick>
                         </control>
 
+                    <control type="radiobutton" id="9207" description="Extra fanart">
+                        <visible>Integer.IsEqual(Window.Property(CurrentFocus),9002)</visible>
+                        <include>Defs_Settings_Button</include>
+                        <label>$LOCALIZE[31014]</label> <!-- Extra fanart -->
+                        <onclick>Skin.ToggleSetting(SkinHelper.EnableExtraFanart)</onclick>
+                        <selected>Skin.HasSetting(SkinHelper.EnableExtraFanart)</selected>
+                    </control>
                     <control type="button" id="9206" description="Set Timer Per Image">
                         <visible>Integer.IsEqual(Window.Property(CurrentFocus),9002)</visible>
                         <include>Defs_Settings_Button</include>
@@ -716,6 +714,19 @@
                         <onclick>SetProperty(Dialog.4.Label,$LOCALIZE[31478])</onclick>
                         <onclick>SetProperty(Dialog.4.BuiltIn,Skin.SetString(AutoScroll,$LOCALIZE[31478]))</onclick>
                         <onclick>RunScript(script.toolbox,info=selectdialog,header=$LOCALIZE[31128])</onclick>
+                    </control>
+                    <control type="button" id="9208">
+                        <visible>Integer.IsEqual(Window.Property(CurrentFocus),9002)</visible>
+                        <label>$LOCALIZE[31321]</label>
+                        <include>Defs_Settings_Button</include>
+                        <onclick>Skin.Reset(NoFanart)</onclick>
+                        <onclick>Skin.Reset(ViewNoFanart)</onclick>
+                        <onclick>Skin.Reset(fanart.fallback)</onclick>
+                        <onclick>Skin.Reset(global.showvideo)</onclick>
+                        <onclick>Skin.Reset(global.showvisualisation)</onclick>
+                        <onclick>Skin.Reset(DisableSettingsBackground)</onclick>
+                        <onclick>Skin.Reset(SkinHelper.EnableExtraFanart)</onclick>
+                        <onclick>Skin.Reset(AutoScroll)</onclick>
                     </control>
 
                         <!-- ================== -->
@@ -806,6 +817,14 @@
                             <label>$LOCALIZE[31318]</label>
                             <selected>!Skin.HasSetting(DisableShadows)</selected>
                             <onclick>Skin.ToggleSetting(DisableShadows)</onclick>
+                        </control>
+
+                        <control type="radiobutton" id="9310" description="Enable notification shadow outside player">
+                            <visible>Integer.IsEqual(Window.Property(CurrentFocus),9003)</visible>
+                            <include>Defs_Settings_Button</include>
+                            <label>$LOCALIZE[31925]</label>
+                            <selected>Skin.HasSetting(ForceDialogShadow)</selected>
+                            <onclick>Skin.ToggleSetting(ForceDialogShadow)</onclick>
                         </control>
 
                         <control type="button" id="9309">
@@ -1013,6 +1032,13 @@
                             <selected>Skin.HasSetting(EnableTrailerOnDown)</selected>
                             <onclick>Skin.ToggleSetting(EnableTrailerOnDown)</onclick>
                         </control>
+                        <control type="radiobutton" id="9641" description="Disable Time header in Library Views">
+                            <visible>Integer.IsEqual(Window.Property(CurrentFocus),9005)</visible>
+                            <include>Defs_Settings_Button</include>
+                            <label> - $LOCALIZE[31926]</label> <!-- Disable Time header in Library Views -->
+                            <selected>Skin.HasSetting(DisableLibraryTimeHeader)</selected>
+                            <onclick>Skin.ToggleSetting(DisableLibraryTimeHeader)</onclick>
+                        </control>
  
                         <control type="radiobutton" id="9658" description="Enable Low Spotlight Info">
                             <visible>Integer.IsEqual(Window.Property(CurrentFocus),9005)</visible>
@@ -1103,13 +1129,6 @@
                         <!-- ============= -->
                         <!-- Miscellaneous -->
                         <!-- ============= -->
-                        <control type="radiobutton" id="9699" description="Aura Mode Widget Gap">
-                            <visible>Integer.IsEqual(Window.Property(CurrentFocus),9006)</visible>
-                            <include>Defs_Settings_Button</include>
-                            <label>$LOCALIZE[31553]</label> <!-- Disable Aura Home Widget gap -->
-                            <selected>Skin.HasSetting(DisableAuraModeGap)</selected>
-                            <onclick>Skin.ToggleSetting(DisableAuraModeGap)</onclick>
-                        </control>
                         <control type="radiobutton" id="96991" description="AuraMod Settings Style">
                             <visible>Integer.IsEqual(Window.Property(CurrentFocus),9006)</visible>
                             <include>Defs_Settings_Button</include>
@@ -1160,6 +1179,14 @@
                             <label2>$INFO[Skin.String(loadingspinner.icon)]</label2>
                             <enable>Skin.HasSetting(EnableDefaultSpinner)</enable>
                             <onclick>RunScript(script.skin.helper.service,action=selectimage,skinstring=loadingspinner.icon)</onclick>
+                        </control>
+
+                        <control type="radiobutton" id="9604" description="Enable notification icon for addons">
+                            <visible>Integer.IsEqual(Window.Property(CurrentFocus),9006)</visible>
+                            <include>Defs_Settings_Button</include>
+                            <label>$LOCALIZE[31927]</label>
+                            <selected>Skin.HasSetting(EnableNotificationAddonIcon)</selected>
+                            <onclick>Skin.ToggleSetting(EnableNotificationAddonIcon)</onclick>
                         </control>
 
                         <control type="radiobutton" id="9605" description="Kiosk Mode">

@@ -14,20 +14,24 @@
     </include>
 
   <include name="spotlight_animations">
-        <animation effect="slide" start="0,0" end="0,500" time="0" reversible="false" condition="Skin.HasSetting(EnableSpotlight) + [$EXP[TVSpotlight] | $EXP[MovieSpotlight] | $EXP[LiveTVSpotlight]] + $EXP[HomeSpotFocusContainers]">Conditional</animation>
-        <animation effect="slide" start="0,0" end="0,20" time="0" reversible="false" condition="Skin.HasSetting(EnableSpotlight) + !Skin.HasSetting(DisableMenuHor) + [$EXP[TVSpotlight] | $EXP[MovieSpotlight] | $EXP[LiveTVSpotlight]] + $EXP[HomeSpotFocusContainers]">Conditional</animation>
-        <animation effect="slide" start="0,0" end="0,40" time="0" reversible="false" condition="!Skin.HasSetting(DisableAuraModeGap) + !Skin.HasSetting(DisableMenuHor) + Skin.HasSetting(EnableSpotlight) + [$EXP[TVSpotlight] | $EXP[MovieSpotlight] | $EXP[LiveTVSpotlight]] + $EXP[HomeSpotFocusContainers]">Conditional</animation>
-        <animation effect="slide" start="0,0" end="0,40" time="0" reversible="false" condition="Skin.HasSetting(DisableAuraModeGap) + !Skin.HasSetting(DisableMenuHor) + Skin.HasSetting(EnableSpotlight) + [$EXP[TVSpotlight] | $EXP[MovieSpotlight] | $EXP[LiveTVSpotlight]] + $EXP[HomeSpotFocusContainers]">Conditional</animation>
-        <animation effect="slide" start="0,0" end="0,420" time="0" reversible="false" condition="Skin.HasSetting(EnableSpotlight) + [$EXP[NextUpTVSpotlight]] + $EXP[HomeSpotFocusContainers]">Conditional</animation>
-        <animation effect="slide" start="0,0" end="0,150" time="0" reversible="false" condition="Skin.HasSetting(EnableSpotlight) + [$EXP[TVSpotlight] | $EXP[MovieSpotlight] | $EXP[LiveTVSpotlight]] + $EXP[HomeSpotFocusContainers]">Conditional</animation>
+        <animation effect="slide" start="0,0" end="0,640" time="0" reversible="false" condition="Skin.HasSetting(DisableMenuHor) + [$EXP[TVSpotlight] | $EXP[MovieSpotlight] | $EXP[LiveTVSpotlight]] + $EXP[HomeSpotFocusContainers]">Conditional</animation>
+        <animation effect="slide" start="0,0" end="0,680" time="0" reversible="false" condition="!Skin.HasSetting(DisableMenuHor) + [$EXP[TVSpotlight] | $EXP[MovieSpotlight] | $EXP[LiveTVSpotlight]] + $EXP[HomeSpotFocusContainers]">Conditional</animation>
+        <animation effect="slide" start="0,0" end="0,420" time="0" reversible="false" condition="[$EXP[NextUpTVSpotlight]] + $EXP[HomeSpotFocusContainers]">Conditional</animation>
         <!--Slide Submenu + Widgets up when Spotlights enabled and Widgets focused. -->
-        <animation effect="slide" start="0,0" end="0,-500" time="700" tween="linear" reversible="true" condition="Skin.HasSetting(EnableSpotlight) + [$EXP[TVSpotlight] | $EXP[MovieSpotlight] | $EXP[LiveTVSpotlight]] + $EXP[HomeSpotscrolldown]">Conditional</animation>
-        <animation effect="slide" start="0,0" end="0,-20" time="700" tween="linear" reversible="true" condition="Skin.HasSetting(DisableAuraModeGap) + Skin.HasSetting(EnableSpotlight) + !Skin.HasSetting(DisableMenuHor) + [$EXP[TVSpotlight] | $EXP[MovieSpotlight] | $EXP[LiveTVSpotlight]] + $EXP[HomeSpotscrolldown]">Conditional</animation>
-        <animation effect="slide" start="0,0" end="0,-40" time="700" tween="linear" reversible="true" condition="!Skin.HasSetting(DisableAuraModeGap) + !Skin.HasSetting(DisableMenuHor) + Skin.HasSetting(EnableSpotlight) + [$EXP[TVSpotlight] | $EXP[MovieSpotlight] | $EXP[LiveTVSpotlight]] + $EXP[HomeSpotscrolldown]">Conditional</animation>
-        <animation effect="slide" start="0,0" end="0,-40" time="700" tween="linear" reversible="true" condition="Skin.HasSetting(DisableAuraModeGap) + !Skin.HasSetting(DisableMenuHor) + Skin.HasSetting(EnableSpotlight) + [$EXP[TVSpotlight] | $EXP[MovieSpotlight] | $EXP[LiveTVSpotlight]] + $EXP[HomeSpotscrolldown]">Conditional</animation>
-        <animation effect="slide" start="0,0" end="0,-450" time="700" tween="linear" reversible="true" condition="Skin.HasSetting(EnableSpotlight) + [$EXP[NextUpTVSpotlight]] + $EXP[HomeSpotscrolldown]">Conditional</animation>
-        <animation effect="slide" start="0,0" end="0,-150" time="700" tween="linear" reversible="true" condition="Skin.HasSetting(EnableSpotlight) + [$EXP[TVSpotlight] | $EXP[MovieSpotlight] | $EXP[LiveTVSpotlight]] + $EXP[HomeSpotscrolldown]">Conditional</animation>
+        <animation effect="slide" start="0,0" end="0,-750" time="700" tween="linear" reversible="true" condition="Skin.HasSetting(DisableMenuHor) + [$EXP[TVSpotlight] | $EXP[MovieSpotlight] | $EXP[LiveTVSpotlight]] + $EXP[HomeSpotscrolldown]">Conditional</animation>
+        <animation effect="slide" start="0,0" end="0,-680" time="700" tween="linear" reversible="true" condition="!Skin.HasSetting(DisableMenuHor) + [$EXP[TVSpotlight] | $EXP[MovieSpotlight] | $EXP[LiveTVSpotlight]] + $EXP[HomeSpotscrolldown]">Conditional</animation>
+        <animation effect="slide" start="0,0" end="0,-450" time="700" tween="linear" reversible="true" condition="[$EXP[NextUpTVSpotlight]] + $EXP[HomeSpotscrolldown]">Conditional</animation>
  </include>
+
+ <include name="widget_animations">
+       <animation effect="slide" start="0,0" end="0,750" time="0" reversible="false" condition="Skin.HasSetting(DisableMenuHor) + [$EXP[TVSpotlight] | $EXP[MovieSpotlight] | $EXP[LiveTVSpotlight]] + $EXP[HomeSpotFocusContainers]">Conditional</animation>
+       <animation effect="slide" start="0,0" end="0,650" time="0" reversible="false" condition="!Skin.HasSetting(DisableMenuHor) + [$EXP[TVSpotlight] | $EXP[MovieSpotlight] | $EXP[LiveTVSpotlight]] + $EXP[HomeSpotFocusContainers]">Conditional</animation>
+       <animation effect="slide" start="0,0" end="0,420" time="0" reversible="false" condition="[$EXP[NextUpTVSpotlight]] + $EXP[HomeSpotFocusContainers]">Conditional</animation>
+       <!--Slide Submenu + Widgets up when Spotlights enabled and Widgets focused. -->
+       <animation effect="slide" start="0,0" end="0,-750" time="700" tween="linear" reversible="true" condition="Skin.HasSetting(DisableMenuHor) + [$EXP[TVSpotlight] | $EXP[MovieSpotlight] | $EXP[LiveTVSpotlight]] + $EXP[HomeSpotscrolldown]">Conditional</animation>
+       <animation effect="slide" start="0,0" end="0,-650" time="700" tween="linear" reversible="true" condition="!Skin.HasSetting(DisableMenuHor) + [$EXP[TVSpotlight] | $EXP[MovieSpotlight] | $EXP[LiveTVSpotlight]] + $EXP[HomeSpotscrolldown]">Conditional</animation>
+       <animation effect="slide" start="0,0" end="0,-450" time="700" tween="linear" reversible="true" condition="[$EXP[NextUpTVSpotlight]] + $EXP[HomeSpotscrolldown]">Conditional</animation>
+</include>
 
   <include name="showcase_animations">
     <param name="id" default="$PARAM[id]" />

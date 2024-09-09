@@ -257,7 +257,7 @@
                         <font>font_small</font>
                         <animation effect="slide" end="8" condition="String.IsEmpty(ListItem.Overlay)">Conditional</animation>
                         <label>$INFO[ListItem.Label]</label>
-                        <visible>[Container.Content(movies) + String.IsEmpty(ListItem.Year) + !ListItem.IsParentFolder] | Container.Content(episodes)</visible>
+                        <visible>[Container.Content(movies) + String.IsEmpty(ListItem.Year) + !ListItem.IsParentFolder] | [Container.Content(episodes) + !ListItem.IsParentFolder]</visible>
                     </control>
                     <!-- Label without HDSD or Year -->
                     <control type="label">
@@ -498,7 +498,7 @@
                                 <font>font_small</font>
                                 <animation effect="slide" end="8" condition="String.IsEmpty(ListItem.Overlay)">Conditional</animation>
                                 <label>$INFO[ListItem.Label]</label>
-                                <visible>[Container.Content(movies) + String.IsEmpty(ListItem.Year) + !ListItem.IsParentFolder] | Container.Content(episodes)</visible>
+                                <visible>[Container.Content(movies) + String.IsEmpty(ListItem.Year) + !ListItem.IsParentFolder] | [Container.Content(episodes) + !ListItem.IsParentFolder]</visible>
                             </control>
                             <!-- Label without HDSD or Year -->
                             <control type="label">

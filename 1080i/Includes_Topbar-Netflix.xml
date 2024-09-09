@@ -170,8 +170,6 @@
         <control type="group">
             <visible>!$EXP[Exp_Info_Visible]</visible>
             <visible allowhiddenfocus="true">!Control.HasFocus(9602)</visible>
-            <!-- Darker bar when scrolling home -->
-            <include condition="Window.IsVisible(Home)">Topbar_Home_Dim</include>
             <control type="group">
                 <top>30</top>
                 <animation type="Conditional" condition="Control.IsVisible(430)" reversible="false">
@@ -374,6 +372,7 @@
                             </control>
                             <visible>Weather.IsFetched</visible>
                             <visible>!Player.HasMedia | [Window.IsVisible(script-script.extendedinfo-DialogVideoInfo.xml) | Window.IsVisible(script-script.extendedinfo-DialogInfo.xml) | Window.IsVisible(DialogVideoInfo.xml) | Window.IsVisible(DialogMusicInfo.xml) | Window.IsVisible(DialogAddonInfo.xml)] | [Control.HasFocus(300) + !Window.IsVisible(Home)]</visible>
+                            <visible>!Skin.HasSetting(DisableLibraryTimeHeader)</visible>
                         </control>
                         <control type="label">
                             <visible>!Control.HasFocus(60)</visible>
@@ -383,6 +382,7 @@
                             <label>$INFO[Weather.Temperature]</label>
                             <visible>Weather.IsFetched</visible>
                             <visible>!Player.HasMedia | [Window.IsVisible(script-script.extendedinfo-DialogVideoInfo.xml) | Window.IsVisible(script-script.extendedinfo-DialogInfo.xml) | Window.IsVisible(DialogVideoInfo.xml) | Window.IsVisible(DialogMusicInfo.xml) | Window.IsVisible(DialogAddonInfo.xml)] | [Control.HasFocus(300) + !Window.IsVisible(Home)]</visible>
+                            <visible>!Skin.HasSetting(DisableLibraryTimeHeader)</visible>
                         </control>
                         <control type="label">
                             <visible>!Control.HasFocus(60)</visible>
@@ -393,6 +393,7 @@
                             <visible>!String.IsEmpty(Weather.Temperature)</visible>
                             <visible>Weather.IsFetched</visible>
                             <visible>!Player.HasMedia | [Window.IsVisible(script-script.extendedinfo-DialogVideoInfo.xml) | Window.IsVisible(script-script.extendedinfo-DialogInfo.xml) | Window.IsVisible(DialogVideoInfo.xml) | Window.IsVisible(DialogMusicInfo.xml) | Window.IsVisible(DialogAddonInfo.xml)] | [Control.HasFocus(300) + !Window.IsVisible(Home)]</visible>
+                            <visible>!Skin.HasSetting(DisableLibraryTimeHeader)</visible>
                         </control>
                         <control type="label">
                             <width>auto</width>
@@ -400,6 +401,7 @@
                             <textcolor>main_fg_100</textcolor>
                             <label>$INFO[System.Time]</label>
                             <visible>!Control.HasFocus(60)</visible>
+                            <visible>!Skin.HasSetting(DisableLibraryTimeHeader)</visible>
                         </control>
                         <control type="label">
                             <visible>Control.HasFocus(60)</visible>
@@ -941,6 +943,7 @@
                                 <texture colordiffuse="main_fg_100">$INFO[Weather.FanartCode,resource://resource.images.weathericons.white/,.png]</texture>
                             </control>
                             <visible>Weather.IsFetched</visible>
+                            <visible>!Skin.HasSetting(DisableLibraryTimeHeader)</visible>
                         </control>
                         <control type="label">
                             <width>auto</width>
@@ -948,6 +951,7 @@
                             <textcolor>main_fg_100</textcolor>
                             <label>$INFO[Weather.Temperature]</label>
                             <visible>Weather.IsFetched</visible>
+                            <visible>!Skin.HasSetting(DisableLibraryTimeHeader)</visible>
                         </control>
                         <control type="label">
                             <width>auto</width>
@@ -956,12 +960,14 @@
                             <label>  |  </label>
                             <visible>!String.IsEmpty(Weather.Temperature)</visible>
                             <visible>Weather.IsFetched</visible>
+                            <visible>!Skin.HasSetting(DisableLibraryTimeHeader)</visible>
                         </control>
                         <control type="label">
                             <width>auto</width>
                             <font>font_small</font>
                             <textcolor>main_fg_100</textcolor>
                             <label>$INFO[System.Time]</label>
+                            <visible>!Skin.HasSetting(DisableLibraryTimeHeader)</visible>
                         </control>
                     </control>
                 </control>

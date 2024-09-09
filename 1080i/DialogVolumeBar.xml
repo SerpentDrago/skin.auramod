@@ -26,7 +26,7 @@
             </control>
         </control>
         <control type="image">
-            <include>Defs_ShadowBack_Fullscreen_volume</include>
+            <include>Defs_ShadowBack_Fullscreen</include>
             <visible>!Player.Muted</visible>
         </control>
         <control type="group">

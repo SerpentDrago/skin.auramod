@@ -31,7 +31,6 @@
     <control type="group">
       <visible allowhiddenfocus="true">!$EXP[Exp_HideFurniture]</visible>
       <control type="group">
-	<include>spotlight_animations</include>
 
         <include>Defs_InfoDialog_Visible</include>
         <control type="group">
@@ -39,12 +38,12 @@
           <right>-400</right>
           <control type="group" id="3000">
             <left>0</left>
-            <top>-50</top>
+            <top>0</top>
             <bottom>0</bottom>
             <control type="group">
+              <include>spotlight_animations</include>
               <!-- Spotlight Multi Widget -->
               <control type="group">
-                <top>20</top>
                 <left>70</left>
                 <animation effect="slide" start="0,0" end="0,110" time="0" condition="Skin.HasSetting(DisableMenuHor)">Conditonal</animation>
                 <include content="Spotlight_MultiWidget" condition="Skin.HasSetting(EnableSpotlight) + Skin.HasSetting(EnableMultiWidgetSpotlight)">
@@ -61,7 +60,6 @@
                 </include>
               </control>
               <control type="group">
-                <top>20</top>
                 <include condition="Skin.HasSetting(EnableSpotlight) + Skin.HasSetting(EnableMultiWidgetSpotlight)">Spotlight_MultiWidget_Movies_cast</include>
                 <include condition="Skin.HasSetting(EnableSpotlight) + Skin.HasSetting(EnableTVMultiWidgetSpotlight)">Spotlight_MultiWidget_TVShows_cast</include>
               </control>
@@ -69,7 +67,6 @@
               <!-- Spotlight Widget -->
               <control type="group">
                 <animation effect="slide" start="0,0" end="0,40" time="0" condition="Skin.HasSetting(DisableMenuHor)">Conditonal</animation>
-                <top>20</top>
               <control type="group">
                 <left>60</left>
                 <include content="Spotlight_AuraWidget" condition="Skin.HasSetting(EnableSpotlight) + !Skin.HasSetting(EnableTVWidgetSpotlight)">
@@ -139,7 +136,6 @@
             </control>
             <!-- Weather Widget -->
             <control type="group">
-              <animation effect="slide" start="0,0" end="0,60" time="0" condition="Skin.HasSetting(DisableMenuHor)">Conditonal</animation>
               <control type="button" id="9966">
                 <onleft>300</onleft>
                 <onright>300</onright>
@@ -173,7 +169,6 @@
     <control type="grouplist" id="330">
       <top>0</top>
       <left>60</left>
-      <height>1120</height>
       <orientation>vertical</orientation>
       <itemgap>0</itemgap>
       <usecontrolcoords>true</usecontrolcoords>
@@ -195,88 +190,25 @@
       <onleft condition="Skin.HasSetting(DisableMenuHor) + String.IsEqual(Container(300).ListItem.Property(menulist),Movie Menu) + String.IsEqual(Container(300).ListItem.Property(menuonleft),true)">SetFocus(401,0)</onleft>
       <ondown>3337</ondown>
       <animation effect="slide" end="40,0" time="200" condition="!Skin.HasSetting(DisableMenuHor) + !Skin.HasSetting(DisableMenuVertLabelOnly) + !Skin.HasSetting(DisableMenuVertLabel) + [Control.HasFocus(300) | !Skin.HasSetting(DisableNetflixHomeSidemenuHide)]">Conditional</animation>
-      <animation effect="slide" end="0,10" time="0" condition="Skin.HasSetting(DisableMenuHor)">Conditional</animation>
-      <animation effect="slide" end="0,0" time="0" condition="$EXP[noSubMenu] + Skin.HasSetting(DisableMenuHor)">Conditional</animation>
-      <animation effect="slide" end="0,-70" time="0" condition="$EXP[noSubMenu] + Skin.HasSetting(DisableMenuHor) + [$EXP[TVSpotlight] + Skin.HasSetting(EnableTVFullSpotlight) | $EXP[MovieSpotlight] + Skin.HasSetting(EnableFullSpotlight)]">Conditional</animation>
-      <animation effect="slide" end="0,-40" time="0" condition="!$EXP[noSubMenu] + Skin.HasSetting(DisableMenuHor) + [$EXP[TVSpotlight] + Skin.HasSetting(EnableTVFullSpotlight) | $EXP[MovieSpotlight] + Skin.HasSetting(EnableFullSpotlight)]">Conditional</animation>
+      <include>widget_animations</include>
+      <control type="button" id="329" description="Hidden Button">
+        <include>Defs_Offscreen</include>
+        <onfocus>330</onfocus>
+        <visible>false</visible>
+      </control>
       <control type="group" id="331" description="Spacer">
         <height>210</height>
-	<visible>!Skin.HasSetting(DisableAuraModeGap) | Skin.HasSetting(DisableMenuHor)</visible>
-      </control>
-      <control type="group" id="337" description="Spacer">
-        <height>200</height>
-        <visible>Skin.HasSetting(DisableAuraModeGap) + !Skin.HasSetting(DisableMenuHor)</visible>
-      </control>
-      <control type="group" id="338" description="Spacer">
-        <height>50</height>
-        <visible>Skin.HasSetting(DisableAuraModeGap) + !Skin.HasSetting(DisableMenuHor) + !$EXP[LiveTVSpotlight] + !$EXP[TVSpotlight] + !$EXP[MovieSpotlight]</visible>
       </control>
       <control type="group" id="332" description="Spacer">
-        <height>50</height>
-        <visible>!Skin.HasSetting(SubmenuLabel)</visible>
-      </control>
-      <control type="group" id="333" description="Spacer">
         <height>110</height>
-        <visible>Skin.HasSetting(DisableMenuHor)</visible>
-      </control>
-      <control type="group" id="347" description="Spacer">
-        <height>50</height>
-        <visible>$EXP[noSubMenu] + Skin.HasSetting(DisableMenuHor)</visible>
-      </control>
-      <control type="group" id="334" description="Spacer">
-        <height>-875</height>
-        <visible>$EXP[noSubMenu] + [[!Skin.HasSetting(DisableMenuHor) + !$EXP[LiveTVSpotlight]] | Skin.HasSetting(DisableMenuHor)]</visible>
-      </control>
-      <control type="group" id="339" description="Spacer">
-        <height>-25</height>
-        <visible>$EXP[noSubMenu] + Skin.HasSetting(DisableAuraModeGap) + !Skin.HasSetting(DisableMenuHor) + [$EXP[LiveTVSpotlight] | $EXP[TVSpotlight] | $EXP[MovieSpotlight]]</visible>
-      </control>
-      <control type="group" id="335" description="Spacer">
-        <height>50</height>
-        <visible>$EXP[noSubMenu] + Skin.HasSetting(DisableAuraModeGap) + !Skin.HasSetting(DisableMenuHor) + [!$EXP[LiveTVSpotlight] | !$EXP[TVSpotlight] + Control.IsVisible(1505) | !$EXP[MovieSpotlight] + Control.IsVisible(1506)]</visible>
-      </control>
-      <control type="group" id="340" description="Spacer">
-        <height>50</height>
-        <visible>!Skin.HasSetting(HideSubmenuWidget) + $EXP[noSubMenu] + Skin.HasSetting(DisableAuraModeGap) + !Skin.HasSetting(DisableMenuHor) + !$EXP[LiveTVSpotlight] + !$EXP[TVSpotlight] + !$EXP[MovieSpotlight]</visible>
-      </control>
-      <control type="group" id="341" description="Spacer">
-        <height>70</height>
-        <visible>!Skin.HasSetting(HideSubmenuWidget) + !Skin.HasSetting(DisableAuraModeGap) + !Skin.HasSetting(DisableMenuHor) + !Skin.HasSetting(EnableSpotlight)</visible>
-      </control>
-      <control type="group" id="342" description="Spacer">
-        <height>855</height>
-        <visible>Skin.HasSetting(HideSubmenuWidget)</visible>
-      </control>
-      <control type="group" id="343" description="Spacer">
-        <height>20</height>
-        <visible>!Skin.HasSetting(HideSubmenuWidget) + $EXP[noSubMenu] + !Skin.HasSetting(SubmenuLabel) + Skin.HasSetting(DisableMenuHor)</visible>
-      </control>
-      <control type="group" id="344" description="Spacer">
-        <height>30</height>
-        <visible>!Skin.HasSetting(HideSubmenuWidget) + $EXP[noSubMenu] + !Skin.HasSetting(SubmenuLabel) + !Skin.HasSetting(DisableMenuHor)</visible>
-      </control>
-      <control type="group" id="345" description="Spacer">
-        <height>-40</height>
-        <visible>!Skin.HasSetting(HideSubmenuWidget) + Skin.HasSetting(DisableMenuHor) + [$EXP[TVSpotlight] + Skin.HasSetting(EnableTVFullSpotlight) | $EXP[MovieSpotlight] + Skin.HasSetting(EnableFullSpotlight)]</visible>
-      </control>
-      <control type="group" id="346" description="Spacer">
-        <height>-60</height>
-        <visible>!Skin.HasSetting(HideSubmenuWidget) + !$EXP[noSubMenu] + Skin.HasSetting(DisableMenuHor) + [$EXP[TVSpotlight] + Skin.HasSetting(EnableTVFullSpotlight) | $EXP[MovieSpotlight] + Skin.HasSetting(EnableFullSpotlight)]</visible>
-      </control>
-      <control type="group" id="357" description="Spacer">
-        <height>40</height>
-        <visible>!Skin.HasSetting(HideSubmenuWidget) + !$EXP[noSubMenu] + Skin.HasSetting(DisableMenuHor) + !Skin.HasSetting(DisableCatlabel) + [!$EXP[TVSpotlight] | !$EXP[MovieSpotlight]]</visible>
-      </control>
-      <control type="group" id="358" description="Spacer">
-        <height>80</height>
-        <visible>!Skin.HasSetting(HideSubmenuWidget) + Skin.HasSetting(EnableHomeHeader) + !Skin.HasSetting(DisableMenuHor) + ![$EXP[TVSpotlight] | $EXP[MovieSpotlight]]</visible>
+        <visible>Skin.HasSetting(DisableMenuHor) + [!$EXP[TVSpotlight] + !$EXP[MovieSpotlight] + !$EXP[LiveTVSpotlight]]</visible>
       </control>
       <include content="WidgetSubmenu" condition="!Skin.HasSetting(HideSubmenuWidget)">
         <param name="id" value="30222" />
         <param name="submenu" value="true" />
         <param name="aspect" value="$LOCALIZE[31263]" />
         <param name="label" value="$VAR[catlabel]" />
-        <param name="visible" value="String.IsEqual(Container(300).ListItem.Property(hasSubmenu),true)" />
+        <param name="visible" value="String.IsEqual(Container(300).ListItem.Property(hasSubmenu),true) | !Integer.IsGreater(Container(9987).NumItems,0)" />
       </include>
       <include>skinshortcuts-template-vertical-submenu</include>
       <control type="group" id="336">
@@ -380,6 +312,7 @@
         </control>
       </control>
       <control type="$PARAM[controltype]" id="$PARAM[id]">
+        <onfocus>$PARAM[onfocus]</onfocus>
         <animation effect="slide" end="-50,0" time="400" reversible="false" condition="!Control.HasFocus(300) + $PARAM[landscapewidebg] + $PARAM[landscapewidecondition]">Conditional</animation>
         <include content="left" condition="![$PARAM[landscapewidecondition] + $PARAM[landscapewidebg]]">
           <param name="left" value="-55" />
@@ -426,8 +359,7 @@
         <include condition="$PARAM[submenucondition] + Skin.HasSetting(SubmenuLabel)">Widget_Items_SubmenuWidget_Big_Height</include>
         <include condition="$PARAM[submenucondition] + !Skin.HasSetting(SubmenuLabel)">Widget_Items_SubmenuWidget_Big_Height_small</include>
         <include condition="$PARAM[landscapecondition] + !Skin.HasSetting(SubmenuLabel)">Widget_Items_Landscape_Big_Height_small</include>
-        <include condition="$PARAM[landscapecondition] + Skin.HasSetting(SubmenuLabel) + !Skin.HasSetting(WidgetLabelsBelow) + !Skin.HasSetting(EnableSpotlight)">Widget_Items_Landscape_Big_Height</include>
-        <include condition="$PARAM[landscapecondition] + Skin.HasSetting(SubmenuLabel) + !Skin.HasSetting(WidgetLabelsBelow) + Skin.HasSetting(EnableSpotlight)">Widget_Items_Landscape_Big_Height_Spotlight</include>
+        <include condition="$PARAM[landscapecondition] + Skin.HasSetting(SubmenuLabel) + !Skin.HasSetting(WidgetLabelsBelow)">Widget_Items_Landscape_Big_Height</include>
         <include condition="$PARAM[landscapecondition] + Skin.HasSetting(SubmenuLabel) + Skin.HasSetting(WidgetLabelsBelow)">Widget_Items_Landscape_Big_Height_Label</include>
         <include condition="$PARAM[postercondition] + Skin.HasSetting(SubmenuLabel) + !Skin.HasSetting(WidgetLabelsBelow)">Widget_Items_Poster_Big</include>
         <include condition="$PARAM[postercondition] + !Skin.HasSetting(SubmenuLabel)">Widget_Items_Poster_Big_small</include>
@@ -505,11 +437,8 @@
   <include name="Widget_Items_Submenu_Height">
     <height>widget_submenu_spacer</height>
   </include>
-  <include name="Widget_Items_Submenu_Big_Height_nogap">
-    <height>420</height>
-  </include>
   <include name="Widget_Items_Submenu_Big_Height">
-    <height>440</height>
+    <height>420</height>
   </include>
   <include name="Widget_Items_Square_Big_Height_small">
     <height>565</height>
@@ -553,14 +482,11 @@
   <include name="Widget_Items_Landscape_Big_Height">
     <height>570</height>
   </include>
-  <include name="Widget_Items_Landscape_Big_Height_Spotlight">
-    <height>580</height>
-  </include>
   <include name="Widget_Items_LandscapeWide">
-    <height>700</height>
+    <height>670</height>
   </include>
   <include name="Widget_Items_LandscapeWide_small">
-    <height>755</height>
+    <height>710</height>
   </include>
   <include name="Widget_Items_Landscape_Big_Height_Label">
     <height>695</height>
@@ -589,6 +515,27 @@
   <include name="Widget_Items_Poster_Big_small">
     <height>645</height>
   </include>
+  <include name="Widget_Submenu_Height_small">
+    <height>410</height>
+  </include>
+  <include name="Widget_Submenu_Height_medium">
+    <height>400</height>
+  </include>
+  <include name="Widget_Submenu_Height_large">
+    <height>430</height>
+  </include>
+  <include name="Widget_Submenu_widget_gap">
+    <top>-640</top>
+  </include>
+  <include name="Widget_Submenu_widget_gap_small">
+    <top>-605</top>
+  </include>
+  <include name="Widget_Submenu_widget_top">
+    <top>435</top>
+  </include>
+  <include name="Widget_Submenu_widget_top_small">
+    <top>400</top>
+  </include>
 
   <include name="WidgetSubmenu">
     <param name="submenu" default="false" />
@@ -597,7 +544,8 @@
     <param name="text" default="false" />
     <definition>
       <control type="group" id="2$PARAM[id]">
-        <top>widget_gap</top>
+        <include condition="!Skin.HasSetting(SubmenuLabel)">Widget_Submenu_widget_gap_small</include>
+        <include condition="Skin.HasSetting(SubmenuLabel)">Widget_Submenu_widget_gap</include>
         <left>-55</left>
         <visible>$PARAM[visible]</visible>
         <visible>Integer.IsGreater(Container($PARAM[id]).NumItems,0) | Container($PARAM[id]).IsUpdating</visible>
@@ -619,15 +567,18 @@
         </control>
       </control>
       <control type="list" id="$PARAM[id]">
+       <onfocus>SetProperty(SubmenuFocus,1,Home)</onfocus>
        <onfocus condition="Control.IsVisible(1505)">SetProperty(TMDbHelper.WidgetContainer,1505,Home)</onfocus>
        <onfocus condition="Control.IsVisible(1506)">SetProperty(TMDbHelper.WidgetContainer,1506,Home)</onfocus>
         <onunfocus>ClearProperty(SpotFocus)</onunfocus>
+        <onunfocus>ClearProperty(SubmenuFocus,Home)</onunfocus>
         <left>0</left>
         <movement>2</movement>
-        <top>widget_top</top>
-        <include condition="$PARAM[submenu] + !Skin.HasSetting(SubmenuLabel)">Widget_Items_Submenu_Height</include>
-        <include condition="$PARAM[submenu] + !Skin.HasSetting(DisableAuraModeGap) + Skin.HasSetting(SubmenuLabel)">Widget_Items_Submenu_Big_Height</include>
-        <include condition="$PARAM[submenu] + Skin.HasSetting(DisableAuraModeGap) + Skin.HasSetting(SubmenuLabel)">Widget_Items_Submenu_Big_Height_nogap</include>
+        <include condition="!Skin.HasSetting(SubmenuLabel)">Widget_Submenu_widget_top_small</include>
+        <include condition="Skin.HasSetting(SubmenuLabel)">Widget_Submenu_widget_top</include>
+        <include condition="$PARAM[submenu] + !Skin.HasSetting(SubmenuLabel)">Widget_Submenu_Height_small</include>
+        <include condition="$PARAM[submenu] + Skin.HasSetting(SubmenuLabel) + !Skin.HasSetting(LargeSubmenuLabel)">Widget_Submenu_Height_medium</include>
+        <include condition="$PARAM[submenu] + Skin.HasSetting(LargeSubmenuLabel)">Widget_Submenu_Height_large</include>
         <height>widget_poster_spacer</height>
         <visible>$PARAM[visible]</visible>
         <include content="Widget_Submenu" condition="$PARAM[submenu]">
@@ -681,7 +632,7 @@
           <top>-2</top>
           <left>2</left>
           <textcolor>main_fg_100</textcolor>
-          <label>$PARAM[label] $INFO[Container($PARAM[id]).ListItem.Property(widget)]</label>
+          <label>$PARAM[label]</label>
           <include>Statusbar_Menubar_Items</include>
           <visible>String.StartsWith(Container($PARAM[id]).ListItem.FileNameAndPath,plugin://plugin.video.themoviedb.helper) + !String.IsEqual(Container($PARAM[id]).ListItem.Property(widget),TMDb Helper) + Skin.HasSetting(LargeWidgetLabel)</visible>
         </control>
@@ -690,7 +641,7 @@
           <font>font_widgetbar_bold</font>
           <left>2</left>
           <textcolor>main_fg_100</textcolor>
-          <label>$PARAM[label] $INFO[Container($PARAM[id]).ListItem.Property(widget)]</label>
+          <label>$PARAM[label]</label>
           <include>Statusbar_Menubar_Items</include>
           <visible>String.StartsWith(Container($PARAM[id]).ListItem.FileNameAndPath,plugin://plugin.video.themoviedb.helper) + !String.IsEqual(Container($PARAM[id]).ListItem.Property(widget),TMDb Helper) + !Skin.HasSetting(LargeWidgetLabel)</visible>
         </control>
@@ -1097,7 +1048,7 @@
 
       <itemlayout width="622.22" height="350" condition="$PARAM[landscapedetailscondition]">
         <include content="Widget_Items_ItemLayout">
-          <param name="landscape" value="true" />
+          <param name="landscapedetails" value="true" />
           <param name="genres" value="$PARAM[genres]" />
           <param name="studios" value="$PARAM[studios]" />
           <param name="text" value="$PARAM[text]" />
@@ -1110,20 +1061,6 @@
           <param name="studios" value="$PARAM[studios]" />
           <param name="text" value="$PARAM[text]" />
         </include>
-
-        <control type="group">
-	    <left>90</left>
-          <control type="label">
-            <bottom>-30</bottom>
-	    <align>center</align>
-            <height>40</height>
-            <font>font_small</font>
-            <shadowcolor>black</shadowcolor>
-            <textcolor>white</textcolor>
-            <label>$VAR[video_heading]</label>
-            <visible>$PARAM[landscapewidecondition] + !String.StartsWith(ListItem.Label,See More)</visible>
-          </control>
-         </control>
       </itemlayout>
       <itemlayout width="widget_poster_width" height="widget_poster_height" condition="$PARAM[landscapewidepostercondition]">
         <include content="Widget_Items_ItemLayout">
@@ -1180,7 +1117,7 @@
       <focusedlayout width="widget_landscapewide_width" height="widget_poster_height" condition="$PARAM[landscapewidepostercondition] + Control.HasFocus($PARAM[id])">
         <include content="Widget_Items_FocusedLayout">
           <param name="id" value="$PARAM[id]" />
-          <param name="landscapenetflix" value="true" />
+          <param name="landscapewideposter" value="true" />
           <param name="genres" value="$PARAM[genres]" />
           <param name="studios" value="$PARAM[studios]" />
           <param name="text" value="$PARAM[text]" />
@@ -1270,7 +1207,7 @@
       <focusedlayout width="622.22" height="350" condition="$PARAM[landscapedetailscondition] + !Control.HasFocus($PARAM[id])">
         <include content="Widget_Items_FocusedLayout">
           <param name="id" value="$PARAM[id]" />
-          <param name="landscapenetflix" value="true" />
+          <param name="landscapedetails" value="true" />
           <param name="genres" value="$PARAM[genres]" />
           <param name="studios" value="$PARAM[studios]" />
           <param name="text" value="$PARAM[text]" />
@@ -1293,19 +1230,6 @@
           <param name="studios" value="$PARAM[studios]" />
           <param name="text" value="$PARAM[text]" />
         </include>
-        <control type="group">
-            <left>90</left>
-          <control type="label">
-	    <bottom>-30</bottom>
-            <align>center</align>
-            <height>40</height>
-            <font>font_small</font>
-            <shadowcolor>black</shadowcolor>
-            <textcolor>white</textcolor>
-            <label>$VAR[video_heading]</label>
-            <visible>$PARAM[landscapewidecondition] + !String.StartsWith(ListItem.Label,See More)</visible>
-          </control>
-         </control>
       </focusedlayout>
       <focusedlayout width="380" height="widget_landscape_height" condition="$PARAM[widgetlivecondition]">
         <include content="Widget_Items_FocusedLayout">
@@ -1889,14 +1813,14 @@
           <include condition="[$PARAM[poster] + !$PARAM[studios] + !$PARAM[genres] + !$PARAM[text]] | [!$PARAM[category] + !$PARAM[submenuwidget] + !$PARAM[landscape] + !$PARAM[widgetlive] + !$PARAM[landscapewideposter] + !$PARAM[posterdetails] + !$PARAM[landscapewide] + !$PARAM[squarelabel] + !$PARAM[landscapedetails] + !$PARAM[landscapenetflix] + !$PARAM[landscapepanel] + !$PARAM[studios] + !$PARAM[genres] + !$PARAM[text] + !$PARAM[square]]" content="Widget_Items_Poster">
             <param name="poster" value="$PARAM[poster]" />
           </include>
-          <include condition="$PARAM[landscape] + !$PARAM[studios] + !$PARAM[genres] + !$PARAM[text]">Widget_Items_Landscape</include>
+          <include condition="$PARAM[landscape] + !$PARAM[studios] + !$PARAM[genres] + !$PARAM[text]">Widget_Items_Landscape_Aura</include>
           <include condition="$PARAM[landscapewide] + !$PARAM[studios] + !$PARAM[genres] + !$PARAM[text]">Widget_Items_Landscape_Wide</include>
-          <include condition="$PARAM[landscapewideposter] + !$PARAM[studios] + !$PARAM[genres] + !$PARAM[text]">Widget_Items_LandscapeWidePoster</include>
-          <include condition="$PARAM[posterdetails] + !$PARAM[studios] + !$PARAM[genres] + !$PARAM[text]">Widget_Items_PosterDetails</include>
+          <include condition="$PARAM[landscapewideposter] + !$PARAM[studios] + !$PARAM[genres] + !$PARAM[text]">Widget_Items_LandscapeWidePoster_Aura</include>
+          <include condition="$PARAM[posterdetails] + !$PARAM[studios] + !$PARAM[genres] + !$PARAM[text]">Widget_Items_PosterDetails_Aura</include>
           <include condition="$PARAM[widgetlive] + !$PARAM[studios] + !$PARAM[genres] + !$PARAM[text]">Widget_Items_WidgetLive</include>
-          <include condition="$PARAM[landscapenetflix] + !$PARAM[studios] + !$PARAM[genres] + !$PARAM[text]">Widget_Items_LandscapeNetflix</include>
-          <include condition="$PARAM[landscapepanel] + !$PARAM[studios] + !$PARAM[genres] + !$PARAM[text]">Widget_Items_LandscapeNetflix</include>
-          <include condition="$PARAM[landscapedetails] + !$PARAM[studios] + !$PARAM[genres] + !$PARAM[text]">Widget_Items_LandscapeDetails</include>
+          <include condition="$PARAM[landscapenetflix] + !$PARAM[studios] + !$PARAM[genres] + !$PARAM[text]">Widget_Items_LandscapeNetflix_Aura</include>
+          <include condition="$PARAM[landscapepanel] + !$PARAM[studios] + !$PARAM[genres] + !$PARAM[text]">Widget_Items_LandscapePanel_Aura</include>
+          <include condition="$PARAM[landscapedetails] + !$PARAM[studios] + !$PARAM[genres] + !$PARAM[text]">Widget_Items_LandscapeDetails_Unfocused_Aura</include>
           <include condition="$PARAM[square] + !$PARAM[studios] + !$PARAM[genres] + !$PARAM[text]">Widget_Items_Square</include>
           <include condition="$PARAM[category] + !$PARAM[studios] + !$PARAM[genres] + !$PARAM[text]">Widget_Items_Category</include>
           <include condition="$PARAM[submenuwidget] + !$PARAM[studios] + !$PARAM[genres] + !$PARAM[text]">Widget_Items_SubmenuWidget</include>
@@ -1964,14 +1888,14 @@
           <include condition="[$PARAM[poster] + !$PARAM[studios] + !$PARAM[genres] + !$PARAM[text]] | [!$PARAM[landscape] + !$PARAM[submenuwidget] + !$PARAM[category] + !$PARAM[widgetlive] + !$PARAM[landscapewideposter] + !$PARAM[posterdetails] + !$PARAM[squarelabel] + !$PARAM[landscapedetails] + !$PARAM[landscapenetflix] + !$PARAM[landscapepanel] + !$PARAM[landscapewide] + !$PARAM[studios] + !$PARAM[genres] + !$PARAM[text] + !$PARAM[square]]" content="Widget_Items_Poster">
             <param name="poster" value="$PARAM[poster]" />
           </include>
-          <include condition="$PARAM[landscape] + !$PARAM[studios] + !$PARAM[genres] + !$PARAM[text]">Widget_Items_Landscape</include>
+          <include condition="$PARAM[landscape] + !$PARAM[studios] + !$PARAM[genres] + !$PARAM[text]">Widget_Items_Landscape_Aura</include>
           <include condition="$PARAM[landscapewide] + !$PARAM[studios] + !$PARAM[genres] + !$PARAM[text]">Widget_Items_Landscape_Wide</include>
-          <include condition="$PARAM[landscapewideposter] + !$PARAM[studios] + !$PARAM[genres] + !$PARAM[text]">Widget_Items_LandscapeWidePoster</include>
-          <include condition="$PARAM[posterdetails] + !$PARAM[studios] + !$PARAM[genres] + !$PARAM[text]">Widget_Items_PosterDetails</include>
+          <include condition="$PARAM[landscapewideposter] + !$PARAM[studios] + !$PARAM[genres] + !$PARAM[text]">Widget_Items_LandscapeWidePoster_Aura</include>
+          <include condition="$PARAM[posterdetails] + !$PARAM[studios] + !$PARAM[genres] + !$PARAM[text]">Widget_Items_PosterDetails_Aura</include>
           <include condition="$PARAM[widgetlive] + !$PARAM[studios] + !$PARAM[genres] + !$PARAM[text]">Widget_Items_WidgetLive</include>
-          <include condition="$PARAM[landscapenetflix] + !$PARAM[studios] + !$PARAM[genres] + !$PARAM[text]">Widget_Items_LandscapeNetflix</include>
-          <include condition="$PARAM[landscapepanel] + !$PARAM[studios] + !$PARAM[genres] + !$PARAM[text]">Widget_Items_LandscapeNetflix</include>
-          <include condition="$PARAM[landscapedetails] + !$PARAM[studios] + !$PARAM[genres] + !$PARAM[text]">Widget_Items_LandscapeDetails_Focused</include>
+          <include condition="$PARAM[landscapenetflix] + !$PARAM[studios] + !$PARAM[genres] + !$PARAM[text]">Widget_Items_LandscapeNetflix_Aura</include>
+          <include condition="$PARAM[landscapepanel] + !$PARAM[studios] + !$PARAM[genres] + !$PARAM[text]">Widget_Items_LandscapePanel_Aura</include>
+          <include condition="$PARAM[landscapedetails] + !$PARAM[studios] + !$PARAM[genres] + !$PARAM[text]">Widget_Items_LandscapeDetails_Focused_Aura</include>
           <include condition="$PARAM[square] + !$PARAM[studios] + !$PARAM[genres] + !$PARAM[text]">Widget_Items_Square</include>
           <include condition="$PARAM[category] + !$PARAM[studios] + !$PARAM[genres] + !$PARAM[text]">Widget_Items_Category</include>
           <include condition="$PARAM[submenuwidget] + !$PARAM[studios] + !$PARAM[genres] + !$PARAM[text]">Widget_Items_SubmenuWidget</include>

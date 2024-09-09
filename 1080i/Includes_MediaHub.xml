@@ -1370,6 +1370,7 @@
       <visible>ControlGroup(5055).HasFocus</visible>
       <left>-10</left>
       <include condition="Skin.HasSetting(SkinHelper.EnableExtraFanart)">fanart_multi</include>
+      <include condition="Skin.HasSetting(SkinHelper.EnableExtraFanart)">fanart_multi_container</include>
       <include>Object_Home_Netflix</include>
     </control>
         <control type="image">

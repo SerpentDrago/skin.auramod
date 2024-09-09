@@ -392,7 +392,7 @@
             <name>font_overlay_plotbox</name>
             <filename>RobotoCondensed-Light.ttf</filename>
             <size>48</size>
-            <linespacing>1.4</linespacing>
+            <linespacing>1.16</linespacing>
         </font>
 
         <!-- Showcase title font -->

@@ -111,15 +111,55 @@
                             <texture background="true" diffuse="diffuse/mediainfo.png">$VAR[Image_Fanart]</texture>
                         </control>
                         <control type="image">
-                            <bottom>40</bottom>
-                            <left>125</left>
-                            <right>125</right>
-                            <height>150</height>
+                            <bottom>30</bottom>
+                            <left>510</left>
+                            <width>35%</width>
+                            <height>35%</height>
                             <aspectratio aligny="bottom">keep</aspectratio>
                             <texture background="true">$VAR[Image_ClearLogo]</texture>
                             <visible>!Skin.HasSetting(DisableFakeLandscapeArt)</visible>
-                            <visible>String.IsEmpty(ListItem.Art(landscape)) + String.IsEmpty(ListItem.Art(tvshow.landscape)) + String.IsEmpty(ListItem.Art(season.landscape))</visible>
-                            <visible>Container.Content(movies) | Container.Content(sets) | Container.Content(tvshows) | Container.Content(seasons)</visible>
+                            <visible>Container.Content(movies) | Container.Content(sets) | Container.Content(tvshows) | Container.Content(seasons) | Container.Content(episodes)</visible>
+                        </control>
+                        <control type="label">
+                          <top>340</top>
+                          <left>40</left>
+                          <font>font_medium_bold</font>
+                          <shadowcolor>black</shadowcolor>
+                          <textcolor>white</textcolor>
+                          <label>S$INFO[ListItem.Season]:E$INFO[ListItem.Episode]</label>
+                          <visible>!Container.Content(Seasons) + !String.IsEmpty(ListItem.Season) + !String.IsEmpty(ListItem.Episode)</visible>
+                        </control>
+                        <control type="progress">
+                          <visible>Integer.IsGreater(ListItem.PercentPlayed,0)</visible>
+                          <left>9</left>
+                          <top>456</top>
+                          <description>progress bar</description>
+                          <width>803</width>
+                          <height>4</height>
+                          <align>center</align>
+                          <texturebg colordiffuse="white" border="2">diffuse/progress-bg.png</texturebg>
+                          <lefttexture></lefttexture>
+                          <midtexture colordiffuse="red" border="2">diffuse/progress-bg.png</midtexture>
+                          <righttexture></righttexture>
+                          <reveal>true</reveal>
+                          <info>ListItem.PercentPlayed</info>
+              	    <visible>!Container.Content(seasons)</visible>
+                        </control>
+                        <control type="progress">
+                          <visible>Integer.IsGreater(ListItem.PlayCount,0)</visible>
+                          <left>9</left>
+                          <top>456</top>
+                          <description>progress bar</description>
+                          <width>803</width>
+                          <height>4</height>
+                          <align>center</align>
+                          <texturebg colordiffuse="red" border="2">diffuse/progress-bg.png</texturebg>
+                          <lefttexture></lefttexture>
+                          <midtexture colordiffuse="red" border="2">diffuse/progress-bg.png</midtexture>
+                          <righttexture></righttexture>
+                          <reveal>true</reveal>
+                          <info>ListItem.PercentPlayed</info>
+              	    <visible>!Container.Content(seasons)</visible>
                         </control>
                         <include content="Defs_PictureBack">
                             <param name="diffuse" value="diffuse/mediainfo.png" />
@@ -291,7 +331,6 @@
     <include name="View_WatchedOverlay_White">
         <control type="group">
             <visible>!Skin.HasSetting(DisableWatchedOverlay)</visible>
-<!--	    <visible>!Control.IsVisible(504) + !Control.IsVisible(5022)</visible> -->
             <control type="image">
                 <top>10</top>
                 <right>10</right>
@@ -324,7 +363,6 @@
     <include name="View_WatchedOverlay_Black">
         <control type="group">
             <visible>!Skin.HasSetting(DisableWatchedOverlay)</visible>
-	    <visible>!Control.IsVisible(504) + !Control.IsVisible(5022)</visible>
             <control type="image">
                 <top>10</top>
                 <right>10</right>
@@ -357,7 +395,6 @@
     <include name="View_WatchedOverlay_Focus">
         <control type="group">
             <visible>!Skin.HasSetting(DisableWatchedOverlay)</visible>
-<!--	    <visible>!Control.IsVisible(504) + !Control.IsVisible(5022)</visible> -->
             <control type="image">
                 <top>10</top>
                 <right>10</right>

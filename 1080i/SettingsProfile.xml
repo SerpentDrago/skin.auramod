@@ -4,29 +4,9 @@
     <defaultcontrol always="true">300</defaultcontrol>
     <include>Defs_Settings_OnLoad</include>
     <controls>
-  <control type="group">
-            <left>0</left>
-            <centertop>50%</centertop>
-            <width>450</width>
-            <height>1200</height>
-            <visible>!Skin.HasSetting(DisableSettingsBackground)</visible>
-            <control type="image">
-                <include condition="!Skin.HasSetting(DisableShadows)">Defs_Shadow_24</include>
-                <texture border="16" colordiffuse="dialog_bg_100">common/rounded-dialog.png</texture>
-            </control>
-            </control>
 
-          <control type="group">
-            <left>450</left>
-            <centertop>50%</centertop>
-            <width>100%</width>
-            <height>1200</height>
-            <visible>!Skin.HasSetting(DisableSettingsBackground)</visible>
-            <control type="image">
-                <include condition="!Skin.HasSetting(DisableShadows)">Defs_Shadow_24</include>
-                <texture border="16" colordiffuse="darkgrey">common/rounded-dialog.png</texture>
-            </control>
-            </control>
+        <include condition="!Skin.HasSetting(DisableSettingsBackground)">Global_Background</include>
+
         <!-- GroupList -->
         <control type="group">
             <include>Dialog_Settings_Panel</include>

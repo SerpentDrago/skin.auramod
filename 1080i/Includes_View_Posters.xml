@@ -61,7 +61,7 @@
           <include content="View_Posters_Layout">
             <param name="id" value="512" />
             <param name="orientation" value="vertical" />
-            <param name="posters_nolabel" default="true" />
+            <param name="posters_nolabel_mediainfo" default="true" />
           </include>
 		    
             </control>
@@ -84,15 +84,55 @@
                             <texture background="true" diffuse="diffuse/mediainfo.png">$VAR[Image_Fanart]</texture>
                         </control>
                         <control type="image">
-                            <bottom>40</bottom>
-                            <left>125</left>
-                            <right>125</right>
-                            <height>150</height>
+                            <bottom>30</bottom>
+                            <left>510</left>
+                            <width>35%</width>
+                            <height>35%</height>
                             <aspectratio aligny="bottom">keep</aspectratio>
                             <texture background="true">$VAR[Image_ClearLogo]</texture>
                             <visible>!Skin.HasSetting(DisableFakeLandscapeArt)</visible>
-                            <visible>String.IsEmpty(ListItem.Art(landscape)) + String.IsEmpty(ListItem.Art(tvshow.landscape)) + String.IsEmpty(ListItem.Art(season.landscape))</visible>
-                            <visible>Container.Content(movies) | Container.Content(sets) | Container.Content(tvshows) | Container.Content(seasons)</visible>
+                            <visible>Container.Content(movies) | Container.Content(sets) | Container.Content(tvshows) | Container.Content(seasons) | Container.Content(episodes)</visible>
+                        </control>
+                        <control type="label">
+                          <top>340</top>
+                          <left>40</left>
+                          <font>font_medium_bold</font>
+                          <shadowcolor>black</shadowcolor>
+                          <textcolor>white</textcolor>
+                          <label>S$INFO[ListItem.Season]:E$INFO[ListItem.Episode]</label>
+                          <visible>!Container.Content(Seasons) + !String.IsEmpty(ListItem.Season) + !String.IsEmpty(ListItem.Episode)</visible>
+                        </control>
+                        <control type="progress">
+                          <visible>Integer.IsGreater(ListItem.PercentPlayed,0)</visible>
+                          <left>9</left>
+                          <top>456</top>
+                          <description>progress bar</description>
+                          <width>803</width>
+                          <height>4</height>
+                          <align>center</align>
+                          <texturebg colordiffuse="white" border="2">diffuse/progress-bg.png</texturebg>
+                          <lefttexture></lefttexture>
+                          <midtexture colordiffuse="red" border="2">diffuse/progress-bg.png</midtexture>
+                          <righttexture></righttexture>
+                          <reveal>true</reveal>
+                          <info>ListItem.PercentPlayed</info>
+              	    <visible>!Container.Content(seasons)</visible>
+                        </control>
+                        <control type="progress">
+                          <visible>Integer.IsGreater(ListItem.PlayCount,0)</visible>
+                          <left>9</left>
+                          <top>456</top>
+                          <description>progress bar</description>
+                          <width>803</width>
+                          <height>4</height>
+                          <align>center</align>
+                          <texturebg colordiffuse="red" border="2">diffuse/progress-bg.png</texturebg>
+                          <lefttexture></lefttexture>
+                          <midtexture colordiffuse="red" border="2">diffuse/progress-bg.png</midtexture>
+                          <righttexture></righttexture>
+                          <reveal>true</reveal>
+                          <info>ListItem.PercentPlayed</info>
+              	    <visible>!Container.Content(seasons)</visible>
                         </control>
                         <include content="Defs_PictureBack">
                             <param name="diffuse" value="diffuse/mediainfo.png" />
@@ -276,9 +316,9 @@
         <onfocus>SetProperty(TMDbHelper.WidgetContainer,55,Home)</onfocus>
           <animation effect="slide" end="0,40" condition="!Skin.HasSetting(DisableNetflixView)">Conditonal</animation>
           <animation effect="slide" end="0,-20" condition="Skin.HasSetting(DisableNetflixView)">Conditonal</animation>
-          <bottom>-55</bottom>
+          <bottom>-40</bottom>
           <right>-70</right>
-          <left>-70</left>
+          <left>-50</left>
           <height>500</height>
           <height>poster_height</height>
           <focusposition>0</focusposition>
@@ -390,9 +430,9 @@
           <animation effect="slide" end="0,20" condition="!Skin.HasSetting(DisableNetflixView)">Conditonal</animation>
           <animation effect="slide" end="0,-20" condition="Skin.HasSetting(DisableNetflixView)">Conditonal</animation>
         <onfocus>SetProperty(TMDbHelper.WidgetContainer,56,Home)</onfocus>
-          <bottom>-55</bottom>
+          <bottom>-30</bottom>
           <right>-70</right>
-          <left>-70</left>
+          <left>-50</left>
           <height>470</height>
           <focusposition>0</focusposition>
           <movement>2</movement>
@@ -613,7 +653,7 @@
             </control>
             <control type="image">
               <aspectratio scalediffuse="false">scale</aspectratio>
-              <texture background="true" diffuse="diffuse/lovefilm.png">$INFO[ListItem.Art(fanart)]</texture>
+              <texture background="true" diffuse="diffuse/lovefilm.png">$VAR[Image_Fanart]</texture>
             </control>
             <include content="Defs_PictureBack">
               <param name="pad" value="-10" />
@@ -631,7 +671,7 @@
             </control>
             <control type="image">
               <aspectratio scalediffuse="false">scale</aspectratio>
-              <texture background="true" diffuse="diffuse/lovefilm.png">$INFO[ListItem.Art(fanart)]</texture>
+              <texture background="true" diffuse="diffuse/lovefilm.png">$VAR[Image_Fanart]</texture>
             </control>
             <include content="Defs_PictureBack">
               <param name="pad" value="-10" />
@@ -869,17 +909,16 @@
       <aspectratio scalediffuse="false">scale</aspectratio>
       <visible>[Control.HasFocus(300) | Control.HasFocus(401) | Control.HasFocus(400) | Control.HasFocus(506)] </visible>
     </control>
-    <control type="image">
-      <animation effect="fade" start="10" end="100" time="6000" condition="Control.HasFocus(5056)">Conditional</animation>
-      <fadetime>500</fadetime>
-      <width>1420</width>
-      <height>630</height>
-      <left>550</left>
-      <top>-60</top>
-      <texture background="true" diffuse="Right Corner.png">$INFO[Container(5056).ListItem.Art(fanart)]</texture>
-      <aspectratio scalediffuse="true" aligny="top">scale</aspectratio>
-      <visible>Control.HasFocus(5056)</visible>
-   </control>
+    <include content="Netflix_Fanart_Container">
+      <param name="id" value="5056" />
+      <param name="top" value="-60" />
+      <param name="bottom" value="0" />
+      <param name="left" value="570" />
+      <param name="right" value="0" />
+      <param name="height" value="700" />
+      <param name="width" value="1400" />
+      <param name="visible" value="!Player.HasVideo + !ListItem.IsParentFolder + [Control.HasFocus(5055) | Control.HasFocus(5056)]" />
+    </include>
     <control type="image">
       <animation effect="fade" start="100" end="0" time="400">Hidden</animation>
       <animation effect="slide" end="250,0" time="500" condition="Control.HasFocus(400) | Control.HasFocus(401)">Conditional</animation>
@@ -900,7 +939,7 @@
           <onright condition="!Container(5056).IsUpdating">5056</onright>
           <height>825</height>
           <top>100</top>
-          <left>40</left>
+          <left>20</left>
           <visible>!Container.Content(episodes)</visible>
           <include>View_NotTheseWindows</include>
           <viewtype label="$LOCALIZE[31480]">icon</viewtype>
@@ -932,14 +971,6 @@
 	  <visible>Control.HasFocus(506)</visible>
         </control>
         </control> 
-        <control type="image">
-          <width>90</width>
-          <height>120</height>
-          <top>720</top>
-          <left>1</left>
-          <texture background="true" colordiffuse="white">netflix/left-arrow.png</texture>
-          <visible>Control.HasFocus(5056)</visible>
-         </control>
         <control type="group" id="25056">
           <visible>Container(5056).IsUpdating + !Window.IsVisible(DialogBusy.xml)</visible>
 	  <control type="image">
@@ -959,14 +990,14 @@
       <control type="group">
         <animation effect="fade" start="0" end="100" delay="100" time="500" condition="Control.HasFocus(5056)">Conditional</animation>
 	<visible>Control.HasFocus(5056)</visible>
-	<left>80</left>
+	<left>40</left>
 	<top>-20</top>
-       <include content="addon_view_infospotlight">
+       <include content="addon_view_infospotlight_container">
          <param name="id" value="5056" />
        </include>
       </control>
       <control type="group"> 
-          <animation effect="slide" end="-400,0" time="500" condition="Control.HasFocus(5056)">Conditional</animation>
+          <animation effect="slide" end="-450,0" time="500" condition="Control.HasFocus(5056)">Conditional</animation>
           <visible>[Control.HasFocus(300) | Control.HasFocus(506) | Control.HasFocus(5056)] +  !Container(506).ListItem.IsParentFolder</visible>
           <animation effect="fade" start="100" end="0" condition="Container(5056).IsUpdating">Conditional</animation>
 	  <posy>540</posy>
@@ -980,10 +1011,10 @@
             <param name="id" value="5056" />
         </include>
 
-	<top>40</top>
+	<top>55</top>
         <left>420</left>
         <movement>2</movement>
-        <width>1900</width>
+        <width>1950</width>
         <height>430</height>
         <orientation>vertical</orientation>
         <preloaditems>2</preloaditems>
@@ -998,7 +1029,7 @@
           <param name="submenu" value="$PARAM[submenu]" />
         </include>
 
-        <itemlayout width="366" height="210">
+        <itemlayout width="373.33" height="210">
           <include content="Widget_Items_ItemLayout">
             <param name="landscapenetflix" value="true" />
             <param name="genres" value="$PARAM[genres]" />
@@ -1006,7 +1037,7 @@
             <param name="text" value="$PARAM[text]" />
           </include>
         </itemlayout>
-        <focusedlayout width="366" height="210">
+        <focusedlayout width="373.33" height="210">
           <include content="Widget_Items_FocusedLayout">
             <param name="id" value="5056" />
             <param name="landscapenetflix" value="true" />
@@ -1043,17 +1074,16 @@
       <aspectratio scalediffuse="false">scale</aspectratio>
       <visible>[Control.HasFocus(401) | Control.HasFocus(400) | Control.HasFocus(300) | Control.HasFocus(505)]</visible>
     </control>
-    <control type="image">
-      <animation effect="fade" start="10" end="100" time="6000" condition="Control.HasFocus(5055)">Conditional</animation>
-      <fadetime>500</fadetime>
-      <width>1420</width>
-      <height>630</height>
-      <left>550</left>
-      <top>-60</top>
-      <texture background="true" diffuse="Right Corner.png">$INFO[Container(5055).ListItem.Art(fanart)]</texture>
-      <aspectratio scalediffuse="true" aligny="top">scale</aspectratio>
-      <visible>Control.HasFocus(5055)</visible>
-   </control>
+    <include content="Netflix_Fanart_Container">
+      <param name="id" value="5055" />
+      <param name="top" value="-60" />
+      <param name="bottom" value="0" />
+      <param name="left" value="570" />
+      <param name="right" value="0" />
+      <param name="height" value="700" />
+      <param name="width" value="1400" />
+      <param name="visible" value="!Player.HasVideo + !ListItem.IsParentFolder + [Control.HasFocus(5055) | Control.HasFocus(5056)]" />
+    </include>
     <control type="image">
       <animation effect="fade" start="100" end="0" time="400">Hidden</animation>
       <animation effect="slide" end="250,0" time="500" condition="Control.HasFocus(400) | Control.HasFocus(401)">Conditional</animation>
@@ -1108,14 +1138,6 @@
 	  <visible>Control.HasFocus(505)</visible>
         </control>
         </control> 
-        <control type="image">
-          <width>90</width>
-          <height>120</height>
-          <top>720</top>
-          <left>1</left>
-          <texture background="true" colordiffuse="white">netflix/left-arrow.png</texture>
-          <visible>Control.HasFocus(5055)</visible>
-         </control>
         <control type="group" id="25055">
           <visible>Container(5055).IsUpdating + !Window.IsVisible(DialogBusy.xml)</visible>
 	  <control type="image">
@@ -1135,14 +1157,14 @@
       <control type="group">
         <animation effect="fade" start="0" end="100" delay="100" time="500" condition="Control.HasFocus(5055)">Conditional</animation>
 	<visible>Control.HasFocus(5055)</visible>
-	<left>60</left>
+	<left>40</left>
 	<top>-20</top>
-       <include content="addon_view_infospotlight">
+       <include content="addon_view_infospotlight_container">
          <param name="id" value="5055" />
        </include>
       </control>
       <control type="group"> 
-          <animation effect="slide" end="-400,0" time="500" condition="Control.HasFocus(5055)">Conditional</animation>
+          <animation effect="slide" end="-430,0" time="500" condition="Control.HasFocus(5055)">Conditional</animation>
           <visible>[Control.HasFocus(300) | Control.HasFocus(505) | Control.HasFocus(5055)] +  !Container(505).ListItem.IsParentFolder</visible>
           <animation effect="fade" start="100" end="0" condition="Container(5055).IsUpdating">Conditional</animation>
 	  <posy>540</posy>
@@ -1153,9 +1175,9 @@
         <include content="view_widget_onclick" condition="!Skin.HasSetting(EnableShowInfo)">
             <param name="id" value="5055" />
         </include>
-	<top>40</top>
+	<top>60</top>
         <left>420</left>
-        <width>1900</width>
+        <width>1950</width>
         <height>420</height>
         <orientation>horizontal</orientation>
         <preloaditems>2</preloaditems>
@@ -1171,7 +1193,7 @@
           <param name="submenu" value="$PARAM[submenu]" />
         </include>
 
-        <itemlayout width="295" height="420">
+        <itemlayout width="266" height="379.31">
           <include content="Widget_Items_ItemLayout">
             <param name="poster" value="true" />
             <param name="genres" value="$PARAM[genres]" />
@@ -1179,7 +1201,7 @@
             <param name="text" value="$PARAM[text]" />
           </include>
         </itemlayout>
-        <focusedlayout width="295" height="420">
+        <focusedlayout width="266" height="379.31">
           <include content="Widget_Items_FocusedLayout">
             <param name="id" value="5055" />
             <param name="poster" value="true" />
@@ -1543,47 +1565,44 @@
                 <height>300</height>
                 <width>518</width>
                 <include>View_Landscape_Artwork</include>
-                <control type="image">
-                  <bordersize>10</bordersize>
-                  <texture background="true" colordiffuse="69000000">common/white.png</texture>
-                </control>
               </control>
               <control type="label">
-                <top>160</top>
+                <top>180</top>
                 <left>30</left>
                 <font>font_medium_bold</font>
                 <textcolor>white</textcolor>
                 <shadowcolor>black</shadowcolor>
                 <label>S$INFO[ListItem.Season]:E$INFO[ListItem.Episode]</label>
                 <visible>!String.IsEmpty(ListItem.Season) + !String.IsEmpty(ListItem.Episode)</visible>
-                <animation effect="slide" end="0,20" time="0" condition="!Integer.IsGreater(ListItem.PercentPlayed,0) + !Integer.IsGreater(ListItem.PlayCount,0)">Conditional</animation>
               </control>
               <control type="progress">
                 <visible>Integer.IsGreater(ListItem.PercentPlayed,0)</visible>
-                <left>30</left>
-                <top>260</top>
+                <left>9</left>
+                <top>286</top>
                 <description>progress bar</description>
-                <width>430</width>
-                <height>9</height>
+                <width>501</width>
+                <height>4</height>
                 <align>center</align>
-                <texturebg colordiffuse="white" border="2">colors/color_white.png</texturebg>
+                <texturebg colordiffuse="white" border="2">diffuse/progress-bg.png</texturebg>
                 <lefttexture></lefttexture>
-                <midtexture colordiffuse="red" border="2">colors/color_white.png</midtexture>
+                <midtexture colordiffuse="red" border="2">diffuse/progress-bg.png</midtexture>
                 <righttexture></righttexture>
+                <reveal>true</reveal>
                 <info>ListItem.PercentPlayed</info>
               </control>
               <control type="progress">
                 <visible>!Integer.IsGreater(ListItem.PercentPlayed,0) + Integer.IsGreater(ListItem.PlayCount,0)</visible>
-                <left>30</left>
-                <top>260</top>
+                <left>9</left>
+                <top>286</top>
                 <description>progress bar</description>
-                <width>430</width>
-                <height>9</height>
+                <width>501</width>
+                <height>4</height>
                 <align>center</align>
-                <texturebg colordiffuse="red" border="2">colors/color_white.png</texturebg>
+                <texturebg colordiffuse="red" border="2">diffuse/progress-bg.png</texturebg>
                 <lefttexture></lefttexture>
-                <midtexture colordiffuse="red" border="2">colors/color_white.png</midtexture>
+                <midtexture colordiffuse="red" border="2">diffuse/progress-bg.png</midtexture>
                 <righttexture></righttexture>
+                <reveal>true</reveal>
                 <info>ListItem.PercentPlayed</info>
               </control>
               <control type="group">
@@ -1657,47 +1676,46 @@
                   <visible>Control.HasFocus(5022)</visible>
                   <include>View_Selectbox</include>
                 </control>
-                <control type="image">
-                  <bordersize>10</bordersize>
-                  <texture background="true" colordiffuse="69000000">common/white.png</texture>
-                </control>
               </control>
               <control type="label">
-                <top>160</top>
+                <top>180</top>
                 <left>30</left>
                 <font>font_medium_bold</font>
                 <shadowcolor>black</shadowcolor>
                 <textcolor>white</textcolor>
                 <label>S$INFO[ListItem.Season]:E$INFO[ListItem.Episode]</label>
                 <visible>!String.IsEmpty(ListItem.Season) + !String.IsEmpty(ListItem.Episode)</visible>
-                <animation effect="slide" end="0,20" time="0" condition="!Integer.IsGreater(ListItem.PercentPlayed,0) + !Integer.IsGreater(ListItem.PlayCount,0)">Conditional</animation>
               </control>
               <control type="progress">
+                <include>Animation_FocusBounce_Small</include>
                 <visible>Integer.IsGreater(ListItem.PercentPlayed,0)</visible>
-                <left>30</left>
-                <top>260</top>
+                <left>9</left>
+                <top>286</top>
                 <description>progress bar</description>
-                <width>430</width>
-                <height>9</height>
+                <width>501</width>
+                <height>4</height>
                 <align>center</align>
-                <texturebg colordiffuse="white" border="2">colors/color_white.png</texturebg>
+                <texturebg colordiffuse="white" border="2">diffuse/progress-bg.png</texturebg>
                 <lefttexture></lefttexture>
-                <midtexture colordiffuse="red" border="2">colors/color_white.png</midtexture>
+                <midtexture colordiffuse="red" border="2">diffuse/progress-bg.png</midtexture>
                 <righttexture></righttexture>
+                <reveal>true</reveal>
                 <info>ListItem.PercentPlayed</info>
               </control>
               <control type="progress">
+                <include>Animation_FocusBounce_Small</include>
                 <visible>Integer.IsGreater(ListItem.PlayCount,0)</visible>
-                <left>30</left>
-                <top>260</top>
+                <left>9</left>
+                <top>286</top>
                 <description>progress bar</description>
-                <width>430</width>
-                <height>9</height>
+                <width>501</width>
+                <height>4</height>
                 <align>center</align>
-                <texturebg colordiffuse="red" border="2">colors/color_white.png</texturebg>
+                <texturebg colordiffuse="red" border="2">diffuse/progress-bg.png</texturebg>
                 <lefttexture></lefttexture>
-                <midtexture colordiffuse="red" border="2">colors/color_white.png</midtexture>
+                <midtexture colordiffuse="red" border="2">diffuse/progress-bg.png</midtexture>
                 <righttexture></righttexture>
+                <reveal>true</reveal>
                 <info>ListItem.PercentPlayed</info>
               </control>
               <control type="group">
@@ -1819,6 +1837,47 @@
           <control type="group">
             <include>View_Landscape_Artwork</include>
           </control>
+          <control type="label">
+            <top>110</top>
+            <left>25</left>
+            <font>font_medium_bold</font>
+            <shadowcolor>black</shadowcolor>
+            <textcolor>white</textcolor>
+            <label>S$INFO[ListItem.Season]:E$INFO[ListItem.Episode]</label>
+            <visible>!Container.Content(Seasons) + !String.IsEmpty(ListItem.Season) + !String.IsEmpty(ListItem.Episode)</visible>
+          </control>
+          <control type="progress">
+            <visible>Integer.IsGreater(ListItem.PercentPlayed,0)</visible>
+            <left>9</left>
+            <top>196</top>
+            <description>progress bar</description>
+            <width>357</width>
+            <height>4</height>
+            <align>center</align>
+            <texturebg colordiffuse="white" border="2">diffuse/progress-bg.png</texturebg>
+            <lefttexture></lefttexture>
+            <midtexture colordiffuse="red" border="2">diffuse/progress-bg.png</midtexture>
+            <righttexture></righttexture>
+            <reveal>true</reveal>
+            <info>ListItem.PercentPlayed</info>
+	    <visible>!Container.Content(seasons)</visible>
+          </control>
+          <control type="progress">
+            <visible>Integer.IsGreater(ListItem.PlayCount,0)</visible>
+            <left>9</left>
+            <top>196</top>
+            <description>progress bar</description>
+            <width>357</width>
+            <height>4</height>
+            <align>center</align>
+            <texturebg colordiffuse="red" border="2">diffuse/progress-bg.png</texturebg>
+            <lefttexture></lefttexture>
+            <midtexture colordiffuse="red" border="2">diffuse/progress-bg.png</midtexture>
+            <righttexture></righttexture>
+            <reveal>true</reveal>
+            <info>ListItem.PercentPlayed</info>
+	    <visible>!Container.Content(seasons)</visible>
+          </control>
           <include condition="$PARAM[text] + !Skin.HasSetting(DisableViewText) + Skin.HasSetting(DisableNetflixView)">View_Landscape_Text</include>
         </control>
       </itemlayout>
@@ -1837,6 +1896,47 @@
               <include>View_Selectbox</include>
             </control>
           </control>
+          <control type="label">
+            <top>110</top>
+            <left>25</left>
+            <font>font_medium_bold</font>
+            <shadowcolor>black</shadowcolor>
+            <textcolor>white</textcolor>
+            <label>S$INFO[ListItem.Season]:E$INFO[ListItem.Episode]</label>
+            <visible>!Container.Content(Seasons) + !String.IsEmpty(ListItem.Season) + !String.IsEmpty(ListItem.Episode)</visible>
+          </control>
+          <control type="progress">
+            <visible>Integer.IsGreater(ListItem.PercentPlayed,0)</visible>
+            <left>9</left>
+            <top>196</top>
+            <description>progress bar</description>
+            <width>357</width>
+            <height>4</height>
+            <align>center</align>
+            <texturebg colordiffuse="white" border="2">diffuse/progress-bg.png</texturebg>
+            <lefttexture></lefttexture>
+            <midtexture colordiffuse="red" border="2">diffuse/progress-bg.png</midtexture>
+            <righttexture></righttexture>
+            <reveal>true</reveal>
+            <info>ListItem.PercentPlayed</info>
+	    <visible>!Container.Content(seasons)</visible>
+          </control>
+          <control type="progress">
+            <visible>Integer.IsGreater(ListItem.PlayCount,0)</visible>
+            <left>9</left>
+            <top>196</top>
+            <description>progress bar</description>
+            <width>357</width>
+            <height>4</height>
+            <align>center</align>
+            <texturebg colordiffuse="red" border="2">diffuse/progress-bg.png</texturebg>
+            <lefttexture></lefttexture>
+            <midtexture colordiffuse="red" border="2">diffuse/progress-bg.png</midtexture>
+            <righttexture></righttexture>
+            <reveal>true</reveal>
+            <info>ListItem.PercentPlayed</info>
+	    <visible>!Container.Content(seasons)</visible>
+          </control>
           <include condition="$PARAM[text] + !Skin.HasSetting(DisableViewText) + Skin.HasSetting(DisableNetflixView)">View_Landscape_Text</include>
         </control>
       </focusedlayout>
@@ -1850,6 +1950,7 @@
     <param name="bottom_offset" default="0" />
     <param name="posters" default="false" />
     <param name="posters_nolabel" default="false" />
+    <param name="posters_nolabel_mediainfo" default="false" />
     <param name="posters_big" default="false" />
     <param name="square" default="false" />
     <param name="square_small" default="false" />
@@ -1910,7 +2011,36 @@
         </control>
       </focusedlayout>
 
-      <itemlayout width="260" height="390" condition="$PARAM[posters_nolabel]">
+      <itemlayout width="266" height="379.31" condition="$PARAM[posters_nolabel]">
+        <control type="group">
+          <left>view_pad</left>
+          <right>-view_pad</right>
+          <top>$PARAM[top_offset]</top>
+          <bottom>$PARAM[bottom_offset]</bottom>
+          <control type="group">
+            <include>View_Posters_Itemlayout_Artwork</include>
+          </control>
+        </control>
+      </itemlayout>
+      <focusedlayout width="266" height="379.31" condition="$PARAM[posters_nolabel]">
+        <control type="group">
+          <top>$PARAM[top_offset]</top>
+          <bottom>$PARAM[bottom_offset]</bottom>
+          <left>view_pad</left>
+          <right>-view_pad</right>
+          <include>Animation_FocusBounce</include>
+          <control type="group">
+            <include>View_Posters_Focusedlayout_Artwork</include>
+            <!-- Highlight -->
+            <control type="group">
+              <visible>Control.HasFocus($PARAM[id])</visible>
+              <include>View_Selectbox</include>
+            </control>
+          </control>
+        </control>
+      </focusedlayout>
+
+      <itemlayout width="260" height="390" condition="$PARAM[posters_nolabel_mediainfo]">
         <control type="group">
           <left>view_pad</left>
           <right>-view_pad</right>
@@ -1922,7 +2052,7 @@
           </control>
         </control>
       </itemlayout>
-      <focusedlayout width="260" height="390" condition="$PARAM[posters_nolabel]">
+      <focusedlayout width="260" height="390" condition="$PARAM[posters_nolabel_mediainfo]">
         <control type="group">
           <top>$PARAM[top_offset]</top>
           <bottom>$PARAM[bottom_offset]</bottom>
@@ -1980,20 +2110,60 @@
           </control>
         </control>
       </focusedlayout>
-      <itemlayout width="606.66" height="480" condition="$PARAM[landscape]">
+      <itemlayout width="622.22" height="350" condition="$PARAM[landscape]">
         <control type="group">
           <left>view_pad</left>
           <right>-view_pad</right>
           <top>$PARAM[top_offset]</top>
           <bottom>$PARAM[bottom_offset]</bottom>
           <control type="group">
-            <height>350</height>
             <include>View_Landscape_Artwork</include>
+          </control>
+          <control type="label">
+            <top>225</top>
+            <left>30</left>
+            <font>font_medium_bold</font>
+            <shadowcolor>black</shadowcolor>
+            <textcolor>white</textcolor>
+            <label>S$INFO[ListItem.Season]:E$INFO[ListItem.Episode]</label>
+            <visible>!Container.Content(Seasons) + !String.IsEmpty(ListItem.Season) + !String.IsEmpty(ListItem.Episode)</visible>
+          </control>
+          <control type="progress">
+            <visible>Integer.IsGreater(ListItem.PercentPlayed,0)</visible>
+            <left>9</left>
+            <top>336</top>
+            <description>progress bar</description>
+            <width>605</width>
+            <height>4</height>
+            <align>center</align>
+            <texturebg colordiffuse="white" border="2">diffuse/progress-bg.png</texturebg>
+            <lefttexture></lefttexture>
+            <midtexture colordiffuse="red" border="2">diffuse/progress-bg.png</midtexture>
+            <righttexture></righttexture>
+            <reveal>true</reveal>
+            <info>ListItem.PercentPlayed</info>
+	    <visible>!Container.Content(seasons)</visible>
+          </control>
+          <control type="progress">
+            <visible>Integer.IsGreater(ListItem.PlayCount,0)</visible>
+            <left>9</left>
+            <top>336</top>
+            <description>progress bar</description>
+            <width>605</width>
+            <height>4</height>
+            <align>center</align>
+            <texturebg colordiffuse="red" border="2">diffuse/progress-bg.png</texturebg>
+            <lefttexture></lefttexture>
+            <midtexture colordiffuse="red" border="2">diffuse/progress-bg.png</midtexture>
+            <righttexture></righttexture>
+            <reveal>true</reveal>
+            <info>ListItem.PercentPlayed</info>
+	    <visible>!Container.Content(seasons)</visible>
           </control>
           <include condition="$PARAM[text] + !Skin.HasSetting(DisableViewText) + Skin.HasSetting(DisableNetflixView)">View_Landscape_Text</include>
         </control>
       </itemlayout>
-      <focusedlayout width="606.66" height="480" condition="$PARAM[landscape]">
+      <focusedlayout width="622.22" height="350" condition="$PARAM[landscape]">
         <control type="group">
           <top>$PARAM[top_offset]</top>
           <bottom>$PARAM[bottom_offset]</bottom>
@@ -2001,13 +2171,53 @@
           <right>-view_pad</right>
           <include>Animation_FocusBounce</include>
           <control type="group">
-            <height>350</height>
             <include>View_Landscape_Artwork</include>
             <!-- Highlight -->
             <control type="group">
               <visible>Control.HasFocus($PARAM[id])</visible>
               <include>View_Selectbox</include>
             </control>
+          </control>
+          <control type="label">
+            <top>225</top>
+            <left>30</left>
+            <font>font_medium_bold</font>
+            <shadowcolor>black</shadowcolor>
+            <textcolor>white</textcolor>
+            <label>S$INFO[ListItem.Season]:E$INFO[ListItem.Episode]</label>
+            <visible>!Container.Content(Seasons) + !String.IsEmpty(ListItem.Season) + !String.IsEmpty(ListItem.Episode)</visible>
+          </control>
+          <control type="progress">
+            <visible>Integer.IsGreater(ListItem.PercentPlayed,0)</visible>
+            <left>9</left>
+            <top>336</top>
+            <description>progress bar</description>
+            <width>605</width>
+            <height>4</height>
+            <align>center</align>
+            <texturebg colordiffuse="white" border="2">diffuse/progress-bg.png</texturebg>
+            <lefttexture></lefttexture>
+            <midtexture colordiffuse="red" border="2">diffuse/progress-bg.png</midtexture>
+            <righttexture></righttexture>
+            <reveal>true</reveal>
+            <info>ListItem.PercentPlayed</info>
+	    <visible>!Container.Content(seasons)</visible>
+          </control>
+          <control type="progress">
+            <visible>Integer.IsGreater(ListItem.PlayCount,0)</visible>
+            <left>9</left>
+            <top>336</top>
+            <description>progress bar</description>
+            <width>605</width>
+            <height>4</height>
+            <align>center</align>
+            <texturebg colordiffuse="red" border="2">diffuse/progress-bg.png</texturebg>
+            <lefttexture></lefttexture>
+            <midtexture colordiffuse="red" border="2">diffuse/progress-bg.png</midtexture>
+            <righttexture></righttexture>
+            <reveal>true</reveal>
+            <info>ListItem.PercentPlayed</info>
+	    <visible>!Container.Content(seasons)</visible>
           </control>
           <include condition="$PARAM[text] + !Skin.HasSetting(DisableViewText) + Skin.HasSetting(DisableNetflixView)">View_Landscape_Text</include>
         </control>
@@ -2023,6 +2233,47 @@
             <include>View_Landscape_Artwork</include>
           </control>
           <control type="label">
+            <top>112</top>
+            <left>27</left>
+            <font>font_medium_bold</font>
+            <shadowcolor>black</shadowcolor>
+            <textcolor>white</textcolor>
+            <label>S$INFO[ListItem.Season]:E$INFO[ListItem.Episode]</label>
+            <visible>!Container.Content(Seasons) + !String.IsEmpty(ListItem.Season) + !String.IsEmpty(ListItem.Episode)</visible>
+          </control>
+          <control type="progress">
+            <visible>Integer.IsGreater(ListItem.PercentPlayed,0)</visible>
+            <left>9</left>
+            <top>251</top>
+            <description>progress bar</description>
+            <width>438</width>
+            <height>4</height>
+            <align>center</align>
+            <texturebg colordiffuse="white" border="2">diffuse/progress-bg.png</texturebg>
+            <lefttexture></lefttexture>
+            <midtexture colordiffuse="red" border="2">diffuse/progress-bg.png</midtexture>
+            <righttexture></righttexture>
+            <reveal>true</reveal>
+            <info>ListItem.PercentPlayed</info>
+	    <visible>!Container.Content(seasons)</visible>
+          </control>
+          <control type="progress">
+            <visible>Integer.IsGreater(ListItem.PlayCount,0)</visible>
+            <left>9</left>
+            <top>251</top>
+            <description>progress bar</description>
+            <width>438</width>
+            <height>4</height>
+            <align>center</align>
+            <texturebg colordiffuse="red" border="2">diffuse/progress-bg.png</texturebg>
+            <lefttexture></lefttexture>
+            <midtexture colordiffuse="red" border="2">diffuse/progress-bg.png</midtexture>
+            <righttexture></righttexture>
+            <reveal>true</reveal>
+            <info>ListItem.PercentPlayed</info>
+	    <visible>!Container.Content(seasons)</visible>
+          </control>
+          <control type="label">
             <label>$INFO[ListItem.Label]</label>
             <align>left</align>
             <aligny>top</aligny>
@@ -2032,6 +2283,7 @@
             <right>10</right>
             <top>265</top>
             <visible>!Skin.HasSetting(DisableViewText)</visible>
+            <visible>!ListItem.IsParentFolder</visible>
           </control>
           <control type="label">
             <label>$INFO[ListItem.Label2]</label>
@@ -2074,6 +2326,47 @@
             </control>
           </control>
           <control type="label">
+            <top>112</top>
+            <left>27</left>
+            <font>font_medium_bold</font>
+            <shadowcolor>black</shadowcolor>
+            <textcolor>white</textcolor>
+            <label>S$INFO[ListItem.Season]:E$INFO[ListItem.Episode]</label>
+            <visible>!Container.Content(Seasons) + !String.IsEmpty(ListItem.Season) + !String.IsEmpty(ListItem.Episode)</visible>
+          </control>
+          <control type="progress">
+            <visible>Integer.IsGreater(ListItem.PercentPlayed,0)</visible>
+            <left>9</left>
+            <top>251</top>
+            <description>progress bar</description>
+            <width>438</width>
+            <height>4</height>
+            <align>center</align>
+            <texturebg colordiffuse="white" border="2">diffuse/progress-bg.png</texturebg>
+            <lefttexture></lefttexture>
+            <midtexture colordiffuse="red" border="2">diffuse/progress-bg.png</midtexture>
+            <righttexture></righttexture>
+            <reveal>true</reveal>
+            <info>ListItem.PercentPlayed</info>
+	    <visible>!Container.Content(seasons)</visible>
+          </control>
+          <control type="progress">
+            <visible>Integer.IsGreater(ListItem.PlayCount,0)</visible>
+            <left>9</left>
+            <top>251</top>
+            <description>progress bar</description>
+            <width>438</width>
+            <height>4</height>
+            <align>center</align>
+            <texturebg colordiffuse="red" border="2">diffuse/progress-bg.png</texturebg>
+            <lefttexture></lefttexture>
+            <midtexture colordiffuse="red" border="2">diffuse/progress-bg.png</midtexture>
+            <righttexture></righttexture>
+            <reveal>true</reveal>
+            <info>ListItem.PercentPlayed</info>
+	    <visible>!Container.Content(seasons)</visible>
+          </control>
+          <control type="label">
             <label>$INFO[ListItem.Label]</label>
             <align>left</align>
             <aligny>top</aligny>
@@ -2083,6 +2376,7 @@
             <right>10</right>
             <top>265</top>
             <visible>!Skin.HasSetting(DisableViewText)</visible>
+            <visible>!ListItem.IsParentFolder</visible>
           </control>
           <control type="label">
             <label>$INFO[ListItem.Label2]</label>
@@ -3172,7 +3466,7 @@
           <height>50%</height>
           <aspectratio aligny="bottom" scalediffuse="false">keep</aspectratio>
           <texture background="true" diffuse="diffuse/widgetlandscape.png">$VAR[Widget_ClearLogo]</texture>
-          <visible>!Window.IsVisible(DialogVideoInfo.xml) + !Control.IsVaisible(507) + !Control.IsVisible(502) + !Control.IsVisible(504) + !String.IsEqual(ListItem.DBType,season) + !String.IsEqual(ListItem.DBType,episode)  + Skin.HasSetting(DisableClearlogo) + [String.IsEmpty(ListItem.Art(landscape)) | String.Contains(ListItem.Art(landscape),w1280None) | String.Contains(ListItem.Art(landscape),tmdb.org)]</visible>
+          <visible>[!Window.IsVisible(MyVideoNav.xml) | !Window.IsVisible(DialogSelect.xml) + !Window.IsVisible(DialogContextMenu.xml) + !Window.IsVisible(DialogBusy.xml) + !Window.IsVisible(DialogButtonMenu.xml)] + !Window.IsVisible(DialogVideoInfo.xml) + !Control.IsVaisible(507) + !Control.IsVisible(504) + !String.IsEqual(ListItem.DBType,season) + !String.IsEqual(ListItem.DBType,episode)  + Skin.HasSetting(DisableClearlogo) + [String.IsEmpty(ListItem.Art(landscape)) | String.Contains(ListItem.Art(landscape),w1280None) | String.Contains(ListItem.Art(landscape),tmdb.org)] + !Control.IsVisible(56) + !Control.IsVisible(509)</visible>
        </control>
         <control type="image">
           <bottom>0</bottom>
@@ -3181,7 +3475,7 @@
           <height>45%</height>
           <aspectratio>keep</aspectratio>
           <texture background="true">$VAR[Widget_ClearLogo]</texture>
-          <visible>!Window.IsVisible(DialogSelect.xml) + !Window.IsVisible(DialogContextMenu.xml) + !Window.IsVisible(DialogBusy.xml) + !Control.IsVisible(507) + !Control.IsVisible(504) + Skin.HasSetting(DisableClearlogo) + [String.IsEqual(ListItem.DBType,episode) | String.IsEqual(ListItem.DBType,season)]</visible>
+          <visible>!Control.IsVisible(507) + Skin.HasSetting(DisableClearlogo) + [String.IsEqual(ListItem.DBType,episode) | String.IsEqual(ListItem.DBType,season) + !String.IsEmpty(ListItem.Season)]</visible>
         </control>
 
             <control type="group">
@@ -3239,6 +3533,8 @@
   </include>
 
   <include name="View_Posters_Text">
+    <control type="group">
+      <visible>!ListItem.IsParentFolder</visible>
     <control type="label">
       <label>$INFO[ListItem.Label]</label>
       <align>center</align>
@@ -3281,6 +3577,7 @@
       <right>10</right>
       <top>415</top>
     </control>
+  </control>
   </include>
   <include name="View_Posters_Itemlayout_Artwork">
     <control type="group" description="ParentFolder and DefaultIcon">
@@ -3291,18 +3588,18 @@
         <aspectratio aligny="center" scalediffuse="false">keep</aspectratio>
         <texture colordiffuse="PosterFront_70" background="true" diffuse="diffuse/widgetposter.png">$INFO[ListItem.Icon]</texture>
         <visible>String.StartsWith(ListItem.Icon,Default) + ![Skin.HasSetting(SerenIcons) + String.Contains(ListItem.FolderPath,plugin.video.seren)]</visible>
-        <visible>![[Container.Content(genres) | [Container.Content(addons) + String.Contains(Container.FolderPath,Genres)]] | Container.Content(studios) | Container.Content(years) | Container.Content(directors) | Container.Content(countries) | Container.Content(tags) | Container.Content(playlists)] | ListItem.IsParentFolder</visible>
+        <visible>![[Container.Content(genres) | [Container.Content(addons) + String.Contains(Container.FolderPath,Genres)]] | Container.Content(studios) | Container.Content(years) | Container.Content(directors) | Container.Content(countries) | Container.Content(tags) | Container.Content(playlists)] + ListItem.IsParentFolder</visible>
       </control>
       <control type="image">
         <bordersize>10</bordersize>
         <aspectratio aligny="center" scalediffuse="false">keep</aspectratio>
         <texture colordiffuse="PosterFront_70" background="true" diffuse="diffuse/widgetposter.png">$VAR[serenicons]</texture>
-        <visible>String.StartsWith(ListItem.Icon,DefaultIcon) + Skin.HasSetting(SerenIcons) + String.Contains(ListItem.FolderPath,plugin.video.seren)</visible>
-        <visible>![[Container.Content(genres) | [Container.Content(addons) + String.Contains(Container.FolderPath,Genres)]] | Container.Content(studios) | Container.Content(years) | Container.Content(directors) | Container.Content(countries) | Container.Content(tags) | Container.Content(playlists)] | ListItem.IsParentFolder</visible>
+        <visible>String.StartsWith(ListItem.Icon,Default) + Skin.HasSetting(SerenIcons) + String.Contains(ListItem.FolderPath,plugin.video.seren)</visible>
+        <visible>![[Container.Content(genres) | [Container.Content(addons) + String.Contains(Container.FolderPath,Genres)]] | Container.Content(studios) | Container.Content(years) | Container.Content(directors) | Container.Content(countries) | Container.Content(tags) | Container.Content(playlists)] + ListItem.IsParentFolder</visible>
       </control>
       <control type="image">
         <bordersize>10</bordersize>
-        <aspectratio aligny="center" scalediffuse="false">keep</aspectratio>
+        <aspectratio aligny="center" scalediffuse="false">scale</aspectratio>
         <texture background="true" diffuse="diffuse/widgetposter.png">$INFO[ListItem.Icon]</texture>
         <visible>!String.StartsWith(ListItem.Icon,DefaultIcon) + !ListItem.IsParentFolder</visible>
         <visible>![[Container.Content(genres) | [Container.Content(addons) + String.Contains(Container.FolderPath,Genres)]] | Container.Content(studios) | Container.Content(years) | Container.Content(directors) | Container.Content(countries) | Container.Content(tags) | Container.Content(playlists)]</visible>
@@ -3388,18 +3685,18 @@
         <aspectratio aligny="center" scalediffuse="false">keep</aspectratio>
         <texture colordiffuse="PosterFront" background="true" diffuse="diffuse/widgetposter.png">$INFO[ListItem.Icon]</texture>
         <visible>String.StartsWith(ListItem.Icon,Default) + ![Skin.HasSetting(SerenIcons) + String.Contains(ListItem.FolderPath,plugin.video.seren)]</visible>
-        <visible>![[Container.Content(genres) | [Container.Content(addons) + String.Contains(Container.FolderPath,Genres)]] | Container.Content(studios) | Container.Content(years) | Container.Content(directors) | Container.Content(countries) | Container.Content(tags) | Container.Content(playlists)] | ListItem.IsParentFolder</visible>
+        <visible>![[Container.Content(genres) | [Container.Content(addons) + String.Contains(Container.FolderPath,Genres)]] | Container.Content(studios) | Container.Content(years) | Container.Content(directors) | Container.Content(countries) | Container.Content(tags) | Container.Content(playlists)] + ListItem.IsParentFolder</visible>
       </control>
       <control type="image">
         <bordersize>10</bordersize>
         <aspectratio aligny="center" scalediffuse="false">keep</aspectratio>
         <texture colordiffuse="PosterFront" background="true" diffuse="diffuse/widgetposter.png">$VAR[serenicons]</texture>
-        <visible>String.StartsWith(ListItem.Icon,DefaultIcon) + Skin.HasSetting(SerenIcons) + String.Contains(ListItem.FolderPath,plugin.video.seren)</visible>
-        <visible>![[Container.Content(genres) | [Container.Content(addons) + String.Contains(Container.FolderPath,Genres)]] | Container.Content(studios) | Container.Content(years) | Container.Content(directors) | Container.Content(countries) | Container.Content(tags) | Container.Content(playlists)] | ListItem.IsParentFolder</visible>
+        <visible>String.StartsWith(ListItem.Icon,Default) + Skin.HasSetting(SerenIcons) + String.Contains(ListItem.FolderPath,plugin.video.seren)</visible>
+        <visible>![[Container.Content(genres) | [Container.Content(addons) + String.Contains(Container.FolderPath,Genres)]] | Container.Content(studios) | Container.Content(years) | Container.Content(directors) | Container.Content(countries) | Container.Content(tags) | Container.Content(playlists)] + ListItem.IsParentFolder</visible>
       </control>
       <control type="image">
         <bordersize>10</bordersize>
-        <aspectratio aligny="center" scalediffuse="false">keep</aspectratio>
+        <aspectratio aligny="center" scalediffuse="false">scale</aspectratio>
         <texture background="true" diffuse="diffuse/widgetposter.png">$INFO[ListItem.Icon]</texture>
         <visible>!String.StartsWith(ListItem.Icon,DefaultIcon) + !ListItem.IsParentFolder</visible>
         <visible>![[Container.Content(genres) | [Container.Content(addons) + String.Contains(Container.FolderPath,Genres)]] | Container.Content(studios) | Container.Content(years) | Container.Content(directors) | Container.Content(countries) | Container.Content(tags) | Container.Content(playlists)]</visible>

@@ -1,5 +1,11 @@
 <?xml version="1.0" encoding="utf-8"?>
 <includes>
+  <include name="Object_Global_Fanart">
+    <item>
+      <property name="fanart">$INFO[Container($PARAM[id]).ListItem.Art(fanart)]</property>
+      <nested />
+    </item>
+  </include>
   <include name="Object_Info">
     <param name="hdsd_flag" default="false" />
     <param name="rottentomatoes" default="true" />
@@ -284,6 +290,7 @@
   <include name="Object_Episodes_Info">
     <control type="group">
       <control type="textbox">
+        <visible>!ListItem.IsParentFolder</visible>
         <visible>String.IsEmpty(Control.GetLabel(5675))</visible>
         <top>25</top>
         <left>40</left>
@@ -781,7 +788,7 @@
         <onup>300</onup>
         <ondown condition="!Skin.HasSetting(DisableNetflixCatWidget) + !$EXP[noSubMenu]">30222</ondown>
         <ondown condition="!Skin.HasSetting(HideSubmenuWidget) + [Skin.HasSetting(DisableNetflixCatWidget) | $EXP[noSubMenu]]">30222</ondown>
-        <ondown condition="Skin.HasSetting(HideSubmenuWidget) + [Skin.HasSetting(DisableNetflixCatWidget) | $EXP[noSubMenu]]">330</ondown>
+        <ondown condition="Skin.HasSetting(HideSubmenuWidget) + [Skin.HasSetting(DisableNetflixCatWidget) | $EXP[noSubMenu]]">329</ondown>
         <movement>1</movement>
         <include content="Widget_Common">
           <param name="top" value="$PARAM[top]" />
@@ -979,7 +986,7 @@
         <orientation>horizontal</orientation>
         <ondown condition="!Skin.HasSetting(DisableNetflixCatWidget) + !$EXP[noSubMenu]">30222</ondown>
         <ondown condition="!Skin.HasSetting(HideSubmenuWidget) + [Skin.HasSetting(DisableNetflixCatWidget) | $EXP[noSubMenu]]">30222</ondown>
-        <ondown condition="Skin.HasSetting(HideSubmenuWidget) + [Skin.HasSetting(DisableNetflixCatWidget) | $EXP[noSubMenu]]">330</ondown>
+        <ondown condition="Skin.HasSetting(HideSubmenuWidget) + [Skin.HasSetting(DisableNetflixCatWidget) | $EXP[noSubMenu]]">329</ondown>
         <onleft>300</onleft>
         <onup condition="">505</onup>
         <onfocus condition="!String.IsEmpty(Window(Home).Property(ShowSpotlightInfo))">Action(Info)</onfocus>
@@ -1028,7 +1035,7 @@
       <onup condition="Skin.HasSetting(DisableMenuHor)">300</onup>
       <ondown condition="!Skin.HasSetting(DisableNetflixCatWidget) + !$EXP[noSubMenu]">30222</ondown>
       <ondown condition="!Skin.HasSetting(HideSubmenuWidget) + [Skin.HasSetting(DisableNetflixCatWidget) | $EXP[noSubMenu]]">30222</ondown>
-      <ondown condition="Skin.HasSetting(HideSubmenuWidget) + [Skin.HasSetting(DisableNetflixCatWidget) | $EXP[noSubMenu]]">330</ondown>
+      <ondown condition="Skin.HasSetting(HideSubmenuWidget) + [Skin.HasSetting(DisableNetflixCatWidget) | $EXP[noSubMenu]]">329</ondown>
       <onright>Control.Move(1505,1)</onright>
       <onleft>300</onleft>
       <width>600</width>
@@ -1094,7 +1101,7 @@
         <orientation>horizontal</orientation>
         <ondown condition="!Skin.HasSetting(DisableNetflixCatWidget) + !$EXP[noSubMenu]">30222</ondown>
         <ondown condition="!Skin.HasSetting(HideSubmenuWidget) + [Skin.HasSetting(DisableNetflixCatWidget) | $EXP[noSubMenu]]">30222</ondown>
-        <ondown condition="Skin.HasSetting(HideSubmenuWidget) + [Skin.HasSetting(DisableNetflixCatWidget) | $EXP[noSubMenu]]">330</ondown>
+        <ondown condition="Skin.HasSetting(HideSubmenuWidget) + [Skin.HasSetting(DisableNetflixCatWidget) | $EXP[noSubMenu]]">329</ondown>
         <onleft>300</onleft>
         <onup>505</onup>
         <onfocus condition="!String.IsEmpty(Window(Home).Property(ShowSpotlightInfo))">Action(Info)</onfocus>
@@ -1284,7 +1291,7 @@
         <orientation>horizontal</orientation>
         <ondown condition="!Skin.HasSetting(DisableNetflixCatWidget) + !$EXP[noSubMenu]">30222</ondown>
         <ondown condition="!Skin.HasSetting(HideSubmenuWidget) + [Skin.HasSetting(DisableNetflixCatWidget) | $EXP[noSubMenu]]">30222</ondown>
-        <ondown condition="Skin.HasSetting(HideSubmenuWidget) + [Skin.HasSetting(DisableNetflixCatWidget) | $EXP[noSubMenu]]">330</ondown>
+        <ondown condition="Skin.HasSetting(HideSubmenuWidget) + [Skin.HasSetting(DisableNetflixCatWidget) | $EXP[noSubMenu]]">329</ondown>
         <onup>300</onup>
 	<onback>300</onback>
         <onleft>300</onleft>
@@ -1368,7 +1375,7 @@
       <onup condition="Skin.HasSetting(DisableMenuHor)">300</onup>
       <ondown condition="!Skin.HasSetting(DisableNetflixCatWidget) + !$EXP[noSubMenu]">30222</ondown>
       <ondown condition="!Skin.HasSetting(HideSubmenuWidget) + [Skin.HasSetting(DisableNetflixCatWidget) | $EXP[noSubMenu]]">30222</ondown>
-      <ondown condition="Skin.HasSetting(HideSubmenuWidget) + [Skin.HasSetting(DisableNetflixCatWidget) | $EXP[noSubMenu]]">330</ondown>
+      <ondown condition="Skin.HasSetting(HideSubmenuWidget) + [Skin.HasSetting(DisableNetflixCatWidget) | $EXP[noSubMenu]]">329</ondown>
       <onright>Control.Move(1506,1)</onright>
       <onleft>300</onleft>
       <width>600</width>
@@ -1603,7 +1610,32 @@
         </control>
         <!-- Plot Low spotlight -->
         <control type="textbox">
-          <height min="50" max="122">auto</height>
+          <height min="0" max="63">auto</height>
+          <visible>!Control.HasFocus(300) + !Control.HasFocus(302) + !Control.HasFocus(30222) + !Control.HasFocus(3001) + [String.IsEqual(ListItem.DBType,movie) | String.IsEqual(ListItem.DBType,season) | String.IsEqual(ListItem.DBType,tvshow) | [String.IsEqual(ListItem.DBType,episode) + Skin.HasSetting(EnableFullEpInfo)]]</visible>
+          <visible>Skin.HasSetting(DisableNetflixLowSpotlight)</visible>
+          <label fallback="19055">[COLOR=white]$VAR[Label_Netflix_Tagline][/COLOR]</label>
+          <width>1000</width>
+          <textcolor>dimgrey</textcolor>
+          <shadowcolor>black</shadowcolor>
+          <font>widget_trakt_title</font>
+          <autoscroll delay="5000" time="1500" repeat="5000">false</autoscroll>
+        </control>
+        <!-- Plot  -->
+        <control type="textbox">
+          <height min="0" max="63">auto</height>
+          <visible>!Control.HasFocus(300) + !Control.HasFocus(302) + !Control.HasFocus(30222) + !Control.HasFocus(3001) + [String.IsEqual(ListItem.DBType,movie) | String.IsEqual(ListItem.DBType,season) | String.IsEqual(ListItem.DBType,tvshow) | [String.IsEqual(ListItem.DBType,episode) + Skin.HasSetting(EnableFullEpInfo)]]</visible>
+          <visible>!Skin.HasSetting(DisableNetflixLowSpotlight)</visible>
+          <label fallback="19055">[COLOR=white]$VAR[Label_Netflix_Tagline][/COLOR]</label>
+          <align>left</align>
+          <width>560</width>
+          <textcolor>dimgrey</textcolor>
+          <shadowcolor>black</shadowcolor>
+          <font>widget_trakt_title</font>
+          <autoscroll delay="5000" time="1500" repeat="5000">false</autoscroll>
+        </control>
+        <!-- Plot Low spotlight -->
+        <control type="textbox">
+          <height min="0" max="154">auto</height>
           <visible>!Control.HasFocus(300) + !Control.HasFocus(302) + !Control.HasFocus(30222) + !Control.HasFocus(3001) + [String.IsEqual(ListItem.DBType,movie) | String.IsEqual(ListItem.DBType,season) | String.IsEqual(ListItem.DBType,tvshow) | [String.IsEqual(ListItem.DBType,episode) + Skin.HasSetting(EnableFullEpInfo)]]</visible>
           <visible>Skin.HasSetting(DisableNetflixLowSpotlight)</visible>
           <label fallback="19055">$VAR[Label_OverlayPlot]</label>
@@ -1615,12 +1647,12 @@
         </control>
         <!-- Plot  -->
         <control type="textbox">
-          <height min="50" max="122">auto</height>
+          <height min="0" max="154">auto</height>
           <visible>!Control.HasFocus(300) + !Control.HasFocus(302) + !Control.HasFocus(30222) + !Control.HasFocus(3001) + [String.IsEqual(ListItem.DBType,movie) | String.IsEqual(ListItem.DBType,season) | String.IsEqual(ListItem.DBType,tvshow) | [String.IsEqual(ListItem.DBType,episode) + Skin.HasSetting(EnableFullEpInfo)]]</visible>
           <visible>!Skin.HasSetting(DisableNetflixLowSpotlight)</visible>
           <label fallback="19055">$VAR[Label_OverlayPlot]</label>
           <align>left</align>
-          <width>500</width>
+          <width>560</width>
           <textcolor>dimgrey</textcolor>
           <shadowcolor>black</shadowcolor>
           <font>widget_trakt_title</font>
@@ -1630,23 +1662,32 @@
           <height>5</height>
         </control>
         <!-- Info Spinner  -->
-        <control type="group">
+        <control type="grouplist">
           <visible>!Skin.HasSetting(DisableNetflixLowSpotlight) + [[String.IsEqual(ListItem.DBType,episode) + Skin.HasSetting(EnableFullEpInfo)] | String.IsEqual(ListItem.DBType,movie) | String.IsEqual(ListItem.DBType,season) | String.IsEqual(ListItem.DBType,tvshow) | !String.IsEmpty(ListItem.ChannelName)] + [!Control.HasFocus(300) + !Control.HasFocus(302) + !Control.HasFocus(30222) + !Control.HasFocus(3001)]</visible>
-          <height>30</height>
+          <height>62</height>
+          <width>800</width>
+          <itemgap>25</itemgap>
+          <orientation>horizontal</orientation>
+          <usecontrolcoords>true</usecontrolcoords>
           <control type="image">
+            <top>17</top>
+            <height>30</height>
             <width>70</width>
             <left>-10</left>
             <aspectratio>keep</aspectratio>
             <texture colordiffuse="FFFF0000">netflix/fact.png</texture>
+            <visible>!String.IsEmpty(Control.GetLabel(7879))</visible>
           </control>
-          <control type="label">
-            <width>400</width>
-            <left>70</left>
+          <control type="textbox" id="7879">
+            <width>560</width>
+            <left>-22</left>
             <right>0</right>
             <label>$VAR[NetflixDetailsSpin]</label>
             <textcolor>dimgrey</textcolor>
+            <align>left</align>
+            <aligny>center</aligny>
             <font>font_tiny</font>
-            <scroll>true</scroll>
+            <autoscroll>false</autoscroll>
           </control>
         </control>
         <!-- Info Spinner  Low Spotlight -->
@@ -1695,15 +1736,38 @@
           <texture background="true" colordiffuse="FF000000">common/white.png</texture>
           <visible>!Window.IsVisible(MyVideoNav.xml) + ![Skin.HasSetting(DisableNetflixSubmenuBG) + [Control.HasFocus(300) | Control.HasFocus(302) | Control.HasFocus(30222)]]</visible>
         </control>
+        <control type="label" id="5152">
+          <description>hidden label for fanart image</description>
+          <include>Defs_Offscreen</include>
+          <label>$VAR[fanart_multi_fadelabel]</label>
+          <visible>false</visible>
+        </control>
         <control type="multiimage">
           <animation effect="slide" end="50,-10" condition="Skin.HasSetting(DisableNetflixHomeSidemenu)">Conditional</animation>
-          <animation effect="slide" end="20,0" condition="Skin.HasSetting(DisableNetflixHomeSidemenuHide)">Conditional</animation>
+          <visible>!String.IsEqual(Control.GetLabel(5152),ListItem.Icon)</visible>
           <visible>!Player.HasVideo + $EXP[DBTvideosImage]</visible>
           <width>1400</width>
           <height>700</height>
 	  <left>500</left>
           <top>0</top>
           <aspectratio scalediffuse="true" aligny="top">scale</aspectratio>
+          <imagepath background="true" diffuse="Right Corner.png">$VAR[fanart_multi_fadelabel]</imagepath>
+          <timeperimage>2000</timeperimage>
+          <fadetime>2000</fadetime>
+          <pauseatend>10000</pauseatend>
+          <randomize>false</randomize>
+          <loop>no</loop>
+          <include>animation_image_zoom</include>
+        </control>
+        <control type="multiimage">
+          <animation effect="slide" end="50,-10" condition="Skin.HasSetting(DisableNetflixHomeSidemenu)">Conditional</animation>
+          <visible>String.IsEqual(Control.GetLabel(5152),ListItem.Icon)</visible>
+          <visible>!Player.HasVideo + $EXP[DBTvideosImage]</visible>
+          <width>1400</width>
+          <height>700</height>
+	  <left>500</left>
+          <top>0</top>
+          <aspectratio scalediffuse="false" aligny="center">scale</aspectratio>
           <imagepath background="true" diffuse="Right Corner.png">$VAR[fanart_multi_fadelabel]</imagepath>
           <timeperimage>2000</timeperimage>
           <fadetime>2000</fadetime>
@@ -1725,7 +1789,6 @@
 
         <control type="image">
           <animation effect="slide" end="50,-10" condition="Skin.HasSetting(DisableNetflixHomeSidemenu)">Conditional</animation>
-          <animation effect="slide" end="20,0" condition="Skin.HasSetting(DisableNetflixHomeSidemenuHide)">Conditional</animation>
           <visible>[Window.IsVisible(Custom_Hub_TVNetflix.xml) | Window.IsVisible(Custom_Hub_MovieNetflix.xml)] + [Container($PARAM[id]).IsUpdating + !Integer.IsGreater(Container($PARAM[id]).NumItems,0)]</visible>
           <fadetime>500</fadetime>
           <width>1400</width>
@@ -1940,12 +2003,23 @@
             <font>font_small</font>
           </control>
           <control type="label">
-            <height>20</height>
+            <height>7</height>
           </control>
           <control type="textbox">
             <visible>[Window.IsVisible(Home) + [!Control.HasFocus(660) + !Control.HasFocus(300) + !Control.HasFocus(302) + !Control.HasFocus(30222) + !Control.HasFocus(3001)]] | !Window.IsVisible(Home)</visible>
             <visible>$EXP[DBTvideos] + !Skin.HasSetting(DisableNetflixView) + ![String.IsEqual(ListItem.DBType,episode) + !Skin.HasSetting(EnableFullEpInfo)]</visible>
-            <height min="20" max="180">auto</height>
+            <height min="0" max="63">auto</height>
+            <label fallback="19055">[COLOR=white]$VAR[Label_Netflix_Tagline][/COLOR]</label>
+            <width>640</width>
+            <aligny>top</aligny>
+            <textcolor>dimgrey</textcolor>
+            <font>widget_trakt_title</font>
+            <autoscroll delay="5000" time="1500" repeat="5000">false</autoscroll>
+          </control>
+          <control type="textbox">
+            <visible>[Window.IsVisible(Home) + [!Control.HasFocus(660) + !Control.HasFocus(300) + !Control.HasFocus(302) + !Control.HasFocus(30222) + !Control.HasFocus(3001)]] | !Window.IsVisible(Home)</visible>
+            <visible>$EXP[DBTvideos] + !Skin.HasSetting(DisableNetflixView) + ![String.IsEqual(ListItem.DBType,episode) + !Skin.HasSetting(EnableFullEpInfo)]</visible>
+            <height min="10" max="154">auto</height>
             <label fallback="19055">$VAR[Label_OverlayPlot]</label>
             <width>640</width>
             <aligny>top</aligny>
@@ -1954,48 +2028,19 @@
             <autoscroll delay="5000" time="1500" repeat="5000">true</autoscroll>
           </control>
           <control type="label">
-            <height>30</height>
+            <height>18</height>
           </control>
           <control type="group">
             <height>62</height>
             <control type="group">
               <visible>$EXP[DBTvideos]</visible>
-              <visible>!Integer.IsGreater(ListItem.PercentPlayed,1) + !Skin.HasSetting(DisableNetflixView) + ![String.IsEqual(ListItem.DBType,episode) + !Skin.HasSetting(EnableFullEpInfo)]</visible>
+              <visible>!Skin.HasSetting(DisableNetflixView) + ![String.IsEqual(ListItem.DBType,episode) + !Skin.HasSetting(EnableFullEpInfo)]</visible>
               <width>600</width>
-              <left>10</left>
+              <left>0</left>
               <right>0</right>
               <include>Details_Spinner</include>
               <textcolor>dimgrey</textcolor>
               <font>font_tiny</font>
-            </control>
-            <control type="label">
-              <height>40</height>
-              <visible>!Integer.IsEqual(ListItem.PercentPlayed,0)</visible>
-            </control>
-            <control type="group">
-              <visible>[String.IsEqual(ListItem.DBType,episode) | String.IsEqual(ListItem.DBType,movie) ] + [Integer.IsGreater(ListItem.PercentPlayed,1) | Integer.IsGreater(Window(Home).Property(ListItem.PercentPlayed),1)]</visible>
-              <top>10</top>
-              <width>650</width>
-              <height>30</height>
-              <aligny>center</aligny>
-              <control type="progress">
-                <width>185</width>
-                <height>11</height>
-                <texturebg colordiffuse="cc515151" border="0">colors/color_white.png</texturebg>
-                <lefttexture />
-                <midtexture colordiffuse="red" border="4">colors/color_white.png</midtexture>
-                <righttexture />
-                <info>ListItem.PercentPlayed</info>
-              </control>
-              <control type="label">
-                <top>-12</top>
-                <left>200</left>
-                <height>25</height>
-                <width>450</width>
-                <font>Netflix_Info_main</font>
-                <textcolor>grey</textcolor>
-                <label>$VAR[ListItemPercentRemained,,% $LOCALIZE[31783]]</label> <!-- remaining -->
-              </control>
             </control>
           </control>
         </control>
@@ -2033,6 +2078,7 @@
             <param name="plot" value="false" />
             <param name="studio" value="true" />
             <param name="studioid" value="1$PARAM[id]" />
+            <param name="visible" value="!Container(330).HasPrevious" />
           </include>
         </control>
         <control type="grouplist">
@@ -2145,7 +2191,7 @@
                 <control type="group">
                   <width>100</width>
                   <height>30</height>
-                  <visible>!String.IsEqual(Container($PARAM[id]).ListItem.DBType,tvshow) + [!String.IsEmpty(ListItem.Duration) | !String.IsEmpty(Window(Home).Property(TMDBHelper.ListItem.Duration))]</visible>
+                  <visible>!String.IsEqual(Container($PARAM[id]).ListItem.DBType,tvshow) + !String.IsEmpty(Container($PARAM[id]).ListItem.Duration)</visible>
               <control type="image">
                 <bottom>-18</bottom>
                 <animation effect="fade" time="0" end="75" condition="true">Conditional</animation>
@@ -2274,6 +2320,245 @@
       </control>
     </definition>
   </include>
+  <include name="addon_view_infospotlight_container">
+    <param name="hdsd_flag" default="false" />
+    <param name="rottentomatoes" default="true" />
+    <param name="imdbvotes" default="true" />
+    <param name="usermeter" default="true" />
+    <param name="imdb" default="true" />
+    <param name="tmdb" default="true" />
+    <param name="metacritic" default="true" />
+    <param name="oscars" default="true" />
+    <param name="genre" default="true" />
+    <param name="top250" default="true" />
+    <param name="titleright" default="0" />
+    <param name="studioid" default="90712" />
+    <definition>
+      <control type="group">
+          <!-- trailer window -->
+          <include content="Netflix_Trailer">
+            <param name="top" value="-115" />	
+            <param name="right" value="-40" />	
+            <param name="height" value="720" />	
+            <param name="width" value="1400" />	
+            <param name="visible" value="Player.HasVideo" />	
+          </include>
+      </control>
+      <control type="group">
+        <param name="studioid" value="$PARAM[studioid]" />
+
+        <!-- Add Ratings below Fanart -->
+        <control type="group">
+          <visible>!Skin.HasSetting(DisableNetflixView) + !Window.IsVisible(DialogVideoInfo.xml) + !String.IsEqual(ListItem.Label,Next)</visible>
+          <top>550</top>
+          <right>20</right>
+          <width>$PARAM[width]</width>
+          <height>184</height>
+          <include content="Object_Ratings_TMDB" condition="Window.IsVisible(MyVideoNav.xml) | Window.IsVisible(Home.xml) | Window.IsVisible(script-globalsearch.xml)">
+            <param name="directory" value="color" />
+            <param name="align" value="right" />
+            <param name="width" value="1400" />
+            <param name="rottentomatoes" value="true" />
+            <param name="imdbvotes" value="true" />
+            <param name="usermeter" value="true" />
+            <param name="imdb" value="true" />
+            <param name="tmdb" value="true" />
+            <param name="tvdb" value="true" />
+            <param name="metacritic" value="true" />
+            <param name="oscars" value="true" />
+            <param name="top250" value="true" />
+            <param name="plot" value="false" />
+            <param name="studio" value="true" />
+            <param name="studioid" value="$PARAM[studioid]" />
+          </include>
+        </control>
+      </control>
+
+      <!-- Left Info Showcase -->
+      <control type="group">
+        <left>10</left>
+      <control type="grouplist">
+        <top>-45</top>
+        <posx>10</posx>
+        <visible>Container.Content(movies) | Container.Content(sets) | Container.Content(episodes) | Container.Content(tvshows) | Container.Content(videos) | Container.Content(seasons) | Window.IsVisible(script-script.extendedinfo-VideoList.xml) | $EXP[Exp_IsPluginAdvancedLauncher] | Window.IsVisible(DialogVideoInfo.xml) | Window.IsVisible(MyVideoNav.xml)</visible>
+        <visible>!Container($PARAM[id]).ListItem.IsParentFolder</visible>
+        <orientation>vertical</orientation>
+        <usecontrolcoords>true</usecontrolcoords>
+        <itemgap>0</itemgap>
+        <height>650</height>
+
+          <!-- Clearlogo -->
+          <include content="Netflix_Clearlogo">
+            <param name="id" value="5150" />
+            <param name="top" value="15" />
+            <param name="bottom" value="0" />
+            <param name="right" value="0" />
+            <param name="left" value="0" />
+            <param name="height" value="218" />
+            <param name="width" value="563" />
+            <param name="aligny" value="top" />
+            <param name="visible" value="!Skin.HasSetting(DisableNetflixView) + [Control.IsVisible(505) | Control.IsVisible(506)]" />
+          </include>
+        <!-- Fallback Label-->
+        <control type="textbox">
+          <visible>String.IsEmpty(Window(Home).Property(TMDBHelper.ListItem.ClearLogo)) + String.IsEmpty(ListItem.Art(clearlogo)) + String.IsEmpty(ListItem.Art(tvshow.clearlogo))</visible>
+          <top>-200</top>
+          <label>$VAR[video_heading5055]</label>
+          <textcolor>grey</textcolor>
+          <shadowcolor>black</shadowcolor>
+          <font>font_xlarge_bold</font>
+	  <height>200</height>
+          <width>730</width>
+          <align>left</align>
+          <aligny>center</aligny>
+          <wrapmultiline>true</wrapmultiline>
+          <scroll>true</scroll>
+        </control>
+
+        <control type="grouplist">
+          <visible>!String.IsEmpty(Container($PARAM[id]).ListItem.DBType)</visible>
+          <top>0</top>
+          <height>60</height>
+          <orientation>horizontal</orientation>
+          <usecontrolcoords>true</usecontrolcoords>
+          <itemgap>0</itemgap>
+          <left>0</left>
+          <right>$PARAM[titleright]</right>
+          <include content="netflix_infoline_container">
+            <param name="id" value="$PARAM[id]" />
+          </include>
+        </control>
+        <control type="label">
+          <height>7</height>
+        </control>
+        <control type="textbox">
+          <visible>!String.IsEmpty(Container($PARAM[id]).ListItem.DBType)</visible>
+          <visible>!Skin.HasSetting(DisableNetflixView) + !Skin.HasSetting(DisableNetflixShowcaseOverlay)</visible>
+          <label fallback="19055">[COLOR=white]$VAR[Label_Netflix_Tagline_Container][/COLOR]</label>
+          <width>640</width>
+          <height min="0" max="63">auto</height>
+          <aligny>top</aligny>
+          <textcolor>dimgrey</textcolor>
+          <font>widget_trakt_title</font>
+          <autoscroll delay="5000" time="1500" repeat="5000">false</autoscroll>
+        </control>
+
+        <control type="textbox">
+          <visible>!String.IsEmpty(Container($PARAM[id]).ListItem.DBType)</visible>
+          <visible>Skin.HasSetting(DisableNetflixShowcaseOverlay)</visible>
+          <label fallback="19055">[COLOR=white]$VAR[Label_Netflix_Tagline_Container][/COLOR]</label>
+          <width>1330</width>
+          <height min="20" max="175">auto</height>
+          <aligny>top</aligny>
+          <textcolor>dimgrey</textcolor>
+          <font>font_small</font>
+          <autoscroll delay="5000" time="1500" repeat="5000">true</autoscroll>
+        </control>
+        <control type="textbox">
+          <visible>!String.IsEmpty(Container($PARAM[id]).ListItem.DBType)</visible>
+          <visible>!Skin.HasSetting(DisableNetflixView) + !Skin.HasSetting(DisableNetflixShowcaseOverlay)</visible>
+          <label fallback="19055">$VAR[Label_OverlayPlot_Container]</label>
+          <width>640</width>
+          <height min="10" max="154">auto</height>
+          <aligny>top</aligny>
+          <textcolor>dimgrey</textcolor>
+          <font>widget_trakt_title</font>
+          <autoscroll delay="5000" time="1500" repeat="5000">true</autoscroll>
+        </control>
+
+        <control type="textbox">
+          <visible>!String.IsEmpty(Container($PARAM[id]).ListItem.DBType)</visible>
+          <visible>Skin.HasSetting(DisableNetflixShowcaseOverlay)</visible>
+          <label fallback="19055">$VAR[Label_OverlayPlot_Container]</label>
+          <width>1330</width>
+          <height min="20" max="175">auto</height>
+          <aligny>top</aligny>
+          <textcolor>dimgrey</textcolor>
+          <font>font_small</font>
+          <autoscroll delay="5000" time="1500" repeat="5000">true</autoscroll>
+        </control>
+        <control type="grouplist">
+          <top>18</top>
+          <height>62</height>
+          <width>800</width>
+          <itemgap>25</itemgap>
+          <orientation>horizontal</orientation>
+          <usecontrolcoords>true</usecontrolcoords>
+	  <visible>!String.IsEqual(ListItem.Label,Next)</visible>
+          <control type="group">
+            <top>10</top>
+            <height>46</height>
+            <width>46</width>
+            <control type="image">
+              <animation effect="fade" time="150">Visible</animation>
+              <animation effect="fade" time="0" end="60" condition="true">Conditional</animation>
+              <align>left</align>
+              <aligny>center</aligny>
+              <texture>$VAR[DetailsSpinImage,netflix/spinner/,.png]</texture>
+              <colordiffuse>red</colordiffuse>
+            </control>
+          </control>
+          <control type="textbox" id="841">
+	    <top>-11</top>
+            <animation effect="fade" time="150">Visible</animation>
+            <height>85</height>
+            <width>550</width>
+            <label>$VAR[NetflixDetailsSpin]</label>
+            <textcolor>dimgrey</textcolor>
+            <align>left</align>
+            <aligny>center</aligny>
+            <font>font_tiny</font>
+            <autoscroll>false</autoscroll>
+          </control>
+        </control>
+      </control>
+    </control>
+      <control type="grouplist">
+        <visible>![Container.Content(movies) | Container.Content(sets) | Container.Content(episodes) | Container.Content(tvshows) | Container.Content(videos) | Container.Content(seasons) | Window.IsVisible(script-script.extendedinfo-VideoList.xml) | $EXP[Exp_IsPluginAdvancedLauncher]]</visible>
+        <visible>!Container($PARAM[id]).ListItem.IsParentFolder + !Control.HasFocus($PARAM[id]) + !Control.HasFocus(505) + !Control.HasFocus(506)</visible>
+        <bottom>$PARAM[bottom]</bottom>
+        <top>-10</top>
+        <orientation>vertical</orientation>
+        <usecontrolcoords>true</usecontrolcoords>
+        <itemgap>0</itemgap>
+        <control type="label">
+          <left>0</left>
+          <right>0</right>
+          <label>$VAR[Label_MainTitle]</label>
+          <height>80</height>
+          <aligny>top</aligny>
+          <textcolor>main_fg_100</textcolor>
+          <font>font_showcase_title</font>
+        </control>
+        <control type="label">
+          <left>0</left>
+          <right>0</right>
+          <label>$VAR[Label_SubTitle]</label>
+          <height>40</height>
+          <aligny>top</aligny>
+          <textcolor>$VAR[ColorHighlight]</textcolor>
+          <font>font_small</font>
+        </control>
+        <control type="group">
+          <height>80</height>
+          <visible>!Skin.HasSetting(DisableStarRating)</visible>
+          <control type="group">
+            <top>-17</top>
+            <left>-16</left>
+            <include content="Object_StarRating_Music">
+              <param name="align" value="left" />
+              <param name="visible" value="String.IsEmpty(ListItem.Rating)" />
+            </include>
+            <include content="Object_StarRating">
+              <param name="align" value="left" />
+              <param name="visible" value="!String.IsEmpty(ListItem.Rating)" />
+              <param name="rating_prop" value="ListItem.Rating" />
+            </include>
+          </control>
+        </control>
+      </control>
+    </definition>
+  </include>
   <include name="Object_Info_Netflix">
     <param name="hdsd_flag" default="false" />
     <param name="rottentomatoes" default="true" />
@@ -2302,12 +2587,13 @@
         <param name="studioid" value="$PARAM[studioid]" />
           <!-- Add Netflix view Fanart with corner diffuse -->
           <include content="Netflix_Fanart">
-            <param name="top" value="-45" />
-            <param name="bottom" value="5" />
+            <param name="top" value="-40" />
+            <param name="bottom" value="0" />
+            <param name="left" value="530" />
             <param name="right" value="0" />
-            <param name="height" value="650" />
-            <param name="width" value="1440" />
-            <param name="visible" value="!Skin.HasSetting(DisableNetflixView) + !Skin.HasSetting(DisableNetflixShowcaseOverlay) + !Player.HasVideo + [Control.IsVisible(55) | Control.IsVisible(56) | Control.IsVisible(509) | Window.IsVisible(DialogVideoInfo.xml)]" />
+            <param name="height" value="700" />
+            <param name="width" value="1400" />
+            <param name="visible" value="!Skin.HasSetting(DisableNetflixView) + !Skin.HasSetting(DisableNetflixShowcaseOverlay) + !Player.HasVideo + !ListItem.IsParentFolder + [Control.IsVisible(55) | Control.IsVisible(56) | Control.IsVisible(509) | Window.IsVisible(DialogVideoInfo.xml)]" />
           </include>
 
         <!-- Add Ratings below Fanart -->
@@ -2338,6 +2624,8 @@
       </control>
 
       <!-- Left Info Showcase -->
+      <control type="group">
+        <left>10</left>
       <control type="grouplist">
         <top>-45</top>
         <posx>10</posx>
@@ -2351,14 +2639,13 @@
           <!-- Clearlogo -->
           <include content="Netflix_Clearlogo">
             <param name="id" value="5150" />
-            <param name="top" value="10" />
-            <param name="bottom" value="10" />
-            <param name="right" value="" />
+            <param name="top" value="15" />
+            <param name="bottom" value="0" />
+            <param name="right" value="0" />
             <param name="left" value="0" />
-            <param name="height" value="251" />
-            <param name="width" value="520" />
-            <param name="align" value="left" />
-            <param name="texture" value="$VAR[NetflixHome_ClearLogo]" />
+            <param name="height" value="218" />
+            <param name="width" value="563" />
+            <param name="aligny" value="top" />
             <param name="visible" value="!Skin.HasSetting(DisableNetflixView) + [Control.IsVisible(55) | Control.IsVisible(56) | Control.IsVisible(509) | Window.IsVisible(DialogVideoInfo.xml)]" />
           </include>
         <!-- Fallback Label-->
@@ -2402,16 +2689,37 @@
           <include>netflix_infoline</include>
         </control>
         <control type="label">
-          <height>10</height>
+          <height>7</height>
         </control>
         <control type="textbox">
           <visible>$EXP[DBTvideos] + !Skin.HasSetting(DisableNetflixView) + !Skin.HasSetting(DisableNetflixShowcaseOverlay)</visible>
-          <label fallback="19055">$VAR[Label_OverlayPlot]</label>
-          <width>630</width>
+          <label fallback="19055">[COLOR=white]$VAR[Label_Netflix_Tagline][/COLOR]</label>
+          <width>640</width>
+          <height min="0" max="63">auto</height>
+          <aligny>top</aligny>
+          <textcolor>dimgrey</textcolor>
+          <font>widget_trakt_title</font>
+          <autoscroll delay="5000" time="1500" repeat="5000">false</autoscroll>
+        </control>
+
+        <control type="textbox">
+          <visible>$EXP[DBTvideos] + Skin.HasSetting(DisableNetflixShowcaseOverlay)</visible>
+          <label fallback="19055">[COLOR=white]$VAR[Label_Netflix_Tagline][/COLOR]</label>
+          <width>1330</width>
           <height min="20" max="175">auto</height>
           <aligny>top</aligny>
           <textcolor>dimgrey</textcolor>
           <font>font_small</font>
+          <autoscroll delay="5000" time="1500" repeat="5000">true</autoscroll>
+        </control>
+        <control type="textbox">
+          <visible>$EXP[DBTvideos] + !Skin.HasSetting(DisableNetflixView) + !Skin.HasSetting(DisableNetflixShowcaseOverlay)</visible>
+          <label fallback="19055">$VAR[Label_OverlayPlot]</label>
+          <width>640</width>
+          <height min="10" max="154">auto</height>
+          <aligny>top</aligny>
+          <textcolor>dimgrey</textcolor>
+          <font>widget_trakt_title</font>
           <autoscroll delay="5000" time="1500" repeat="5000">true</autoscroll>
         </control>
 
@@ -2426,7 +2734,7 @@
           <autoscroll delay="5000" time="1500" repeat="5000">true</autoscroll>
         </control>
         <control type="grouplist">
-          <top>30</top>
+          <top>18</top>
           <height>62</height>
           <width>800</width>
           <itemgap>25</itemgap>
@@ -2447,7 +2755,7 @@
             </control>
           </control>
           <control type="textbox" id="841">
-	    <top>-10</top>
+	    <top>-11</top>
             <animation effect="fade" time="150">Visible</animation>
             <height>85</height>
             <width>550</width>
@@ -2460,6 +2768,7 @@
           </control>
         </control>
       </control>
+    </control>
       <control type="grouplist">
         <visible>![Container.Content(movies) | Container.Content(sets) | Container.Content(episodes) | Container.Content(tvshows) | Container.Content(videos) | Container.Content(seasons) | Window.IsVisible(script-script.extendedinfo-VideoList.xml) | $EXP[Exp_IsPluginAdvancedLauncher]]</visible>
         <visible>!Container($PARAM[id]).ListItem.IsParentFolder + !Control.HasFocus(505) + !Control.HasFocus($PARAM[id]) + !Control.HasFocus(55) + !Control.HasFocus(56) + !Control.HasFocus(509) + !Control.HasFocus(504)</visible>
@@ -2545,7 +2854,7 @@
       <animation effect="slide" end="-30,-10" time="10" condition="!Skin.HasSetting(DisableNetflixLargeWidget) + [Skin.HasSetting(DisableMenuHor) | Skin.HasSetting(DisableNetflixHomeSidemenuHide)]">Conditional</animation>
       <onup condition="Window.IsVisible(Home) + !Integer.IsGreater(Container($PARAM[id]).NumItems,0) + Integer.IsGreater(Container(1505).NumItems,0) + String.IsEqual(Container(300).ListItem.Property(widgetspotlight),true) + String.IsEqual(Container(300).ListItem.Property(widgetSpotlighttype),TVShows)">SetFocus(1505)</onup>
       <onup condition="Window.IsVisible(Home) + !Integer.IsGreater(Container($PARAM[id]).NumItems,0) + Integer.IsGreater(Container(1506).NumItems,0) + String.IsEqual(Container(300).ListItem.Property(widgetspotlight),true) + String.IsEqual(Container(300).ListItem.Property(widgetSpotlighttype),Movies)">SetFocus(1506)</onup>
-      <onup condition="!String.IsEqual(Container(300).ListItem.Property(widgetspotlight),true)">300</onup>
+      <onup condition="!String.IsEqual(Container(300).ListItem.Property(widgetspotlight),true) | Skin.HasSetting(DisableMenuHor) + !Control.IsVisible(1505) + !Control.IsVisible(1506)">300</onup>
       <ondown>330</ondown>
       <onleft>300</onleft>
       <onback>300</onback>
@@ -2570,7 +2879,7 @@
       <ondown>330</ondown>
       <onup condition="Window.IsVisible(Home) + !Integer.IsGreater(Container($PARAM[id]).NumItems,0) + Integer.IsGreater(Container(1505).NumItems,0) + String.IsEqual(Container(300).ListItem.Property(widgetspotlight),true) + String.IsEqual(Container(300).ListItem.Property(widgetSpotlighttype),TVShows)">SetFocus(1505)</onup>
       <onup condition="Window.IsVisible(Home) + !Integer.IsGreater(Container($PARAM[id]).NumItems,0) + Integer.IsGreater(Container(1506).NumItems,0) + String.IsEqual(Container(300).ListItem.Property(widgetspotlight),true) + String.IsEqual(Container(300).ListItem.Property(widgetSpotlighttype),Movies)">SetFocus(1506)</onup>
-      <onup condition="!String.IsEqual(Container(300).ListItem.Property(widgetspotlight),true)">300</onup>
+      <onup condition="!String.IsEqual(Container(300).ListItem.Property(widgetspotlight),true) | Skin.HasSetting(DisableMenuHor) + !Control.IsVisible(1505) + !Control.IsVisible(1506)">300</onup>
       <onup>300</onup>
       <onleft>300</onleft>
       <onback>300</onback>
@@ -4485,6 +4794,7 @@
           <visible>!String.IsEmpty(Container.ListItem.Property(tmdb_rating)) | [$EXP[tmdbu] + !String.IsEmpty(Window(Home).Property(TMDBHelper.ListItem.TMDb_Rating))]</visible>
           <visible>$PARAM[tmdb]</visible>
           <visible>!Skin.HasSetting(Ratings.TheMovieDB)</visible>
+          <visible>!String.IsEqual(Window(Home).Property(TMDBHelper.ListItem.TMDb_Rating),0.0)</visible>
         </control>
         <control type="label">
           <textcolor>main_fg_70</textcolor>
@@ -4497,6 +4807,7 @@
           <visible>!String.IsEmpty(Container.ListItem.Property(tmdb_rating)) | [$EXP[tmdbu] + !String.IsEmpty(Window(Home).Property(TMDBHelper.ListItem.TMDb_Rating))]</visible>
           <visible>$PARAM[tmdb]</visible>
           <visible>!Skin.HasSetting(Ratings.TheMovieDB)</visible>
+          <visible>!String.IsEqual(Window(Home).Property(TMDBHelper.ListItem.TMDb_Rating),0.0)</visible>
         </control>
         <control type="image">
           <top>10</top>
@@ -4579,8 +4890,9 @@
           <height>64</height>
           <texture colordiffuse="$PARAM[colordiffuse]">flags/star10.png</texture>
           <visible>$PARAM[star]</visible>
-          <visible>!String.IsEmpty(ListItem.Rating) | [Control.IsVisible(1505) + !String.IsEmpty(Container(1505).ListItem.Rating) + ControlGroup(505).HasFocus] | [Control.IsVisible(1506) + !String.IsEmpty(Container(1506).ListItem.Rating) + ControlGroup(506).HasFocus]</visible>
+          <visible>!String.IsEmpty(ListItem.Rating) | !String.IsEmpty(Window(Home).Property(TMDbHelper.ListItem.Rating)) | [Control.IsVisible(1505) + !String.IsEmpty(Container(1505).ListItem.Rating) + ControlGroup(505).HasFocus] | [Control.IsVisible(1506) + !String.IsEmpty(Container(1506).ListItem.Rating) + ControlGroup(506).HasFocus]</visible>
           <visible>!Skin.HasSetting(Ratings.Star) + Skin.HasSetting(MonochromeFlags)</visible>
+          <visible>!String.IsEqual(Window(Home).Property(TMDbHelper.ListItem.Rating),0.0)</visible>
         </control>
         <control type="image">
           <top>-8</top>
@@ -4589,8 +4901,9 @@
           <height>64</height>
           <texture colordiffuse="red">flags/star10.png</texture>
           <visible>$PARAM[star]</visible>
-          <visible>!String.IsEmpty(ListItem.Rating) | [Control.IsVisible(1505) + !String.IsEmpty(Container(1505).ListItem.Rating) + ControlGroup(505).HasFocus] | [Control.IsVisible(1506) + !String.IsEmpty(Container(1506).ListItem.Rating) + ControlGroup(506).HasFocus]</visible>
+          <visible>!String.IsEmpty(ListItem.Rating) | !String.IsEmpty(Window(Home).Property(TMDbHelper.ListItem.Rating)) | [Control.IsVisible(1505) + !String.IsEmpty(Container(1505).ListItem.Rating) + ControlGroup(505).HasFocus] | [Control.IsVisible(1506) + !String.IsEmpty(Container(1506).ListItem.Rating) + ControlGroup(506).HasFocus]</visible>
           <visible>!Skin.HasSetting(Ratings.Star) + !Skin.HasSetting(MonochromeFlags)</visible>
+          <visible>!String.IsEqual(Window(Home).Property(TMDbHelper.ListItem.Rating),0.0)</visible>
         </control>
         <control type="label">
           <textcolor>main_fg_70</textcolor>
@@ -4601,8 +4914,9 @@
           <font>font_tiny</font>
           <label>$VAR[star_ratings_container]</label>
           <visible>$PARAM[star]</visible>
-          <visible>!String.IsEmpty(ListItem.Rating) | [Control.IsVisible(1505) + !String.IsEmpty(Container(1505).ListItem.Rating) + ControlGroup(505).HasFocus] | [Control.IsVisible(1506) + !String.IsEmpty(Container(1506).ListItem.Rating) + ControlGroup(506).HasFocus]</visible>
+          <visible>!String.IsEmpty(ListItem.Rating) | !String.IsEmpty(Window(Home).Property(TMDbHelper.ListItem.Rating)) | [Control.IsVisible(1505) + !String.IsEmpty(Container(1505).ListItem.Rating) + ControlGroup(505).HasFocus] | [Control.IsVisible(1506) + !String.IsEmpty(Container(1506).ListItem.Rating) + ControlGroup(506).HasFocus]</visible>
           <visible>!Skin.HasSetting(Ratings.Star)</visible>
+          <visible>!String.IsEqual(Window(Home).Property(TMDbHelper.ListItem.Rating),0.0)</visible>
         </control>
         <control type="image">
           <top>11</top>
@@ -4687,7 +5001,7 @@
           <width>$PARAM[studiowidth]</width>
           <visible>$PARAM[studio]</visible>
           <visible>Skin.HasSetting(DisableWidgetStudio)</visible>
-          <visible>String.IsEqual(ListItem.DBType,tvshow) + !String.IsEqual(Container(5055).ListItem.DBType,movie)</visible>
+          <visible>String.IsEqual(Window(Home).Property(TMDbHelper.ListItem.DBType),tvshow)</visible>
           <visible>![Control.HasFocus(300) | Control.HasFocus(30222)] + !String.IsEmpty(Window(Home).Property(TMDbHelper.ListItem.Network.1.Name)) + !String.IsEmpty(Control.GetLabel(1$PARAM[studioid]))</visible>
           <visible>!Window.IsVisible(DialogVideoInfo.xml)</visible>
         </control>
@@ -4701,7 +5015,7 @@
           <width>$PARAM[studiowidth]</width>
           <visible>$PARAM[studio]</visible>
           <visible>Skin.HasSetting(DisableWidgetStudio)</visible>
-          <visible>String.IsEqual(ListItem.DBType,episode) + !String.IsEqual(Container(5055).ListItem.DBType,movie)</visible>
+          <visible>String.IsEqual(Window(Home).Property(TMDbHelper.ListItem.DBType),episode)</visible>
           <visible>![Control.HasFocus(300) | Control.HasFocus(30222)] + !String.IsEmpty(Window(Home).Property(TMDbHelper.ListItem.Network.1.Name)) + !String.IsEmpty(Control.GetLabel(2$PARAM[studioid]))</visible>
           <visible>!Window.IsVisible(DialogVideoInfo.xml)</visible>
         </control>
@@ -4715,7 +5029,7 @@
           <width>$PARAM[studiowidth]</width>
           <visible>$PARAM[studio]</visible>
           <visible>Skin.HasSetting(DisableWidgetStudio)</visible>
-          <visible>String.IsEqual(ListItem.DBType,movie) + !String.IsEqual(Container(5055).ListItem.DBType,movie)</visible>
+          <visible>String.IsEqual(Window(Home).Property(TMDbHelper.ListItem.DBType),movie)</visible>
           <visible>![Control.HasFocus(300) | Control.HasFocus(30222)] + !String.IsEmpty(Window(Home).Property(TMDbHelper.ListItem.Studio.1.Name)) + !String.IsEmpty(Control.GetLabel(3$PARAM[studioid]))</visible>
           <visible>!Window.IsVisible(DialogVideoInfo.xml)</visible>
         </control>
@@ -4740,6 +5054,7 @@
     <param name="studiotop" default="-12" />
     <param name="studioheight" default="100" />
     <param name="studiowidth" default="100" />
+    <param name="visible" default="true" />
     <definition>
       <include content="Object_Ratings_Container_Content" condition="!Skin.HasSetting(MonochromeFlags)">
         <param name="id" value="$PARAM[id]" />
@@ -4760,6 +5075,7 @@
         <param name="studiotop" value="$PARAM[studiotop]" />
         <param name="studioheight" value="$PARAM[studioheight]" />
         <param name="studiowidth" value="$PARAM[studiowidth]" />
+        <param name="visible" value="$PARAM[visible]" />
       </include>
       <include content="Object_Ratings_Container_Content" condition="Skin.HasSetting(MonochromeFlags)">
         <param name="id" value="$PARAM[id]" />
@@ -4781,6 +5097,7 @@
         <param name="studiotop" value="$PARAM[studiotop]" />
         <param name="studioheight" value="$PARAM[studioheight]" />
         <param name="studiowidth" value="$PARAM[studiowidth]" />
+        <param name="visible" value="$PARAM[visible]" />
       </include>
     </definition>
   </include>
@@ -4806,6 +5123,7 @@
     <param name="studiotop" default="-12" />
     <param name="studioheight" default="100" />
     <param name="studiowidth" default="100" />
+    <param name="visible" default="true" />
     <definition>
       <control type="grouplist">
         <width>$PARAM[width]</width>
@@ -4815,6 +5133,7 @@
         <itemgap>8</itemgap>
         <usecontrolcoords>true</usecontrolcoords>
         <height>184</height>
+        <visible>$PARAM[visible]</visible>
         <control type="image">
           <top>10</top>
           <width>32</width>
@@ -5113,8 +5432,8 @@
           <width>$PARAM[studiowidth]</width>
           <visible>$PARAM[studio]</visible>
           <visible>Skin.HasSetting(DisableWidgetStudio)</visible>
-          <visible>String.IsEqual(ListItem.DBType,tvshow) + !String.IsEqual(Container(5055).ListItem.DBType,movie)</visible>
-          <visible>![Control.HasFocus(300) | Control.HasFocus(30222)] + !String.IsEmpty(Container($PARAM[id]).ListItem.Property(Network.1.Name)) + !String.IsEmpty(Control.GetLabel(1$PARAM[studioid]))</visible>
+          <visible>String.IsEqual(Container($PARAM[id]).ListItem.DBType,tvshow) + !String.IsEqual(Container(5055).ListItem.DBType,movie)</visible>
+          <visible>!String.IsEmpty(Container($PARAM[id]).ListItem.Property(Network.1.Name)) + !String.IsEmpty(Control.GetLabel(1$PARAM[studioid]))</visible>
           <visible>!Window.IsVisible(DialogVideoInfo.xml)</visible>
         </control>
         <control type="image" id="2$PARAM[studioid]">
@@ -5127,8 +5446,8 @@
           <width>$PARAM[studiowidth]</width>
           <visible>$PARAM[studio]</visible>
           <visible>Skin.HasSetting(DisableWidgetStudio)</visible>
-          <visible>String.IsEqual(ListItem.DBType,episode) + !String.IsEqual(Container(5055).ListItem.DBType,movie)</visible>
-          <visible>![Control.HasFocus(300) | Control.HasFocus(30222)] + !String.IsEmpty(Container($PARAM[id]).ListItem.Property(Network.1.Name)) + !String.IsEmpty(Control.GetLabel(2$PARAM[studioid]))</visible>
+          <visible>String.IsEqual(Container($PARAM[id]).ListItem.DBType,episode) + !String.IsEqual(Container(5055).ListItem.DBType,movie)</visible>
+          <visible>!String.IsEmpty(Container($PARAM[id]).ListItem.Property(Network.1.Name)) + !String.IsEmpty(Control.GetLabel(2$PARAM[studioid]))</visible>
           <visible>!Window.IsVisible(DialogVideoInfo.xml)</visible>
         </control>
         <control type="image" id="3$PARAM[studioid]">
@@ -5141,8 +5460,8 @@
           <width>$PARAM[studiowidth]</width>
           <visible>$PARAM[studio]</visible>
           <visible>Skin.HasSetting(DisableWidgetStudio)</visible>
-          <visible>String.IsEqual(ListItem.DBType,movie) + !String.IsEqual(Container(5055).ListItem.DBType,movie)</visible>
-          <visible>![Control.HasFocus(300) | Control.HasFocus(30222)] + !String.IsEmpty(Container($PARAM[id]).ListItem.Property(Studio.1.Name)) + !String.IsEmpty(Control.GetLabel(3$PARAM[studioid]))</visible>
+          <visible>String.IsEqual(Container($PARAM[id]).ListItem.DBType,movie) + !String.IsEqual(Container(5055).ListItem.DBType,movie)</visible>
+          <visible>!String.IsEmpty(Container($PARAM[id]).ListItem.Property(Studio.1.Name)) + !String.IsEmpty(Control.GetLabel(3$PARAM[studioid]))</visible>
           <visible>!Window.IsVisible(DialogVideoInfo.xml)</visible>
         </control>
       </control>
@@ -5682,19 +6001,74 @@
           <animation effect="fade" condition="true" time="0" start="100" end="0">Conditional</animation>
         </control>
         <!-- Netflix Plot Info -->
-        <control type="group">
-          <include>Animation_FadeIn</include>
-          <visible>Control.HasFocus(9601) + $PARAM[visible] + !Skin.HasSetting(DisableNetflixVideoInfo)</visible>
           <control type="grouplist">
-            <orientation>vertical</orientation>
-            <usecontrolcoords>true</usecontrolcoords>
-            <itemgap>0</itemgap>
-            <top>310</top>
-	    <animation effect="slide" start="0,0" end="0,-50" condition="String.IsEmpty(Control.GetLabel(55443)) + Window.IsVisible(DialogVideoInfo.xml)">Conditional</animation>
-            <control type="textbox" id="9609">
-              <left>10</left>
+            <animation effect="slide" start="0,0" end="0,-262" condition="Control.HasFocus(9601) + String.IsEmpty(ListItem.Art(tvshow.clearlogo)) + String.IsEmpty(ListItem.Art(clearlogo)) + String.IsEmpty(Window(Home).Property(TMDBHelper.ListItem.ClearLogo)) + Window.IsVisible(DialogVideoInfo.xml)">Conditional</animation>
+            <top>300</top>
+            <left>10</left>
+            <control type="textbox">
+              <visible>[String.IsEqual(ListItem.DBType,episode) | String.IsEqual(ListItem.DBType,movie) | String.IsEqual(ListItem.DBType,tvshow) | String.IsEqual(ListItem.DBType,season) | !String.IsEmpty(ListItem.ChannelName)] + String.IsEmpty(ListItem.Art(tvshow.clearlogo)) + String.IsEmpty(ListItem.Art(clearlogo)) + String.IsEmpty(Window(Home).Property(TMDBHelper.ListItem.ClearLogo))</visible>
+              <top>-190</top>
+              <label>$VAR[video_heading]</label>
+              <textcolor>grey</textcolor>
+              <shadowcolor>black</shadowcolor>
+              <font>font_showcase_title</font>
+              <width>730</width>
+              <height min="30" max="234">auto</height>
+              <align>left</align>
+              <aligny>center</aligny>
+              <wrapmultiline>true</wrapmultiline>
+              <autoscroll>false</autoscroll>
+              <visible>!Control.IsVisible(8999) + Control.HasFocus(9601)</visible>
+            </control>
+            <control type="group">
+              <height>20</height>
+              <visible>String.IsEmpty(ListItem.Art(tvshow.clearlogo)) + String.IsEmpty(ListItem.Art(clearlogo)) + String.IsEmpty(Window(Home).Property(TMDBHelper.ListItem.ClearLogo)) + Control.HasFocus(9601)</visible>
+            </control>
+            <control type="group">
+              <visible>!Control.HasFocus(8999) + !ControlGroup(9000).HasFocus + String.IsEmpty(ListItem.Art(tvshow.clearlogo)) + String.IsEmpty(ListItem.Art(clearlogo)) + String.IsEmpty(Window(Home).Property(TMDBHelper.ListItem.ClearLogo)) + Control.HasFocus(9601)</visible>
+              <visible>!Control.HasFocus(9550)</visible>
+              <top>0</top>
+              <height>60</height>
+              <include>netflix_infoline</include>
+            </control>
+            <control type="group">
+              <height>2</height>
+              <visible>String.IsEmpty(ListItem.Art(tvshow.clearlogo)) + String.IsEmpty(ListItem.Art(clearlogo)) + String.IsEmpty(Window(Home).Property(TMDBHelper.ListItem.ClearLogo)) + Control.HasFocus(9601)</visible>
+            </control>
+            <control type="grouplist">
+              <include>Animation_FadeIn</include>
+              <visible>Control.HasFocus(9601) + $PARAM[visible] + !Skin.HasSetting(DisableNetflixVideoInfo)</visible>
+            <control type="textbox" id="9610">
+              <top>2</top>
               <description>textarea</description>
-              <height min="100" max="600">auto</height>
+              <height min="0" max="62">auto</height>
+              <width>90%</width>
+              <align>left</align>
+              <textcolor>main_fg_70</textcolor>
+              <font>font_overlay_plotbox</font>
+              <label fallback="19055">[COLOR=white]$VAR[Label_Netflix_Tagline][/COLOR]</label>
+              <autoscroll delay="8000" time="4000" repeat="12000">false</autoscroll>
+              <visible>![Window.IsVisible(2111) | Window.IsVisible(2112) | Window.IsVisible(2113) | Window.IsVisible(2114) | Window.IsVisible(2115) | Window.IsVisible(2116) | Window.IsVisible(2117)]</visible>
+            </control>
+            <control type="textbox" id="9610">
+              <top>2</top>
+              <description>textarea</description>
+              <height min="0" max="62">auto</height>
+              <width>90%</width>
+              <align>left</align>
+              <textcolor>main_fg_70</textcolor>
+              <font>font_overlay_plotbox</font>
+              <label fallback="19055">[COLOR=white]$VAR[Label_Netflix_Tagline][/COLOR]</label>
+              <autoscroll delay="8000" time="4000" repeat="12000">false</autoscroll>
+              <visible>Window.IsVisible(2111) | Window.IsVisible(2112) | Window.IsVisible(2113) | Window.IsVisible(2114) | Window.IsVisible(2115) | Window.IsVisible(2116) | Window.IsVisible(2117)</visible>
+            </control>
+            <control type="label">
+              <height>-7</height>
+            </control>
+            <control type="textbox" id="9609">
+              <top>3</top>
+              <description>textarea</description>
+              <height min="10" max="322">auto</height>
               <width>90%</width>
               <align>left</align>
               <textcolor>main_fg_70</textcolor>
@@ -5704,9 +6078,9 @@
               <visible>![Window.IsVisible(2111) | Window.IsVisible(2112) | Window.IsVisible(2113) | Window.IsVisible(2114) | Window.IsVisible(2115) | Window.IsVisible(2116) | Window.IsVisible(2117)]</visible>
             </control>
             <control type="textbox" id="9609">
-              <left>10</left>
+              <top>3</top>
               <description>textarea</description>
-              <height min="100" max="700">auto</height>
+              <height min="10" max="322">auto</height>
               <width>90%</width>
               <align>left</align>
               <textcolor>main_fg_70</textcolor>
@@ -5716,12 +6090,12 @@
               <visible>Window.IsVisible(2111) | Window.IsVisible(2112) | Window.IsVisible(2113) | Window.IsVisible(2114) | Window.IsVisible(2115) | Window.IsVisible(2116) | Window.IsVisible(2117)</visible>
             </control>
             <control type="label">
-              <height>90</height>
+              <height>5</height>
             </control>
             <control type="group">
               <animation effect="zoom" end="150" time="0" condition="Control.IsVisible(9601)">Conditional</animation>
               <height>80</height>
-              <right>480</right>
+              <right>490</right>
               <include content="Object_Ratings" condition="Window.IsVisible(DialogVideoInfo.xml) | Window.IsVisible(MyVideoNav.xml) | Window.IsVisible(Home.xml) | Window.IsVisible(script-globalsearch.xml)">
                 <param name="directory" value="color" />
                 <param name="align" value="left" />
@@ -5801,18 +6175,27 @@
               <textcolor>main_fg_100</textcolor>
               <label>$VAR[Label_OverlayTitle]</label>
             </control>
-            <control type="textbox" id="9609">
-              <description>textarea</description>
-              <left>0</left>
-              <right>0</right>
+            <control type="grouplist">
               <top>120</top>
-              <bottom>50</bottom>
-              <align>left</align>
-              <textcolor>main_fg_70</textcolor>
-              <font>font_overlay_plotbox</font>
-              <label fallback="19055">$VAR[Label_OverlayPlot]</label>
-              <pagecontrol>9601</pagecontrol>
-              <autoscroll delay="8000" time="4000" repeat="12000">false</autoscroll>
+              <control type="textbox" id="9610">
+                <description>textarea</description>
+                <height min="0" max="127">auto</height>
+                <align>left</align>
+                <textcolor>main_fg_70</textcolor>
+                <font>font_overlay_plotbox</font>
+                <label fallback="19055">[COLOR=white]$VAR[Label_Netflix_Tagline][/COLOR]</label>
+                <autoscroll delay="8000" time="4000" repeat="12000">false</autoscroll>
+              </control>
+              <control type="textbox" id="9609">
+                <description>textarea</description>
+                <height min="10" max="582">auto</height>
+                <align>left</align>
+                <textcolor>main_fg_70</textcolor>
+                <font>font_overlay_plotbox</font>
+                <label fallback="19055">$VAR[Label_OverlayPlot]</label>
+                <pagecontrol>9601</pagecontrol>
+                <autoscroll delay="8000" time="4000" repeat="12000">true</autoscroll>
+              </control>
             </control>
           </control>
         </control>
@@ -5861,6 +6244,7 @@
     <param name="genrecondition" default="false" />
     <param name="submenucondition" default="false" />
     <param name="landscapepanelcondition" default="false" />
+    <param name="tmdbwidgetonfocus" default="false" />
     <definition>
       <itemlayout width="widget_poster_width" height="widget_poster_height" condition="$PARAM[postercondition]">
         <include content="Widget_Items_ItemLayout">
@@ -6024,7 +6408,7 @@
       <focusedlayout width="640" height="widget_poster_height" condition="$PARAM[landscapewidepostercondition] + Control.HasFocus($PARAM[id])">
         <include content="Widget_Items_FocusedLayout">
           <param name="id" value="$PARAM[id]" />
-          <param name="landscapewide" value="true" />
+          <param name="landscapewideposter" value="true" />
           <param name="genres" value="$PARAM[genres]" />
           <param name="studios" value="$PARAM[studios]" />
           <param name="text" value="$PARAM[text]" />
@@ -6058,6 +6442,7 @@
         </include>
       </focusedlayout>
       <focusedlayout width="widget_poster_width" height="widget_poster_height" condition="$PARAM[postercondition]">
+        <include condition="$PARAM[tmdbwidgetonfocus]">Defs_TMDB_Widget_OnFocus</include>
         <include content="Widget_Items_FocusedLayout">
           <param name="id" value="$PARAM[id]" />
           <param name="poster" value="true" />
@@ -6322,14 +6707,25 @@
           <width>200</width>
           <left>-5</left>
           <top>-20</top>
+          <visible>!Skin.HasSetting(DisableStarRating) | [Skin.HasSetting(DisableLiked) + String.IsEmpty(Control.GetLabel(5949))]</visible>
           <include content="Object_StarRating">
             <param name="height" value="50" />
             <param name="width" value="50" />
             <param name="rating_prop" value="Container($PARAM[id]).ListItem.Rating" />
           </include>
         </control>
+        <control type="label" id="5949">
+          <left>-10</left>
+          <width>140</width>
+          <label>$VAR[liked_percent]</label>
+          <textcolor>green</textcolor>
+          <align>center</align>
+          <font>font_tiny_bold</font>
+          <visible>Skin.HasSetting(DisableLiked) + !String.IsEmpty(Control.GetLabel(5949))</visible>
+          <visible>!$EXP[MainSubMenuHasFocus]</visible>
+        </control>
         <control type="group">
-          <width>500</width>
+          <width>auto</width>
           <control type="grouplist">
             <orientation>horizontal</orientation>
             <itemgap>10</itemgap>
@@ -6346,7 +6742,7 @@
             <control type="group">
               <width>120</width>
               <height>30</height>
-              <visible>!String.IsEmpty(Container($PARAM[id]).ListItem.MPAA)</visible>
+              <visible>!String.IsEmpty(Control.GetLabel(6115))</visible>
               <control type="image">
                 <bottom>-18</bottom>
                 <animation effect="fade" time="0" end="75" condition="true">Conditional</animation>
@@ -6355,7 +6751,7 @@
                 <width>100%</width>
                 <texture colordiffuse="dimgrey">flags/flag_box_rating_classic.png</texture>
               </control>
-              <control type="label">
+              <control type="label" id="6115">
                 <top>15</top>
                 <left>35</left>
                 <height>100%</height>
@@ -6402,7 +6798,6 @@
                 <height>100%</height>
                 <width>100%</width>
                 <texture colordiffuse="dimgrey">flags/square-rounded.png</texture>
-                <visible>String.IsEqual(Container($PARAM[id]).ListItem.DBType,tvshow) + String.IsEmpty(Container($PARAM[id]).ListItem.Property(TotalSeasons))</visible>
               </control>
               <control type="label">
                 <top>28</top>
@@ -6411,7 +6806,7 @@
                 <font>widget_trakt_title2</font>
                 <textcolor>grey</textcolor>
                 <label>$INFO[Container($PARAM[id]).ListItem.Property(TotalSeasons)] $LOCALIZE[31750]</label> <!-- Season -->
-                <visible>String.IsEqual(Container($PARAM[id]).ListItem.DBType,tvshow) + String.IsEqual(Container($PARAM[id]).ListItem.Property(TotalSeasons),1)</visible>
+                <visible>String.IsEqual(Container($PARAM[id]).ListItem.DBType,tvshow) + String.IsEqual(Container($PARAM[id]).ListItem.Property(TotalSeasons),1) + !String.IsEmpty(Container($PARAM[id]).ListItem.Property(TotalSeasons))</visible>
               </control>
 
               <control type="label">
@@ -6421,16 +6816,22 @@
                 <font>widget_trakt_title2</font>
                 <textcolor>grey</textcolor>
                 <label>$INFO[Container($PARAM[id]).ListItem.Property(TotalSeasons)] $LOCALIZE[31499]</label> <!-- Seasons -->
-                <visible>String.IsEqual(Container($PARAM[id]).ListItem.DBType,tvshow) + String.IsGreaterOrEqual(Container($PARAM[id]).ListItem.Property(TotalSeasons),2) + !String.IsEmpty(Container($PARAM[id]).ListItem.Property(TotalSeasons))</visible>
+                <visible>String.IsEqual(Container($PARAM[id]).ListItem.DBType,tvshow) + !String.IsEqual(Container($PARAM[id]).ListItem.Property(TotalSeasons),0) + !String.IsEqual(Container($PARAM[id]).ListItem.Property(TotalSeasons),1) + !String.IsEmpty(Container($PARAM[id]).ListItem.Property(TotalSeasons))</visible>
               </control>
             </control>
             <!-- Aired -->
             <control type="label">
-              <width>195</width>
               <label>$LOCALIZE[31789]: $INFO[Container($PARAM[id]).ListItem.Premiered(dd MMM yyyy)]</label> <!-- Aired -->
               <textcolor>$VAR[ColorHighlight2]</textcolor>
               <font>font_tiny_bold</font>
               <visible>String.IsEqual(Container($PARAM[id]).ListItem.DBType,episode)</visible>
+            </control>
+            <control type="label">
+              <width>auto</width>
+              <label>$VAR[Label_Info_NextAired_Status]</label>
+              <font>font_tiny</font>
+              <textcolor>$VAR[ColorHighlight2]</textcolor>
+              <visible>String.IsEqual(Container($PARAM[id]).ListItem.DBType,tvshow)</visible>
             </control>
           </control>
         </control>
@@ -6442,7 +6843,7 @@
 
   <include name="netflix_infoline">
     <control type="group">
-      <visible>[$EXP[DBTvideos] + !Control.HasFocus(300) + !Control.HasFocus(302) + !Control.HasFocus(30222) + !Control.HasFocus(660) + !String.IsEqual(Container($PARAM[id]).ListItem.Container($PARAM[id]).Label,See More...) + !String.IsEqual(Container($PARAM[id]).ListItem.Container($PARAM[id]).Label,Next)] | [String.Contains(Container($PARAM[id]).ListItem.FolderPath,plugin.video.youtube)] | Window.IsVisible(DialogVideoInfo.xml)</visible>
+      <visible>[$EXP[DBTvideos] + [!Control.HasFocus(300) + !Control.HasFocus(302) + !Control.HasFocus(30222) + !Control.HasFocus(660) | Window.IsVisible(MyVideoNav.xml) | $EXP[ListHubsActive]] + !String.IsEqual(Container($PARAM[id]).ListItem.Container($PARAM[id]).Label,See More...) + !String.IsEqual(Container($PARAM[id]).ListItem.Container($PARAM[id]).Label,Next)] | [String.Contains(Container($PARAM[id]).ListItem.FolderPath,plugin.video.youtube)] | Window.IsVisible(DialogVideoInfo.xml)</visible>
       <height>60</height>
       <control type="grouplist">
         <orientation>horizontal</orientation>
@@ -6454,7 +6855,7 @@
           <width>200</width>
           <left>-5</left>
           <top>-20</top>
-          <visible>!$EXP[MainSubMenuHasFocus]</visible>
+          <visible>!$EXP[MainSubMenuHasFocus] | Window.IsVisible(MyVideoNav.xml) | $EXP[ListHubsActive]</visible>
           <visible>!Skin.HasSetting(DisableStarRating) | [Skin.HasSetting(DisableLiked) + String.IsEmpty(Control.GetLabel(5949))]</visible>
           <include content="Object_StarRating">
             <param name="height" value="50" />
@@ -6470,7 +6871,7 @@
           <align>center</align>
           <font>font_tiny_bold</font>
           <visible>Skin.HasSetting(DisableLiked) + !String.IsEmpty(Control.GetLabel(5949))</visible>
-          <visible>!$EXP[MainSubMenuHasFocus]</visible>
+          <visible>!$EXP[MainSubMenuHasFocus] | Window.IsVisible(MyVideoNav.xml) | $EXP[ListHubsActive]</visible>
         </control>
         <control type="group">
           <width>auto</width> <!--500-->
@@ -6514,7 +6915,7 @@
             <control type="group">
               <width>95</width>
               <height>30</height>
-              <visible>[[!String.IsEmpty(ListItem.Duration) | !String.IsEmpty(Window(Home).Property(TMDBHelper.ListItem.Duration))] + !String.IsEqual(ListItem.DBType,tvshow) + !String.IsEqual(ListItem.DBType,season)] | String.Contains(ListItem.FolderPath,plugin.video.youtube)</visible>
+              <visible>[!String.IsEmpty(ListItem.Duration) + !String.IsEqual(ListItem.DBType,tvshow) + !String.IsEqual(ListItem.DBType,season)] | String.Contains(ListItem.FolderPath,plugin.video.youtube)</visible>
               <control type="image">
                 <bottom>-18</bottom>
                 <animation effect="fade" time="0" end="75" condition="true">Conditional</animation>
@@ -6563,14 +6964,15 @@
               <textcolor>$VAR[ColorHighlight2]</textcolor>
               <font>font_tiny_bold</font>
               <visible>String.IsEqual(ListItem.DBType,episode)</visible>
-              <visible>!Control.IsVisible(502) + !Control.HasFocus(300) + !Control.HasFocus(302) + !Control.HasFocus(30222)</visible>
+              <visible>!Control.IsVisible(502) + [!Control.HasFocus(300) + !Control.HasFocus(302) + !Control.HasFocus(30222) | Window.IsVisible(MyVideoNav.xml) | $EXP[ListHubsActive]]</visible>
             </control>
             <control type="label">
               <width>auto</width>
               <label>$VAR[Label_Info_NextAired_Status]</label>
               <font>font_tiny</font>
               <textcolor>$VAR[ColorHighlight2]</textcolor>
-              <visible>!Control.HasFocus(300) + !Control.HasFocus(302) + !Control.HasFocus(30222) + String.IsEqual(ListItem.DBType,tvshow)</visible>
+              <visible>!String.IsEqual(ListItem.DBType,episode)</visible>
+              <visible>[!Control.HasFocus(300) + !Control.HasFocus(302) + !Control.HasFocus(30222) + String.IsEqual(ListItem.DBType,tvshow) | Window.IsVisible(MyVideoNav.xml) | $EXP[ListHubsActive]]</visible>
             </control>
           </control>
         </control>
@@ -6587,7 +6989,7 @@
       <usecontrolcoords>true</usecontrolcoords>
       <control type="group">
         <visible>!String.IsEmpty(Control.GetLabel(84))</visible>
-        <top>5</top>
+        <top>10</top>
         <height>46</height>
         <width>46</width>
         <control type="image">
@@ -6602,7 +7004,7 @@
       <control type="textbox" id="84">
         <top>-5</top>
         <animation effect="fade" time="150">Visible</animation>
-        <height>75</height>
+        <height>74</height>
         <width>550</width>
         <label>$VAR[NetflixDetailsSpin]</label>
         <textcolor>dimgrey</textcolor>
@@ -6934,8 +7336,9 @@
             <width>130</width>
             <height>70</height>
             <label>$LOCALIZE[31719]</label> <!-- Clear -->
-            <onclick>Skin.Reset(CustomSearchTerm)</onclick>
-            <onclick>ActivateWindow(1136)</onclick>
+            <onclick condition="Skin.HasSetting(EnableSearchDefaultKB)">Skin.Reset(CustomSearchTerm)</onclick>
+            <onclick condition="!Skin.HasSetting(EnableSearchDefaultKB)">Skin.Reset(osdCustomSearchTerm)</onclick>
+            <onclick condition="Skin.HasSetting(EnableSearchDefaultKB)">ActivateWindow(1136)</onclick>
             <include>Key</include>
         </control>
         <control type="button" id="1009">
@@ -7218,7 +7621,7 @@
           <top>-2</top>
           <left>2</left>
           <textcolor>main_fg_100</textcolor>
-          <label>$PARAM[label] $INFO[Container($PARAM[id]).ListItem.Property(widget)]</label>
+          <label>$PARAM[label]</label>
           <include>Statusbar_Menubar_Items</include>
           <visible>String.StartsWith(Container($PARAM[id]).ListItem.FileNameAndPath,plugin://plugin.video.themoviedb.helper) + !String.IsEqual(Container($PARAM[id]).ListItem.Property(widget),TMDb Helper) + Skin.HasSetting(LargeWidgetLabel)</visible>
         </control>
@@ -7227,7 +7630,7 @@
           <font>font_widgetbar_bold</font>
           <left>2</left>
           <textcolor>main_fg_100</textcolor>
-          <label>$PARAM[label] $INFO[Container($PARAM[id]).ListItem.Property(widget)]</label>
+          <label>$PARAM[label]</label>
           <include>Statusbar_Menubar_Items</include>
           <visible>String.StartsWith(Container($PARAM[id]).ListItem.FileNameAndPath,plugin://plugin.video.themoviedb.helper) + !String.IsEqual(Container($PARAM[id]).ListItem.Property(widget),TMDb Helper) + !Skin.HasSetting(LargeWidgetLabel)</visible>
         </control>
@@ -7342,6 +7745,7 @@
           <visible>Skin.HasSetting(DisableWidgetIMDB) + !Skin.HasSetting(DisableWidgetStudio)</visible>
           <visible>![Window.IsVisible(4010) | Window.IsVisible(4020)]</visible>
           <visible>![Window.IsVisible(DialogVideoInfo.xml) + Control.HasFocus(53001)]</visible>
+          <visible>!String.IsEqual(Container.ListItem.Label,$LOCALIZE[31924]) + !String.IsEqual(Container.ListItem.Label,$LOCALIZE[31923])</visible>
           <bottom>-5</bottom>
           <height>40</height>
           <include content="Object_Ratings" condition="!Window.IsVisible(DialogVideoInfo.xml)">
@@ -7386,6 +7790,7 @@
           <visible>Skin.HasSetting(DisableWidgetIMDB) + Skin.HasSetting(DisableWidgetStudio)</visible>
           <visible>![Window.IsVisible(4010) | Window.IsVisible(4020)]</visible>
           <visible>![Window.IsVisible(DialogVideoInfo.xml) + Control.HasFocus(53001)]</visible>
+          <visible>!String.IsEqual(Container.ListItem.Label,$LOCALIZE[31924]) + !String.IsEqual(Container.ListItem.Label,$LOCALIZE[31923])</visible>
           <bottom>-5</bottom>
           <height>40</height>
           <include content="Object_Ratings" condition="!Window.IsVisible(DialogVideoInfo.xml)">
@@ -7852,7 +8257,9 @@
     <param name="controltype" default="fixedlist" />
     <param name="search" default="false" />
     <param name="onclick" default="SetFocus(9570)" />
+    <param name="onclickcond" default="!String.IsEqual(Container.ListItem.Label,$LOCALIZE[31923]) + !String.IsEqual(Container.ListItem.Label,$LOCALIZE[31924])" />
     <param name="onclick2" default="RunScript(plugin.video.themoviedb.helper,add_path=$INFO[ListItem.FolderPath,,&amp;fanarttv=True],call_auto=1190,delay=0.35,prevent_del)" />
+    <param name="onclick2cond" default="!String.IsEqual(Container.ListItem.Label,$LOCALIZE[31923]) + !String.IsEqual(Container.ListItem.Label,$LOCALIZE[31924])" />
     <param name="onclick3" default="" />
     <param name="onclick3cond" default="" />
     <param name="onclick4" default="" />
@@ -7860,10 +8267,9 @@
     <param name="onback" default="9570" />
     <param name="onup" default="" />
     <param name="ondown" default="" />
-    <param name="onfocus" default="Skin.SetBool(TMDbHelper.ForceWidgetContainer)" />
-    <param name="onunfocus" default="Skin.Reset(TMDbHelper.ForceWidgetContainer)" />
     <param name="top" default="" />
     <param name="orientation" default="horizontal" />
+    <param name="tmdbwidgetonfocus" default="true" />
     <definition>
       <control type="group" id="2$PARAM[id]">
         <visible>String.IsEmpty(Window().Property(item.info.title))</visible>
@@ -7894,18 +8300,30 @@
 	<top>$PARAM[top]</top>
         <ondown>$PARAM[ondown]</ondown>
         <onback>$PARAM[onback]</onback>
-        <onfocus>$PARAM[onfocus]</onfocus>
-        <onunfocus>$PARAM[onunfocus]</onunfocus>
+        <onunfocus condition="Skin.HasSetting(TMDbHelper.ForceWidgetContainer)">Skin.Reset(TMDbHelper.ForceWidgetContainer)</onunfocus>
         <onback>Skin.Reset(TMDbHelper.ForceWidgetContainer)</onback>
         <animation effect="fade" start="100" end="0" condition="Window.IsVisible(DialogVideoInfo.xml) + Container($PARAM[id]).IsUpdating">Conditional</animation>
         <movement>1</movement>
         <height>$PARAM[height]</height>
         <width>$PARAM[width]</width>
-        <onclick>$PARAM[onclick]</onclick>
-        <onclick>$PARAM[onclick2]</onclick>
-        <onclick condition="$PARAM[onclick3cond]">$PARAM[onclick3]</onclick>
-        <onclick condition="$PARAM[onclick4cond]">$PARAM[onclick4]</onclick>
+        <onclick condition="$PARAM[onclickcond]">$PARAM[onclick]</onclick>
+        <onclick condition="$PARAM[onclick2cond]">$PARAM[onclick2]</onclick>
+        <onclick condition="String.IsEqual(Container.ListItem.Label,$LOCALIZE[31923])">RunScript(script.skin.helper.service,action=decreasecount,value=$PARAM[widgetpage_value],winprop=$PARAM[widgetpage_prop])</onclick>
+        <onclick condition="String.IsEqual(Container.ListItem.Label,$LOCALIZE[31924])">RunScript(script.skin.helper.service,action=increasecount,value=$PARAM[widgetpage_value],winprop=$PARAM[widgetpage_prop])</onclick>
+        <onclick condition="String.IsEqual(Container.ListItem.Label,$LOCALIZE[31924]) + Integer.IsLess(Window(Home).Property(Container($PARAM[id]).WidgetPage),2) + String.IsEqual(Skin.String(HomeWidgetItemLimit),10) + !Control.IsVisible(53002) + !Control.IsVisible(53004)">SetProperty(TMDbWidgetItemLimit_$PARAM[id],9,Home)</onclick>
+        <onclick condition="String.IsEqual(Container.ListItem.Label,$LOCALIZE[31923]) + Integer.IsEqual(Window(Home).Property(Container($PARAM[id]).WidgetPage),2) + String.IsEqual(Skin.String(HomeWidgetItemLimit),10) + !Control.IsVisible(53002) + !Control.IsVisible(53004)">SetProperty(TMDbWidgetItemLimit_$PARAM[id],10,Home)</onclick>
+        <onclick condition="String.IsEqual(Container.ListItem.Label,$LOCALIZE[31924]) + Integer.IsLess(Window(Home).Property(Container($PARAM[id]).WidgetPage),2) + !String.IsEqual(Skin.String(HomeWidgetItemLimit),10) + !Control.IsVisible(53002) + !Control.IsVisible(53004)">SetProperty(TMDbWidgetItemLimit_$PARAM[id],20,Home)</onclick>
+        <onclick condition="String.IsEqual(Container.ListItem.Label,$LOCALIZE[31923]) + Integer.IsEqual(Window(Home).Property(Container($PARAM[id]).WidgetPage),2) + !String.IsEqual(Skin.String(HomeWidgetItemLimit),10) + !Control.IsVisible(53002) + !Control.IsVisible(53004)">SetProperty(TMDbWidgetItemLimit_$PARAM[id],21,Home)</onclick>
+        <onclick condition="String.IsEqual(Container.ListItem.Label,$LOCALIZE[31923]) | [String.IsEqual(Container.ListItem.Label,$LOCALIZE[31924]) + Integer.IsLess(Window(Home).Property(Container($PARAM[id]).WidgetPage),2)]">SetFocus($PARAM[id],0,absolute)</onclick>
+        <onclick condition="String.IsEqual(Container.ListItem.Label,$LOCALIZE[31924]) + !Integer.IsLess(Window(Home).Property(Container($PARAM[id]).WidgetPage),2)">SetFocus($PARAM[id],1,absolute)</onclick>
         <visible>$PARAM[visible] + [Integer.IsGreater(Container($PARAM[id]).NumItems,0) | Container($PARAM[id]).IsUpdating | Container(300).OnNext | Container(300).OnPrevious | String.IsEmpty(Window(Home).Property(WidgetLoading))]</visible>
+        <content>
+            <item>
+                <label>$LOCALIZE[31923]</label>
+                <icon>special://home/addons/plugin.video.themoviedb.helper/resources/icons/themoviedb/nextpage.png</icon>
+                <visible>Skin.HasSetting(VideoInfo.Pagination) + Integer.IsGreaterOrEqual(Window(Home).Property($PARAM[widgetpage_prop]),2)</visible>
+            </item>
+        </content>
         <include content="Widget_Items" condition="!$PARAM[submenu]">
           <param name="id" value="$PARAM[id]" />
           <param name="target" value="$PARAM[target]" />
@@ -7932,7 +8350,15 @@
           <param name="squarecondition" value="$PARAM[squarecondition]" />
           <param name="genrecondition" value="$PARAM[genrecondition]" />
           <param name="search" value="$PARAM[search]" />
+          <param name="tmdbwidgetonfocus" value="$PARAM[tmdbwidgetonfocus]" />
         </include>
+        <content>
+            <item>
+                <label>$LOCALIZE[31924]</label>
+                <icon>special://home/addons/plugin.video.themoviedb.helper/resources/icons/themoviedb/nextpage.png</icon>
+                <visible>Skin.HasSetting(VideoInfo.Pagination) + $PARAM[widgetpage_nextpage_visible]</visible>
+            </item>
+        </content>
       </control>
     </definition>
   </include>
@@ -8027,6 +8453,7 @@
       <visible>ControlGroup(5055).HasFocus</visible>
       <left>0</left>
       <include condition="Skin.HasSetting(SkinHelper.EnableExtraFanart)">fanart_multi</include>
+      <include condition="Skin.HasSetting(SkinHelper.EnableExtraFanart)">fanart_multi_container</include>
       <include condition="!Window.IsVisible(3920) + !Window.IsVisible(3810) + !Window.IsVisible(3820)" >Object_Home_Netflix</include>
     </control>
     <control type="image">
@@ -8452,10 +8879,10 @@
   <include name="Widget_Settings_New">
     <!-- @PCXL Skin -->
     <control type="group">
-      <top>50</top>
+      <top>35</top>
       <left>50</left>
       <animation effect="slide" end="40,0" time="200" condition="!Skin.HasSetting(DisableMenuVertIcon) + [Control.HasFocus(300) | !Skin.HasSetting(DisableNetflixHomeSidemenuHide)]">Conditional</animation>
-      <animation effect="slide" end="40,0" time="500" delay="0" condition="Skin.HasSetting(DisableMenuVertLabelOnly) + [!Control.HasFocus(300) | !Control.HasFocus(400) | !Control.HasFocus(401)]" reversible="true">Conditional</animation>
+      <animation effect="slide" end="0,15" time="0" condition="!Skin.HasSetting(DisableAuraHomeLayout) + Skin.HasSetting(DisableMenuHor)">Conditional</animation>
       <!-- Row 1 -->
       <control type="label">
         <top>50</top>
@@ -8892,7 +9319,9 @@
     <param name="visible" default="" />
     <param name="content" default="" />
     <param name="onclick" default="" />
+    <param name="onclickcond" default="!String.IsEqual(Container.ListItem.Label,$LOCALIZE[31923]) + !String.IsEqual(Container.ListItem.Label,$LOCALIZE[31924])" />
     <param name="onclick2" default="" />
+    <param name="onclick2cond" default="!String.IsEqual(Container.ListItem.Label,$LOCALIZE[31923]) + !String.IsEqual(Container.ListItem.Label,$LOCALIZE[31924])" />
     <definition>
       <control type="group" id="2$PARAM[id]">
         <visible>$PARAM[visible]</visible>
@@ -8914,8 +9343,15 @@
           <height>900</height>
           <visible>$PARAM[visible]</visible>
           <onleft>8999</onleft>
-	  <onclick>$PARAM[onclick]</onclick>
-	  <onclick>$PARAM[onclick2]</onclick>
+	  <onclick condition="$PARAM[onclickcond]">$PARAM[onclick]</onclick>
+	  <onclick condition="$PARAM[onclick2cond]">$PARAM[onclick2]</onclick>
+    <onclick condition="String.IsEqual(Container.ListItem.Label,$LOCALIZE[31923])">RunScript(script.skin.helper.service,action=decreasecount,value=$PARAM[widgetpage_value],winprop=$PARAM[widgetpage_prop])</onclick>
+    <onclick condition="String.IsEqual(Container.ListItem.Label,$LOCALIZE[31924])">RunScript(script.skin.helper.service,action=increasecount,value=$PARAM[widgetpage_value],winprop=$PARAM[widgetpage_prop])</onclick>
+    <onclick condition="String.IsEqual(Container.ListItem.Label,$LOCALIZE[31923])">SetFocus($PARAM[id],0,absolute)</onclick>
+    <onclick condition="String.IsEqual(Container.ListItem.Label,$LOCALIZE[31924]) + Integer.IsLess(Window(Home).Property(Container($PARAM[id]).WidgetPage),2)">AlarmClock(changefocus1,SetFocus($PARAM[id],2,absolute),00:00,silent)</onclick>
+    <onclick condition="String.IsEqual(Container.ListItem.Label,$LOCALIZE[31924]) + Integer.IsLess(Window(Home).Property(Container($PARAM[id]).WidgetPage),2)">AlarmClock(changefocus2,Control.Move($PARAM[id],-1),00:00,silent)</onclick>
+    <onclick condition="String.IsEqual(Container.ListItem.Label,$LOCALIZE[31924]) + Integer.IsLess(Window(Home).Property(Container($PARAM[id]).WidgetPage),2)">AlarmClock(changefocus3,Control.Move($PARAM[id],-1),00:00,silent)</onclick>
+    <onclick condition="String.IsEqual(Container.ListItem.Label,$LOCALIZE[31924]) + !Integer.IsLess(Window(Home).Property(Container($PARAM[id]).WidgetPage),2)">SetFocus($PARAM[id],1,absolute)</onclick>
 	  <onup>$PARAM[id]</onup>
 	  <ondown>$PARAM[id]</ondown>
           <scrolltime>500</scrolltime>
@@ -8971,7 +9407,7 @@
           <control type="group">
             <height>300</height>
             <left>538</left>
-            <visible>!ListItem.IsParentFolder</visible>
+            <visible>!ListItem.IsParentFolder + !String.IsEqual(Container.ListItem.Label,$LOCALIZE[31923]) + !String.IsEqual(Container.ListItem.Label,$LOCALIZE[31924])</visible>
             <control type="label">
               <left>0</left>
               <label>$INFO[ListItem.Label]</label>
@@ -8989,7 +9425,7 @@
                 <width>37</width>
                 <height>24</height>
                 <texture colordiffuse="main_fg_100">$VAR[Image_HDSD]</texture>
-                <visible>Container.Content(movies) | Container.Content(episodes)</visible>
+                <visible>[Skin.HasSetting(CastAndMoreDetails.SeasonFlags) + String.IsEqual(Container.ListItem.DBType,season)] | [Skin.HasSetting(CastAndMoreDetails.EpisodeFlags) + String.IsEqual(Container.ListItem.DBType,episode)]</visible>
               </control>
               <control type="label">
                 <left>37</left>
@@ -9000,10 +9436,10 @@
                 <aligny>top</aligny>
                 <textcolor>$VAR[ColorHighlight]</textcolor>
                 <font>font_small</font>
-                <visible>Container.Content(movies) | Container.Content(episodes)</visible>
+                <visible>[Skin.HasSetting(CastAndMoreDetails.SeasonFlags) + String.IsEqual(Container.ListItem.DBType,season)] | [Skin.HasSetting(CastAndMoreDetails.EpisodeFlags) + String.IsEqual(Container.ListItem.DBType,episode)]</visible>
               </control>
               <control type="label">
-                <animation effect="slide" condition="![Container.Content(movies) | Container.Content(episodes)]" end="-73">Conditional</animation>
+                <animation effect="slide" condition="[!Skin.HasSetting(CastAndMoreDetails.SeasonFlags) + String.IsEqual(Container.ListItem.DBType,season)] | [!Skin.HasSetting(CastAndMoreDetails.EpisodeFlags) + String.IsEqual(Container.ListItem.DBType,episode)]" end="-73">Conditional</animation>
                 <left>73</left>
                 <width>auto</width>
                 <label>$VAR[Label_ShowCase_InfoLine]$INFO[ListItem.Rating, | [COLOR=main_fg_100],[/COLOR]]</label>
@@ -9011,10 +9447,12 @@
                 <aligny>top</aligny>
                 <textcolor>$VAR[ColorHighlight]</textcolor>
                 <font>font_small</font>
+                <visible>!String.IsEqual(Container.ListItem.DBType,season) | String.IsEqual(Container.ListItem.DBType,season) + !String.IsEmpty(Container.ListItem.Season)</visible>
               </control>
             </control>
             <control type="textbox">
               <top>120</top>
+              <width>900</width>
               <label fallback="19055">$VAR[Label_Plot]</label>
               <bottom>10</bottom>
               <aligny>top</aligny>
@@ -9022,6 +9460,7 @@
               <shadowcolor>black</shadowcolor>
               <font>font_plotbox</font>
               <autoscroll>false</autoscroll>
+              <visible>!String.IsEqual(Container.ListItem.DBType,season)</visible>
             </control>
           </control>
         </control>
@@ -9086,7 +9525,7 @@
           <control type="group">
             <height>300</height>
             <left>538</left>
-            <visible>!ListItem.IsParentFolder</visible>
+            <visible>!ListItem.IsParentFolder + !String.IsEqual(Container.ListItem.Label,$LOCALIZE[31923]) + !String.IsEqual(Container.ListItem.Label,$LOCALIZE[31924])</visible>
             <control type="label">
               <left>0</left>
               <label>$INFO[ListItem.Label]</label>
@@ -9104,7 +9543,7 @@
                 <width>37</width>
                 <height>24</height>
                 <texture colordiffuse="main_fg_100">$VAR[Image_HDSD]</texture>
-                <visible>Container.Content(movies) | Container.Content(episodes)</visible>
+                <visible>[Skin.HasSetting(CastAndMoreDetails.SeasonFlags) + String.IsEqual(Container.ListItem.DBType,season)] | [Skin.HasSetting(CastAndMoreDetails.EpisodeFlags) + String.IsEqual(Container.ListItem.DBType,episode)]</visible>
               </control>
               <control type="label">
                 <left>37</left>
@@ -9115,10 +9554,10 @@
                 <aligny>top</aligny>
                 <textcolor>$VAR[ColorHighlight]</textcolor>
                 <font>font_small</font>
-                <visible>Container.Content(movies) | Container.Content(episodes)</visible>
+                <visible>[Skin.HasSetting(CastAndMoreDetails.SeasonFlags) + String.IsEqual(Container.ListItem.DBType,season)] | [Skin.HasSetting(CastAndMoreDetails.EpisodeFlags) + String.IsEqual(Container.ListItem.DBType,episode)]</visible>
               </control>
               <control type="label">
-                <animation effect="slide" condition="![Container.Content(movies) | Container.Content(episodes)]" end="-73">Conditional</animation>
+                <animation effect="slide" condition="[!Skin.HasSetting(CastAndMoreDetails.SeasonFlags) + String.IsEqual(Container.ListItem.DBType,season)] | [!Skin.HasSetting(CastAndMoreDetails.EpisodeFlags) + String.IsEqual(Container.ListItem.DBType,episode)]" end="-73">Conditional</animation>
                 <left>73</left>
                 <width>100%</width>
                 <label>$VAR[Label_ShowCase_InfoLine]$INFO[ListItem.Rating, | [COLOR=main_fg_100],[/COLOR]]</label>
@@ -9126,21 +9565,38 @@
                 <aligny>top</aligny>
                 <textcolor>$VAR[ColorHighlight]</textcolor>
                 <font>font_small</font>
+                <visible>!String.IsEqual(Container.ListItem.DBType,season) | String.IsEqual(Container.ListItem.DBType,season) + !String.IsEmpty(Container.ListItem.Season)</visible>
               </control>
             </control>
             <control type="textbox">
               <top>120</top>
+              <width>900</width>
               <label fallback="19055">$VAR[Label_Plot]</label>
               <bottom>10</bottom>
               <aligny>top</aligny>
               <shadowcolor>black</shadowcolor>
               <textcolor>main_fg_70</textcolor>
               <font>font_plotbox</font>
+              <visible>!String.IsEqual(Container.ListItem.DBType,season)</visible>
             </control>
           </control>
         </control>
       </focusedlayout>
+      <content>
+          <item>
+              <label>$LOCALIZE[31923]</label>
+              <thumb>special://home/addons/plugin.video.themoviedb.helper/resources/icons/themoviedb/nextpage.png</thumb>
+              <visible>Skin.HasSetting(VideoInfo.Pagination) + Integer.IsGreaterOrEqual(Window(Home).Property($PARAM[widgetpage_prop]),2)</visible>
+          </item>
+      </content>
       <content target="videos" sortby="episode" sortorder="ascending">$PARAM[content]</content>
+      <content>
+          <item>
+              <label>$LOCALIZE[31924]</label>
+              <thumb>special://home/addons/plugin.video.themoviedb.helper/resources/icons/themoviedb/nextpage.png</thumb>
+              <visible>Skin.HasSetting(VideoInfo.Pagination) + $PARAM[widgetpage_nextpage_visible]</visible>
+          </item>
+      </content>
      </control>
    </definition>
   </include>

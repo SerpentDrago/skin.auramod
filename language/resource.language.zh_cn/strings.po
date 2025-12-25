@@ -1,2013 +1,2019 @@
-# Kodi Media Center language file
-# Addon Name: AuraMOD
-# Addon id: skin.auramod
-# Addon Provider: skyfsza,inb4after,SerpentDrago
+主页界面# Kodi Media Center language file
+# Addon Name: Horizon
+# Addon id: skin.horizon
+# Addon Provider: jurialmunkey
 msgid ""
 msgstr ""
+"Project-Id-Version: \n"
+"POT-Creation-Date: \n"
+"PO-Revision-Date: \n"
+"Last-Translator: \n"
+"Language-Team: \n"
+"Language: zh\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
-"Language: en\n"
-"Plural-Forms: nplurals=2; plural=(n != 1);\n"
+"Plural-Forms: nplurals=1; plural=0;\n"
+"X-Generator: Poedit 3.5\n"
 
 #: /1080i/Includes_Global.xml
 msgctxt "#31000"
 msgid "Reduced"
-msgstr ""
+msgstr "减弱"
 
 #: /1080i/DialogVideoInfo.xml
 msgctxt "#31001"
 msgid "Revenue"
-msgstr ""
+msgstr "票房"
 
 #: /1080i/SkinSettings.xml
 msgctxt "#31002"
 msgid "Enable Categories widget"
-msgstr ""
+msgstr "启用 \"类别 \"部件"
 
 #: /1080i/Includes_Furniture.xml
 msgctxt "#31003"
 msgid "Current conditions"
-msgstr ""
+msgstr "当前条件"
 
 #: /1080i/Includes_Furniture.xml
 msgctxt "#31004"
 msgid "Sunset at"
-msgstr ""
+msgstr "日落"
 
 #: /1080i/Includes_Furniture.xml
 msgctxt "#31005"
 msgid "Sunrise at"
-msgstr ""
+msgstr "日出"
 
 #: /1080i/Includes_Furniture.xml
 msgctxt "#31006"
 msgid "Weather provided by"
-msgstr ""
+msgstr "天气提供者"
 
 #: /1080i/Includes_Furniture.xml
 msgctxt "#31007"
 msgid "Weather forecast for"
-msgstr ""
+msgstr "天气预报"
 
 #: /1080i/SkinSettings.xml
 msgctxt "#31008"
 msgid "Install weather fanart"
-msgstr ""
+msgstr "安装天气插件"
 
 #: /1080i/SkinSettings.xml
 msgctxt "#31009"
 msgid "Complete"
-msgstr ""
+msgstr "完成"
 
 #: /1080i/SkinSettings.xml
 msgctxt "#31010"
 msgid "Weather fanart successfully installed"
-msgstr ""
+msgstr "设置天气插件成功"
 
 #: /1080i/MyWeather.xml
 msgctxt "#31011"
 msgid "Default weather icons"
-msgstr ""
+msgstr "默认天气图标"
 
 #: /1080i/MyWeather.xml
 msgctxt "#31012"
 msgid "Weather fanart installed"
-msgstr ""
+msgstr "已安装天气插件"
 
 #: /1080i/SkinSettings.xml
 msgctxt "#31013"
 msgid "Set weather icons"
-msgstr ""
+msgstr "设置天气图标"
 
 #: /1080i/MyVideoNav.xml
 msgctxt "#31014"
 msgid "Extra fanart"
-msgstr ""
+msgstr "额外同人画"
 
 #: /1080i/SkinSettings.xml
 msgctxt "#31015"
 msgid "Minimal busy loader"
-msgstr ""
+msgstr "最小化正在加载的程序"
 
 #: /1080i/DialogVideoInfo.xml
 msgctxt "#31016"
 msgid "By"
-msgstr ""
+msgstr "由"
 
 #: /shortcuts/overrides.xml
 msgctxt "#31017"
 msgid "Smart Shortcuts"
-msgstr ""
+msgstr "智能快捷方式"
 
 #: /shortcuts/overrides.xml
 msgctxt "#31018"
 msgid "Common Shortcut"
-msgstr ""
+msgstr "普通快捷方式"
 
 #: /1080i/script-globalsearch-main.xml
 msgctxt "#31019"
 msgid "Close"
-msgstr ""
+msgstr "关闭"
 
 #: /1080i/script-globalsearch-main.xml
 msgctxt "#31020"
-msgid "m"
-msgstr ""
+msgid "mins"
+msgstr "分钟"
 
 #: /1080i/SkinSettings.xml
 msgctxt "#31021"
 msgid "Colors"
-msgstr ""
+msgstr "彩色"
 
 #: /1080i/SkinSettings.xml
 msgctxt "#31022"
 msgid "Animated artwork"
-msgstr ""
+msgstr "使用幻灯动画"
 
 #: /1080i/Includes_Statusbar.xml
 msgctxt "#31023"
 msgid "Fullscreen"
-msgstr ""
+msgstr "全屏"
 
 #: /1080i/SkinSettings.xml
 msgctxt "#31024"
 msgid "Miscellaneous"
-msgstr ""
+msgstr "杂项"
 
 #: /1080i/DialogVideoInfo.xml
 msgctxt "#31025"
 msgid "From"
-msgstr ""
+msgstr "来自"
 
 #: /1080i/SkinSettings.xml
 msgctxt "#31026"
 msgid "Alphabet strip"
-msgstr ""
+msgstr "字母条"
 
 #: /1080i/SkinSettings.xml
 msgctxt "#31027"
 msgid "Customise power menu"
-msgstr ""
+msgstr "自定义电源菜单"
 
 #: /1080i/SkinSettings.xml
 msgctxt "#31028"
 msgid "Reset skin settings to defaults (WARNING: This will reset your home menu to skin defaults)"
-msgstr ""
+msgstr "将皮肤设置重置为默认值（警告：这将使主菜单重置为皮肤默认值）"
 
 #: /1080i/script-nextup-notification-PostPlayInfo.xml
 msgctxt "#31029"
 msgid "Hide Spoilers"
-msgstr ""
+msgstr "隐藏剧透内容"
 
 #: /1080i/SkinSettings.xml
 msgctxt "#31030"
 msgid "Backup / Restore"
-msgstr ""
+msgstr "备份/恢复"
 
 #: /1080i/SkinSettings.xml
 msgctxt "#31031"
 msgid "Backup skin settings"
-msgstr ""
+msgstr "备份皮肤设置"
 
 #: /1080i/SkinSettings.xml
 msgctxt "#31032"
 msgid "Restore skin settings"
-msgstr ""
+msgstr "还原皮肤设置"
 
 #: /1080i/Includes_Items.xml
 msgctxt "#31033"
 msgid "Audio Settings"
-msgstr ""
+msgstr "音频设置"
 
 #: /1080i/SkinSettings.xml
 msgctxt "#31034"
 msgid "Change backup and restore path"
-msgstr ""
+msgstr "更改备份和还原路径"
 
 #: /1080i/Includes_Labels.xml
 msgctxt "#31035"
 msgid "hrs"
-msgstr ""
+msgstr "小时"
 
 #: /1080i/Includes_Labels.xml
 msgctxt "#31036"
-msgid "h"
-msgstr ""
+msgid "hr"
+msgstr "小时"
 
 #: /1080i/DialogSubtitles.xml
 msgctxt "#31037"
 msgid "Download Subtitles"
-msgstr ""
+msgstr "下载字幕"
 
 #: /1080i/Includes_View.xml
 msgctxt "#31038"
 msgid "Landscape"
-msgstr ""
+msgstr "场景贴图"
 
 #: /1080i/Custom_1117_EnableViews.xml
 msgctxt "#31039"
 msgid "Enable / disable viewmodes"
-msgstr ""
+msgstr "启用/禁用视图模式"
 
 #: /1080i/Custom_1117_EnableViews.xml
 msgctxt "#31040"
 msgid "Poster Showcase"
-msgstr ""
+msgstr "海报展示"
 
 #: /1080i/Includes_Labels.xml
 msgctxt "#31041"
 msgid "Customise your home menu items, widgets, and backgrounds."
-msgstr ""
+msgstr "自定义主菜单项、小组件和背景."
 
 #: /1080i/SkinSettings.xml
 msgctxt "#31042"
 msgid "Wall view text labels"
-msgstr ""
+msgstr "海报墙显示片名"
 
 #: /1080i/DialogVideoInfo.xml
 msgctxt "#31043"
 msgid "Select Action"
-msgstr ""
+msgstr "选择操作"
 
 #: /1080i/DialogVideoInfo.xml
 msgctxt "#31044"
 msgid "Search library for movies staring"
-msgstr ""
+msgstr "搜索电影库"
 
 #: /1080i/DialogVideoInfo.xml
 msgctxt "#31045"
 msgid "Show extended info about"
-msgstr ""
+msgstr "显示有关的扩展信息"
 
 #: /1080i/DialogVideoInfo.xml
 msgctxt "#31046"
 msgid "Search library"
-msgstr ""
+msgstr "搜索库"
 
 #: /1080i/Includes_Labels.xml
 msgctxt "#31047"
 msgid "This disables fanart in the library and shows the fallback image instead."
-msgstr ""
+msgstr "这将禁用库中的图片并显示后备图片."
 
 #: /1080i/Includes_Labels.xml
 msgctxt "#31048"
 msgid "Set a fallback image for when no fanart is available."
-msgstr ""
+msgstr "当没有可用的显示时，显示后备图像."
 
 #: /1080i/Includes_Labels.xml
 msgctxt "#31049"
 msgid "Display artist fanart stored from the library database on the music visualisation screen."
-msgstr ""
+msgstr "在音乐可视化屏幕上显示从库数据库存储的艺术家."
 
 #: /1080i/Includes_Labels.xml
 msgctxt "#31050"
 msgid "Use artist slideshow addon to display artist fanart on the music visualisation screen."
-msgstr ""
+msgstr "使用艺术家幻灯片播放插件在音乐可视化的屏幕."
 
 #: /1080i/Includes_Labels.xml
 msgctxt "#31051"
 msgid "Make the artist fanart slightly transparent so that the music visualisation shows through."
-msgstr ""
+msgstr "使艺术家的显示稍微透明，以便音乐可视化显示通过."
 
 #: /1080i/Includes_Labels.xml
 msgctxt "#31052"
 msgid "Use a pan and zoom effect on the artist fanart in the music visualisation."
-msgstr ""
+msgstr "在“音乐可视化”中对艺术家显示使用平移和缩放效果."
 
 #: /1080i/Includes_Labels.xml
 msgctxt "#31053"
 msgid "Display discart in showcase viewtypes. Available discart overrides logo if both options are enabled."
-msgstr ""
+msgstr "在显示案例视图类型中显示discart.如果两个选项都启用，则可用的discart覆盖徽标."
 
 #: /1080i/Includes_Labels.xml
 msgctxt "#31054"
 msgid "Display logo in showcase viewtypes. Available discart overrides logo if both options are enabled."
-msgstr ""
+msgstr "在“显示案例”视图类型中显示徽标。如果两个选项都启用，可用的光盘会覆盖徽标."
 
 #: /1080i/Includes_Labels.xml
 msgctxt "#31055"
 msgid "Use skinhelper to provide animated posters and fanart. These can be downloaded from the context menu."
-msgstr ""
+msgstr "使用皮肤助手提供动画海报和显示，这些可以从上下文菜单下载."
 
 #: /1080i/SkinSettings.xml
 msgctxt "#31056"
 msgid "Genre colors in PVR guide"
-msgstr ""
+msgstr "PVR指南中的流派颜色"
 
 #: /1080i/SkinSettings.xml
 msgctxt "#31057"
 msgid "Use fullscreen PVR guide (hide plot info)"
-msgstr ""
+msgstr "使用全屏PVR指南（隐藏打印信息）"
 
 #: /1080i/Includes_Labels.xml
 msgctxt "#31058"
 msgid "Change the highlight focus colour used throughout the skin."
-msgstr ""
+msgstr "更改整个皮肤使用的高光焦点颜色."
 
 #: /1080i/DialogContextMenu.xml
 msgctxt "#31059"
 msgid "Context Menu"
-msgstr ""
+msgstr "上下文菜单"
 
 #: /1080i/Includes_Labels.xml
 msgctxt "#31060"
 msgid "Set a music or video playlist that will run when kodi starts."
-msgstr ""
+msgstr "设置kodi启动时将运行的音乐或视频播放列表."
 
 #: /1080i/Includes_Labels.xml
 msgctxt "#31061"
 msgid "Disable the alphabet strip and always use scrollbars instead."
-msgstr ""
+msgstr "禁用字母表条并始终使用滚动条."
 
 #: /1080i/Includes_Labels.xml
 msgctxt "#31062"
 msgid "Disable changing view settings and some settings buttons in information dialogs."
-msgstr ""
+msgstr "禁用更改信息对话框中的视图设置和某些设置按键."
 
 #: /1080i/Includes_Labels.xml
 msgctxt "#31063"
 msgid "Change the items displayed in the power menu."
-msgstr ""
+msgstr "更改电源菜单中显示的项目."
 
 #: /1080i/Includes_Labels.xml
 msgctxt "#31064"
 msgid "Backup your skin settings and home menu shortcuts to a zipfile. Useful to migrate settings to a new setup."
-msgstr ""
+msgstr "将皮肤设置和主菜单快捷方式备份到zipfile，将设置迁移到新设置时很有用."
 
 #: /1080i/Includes_Labels.xml
 msgctxt "#31065"
-msgid "Restore your skin settings, shortcuts, and widgets from a backup file."
-msgstr ""
+msgid "Restore your skin settings, shortcuts, 和 widgets from a backup file."
+msgstr "从备份文件还原皮肤设置、快捷方式和小组件."
 
 #: /1080i/Includes_Labels.xml
 msgctxt "#31066"
 msgid "Change the location where skin backup files are saved."
-msgstr ""
+msgstr "更改保存外观备份文件的位置."
 
 #: /1080i/Includes_Labels.xml
 msgctxt "#31067"
 msgid "Reset all your skin settings, shortcuts, and widgets to default skin settings. This will not change any kodi system settings."
-msgstr ""
+msgstr "将所有皮肤设置、快捷方式和小组件重置为默认皮肤设置，这不会更改任何kodi系统设置."
 
 #: /1080i/Includes_Weather.xml
 msgctxt "#31068"
 msgid "Cloud cover"
-msgstr ""
+msgstr "云层覆盖"
 
 #: /1080i/Includes_Weather.xml
 msgctxt "#31069"
 msgid "Cloud cover is "
-msgstr ""
+msgstr "选择云层 "
 
 #: /1080i/Includes_Weather.xml
 msgctxt "#31070"
 msgid "Cloud Cover"
-msgstr ""
+msgstr "云层覆盖率"
 
 #: /1080i/Includes_Labels.xml
 msgctxt "#31071"
 msgid "IMDB Top250"
-msgstr ""
+msgstr "IMDB Top250"
 
 #: /1080i/DialogButtonMenu.xml
 msgctxt "#31072"
 msgid "Power Menu"
-msgstr ""
+msgstr "电源菜单"
 
 #: /1080i/VideoOSD.xml
 msgctxt "#31073"
 msgid "Recommended Youtube Videos"
-msgstr ""
+msgstr "推荐的Youtube视频"
 
 #: /1080i/SkinSettings.xml
 msgctxt "#31074"
 msgid "Make bottom bar transparent"
-msgstr ""
+msgstr "使底部栏透明"
 
 #: /1080i/SkinSettings.xml
 msgctxt "#31075"
 msgid "Apply transparency to bottom bar"
-msgstr ""
+msgstr "将透明度应用于底栏"
 
 #: /1080i/SkinSettings.xml
 msgctxt "#31076"
 msgid "Enable transparency"
-msgstr ""
+msgstr "启用透明度"
 
 #: /1080i/Includes_Labels.xml
 msgctxt "#31077"
 msgid "Add a slight transparency to the top and bottom bars."
-msgstr ""
+msgstr "在顶部和底部栏添加透明度."
 
 #: /1080i/Includes_Labels.xml
 msgctxt "#31078"
 msgid "Ended"
-msgstr ""
+msgstr "结束"
 
 #: /1080i/SkinSettings.xml
 msgctxt "#31079"
 msgid "Pause video when opening extended info"
-msgstr ""
+msgstr "打开扩展信息时暂停视频"
 
 #: /1080i/SkinSettings.xml
 msgctxt "#31080"
 msgid "Artwork button downloads all available artwork (as specified in artwork downloader settings)"
-msgstr ""
+msgstr "图稿按钮下载所有可用图稿（在图稿下载器设置中指定）"
 
 #: /1080i/SkinSettings.xml
 msgctxt "#31081"
 msgid "Hide plot"
-msgstr ""
+msgstr "隐藏布局"
 
 #: /1080i/DialogPlayerProcessInfo.xml
 msgctxt "#31082"
 msgid "Video process information"
-msgstr ""
+msgstr "视频处理信息"
 
 #: /1080i/DialogPlayerProcessInfo.xml
 msgctxt "#31083"
 msgid "Framerate"
-msgstr ""
+msgstr "帧数"
 
 #: /1080i/DialogPlayerProcessInfo.xml
 msgctxt "#31084"
 msgid "Aspect Ratio"
-msgstr ""
+msgstr "屏幕长宽比"
 
 #: /1080i/Includes_OSD.xml
 msgctxt "#31085"
 msgid "Codec Info"
-msgstr ""
+msgstr "编解码器信息"
 
 #: /1080i/Includes_OSD.xml
 msgctxt "#31086"
 msgid "Extended Info"
-msgstr ""
+msgstr "扩展信息"
 
 #: /1080i/SkinSettings.xml
 msgctxt "#31087"
 msgid "Colour overlay effect"
-msgstr ""
+msgstr "彩色叠加效果"
 
 #: /1080i/SkinSettings.xml
 msgctxt "#31088"
 msgid "Scrolling text effect"
-msgstr ""
+msgstr "滚动文字效果"
 
 #: /1080i/SkinSettings.xml
 msgctxt "#31089"
 msgid "Position context menu based on focused item"
-msgstr ""
+msgstr "基于焦点项的位置关联菜单"
 
 #: /1080i/SkinSettings.xml
 msgctxt "#31090"
 msgid "Display duration format as X HRS XX MINS"
-msgstr ""
+msgstr "显示持续时间格式为X小时XX分钟"
 
 #: /1080i/SkinSettings.xml
 msgctxt "#31091"
 msgid "Prefer list view for seasons"
-msgstr ""
+msgstr "首选列表视图"
 
 #: /1080i/Includes_Object.xml
 msgctxt "#31092"
 msgid "System Name"
-msgstr ""
+msgstr "系统名称"
 
 #: /1080i/Includes_Object.xml
 msgctxt "#31093"
 msgid "Gateway Address"
-msgstr ""
+msgstr "网关地址"
 
 #: /1080i/Includes_Object.xml
 msgctxt "#31094"
 msgid "Network and Storage"
-msgstr ""
+msgstr "网络和存储"
 
 #: /1080i/Includes_Object.xml
 msgctxt "#31095"
 msgid "Video Encoder"
-msgstr ""
+msgstr "视频编码器"
 
 #: /1080i/Includes_Object.xml
 msgctxt "#31096"
 msgid "Memory"
-msgstr ""
+msgstr "记忆"
 
 #: /1080i/Includes_Object.xml
 msgctxt "#31097"
 msgid "Fan Speed"
-msgstr ""
+msgstr "风扇转速"
 
 #: /1080i/Includes_Object.xml
 msgctxt "#31098"
 msgid "CPU Info"
-msgstr ""
+msgstr "CPU信息"
 
 #: /1080i/Includes_Object.xml
 msgctxt "#31099"
 msgid "CPU Usage"
-msgstr ""
+msgstr "CPU使用率"
 
 #: /1080i/Includes_Object.xml
 msgctxt "#31100"
 msgid "Processor, Memory and Video"
-msgstr ""
+msgstr "处理器、存储器和视频"
 
 msgctxt "#31101"
 msgid "items"
-msgstr ""
+msgstr "项目"
 
 msgctxt "#31102"
 msgid "min"
-msgstr ""
+msgstr "分钟"
 
 msgctxt "#31103"
 msgid "Live TV"
-msgstr ""
+msgstr "电视直播"
 
 msgctxt "#31104"
 msgid "Used Memory"
-msgstr ""
+msgstr "已用内存"
 
 msgctxt "#31105"
 msgid "Spotlight"
-msgstr ""
+msgstr "精选推荐"
 
 msgctxt "#31106"
 msgid "Ends "
-msgstr ""
+msgstr "结束 "
 
 msgctxt "#31107"
 msgid "Video Stream"
-msgstr ""
+msgstr "分辨率"
 
 msgctxt "#31108"
 msgid "Current Menu"
-msgstr ""
+msgstr "当前菜单"
 
 msgctxt "#31109"
-msgid "Customise Home Menu & Widgets"
-msgstr ""
+msgid "Customise home menu"
+msgstr "自定义主菜单"
 
 msgctxt "#31110"
 msgid "Background"
-msgstr ""
+msgstr "背景"
 
 msgctxt "#31111"
 msgid "Display now playing video in background"
-msgstr ""
+msgstr "显示正在后台播放视频"
 
 msgctxt "#31112"
 msgid "Submenu"
-msgstr ""
+msgstr "子菜单"
 
 msgctxt "#31113"
 msgid "No Timer"
-msgstr ""
+msgstr "不及时"
 
 msgctxt "#31114"
 msgid "Now Playing"
-msgstr ""
+msgstr "正在播放"
 
 #: /1080i/Includes_OSD.xml
 msgctxt "#31115"
 msgid "Recommended"
-msgstr ""
+msgstr "推荐"
 
 msgctxt "#31116"
 msgid "DVD Menu"
-msgstr ""
+msgstr "DVD菜单"
 
 msgctxt "#31117"
 msgid "3D Mode"
-msgstr ""
+msgstr "3D模式"
 
 msgctxt "#31118"
 msgid "Artist slideshow"
-msgstr ""
+msgstr "艺术幻灯片"
 
 msgctxt "#31119"
 msgid "Visualisation behind slideshow"
-msgstr ""
+msgstr "幻灯片后的可视化"
 
 msgctxt "#31120"
 msgid "Animate artist slideshow"
-msgstr ""
+msgstr "动画艺术幻灯片放映"
 
 msgctxt "#31121"
 msgid "Fanart"
-msgstr ""
+msgstr "显示"
 
 msgctxt "#31122"
 msgid "Ongoing Episodes"
-msgstr ""
+msgstr "正在进行的事件"
 
 msgctxt "#31123"
 msgid "Resumable Movies"
-msgstr ""
+msgstr "可恢复电影"
 
 msgctxt "#31124"
 msgid "Recent Movies"
-msgstr ""
+msgstr "最近的电影"
 
 msgctxt "#31125"
 msgid "Recent Episodes"
-msgstr ""
+msgstr "最近几集"
 
 msgctxt "#31126"
 msgid "Episodes Spotlight"
-msgstr ""
+msgstr "剧集精选推荐"
 
 msgctxt "#31127"
 msgid "Movies Spotlight"
-msgstr ""
+msgstr "电影精选推荐"
 
 #: /1080i/SkinSettings.xml
 msgctxt "#31128"
 msgid "Allow scrolling through items when in full fanart mode"
-msgstr ""
+msgstr "允许在完全翻页模式下滚动项目"
 
 #: /1080i/SkinSettings.xml
 msgctxt "#31129"
 msgid "Enable full fanart mode"
-msgstr ""
+msgstr "启用完全显示模式"
 
 #: /1080i/SkinSettings.xml
 msgctxt "#31130"
 msgid "Media flags"
-msgstr ""
+msgstr "媒体标志"
 
 #: /1080i/MusicOSD.xml
 msgctxt "#31131"
 msgid "Colour overlay"
-msgstr ""
+msgstr "彩色叠加"
 
 msgctxt "#31132"
 msgid "Reset home menu shortcuts to defaults"
-msgstr ""
+msgstr "将主菜单快捷方式重置为默认值"
 
 msgctxt "#31133"
 msgid "Hide watched"
-msgstr ""
+msgstr "隐秘观察"
 
 msgctxt "#31134"
 msgid "Trending Movies"
-msgstr ""
+msgstr "热门电影"
 
 msgctxt "#31135"
 msgid "Trending Shows"
-msgstr ""
+msgstr "趋势展示"
 
 msgctxt "#31136"
 msgid "Airing Shows"
-msgstr ""
+msgstr "播放节目"
 
 msgctxt "#31137"
 msgid "Premiering Shows"
-msgstr ""
+msgstr "首映式"
 
 msgctxt "#31138"
 msgid "Content Loading"
-msgstr ""
+msgstr "内容加载"
 
 msgctxt "#31139"
 msgid "Box Office"
-msgstr ""
+msgstr "票房"
 
 msgctxt "#31140"
 msgid "Budget"
-msgstr ""
+msgstr "预算"
 
 msgctxt "#31141"
 msgid "Youtube"
-msgstr ""
+msgstr "Youtube"
 
 #: /1080i/MusicOSD.xml
 msgctxt "#31142"
 msgid "Scrolling text"
-msgstr ""
+msgstr "滚动文字"
 
 msgctxt "#31143"
 msgid "Set weather fanart"
-msgstr ""
+msgstr "设置天气显示"
 
 msgctxt "#31144"
 msgid "Edit Widgets"
-msgstr ""
+msgstr "编辑窗口部件"
 
 #: /1080i/SkinSettings.xml
 msgctxt "#31145"
 msgid "Display poster and plot when video is paused"
-msgstr ""
+msgstr "暂停视频时显示海报和图像"
 
 msgctxt "#31146"
 msgid "Animate fanart"
-msgstr ""
+msgstr "动画显示"
 
 msgctxt "#31147"
 msgid "Extra Info"
-msgstr ""
+msgstr "额外信息"
 
 #: /1080i/Includes_Home.xml
 msgctxt "#31148"
 msgid "Hide artwork"
-msgstr ""
+msgstr "隐藏艺术品"
 
 msgctxt "#31149"
 msgid "Replace widget fanart with background"
-msgstr ""
+msgstr "用背景替换插件的显示"
 
 msgctxt "#31150"
 msgid "Set fallback image"
-msgstr ""
+msgstr "设置背景图片"
 
 #: /1080i/SkinSettings.xml
 msgctxt "#31151"
 msgid "Hide tvshow labels"
-msgstr ""
+msgstr "隐藏电视节目标签"
 
 msgctxt "#31152"
 msgid "Furniture"
-msgstr ""
+msgstr "设备"
 
 #: /1080i/Includes_Statusbar.xml
 msgctxt "#31153"
 msgid "Sort by:"
-msgstr ""
+msgstr "排序方式："
 
 #: /1080i/SkinSettings.xml
 msgctxt "#31154"
 msgid "Only use blur in info dialog"
-msgstr ""
+msgstr "仅在“信息”对话框中使用模糊"
 
 #: /1080i/Includes_Labels.xml
 msgctxt "#31155"
 msgid "Disable the bounce in animation when scrolling between items."
-msgstr ""
+msgstr "在项目之间滚动时禁用动画中的反弹."
 
 #: /1080i/Includes_Labels.xml
 msgctxt "#31156"
 msgid "Apply a color changing overlay effect to music visualisation background."
-msgstr ""
+msgstr "将颜色更改叠加效果应用于音乐可视化背景."
 
 #: /1080i/Includes_Labels.xml
 msgctxt "#31157"
 msgid "A scrolling text effect showing artist, album and song info overlayed on the music visualisation background."
-msgstr ""
+msgstr "滚动文字效果显示艺术家，专辑和歌曲信息叠加在音乐可视化背景."
 
 #: /1080i/SkinSettings.xml
 msgctxt "#31158"
 msgid "Automatically open visualisation after starting a song"
-msgstr ""
+msgstr "启动歌曲后自动打开可视化"
 
 #: /1080i/Includes_Labels.xml
 msgctxt "#31159"
 msgid "Video Sources"
-msgstr ""
+msgstr "视频来源"
 
 #: /1080i/Includes_Labels.xml
 msgctxt "#31160"
 msgid "Music sources"
-msgstr ""
+msgstr "音乐来源"
 
 #: /1080i/Includes_View_Posters.xml
 msgctxt "#31161"
 msgid "Showcase"
-msgstr ""
+msgstr "平移展示"
 
 #: /1080i/Includes_Widgets.xml
 msgctxt "#31162"
 msgid "Categories"
-msgstr ""
+msgstr "类别"
 
 #: /shortcuts/overrides.xml
 msgctxt "#31163"
 msgid "Submenu Items"
-msgstr ""
+msgstr "子菜单项"
 
 #: /1080i/Includes_View_List.xml
 msgctxt "#31164"
 msgid "Info List"
-msgstr ""
+msgstr "列表模式"
 
 #: /1080i/Includes_Labels.xml
 msgctxt "#31165"
 msgid "TV recordings"
-msgstr ""
+msgstr "电视录音"
 
 #: /1080i/Includes_Labels.xml
 msgctxt "#31166"
 msgid "TV timers"
-msgstr ""
+msgstr "电视计时器"
 
 #: /1080i/Includes_View_List.xml
 msgctxt "#31167"
 msgid "Square list"
-msgstr ""
+msgstr "方格列表"
 
 msgctxt "#31168"
 msgid "Startup video or music playlist"
-msgstr ""
+msgstr "启动视频或音乐播放列表"
 
 msgctxt "#31169"
 msgid "Extras"
-msgstr ""
+msgstr "附加信息"
 
 msgctxt "#31170"
 msgid "Cinema Experience"
-msgstr ""
+msgstr "电影体验"
 
 msgctxt "#31171"
 msgid "Video Extras"
-msgstr ""
+msgstr "影片临时演员"
 
 msgctxt "#31172"
 msgid "Display music visualisation in background"
-msgstr ""
+msgstr "背景中显示音乐可视化"
 
 msgctxt "#31173"
 msgid "Recently added"
-msgstr ""
+msgstr "最近添加的"
 
 msgctxt "#31174"
 msgid "Recently played"
-msgstr ""
+msgstr "最近播放的"
 
 msgctxt "#31175"
 msgid "Play random"
-msgstr ""
+msgstr "随机播放"
 
 msgctxt "#31176"
 msgid "Delete Settings Shortcut"
-msgstr ""
+msgstr "删除设置快捷方式"
 
 msgctxt "#31177"
 msgid "Are you sure you want to remove the settings shortcut?[CR]Please ensure that you have an alternative method of accessing settings before you remove this shortcut."
-msgstr ""
+msgstr "确实要删除设置快捷方式吗？[CR]在删除此快捷方式之前，请确保您有其他访问设置的方法."
 
 #: /1080i/DialogVideoInfo.xml
 msgctxt "#31178"
 msgid "Show extended info"
-msgstr ""
+msgstr "显示扩展信息"
 
 #: /1080i/Includes_Home.xml
 msgctxt "#31179"
 msgid "Lock view"
-msgstr ""
+msgstr "锁定视图"
 
 #: /1080i/Includes_Home.xml
 msgctxt "#31180"
 msgid "Unlock view"
-msgstr ""
+msgstr "解锁视图"
 
 msgctxt "#31181"
 msgid "Select icon"
-msgstr ""
+msgstr "选择图标"
 
 #: /shortcuts/overrides.xml
 msgctxt "#31182"
 msgid "Additional Widgets"
-msgstr ""
+msgstr "其他小组件"
 
 #: /shortcuts/overrides.xml
 msgctxt "#31183"
 msgid "Default Widgets"
-msgstr ""
+msgstr "默认小组件"
 
 #: /shortcuts/overrides.xml
 msgctxt "#31184"
 msgid "Recently played movies"
-msgstr ""
+msgstr "最近播放的电影"
 
 #: /shortcuts/overrides.xml
 msgctxt "#31185"
 msgid "Recently Added Movies"
-msgstr ""
+msgstr "最近添加的电影"
 
 #: /1080i/SkinSettings.xml
 msgctxt "#31186"
 msgid "Display osd submenu"
-msgstr ""
+msgstr "显示OSD子菜单"
 
 msgctxt "#31187"
 msgid "Random Albums"
-msgstr ""
+msgstr "随机相册"
 
 msgctxt "#31188"
 msgid "Recent Albums"
-msgstr ""
+msgstr "最近的相册"
 
 msgctxt "#31189"
 msgid "Recommended Albums"
-msgstr ""
+msgstr "推荐专辑/相册"
 
 #: /shortcuts/overrides.xml
 msgctxt "#31190"
 msgid "Recently Played Movies"
-msgstr ""
+msgstr "最近播放的电影"
 
 msgctxt "#31191"
 msgid "Directed by"
-msgstr ""
+msgstr "导演"
 
 #: /1080i/SkinSettings.xml
 msgctxt "#31192"
 msgid "Focus bounce animation"
-msgstr ""
+msgstr "焦点弹跳动画"
 
 #: /1080i/SkinSettings.xml
 msgctxt "#31193"
 msgid "Reset colors to default"
-msgstr ""
+msgstr "将颜色重置为默认值"
 
 #: /shortcuts/overrides.xml
 msgctxt "#31194"
 msgid "Recently Played TV Shows"
-msgstr ""
+msgstr "最近播放的电视剧"
 
 msgctxt "#31195"
 msgid "Reload Skin"
-msgstr ""
+msgstr "重新加载皮肤"
 
 #: /shortcuts/overrides.xml
 msgctxt "#31196"
 msgid "In Progress TV Shows"
-msgstr ""
+msgstr "正在进行的电视剧"
 
 #: /1080i/script-skinshortcuts.xml
 msgctxt "#31197"
 msgid "Save Changes"
-msgstr ""
+msgstr "保存更改"
 
 #: /shortcuts/overrides.xml
 msgctxt "#31198"
 msgid "Recently Played Episodes"
-msgstr ""
+msgstr "最近播放的剧集"
 
 msgctxt "#31199"
 msgid "Kiosk mode"
-msgstr ""
+msgstr "信息亭模式"
 
 #: /shortcuts/overrides.xml
 msgctxt "#31200"
 msgid "Random Movies"
-msgstr ""
+msgstr "随机播放"
 
 #: /1080i/SkinSettings.xml
 msgctxt "#31201"
 msgid "Pressing info only displays seekbar (hides poster and plot)"
-msgstr ""
+msgstr "按信息仅显示搜索栏（隐藏海报和绘图）"
 
 #: /shortcuts/overrides.xml
 msgctxt "#31202"
 msgid "Random Episodes"
-msgstr ""
+msgstr "随机事件"
 
 msgctxt "#31203"
 msgid "Artwork"
-msgstr ""
+msgstr "原图"
 
 msgctxt "#31204"
 msgid "Similar to"
-msgstr ""
+msgstr "类似"
 
 msgctxt "#31205"
 msgid "Released by"
-msgstr ""
+msgstr "发布者"
 
 msgctxt "#31206"
 msgid "Similar"
-msgstr ""
+msgstr "相似的"
 
 msgctxt "#31207"
 msgid "themoviedb.org"
-msgstr ""
+msgstr "themoviedb.org"
 
 msgctxt "#31208"
 msgid "In Cinemas"
-msgstr ""
+msgstr "院线"
 
 msgctxt "#31209"
 msgid "Upcoming"
-msgstr ""
+msgstr "未来"
 
 msgctxt "#31210"
 msgid "Popular"
-msgstr ""
+msgstr "热门"
 
 msgctxt "#31211"
 msgid "Top Rated"
-msgstr ""
+msgstr "排行榜"
 
 msgctxt "#31212"
 msgid "Airing"
-msgstr ""
+msgstr "放映"
 
 msgctxt "#31213"
 msgid "Today"
-msgstr ""
+msgstr "现代"
 
 #: /shortcuts/overrides.xml
 msgctxt "#31214"
 msgid "Recently Added Episodes"
-msgstr ""
+msgstr "最近添加的剧集"
 
 msgctxt "#31215"
 msgid "Unwatched"
-msgstr ""
+msgstr "未观看的电影"
 
 #: /shortcuts/overrides.xml
 msgctxt "#31216"
 msgid "In Progress Movies"
-msgstr ""
+msgstr "正在看的电影"
 
 #: /1080i/Includes_Home.xml
 msgctxt "#31217"
 msgid "Change location"
-msgstr ""
+msgstr "更改位置"
 
 #: /shortcuts/overrides.xml
 msgctxt "#31218"
 msgid "In Progress Episodes"
-msgstr ""
+msgstr "进行中的事件"
 
 #: /1080i/script-nextup-notification-PostPlayInfo.xml
 msgctxt "#31219"
 msgid "Previous"
-msgstr ""
+msgstr "以往的"
 
 msgctxt "#31220"
 msgid "Next Aired"
-msgstr ""
+msgstr "下一次播出"
 
 #: /1080i/script-nextup-notification-PostPlayInfo.xml
 msgctxt "#31221"
 msgid "Next Up"
-msgstr ""
+msgstr "下一个"
 
 #: /shortcuts/overrides.xml
 msgctxt "#31222"
 msgid "Top Rated TV Shows"
-msgstr ""
+msgstr "收视率最高的电视节目"
 
 msgctxt "#31223"
 msgid "Upcoming Movies"
-msgstr ""
+msgstr "即将上映的电影"
 
 msgctxt "#31224"
 msgid "Popular Movies"
-msgstr ""
+msgstr "热门电影"
 
 msgctxt "#31225"
 msgid "Top Rated Movies"
-msgstr ""
+msgstr "电影排行"
 
 msgctxt "#31226"
 msgid "Popular TV Shows"
-msgstr ""
+msgstr "热门电视节目"
 
 msgctxt "#31227"
 msgid "Top Rated TV Shows"
-msgstr ""
+msgstr "电视剧排行榜"
 
 msgctxt "#31228"
 msgid "On Air TV Shows"
-msgstr ""
+msgstr "广播电视节目"
 
 msgctxt "#31229"
 msgid "TV Shows Airing Today"
-msgstr ""
+msgstr "今天播出的电视节目"
 
 #: /shortcuts/overrides.xml
 msgctxt "#31230"
 msgid "Top Rated Episodes"
-msgstr ""
+msgstr "收视率最高的剧集"
 
 #: /1080i/Includes_View_Posters.xml
 msgctxt "#31231"
 msgid "Lovefilm"
-msgstr ""
+msgstr "巨幅海报"
 
 msgctxt "#31232"
 msgid "Reset path"
-msgstr ""
+msgstr "重置路径"
 
 #: /shortcuts/overrides.xml
 msgctxt "#31233"
 msgid "Random TV Shows"
-msgstr ""
+msgstr "随机电视节目"
 
 #: /1080i/SettingsProfile.xml
 msgctxt "#31234"
 msgid "Customise your user profiles and enable/disable the login screen."
-msgstr ""
+msgstr "自定义用户配置文件并启用/禁用登录屏幕."
 
 #: /1080i/script-skinshortcuts.xml
 msgctxt "#31235"
 msgid "Set sorting (default$COMMA year$COMMA rating$COMMA lastplayed$COMMA dateadded$COMMA etc.)"
-msgstr ""
+msgstr "设置排序（默认值年份/评级/上次播放/添加日期/...）"
 
 msgctxt "#31236"
 msgid "Now playing..."
-msgstr ""
+msgstr "正在播放......"
 
 #: /1080i/script-skinshortcuts.xml
 msgctxt "#31237"
 msgid "Sort"
-msgstr ""
+msgstr "排序方式"
 
 #: /shortcuts/overrides.xml
 msgctxt "#31238"
 msgid "Recently Added Albums"
-msgstr ""
+msgstr "最近添加的相册"
 
 #: /1080i/script-skinshortcuts.xml
 msgctxt "#31239"
 msgid "Direction"
-msgstr ""
+msgstr "方向"
 
 #: /1080i/script-skinshortcuts.xml
 msgctxt "#31240"
 msgid "Aspect"
-msgstr ""
+msgstr "方向/外观"
 
 msgctxt "#31241"
 msgid "Additional info"
-msgstr ""
+msgstr "其他小组件"
 
 #: /shortcuts/overrides.xml
 msgctxt "#31242"
 msgid "Recently Played Albums"
-msgstr ""
+msgstr "最近播放的专辑"
 
 #: /shortcuts/overrides.xml
 msgctxt "#31243"
 msgid "Top 100 Albums"
-msgstr ""
+msgstr "TOP100专辑"
 
 #: /1080i/script-skinshortcuts.xml
 msgctxt "#31244"
 msgid "Select Widget"
-msgstr ""
+msgstr "选择小组件"
 
 #: /1080i/script-skinshortcuts.xml
 msgctxt "#31245"
 msgid "Customize"
-msgstr ""
+msgstr "定制"
 
 #: /1080i/script-skinshortcuts.xml
 msgctxt "#31246"
 msgid "Press right to customize widgets"
-msgstr ""
+msgstr "按右键自定义快捷方式"
 
 #: /1080i/script-skinshortcuts.xml
 msgctxt "#31247"
 msgid "Widgets"
-msgstr ""
+msgstr "小组件"
 
 #: /1080i/script-skinshortcuts.xml
 msgctxt "#31248"
 msgid "Edit Shortcuts"
-msgstr ""
+msgstr "编辑快捷方式"
 
 #: /1080i/script-skinshortcuts.xml
 msgctxt "#31249"
 msgid "Press right to customize shortcuts"
-msgstr ""
+msgstr "按右键自定义快捷方式"
 
 #: /1080i/SkinSettings.xml
 msgctxt "#31250"
 msgid "Gradient colour"
-msgstr ""
+msgstr "渐变色"
 
 msgctxt "#31251"
 msgid "Weather Fanart"
-msgstr ""
+msgstr "显示天气"
 
 msgctxt "#31252"
 msgid "Weather Forecast"
-msgstr ""
+msgstr "天气预报"
 
 #: /1080i/SkinSettings.xml
 msgctxt "#31253"
 msgid "Use larger font for progress bar"
-msgstr ""
+msgstr "对进度条使用较大字体"
 
 #: /1080i/script-skinshortcuts.xml
 msgctxt "#31254"
 msgid "If you are having difficulties with widgets or home menu items not displaying correctly please make sure that you press the \"save changes\" button to ensure that your shortcuts and widgets are set."
-msgstr ""
+msgstr "如果您遇到小组件或主菜单项无法正确显示的问题，请确保按“保存更改”按钮以确保设置了快捷方式和小组件."
 
 #: /1080i/SkinSettings.xml
 msgctxt "#31255"
 msgid "Generate landscape art"
-msgstr ""
+msgstr "生成场景贴画艺术图"
 
 #: /1080i/Includes_Labels.xml
 msgctxt "#31256"
 msgid "Display artwork"
-msgstr ""
+msgstr "展示图片"
 
 #: /shortcuts/overrides.xml
 msgctxt "#31257"
 msgid "Movie Genres"
-msgstr ""
+msgstr "电影类型"
 
 #: /1080i/SkinSettings.xml
 msgctxt "#31258"
 msgid "Clearart with seekbar"
-msgstr ""
+msgstr "带透明艺术的搜索栏"
 
 msgctxt "#31259"
 msgid "Extra fanart"
-msgstr ""
+msgstr "显示更多"
 
 #: /shortcuts/overrides.xml
 msgctxt "#31260"
 msgid "Movie Sets"
-msgstr ""
+msgstr "电影集"
 
 msgctxt "#31261"
 msgid "Widget aspect"
-msgstr ""
+msgstr "小组件外观"
 
 msgctxt "#31262"
 msgid "Poster"
-msgstr ""
+msgstr "海报"
 
 msgctxt "#31263"
 msgid "Square"
-msgstr ""
+msgstr "正方形"
 
 msgctxt "#31264"
 msgid "Thumbnail"
-msgstr ""
+msgstr "缩略图"
 
 msgctxt "#31265"
 msgid "Fanart"
-msgstr ""
+msgstr "显示"
 
 msgctxt "#31266"
 msgid "Widget"
-msgstr ""
+msgstr "小组件"
 
 msgctxt "#31267"
 msgid "Action"
-msgstr ""
+msgstr "选择操作"
 
 msgctxt "#31268"
 msgid "Label"
-msgstr ""
+msgstr "标签"
 
 msgctxt "#31269"
 msgid "Fallback widget"
-msgstr ""
+msgstr "回退小组件"
 
 msgctxt "#31270"
 msgid "Video / Music OSD"
-msgstr ""
+msgstr "启动视频或音乐显示菜单"
 
 msgctxt "#31271"
 msgid "Single Image"
-msgstr ""
+msgstr "单图像"
 
 msgctxt "#31272"
 msgid "Multi Image"
-msgstr ""
+msgstr "多图像"
 
 #: /1080i/SkinSettings.xml
 msgctxt "#31273"
 msgid "Background overlay color"
-msgstr ""
+msgstr "背景覆盖颜色"
 
 #: /shortcuts/overrides.xml
 msgctxt "#31274"
 msgid "TvShow Genres"
-msgstr ""
+msgstr "电视节目类型"
 
 #: /1080i/SkinSettings.xml
 msgctxt "#31275"
 msgid "Blur fanart"
-msgstr ""
+msgstr "模糊显示"
 
 #: /shortcuts/overrides.xml
 msgctxt "#31276"
 msgid "IMDB Top 250 Movies"
-msgstr ""
+msgstr "IMDB Top 250 电影"
 
 #: /1080i/SkinSettings.xml
 msgctxt "#31277"
 msgid "Animations"
-msgstr ""
+msgstr "动画"
 
 #: /shortcuts/overrides.xml
 msgctxt "#31278"
 msgid "Unwatched Movies"
-msgstr ""
+msgstr "无以伦比的电影"
 
 msgctxt "#31279"
 msgid "Video decoder"
-msgstr ""
+msgstr "视频解码器"
 
 msgctxt "#31280"
 msgid "Pixel format"
-msgstr ""
+msgstr "Pixel设计"
 
 msgctxt "#31281"
 msgid "by"
-msgstr ""
+msgstr "由"
 
 msgctxt "#31282"
 msgid "on"
-msgstr ""
+msgstr "开"
 
 #: /shortcuts/overrides.xml
 msgctxt "#31283"
 msgid "Unwatched Episodes"
-msgstr ""
+msgstr "未观看的剧集"
 
 #: MPAA Rating
 msgctxt "#31284"
 msgid "Classification"
-msgstr ""
+msgstr "分级"
 
 #: /1080i/Includes_Home.xml
 msgctxt "#31285"
 msgid "Extended info"
-msgstr ""
+msgstr "结束信息"
 
 msgctxt "#31286"
 msgid "Highlight colour"
-msgstr ""
+msgstr "突出显示颜色"
 
 msgctxt "#31287"
 msgid "Reset to default"
-msgstr ""
+msgstr "重置为默认值"
 
 #: /1080i/SkinSettings.xml
 msgctxt "#31288"
 msgid "Match highlight colors with poster"
-msgstr ""
+msgstr "使高光颜色与海报匹配"
 
 msgctxt "#31289"
 msgid "Awards"
-msgstr ""
+msgstr "所获奖项"
 
 msgctxt "#31290"
 msgid "Consensus"
-msgstr ""
+msgstr "舆论"
 
 #: /1080i/SkinSettings.xml
 msgctxt "#31291"
-msgid "Display text labels on landscape widget"
-msgstr ""
+msgid "Landscape widget text"
+msgstr "场景贴画小组件文字"
 
 #: /1080i/DialogBusy.xml
 msgctxt "#31292"
 msgid "Kodi is busy$COMMA one moment please"
-msgstr ""
+msgstr "KODI很忙，请稍等"
 
 #: /shortcuts/overrides.xml
 msgctxt "#31293"
 msgid "Skin Helper Widgets"
-msgstr ""
+msgstr "皮肤助手小组件"
 
 #: /1080i/Includes_Home.xml
 msgctxt "#31294"
 msgid "PVR / Live TV"
-msgstr ""
+msgstr "PVR/直播电视"
 
 #: /shortcuts/overrides.xml
 msgctxt "#31295"
 msgid "Random Artists"
-msgstr ""
+msgstr "随机艺术家"
 
 #: /shortcuts/overrides.xml
 msgctxt "#31296"
 msgid "Movie Nodes"
-msgstr ""
+msgstr "电影节点"
 
 #: /shortcuts/overrides.xml
 msgctxt "#31297"
 msgid "TvShow Nodes"
-msgstr ""
+msgstr "电视节目节点"
 
 #: /1080i/Includes_View_List.xml
 msgctxt "#31298"
 msgid "Media Info"
-msgstr ""
+msgstr "媒体信息"
 
 #: /1080i/DialogVideoInfo.xml
 msgctxt "#31299"
 msgid "Premiered"
-msgstr ""
+msgstr "首映"
 
 #: /shortcuts/overrides.xml
 msgctxt "#31300"
 msgid "Music Nodes"
-msgstr ""
+msgstr "音乐节点"
 
 #: /shortcuts/overrides.xml
 msgctxt "#31301"
 msgid "TV Shows"
-msgstr ""
+msgstr "电视剧"
 
 #: /shortcuts/overrides.xml
 msgctxt "#31302"
 msgid "Music Sources"
-msgstr ""
+msgstr "音乐来源"
 
 #: /1080i/DialogAddonInfo.xml
 msgctxt "#31303"
 msgid "Latest Changes"
-msgstr ""
+msgstr "最新变化"
 
 #: /shortcuts/overrides.xml
 msgctxt "#31304"
 msgid "Picture Sources"
-msgstr ""
+msgstr "电视节目点播图片来源"
 
 #: /1080i/SkinSettings.xml
 msgctxt "#31305"
 msgid "Color cycling"
-msgstr ""
+msgstr "色彩循环"
 
 #: /1080i/Includes_Items.xml
 msgctxt "#31306"
 msgid "Special Features"
-msgstr ""
+msgstr "特色功能"
 
 #: /1080i/SkinSettings.xml
 msgctxt "#31307"
 msgid "Prefer plot outline"
-msgstr ""
+msgstr "首选剧情大纲"
 
 #: /1080i/Includes_Labels.xml
 msgctxt "#31308"
 msgid "Player"
-msgstr ""
+msgstr "播放"
 
 #: /1080i/SkinSettings.xml
 msgctxt "#31309"
 msgid "Blur effect type"
-msgstr ""
+msgstr "模糊效果类型"
 
 #: /1080i/Includes_Home.xml
 msgctxt "#31310"
 msgid "User rating"
-msgstr ""
+msgstr "用户评分"
 
 #: /1080i/Includes_OSD.xml
 msgctxt "#31311"
 msgid "Rate Song"
-msgstr ""
+msgstr "歌曲"
 
 #: /1080i/SkinSettings.xml
 msgctxt "#31312"
 msgid "Enable / disable ratings"
-msgstr ""
+msgstr "启用/禁用分级"
 
 #: /1080i/SkinSettings.xml
 msgctxt "#31313"
 msgid "Background transparency"
-msgstr ""
+msgstr "背景透明度"
 
 #: /1080i/SkinSettings.xml
 msgctxt "#31314"
 msgid "Automatically display music video info at beginning and end of clip"
-msgstr ""
+msgstr "在片段的开头和结尾自动显示音乐视频信息"
 
 #: /1080i/Includes_Home.xml
 msgctxt "#31315"
 msgid "CinemaVision"
-msgstr ""
+msgstr "电影视觉"
 
 #: /1080i/SkinSettings.xml
 msgctxt "#31316"
 msgid "Increased"
-msgstr ""
+msgstr "增强"
 
 #: /1080i/SkinSettings.xml
 msgctxt "#31317"
 msgid "Watched indicators"
-msgstr ""
+msgstr "指针"
 
 #: /1080i/SkinSettings.xml
 msgctxt "#31318"
 msgid "Shadows"
-msgstr ""
+msgstr "阴影"
 
 #: /1080i/SkinSettings.xml
 msgctxt "#31319"
 msgid "Indicator style"
-msgstr ""
+msgstr "指针样式"
 
 #: /1080i/script-skinshortcuts.xml
 msgctxt "#31320"
 msgid "Important"
-msgstr ""
+msgstr "重要的"
 
 #: /1080i/Custom_1116_ColorBoxAdvancedSettings.xml
 msgctxt "#31321"
 msgid "Reset to defaults"
-msgstr ""
+msgstr "重置为默认值"
 
 #: /1080i/Custom_1116_ColorBoxAdvancedSettings.xml
 msgctxt "#31322"
 msgid "Image quality changes the resolution of the generated image. Better quality images take longer to process. Quality changes can alter the intensity of the effect in addition to other effect settings. The blend setting will blend the effect with the original image$COMMA with a value of 100 showing the full image effect."
-msgstr ""
+msgstr "图像质量改变生成图像的分辨率。更高质量的图像需要更长的处理时间。除了其他效果设置外，质量更改还可以更改效果的强度。“混合”设置会将效果与原始图像混合，值为100表示完整图像效果。"
 
 #: /1080i/Custom_1116_ColorBoxAdvancedSettings.xml
 msgctxt "#31323"
 msgid "Blend"
-msgstr ""
+msgstr "混合"
 
 #: /1080i/Custom_1116_ColorBoxAdvancedSettings.xml
 msgctxt "#31324"
 msgid "Bitsize"
-msgstr ""
+msgstr "文件大小"
 
 #: /1080i/Custom_1116_ColorBoxAdvancedSettings.xml
 msgctxt "#31325"
 msgid "Pixel size"
-msgstr ""
+msgstr "像素大小"
 
 #: /1080i/Custom_1116_ColorBoxAdvancedSettings.xml
 msgctxt "#31326"
 msgid "Blur radius"
-msgstr ""
+msgstr "模糊半径"
 
 #: /1080i/Custom_1116_ColorBoxAdvancedSettings.xml
 msgctxt "#31327"
 msgid "Image quality"
-msgstr ""
+msgstr "图像质量"
 
 #: /1080i/Custom_1116_ColorBoxAdvancedSettings.xml
 msgctxt "#31328"
 msgid "Highest"
-msgstr ""
+msgstr "最近加入的电影"
 
 #: /1080i/Custom_1116_ColorBoxAdvancedSettings.xml
 msgctxt "#31329"
 msgid "Colorbox Advanced Settings"
-msgstr ""
+msgstr "颜色框高级设置"
 
 #: /1080i/SkinSettings.xml
 msgctxt "#31330"
 msgid "Advanced settings for colorbox (blur settings)"
-msgstr ""
+msgstr "颜色框的高级设置（模糊设置）"
 
 #: /1080i/SkinSettings.xml
 msgctxt "#31331"
 msgid "Icon only mode"
-msgstr ""
+msgstr "仅图标模式"
 
 #: /1080i/Custom_1116_ColorBoxAdvancedSettings.xml
 msgctxt "#31332"
 msgid "Change image"
-msgstr ""
+msgstr "更改图像"
 
 #: /1080i/script-globalsearch-main.xml
 msgctxt "#31333"
 msgid "Programmes"
-msgstr ""
+msgstr "节目"
 
 #: /1080i/Includes_Object.xml
 msgctxt "#31334"
 msgid "Alphabet strip is not available for this content"
-msgstr ""
+msgstr "字母表条不可用于此内容"
 
 #: /1080i/SkinSettings.xml
 msgctxt "#31335"
 msgid "Match background overlay color with poster"
-msgstr ""
+msgstr "将背景底色与海报匹配"
 
 #: /1080i/SkinSettings.xml
 msgctxt "#31336"
 msgid "Background overlay"
-msgstr ""
+msgstr "背景覆盖"
 
 #: /1080i/Includes_Labels.xml
 msgctxt "#31337"
 msgid "Light"
-msgstr ""
+msgstr "明亮的"
 
 #: /1080i/SkinSettings.xml
 msgctxt "#31338"
 msgid "Background vignette"
-msgstr ""
+msgstr "背景暗角效果"
 
 #: /1080i/SkinSettings.xml
 msgctxt "#31339"
 msgid "Effects"
-msgstr ""
+msgstr "效果"
 
 #: /1080i/Includes_Labels.xml
 msgctxt "#31340"
 msgid "Match poster"
-msgstr ""
+msgstr "招贴画"
 
 #: /1080i/Includes_Labels.xml
 msgctxt "#31341"
 msgid "Dark"
-msgstr ""
+msgstr "黑暗的"
 
 #: /1080i/SkinSettings.xml
 msgctxt "#31342"
 msgid "Widget item limit"
-msgstr ""
+msgstr "小组件数量值"
 
 #: /1080i/Settings.xml
 msgctxt "#31343"
 msgid "PVR"
-msgstr ""
+msgstr "PVR"
 
 #: /1080i/Settings.xml
 msgctxt "#31344"
 msgid "Install from repository or zip"
-msgstr ""
+msgstr "从存储库或zip安装"
 
 #: /1080i/Includes_Widgets.xml
 msgctxt "#31345"
 msgid "Event logging"
-msgstr ""
+msgstr "事件日志记录"
 
 #: /1080i/SkinSettings.xml
 msgctxt "#31346"
 msgid "Video OSD"
-msgstr ""
+msgstr "视频显示菜单"
 
 #: /1080i/SkinSettings.xml
 msgctxt "#31347"
 msgid "Music OSD"
-msgstr ""
+msgstr "音乐显示菜单"
 
 #: /1080i/Home.xml
 msgctxt "#31348"
 msgid "Loading Home Menu"
-msgstr ""
+msgstr "正在加载主菜单"
 
 #: /1080i/Startup.xml
 msgctxt "#31349"
 msgid "Initialising Skin"
-msgstr ""
+msgstr "初始化皮肤"
 
 #: /1080i/DialogVideoInfo.xml
 msgctxt "#31350"
 msgid "Similar to "
-msgstr ""
+msgstr "类似 "
 
 #: /1080i/DialogVideoInfo.xml
 msgctxt "#31351"
 msgid "Directed by "
-msgstr ""
+msgstr "导演 "
 
 #: /1080i/DialogVideoInfo.xml
 msgctxt "#31352"
 msgid "Added"
-msgstr ""
+msgstr "添加"
 
 #: /1080i/DialogVideoInfo.xml
 msgctxt "#31353"
 msgid "Played"
-msgstr ""
+msgstr "播放"
 
 #: /1080i/DialogMusicInfo.xml
 msgctxt "#31354"
 msgid "Instrument"
-msgstr ""
+msgstr "乐器"
 
 #: /1080i/DialogMusicInfo.xml
 msgctxt "#31355"
 msgid "Mood"
-msgstr ""
+msgstr "月份"
 
 #: /1080i/script-script.extendedinfo-DialogInfo.xml
 msgctxt "#31356"
 msgid "Years Old"
-msgstr ""
+msgstr "年份"
 
 #: /1080i/script-script.extendedinfo-DialogInfo.xml
 msgctxt "#31357"
 msgid "Crew"
-msgstr ""
+msgstr "组"
 
 #: /1080i/Includes_View_Posters.xml
 msgctxt "#31358"
 msgid "Poster Wall"
-msgstr ""
+msgstr "海报墙"
 
 #: /1080i/Includes_View_Posters.xml
 msgctxt "#31359"
 msgid "Landscape Wall"
-msgstr ""
+msgstr "场景贴画墙"
 
 #: /1080i/Includes_View_Posters.xml
 msgctxt "#31360"
 msgid "Square Wall"
-msgstr ""
+msgstr "大型墙"
 
 #: /1080i/Includes_View_Posters.xml
 msgctxt "#31361"
 msgid "Landscape Showcase"
-msgstr ""
+msgstr "场景贴画展示"
 
 #: /1080i/Includes_View_Posters.xml
 msgctxt "#31362"
 msgid "Square Showcase"
-msgstr ""
+msgstr "宽列表"
 
 #: /1080i/Includes_View_Posters.xml
 msgctxt "#31363"
 msgid "Big Posters"
-msgstr ""
+msgstr "大海报"
 
 #: /1080i/SkinSettings.xml
 msgctxt "#31364"
 msgid "Mouse compatability"
-msgstr ""
+msgstr "鼠标辅助标识"
 
 #: /1080i/script-script.extendedinfo-DialogVideoInfo.xml
 msgctxt "#31365"
 msgid "Images"
-msgstr ""
+msgstr "图片"
 
 #: /1080i/SkinSettings.xml
 msgctxt "#31366"
 msgid "Artwork button downloads all artwork"
-msgstr ""
+msgstr "艺术作品按钮下载所有艺术作品"
 
 #: /shortcuts/overrides.xml
 msgctxt "#31367"
 msgid "Recently Added TV Shows"
-msgstr ""
+msgstr "最近增加的电视节目"
 
 #: /1080i/script-script.extendedinfo-DialogInfo.xml
 msgctxt "#31368"
 msgid "Tagged Images"
-msgstr ""
+msgstr "标记的图像"
 
 #: /1080i/SkinSettings.xml
 msgctxt "#31369"
 msgid "Prefer fanart for landscape widgets"
-msgstr ""
+msgstr "更喜欢场景贴画小组件的同人画"
 
 #: /1080i/Includes_View_Posters.xml
 msgctxt "#31370"
 msgid "Banner Wall"
-msgstr ""
+msgstr "海报墙"
 
 #: /1080i/SkinSettings.xml
 msgctxt "#31371"
-msgid "Enable large Categories widget"
-msgstr ""
+msgid "Categories widget text"
+msgstr "类别小组件文字"
 
 #: /1080i/SkinSettings.xml
 msgctxt "#31372"
 msgid "Force default menu position"
-msgstr ""
+msgstr "强制默认菜单位置"
 
 #: /1080i/Includes_Widgets.xml
 msgctxt "#31373"
 msgid "See More"
-msgstr ""
+msgstr "查看更多"
 
 #: /1080i/EventLog.xml
 msgctxt "#31374"
 msgid "Order"
-msgstr ""
+msgstr "顺序"
 
-#: /1080i/SkinSettings.xml /1080i/SkinSettings.xml
+#: /1080i/SkinSettings.xml
 msgctxt "#31375"
 msgid "Gradients on backing panels"
-msgstr ""
+msgstr "背景渐变"
 
-#: /1080i/SkinSettings.xml /1080i/SkinSettings.xml
+#: /1080i/SkinSettings.xml
 msgctxt "#31376"
-msgid " - Display \"See more\" widget item"
-msgstr ""
+msgid "Show the \"See More\" widget item"
+msgstr "显示“查看更多”小组件项"
 
 #: /1080i/SkinSettings.xml
 msgctxt "#31377"
 msgid "Video lyrics"
-msgstr ""
+msgstr "视频歌词"
 
 #: /1080i/SkinSettings.xml
 msgctxt "#31378"
 msgid "Genre names in PVR guide"
-msgstr ""
+msgstr "PVR指南中的流派名称"
 
 #: /1080i/SkinSettings.xml
 msgctxt "#31379"
 msgid "Display plot overlay after delay"
-msgstr ""
+msgstr "布局覆盖后延迟显示"
 
 #: /1080i/Includes_Labels.xml
 msgctxt "#31380"
 msgid "Untitled"
-msgstr ""
+msgstr "无标题"
 
 #: /shortcuts/overrides.xml
 msgctxt "#31381"
 msgid "Last Played Channels"
-msgstr ""
+msgstr "上次播放的频道"
 
 #: /shortcuts/overrides.xml
 msgctxt "#31382"
 msgid "Active Recordings"
-msgstr ""
+msgstr "活动录制"
 
 #: /shortcuts/overrides.xml
 msgctxt "#31383"
 msgid "Grouped Active Recordings"
-msgstr ""
+msgstr "分组活动录制"
 
 #: /shortcuts/overrides.xml
 msgctxt "#31384"
 msgid "Grouped Deleted Recordings"
-msgstr ""
+msgstr "分组删除的录制"
 
 #: /1080i/Includes_View_Posters.xml
 msgctxt "#31385"
 msgid "Episode List"
-msgstr ""
+msgstr "方格列表"
 
 #: /1080i/SkinSettings.xml
 msgctxt "#31386"
 msgid "Auto close OSD controls after delay (in seconds)"
-msgstr ""
+msgstr "延迟后自动关闭OSD控件（秒）"
 
 #: /1080i/SkinSettings.xml
 msgctxt "#31387"
 msgid "Splash screen image"
-msgstr ""
+msgstr "启动屏幕图像"
 
 #: /1080i/DialogVideoInfo.xml
 msgctxt "#31388"
 msgid "Download All Artwork"
-msgstr ""
+msgstr "下载所有图片"
 
 #: /1080i/DialogVideoInfo.xml
 msgctxt "#31389"
 msgid "Select Artwork"
-msgstr ""
+msgstr "选择底片"
 
 #: /1080i/SkinSettings.xml
 msgctxt "#31390"
 msgid "Pressing up from top menu shows fanart / plot"
-msgstr ""
+msgstr "从顶部菜单向上按显示布局"
 
 #: /1080i/Includes_Topbar.xml
 msgctxt "#31391"
 msgid "Page"
-msgstr ""
+msgstr "页面"
 
 #: /1080i/Includes_Labels.xml
 msgctxt "#31392"
 msgid "Sort Letter"
-msgstr ""
+msgstr "按字母排序"
 
 #: /1080i/SkinSettings.xml
 msgctxt "#31393"
 msgid "Show media flags instead of ratings in library views"
-msgstr ""
+msgstr "在库视图中显示媒体标志而不是分级"
 
 #: /1080i/SkinSettings.xml
 msgctxt "#31394"
 msgid "Monochrome flags"
-msgstr ""
+msgstr "单色标志"
 
 #: /1080i/Includes_Items.xml
 msgctxt "#31395"
 msgid "Music Playlist"
-msgstr ""
+msgstr "音乐播放列表"
 
 #: /1080i/Includes_Items.xml
 msgctxt "#31396"
 msgid "Video Playlist"
-msgstr ""
+msgstr "视频播放列表"
 
 #: /1080i/Includes_View_Posters.xml
 msgctxt "#31397"
 msgid "Square Wall Large"
-msgstr ""
+msgstr "大型墙"
 
 #: /1080i/SkinSettings.xml
 msgctxt "#31398"
 msgid "Force extendedinfo to open when pressing info"
-msgstr ""
+msgstr "按信息时强制打开影片详情"
 
 #: /1080i/Includes_Labels.xml
 msgctxt "#31399"
 msgid "Text"
-msgstr ""
+msgstr "文本"
 
 #: /1080i/Custom_1119_EnableInfoLists.xml
 msgctxt "#31400"
 msgid "Movies by Director"
-msgstr ""
+msgstr "导演电影"
 
 #: /1080i/Custom_1119_EnableInfoLists.xml
 msgctxt "#31401"
 msgid "Next Up Episodes"
-msgstr ""
+msgstr "下一集"
 
 #: /1080i/Custom_1119_EnableInfoLists.xml
 msgctxt "#31402"
 msgid "Similar Movies"
-msgstr ""
+msgstr "类似的电影"
 
 #: /1080i/Custom_1119_EnableInfoLists.xml
 msgctxt "#31403"
 msgid "Similar Tv Shows"
-msgstr ""
+msgstr "类似的电视节目"
 
 #: /1080i/Custom_1119_EnableInfoLists.xml
 msgctxt "#31404"
 msgid "Movies from Studio"
-msgstr ""
+msgstr "电影制片厂的电影"
 
 #: /1080i/Custom_1119_EnableInfoLists.xml
 msgctxt "#31405"
 msgid "Extrafanart"
-msgstr ""
+msgstr "显示更多"
 
 #: /1080i/Custom_1119_EnableInfoLists.xml
 msgctxt "#31406"
 msgid "Extras / Special Features"
-msgstr ""
+msgstr "附加/特殊功能"
 
 #: /1080i/Custom_1119_EnableInfoLists.xml
 msgctxt "#31407"
 msgid "Enable / disable info dialog lists"
-msgstr ""
+msgstr "启用/禁用信息对话框列表"
 
 #: /1080i/Includes_Items.xml
 msgctxt "#31408"
 msgid "Subtitle settings"
-msgstr ""
+msgstr "字幕设置"
 
 #: /1080i/SkinSettings.xml
 msgctxt "#31409"
 msgid "Subtitles button opens subtitle settings"
-msgstr ""
+msgstr "通过字幕图标打开字幕设置"
 
 #: /1080i/SkinSettings.xml
 msgctxt "#31410"
 msgid "Show trailers and special features in preview window"
-msgstr ""
+msgstr "在预览窗口中显示预告片和特色"
 
 #: /1080i/Includes_View.xml
 msgctxt "#31411"
 msgid "LandscapeWide"
-msgstr ""
+msgstr "横向剧照【校正：术语统一】"
 
 #: /1080i/Includes_View.xml
 msgctxt "#31412"
 msgid "WidgetLive"
-msgstr ""
+msgstr "直播小组件"
 
 #: /1080i/SkinSettings.xml
 msgctxt "#31413"
 msgid "Enable Plot on Widget Bar"
-msgstr ""
+msgstr "启用小组件栏剧情简介"
 
 #: /1080i/Includes_View.xml
 msgctxt "#31414"
 msgid "LandscapeWidePoster"
-msgstr ""
+msgstr "宽屏海报视图"
 
 #: /1080i/SkinSettings.xml
 msgctxt "#31415"
 msgid "Enable PVR Guide Info"
-msgstr ""
+msgstr "启用PVR节目指南信息"
 
 #: /1080i/SkinSettings.xml
 msgctxt "#31416"
 msgid "Main Label Color"
-msgstr ""
+msgstr "主标签颜色"
 
 #: /1080i/SkinSettings.xml
 msgctxt "#31417"
 msgid "Enable Widget Overlays"
-msgstr ""
+msgstr "启用小组件叠加层"
 
 #: /1080i/Includes_View.xml
 msgctxt "#31418"
 msgid "posterdetails"
-msgstr ""
+msgstr "海报详情视图"
 
 #: /1080i/SkinSettings.xml
 msgctxt "#31419"
 msgid "Enable Widget Banners"
-msgstr ""
+msgstr "启用小组件横幅"
 
 #: /1080i/SkinSettings.xml
 msgctxt "#31420"
 msgid "Enable Categories Widget labels"
-msgstr ""
+msgstr "启用分类小组件标签"
 
 msgctxt "#31421"
 msgid ""
@@ -2016,2552 +2022,2552 @@ msgstr ""
 #: /1080i/SkinSettings.xml
 msgctxt "#31422"
 msgid "Enable Categories widget Label + icons"
-msgstr ""
+msgstr "启用分类小组件标签+图标"
 
 msgctxt "#31423"
 msgid "Widgets"
-msgstr ""
+msgstr "小组件"
 
 #: /1080i/SkinSettings.xml
 msgctxt "#31424"
 msgid "Enable Widget FixedFocus"
-msgstr ""
+msgstr "启用小组件固定焦点"
 
 #: /1080i/SkinSettings.xml
 msgctxt "#31425"
 msgid "Enable skin helper artwork lookups for addons"
-msgstr ""
+msgstr "为插件启用皮肤助手艺术图查找"
 
 #: /1080i/SkinSettings.xml
 msgctxt "#31426"
 msgid "Enable Ratings on Widget Bar"
-msgstr ""
+msgstr "启用小组件栏评分显示"
 
 #: /1080i/SkinSettings.xml
 msgctxt "#31427"
 msgid "Enable Title on Widget Bar"
-msgstr ""
+msgstr "启用小组件栏标题显示"
 
 #: /1080i/SkinSettings.xml
 msgctxt "#31428"
 msgid "Enable Netflix style Showcase Views"
-msgstr ""
+msgstr "启用Netflix风格展示视图"
 
 msgctxt "#31429"
 msgid "Default action for trailers"
-msgstr ""
+msgstr "预告片默认操作"
 
 #: /1080i/Includes_View.xml
 msgctxt "#31430"
 msgid "LandscapeNetflix"
-msgstr ""
+msgstr "Netflix横向视图"
 
 #: /1080i/SkinSettings.xml
 msgctxt "#31431"
 msgid "Enable Netflix Home"
-msgstr ""
+msgstr "启用Netflix风格主页"
 
 #: /1080i/SkinSettings.xml
 msgctxt "#31432"
 msgid "Enable Netflix Video Info"
-msgstr ""
+msgstr "启用Netflix视频信息界面"
 
 #: /1080i/SkinSettings.xml
 msgctxt "#31433"
 msgid "Choose Menu Layout"
-msgstr ""
+msgstr "选择菜单布局"
 
 #: /1080i/SkinSettings.xml
 msgctxt "#31434"
 msgid "Enable Icon Only SideMenu"
-msgstr ""
+msgstr "启用仅图标侧边栏"
 
 msgctxt "#31435"
 msgid "AuraMod"
-msgstr ""
+msgstr "AuraMod皮肤"
 
 msgctxt "#31436"
 msgid "PVR"
-msgstr ""
+msgstr "个人视频录像"
 
 #: /1080i/SkinSettings.xml
 msgctxt "#31437"
 msgid "Enable Sidemenu auto-hide"
-msgstr ""
+msgstr "启用侧边栏自动隐藏"
 
 #: /1080i/SkinSettings.xml
 msgctxt "#31438"
 msgid "Netflix Simple Home Layout"
-msgstr ""
+msgstr "Netflix简约主页布局"
 
 #: /1080i/SkinSettings.xml
 msgctxt "#31439"
 msgid "Enable Menu Background Image"
-msgstr ""
+msgstr "启用菜单背景图片"
 
 #: /1080i/SkinSettings.xml
 msgctxt "#31440"
-msgid "Netflix Mixed Home Layout"
-msgstr ""
+msgid "Netflix Mixed 主页 Layout"
+msgstr "Netflix混合主页布局"
 
 #: /1080i/SkinSettings.xml
 msgctxt "#31441"
 msgid "Netflix Home Layout"
-msgstr ""
+msgstr "Netflix主页布局"
 
 #: /1080i/SkinSettings.xml
 msgctxt "#31442"
 msgid "Choose Home Layout Style"
-msgstr ""
+msgstr "选择主页布局风格"
 
 #: /1080i/Includes_View.xml
 msgctxt "#31443"
 msgid "Category"
-msgstr ""
+msgstr "分类"
 
 #: /1080i/SkinSettings.xml
 msgctxt "#31444"
 msgid "Lock Hub Widgets"
-msgstr ""
+msgstr "锁定聚合中心小组件"
 
 #: /1080i/SkinSettings.xml
 msgctxt "#31445"
 msgid "Enable Small widget style"
-msgstr ""
+msgstr "启用小型小组件样式"
 
 #: /1080i/SkinSettings.xml
 msgctxt "#31446"
 msgid "Widget Status bar"
-msgstr ""
+msgstr "小组件状态栏"
 
 #: /1080i/SkinSettings.xml
 msgctxt "#31447"
 msgid "Aura Home Layout"
-msgstr ""
+msgstr "Aura风格主页布局"
 
 #: /1080i/SkinSettings.xml
 msgctxt "#31448"
 msgid "Choose Menu Layout"
-msgstr ""
+msgstr "选择菜单布局"
 
 #: /1080i/SkinSettings.xml
 msgctxt "#31449"
 msgid "Vertical Icon Only"
-msgstr ""
+msgstr "仅垂直图标"
 
 #: /1080i/SkinSettings.xml
 msgctxt "#31450"
 msgid "Vertical Full"
-msgstr ""
+msgstr "完整垂直布局"
 
 #: /1080i/SkinSettings.xml
 msgctxt "#31451"
 msgid "Horizontal Top"
-msgstr ""
+msgstr "顶部水平布局"
 
 #: /1080i/SkinSettings.xml
 msgctxt "#31452"
 msgid "Choose Netflix Widget Style"
-msgstr ""
+msgstr "选择Netflix小组件样式"
 
 #: /1080i/SkinSettings.xml
 msgctxt "#31453"
 msgid "Large Widgets"
-msgstr ""
+msgstr "大型小组件"
 
 #: /1080i/SkinSettings.xml
 msgctxt "#31454"
 msgid "Small Widgets"
-msgstr ""
+msgstr "小型小组件"
 
 #: /1080i/SkinSettings.xml
 msgctxt "#31455"
 msgid "Widget Overlays"
-msgstr ""
+msgstr "小组件叠加层"
 
 #: /1080i/SkinSettings.xml
 msgctxt "#31456"
 msgid "Widget General"
-msgstr ""
+msgstr "常规小组件设置"
 
 #: /1080i/SkinSettings.xml
 msgctxt "#31457"
 msgid "Enable multi-row Categories Widget"
-msgstr ""
+msgstr "启用多行分类小组件"
 
 #: /1080i/SkinSettings.xml
 msgctxt "#31458"
 msgid "Enable Clearlogos on Widgets"
-msgstr ""
+msgstr "在小组件启用透明徽标"
 
 #: /1080i/SkinSettings.xml
 msgctxt "#31459"
 msgid "Enable Low Spotlight Info"
-msgstr ""
+msgstr "启用精简精选推荐信息"
 
 #: /1080i/SkinSettings.xml
 msgctxt "#31461"
 msgid "Enable Video Info Trailer auto-play"
-msgstr ""
+msgstr "启用视频信息预告片自动播放"
 
 #: /1080i/SkinSettings.xml
 msgctxt "#31462"
 msgid "Disable Main Menu Label"
-msgstr ""
+msgstr "禁用主菜单标签"
 
 #: /1080i/SkinSettings.xml
 msgctxt "#31463"
 msgid "Menu Hubs"
-msgstr ""
+msgstr "菜单聚合中心"
 
 #: /1080i/SkinSettings.xml
 msgctxt "#31464"
 msgid "Media Hubs"
-msgstr ""
+msgstr "媒体聚合中心"
 
 #: /1080i/Includes_View_List.xml
 msgctxt "#31465"
 msgid "List"
-msgstr ""
+msgstr "列表视图"
 
 #: /1080i/SkinSettings.xml
 msgctxt "#31466"
 msgid "Down key starts trailer in Netflix Showcase Views"
-msgstr ""
+msgstr "下方向键启动Netflix展示视图预告片"
 
 #: /1080i/Includes_View_Posters.xml
 msgctxt "#31467"
 msgid "Panel Showcase"
-msgstr ""
+msgstr "面板展示视图"
 
 #: /1080i/Includes_View_Posters.xml
 msgctxt "#31468"
 msgid "Netflix Season"
-msgstr ""
+msgstr "Netflix季数视图"
 
 #: /1080i/Includes_View_Posters.xml
 msgctxt "#31469"
 msgid "Side List Poster"
-msgstr ""
+msgstr "侧边列表海报"
 
 #: /1080i/Includes_View_Posters.xml
 msgctxt "#31470"
 msgid "Season Showcase"
-msgstr ""
+msgstr "季数展示视图"
 
 #: /1080i/SkinSettings.xml
 msgctxt "#31471"
 msgid "Enable Vertical Icon w/ Labels"
-msgstr ""
+msgstr "启用带标签的垂直图标"
 
 #: /1080i/Includes_View_Posters.xml
 msgctxt "#31472"
 msgid "List Landscape"
-msgstr ""
+msgstr "列表横向视图"
 
 #: /1080i/Includes_View_Posters.xml
 msgctxt "#31473"
 msgid "List Poster"
-msgstr ""
+msgstr "列表海报视图"
 
 #: /1080i/Includes_View_Posters.xml
 msgctxt "#31474"
 msgid "Poster MediaInfo"
-msgstr ""
+msgstr "海报媒体信息视图"
 
 #: /1080i/Includes_View_Posters.xml
 msgctxt "#31475"
 msgid "4 seconds"
-msgstr ""
+msgstr "4秒"
 
 #: /1080i/Includes_View_Posters.xml
 msgctxt "#31476"
 msgid "8 seconds"
-msgstr ""
+msgstr "8秒"
 
 #: /1080i/Includes_View_Posters.xml
 msgctxt "#31477"
 msgid "16 seconds"
-msgstr ""
+msgstr "16秒"
 
 #: /1080i/Includes_View_Posters.xml
 msgctxt "#31478"
 msgid "30 seconds"
-msgstr ""
+msgstr "30秒"
 
 #: /1080i/SkinSettings.xml
 msgctxt "#31479"
 msgid "Enable Vertical Label"
-msgstr ""
+msgstr "启用垂直标签"
 
 #: /1080i/Includes_View_Posters.xml
 msgctxt "#31480"
 msgid "Side List Panel"
-msgstr ""
+msgstr "侧边列表面板"
 
 #: /1080i/Includes_View_Posters.xml
 msgctxt "#31481"
 msgid "Netflix Landscape Showcase"
-msgstr ""
+msgstr "Netflix横向展示视图"
 
 #: /1080i/Custom_1133_WidgetBar.xml
 msgctxt "#31482"
 msgid "Episode Airdate"
-msgstr ""
+msgstr "剧集播出日期"
 
 #: /1080i/Custom_1133_WidgetBar.xml
 msgctxt "#31483"
 msgid "Plot"
-msgstr ""
+msgstr "剧情简介"
 
 #: /1080i/Custom_1133_WidgetBar.xml
 msgctxt "#31484"
 msgid "Ratings"
-msgstr ""
+msgstr "评分"
 
 #: /1080i/Custom_1133_WidgetBar.xml
 msgctxt "#31485"
 msgid "Studio Logo"
-msgstr ""
+msgstr "制片厂标识"
 
 #: /1080i/Custom_1133_WidgetBar.xml
 msgctxt "#31486"
 msgid "Year"
-msgstr ""
+msgstr "年份"
 
 #: /1080i/Custom_1133_WidgetBar.xml
 msgctxt "#31487"
 msgid "Duration"
-msgstr ""
+msgstr "时长"
 
 #: /1080i/Custom_1118_EnableRatings.xml
 msgctxt "#31488"
 msgid "Star"
-msgstr ""
+msgstr "星标评分"
 
 #: /1080i/Custom_1118_EnableRatings.xml
 msgctxt "#31489"
 msgid "Trakt Rating"
-msgstr ""
+msgstr "Trakt评分"
 
 #: /1080i/Custom_1118_EnableRatings.xml
 msgctxt "#31490"
 msgid "Trakt Votes"
-msgstr ""
+msgstr "Trakt投票数"
 
 #: /1080i/Custom_1118_EnableRatings.xml
 msgctxt "#31491"
 msgid "Liked Percent"
-msgstr ""
+msgstr "好评率"
 
 #: /1080i/Custom_1119_EnableInfoLists.xml
 msgctxt "#31492"
 msgid "Disable All"
-msgstr ""
+msgstr "禁用全部"
 
 #: /1080i/Custom_1119_EnableInfoLists.xml
 msgctxt "#31493"
 msgid "Year"
-msgstr ""
+msgstr "年份"
 
 #: /1080i/Custom_1119_EnableInfoLists.xml
 msgctxt "#31494"
 msgid "Similar"
-msgstr ""
+msgstr "相似内容"
 
 #: /1080i/Custom_1119_EnableInfoLists.xml
 msgctxt "#31495"
 msgid "Recommended"
-msgstr ""
+msgstr "推荐内容"
 
 #: /1080i/Custom_1119_EnableInfoLists.xml
 msgctxt "#31496"
 msgid "Studio"
-msgstr ""
+msgstr "制片厂"
 
 #: /1080i/Custom_1119_EnableInfoLists.xml
 msgctxt "#31497"
 msgid "Genre"
-msgstr ""
+msgstr "类型"
 
 #: /1080i/Custom_1119_EnableInfoLists.xml
 msgctxt "#31498"
 msgid "Movie Sets"
-msgstr ""
+msgstr "电影合集"
 
 #: /1080i/Custom_1119_EnableInfoLists.xml
 msgctxt "#31499"
 msgid "Seasons"
-msgstr ""
+msgstr "季数"
 
 #: /1080i/Custom_1119_EnableInfoLists.xml
 msgctxt "#31500"
 msgid "Episodes"
-msgstr ""
+msgstr "剧集"
 
 #: /1080i/Custom_1125_EnableNetflixMenus.xml
 msgctxt "#31501"
 msgid "Disable menu background color"
-msgstr ""
-
+msgstr "禁用菜单背景色"
+ 
 #: /1080i/SkinSettings.xml
 msgctxt "#31502"
 msgid "Library Views"
-msgstr ""
-
+msgstr "媒体库视图"
+ 
 #: /1080i/SkinSettings.xml
 msgctxt "#31503"
 msgid "Hubs & Spotlight"
-msgstr ""
-
+msgstr "聚合中心与精彩推荐"
+ 
 #: /1080i/SkinSettings.xml
 msgctxt "#31504"
 msgid "My Lists"
-msgstr ""
-
+msgstr "我的列表"
+ 
 #: /1080i/SkinSettings.xml
 msgctxt "#31505"
 msgid "API Settings"
-msgstr ""
-
+msgstr "API接口设置"
+ 
 #: /1080i/SkinSettings.xml
 msgctxt "#31506"
 msgid "Open Category Widget on Focus"
-msgstr ""
-
+msgstr "聚焦时展开分类小组件"
+ 
 #: /1080i/SkinSettings.xml
 msgctxt "#31507"
 msgid "Disable onleft Menu Focus"
-msgstr ""
-
+msgstr "禁用左侧菜单聚焦"
+ 
 #: /1080i/SkinSettings.xml
 msgctxt "#31508"
 msgid "Default Select Action - Show Information"
-msgstr ""
-
+msgstr "默认选择操作 - 显示信息"
+ 
 #: /1080i/SkinSettings.xml
 msgctxt "#31509"
 msgid "Media Types"
-msgstr ""
-
+msgstr "媒体类型"
+ 
 #: /1080i/SkinSettings.xml
 msgctxt "#31510"
 msgid "Enable Time & Weather header on Home"
-msgstr ""
-
+msgstr "启用主页时间与天气标头"
+ 
 #: /1080i/SkinSettings.xml
 msgctxt "#31511"
 msgid "Use Monochrome for Ratings"
-msgstr ""
-
+msgstr "使用单色评分图标"
+ 
 #: /1080i/SkinSettings.xml
 msgctxt "#31512"
 msgid "Configure TV Hubs"
-msgstr ""
-
+msgstr "配置电视剧聚合中心"
+ 
 #: /1080i/SkinSettings.xml
 msgctxt "#31513"
 msgid "Configure Movie Hubs"
-msgstr ""
-
+msgstr "配置电影聚合中心"
+ 
 #: /1080i/SkinSettings.xml
 msgctxt "#31514"
 msgid "Spotlight Widgets"
-msgstr ""
-
+msgstr "精选推荐小组件"
+ 
 #: /1080i/SkinSettings.xml
 msgctxt "#31515"
 msgid "Enable Spotlights"
-msgstr ""
-
+msgstr "启用精选推荐"
+ 
 #: /1080i/SkinSettings.xml
 msgctxt "#31516"
 msgid "Choose Movie Spotlight Style"
-msgstr ""
-
+msgstr "选择电影精选推荐样式"
+ 
 #: /1080i/SkinSettings.xml
 msgctxt "#31517"
 msgid "Choose Movies Spotlight"
-msgstr ""
-
+msgstr "选择电影精选推荐"
+ 
 #: /1080i/SkinSettings.xml
 msgctxt "#31518"
 msgid "Configure Custom Movie Lists"
-msgstr ""
-
+msgstr "配置自定义电影列表"
+ 
 #: /1080i/SkinSettings.xml
 msgctxt "#31519"
 msgid "Choose TV Spotlight Style"
-msgstr ""
-
+msgstr "选择电视剧精选推荐样式"
+ 
 #: /1080i/SkinSettings.xml
 msgctxt "#31520"
 msgid "Choose TV Shows Spotlight"
-msgstr ""
-
+msgstr "选择电视剧精选推荐"
+ 
 #: /1080i/SkinSettings.xml
 msgctxt "#31521"
 msgid "Configure Custom TV Lists"
-msgstr ""
-
+msgstr "配置自定义电视剧列表"
+ 
 #: /1080i/SkinSettings.xml
 msgctxt "#31522"
 msgid "Configure LiveTV Spotlight"
-msgstr ""
-
+msgstr "配置直播电视精选推荐"
+ 
 #: /1080i/SkinSettings.xml
 msgctxt "#31523"
 msgid "Search"
-msgstr ""
-
+msgstr "搜索"
+ 
 #: /1080i/SkinSettings.xml
 msgctxt "#31524"
 msgid "Configure Search Lists"
-msgstr ""
-
+msgstr "配置搜索列表"
+ 
 #: /1080i/SkinSettings.xml
 msgctxt "#31525"
 msgid "Use default keyboard"
-msgstr ""
-
+msgstr "使用默认键盘"
+ 
 #: /1080i/SkinSettings.xml
 msgctxt "#31526"
 msgid "Enable MainMenu on Hubs"
-msgstr ""
-
+msgstr "在内容聚合中心启用主菜单"
+ 
 #: /1080i/SkinSettings.xml
 msgctxt "#31527"
 msgid "Enable TV/Movie Submenu on left"
-msgstr ""
-
+msgstr "启用左侧影视分类子菜单"
+ 
 #: /1080i/SkinSettings.xml
 msgctxt "#31528"
 msgid "Select TV Menu Items"
-msgstr ""
-
+msgstr "选择电视剧菜单项"
+ 
 #: /1080i/SkinSettings.xml
 msgctxt "#31529"
 msgid "Select Movie Menu Items"
-msgstr ""
-
+msgstr "选择电影菜单项"
+ 
 #: /1080i/SkinSettings.xml
 msgctxt "#31530"
 msgid "Configure Movie Lists 1"
-msgstr ""
-
+msgstr "配置电影列表1"
+ 
 #: /1080i/SkinSettings.xml
 msgctxt "#31531"
 msgid "Enable AuraHub style"
-msgstr ""
-
+msgstr "启用Aura聚合中心样式"
+ 
 #: /1080i/SkinSettings.xml
 msgctxt "#31532"
 msgid "Configure TV Lists 1"
-msgstr ""
-
+msgstr "配置电视剧列表1"
+ 
 #: /1080i/SkinSettings.xml
 msgctxt "#31533"
 msgid "Configure My Lists 1"
-msgstr ""
-
+msgstr "配置我的列表1"
+ 
 #: /1080i/SkinSettings.xml
 msgctxt "#31534"
 msgid "Configure My Lists 2"
-msgstr ""
-
+msgstr "配置我的列表2"
+ 
 #: /1080i/SkinSettings.xml
 msgctxt "#31535"
 msgid "Configure My Lists 3"
-msgstr ""
-
+msgstr "配置我的列表3"
+ 
 #: /1080i/SkinSettings.xml
 msgctxt "#31536"
 msgid "Configure Addons Lists 1"
-msgstr ""
-
+msgstr "配置插件列表1"
+ 
 #: /1080i/SkinSettings.xml
 msgctxt "#31537"
 msgid "Configure Addons Lists 2"
-msgstr ""
-
+msgstr "配置插件列表2"
+ 
 #: /1080i/SkinSettings.xml
 msgctxt "#31538"
 msgid "Configure LiveTV Lists 1"
-msgstr ""
-
+msgstr "配置直播电视列表1"
+ 
 #: /1080i/SkinSettings.xml
 msgctxt "#31539"
 msgid "Configure LiveTV Lists 2"
-msgstr ""
-
+msgstr "配置直播电视列表2"
+ 
 #: /1080i/SkinSettings.xml
 msgctxt "#31540"
 msgid "Home Fanart"
-msgstr ""
-
+msgstr "主页同人画"
+ 
 #: /1080i/SkinSettings.xml
 msgctxt "#31541"
 msgid "View Fanart"
-msgstr ""
-
+msgstr "查看同人画"
+ 
 #: /1080i/SkinSettings.xml
 msgctxt "#31542"
 msgid "Disable Settings Background"
-msgstr ""
-
+msgstr "禁用设置界面背景"
+ 
 #: /1080i/SkinSettings.xml
 msgctxt "#31543"
 msgid "Set Timer Per Image"
-msgstr ""
-
+msgstr "设置每张图片显示时长"
+ 
 #: /1080i/SkinSettings.xml
 msgctxt "#31544"
 msgid "Disable Transparency"
-msgstr ""
-
+msgstr "禁用透明度"
+ 
 #: /1080i/SkinSettings.xml
 msgctxt "#31545"
 msgid "Animate fanart (zoom & pan)"
-msgstr ""
-
+msgstr "同人画动态效果（缩放与平移）"
+ 
 #: /1080i/SkinSettings.xml
 msgctxt "#31546"
 msgid "Enable Info overlay box"
-msgstr ""
-
+msgstr "启用信息叠加框"
+ 
 #: /1080i/SkinSettings.xml
 msgctxt "#31547"
 msgid "Use round style actor thumbs"
-msgstr ""
-
+msgstr "使用圆形演员缩略图"
+ 
 #: /1080i/SkinSettings.xml
 msgctxt "#31548"
 msgid "Configure Netflix VideoInfo"
-msgstr ""
-
+msgstr "配置Netflix视频信息界面"
+ 
 #: /1080i/SkinSettings.xml
 msgctxt "#31549"
 msgid "Disable Netflix Overlay"
-msgstr ""
-
+msgstr "禁用Netflix叠加层"
+ 
 #: /1080i/SkinSettings.xml
 msgctxt "#31550"
 msgid "Down key starts trailer in Showcase Views"
-msgstr ""
-
+msgstr "下方向键启动展示视图预告片"
+ 
 #: /1080i/SkinSettings.xml
 msgctxt "#31551"
 msgid "Show full Spotlight info for Episodes"
-msgstr ""
-
+msgstr "显示剧集完整精选推荐信息"
+ 
 #: /1080i/SkinSettings.xml
 msgctxt "#31552"
 msgid "Disable Spotlight Trailer auto-play"
-msgstr ""
-
+msgstr "禁用精选推荐自动播放预告片"
+ 
 #: /1080i/SkinSettings.xml
 msgctxt "#31553"
 msgid "Disable Aura Home Widget gap"
-msgstr ""
-
+msgstr "禁用Aura主页小组件间距"
+ 
 #: /1080i/SkinSettings.xml
 msgctxt "#31554"
 msgid "AuraMod Settings Style"
-msgstr ""
-
+msgstr "AuraMod设置样式"
+ 
 #: /1080i/SkinSettings.xml
 msgctxt "#31555"
 msgid "Enable TMDBHelper service monitor"
-msgstr ""
-
+msgstr "启用TMDBHelper服务监控"
+ 
 #: /1080i/SkinSettings.xml
 msgctxt "#31556"
 msgid "Enable Power Menu Bar Style"
-msgstr ""
-
+msgstr "启用电源菜单栏样式"
+ 
 #: /1080i/SkinSettings.xml
 msgctxt "#31557"
 msgid "Use Aura Default loading icon"
-msgstr ""
-
+msgstr "使用Aura默认加载图标"
+ 
 #: /1080i/SkinSettings.xml
 msgctxt "#31558"
 msgid "Select Loading gif"
-msgstr ""
-
+msgstr "选择加载动画GIF"
+ 
 #: /1080i/SkinSettings.xml
 msgctxt "#31559"
 msgid "Disable Splash screen Image"
-msgstr ""
-
+msgstr "禁用启动画面图片"
+ 
 #: /1080i/SkinSettings.xml
 msgctxt "#31560"
 msgid "Choose Splash screen Image"
-msgstr ""
-
+msgstr "选择启动画面图片"
+ 
 #: /1080i/SkinSettings.xml
 msgctxt "#31561"
 msgid "Skin icons for Seren"
-msgstr ""
-
+msgstr "Seren插件皮肤图标"
+ 
 #: /1080i/SkinSettings.xml
 msgctxt "#31562"
 msgid "Enable Weather Radar Map"
-msgstr ""
-
+msgstr "启用天气雷达地图"
+ 
 #: /1080i/SkinSettings.xml
 msgctxt "#31563"
 msgid "Set Radar Map URL"
-msgstr ""
-
+msgstr "设置雷达地图URL"
+ 
 #: /1080i/SkinSettings.xml
 msgctxt "#31564"
 msgid "Widget Info bar"
-msgstr ""
-
+msgstr "小组件信息栏"
+ 
 #: /1080i/SkinSettings.xml
 msgctxt "#31565"
 msgid "Select WidgetBar Items"
-msgstr ""
-
+msgstr "选择小组件栏项目"
+ 
 #: /1080i/SkinSettings.xml
 msgctxt "#31566"
 msgid "Enable Large Label Font"
-msgstr ""
-
+msgstr "启用大号标签字体"
+ 
 #: /1080i/SkinSettings.xml
 msgctxt "#31567"
 msgid "Enable Cube Icon"
-msgstr ""
-
+msgstr "启用立方体图标"
+ 
 #: /1080i/SkinSettings.xml
 msgctxt "#31568"
 msgid "Submenu / Categories Widget"
-msgstr ""
-
+msgstr "子菜单/分类小组件"
+ 
 #: /1080i/SkinSettings.xml
 msgctxt "#31569"
 msgid "Disable Category Widget"
-msgstr ""
-
+msgstr "禁用分类小组件"
+ 
 #: /1080i/SkinSettings.xml
 msgctxt "#31570"
 msgid "Choose Category Widget Size"
-msgstr ""
-
+msgstr "选择分类小组件尺寸"
+ 
 #: /1080i/SkinSettings.xml
 msgctxt "#31571"
 msgid "Enable Labels on Widget"
-msgstr ""
-
+msgstr "在小组件上启用标签"
+ 
 #: /1080i/SkinSettings.xml
 msgctxt "#31572"
 msgid "Enable 'Categories' Label on WidgetBar"
-msgstr ""
-
+msgstr "在小组件栏启用'分类'标签"
+ 
 #: /1080i/SkinSettings.xml
 msgctxt "#31573"
 msgid "Detatch Home Widgets from Main Menu"
-msgstr ""
-
+msgstr "将主页小组件与主菜单分离"
+ 
 #: /1080i/SkinSettings.xml
 msgctxt "#31574"
 msgid "Use TV Show Fanart for Episodes"
-msgstr ""
-
+msgstr "使用电视剧同人画作为剧集背景"
+ 
 #: /1080i/SkinSettings.xml
 msgctxt "#31575"
 msgid "Suggested Movie/TV Widget"
-msgstr ""
-
+msgstr "影视推荐小组件"
+ 
 #: /1080i/SkinSettings.xml
 msgctxt "#31576"
 msgid "Enable Suggested Movies/TV Widget"
-msgstr ""
-
+msgstr "启用影视推荐小组件"
+ 
 #: /1080i/SkinSettings.xml
 msgctxt "#31577"
 msgid "Choose Movies List"
-msgstr ""
-
+msgstr "选择电影列表"
+ 
 #: /1080i/SkinSettings.xml
 msgctxt "#31578"
 msgid "Choose Episodes List"
-msgstr ""
-
+msgstr "选择剧集列表"
+ 
 #: /1080i/SkinSettings.xml
 msgctxt "#31579"
 msgid "Enable Mini OSD Guide"
-msgstr ""
-
+msgstr "启用迷你OSD指南"
+ 
 #: /1080i/SkinSettings.xml
 msgctxt "#31580"
 msgid "Enable Live TV OSD Channels"
-msgstr ""
-
+msgstr "启用直播电视OSD频道"
+ 
 #: /1080i/SkinSettings.xml
 msgctxt "#31581"
 msgid "Use Channel Icon on Widget Live TV"
-msgstr ""
-
+msgstr "在直播小组件使用频道图标"
+ 
 #: /1080i/SkinSettings.xml
 msgctxt "#31582"
 msgid "use ClearLogo instead of ClearArt"
-msgstr ""
-
+msgstr "使用透明徽标替代剪贴画"
+ 
 #: /1080i/SkinSettings.xml
 msgctxt "#31583"
 msgid "Configure Metadatautils APIs"
-msgstr ""
-
+msgstr "配置Metadatautils API接口"
+ 
 #: /1080i/SkinSettings.xml
 msgctxt "#31584"
 msgid "Configure TMDBHelper APIs"
-msgstr ""
-
+msgstr "配置TMDBHelper API接口"
+ 
 #: /1080i/Custom_1126_MovieHub_config.xml
 msgctxt "#31585"
 msgid "Movie Hub Configuration"
-msgstr ""
-
+msgstr "电影聚合中心配置"
+ 
 #: /1080i/Custom_1126_MovieHub_config.xml
 msgctxt "#31586"
 msgid "Movie Lists Hub Items"
-msgstr ""
-
+msgstr "电影列表聚合中心项目"
+ 
 #: /1080i/Custom_1126_MovieHub_config.xml
 msgctxt "#31587"
 msgid "Movie Aura Hub Items"
-msgstr ""
-
+msgstr "电影Aura聚合中心项目"
+ 
 #: /1080i/Custom_1126_MovieHub_config.xml
 msgctxt "#31588"
 msgid "Enable Compact Widget spacing"
-msgstr ""
-
+msgstr "启用紧凑小组件间距"
+ 
 #: /1080i/Custom_1126_MovieHub_config.xml
 msgctxt "#31589"
 msgid "Movie Netflix Hub Items"
-msgstr ""
-
+msgstr "电影Netflix聚合中心项目"
+ 
 #: /1080i/Custom_1126_MovieHub_config.xml
 msgctxt "#31590"
 msgid "Movie Genre Hub Items"
-msgstr ""
-
+msgstr "电影类型聚合中心项目"
+ 
 #: /1080i/Custom_1127_TVHub_config.xml
 msgctxt "#31591"
 msgid "TV Hub Configuration"
-msgstr ""
-
+msgstr "电视剧聚合中心配置"
+ 
 #: /1080i/Custom_1127_TVHub_config.xml
 msgctxt "#31592"
 msgid "TV Lists Hub Items"
-msgstr ""
-
+msgstr "电视剧列表聚合中心项目"
+ 
 #: /1080i/Custom_1127_TVHub_config.xml
 msgctxt "#31593"
 msgid "TV Aura Hub Items"
-msgstr ""
-
+msgstr "电视剧Aura聚合中心项目"
+ 
 #: /1080i/Custom_1127_TVHub_config.xml
 msgctxt "#31594"
 msgid "TV Netflix Hub Items"
-msgstr ""
-
+msgstr "电视剧Netflix聚合中心项目"
+ 
 #: /1080i/Custom_1127_TVHub_config.xml
 msgctxt "#31595"
 msgid "TV Genre Hub Items"
-msgstr ""
-
+msgstr "电视剧类型聚合中心项目"
+ 
 #: /1080i/Custom_1127_TVHub_config.xml
 msgctxt "#31596"
 msgid "TV Networks Hub Items"
-msgstr ""
-
+msgstr "电视网络聚合中心项目"
+ 
 #: /1080i/Custom_1128_Spotlight_config.xml
 msgctxt "#31597"
 msgid "Home Spotlight Config"
-msgstr ""
-
+msgstr "主页精选推荐配置"
+ 
 #: /1080i/Custom_1128_Spotlight_config.xml
 msgctxt "#31598"
 msgid "Enable Spotlights"
-msgstr ""
-
+msgstr "启用精选推荐"
+ 
 #: /1080i/Custom_1128_Spotlight_config.xml
 msgctxt "#31599"
 msgid "Choose Movie Spotlight Style"
-msgstr ""
-
+msgstr "选择电影精选推荐样式"
+ 
 #: /1080i/Custom_1128_Spotlight_config.xml
 msgctxt "#31600"
 msgid "Movies Content"
-msgstr ""
-
+msgstr "电影内容"
+ 
 #: /1080i/Custom_1128_Spotlight_config.xml
 msgctxt "#31601"
 msgid "Configure Custom Movie Lists"
-msgstr ""
-
+msgstr "配置自定义电影列表"
+ 
 #: /1080i/Custom_1128_Spotlight_config.xml
 msgctxt "#31602"
 msgid "Choose TV Spotlight Style"
-msgstr ""
-
+msgstr "选择电视剧精选推荐样式"
+ 
 #: /1080i/Custom_1128_Spotlight_config.xml
 msgctxt "#31603"
 msgid "TV Shows Content"
-msgstr ""
-
+msgstr "电视剧内容"
+ 
 #: /1080i/Custom_1128_Spotlight_config.xml
 msgctxt "#31604"
 msgid "Configure Custom TV Lists"
-msgstr ""
-
+msgstr "配置自定义电视剧列表"
+ 
 #: /1080i/Custom_1128_Spotlight_config.xml
 msgctxt "#31605"
 msgid "Spotlight Random Sorting"
-msgstr ""
-
+msgstr "精选推荐随机排序"
+ 
 #: /1080i/Custom_1128_Spotlight_config.xml
 msgctxt "#31606"
 msgid "Configure LiveTV Spotlight"
-msgstr ""
-
+msgstr "配置直播电视精选推荐"
+ 
 #: /1080i/Custom_1130_ShowInfo.xml
 msgctxt "#31607"
 msgid "Show Info Media types"
-msgstr ""
-
+msgstr "显示信息媒体类型"
+ 
 #: /1080i/Custom_1130_ShowInfo.xml
 msgctxt "#31608"
 msgid "Movies"
-msgstr ""
-
+msgstr "电影"
+ 
 #: /1080i/Custom_1130_ShowInfo.xml
 msgctxt "#31609"
 msgid "TV Shows"
-msgstr ""
-
+msgstr "电视剧"
+ 
 #: /1080i/Custom_1130_ShowInfo.xml
 msgctxt "#31610"
 msgid "Episodes"
-msgstr ""
-
+msgstr "剧集"
+ 
 #: /1080i/Custom_1132_SpotlightStyle.xml
 msgctxt "#31611"
 msgid "Spotlight Style"
-msgstr ""
-
+msgstr "精选推荐样式"
+ 
 #: /1080i/Custom_1132_SpotlightStyle.xml
 msgctxt "#31612"
 msgid "Enable Fullscreen Spotlight"
-msgstr ""
-
+msgstr "启用全屏精选推荐"
+ 
 #: /1080i/Custom_1132_SpotlightStyle.xml
 msgctxt "#31613"
 msgid "Disable Spotlight Trailer auto-play"
-msgstr ""
-
+msgstr "禁用焦点推荐自动播放预告片"
+ 
 #: /1080i/Custom_1132_SpotlightStyle.xml
 msgctxt "#31614"
 msgid "Enable Widget Spotlight"
-msgstr ""
-
+msgstr "启用小组件精选推荐"
+ 
 #: /1080i/Custom_1132_SpotlightStyle.xml
 msgctxt "#31615"
 msgid "Enable Multi Widget Spotlight"
-msgstr ""
-
+msgstr "启用多重小组件精选推荐"
+ 
 #: /1080i/Custom_1134_TMDB_Info.xml
 msgctxt "#31616"
 msgid "Actor Info"
-msgstr ""
-
+msgstr "演员信息"
+ 
 #: /1080i/Custom_1139_SearchWinRefresh.xml
 msgctxt "#31617"
 msgid "reload"
-msgstr ""
-
+msgstr "重新加载"
+ 
 #: /1080i/Custom_1140_EnableSubmenuSize.xml
 msgctxt "#31618"
 msgid "Choose Category Widget Size"
-msgstr ""
-
+msgstr "选择分类小组件尺寸"
+ 
 #: /1080i/Custom_1140_EnableSubmenuSize.xml
 msgctxt "#31619"
 msgid "Enable Small Category Widget"
-msgstr ""
-
+msgstr "启用小型分类小组件"
+ 
 #: /1080i/Custom_1140_EnableSubmenuSize.xml
 msgctxt "#31620"
 msgid "Enable Medium Category Widget"
-msgstr ""
-
+msgstr "启用中型分类小组件"
+ 
 #: /1080i/Custom_1140_EnableSubmenuSize.xml
 msgctxt "#31621"
 msgid "Enable Large Category Widget"
-msgstr ""
-
+msgstr "启用大型分类小组件"
+ 
 #: /1080i/Custom_1157_VideoInfoButtons.xml
 msgctxt "#31622"
 msgid "VideoInfo Buttons"
-msgstr ""
-
+msgstr "视频信息按钮"
+ 
 #: /1080i/Custom_1157_VideoInfoButtons.xml
 msgctxt "#31623"
 msgid "More Episodes"
-msgstr ""
-
+msgstr "更多剧集"
+ 
 #: /1080i/Custom_1157_VideoInfoButtons.xml
 msgctxt "#31624"
 msgid "Cast & More"
-msgstr ""
-
+msgstr "演员表与更多"
+ 
 #: /1080i/Custom_1157_VideoInfoButtons.xml
 msgctxt "#31625"
 msgid "Extended Info"
-msgstr ""
-
+msgstr "扩展信息"
+ 
 #: /1080i/Custom_1157_VideoInfoButtons.xml
 msgctxt "#31626"
 msgid "Add to Watchlist"
-msgstr ""
-
+msgstr "添加到观看列表"
+ 
 #: /1080i/Custom_1157_VideoInfoButtons.xml
 msgctxt "#31627"
 msgid "Choose Artwork"
-msgstr ""
-
+msgstr "选择艺术作品"
+ 
 #: /1080i/Custom_1157_VideoInfoButtons.xml
 msgctxt "#31628"
 msgid "Refresh"
-msgstr ""
-
+msgstr "刷新"
+ 
 #: /1080i/Custom_1157_VideoInfoButtons.xml
 msgctxt "#31629"
 msgid "Search"
-msgstr ""
-
+msgstr "搜索"
+ 
 #: /1080i/Custom_1157_VideoInfoButtons.xml
 msgctxt "#31630"
 msgid "Quick Play"
-msgstr ""
-
+msgstr "快速播放"
+ 
 #: /1080i/Custom_1158_VideoInfo.xml
 msgctxt "#31631"
 msgid "Netflix VideoInfo Settings"
-msgstr ""
-
+msgstr "Netflix视频信息设置"
+ 
 #: /1080i/Custom_1158_VideoInfo.xml
 msgctxt "#31632"
 msgid "Configure Buttons"
-msgstr ""
-
+msgstr "配置按钮"
+ 
 #: /1080i/Custom_1158_VideoInfo.xml
 msgctxt "#31633"
 msgid "Configure Lists"
-msgstr ""
-
+msgstr "配置列表"
+ 
 #: /1080i/Custom_1158_VideoInfo.xml
 msgctxt "#31634"
 msgid "Hide Details when Trailer playing"
-msgstr ""
-
+msgstr "播放预告片时隐藏详情"
+ 
 #: /1080i/Custom_1158_VideoInfo.xml
 msgctxt "#31635"
 msgid "Use Large Plot"
-msgstr ""
-
+msgstr "使用大段剧情简介"
+ 
 #: /1080i/Includes_MediaHub.xml
 msgctxt "#31636"
 msgid "Click to set Widget Content"
-msgstr ""
-
+msgstr "点击设置小组件内容"
+ 
 #: /1080i/Includes_MediaHub.xml
 msgctxt "#31637"
 msgid "Discover Movies"
-msgstr ""
-
+msgstr "发现电影"
+ 
 #: /1080i/Custom_1160_Spotlight_TV_List.xml
 msgctxt "#31638"
 msgid "Spotlight TV Lists"
-msgstr ""
-
+msgstr "电视剧精选推荐列表"
+ 
 #: /1080i/Custom_1160_Spotlight_TV_List.xml
 msgctxt "#31639"
 msgid "TV List 1"
-msgstr ""
-
+msgstr "电视剧列表1"
+ 
 #: /1080i/Custom_1160_Spotlight_TV_List.xml
 msgctxt "#31640"
 msgid "TV List 2"
-msgstr ""
-
+msgstr "电视剧列表2"
+ 
 #: /1080i/Custom_1160_Spotlight_TV_List.xml
 msgctxt "#31641"
 msgid "TV List 3"
-msgstr ""
-
+msgstr "电视剧列表3"
+ 
 #: /1080i/Custom_1160_Spotlight_TV_List.xml
 msgctxt "#31642"
 msgid "TV List 4"
-msgstr ""
-
+msgstr "电视剧列表4"
+ 
 #: /1080i/Custom_1161_Spotlight_Movie_List.xml
 msgctxt "#31643"
 msgid "Movie List 1"
-msgstr ""
-
+msgstr "电影列表1"
+ 
 #: /1080i/Custom_1161_Spotlight_Movie_List.xml
 msgctxt "#31644"
 msgid "Movie List 2"
-msgstr ""
-
+msgstr "电影列表2"
+ 
 #: /1080i/Custom_1161_Spotlight_Movie_List.xml
 msgctxt "#31645"
 msgid "Movie List 3"
-msgstr ""
-
+msgstr "电影列表3"
+ 
 #: /1080i/Custom_1161_Spotlight_Movie_List.xml
 msgctxt "#31646"
 msgid "Movie List 4"
-msgstr ""
-
+msgstr "电影列表4"
+ 
 #: /1080i/Custom_1163_SearchConfig.xml
 msgctxt "#31647"
 msgid "Search Hub Configuration"
-msgstr ""
-
+msgstr "搜索聚合中心配置"
+ 
 #: /1080i/Custom_1163_SearchConfig.xml
 msgctxt "#31648"
 msgid "Configure Search Lists"
-msgstr ""
-
+msgstr "配置搜索列表"
+ 
 #: /1080i/Custom_1163_SearchConfig.xml
 msgctxt "#31649"
 msgid "Use default keyboard"
-msgstr ""
-
+msgstr "使用默认键盘"
+ 
 #: /1080i/Custom_1163_SearchConfig.xml
 msgctxt "#31650"
 msgid "Enable Search History (requires tmdb lists)"
-msgstr ""
-
+msgstr "启用搜索历史（需要TMDB列表）"
+ 
 #: /1080i/Custom_1164_MyLists.xml
 msgctxt "#31651"
 msgid "My Lists Configuration"
-msgstr ""
-
+msgstr "我的列表配置"
+ 
 #: /1080i/Custom_1164_MyLists.xml
 msgctxt "#31652"
 msgid "Configure Movie List"
-msgstr ""
-
+msgstr "配置电影列表"
+ 
 #: /1080i/Custom_1164_MyLists.xml
 msgctxt "#31653"
 msgid "Configure TV List"
-msgstr ""
-
+msgstr "配置电视剧列表"
+ 
 #: /1080i/Custom_1164_MyLists.xml
 msgctxt "#31654"
 msgid "Configure My Lists 1"
-msgstr ""
-
+msgstr "配置我的列表1"
+ 
 #: /1080i/Custom_1164_MyLists.xml
 msgctxt "#31655"
 msgid "Configure My Lists 2"
-msgstr ""
-
+msgstr "配置我的列表2"
+ 
 #: /1080i/Custom_1164_MyLists.xml
 msgctxt "#31656"
 msgid "Configure My Lists 3"
-msgstr ""
-
+msgstr "配置我的列表3"
+ 
 #: /1080i/Custom_1164_MyLists.xml
 msgctxt "#31657"
 msgid "Configure Addons Lists 1"
-msgstr ""
-
+msgstr "配置插件列表1"
+ 
 #: /1080i/Custom_1164_MyLists.xml
 msgctxt "#31658"
 msgid "Configure Addons Lists 2"
-msgstr ""
-
+msgstr "配置插件列表2"
+ 
 #: /1080i/Custom_1164_MyLists.xml
 msgctxt "#31659"
 msgid "Configure LiveTV Lists 1"
-msgstr ""
-
+msgstr "配置直播电视列表1"
+ 
 #: /1080i/Custom_1164_MyLists.xml
 msgctxt "#31660"
 msgid "Configure LiveTV Lists 2"
-msgstr ""
-
+msgstr "配置直播电视列表2"
+ 
 #: /1080i/Custom_1164_MyLists.xml
 msgctxt "#31661"
 msgid "Use AuraMod style for Menu Hub"
-msgstr ""
-
+msgstr "为菜单聚合中心使用AuraMod样式"
+ 
 #: /1080i/Custom_Hub_MovieAura.xml
 msgctxt "#31662"
 msgid "Movie AuraHub"
-msgstr ""
-
+msgstr "电影Aura聚合中心"
+ 
 #: /1080i/Custom_Hub_MovieAura.xml
 msgctxt "#31663"
 msgid "Hub is Empty - Click to Add Items"
-msgstr ""
-
+msgstr "内容聚合中心为空 - 点击添加项目"
+ 
 #: /1080i/Custom_Hub_MoviesGenres.xml
 msgctxt "#31665"
 msgid "Genres"
-msgstr ""
-
+msgstr "类型"
+ 
 #: /1080i/Custom_Hub_MoviesGenres.xml
 msgctxt "#31666"
 msgid "TV AuraHub"
-msgstr ""
-
+msgstr "电视剧Aura聚合中心"
+ 
 #: /1080i/Custom_MenuHub_Movie2.xml
 msgctxt "#31670"
 msgid "Categories"
-msgstr ""
-
+msgstr "分类"
+ 
 #: /1080i/Custom_Hub_TVGenres.xml
 msgctxt "#31671"
 msgid "Hub Empty - Choose Items"
-msgstr ""
-
+msgstr "内容聚合中心为空 - 选择项目"
+ 
 #: /1080i/Custom_MenuHub_TVNetworks.xml
 msgctxt "#31674"
 msgid "Networks"
-msgstr ""
-
+msgstr "网络频道"
+ 
 #: /1080i/Custom_Setup.xml
 msgctxt "#31675"
 msgid "Run Wizard"
-msgstr ""
-
+msgstr "运行向导"
+ 
 #: /1080i/Custom_Setup.xml
 msgctxt "#31676"
 msgid "Manual Setup"
-msgstr ""
-
+msgstr "手动设置"
+ 
 #: /1080i/Custom_Setup.xml
 msgctxt "#31677"
 msgid "Configure Hubs & Spotlights"
-msgstr ""
-
+msgstr "配置内容聚合中心与焦点推荐"
+ 
 #: /1080i/Custom_Setup.xml
 msgctxt "#31678"
 msgid "Finish Setup"
-msgstr ""
-
+msgstr "完成设置"
+ 
 #: /1080i/Custom_Youtube.xml
 msgctxt "#31679"
 msgid "Live"
-msgstr ""
-
+msgstr "直播"
+ 
 #: /1080i/DialogButtonMenu-Includes.xml
 msgctxt "#31680"
 msgid "Programs"
-msgstr ""
-
+msgstr "程序"
+ 
 #: /1080i/DialogButtonMenu-Includes.xml
 msgctxt "#31681"
 msgid "Favourites"
-msgstr ""
-
+msgstr "收藏"
+ 
 #: /1080i/DialogButtonMenu-Includes.xml
 msgctxt "#31682"
 msgid "Main Menu Config"
-msgstr ""
-
+msgstr "主菜单配置"
+ 
 #: /1080i/DialogButtonMenu-Includes.xml
 msgctxt "#31683"
 msgid "TV Hubs Config"
-msgstr ""
-
+msgstr "电视剧聚合中心配置"
+ 
 #: /1080i/DialogButtonMenu-Includes.xml
 msgctxt "#31684"
 msgid "Movie Hubs Config"
-msgstr ""
-
+msgstr "电影聚合中心配置"
+ 
 #: /1080i/DialogButtonMenu-Includes.xml
 msgctxt "#31685"
 msgid "Home"
-msgstr ""
-
+msgstr "主页"
+ 
 #: /1080i/DialogButtonMenu-Includes.xml
 msgctxt "#31686"
 msgid "Settings"
-msgstr ""
-
+msgstr "设置"
+ 
 #: /1080i/DialogVideoInfo-Includes.xml
 msgctxt "#31687"
 msgid "Resume"
-msgstr ""
-
+msgstr "继续播放"
+ 
 #: /1080i/DialogVideoInfo-Includes.xml
 msgctxt "#31688"
 msgid "Play from Beginning"
-msgstr ""
-
+msgstr "从头播放"
+ 
 #: /1080i/DialogVideoInfo-Includes.xml
 msgctxt "#31689"
 msgid "Cast & More"
-msgstr ""
-
+msgstr "演员表与更多"
+ 
 #: /1080i/DialogVideoInfo-Includes.xml
 msgctxt "#31690"
 msgid "Add/Remove from Watchlist"
-msgstr ""
-
+msgstr "添加/移除观看列表"
+ 
 #: /1080i/DialogVideoInfo-Includes.xml
 msgctxt "#31691"
 msgid "Fullscreen"
-msgstr ""
-
+msgstr "全屏"
+ 
 #: /1080i/DialogVideoInfo-Includes.xml
 msgctxt "#31692"
 msgid "Stop"
-msgstr ""
-
+msgstr "停止"
+ 
 #: /1080i/DialogVideoInfo-Includes.xml
 msgctxt "#31693"
 msgid "Extended Info"
-msgstr ""
-
+msgstr "扩展信息"
+ 
 #: /1080i/DialogVideoInfo-Includes.xml
 msgctxt "#31694"
 msgid "More Info"
-msgstr ""
-
+msgstr "更多信息"
+ 
 #: /1080i/DialogVideoInfo-Includes.xml
 msgctxt "#31695"
 msgid "Cast"
-msgstr ""
-
+msgstr "演员表"
+ 
 #: /1080i/DialogVideoInfo-Includes.xml
 msgctxt "#31696"
 msgid "Sets"
-msgstr ""
-
+msgstr "合集"
+ 
 #: /1080i/DialogVideoInfo-Includes.xml
 msgctxt "#31697"
 msgid "By Director"
-msgstr ""
-
+msgstr "按导演"
+ 
 #: /1080i/DialogVideoInfo-Includes.xml
 msgctxt "#31698"
 msgid "By Studio"
-msgstr ""
-
+msgstr "按制片厂"
+ 
 #: /1080i/DialogVideoInfo-Includes.xml
 msgctxt "#31699"
 msgid "By Year"
-msgstr ""
-
+msgstr "按年份"
+ 
 #: /1080i/DialogVideoInfo-Includes.xml
 msgctxt "#31700"
 msgid "By Genre"
-msgstr ""
-
+msgstr "按类型"
+ 
 #: /1080i/DialogVideoInfo-Includes.xml
 msgctxt "#31701"
 msgid "Box Office"
-msgstr ""
-
+msgstr "票房"
+ 
 #: /1080i/DialogVideoInfo-Includes.xml
 msgctxt "#31702"
 msgid "Budget"
-msgstr ""
-
+msgstr "预算"
+ 
 #: /1080i/DialogVideoInfo-Includes.xml
 msgctxt "#31703"
 msgid "Awards"
-msgstr ""
-
+msgstr "奖项"
+ 
 #: /1080i/DialogVideoInfo-Includes.xml
 msgctxt "#31704"
 msgid "Critics Consensus"
-msgstr ""
-
+msgstr "评论家共识"
+ 
 #: /1080i/Includes_Items.xml
 msgctxt "#31705"
 msgid "File Manager"
-msgstr ""
-
+msgstr "文件管理器"
+ 
 #: /1080i/Includes_MediaHub.xml
 msgctxt "#31706"
 msgid "Discover TV"
-msgstr ""
-
+msgstr "发现电视剧"
+ 
 #: /1080i/Includes_MediaHub.xml
 msgctxt "#31707"
 msgid "My Movies"
-msgstr ""
-
+msgstr "我的电影"
+ 
 #: /1080i/Includes_MediaHub.xml
 msgctxt "#31708"
 msgid "My TV"
-msgstr ""
-
+msgstr "我的电视剧"
+ 
 #: /1080i/Includes_MediaHub.xml
 msgctxt "#31709"
 msgid "My Apps"
-msgstr ""
-
+msgstr "我的应用"
+ 
 #: /1080i/Custom_1133_WidgetBar.xml
 msgctxt "#31710"
 msgid "Title"
-msgstr ""
-
+msgstr "标题"
+ 
 #: /1080i/SkinSettings.xml
 msgctxt "#31711"
 msgid "Show detailed info on controls"
-msgstr ""
-
+msgstr "在控件上显示详细信息"
+ 
 #: /1080i/DialogVideoInfo-Includes.xml
 msgctxt "#31712"
 msgid "Play"
-msgstr ""
-
+msgstr "播放"
+ 
 #: /1080i/DialogVideoInfo-Includes.xml
 msgctxt "#31713"
 msgid "liked it"
-msgstr ""
-
+msgstr "喜欢"
+ 
 #: /1080i/Includes_Object.xml
 msgctxt "#31714"
 msgid "Play"
-msgstr ""
-
+msgstr "播放"
+ 
 #: /1080i/Includes_Object.xml
 msgctxt "#31715"
 msgid "More Info"
-msgstr ""
-
+msgstr "更多信息"
+ 
 #: /1080i/Includes_Object.xml
 msgctxt "#31716"
 msgid "My TV Calendar"
-msgstr ""
-
+msgstr "我的电视日历"
+ 
 #: /1080i/Includes_Object.xml
 msgctxt "#31717"
 msgid "Continue Watching"
-msgstr ""
-
+msgstr "继续观看"
+ 
 #: /1080i/Includes_Object.xml
 msgctxt "#31718"
 msgid "Channel"
-msgstr ""
-
+msgstr "频道"
+ 
 #: /1080i/Includes_Object.xml
 msgctxt "#31719"
 msgid "Clear"
-msgstr ""
-
+msgstr "清除"
+ 
 #: /1080i/Custom_1136_Search.xml
 msgctxt "#31720"
 msgid "Search for TV Shows and Movies"
-msgstr ""
-
+msgstr "搜索电视剧和电影"
+ 
 #: /1080i/Includes_Object.xml
 msgctxt "#31721"
 msgid "Categories"
-msgstr ""
-
+msgstr "分类"
+ 
 #: /1080i/Includes_Object.xml
 msgctxt "#31722"
 msgid "Device"
-msgstr ""
-
+msgstr "设备"
+ 
 #: /1080i/Includes_Object.xml
 msgctxt "#31723"
 msgid "Interface"
-msgstr ""
-
+msgstr "界面"
+ 
 #: /1080i/Includes_Object.xml
 msgctxt "#31724"
 msgid "Services"
-msgstr ""
-
+msgstr "服务"
+ 
 #: /1080i/Includes_Object.xml
 msgctxt "#31725"
 msgid "Player"
-msgstr ""
+msgstr "播放器"
 
 #: /1080i/Includes_Object.xml
 msgctxt "#31726"
 msgid "Media Settings"
-msgstr ""
+msgstr "媒体设置"
 
 #: /1080i/Includes_Object.xml
 msgctxt "#31727"
 msgid "PVR & Live TV"
-msgstr ""
+msgstr "PVR & 直播电视【校正：术语统一】"
 
 #: /1080i/Includes_Object.xml
 msgctxt "#31728"
 msgid "Accounts"
-msgstr ""
+msgstr "账户"
 
 #: /1080i/Includes_Object.xml
 msgctxt "#31729"
 msgid "Preferences"
-msgstr ""
+msgstr "偏好设置"
 
 #: /1080i/Includes_Object.xml
 msgctxt "#31730"
 msgid "Menu & Widgets"
-msgstr ""
+msgstr "菜单与小组件"
 
 #: /1080i/Includes_Object.xml
 msgctxt "#31731"
 msgid "TV Hubs"
-msgstr ""
+msgstr "电视剧聚合中心"
 
 #: /1080i/Includes_Object.xml
 msgctxt "#31732"
 msgid "Movie Hubs"
-msgstr ""
+msgstr "电影聚合中心"
 
 #: /1080i/Includes_Object.xml
 msgctxt "#31733"
 msgid "Home Spotlights"
-msgstr ""
+msgstr "主页精选推荐"
 
 #: /1080i/Includes_Object.xml
 msgctxt "#31734"
 msgid "Home Style"
-msgstr ""
+msgstr "主页样式"
 
 #: /1080i/Includes_Object.xml
 msgctxt "#31735"
 msgid "Menu Style"
-msgstr ""
+msgstr "菜单样式"
 
 #: /1080i/Includes_Object.xml
 msgctxt "#31736"
 msgid "Settings"
-msgstr ""
+msgstr "设置"
 
 #: /1080i/Includes_Object.xml
 msgctxt "#31737"
 msgid "Skin Settings"
-msgstr ""
+msgstr "皮肤设置"
 
 #: /1080i/Includes_Object.xml
 msgctxt "#31738"
 msgid "Search Lists"
-msgstr ""
+msgstr "搜索列表"
 
 #: /1080i/Includes_Object.xml
 msgctxt "#31739"
 msgid "File Manager"
-msgstr ""
+msgstr "文件管理器"
 
 #: /1080i/Includes_Object.xml
 msgctxt "#31740"
 msgid "System"
-msgstr ""
+msgstr "系统"
 
 #: /1080i/Includes_Object.xml
 msgctxt "#31741"
 msgid "Info"
-msgstr ""
+msgstr "信息"
 
 #: /1080i/Includes_Object.xml
 msgctxt "#31742"
 msgid "Dependencies"
-msgstr ""
+msgstr "依赖项"
 
 #: /1080i/Includes_Topbar-Netflix.xml
 msgctxt "#31743"
 msgid "Information"
-msgstr ""
+msgstr "信息面板"
 
 #: /1080i/Includes_View_List.xml
 msgctxt "#31744"
 msgid "Channel"
-msgstr ""
+msgstr "频道"
 
 #: /1080i/Includes_View_List.xml
 msgctxt "#31745"
 msgid "Now"
-msgstr ""
+msgstr "正在播放"
 
 #: /1080i/Includes_View_List.xml
 msgctxt "#31746"
 msgid "Next"
-msgstr ""
+msgstr "下一节目"
 
 #: /1080i/Includes_View_List.xml
 msgctxt "#31747"
 msgid "Start"
-msgstr ""
+msgstr "开始时间"
 
 #: /1080i/Includes_View_List.xml
 msgctxt "#31748"
 msgid "Ends"
-msgstr ""
+msgstr "结束时间"
 
 #: /1080i/Includes_WidgetMods.xml
 msgctxt "#31749"
 msgid "Watch"
-msgstr ""
+msgstr "观看"
 
 #: /1080i/Includes_WidgetMods.xml
 msgctxt "#31750"
 msgid "Season"
-msgstr ""
+msgstr "季数"
 
 #: /1080i/Includes_WidgetMods.xml
 msgctxt "#31751"
 msgid "Premiered"
-msgstr ""
+msgstr "首播日期"
 
 #: /1080i/Includes_Widgets.xml
 msgctxt "#31752"
 msgid "Loading Channels"
-msgstr ""
+msgstr "正在加载频道"
 
 #: /1080i/Includes_Widgets_Netflix.xml
 msgctxt "#31753"
 msgid "Customize Home"
-msgstr ""
+msgstr "自定义主页"
 
 #: /1080i/Includes_Youtube.xml
 msgctxt "#31754"
 msgid "Trending"
-msgstr ""
+msgstr "热门内容"
 
 #: /1080i/Includes_Youtube.xml
 msgctxt "#31755"
 msgid "Live"
-msgstr ""
+msgstr "直播"
 
 #: /1080i/Includes_Youtube.xml
 msgctxt "#31756"
 msgid "Subscriptions"
-msgstr ""
+msgstr "订阅内容"
 
 #: /1080i/Includes_Youtube.xml
 msgctxt "#31757"
 msgid "Recommended"
-msgstr ""
+msgstr "推荐内容"
 
 #: /1080i/Includes_Youtube.xml
 msgctxt "#31758"
 msgid "History"
-msgstr ""
+msgstr "观看历史"
 
 #: /1080i/script-skinshortcuts.xml
 msgctxt "#31759"
 msgid "Choose Widget"
-msgstr ""
+msgstr "选择小组件"
 
 #: /1080i/script-skinshortcuts.xml
 msgctxt "#31760"
 msgid "Configure Submenu / Category Widget"
-msgstr ""
+msgstr "配置子菜单/分类小组件"
 
 #: /1080i/script-skinshortcuts.xml
 msgctxt "#31761"
 msgid "Home Widget Type"
-msgstr ""
+msgstr "主页小组件类型"
 
 #: /1080i/script-skinshortcuts.xml
 msgctxt "#31762"
 msgid "Configure Widgets"
-msgstr ""
+msgstr "配置小组件"
 
 #: /1080i/script-skinshortcuts.xml
 msgctxt "#31763"
 msgid "Widget Style"
-msgstr ""
+msgstr "小组件样式"
 
 #: /1080i/script-skinshortcuts.xml
 msgctxt "#31764"
 msgid "Content Type"
-msgstr ""
+msgstr "内容类型"
 
 #: /1080i/script-skinshortcuts.xml
 msgctxt "#31765"
 msgid "Sort By"
-msgstr ""
+msgstr "排序方式"
 
 #: /1080i/script-skinshortcuts.xml
 msgctxt "#31766"
 msgid "Sort Direction"
-msgstr ""
+msgstr "排序方向"
 
 #: /1080i/script-skinshortcuts.xml
 msgctxt "#31767"
 msgid "Enable Netflix Style"
-msgstr ""
+msgstr "启用Netflix风格"
 
 #: /1080i/script-skinshortcuts.xml
 msgctxt "#31768"
 msgid "Enable Spotlight"
-msgstr ""
+msgstr "启用精选推荐"
 
 #: /1080i/script-skinshortcuts.xml
 msgctxt "#31769"
 msgid "Choose Spotlight"
-msgstr ""
+msgstr "选择精选推荐"
 
 #: /1080i/script-skinshortcuts.xml
 msgctxt "#31770"
 msgid "Enable Autoscroll to Hub"
-msgstr ""
+msgstr "启用自动滚动至内容聚合中心"
 
 #: /1080i/script-skinshortcuts.xml
 msgctxt "#31771"
 msgid "Choose Autoscroll Hub"
-msgstr ""
+msgstr "选择自动滚动目标聚合中心"
 
 #: /1080i/script-skinshortcuts.xml
 msgctxt "#31772"
 msgid "Enable Menu on Left"
-msgstr ""
+msgstr "启用左侧菜单"
 
 #: /1080i/script-skinshortcuts.xml
 msgctxt "#31773"
 msgid "Choose Menu"
-msgstr ""
+msgstr "选择菜单"
 
 #: /1080i/script-skinshortcuts.xml
 msgctxt "#31774"
 msgid "Disable Fixed Focus"
-msgstr ""
+msgstr "禁用固定焦点"
 
 #: /1080i/script-skinshortcuts.xml
 msgctxt "#31775"
 msgid "Enable Widget Info Slide"
-msgstr ""
+msgstr "启用小组件信息滑动"
 
 #: /1080i/script-skinshortcuts.xml
 msgctxt "#31776"
 msgid "Enable Widget Background"
-msgstr ""
+msgstr "启用小组件背景"
 
 #: /1080i/script-skinshortcuts.xml
 msgctxt "#31777"
 msgid "Enable Widget Showcase Overlay"
-msgstr ""
+msgstr "启用小组件展示叠加层"
 
 #: /1080i/script-skinshortcuts.xml
 msgctxt "#31778"
 msgid "Enable Showcase auto-hide"
-msgstr ""
+msgstr "启用展示自动隐藏"
 
 #: /1080i/Custom_1161_Spotlight_Movie_List.xml
 msgctxt "#31779"
 msgid "Spotlight Movie Lists"
-msgstr ""
+msgstr "电影精选推荐列表"
 
 #: /1080i/DialogVideoInfo-Includes.xml
 msgctxt "#31780"
 msgid "Directed By"
-msgstr ""
+msgstr "导演"
 
 #: /1080i/SkinSettings.xml
 msgctxt "#31781"
 msgid "Use Oz Weather Radar Map"
-msgstr ""
+msgstr "使用澳大利亚天气雷达图"
 
 #: /1080i/Includes_Labels.xml
 msgctxt "#31782"
 msgid "Liked"
-msgstr ""
+msgstr "已点赞"
 
 #: /1080i/Includes_Object.xml
 msgctxt "#31783"
 msgid "remaining"
-msgstr ""
+msgstr "剩余"
 
 #: /1080i/Custom_1133_WidgetBar.xml
 msgctxt "#31784"
 msgid "Aura Widget Bar"
-msgstr ""
+msgstr "Aura小组件栏"
 
 #: /1080i/Custom_1157_VideoInfoButtons.xml
 msgctxt "#31785"
 msgid "Trailer"
-msgstr ""
+msgstr "预告片"
 
 #: /1080i/Custom_1157_VideoInfoButtons.xml
 msgctxt "#31786"
 msgid "Trakt Manager"
-msgstr ""
+msgstr "Trakt管理"
 
 #: /1080i/DialogButtonMenu-Includes.xml
 msgctxt "#31787"
 msgid "Addons"
-msgstr ""
+msgstr "插件"
 
 #: /1080i/DialogVideoInfo-Includes.xml
 msgctxt "#31788"
 msgid "No reviews available"
-msgstr ""
+msgstr "暂无评论"
 
 #: /1080i/Includes_Object.xml
 msgctxt "#31789"
 msgid "Aired"
-msgstr ""
+msgstr "播出日期"
 
 #: /1080i/Includes_Object.xml
 msgctxt "#31790"
 msgid "AuraHub"
-msgstr ""
+msgstr "Aura聚合中心"
 
 #: /1080i/Includes_View_Posters.xml
 msgctxt "#31791"
 msgid "EPISODE"
-msgstr ""
+msgstr "剧集"
 
 #: /1080i/Includes_WidgetMods.xml
 msgctxt "#31792"
 msgid "Length"
-msgstr ""
+msgstr "时长"
 
 #: /1080i/script-skinshortcuts.xml
 msgctxt "#31793"
 msgid "Enable My List as Widget"
-msgstr ""
+msgstr "将'我的列表'设为小组件"
 
 #: /1080i/script-skinshortcuts.xml
 msgctxt "#31794"
 msgid "Choose List"
-msgstr ""
+msgstr "选择列表"
 
 #: /1080i/script-skinshortcuts.xml
 msgctxt "#31795"
 msgid "Widget Aspect"
-msgstr ""
+msgstr "小组件比例"
 
 #: /1080i/script-skinshortcuts.xml
 msgctxt "#31796"
 msgid "Widget Location"
-msgstr ""
+msgstr "小组件位置"
 
 #: /1080i/script-skinshortcuts.xml
 msgctxt "#31797"
 msgid "Global"
-msgstr ""
+msgstr "全局"
 
 #: /1080i/SkinSettings.xml
 msgctxt "#31798"
 msgid "LiveTV Button Color"
-msgstr ""
+msgstr "直播电视按钮颜色"
 
 #: /1080i/SkinSettings.xml
 msgctxt "#31799"
 msgid "Enable / disable Video Info lists"
-msgstr ""
+msgstr "启用/禁用视频信息列表"
 
 #: /1080i/SkinSettings.xml
 msgctxt "#31800"
 msgid "Enable / disable Video Info buttons"
-msgstr ""
+msgstr "启用/禁用视频信息按钮"
 
 #: /1080i/SkinSettings.xml
 msgctxt "#31801"
 msgid "Enable Netflix Style Fixed Focus"
-msgstr ""
+msgstr "启用Netflix风格固定焦点"
 
 #: /shortcuts/moviehubmenu.DATA.xml
 msgctxt "#31802"
 msgid "Movie Categories"
-msgstr ""
+msgstr "电影分类"
 
 #: /shortcuts/moviehubmenu.DATA.xml
 msgctxt "#31803"
 msgid "Movie Aura Hub"
-msgstr ""
+msgstr "电影Aura聚合中心"
 
 #: /shortcuts/moviehubmenu.DATA.xml
 msgctxt "#31804"
 msgid "Movie Netflix Hub"
-msgstr ""
+msgstr "电影Netflix聚合中心"
 
 #: /shortcuts/movies.DATA.xml
 msgctxt "#31805"
 msgid "Movie Lists"
-msgstr ""
+msgstr "电影列表"
 
 #: /shortcuts/movies.DATA.xml
 msgctxt "#31806"
 msgid "Genres Hub"
-msgstr ""
+msgstr "类型聚合中心"
 
 #: /shortcuts/searchmenus.DATA.xml
 msgctxt "#31807"
 msgid "TMDB Movies"
-msgstr ""
+msgstr "TMDB电影"
 
 #: /shortcuts/searchmenus.DATA.xml
 msgctxt "#31808"
 msgid "TMDB TV Shows"
-msgstr ""
+msgstr "TMDB电视剧"
 
 #: /shortcuts/searchmenus.DATA.xml
 msgctxt "#31809"
 msgid "Seren Movies"
-msgstr ""
+msgstr "Seren电影"
 
 #: /shortcuts/searchmenus.DATA.xml
 msgctxt "#31810"
 msgid "Seren TV Shows"
-msgstr ""
+msgstr "Seren电视剧"
 
 #: /shortcuts/searchmenus.DATA.xml
 msgctxt "#31811"
 msgid "Fen Movies"
-msgstr ""
+msgstr "Fen电影"
 
 #: /shortcuts/searchmenus.DATA.xml
 msgctxt "#31812"
 msgid "Fen TV Shows"
-msgstr ""
+msgstr "Fen电视剧"
 
 #: /shortcuts/searchmenus.DATA.xml
 msgctxt "#31813"
 msgid "Venom Movies"
-msgstr ""
+msgstr "Venom电影"
 
 #: /shortcuts/searchmenus.DATA.xml
 msgctxt "#31814"
 msgid "Venom TV Shows"
-msgstr ""
+msgstr "Venom电视剧"
 
 #: /shortcuts/searchmenus.DATA.xml
 msgctxt "#31816"
 msgid "Library Movies"
-msgstr ""
+msgstr "媒体库电影"
 
 #: /shortcuts/searchmenus.DATA.xml
 msgctxt "#31817"
 msgid "Library TV Shows"
-msgstr ""
+msgstr "媒体库电视剧"
 
 #: /shortcuts/searchmenus.DATA.xml
 msgctxt "#31818"
 msgid "Library Episodes"
-msgstr ""
+msgstr "媒体库剧集"
 
 #: /shortcuts/searchmenus.DATA.xml
 msgctxt "#31819"
 msgid "Library Genres"
-msgstr ""
+msgstr "媒体库类型"
 
 #: /shortcuts/searchmenus.DATA.xml
 msgctxt "#31820"
 msgid "Library Year"
-msgstr ""
+msgstr "媒体库年份"
 
 #: /shortcuts/searchmenus.DATA.xml
 msgctxt "#31821"
 msgid "Library Studio"
-msgstr ""
+msgstr "媒体库制片厂"
 
 #: /shortcuts/searchmenus.DATA.xml
 msgctxt "#31822"
 msgid "Library Country"
-msgstr ""
+msgstr "媒体库国家"
 
 #: /shortcuts/searchmenus.DATA.xml
 msgctxt "#31823"
 msgid "Library Actor"
-msgstr ""
+msgstr "媒体库演员"
 
 #: /shortcuts/searchmenus.DATA.xml
 msgctxt "#31824"
 msgid "Music Videos"
-msgstr ""
+msgstr "音乐视频"
 
 #: /shortcuts/searchmenus.DATA.xml
 msgctxt "#31825"
 msgid "Music Video Artists"
-msgstr ""
+msgstr "音乐视频艺人"
 
 #: /shortcuts/tvhubmenu.DATA.xml
 msgctxt "#31826"
 msgid "TV Categories"
-msgstr ""
+msgstr "电视剧分类"
 
 #: /shortcuts/tvhubmenu.DATA.xml
 msgctxt "#31827"
 msgid "TV Aura Hub"
-msgstr ""
+msgstr "电视剧Aura聚合中心"
 
 #: /shortcuts/tvhubmenu.DATA.xml
 msgctxt "#31828"
 msgid "TV Netflix Hub"
-msgstr ""
+msgstr "电视剧Netflix聚合中心"
 
 #: /shortcuts/tvshows.DATA.xml
 msgctxt "#31829"
 msgid "TV Lists"
-msgstr ""
+msgstr "电视剧列表"
 
 #: /shortcuts/x1101.DATA.xml
 msgctxt "#31830"
 msgid "Media Hub"
-msgstr ""
+msgstr "媒体聚合中心"
 
 #: /shortcuts/x1101.DATA.xml
 msgctxt "#31831"
 msgid "Academy Awards - Best Picture Winners"
-msgstr ""
+msgstr "奥斯卡最佳影片获奖作品"
 
 #: /shortcuts/x1101.DATA.xml
 msgctxt "#31832"
 msgid "Rotten Tomatoes: Best of 2018"
-msgstr ""
+msgstr "烂番茄2018年度最佳"
 
 #: /shortcuts/x1101.DATA.xml
 msgctxt "#31833"
 msgid "2018 - Golden Globe Nominees & Winners"
-msgstr ""
+msgstr "2018金球奖提名与获奖"
 
 #: /shortcuts/x1101.DATA.xml
 msgctxt "#31834"
 msgid "2018 - Oscar Nominees & Winners"
-msgstr ""
+msgstr "2018奥斯卡提名与获奖"
 
 #: /shortcuts/x1101.DATA.xml
 msgctxt "#31835"
 msgid "IMDB: Top Rated Movies"
-msgstr ""
+msgstr "IMDB高分电影"
 
 #: /shortcuts/x1101.DATA.xml
 msgctxt "#31836"
 msgid "Reddit Top 250 (2018 Edition)"
-msgstr ""
+msgstr "Reddit Top 250（2018版）"
 
 #: /shortcuts/x1103.DATA.xml
 msgctxt "#31837"
 msgid "IMDB: Top Rated TV Shows"
-msgstr ""
+msgstr "IMDB高分电视剧"
 
 #: /shortcuts/x1103.DATA.xml
 msgctxt "#31838"
 msgid "Rolling Stone's 100 Greatest TV Shows of All Time"
-msgstr ""
+msgstr "滚石杂志百大经典电视剧"
 
 #: /shortcuts/x1103.DATA.xml
 msgctxt "#31839"
 msgid "Most Popular"
-msgstr ""
+msgstr "最受欢迎"
 
 #: /shortcuts/x1103.DATA.xml
 msgctxt "#31840"
 msgid "TV Shows 2018 ➛ Scripted (USA)"
-msgstr ""
+msgstr "2018美国剧本类电视剧 ➛"
 
 #: /shortcuts/x1103.DATA.xml
 msgctxt "#31841"
 msgid "TV Shows 2018 ➛ Scripted (UK)"
-msgstr ""
+msgstr "2018英国剧本类电视剧 ➛"
 
 #. Context: Genres
 #: /shortcuts/x1108.DATA.xml
 msgctxt "#31842"
 msgid "Action"
-msgstr ""
+msgstr "动作"
 
 #. Context: Genres
 #: /shortcuts/x1108.DATA.xml
 msgctxt "#31843"
 msgid "Animation"
-msgstr ""
+msgstr "动画"
 
 #. Context: Genres
 #: /shortcuts/x1108.DATA.xml
 msgctxt "#31844"
 msgid "Anime"
-msgstr ""
+msgstr "日本动漫"
 
 #. Context: Genres
 #: /shortcuts/x1108.DATA.xml
 msgctxt "#31845"
 msgid "Comedy"
-msgstr ""
+msgstr "喜剧"
 
 #. Context: Genres
 #: /shortcuts/x1108.DATA.xml
 msgctxt "#31846"
 msgid "Crime"
-msgstr ""
+msgstr "犯罪"
 
 #. Context: Genres
 #: /shortcuts/x1108.DATA.xml
 msgctxt "#31847"
 msgid "Documentary"
-msgstr ""
+msgstr "纪录片"
 
 #. Context: Genres
 #: /shortcuts/x1108.DATA.xml
 msgctxt "#31848"
 msgid "Drama"
-msgstr ""
+msgstr "剧情"
 
 #. Context: Genres
 #: /shortcuts/x1108.DATA.xml
 msgctxt "#31849"
 msgid "Family"
-msgstr ""
+msgstr "家庭"
 
 #. Context: Genres
 #: /shortcuts/x1108.DATA.xml
 msgctxt "#31850"
 msgid "History"
-msgstr ""
+msgstr "历史"
 
 #. Context: Genres
 #: /shortcuts/x1108.DATA.xml
 msgctxt "#31851"
 msgid "Horror"
-msgstr ""
+msgstr "恐怖"
 
 #. Context: Genres
 #: /shortcuts/x1108.DATA.xml
 msgctxt "#31852"
 msgid "Mystery"
-msgstr ""
+msgstr "悬疑"
 
 #. Context: Genres
 #: /shortcuts/x1108.DATA.xml
 msgctxt "#31853"
 msgid "Romance"
-msgstr ""
+msgstr "爱情"
 
 #. Context: Genres
 #: /shortcuts/x1108.DATA.xml
 msgctxt "#31854"
 msgid "Science Fiction"
-msgstr ""
+msgstr "科幻"
 
 #. Context: Genres
 #: /shortcuts/x1108.DATA.xml
 msgctxt "#31855"
 msgid "Superhero"
-msgstr ""
+msgstr "超级英雄"
 
 #. Context: Genres
 #: /shortcuts/x1108.DATA.xml
 msgctxt "#31856"
 msgid "Thriller"
-msgstr ""
+msgstr "惊悚"
 
 #. Context: Genres
 #: /shortcuts/x1108.DATA.xml
 msgctxt "#31857"
 msgid "War"
-msgstr ""
+msgstr "战争"
 
 #. Context: Genres
 #: /shortcuts/x1109.DATA.xml
 msgctxt "#31858"
 msgid "Game Show"
-msgstr ""
+msgstr "游戏节目"
 
 #. Context: Genres
 #: /shortcuts/x1109.DATA.xml
 msgctxt "#31859"
 msgid "Home and Garden"
-msgstr ""
+msgstr "家居与园艺"
 
 #. Context: Genres
 #: /shortcuts/x1109.DATA.xml
 msgctxt "#31860"
 msgid "Reality"
-msgstr ""
+msgstr "真人秀"
 
 #: /1080i/Includes_Labels.xml
 msgctxt "#31861"
 msgid "Returning Series"
-msgstr ""
+msgstr "回归剧集"
 
 #: /1080i/Includes_Labels.xml
 msgctxt "#31862"
 msgid "Planned"
-msgstr ""
+msgstr "计划中"
 
 #: /1080i/Includes_Labels.xml
 msgctxt "#31863"
 msgid "In Production"
-msgstr ""
+msgstr "制作中"
 
 #: /1080i/Includes_Labels.xml
 msgctxt "#31864"
 msgid "Ended"
-msgstr ""
+msgstr "已完结"
 
 #: /1080i/Includes_Labels.xml
 msgctxt "#31865"
 msgid "Canceled"
-msgstr ""
+msgstr "已取消"
 
 #: /1080i/Includes_Labels.xml
 msgctxt "#31866"
 msgid "Pilot"
-msgstr ""
+msgstr "试播集"
 
 #: /1080i/Includes_Labels.xml
 msgctxt "#31867"
 msgid "Nominated for"
-msgstr ""
+msgstr "提名"
 
 #: /1080i/Includes_Labels.xml
 msgctxt "#31868"
 msgid "Won"
-msgstr ""
+msgstr "获奖"
 
 #. Context: Further wins
 #: /1080i/Includes_Labels.xml
 msgctxt "#31869"
 msgid "Another"
-msgstr ""
+msgstr "其他"
 
 #. Context: More than one win
 #: /1080i/Includes_Labels.xml
 msgctxt "#31870"
 msgid "wins"
-msgstr ""
+msgstr "项获奖"
 
 #. Context: Only one win
 #: /1080i/Includes_Labels.xml
 msgctxt "#31871"
 msgid "win"
-msgstr ""
+msgstr "项获奖"
 
 #. Context: More than one nomination
 #: /1080i/Includes_Labels.xml
 msgctxt "#31872"
 msgid "nominations"
-msgstr ""
+msgstr "项提名"
 
 #. Context: Only one nomination
 #: /1080i/Includes_Labels.xml
 msgctxt "#31873"
 msgid "nomination"
-msgstr ""
+msgstr "项提名"
 
 #. Context: Awards in total
 #: /1080i/Includes_Labels.xml
 msgctxt "#31874"
 msgid "total"
-msgstr ""
+msgstr "总计"
 
 #. Context: More than one Oscar won
 #: /1080i/Includes_Labels.xml
 msgctxt "#31875"
 msgid "Oscars"
-msgstr ""
+msgstr "奥斯卡奖"
 
 #. Context: Only one Oscar won
 #: /1080i/Includes_Labels.xml
 msgctxt "#31876"
 msgid "Oscar"
-msgstr ""
+msgstr "奥斯卡奖"
 
 #. Context: More than one Emmy won
 #: /1080i/Includes_Labels.xml
 msgctxt "#31877"
 msgid "Primetime Emmys"
-msgstr ""
+msgstr "黄金时段艾美奖"
 
 #. Context: Only one Emmy won
 #: /1080i/Includes_Labels.xml
 msgctxt "#31878"
 msgid "Primetime Emmy"
-msgstr ""
+msgstr "黄金时段艾美奖"
 
 #. Context: Cast
 #: /1080i/Includes_Labels.xml
 msgctxt "#31879"
 msgid "Starring"
-msgstr ""
+msgstr "主演"
 
 #. Context: Rank in IMDB Top 250
 #: /1080i/Includes_Labels.xml
 msgctxt "#31880"
 msgid "Ranked"
-msgstr ""
+msgstr "排名"
 
 #. Context: Rank in IMDB Top 250
 #: /1080i/Includes_Labels.xml
 msgctxt "#31881"
 msgid "in IMDB Top 250"
-msgstr ""
+msgstr "位列IMDB Top 250"
 
 #: /1080i/Includes_Labels.xml
 msgctxt "#31882"
 msgid "Season Premiere"
-msgstr ""
+msgstr "季首播"
 
 #: /1080i/Includes_Labels.xml
 msgctxt "#31883"
 msgid "Continue"
-msgstr ""
+msgstr "继续"
 
 #: /1080i/Includes_Labels.xml
 msgctxt "#31884"
 msgid "Episode"
-msgstr ""
+msgstr "剧集"
 
 #: /shortcuts/overrides.xml
 msgctxt "#31885"
 msgid "Hubs"
-msgstr ""
+msgstr "内容聚合中心"
 
 #: /shortcuts/overrides.xml
 msgctxt "#31886"
 msgid "Setup"
-msgstr ""
+msgstr "设置向导"
 
 #: /shortcuts/overrides.xml
 msgctxt "#31887"
 msgid "Movie Categories Hub"
-msgstr ""
+msgstr "电影分类聚合中心"
 
 #: /shortcuts/overrides.xml
 msgctxt "#31888"
 msgid "Movie Genres Hub"
-msgstr ""
+msgstr "电影类型聚合中心"
 
 #: /shortcuts/overrides.xml
 msgctxt "#31889"
 msgid "TV Categories Hub"
-msgstr ""
+msgstr "电视剧分类聚合中心"
 
 #: /shortcuts/overrides.xml
 msgctxt "#31890"
 msgid "TV Genres Hub"
-msgstr ""
+msgstr "电视剧类型聚合中心"
 
 #: /shortcuts/overrides.xml
 msgctxt "#31891"
 msgid "TV Networks Hub"
-msgstr ""
+msgstr "电视频道聚合中心"
 
 #: /shortcuts/overrides.xml
 msgctxt "#31892"
 msgid "Movie Lists Hub 1"
-msgstr ""
+msgstr "电影列表聚合中心1"
 
 #: /shortcuts/overrides.xml
 msgctxt "#31893"
 msgid "TV Lists Hub 1"
-msgstr ""
+msgstr "电视剧列表聚合中心1"
 
 #: /shortcuts/overrides.xml
 msgctxt "#31894"
 msgid "My Lists Hub 1"
-msgstr ""
+msgstr "我的列表聚合中心1"
 
 #: /shortcuts/overrides.xml
 msgctxt "#31895"
 msgid "My Lists Hub 2"
-msgstr ""
+msgstr "我的列表聚合中心2"
 
 #: /shortcuts/overrides.xml
 msgctxt "#31896"
 msgid "My Lists Hub 3"
-msgstr ""
+msgstr "我的列表聚合中心3"
 
 #: /shortcuts/overrides.xml
 msgctxt "#31897"
 msgid "My Addons List 1"
-msgstr ""
+msgstr "我的插件列表1"
 
 #: /shortcuts/overrides.xml
 msgctxt "#31898"
 msgid "My Addons List 2"
-msgstr ""
+msgstr "我的插件列表2"
 
 #: /shortcuts/overrides.xml
 msgctxt "#31899"
 msgid "My LiveTV List 1"
-msgstr ""
+msgstr "我的直播列表1"
 
 #: /shortcuts/overrides.xml
 msgctxt "#31900"
 msgid "My LiveTV List 2"
-msgstr ""
+msgstr "我的直播列表2"
 
 #: /shortcuts/overrides.xml
 msgctxt "#31901"
 msgid "My List Dialogs"
-msgstr ""
+msgstr "我的列表对话框"
 
 #: /shortcuts/overrides.xml
 msgctxt "#31902"
 msgid "Movie Lists 1"
-msgstr ""
+msgstr "电影列表1"
 
 #: /shortcuts/overrides.xml
 msgctxt "#31903"
 msgid "Movie Categories List"
-msgstr ""
+msgstr "电影分类列表"
 
 #: /shortcuts/overrides.xml
 msgctxt "#31904"
 msgid "TV Lists 1"
-msgstr ""
+msgstr "电视剧列表1"
 
 #: /shortcuts/overrides.xml
 msgctxt "#31905"
 msgid "TV Categories List"
-msgstr ""
+msgstr "电视剧分类列表"
 
 #: /shortcuts/overrides.xml
 msgctxt "#31906"
 msgid "My Lists 1"
-msgstr ""
+msgstr "我的列表1"
 
 #: /shortcuts/overrides.xml
 msgctxt "#31907"
 msgid "My Lists 2"
-msgstr ""
+msgstr "我的列表2"
 
 #: /shortcuts/overrides.xml
 msgctxt "#31908"
 msgid "My Lists 3"
-msgstr ""
+msgstr "我的列表3"
 
 #: /shortcuts/overrides.xml
 msgctxt "#31909"
 msgid "Video-Addons"
-msgstr ""
+msgstr "视频插件"
 
 #: /shortcuts/overrides.xml
 msgctxt "#31910"
 msgid "My Movie List 1"
-msgstr ""
+msgstr "我的电影列表1"
 
 #: /shortcuts/overrides.xml
 msgctxt "#31911"
 msgid "My TV List 1"
-msgstr ""
+msgstr "我的电视剧列表1"
 
 #: /shortcuts/overrides.xml
 msgctxt "#31912"
 msgid "My List 1"
-msgstr ""
+msgstr "我的列表1"
 
 #: /shortcuts/overrides.xml
 msgctxt "#31913"
 msgid "My List 2"
-msgstr ""
+msgstr "我的列表2"
 
 #: /shortcuts/overrides.xml
 msgctxt "#31914"
 msgid "My List 3"
-msgstr ""
+msgstr "我的列表3"
 
 #: /shortcuts/overrides.xml
 msgctxt "#31915"
 msgid "My Addons List 1"
-msgstr ""
+msgstr "我的插件列表1"
 
 #: /shortcuts/overrides.xml
 msgctxt "#31916"
 msgid "My Addons List 2"
-msgstr ""
+msgstr "我的插件列表2"
 
 #: /shortcuts/overrides.xml
 msgctxt "#31917"
 msgid "My LiveTV List 1"
-msgstr ""
+msgstr "我的直播列表1"
 
 #: /shortcuts/overrides.xml
 msgctxt "#31918"
 msgid "My LiveTV List 2"
-msgstr ""
+msgstr "我的直播列表2"
 
 #: /shortcuts/overrides.xml
 msgctxt "#31919"
 msgid "Because you watched"
-msgstr ""
+msgstr "根据您的观看记录"
 
 #: /shortcuts/overrides.xml
 msgctxt "#31920"
 msgid "Spotlight Movies"
-msgstr ""
+msgstr "电影精选推荐"
 
 #: /shortcuts/overrides.xml
 msgctxt "#31921"
 msgid "Spotlight TV"
-msgstr ""
+msgstr "电视剧精选推荐"
 
 #: /1080i/Custom_1158_VideoInfo.xml
 msgctxt "#31922"
 msgid "Enable Previous/Next page buttons in Lists"
-msgstr ""
+msgstr "在列表中启用上/下一页按钮"
 
 #: /1080i/Includes_Object.xml
 msgctxt "#31923"
 msgid "Previous page"
-msgstr ""
+msgstr "上一页"
 
 #: /1080i/Includes_Object.xml
 msgctxt "#31924"
 msgid "Next page"
-msgstr ""
+msgstr "下一页"
 
 #: /1080i/SkinSettings.xml
 msgctxt "#31925"
 msgid "Enable notification shadow outside player"
-msgstr ""
+msgstr "在播放器外启用通知阴影"
 
 #: /1080i/SkinSettings.xml
 msgctxt "#31926"
 msgid "Disable Time header in Library Views"
-msgstr ""
+msgstr "在媒体库视图中禁用时间标头"
 
 #: /1080i/SkinSettings.xml
 msgctxt "#31927"
 msgid "Enable notification icon for addons"
-msgstr ""
+msgstr "为插件启用通知图标"
 
 #: /1080i/Custom_1158_VideoInfo.xml
 msgctxt "#31928"
 msgid "Configure Cast & More Details"
-msgstr ""
+msgstr "配置演员表与详细信息"
 
 #: /1080i/Custom_1159_CastAndMoreDetails.xml
 msgctxt "#31929"
 msgid "Cast & More Details"
-msgstr ""
+msgstr "演员表与详细信息"
 
 #: /1080i/Custom_1159_CastAndMoreDetails.xml
 msgctxt "#31930"
 msgid "Season flags"
-msgstr ""
+msgstr "季标识"
 
 #: /1080i/Custom_1159_CastAndMoreDetails.xml
 msgctxt "#31931"
 msgid "Episode flags"
-msgstr ""
+msgstr "剧集标识"
 
 #: /1080i/SkinSettings.xml
 msgctxt "#31932"
 msgid "Enable Clearlogo fallback text on Widgets"
-msgstr ""
+msgstr "在小组件启用透明徽标备用文本"
 
 #: /1080i/SkinSettings.xml
 msgctxt "#31933"
 msgid "Display partial progress bars on landscape widgets"
-msgstr ""
+msgstr "在横向小组件显示部分进度条"
 
 #: /1080i/SkinSettings.xml
 msgctxt "#31934"
 msgid "Display completed progress bars on landscape widgets"
-msgstr ""
+msgstr "在横向小组件显示完整进度条"

@@ -1,5 +1,5 @@
 
-# AuraMod for Matrix
+# AuraMod for kodi
 
 Please read [wiki](https://github.com/SerpentDrago/skin.auramod/wiki) for Matrix Install  and post install instructions 
 
